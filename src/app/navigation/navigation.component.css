@@ -1,12 +1,8 @@
-
-   
-
 .mat-button{
   min-width: 1%;
-  width: 100%;
 }
 
-.mat-toolbar{
+.app-toolbar{
     background-color: #26A65B;
     height: 6%;
     width: 100%;
@@ -17,4 +13,17 @@
          justify-content: center;
          z-index: 1;
     
+  }
+
+.header-toolbar {
+    background-color: #26A65B;
+    width: 100%;
+   
+
+  }
+
+  .example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
   }

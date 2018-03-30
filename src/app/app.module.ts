@@ -3,6 +3,9 @@ import { NgModule, Component } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from './shared/material.module';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 
 import { AppComponent } from './app.component';
@@ -13,6 +16,8 @@ import { LiveScoreComponent } from './live-score/live-score.component';
 import { GeolocationComponent } from './geolocation/geolocation.component';
 import { NewsComponent } from './news/news.component';
 import { TransportComponent } from './transport/transport.component';
+import { InformationComponent } from './information/information.component';
+import { WeatherService} from './homepage/weather.service';
 
 const appRoutes:
   Routes = [
@@ -40,6 +45,10 @@ const appRoutes:
     {
       path: 'news',
       component: NewsComponent
+    },
+    {
+      path: 'info',
+      component: InformationComponent
     }
 
   ];
@@ -56,20 +65,22 @@ const appRoutes:
     LiveScoreComponent,
     GeolocationComponent,
     NewsComponent,
-    TransportComponent
+    TransportComponent,
+    InformationComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule,
     MaterialModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true }
     )
 
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
