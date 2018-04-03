@@ -1,0 +1,34 @@
+#home-wrapper{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif; 
+}
+
+#headerImg img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+#wind{
+    font-size: 90%;
+    width: 100%;
+    text-align: center;
+   
+}
+
+#direction{
+    float: right;
+}
+
+
+#forecast{
+   vertical-align: middle;
+    font-size: 200%;
+}
+
+
+
+
+
