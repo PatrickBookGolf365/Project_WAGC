@@ -1,30 +1,32 @@
-<div id="nav-wrapper">
-<mat-toolbar class="app-toolbar">
-
-  <button type="button" mat-button routerLink="">
-      <i class="material-icons">home</i>
-  </button>
-
-  <button type="button" mat-button routerLink="transport">
-      <i class="material-icons">directions_bus</i>
-  </button>
-
-  <button type="button" mat-button routerLink="live-score">
-      <i class="material-icons">event_note</i>
-  </button>
-
-  <button type="button" mat-button routerLink="geo-location">
-      <i class="material-icons">location_on</i>
-  </button>
-
-  <button type="button" mat-button routerLink="add-info">
-      <i class="material-icons">info_outline</i>
-  </button>
-
-</mat-toolbar>
-
-<div id="mainWrapper">
-    <router-outlet></router-outlet>
-</div>
-
-</div>
+<div id="toolbar-wrapper">
+        <mat-toolbar class="header-toolbar">
+          <span class="example-fill-remaining-space"></span>
+          <span>
+            <button type="button" mat-button routerLink="add-info">
+                <mat-icon>info</mat-icon>
+            </button>
+          </span>
+        </mat-toolbar>
+      </div>
+      <div id="mainWrapper">
+          <router-outlet></router-outlet>
+        </div>
+      <div id="nav-wrapper">
+        <mat-toolbar class="app-toolbar">
+          <button type="button" mat-button routerLink="">
+            <mat-icon>home</mat-icon>
+          </button>
+          <button type="button" mat-button routerLink="live-score">
+            <mat-icon>assessment</mat-icon>
+          </button>
+          <button type="button" mat-button routerLink="geo-location">
+            <mat-icon>place</mat-icon>
+          </button>
+          <button type="button" mat-button routerLink="events">
+            <mat-icon>event</mat-icon>
+          </button>
+          <button type="button" mat-button routerLink="profiles">
+            <mat-icon>account_box</mat-icon>
+          </button>
+        </mat-toolbar>
+      </div>

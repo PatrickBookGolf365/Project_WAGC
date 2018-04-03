@@ -2,69 +2,70 @@
   <div id="headerImg">
     <img src="./assets/img/WATC.jpg">
   </div>
-    <mat-toolbar id="weather-toolbar">
-      <div id="forecast">
-              <span>
-                {{weather.main.temp | number:'1.0-0'}}&deg;c
-              </span>
-         </div>
-          <div id="wind">
-            <!-- make button to change to fareinhit -->
-             <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>
-             <div id="direction">
-                <span *ngIf="weather.wind.deg >= 0 && weather.wind.deg <= 25">
-                 North
-               </span>
-               <div *ngIf="weather.wind.deg > 25 && weather.wind.deg <= 65">
-                 North-East
-               </div>
-               <span *ngIf="weather.wind.deg > 65 && weather.wind.deg <= 115">
-                 South-East
-               </span>
-               <span *ngIf="weather.wind.deg > 115 && weather.wind.deg <= 155">
-                 South-East
-               </span>
-               <span *ngIf="weather.wind.deg > 155 && weather.wind.deg <= 205">
-                 South
-               </span>
-               <span *ngIf="weather.wind.deg > 205 && weather.wind.deg <= 245">
-                 South-West
-               </span>
-               <span *ngIf="weather.wind.deg > 245 && weather.wind.deg <= 295">
-                 West
-               </span>
-               <span *ngIf="weather.wind.deg > 295 && weather.wind.deg <= 340">
-                 North-West
-               </span>
-               <span *ngIf="weather.wind.deg > 340 &&weather.wind.deg <= 360">
-                 North
-               </span>
-             </div>
-          </div>
-        
-        
-    </mat-toolbar>
-    <mat-grid-list cols="1" rowHeight="2:1"> <!-- need to put sum style here -->
-      <mat-grid-tile>
-              <mat-list>
-                      <mat-list-item class="mat-item">Item 1</mat-list-item>
-                      <mat-divider ></mat-divider>
-                      <mat-list-item class="mat-item">Item 2</mat-list-item>
-                      <mat-divider class="list-divider"></mat-divider>
-                      <mat-list-item>Item 3</mat-list-item>
-                      
-              </mat-list>
-                    
-      </mat-grid-tile>
-    </mat-grid-list>
-    <mat-divider></mat-divider>
-    
-      <mat-grid-list cols="2" rowHeight="1:1">
-        <mat-grid-tile>
-            <p>Section 3</p>
-      </mat-grid-tile> 
+  <mat-toolbar id="weather-toolbar">
+    <div id="forecast">
+      <span>
+        {{weather.main.temp | number:'1.0-0'}}&deg;c
+      </span>
+      <mat-divider></mat-divider>
+    </div>
+    <div id="wind">
+      <!-- make button to change to fareinhit -->
+      <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>
+      <div id="direction">
+        <span *ngIf="weather.wind.deg >= 0 && weather.wind.deg <= 22.50">
+          North
+        </span>
+        <div *ngIf="weather.wind.deg > 22.50 && weather.wind.deg <= 67.50">
+          North-East
+        </div>
+        <span *ngIf="weather.wind.deg > 67.50 && weather.wind.deg <= 112.50">
+          East
+        </span>
+        <span *ngIf="weather.wind.deg > 112.50 && weather.wind.deg <= 157.50">
+          South-East
+        </span>
+        <span *ngIf="weather.wind.deg > 157.50 && weather.wind.deg <= 202.50">
+          South
+        </span>
+        <span *ngIf="weather.wind.deg > 202.50 && weather.wind.deg <= 247.50">
+          South-West
+        </span>
+        <span *ngIf="weather.wind.deg > 247.50 && weather.wind.deg <= 292.50">
+          West
+        </span>
+        <span *ngIf="weather.wind.deg > 292.50 && weather.wind.deg <= 337.50">
+          North-West
+        </span>
+        <span *ngIf="weather.wind.deg > 337.50 &&weather.wind.deg <= 360">
+          North
+        </span>
+      </div>
+      <mat-divider></mat-divider>
+    </div>
+  </mat-toolbar>
+  <mat-grid-list cols="1" rowHeight="2:1">
+    <!-- need to put sum style here -->
+    <mat-grid-tile>
+      <mat-list>
+        <mat-list-item class="mat-item">Item 1</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="mat-item">Item 2</mat-list-item>
+        <mat-divider class="list-divider"></mat-divider>
+        <mat-list-item>Item 3</mat-list-item>
 
-      <mat-grid-tile>
-        <p>Section 3</p>
-     </mat-grid-tile> 
-   </mat-grid-list>
+      </mat-list>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-divider></mat-divider>
+
+  <mat-grid-list cols="2" rowHeight="1:1">
+    <mat-grid-tile>
+      <p>Section 3</p>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <p>Section 3</p>
+    </mat-grid-tile>
+  </mat-grid-list>
