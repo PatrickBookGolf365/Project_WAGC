@@ -4,7 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from './shared/material.module';
 import { HttpClientModule } from '@angular/common/http';
-<<<<<<< HEAD
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components//navigation/navigation.component';
@@ -34,57 +33,7 @@ const appRoutes:
     { path: 'schedule', component: ScheduleComponent },
     { path: 'contact', component: ContactComponent },
     { path: '**', redirectTo: '', pathMatch: 'full'}
-    
-=======
-
-
-
-
-import { AppComponent } from './app.component';
-import 'hammerjs';
-import { NavigationComponent } from './navigation/navigation.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { LiveScoreComponent } from './live-score/live-score.component';
-import { GeolocationComponent } from './geolocation/geolocation.component';
-import { NewsComponent } from './news/news.component';
-import { TransportComponent } from './transport/transport.component';
-import { InformationComponent } from './information/information.component';
-import { WeatherService} from './homepage/weather.service';
-
-const appRoutes:
-  Routes = [
-
-    {
-      path: "",
-      component: HomepageComponent
-    },
-
-    {
-      path: 'liveScore',
-      component: LiveScoreComponent
-    },
-
-    {
-      path: 'geoLocation',
-      component: GeolocationComponent
-    },
-
-    {
-      path: 'transport',
-      component: TransportComponent
-    },
-
-    {
-      path: 'news',
-      component: NewsComponent
-    },
-    {
-      path: 'info',
-      component: InformationComponent
-    }
-
->>>>>>> 7bbedacf334064f2652417aa4d5df2279c7f693c
-  ];
+  ]
 
 @NgModule({
   declarations: [
@@ -96,15 +45,13 @@ const appRoutes:
     TransportComponent,
     AdditionalInfoComponent,
     NewsComponent,
-<<<<<<< HEAD
     AboutComponent,
     EligibilityComponent,
     ScheduleComponent,
-    ContactComponent
-=======
+    ContactComponent,
     TransportComponent,
-    InformationComponent
->>>>>>> 7bbedacf334064f2652417aa4d5df2279c7f693c
+    //InformationComponent
+
   ],
   imports: [
     BrowserModule,

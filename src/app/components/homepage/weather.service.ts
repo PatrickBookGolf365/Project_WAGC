@@ -24,3 +24,5 @@ export class WeatherService {
         return Observable.throw(err.message);
     }
    } 
+
+  

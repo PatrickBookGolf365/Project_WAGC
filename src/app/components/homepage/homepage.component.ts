@@ -5,7 +5,7 @@ import { IWeather } from './weather';
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss']
+  styleUrls: ['./homepage.component.css']
 })
 
 export class HomepageComponent implements OnInit {
@@ -24,5 +24,4 @@ export class HomepageComponent implements OnInit {
     },
       error => this.errorMessage=<any>error);
   }
-}
-
+  }
