@@ -1,8 +1,31 @@
-{
-  news:{
-  "id": 1,
-  "severity": 1,
-  "title": test,
-  "content": test content
-  }  
+{ 
+    "news":[
+        {
+        "id": 1,
+        "severity": 1,
+        "title": "Weather Warning 1",
+        "content": "Due to the adverse weather conditions, we have to delay the match until further notice"
+        },
+
+        {
+        "id": 2,
+        "severity": 2,
+        "title": "Weather Warning 2",
+        "content": "Due to the adverse weather conditions, we have to delay the match until further notice"
+        },
+
+        {
+        "id": 3,
+        "severity": 3,
+        "title": "Weather Warning 3",
+        "content": "Due to the adverse weather conditions, we have to delay the match until further notice"
+        },
+
+        {
+        "id": 4,
+        "severity": 4,
+        "title": "Weather Warning 4",
+        "content": "Due to the adverse weather conditions, we have to delay the match until further notice"
+        }
+    ]  
 }
