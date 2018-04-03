@@ -1,0 +1,24 @@
+.mat-card-content-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-word;
+    padding:-30px;
+}
+.mat-toolbar-add-info{
+    width: 100%;
+    height: 40px;
+    background-color: #5cd65c;
+}
+@mixin mat-icon-size($size: 38px) {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+  
+  .material-icons {
+    @include mat-icon-size(38px);
+    margin: 5px;
+  }
