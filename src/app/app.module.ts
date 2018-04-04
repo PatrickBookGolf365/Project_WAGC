@@ -20,6 +20,7 @@ import { ScheduleComponent } from './components/additional-info/schedule/schedul
 import { ContactComponent } from './components/additional-info/contact/contact.component';
 import { WeatherService} from './components/homepage/weather.service';
 import { NewsService} from './components/additional-info/news/news.service';
+import {HomeNewsService} from './components/homepage/weather.service';
 import { EventsComponent } from './components/events/events.component';
 import { TeamProfilesComponent } from './components/team-profiles/team-profiles.component';
 
@@ -69,7 +70,7 @@ const appRoutes:
     )
 
   ],
-  providers: [WeatherService, NewsService],
+  providers: [WeatherService, NewsService, HomeNewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

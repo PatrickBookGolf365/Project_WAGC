@@ -13,7 +13,7 @@ export class NewsComponent implements OnInit {
   news: INews[] = [];
 
 
-  constructor(private _newsService:NewsService) {
+  constructor(public _newsService:NewsService) {
 
    }
 
