@@ -1,0 +1,65 @@
+body{
+    width: 100%;
+}
+h3{
+    margin-left: 15px;
+}
+.section1{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.box{
+    height: 70px;
+    width: 120px;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: green;
+    display: inline-block;
+}
+.mat-transport-header-toolbar{
+    background-color: rgb(92, 214, 92);
+    color: white;
+    height: 40px;
+}
+.wrapper{
+    min-height: 100%;
+    margin-bottom:1px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.mat-transport-toogle-toolbar{
+    height: 40px;
+}
+.mat-transport-map{
+    height: 40px;
+}   
+
+.mat-button{
+    position: absolute;
+    right: 0;
+}
+.example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-width: 300px;
+  }
+  
+.mat-table {
+    max-height: 500x;
+}
+.mat-form{
+    width: 45%;
+    height: 65px;
+}
+.section3{
+     width: 100%;
+     height: 350px;
+ }
+ .mat-table-centre{
+    display:flex;
+    justify-content:center;
+    padding: 5px;
+    margin: 2px;
+ }

@@ -1,36 +1,47 @@
 <div id="toolbar-wrapper">
         <mat-toolbar class="header-toolbar">
+<<<<<<< HEAD
           <div id="header-logos">
             <span><mat-icon><img src="./assets/img/ILGU.png"></mat-icon></span>
             <span><mat-icon><img src="./assets/img/ILGU.png"></mat-icon></span>
           </div>
           <span class="example-fill-remaining-space"></span>
+=======
+
+>>>>>>> 0e9911ee612d367290c9c6232d00b1c280252d01
           <span>
             <button type="button" mat-button routerLink="add-info">
-                <mat-icon>info</mat-icon>
+                <i class="material-icons md-dark md-inactive">info_outline</i>
             </button>
           </span>
         </mat-toolbar>
+
       </div>
-      <div id="mainWrapper">
-          <router-outlet></router-outlet>
-        </div>
-      <div id="nav-wrapper">
-        <mat-toolbar class="app-toolbar">
-          <button type="button" mat-button routerLink="">
-            <mat-icon>home</mat-icon>
-          </button>
-          <button type="button" mat-button routerLink="live-score">
-            <mat-icon>assessment</mat-icon>
-          </button>
-          <button type="button" mat-button routerLink="geo-location">
-            <mat-icon>place</mat-icon>
-          </button>
-          <button type="button" mat-button routerLink="events">
-            <mat-icon>event</mat-icon>
-          </button>
-          <button type="button" mat-button routerLink="profiles">
-            <mat-icon>account_box</mat-icon>
-          </button>
-        </mat-toolbar>
-      </div>
+
+<div id="nav-wrapper">
+  <mat-toolbar class="app-toolbar">
+
+      <button type="button" mat-button routerLink="">
+        <i class="material-icons md-dark">home</i>
+      </button>
+
+      <button type="button" mat-button routerLink="live-score">
+        <i class="material-icons md-dark">directions_bus</i>
+      </button>
+
+      <button type="button" mat-button routerLink="geo-location">
+        <i class="material-icons md-dark md-inactive">event_note</i>
+      </button>
+
+      <button type="button" mat-button routerLink="events">
+        <i class="material-icons md-dark md-inactive">location_on</i>
+      </button>
+
+      <button type="button" mat-button routerLink="profiles">
+         <i class="material-icons md-dark md-inactive">info_outline</i>
+      </button>
+
+    </mat-toolbar>
+  <router-outlet></router-outlet>
+</div>
+

@@ -1,26 +1,28 @@
 .mat-button{
   min-width: 1%;
+  width: 100%;
 }
-
 .app-toolbar{
-    background-color: #26A65B;
+    background-color: #ebebe0;
+    height: 40px;
     width: 100%;
-    
-         text-align: center;
-         position: fixed; 
-         bottom: 0;
-         align-items: center;
-         justify-content: center;
-         z-index: 1;
-
+    text-align: center;
+    position: fixed; 
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
   }
+  
+.material-icons.md-dark { color: #d6d6c2; }
+.material-icons.md-dark.md-inactive { color: black; }
 
 .header-toolbar {
-    background-color: #26A65B;
+    background-color: #5cd65c;
+    height: 40px;
     width: 100%;
-   
-
   }
+<<<<<<< HEAD
 
   .example-fill-remaining-space {
     /* This fills the remaining space, by using flexbox. 
@@ -38,3 +40,5 @@
     height: 20%;
     vertical-align: middle;
   }
+=======
+>>>>>>> 0e9911ee612d367290c9c6232d00b1c280252d01
