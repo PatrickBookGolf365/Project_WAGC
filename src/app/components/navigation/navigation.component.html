@@ -1,30 +1,39 @@
+<div id="toolbar-wrapper">
+        <mat-toolbar class="header-toolbar">
+
+          <span>
+            <button type="button" mat-button routerLink="add-info">
+                <i class="material-icons md-dark md-inactive">info_outline</i>
+            </button>
+          </span>
+        </mat-toolbar>
+
+      </div>
+
 <div id="nav-wrapper">
-<mat-toolbar class="app-toolbar">
+  <mat-toolbar class="app-toolbar">
 
-  <button type="button" mat-button routerLink="">
-      <i class="material-icons md-dark md-inactive">home</i>
-  </button>
+      <button type="button" mat-button routerLink="">
+        <i class="material-icons md-dark">home</i>
+      </button>
 
-  <button type="button" mat-button routerLink="transport">
-      <i class="material-icons md-dark md-inactive">directions_bus</i>
-  </button>
+      <button type="button" mat-button routerLink="live-score">
+        <i class="material-icons md-dark">directions_bus</i>
+      </button>
 
-  <button type="button" mat-button routerLink="live-score">
-      <i class="material-icons md-dark md-inactive">event_note</i>
-  </button>
+      <button type="button" mat-button routerLink="geo-location">
+        <i class="material-icons md-dark md-inactive">event_note</i>
+      </button>
 
-  <button type="button" mat-button routerLink="geo-location">
-      <i class="material-icons md-dark md-inactive">location_on</i>
-  </button>
+      <button type="button" mat-button routerLink="events">
+        <i class="material-icons md-dark md-inactive">location_on</i>
+      </button>
 
-  <button type="button" mat-button routerLink="add-info">
-      <i class="material-icons md-dark md-inactive">info_outline</i>
-  </button>
+      <button type="button" mat-button routerLink="profiles">
+         <i class="material-icons md-dark md-inactive">info_outline</i>
+      </button>
 
-</mat-toolbar>
-
-<div id="mainWrapper">
-    <router-outlet></router-outlet>
+    </mat-toolbar>
+  <router-outlet></router-outlet>
 </div>
 
-</div>

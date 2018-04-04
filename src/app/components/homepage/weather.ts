@@ -1,7 +1,11 @@
-export interface IWeather{
-      temp: number;
-      description: string;
-      icon: string;
-      speed: number;
-      deg: number;
-}; 
+export interface IWeather {
+      "wind": {
+            speed: number;
+            deg: number;
+      },
+      
+      "main": {
+            temp: number;
+      }     
+};
+

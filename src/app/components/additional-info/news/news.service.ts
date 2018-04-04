@@ -5,16 +5,16 @@ import "rxjs/add/observable/throw";
 import "rxjs/add/operator/catch";
 import "rxjs/add/operator/do";
 
-import {IWeather} from './weather';
+import {INews} from './news';
 
 @Injectable()
-export class WeatherService {
+export class NewsService {
     
-   private _weatherUrl="http://api.openweathermap.org/data/2.5/weather?lat=53.3909&lon=-6.5665&units=metric&appid=30e47e75d5f18740d0765320a709ce40"
+   private _newsUrl="https://gist.githubusercontent.com/PatrickBookGolf365/88a79f87a0d75cb9c5e7d2e4e0468205/raw/e553efff8367dadc5930de49e88c9d14df5f5f82/news.json"
     
    constructor(private _http: HttpClient){}
-       getWeather(): Observable<IWeather[]>{
-        return this._http.get<IWeather[]>(this._weatherUrl)
+       getNews(): Observable<INews[]>{
+        return this._http.get<INews[]>(this._newsUrl)
         .do(data => console.log("All: "+JSON.stringify(data)))
         .catch(this.handleError);
        }

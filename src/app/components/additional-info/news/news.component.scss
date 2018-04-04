@@ -1,0 +1,33 @@
+#newsWrapper{
+  margin-bottom: 18%;
+
+}
+
+
+  #newsCard-severity-1{
+      background: #DCE35B;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to top, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      margin: 3%;
+  }
+
+  #newsCard-severity-2{
+    background: #b9b42d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ecf570, #b9b42d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ecf570, #b9b42d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 3%;
+}
+
+#newsCard-severity-3{
+  background: #e23403;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #f9ca6c, #e23403);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #f9ca6c, #e23403); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 3%;
+}
+
+#newsCard-severity-4{
+  background: #bc2938;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #f5918a, #bc2938);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f5918a, #bc2938); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 3%;
+}
