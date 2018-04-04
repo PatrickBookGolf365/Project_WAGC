@@ -16,7 +16,6 @@
     vertical-align: middle;
     font-size: 200%;
 }
-<<<<<<< HEAD
 .horizontal-scroll-wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -33,13 +32,3 @@
     height: 500px;
     width: 500px;
 }
-=======
-
-
-
-.news-panel{
-    
-    margin: 1%;
-}
-
->>>>>>> d5ef1848804fc28a1f911f45aafd8f1d41c03694
