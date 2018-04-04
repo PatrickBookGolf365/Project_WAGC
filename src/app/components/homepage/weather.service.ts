@@ -6,6 +6,7 @@ import "rxjs/add/operator/catch";
 import "rxjs/add/operator/do";
 
 import {IWeather} from './weather';
+import {IHomeNews} from './news';
 
 @Injectable()
 export class WeatherService {
@@ -23,4 +24,28 @@ export class WeatherService {
         console.log(err.message);
         return Observable.throw(err.message);
     }
+<<<<<<< HEAD
    } 
+=======
+   } 
+
+@Injectable()
+export class HomeNewsService{
+
+    private _homeNewsUrl="https://gist.githubusercontent.com/PatrickBookGolf365/5efbf456b43bb5f27ae1d1f34d060a38/raw/75cda83d26e27a868cbc7bdafe8b8c4014bb11f0/homenews.json"
+
+    constructor(private _http: HttpClient){}
+       getHomeNews(): Observable<IHomeNews[]>{
+        return this._http.get<IHomeNews[]>(this._homeNewsUrl)
+        .do(data => console.log("All: "+JSON.stringify(data)))
+        .catch(this.handleError);
+       }
+
+       private handleError(err: HttpErrorResponse){
+        console.log(err.message);
+        return Observable.throw(err.message);
+    }
+}
+
+  
+>>>>>>> d5ef1848804fc28a1f911f45aafd8f1d41c03694
