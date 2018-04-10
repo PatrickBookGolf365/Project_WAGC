@@ -24,10 +24,7 @@ export class WeatherService {
         console.log(err.message);
         return Observable.throw(err.message);
     }
-<<<<<<< HEAD
-   } 
-=======
-   } 
+}
 
 @Injectable()
 export class HomeNewsService{
@@ -46,6 +43,3 @@ export class HomeNewsService{
         return Observable.throw(err.message);
     }
 }
-
-  
->>>>>>> d5ef1848804fc28a1f911f45aafd8f1d41c03694
