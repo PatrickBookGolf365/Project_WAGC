@@ -1,12 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { WeatherService, HomeNewsService} from './weather.service';
+import { WeatherService, HomeNewsService} from './services/weather.service';
 import { HttpClient } from '@angular/common/http';
-import { IWeather } from './weather';
-import { IHomeNews} from './news';
+import { IWeather } from './services/weather';
+import { IHomeNews} from './services/news';
+import { trigger, state, transition, style, animate } from '@angular/animations';
+
+
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss']
+  styleUrls: ['./homepage.component.scss'],
+  animations: [
+    trigger('fade', [
+      transition('void => *', [
+        style({backgroundColor: 'yellow', opacity: 0}),
+        animate(2000, style({backgroundColor: 'white', opacity: 1}))
+      ])
+    ])
+  ]
 })
 
 export class HomepageComponent implements OnInit {

@@ -46,25 +46,112 @@
       </div>
     </div>
   </mat-toolbar>
-</div>
-<mat-expansion-panel class="news-panel-{{homeNews.news[0].severity}}">
-  <mat-expansion-panel-header>
-    01/01/2018 - 3:40 - {{homeNews.news[0].title}}
-  </mat-expansion-panel-header>
-  {{homeNews.news[0].content}}
-</mat-expansion-panel>
-<mat-divider></mat-divider>
-<mat-expansion-panel class="news-panel-{{homeNews.news[1].severity}}">
-  <mat-expansion-panel-header>
-    01/01/2018 - 2:40 - {{homeNews.news[1]?.title}}
-  </mat-expansion-panel-header>
-  {{homeNews.news[1].content}}
-</mat-expansion-panel>
-<mat-divider></mat-divider>
-<mat-expansion-panel class="news-panel-{{homeNews.news[2].severity}}">
-  <mat-expansion-panel-header>
-    01/01/2018 - 1:40 - {{homeNews.news[2]?.title}}
-  </mat-expansion-panel-header>
-  {{homeNews.news[2].content}}
-</mat-expansion-panel>
-<mat-divider></mat-divider>
+
+<!-- <mat-expansion-panel class="news-panel-{{homeNews.news[0].severity}}">
+      <mat-expansion-panel-header>
+          01/01/2018 - 3:40 - {{homeNews.news[0].title}}
+      </mat-expansion-panel-header>
+        {{homeNews.news[0].content}}
+  </mat-expansion-panel>
+    
+        <mat-divider></mat-divider>
+    
+  <mat-expansion-panel class="news-panel-{{homeNews.news[1].severity}}">
+      <mat-expansion-panel-header>
+       01/01/2018 - 2:40 - {{homeNews.news[1].title}}
+      </mat-expansion-panel-header>
+        {{homeNews.news[1].content}}
+  </mat-expansion-panel>
+        
+        <mat-divider></mat-divider>
+        
+  <mat-expansion-panel class="news-panel-{{homeNews.news[2].severity}}">
+      <mat-expansion-panel-header>
+        01/01/2018 - 1:40 - {{homeNews.news[2].title}}
+      </mat-expansion-panel-header>
+        {{homeNews.news[2].content}}
+  </mat-expansion-panel> -->
+
+  <div id="news-content-wrapper">
+      <div class="home-mat-card">
+
+        <div class="card-image">
+          <img src="./assets/img/ILGU.png" class="home-card-img">
+        </div>
+
+          <div class="mat-card-content">
+              <div class="mat-card-heading">
+                  <h3>Heading</h3>
+              </div>
+            
+    
+              <div>
+                  <p>
+                    description
+                  </p>
+                </div>
+            </div>
+          </div>
+  
+          <div class="home-mat-card">
+
+              <div class="card-image">
+                <img src="./assets/img/ILGU.png" class="home-card-img">
+              </div>
+      
+              <div class="mat-card-content">
+              <div class="mat-card-heading">
+                  <h3>Heading</h3>
+              </div>
+                  
+          
+              <div>
+                <p>
+                 description
+                </p>
+             </div>
+           </div>
+        </div>
+      
+        <div class="home-mat-card">
+
+            <div class="card-image">
+              <img src="./assets/img/ILGU.png" class="home-card-img">
+            </div>
+    
+            <div class="mat-card-content">
+              <div class="mat-card-heading">
+                <h3 @fade>Heading</h3>
+              </div>
+                
+        
+              <div>
+                   <p>
+                    description
+                  </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="home-mat-card">
+
+            <div class="card-image">
+              <img src="./assets/img/ILGU.png" class="home-card-img">
+            </div>
+    
+            <div class="mat-card-content">
+              <div class="mat-card-heading">
+                <h3 @fade>Heading</h3>
+              </div>
+                
+        
+              <div>
+                   <p>
+                    description
+                  </p>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+

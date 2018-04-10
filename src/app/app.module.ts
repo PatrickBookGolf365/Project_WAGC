@@ -7,11 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
 import {AgmCoreModule} from '@agm/core';
 
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './components//navigation/navigation.component';
+import { NavigationComponent } from './components/navigation/nav/navigation.component';
 import { HomepageComponent } from './components//homepage/homepage.component';
 import { LiveScoreComponent } from './components//live-score/live-score.component';
 import { GeolocationComponent } from './components//geolocation/geolocation.component';
 import { TransportComponent } from './components/events/transport/transport.component';
+import { TeamProfilesComponent } from './components/team-profiles/team-profiles.component';
+import { ToolbarComponent } from './components/navigation/toolbar/toolbar.component';
 
 import { AdditionalInfoComponent } from './components/additional-info/additional-info.component';
 import { NewsComponent } from './components/additional-info/news/news.component';
@@ -19,12 +21,12 @@ import { AboutComponent } from './components/additional-info/about/about.compone
 import { EligibilityComponent } from './components/additional-info/eligibitity/eligibility.component';
 import { ScheduleComponent } from './components/additional-info/schedule/schedule.component';
 import { ContactComponent } from './components/additional-info/contact/contact.component';
-import { WeatherService} from './components/homepage/weather.service';
-import { NewsService} from './components/additional-info/news/news.service';
-import {HomeNewsService} from './components/homepage/weather.service';
 import { EventsComponent } from './components/events/events.component';
-import { TeamProfilesComponent } from './components/team-profiles/team-profiles.component';
 
+
+import { WeatherService} from './components/homepage/services/weather.service';
+import { NewsService} from './components/additional-info/news/news.service';
+import { HomeNewsService } from './components/homepage/services/weather.service';
 const appRoutes:
   Routes = [
     { path: "", component: HomepageComponent },
@@ -58,8 +60,7 @@ const appRoutes:
     TransportComponent,
     EventsComponent,
     TeamProfilesComponent,
-    //InformationComponent
-
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

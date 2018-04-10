@@ -1,14 +1,18 @@
+body{
+    overflow-x: hidden;
+}
 #headerImg img{
     width: 100%;
     height: 100%;
     vertical-align: middle;
 }
+#weather-toolbar{
+    background-color: #44bd32;
+}
 #wind{
     font-size: 80%;
     width: 70%;
     text-align: center;
-    
-    
    
 }
 #direction{
@@ -18,26 +22,28 @@
     vertical-align: middle;
     font-size: 165%;
 }
-.horizontal-scroll-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    height: 100%;
-    min-height: 100%;
-  }
-.mat-grid{
+.news-content-wrapper{
     height: 100%;
     width: 100%;
-    margin: 20px;
+    overflow: hidden;
+    z-index: -1; 
 }
-.mat-grid-tile{
-    height: 500px;
-    width: 500px;
+.home-mat-card{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
 }
-
-#weather-toolbar{
-    width:100%;
-    background-color: #5cd65c;
-    overflow:hidden;
+.card-image{
+    height: 20%;
+    width: 33%;
+}
+.home-card-img{
+    height: 100%;
+    width: 100%;
+}
+.mat-card-content{
+    flex-direction: column;
+    margin-left: 6%;
 }
 
