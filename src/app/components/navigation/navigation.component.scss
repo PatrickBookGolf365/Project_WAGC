@@ -2,8 +2,8 @@
   min-width: 1%;
   width: 100%;
 }
-.app-toolbar{
-    background-color: #ebebe0;
+#app-toolbar{
+    background-color: #5cd65c;
     height: 40px;
     width: 100%;
     text-align: center;
@@ -14,28 +14,38 @@
     z-index: 1;
   }
   
-.material-icons.md-dark { color: #d6d6c2; }
-.material-icons.md-dark.md-inactive { color: black; }
+.material-icons.md-dark { color: black; }
+// .material-icons.md-dark.md-inactive { color: black; }
 
-.header-toolbar {
-    background-color: #5cd65c;
-    height: 40px;
-    width: 100%;
+#header-toolbar {
+  background-color: #EEEEEE;
+  width: 100%;
+  height: 100%;
   }
 
-  .example-fill-remaining-space {
-    /* This fills the remaining space, by using flexbox. 
-       Every toolbar row uses a flexbox row layout. */
-    flex: 1 1 auto;
+.example-fill-remaining-space {
+  flex: 1 1 auto;
   }
 
-  #header-logos img{
+  #header-toolbar mat-icon {
     width: 100%;
     height: 100%;
-  }
-
-  #header-logos mat-icon{
-    width: 15%;
-    height: 15%;
     vertical-align: middle;
   }
+ 
+  #ILGU-logo{
+   width: 150%;
+   height: 150%;
+   
+  }
+
+  #GUI2-logo{
+  width: 40%;
+  height: 40%;
+ 
+  margin-left: 6%;
+  }
+
+
+  
+  

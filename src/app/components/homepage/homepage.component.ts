@@ -6,13 +6,13 @@ import { IHomeNews} from './news';
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css']
+  styleUrls: ['./homepage.component.scss']
 })
 
 export class HomepageComponent implements OnInit {
   errorMessage: string;
   weather: IWeather[] = [];
-  homeNews: IHomeNews[] =[];
+  homeNews: IHomeNews[] = [];
 
 
   constructor(private _weatherService:WeatherService, private _homeNewsService: HomeNewsService) {

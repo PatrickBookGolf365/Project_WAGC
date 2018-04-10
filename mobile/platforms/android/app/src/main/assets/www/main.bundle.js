@@ -73,22 +73,23 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_material_module__ = __webpack_require__("./src/app/shared/material.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_navigation_navigation_component__ = __webpack_require__("./src/app/components/navigation/navigation.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_homepage_homepage_component__ = __webpack_require__("./src/app/components/homepage/homepage.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_live_score_live_score_component__ = __webpack_require__("./src/app/components/live-score/live-score.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_geolocation_geolocation_component__ = __webpack_require__("./src/app/components/geolocation/geolocation.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_events_transport_transport_component__ = __webpack_require__("./src/app/components/events/transport/transport.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_additional_info_additional_info_component__ = __webpack_require__("./src/app/components/additional-info/additional-info.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_additional_info_news_news_component__ = __webpack_require__("./src/app/components/additional-info/news/news.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_additional_info_about_about_component__ = __webpack_require__("./src/app/components/additional-info/about/about.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_additional_info_eligibitity_eligibility_component__ = __webpack_require__("./src/app/components/additional-info/eligibitity/eligibility.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_additional_info_schedule_schedule_component__ = __webpack_require__("./src/app/components/additional-info/schedule/schedule.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_additional_info_contact_contact_component__ = __webpack_require__("./src/app/components/additional-info/contact/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_homepage_weather_service__ = __webpack_require__("./src/app/components/homepage/weather.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_additional_info_news_news_service__ = __webpack_require__("./src/app/components/additional-info/news/news.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_events_events_component__ = __webpack_require__("./src/app/components/events/events.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_team_profiles_team_profiles_component__ = __webpack_require__("./src/app/components/team-profiles/team-profiles.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__agm_core__ = __webpack_require__("./node_modules/@agm/core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_navigation_navigation_component__ = __webpack_require__("./src/app/components/navigation/navigation.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_homepage_homepage_component__ = __webpack_require__("./src/app/components/homepage/homepage.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_live_score_live_score_component__ = __webpack_require__("./src/app/components/live-score/live-score.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_geolocation_geolocation_component__ = __webpack_require__("./src/app/components/geolocation/geolocation.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_events_transport_transport_component__ = __webpack_require__("./src/app/components/events/transport/transport.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_additional_info_additional_info_component__ = __webpack_require__("./src/app/components/additional-info/additional-info.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_additional_info_news_news_component__ = __webpack_require__("./src/app/components/additional-info/news/news.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_additional_info_about_about_component__ = __webpack_require__("./src/app/components/additional-info/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_additional_info_eligibitity_eligibility_component__ = __webpack_require__("./src/app/components/additional-info/eligibitity/eligibility.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_additional_info_schedule_schedule_component__ = __webpack_require__("./src/app/components/additional-info/schedule/schedule.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_additional_info_contact_contact_component__ = __webpack_require__("./src/app/components/additional-info/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_homepage_weather_service__ = __webpack_require__("./src/app/components/homepage/weather.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_additional_info_news_news_service__ = __webpack_require__("./src/app/components/additional-info/news/news.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_events_events_component__ = __webpack_require__("./src/app/components/events/events.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_team_profiles_team_profiles_component__ = __webpack_require__("./src/app/components/team-profiles/team-profiles.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -118,18 +119,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
-    { path: "", component: __WEBPACK_IMPORTED_MODULE_8__components_homepage_homepage_component__["a" /* HomepageComponent */] },
-    { path: 'live-score', component: __WEBPACK_IMPORTED_MODULE_9__components_live_score_live_score_component__["a" /* LiveScoreComponent */] },
-    { path: 'geo-location', component: __WEBPACK_IMPORTED_MODULE_10__components_geolocation_geolocation_component__["a" /* GeolocationComponent */] },
-    { path: 'events', component: __WEBPACK_IMPORTED_MODULE_20__components_events_events_component__["a" /* EventsComponent */] },
-    { path: 'add-info', component: __WEBPACK_IMPORTED_MODULE_12__components_additional_info_additional_info_component__["a" /* AdditionalInfoComponent */] },
-    { path: 'profiles', component: __WEBPACK_IMPORTED_MODULE_21__components_team_profiles_team_profiles_component__["a" /* TeamProfilesComponent */] },
-    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_14__components_additional_info_about_about_component__["a" /* AboutComponent */] },
-    { path: 'news', component: __WEBPACK_IMPORTED_MODULE_13__components_additional_info_news_news_component__["a" /* NewsComponent */] },
-    { path: 'eligibility', component: __WEBPACK_IMPORTED_MODULE_15__components_additional_info_eligibitity_eligibility_component__["a" /* EligibilityComponent */] },
-    { path: 'schedule', component: __WEBPACK_IMPORTED_MODULE_16__components_additional_info_schedule_schedule_component__["a" /* ScheduleComponent */] },
-    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_17__components_additional_info_contact_contact_component__["a" /* ContactComponent */] },
+    { path: "", component: __WEBPACK_IMPORTED_MODULE_9__components_homepage_homepage_component__["a" /* HomepageComponent */] },
+    { path: 'live-score', component: __WEBPACK_IMPORTED_MODULE_10__components_live_score_live_score_component__["a" /* LiveScoreComponent */] },
+    { path: 'geo-location', component: __WEBPACK_IMPORTED_MODULE_11__components_geolocation_geolocation_component__["a" /* GeolocationComponent */] },
+    { path: 'events', component: __WEBPACK_IMPORTED_MODULE_21__components_events_events_component__["a" /* EventsComponent */] },
+    { path: 'add-info', component: __WEBPACK_IMPORTED_MODULE_13__components_additional_info_additional_info_component__["a" /* AdditionalInfoComponent */] },
+    { path: 'profiles', component: __WEBPACK_IMPORTED_MODULE_22__components_team_profiles_team_profiles_component__["a" /* TeamProfilesComponent */] },
+    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_15__components_additional_info_about_about_component__["a" /* AboutComponent */] },
+    { path: 'news', component: __WEBPACK_IMPORTED_MODULE_14__components_additional_info_news_news_component__["a" /* NewsComponent */] },
+    { path: 'eligibility', component: __WEBPACK_IMPORTED_MODULE_16__components_additional_info_eligibitity_eligibility_component__["a" /* EligibilityComponent */] },
+    { path: 'schedule', component: __WEBPACK_IMPORTED_MODULE_17__components_additional_info_schedule_schedule_component__["a" /* ScheduleComponent */] },
+    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_18__components_additional_info_contact_contact_component__["a" /* ContactComponent */] },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 var AppModule = /** @class */ (function () {
@@ -138,31 +140,34 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__components_navigation_navigation_component__["a" /* NavigationComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__components_homepage_homepage_component__["a" /* HomepageComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__components_live_score_live_score_component__["a" /* LiveScoreComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__components_geolocation_geolocation_component__["a" /* GeolocationComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__components_events_transport_transport_component__["a" /* TransportComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__components_additional_info_additional_info_component__["a" /* AdditionalInfoComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__components_additional_info_news_news_component__["a" /* NewsComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__components_additional_info_about_about_component__["a" /* AboutComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__components_additional_info_eligibitity_eligibility_component__["a" /* EligibilityComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__components_additional_info_schedule_schedule_component__["a" /* ScheduleComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__components_additional_info_contact_contact_component__["a" /* ContactComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__components_events_transport_transport_component__["a" /* TransportComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__components_events_events_component__["a" /* EventsComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__components_team_profiles_team_profiles_component__["a" /* TeamProfilesComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__components_navigation_navigation_component__["a" /* NavigationComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__components_homepage_homepage_component__["a" /* HomepageComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__components_live_score_live_score_component__["a" /* LiveScoreComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__components_geolocation_geolocation_component__["a" /* GeolocationComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__components_events_transport_transport_component__["a" /* TransportComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_additional_info_additional_info_component__["a" /* AdditionalInfoComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__components_additional_info_news_news_component__["a" /* NewsComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__components_additional_info_about_about_component__["a" /* AboutComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__components_additional_info_eligibitity_eligibility_component__["a" /* EligibilityComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__components_additional_info_schedule_schedule_component__["a" /* ScheduleComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__components_additional_info_contact_contact_component__["a" /* ContactComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__components_events_transport_transport_component__["a" /* TransportComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__components_events_events_component__["a" /* EventsComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__components_team_profiles_team_profiles_component__["a" /* TeamProfilesComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_4__shared_material_module__["a" /* MaterialModule */],
                 __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_6__agm_core__["a" /* AgmCoreModule */].forRoot({
+                    apiKey: 'AIzaSyDSNCNtbKTFkC6jUWtIdwAa-Kxz4CD69yY'
+                }),
                 __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRoutes)
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_18__components_homepage_weather_service__["b" /* WeatherService */], __WEBPACK_IMPORTED_MODULE_19__components_additional_info_news_news_service__["a" /* NewsService */], __WEBPACK_IMPORTED_MODULE_18__components_homepage_weather_service__["a" /* HomeNewsService */]],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_19__components_homepage_weather_service__["b" /* WeatherService */], __WEBPACK_IMPORTED_MODULE_20__components_additional_info_news_news_service__["a" /* NewsService */], __WEBPACK_IMPORTED_MODULE_19__components_homepage_weather_service__["a" /* HomeNewsService */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -175,7 +180,7 @@ var AppModule = /** @class */ (function () {
 /***/ "./src/app/components/additional-info/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\r\n\r\n<mat-card class=\"example-card\">\r\n    <mat-card-header>\r\n      <div mat-card-avatar class=\"example-header-image\"></div>\r\n      <mat-card-title>About </mat-card-title>\r\n      <mat-card-subtitle>World Amatuer Team Championships</mat-card-subtitle>\r\n    </mat-card-header>\r\n    <img class=\"mat-card-image\" src=\"assets/cartonHouse2.jpg\" alt=\"Photo of a Shiba Inu\" >\r\n    <mat-card-content class=\"mat-card-content\">\r\n      <h3>About WATC 2018 in Ireland</h3>\r\n      <p>\r\n          The Golfing Union of Ireland (GUI) and the Irish Ladies Golfing Union (ILGU) will host the 2018 World Amateur Team Championships - with the Epsirito Santo Trophy (women) being competed for from Wednesday 29th August until Saturday 1st September and the Eisenhower Trophy (men) being competed for from Wednesday 5th September until Saturday 8th September. The two events will be staged at Carton House, where players will be tested on the world-famous O’Meara and Montgomerie courses . The Championships together represent an international festival of golf, during which time a Championship Gala Dinner for all participants will be staged at Maynooth University and the Biennial Meeting of the International Golf Federation will be held in Carton House on Monday 3rd September.\r\n      </p>\r\n    </mat-card-content>\r\n    <mat-card-actions>\r\n      <button mat-button>LIKE</button>\r\n      <button mat-button>SHARE</button>\r\n    </mat-card-actions>\r\n  </mat-card>\r\n"
+module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\r\n\r\n<mat-card class=\"example-card\">\r\n    <mat-card-header>\r\n      <div mat-card-avatar class=\"example-header-image\"></div>\r\n      <mat-card-title>About </mat-card-title>\r\n      <mat-card-subtitle>World Amatuer Team Championships</mat-card-subtitle>\r\n    </mat-card-header>\r\n    <img class=\"mat-card-image\" src=\"assets/img/cartonHouse2.jpg\" alt=\"Photo of a Shiba Inu\" >\r\n    <mat-card-content class=\"mat-card-content\">\r\n      <h3>About WATC 2018 in Ireland</h3>\r\n      <p>\r\n          The Golfing Union of Ireland (GUI) and the Irish Ladies Golfing Union (ILGU) will host the 2018 World Amateur Team Championships - with the Epsirito Santo Trophy (women) being competed for from Wednesday 29th August until Saturday 1st September and the Eisenhower Trophy (men) being competed for from Wednesday 5th September until Saturday 8th September. The two events will be staged at Carton House, where players will be tested on the world-famous O’Meara and Montgomerie courses . The Championships together represent an international festival of golf, during which time a Championship Gala Dinner for all participants will be staged at Maynooth University and the Biennial Meeting of the International Golf Federation will be held in Carton House on Monday 3rd September.\r\n      </p>\r\n    </mat-card-content>\r\n    <mat-card-actions>\r\n      <button mat-button>LIKE</button>\r\n      <button mat-button>SHARE</button>\r\n    </mat-card-actions>\r\n  </mat-card>\r\n"
 
 /***/ }),
 
@@ -325,7 +330,7 @@ var ContactComponent = /** @class */ (function () {
 /***/ "./src/app/components/additional-info/eligibitity/eligibility.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\r\n\r\n<mat-card class=\"example-card\">\r\n    <mat-card-header>\r\n      <div mat-card-avatar class=\"example-header-image\"></div>\r\n      <mat-card-title>Eligibility</mat-card-title>\r\n      <mat-card-subtitle>World Amatuer Team Championships</mat-card-subtitle>\r\n    </mat-card-header>\r\n    <img class=\"mat-card-image\" src=\"assets/cartonHouse2.jpg\" alt=\"Photo of a Shiba Inu\" >\r\n    <mat-card-content class=\"mat-card-content\">\r\n      <h3>Eligibility</h3>\r\n      <p>\r\n          IGF National Federation Members may enter one women’s team and one men’s team. Players must be amateur golfers under the Rules of Amateur Status of the R&A and the United States Golf Association and nationals of the countries they represent, as defined in the IGF’s Nationality Policy.\r\n      </p>\r\n    </mat-card-content>\r\n  </mat-card>\r\n"
+module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\r\n\r\n<mat-card class=\"example-card\">\r\n    <mat-card-header>\r\n      <div mat-card-avatar class=\"example-header-image\"></div>\r\n      <mat-card-title>Eligibility</mat-card-title>\r\n      <mat-card-subtitle>World Amatuer Team Championships</mat-card-subtitle>\r\n    </mat-card-header>\r\n    <img class=\"mat-card-image\" src=\"assets/img/cartonHouse2.jpg\" alt=\"Photo of a Shiba Inu\" >\r\n    <mat-card-content class=\"mat-card-content\">\r\n      <h3>Eligibility</h3>\r\n      <p>\r\n          IGF National Federation Members may enter one women’s team and one men’s team. Players must be amateur golfers under the Rules of Amateur Status of the R&A and the United States Golf Association and nationals of the countries they represent, as defined in the IGF’s Nationality Policy.\r\n      </p>\r\n    </mat-card-content>\r\n  </mat-card>\r\n"
 
 /***/ }),
 
@@ -535,7 +540,7 @@ var ScheduleComponent = /** @class */ (function () {
 /***/ "./src/app/components/events/events.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  events works!\n  <app-transport></app-transport>\n</p>\n"
+module.exports = "<!-- <section class=\"section1\">\r\n  <div class=\"box\"></div>\r\n  <div class=\"box\"></div>\r\n  <div class=\"box\"></div>\r\n  <div class=\"box\"></div>\r\n  <div class=\"box\"></div>\r\n  \r\n  </section>\r\n  \r\n  <div class=\"wrapper\">\r\n  <mat-divider class=\"mat-elevation-z4\"></mat-divider>\r\n  <mat-progress-bar mode=\"indeterminate\"></mat-progress-bar>\r\n  </div> -->\r\n  \r\n  <app-transport></app-transport>"
 
 /***/ }),
 
@@ -585,14 +590,14 @@ var EventsComponent = /** @class */ (function () {
 /***/ "./src/app/components/events/transport/transport.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  transport works!\r\n</p>\r\n"
+module.exports = "<mat-toolbar id=\"transport-toolbar\">\r\n    <mat-form-field id=\"location-field\">\r\n        <mat-select placeholder=\"Choose an Area\" [(value)]=\"mainSelected\">\r\n            <mat-option value=\"Carton House\" class=\"mat-select\">Carton House</mat-option>\r\n            <mat-option value=\"Maynooth University\" class=\"mat-select\">Maynooth University</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n\r\n    <mat-form-field class=\"stop-field\">\r\n        <mat-select placeholder=\"Choose a location\" [(value)]=\"childSelected\">\r\n            <div *ngIf=\"mainSelected == 'Carton House'\">\r\n                <mat-option value=\"National Academy\" class=\"mat-select\">National Academy</mat-option>\r\n                <mat-option value=\"Hotel Reception\" class=\"mat-select\">Hotel Reception</mat-option>\r\n                <mat-option value=\"Club House Roundabout\" class=\"mat-select\">Club House Roundabout</mat-option>\r\n            </div>\r\n            <div *ngIf=\"mainSelected == 'Maynooth University'\">\r\n                <mat-option value=\"North Campus Apartment Complex\" class=\"mat-select\">North Campus Apartment Complex</mat-option>\r\n                <mat-option value=\"Nort Campus Phonenix Restaurant\" class=\"mat-select\">North Campus Phonenix Restaurant</mat-option>\r\n                <mat-option value=\"North Campus Pedestrian crossing\" class=\"mat-select\">North Campus Pedestrian crossing</mat-option>\r\n            </div>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n</mat-toolbar>\r\n\r\n<agm-map *ngIf=\"mainSelected == 'Carton House'\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\" disableDefaultUI=\"true\" setZoom=\"11\">\r\n        <agm-marker *ngIf=\"mainSelected == 'Carton House' && childSelected == null\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\"></agm-marker>\r\n    <div *ngIf=\"childSelected == 'National Academy'\">\r\n        <agm-marker [latitude]=\"NationalAcademylat\" [longitude]=\"NationalAcademylng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"childSelected == 'Hotel Reception'\">\r\n        <agm-marker [latitude]=\"HotelReceptionlat\" [longitude]=\"HotelReceptionlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"childSelected == 'Club House Roundabout'\">\r\n        <agm-marker [latitude]=\"ClubHouseRoundaboutlat\" [longitude]=\"ClubHouseRoundaboutlng\"></agm-marker>\r\n    </div>\r\n</agm-map>\r\n<agm-map *ngIf=\"mainSelected == 'Maynooth University'\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\" disableDefaultUI=\"true\" setZoom=\"11\">\r\n        <agm-marker *ngIf=\"mainSelected == 'Maynooth University' && childSelected == null\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\"></agm-marker>\r\n    <div *ngIf=\"childSelected == 'North Campus Apartment Complex'\">\r\n        <agm-marker [latitude]=\"ApartmentComplexlat\" [longitude]=\"ApartmentComplexlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"childSelected == 'Nort Campus Phonenix Restaurant'\">\r\n        <agm-marker [latitude]=\"PhoenixRestaurantlat\" [longitude]=\"PhoenixRestaurantlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"childSelected == 'North Campus Pedestrian crossing'\">\r\n        <agm-marker [latitude]=\"PedestrianCrosslat\" [longitude]=\"PedestrianCrosslng\"></agm-marker>\r\n    </div>\r\n</agm-map>\r\n\r\n\r\n<mat-table #table [dataSource]=\"dataSource\" id=\"timetable\">\r\n\r\n    <ng-container matColumnDef=\"bus\">\r\n        <mat-header-cell *matHeaderCellDef> Bus </mat-header-cell>\r\n        <mat-cell *matCellDef=\"let bus\"> {{bus.position}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"times\">\r\n        <mat-header-cell *matHeaderCellDef> Times </mat-header-cell>\r\n        <mat-cell *matCellDef=\"let times\"> {{times.name}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\r\n    <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\r\n</mat-table>"
 
 /***/ }),
 
 /***/ "./src/app/components/events/transport/transport.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".stop-field, #location-field {\n  width: 45%;\n  font-size: 70%; }\n\nagm-map {\n  height: 200px;\n  width: 100%; }\n\n#timetable {\n  text-align: center; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto; }\n"
 
 /***/ }),
 
@@ -608,26 +613,42 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
 var TransportComponent = /** @class */ (function () {
     function TransportComponent() {
+        this.displayedColumns = ['bus', 'times'];
+        this.dataSource = ELEMENT_DATA;
+        this.NationalAcademylat = 53.394427;
+        this.NationalAcademylng = -6.560887;
+        this.HotelReceptionlat = 53.391241;
+        this.HotelReceptionlng = -6.566353;
+        this.ClubHouseRoundaboutlat = 53.390675;
+        this.ClubHouseRoundaboutlng = -6.567644;
+        this.Cartondefaultlat = 53.390995;
+        this.Cartondefaultlng = -6.566462;
+        this.MaynoothDefaultlat = 53.380809;
+        this.MaynoothDefaultlng = -6.594588;
+        this.ApartmentComplexlat = 53.380337;
+        this.ApartmentComplexlng = -6.595629;
+        this.PhoenixRestaurantlat = 53.383985;
+        this.PhoenixRestaurantlng = -6.604083;
+        this.PedestrianCrosslat = 53.382562;
+        this.PedestrianCrosslng = -6.600772;
     }
-    TransportComponent.prototype.ngOnInit = function () {
-    };
     TransportComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-transport',
             template: __webpack_require__("./src/app/components/events/transport/transport.component.html"),
             styles: [__webpack_require__("./src/app/components/events/transport/transport.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
+        })
     ], TransportComponent);
     return TransportComponent;
 }());
 
+var ELEMENT_DATA = [
+    { position: 1, name: '11:30', weight: 1.0079, symbol: 'H' },
+    { position: 2, name: '11:00', weight: 4.0026, symbol: 'He' },
+];
 
 
 /***/ }),
@@ -682,17 +703,17 @@ var GeolocationComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/homepage/homepage.component.css":
-/***/ (function(module, exports) {
-
-module.exports = "#home-wrapper{\r\n    width: 100%;\r\n    height: 100%;\r\n    font-family: 'Lato', sans-serif; \r\n}\r\n\r\n#headerImg img{\r\n    width: 100%;\r\n    height: 100%;\r\n    vertical-align: middle;\r\n}\r\n\r\n#wind{\r\n    font-size: 90%;\r\n    width: 100%;\r\n    text-align: center;\r\n   \r\n}\r\n\r\n#direction{\r\n    float: right;\r\n}\r\n\r\n#forecast{\r\n   vertical-align: middle;\r\n    font-size: 200%;\r\n}\r\n\r\n.news-panel{\r\n    \r\n    margin: 1%;\r\n}\r\n\r\n"
-
-/***/ }),
-
 /***/ "./src/app/components/homepage/homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"home-wrapper\">\r\n  <div id=\"headerImg\">\r\n    <img src=\"./assets/img/WATC.jpg\">\r\n  </div>\r\n  <mat-toolbar id=\"weather-toolbar\">\r\n    <div id=\"forecast\">\r\n      <span>\r\n        {{weather.main.temp | number:'1.0-0'}}&deg;c\r\n      </span>\r\n      <mat-divider></mat-divider>\r\n    </div>\r\n    <div id=\"wind\">\r\n      <!-- make button to change to fareinhit -->\r\n      <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>\r\n      <div id=\"direction\">\r\n        <span *ngIf=\"weather.wind.deg >= 0 && weather.wind.deg <= 22.50\">\r\n          North\r\n        </span>\r\n        <div *ngIf=\"weather.wind.deg > 22.50 && weather.wind.deg <= 67.50\">\r\n          North-East\r\n        </div>\r\n        <span *ngIf=\"weather.wind.deg > 67.50 && weather.wind.deg <= 112.50\">\r\n          East\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 112.50 && weather.wind.deg <= 157.50\">\r\n          South-East\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 157.50 && weather.wind.deg <= 202.50\">\r\n          South\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 202.50 && weather.wind.deg <= 247.50\">\r\n          South-West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 247.50 && weather.wind.deg <= 292.50\">\r\n          West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 292.50 && weather.wind.deg <= 337.50\">\r\n          North-West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 337.50 &&weather.wind.deg <= 360\">\r\n          North\r\n        </span>\r\n      </div>\r\n      <mat-divider></mat-divider>\r\n    </div>\r\n  </mat-toolbar>\r\n\r\n          <mat-expansion-panel class=\"news-panel-{{homeNews.news[0].severity}}\">\r\n            <mat-expansion-panel-header>\r\n              01/01/2018 - 3:40 - {{homeNews.news[0].title}}\r\n            </mat-expansion-panel-header>\r\n            {{homeNews.news[0].content}}\r\n          </mat-expansion-panel>\r\n        \r\n          <mat-expansion-panel class=\"news-panel-{{homeNews.news[1].severity}}\">\r\n            <mat-expansion-panel-header>\r\n              01/01/2018 - 2:40 - {{homeNews.news[1].title}}\r\n            </mat-expansion-panel-header>\r\n            {{homeNews.news[1].content}}\r\n          </mat-expansion-panel>\r\n        \r\n          <mat-expansion-panel class=\"news-panel-{{homeNews.news[2].severity}}\">\r\n            <mat-expansion-panel-header>\r\n              01/01/2018 - 1:40 - {{homeNews.news[2].title}}\r\n            </mat-expansion-panel-header>\r\n            {{homeNews.news[2].content}}\r\n          </mat-expansion-panel>\r\n  <mat-divider></mat-divider>\r\n  <mat-grid-list cols=\"2\" rowHeight=\"1:1\">\r\n    <mat-grid-tile>\r\n      <p>Section 3</p>\r\n    </mat-grid-tile>\r\n\r\n    <mat-grid-tile>\r\n      <p>Section 3</p>\r\n    </mat-grid-tile>\r\n  </mat-grid-list>"
+module.exports = "<div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\">\r\n</div>\r\n\r\n<div id=\"weather-api\">\r\n  <mat-toolbar id=\"weather-toolbar\">\r\n    <div id=\"forecast\">\r\n      <span>\r\n        {{weather.main.temp | number:'1.0-0'}}&deg;c\r\n      </span>\r\n\r\n    </div><div id=\"wind\">\r\n      <!-- make button to change to fareinhit -->\r\n      <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>\r\n      <div id=\"direction\">\r\n        <span *ngIf=\"weather.wind.deg >= 0 && weather.wind.deg <= 22.50\">\r\n          North\r\n        </span>\r\n        <div *ngIf=\"weather.wind.deg > 22.50 && weather.wind.deg <= 67.50\">\r\n          North-East\r\n        </div>\r\n        <span *ngIf=\"weather.wind.deg > 67.50 && weather.wind.deg <= 112.50\">\r\n          East\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 112.50 && weather.wind.deg <= 157.50\">\r\n          South-East\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 157.50 && weather.wind.deg <= 202.50\">\r\n          South\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 202.50 && weather.wind.deg <= 247.50\">\r\n          South-West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 247.50 && weather.wind.deg <= 292.50\">\r\n          West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 292.50 && weather.wind.deg <= 337.50\">\r\n          North-West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 337.50 && weather.wind.deg <= 360\">\r\n          North\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg == null\">\r\n          Calm wind\r\n        </span>\r\n      </div>\r\n    </div>\r\n  </mat-toolbar>\r\n</div>\r\n<mat-expansion-panel class=\"news-panel-{{homeNews.news[0].severity}}\">\r\n  <mat-expansion-panel-header>\r\n    01/01/2018 - 3:40 - {{homeNews.news[0].title}}\r\n  </mat-expansion-panel-header>\r\n  {{homeNews.news[0].content}}\r\n</mat-expansion-panel>\r\n<mat-divider></mat-divider>\r\n<mat-expansion-panel class=\"news-panel-{{homeNews.news[1].severity}}\">\r\n  <mat-expansion-panel-header>\r\n    01/01/2018 - 2:40 - {{homeNews.news[1]?.title}}\r\n  </mat-expansion-panel-header>\r\n  {{homeNews.news[1].content}}\r\n</mat-expansion-panel>\r\n<mat-divider></mat-divider>\r\n<mat-expansion-panel class=\"news-panel-{{homeNews.news[2].severity}}\">\r\n  <mat-expansion-panel-header>\r\n    01/01/2018 - 1:40 - {{homeNews.news[2]?.title}}\r\n  </mat-expansion-panel-header>\r\n  {{homeNews.news[2].content}}\r\n</mat-expansion-panel>\r\n<mat-divider></mat-divider>"
+
+/***/ }),
+
+/***/ "./src/app/components/homepage/homepage.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = "#headerImg img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#wind {\n  font-size: 80%;\n  width: 70%;\n  text-align: center; }\n\n#direction {\n  float: right; }\n\n#forecast {\n  vertical-align: middle;\n  font-size: 165%; }\n\n.horizontal-scroll-wrapper {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  height: 100%;\n  min-height: 100%; }\n\n.mat-grid {\n  height: 100%;\n  width: 100%;\n  margin: 20px; }\n\n.mat-grid-tile {\n  height: 500px;\n  width: 500px; }\n\n#weather-toolbar {\n  width: 100%;\n  background-color: #5cd65c;\n  overflow: hidden; }\n"
 
 /***/ }),
 
@@ -736,7 +757,7 @@ var HomepageComponent = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-homepage',
             template: __webpack_require__("./src/app/components/homepage/homepage.component.html"),
-            styles: [__webpack_require__("./src/app/components/homepage/homepage.component.css")]
+            styles: [__webpack_require__("./src/app/components/homepage/homepage.component.scss")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__weather_service__["b" /* WeatherService */], __WEBPACK_IMPORTED_MODULE_1__weather_service__["a" /* HomeNewsService */]])
     ], HomepageComponent);
@@ -873,14 +894,14 @@ var LiveScoreComponent = /** @class */ (function () {
 /***/ "./src/app/components/navigation/navigation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"toolbar-wrapper\">\r\n        <mat-toolbar class=\"header-toolbar\">\r\n          <span class=\"example-fill-remaining-space\"></span>\r\n          <span>\r\n            <button type=\"button\" mat-button routerLink=\"add-info\">\r\n                <mat-icon>info</mat-icon>\r\n            </button>\r\n          </span>\r\n        </mat-toolbar>\r\n      </div>\r\n      <div id=\"mainWrapper\">\r\n          <router-outlet></router-outlet>\r\n        </div>\r\n      <div id=\"nav-wrapper\">\r\n        <mat-toolbar class=\"app-toolbar\">\r\n          <button type=\"button\" mat-button routerLink=\"\">\r\n            <mat-icon>home</mat-icon>\r\n          </button>\r\n          <button type=\"button\" mat-button routerLink=\"live-score\">\r\n            <mat-icon>assessment</mat-icon>\r\n          </button>\r\n          <button type=\"button\" mat-button routerLink=\"geo-location\">\r\n            <mat-icon>place</mat-icon>\r\n          </button>\r\n          <button type=\"button\" mat-button routerLink=\"events\">\r\n            <mat-icon>event</mat-icon>\r\n          </button>\r\n          <button type=\"button\" mat-button routerLink=\"profiles\">\r\n            <mat-icon>account_box</mat-icon>\r\n          </button>\r\n        </mat-toolbar>\r\n      </div>"
+module.exports = "<mat-toolbar id=\"header-toolbar\">\r\n      <span><mat-icon><img src=\"./assets/img/ILGU.png\" id=\"ILGU-logo\"></mat-icon></span>\r\n      <span><mat-icon><img src=\"./assets/img/GUI2.png\" id=\"GUI2-logo\"></mat-icon></span>\r\n      <span><button id=\"Info-button\" type=\"button\" mat-button routerLink=\"add-info\"><mat-icon>info_outline</mat-icon></button></span>\r\n</mat-toolbar>\r\n\r\n<mat-toolbar id=\"app-toolbar\">\r\n\r\n  <button type=\"button\" mat-button routerLink=\"\">\r\n    <i class=\"material-icons md-dark\">home</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"live-score\">\r\n    <i class=\"material-icons md-dark\">assessment</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"events\">\r\n    <i class=\"material-icons md-dark md-inactive\">event_note</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"geo-location\">\r\n    <i class=\"material-icons md-dark md-inactive\">location_on</i>\r\n  </button>\r\n\r\n</mat-toolbar>\r\n<router-outlet></router-outlet>"
 
 /***/ }),
 
 /***/ "./src/app/components/navigation/navigation.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ".mat-button {\n  min-width: 1%; }\n\n.app-toolbar {\n  background-color: #26A65B;\n  width: 100%;\n  text-align: center;\n  position: fixed;\n  bottom: 0;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  z-index: 1; }\n\n.header-toolbar {\n  background-color: #26A65B;\n  width: 100%; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto; }\n"
+module.exports = ".mat-button {\n  min-width: 1%;\n  width: 100%; }\n\n#app-toolbar {\n  background-color: #5cd65c;\n  height: 40px;\n  width: 100%;\n  text-align: center;\n  position: fixed;\n  bottom: 0;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  z-index: 1; }\n\n.material-icons.md-dark {\n  color: black; }\n\n#header-toolbar {\n  background-color: #5cd65c;\n  width: 100%;\n  height: 100%; }\n\n.example-fill-remaining-space {\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto; }\n\n#header-toolbar mat-icon {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#ILGU-logo {\n  width: 180%;\n  height: 180%; }\n\n#GUI2-logo {\n  width: 50%;\n  height: 50%;\n  margin-left: 10%; }\n"
 
 /***/ }),
 

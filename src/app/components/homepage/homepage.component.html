@@ -1,16 +1,15 @@
-  <div id="headerImg">
-    <img src="./assets/img/WATC.jpg">
-  </div>
-  
+<div id="headerImg">
+  <img src="./assets/img/WATC.jpg">
+</div>
+
+<div id="weather-api">
   <mat-toolbar id="weather-toolbar">
     <div id="forecast">
       <span>
         {{weather.main.temp | number:'1.0-0'}}&deg;c
       </span>
-      
-    </div>
 
-    <div id="wind">
+    </div><div id="wind">
       <!-- make button to change to fareinhit -->
       <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>
       <div id="direction">
@@ -38,31 +37,34 @@
         <span *ngIf="weather.wind.deg > 292.50 && weather.wind.deg <= 337.50">
           North-West
         </span>
-        <span *ngIf="weather.wind.deg > 337.50 &&weather.wind.deg <= 360">
+        <span *ngIf="weather.wind.deg > 337.50 && weather.wind.deg <= 360">
           North
+        </span>
+        <span *ngIf="weather.wind.deg == null">
+          Calm wind
         </span>
       </div>
     </div>
   </mat-toolbar>
-          <mat-expansion-panel class="news-panel-{{homeNews.news[0].severity}}">
-            <mat-expansion-panel-header>
-              01/01/2018 - 3:40 - {{homeNews.news[0].title}}
-            </mat-expansion-panel-header>
-            {{homeNews.news[0].content}}
-          </mat-expansion-panel>
-          <mat-divider></mat-divider>
-          <mat-expansion-panel class="news-panel-{{homeNews.news[1].severity}}">
-            <mat-expansion-panel-header>
-              01/01/2018 - 2:40 - {{homeNews.news[1].title}}
-            </mat-expansion-panel-header>
-            {{homeNews.news[1].content}}
-          </mat-expansion-panel>
-          <mat-divider></mat-divider>
-          <mat-expansion-panel class="news-panel-{{homeNews.news[2].severity}}">
-            <mat-expansion-panel-header>
-              01/01/2018 - 1:40 - {{homeNews.news[2].title}}
-            </mat-expansion-panel-header>
-            {{homeNews.news[2].content}}
-          </mat-expansion-panel>
-  <mat-divider></mat-divider>
- 
+</div>
+<mat-expansion-panel class="news-panel-{{homeNews.news[0].severity}}">
+  <mat-expansion-panel-header>
+    01/01/2018 - 3:40 - {{homeNews.news[0].title}}
+  </mat-expansion-panel-header>
+  {{homeNews.news[0].content}}
+</mat-expansion-panel>
+<mat-divider></mat-divider>
+<mat-expansion-panel class="news-panel-{{homeNews.news[1].severity}}">
+  <mat-expansion-panel-header>
+    01/01/2018 - 2:40 - {{homeNews.news[1]?.title}}
+  </mat-expansion-panel-header>
+  {{homeNews.news[1].content}}
+</mat-expansion-panel>
+<mat-divider></mat-divider>
+<mat-expansion-panel class="news-panel-{{homeNews.news[2].severity}}">
+  <mat-expansion-panel-header>
+    01/01/2018 - 1:40 - {{homeNews.news[2]?.title}}
+  </mat-expansion-panel-header>
+  {{homeNews.news[2].content}}
+</mat-expansion-panel>
+<mat-divider></mat-divider>

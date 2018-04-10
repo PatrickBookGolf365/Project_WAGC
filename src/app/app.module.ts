@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from './shared/material.module';
 import { HttpClientModule } from '@angular/common/http';
+import {AgmCoreModule} from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components//navigation/navigation.component';
@@ -65,6 +66,10 @@ const appRoutes:
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDSNCNtbKTFkC6jUWtIdwAa-Kxz4CD69yY'
+    }),
+
     RouterModule.forRoot(
       appRoutes
     )
