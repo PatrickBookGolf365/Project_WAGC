@@ -1,16 +1,15 @@
-  <div id="headerImg">
-    <img src="./assets/img/WATC.jpg">
-  </div>
-  
+<div id="headerImg">
+  <img src="./assets/img/WATC.jpg">
+</div>
+
+<div id="weather-api">
   <mat-toolbar id="weather-toolbar">
     <div id="forecast">
       <span>
         {{weather.main.temp | number:'1.0-0'}}&deg;c
       </span>
-      
-    </div>
 
-    <div id="wind">
+    </div><div id="wind">
       <!-- make button to change to fareinhit -->
       <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>
       <div id="direction">
@@ -38,8 +37,11 @@
         <span *ngIf="weather.wind.deg > 292.50 && weather.wind.deg <= 337.50">
           North-West
         </span>
-        <span *ngIf="weather.wind.deg > 337.50 &&weather.wind.deg <= 360">
+        <span *ngIf="weather.wind.deg > 337.50 && weather.wind.deg <= 360">
           North
+        </span>
+        <span *ngIf="weather.wind.deg == null">
+          Calm wind
         </span>
       </div>
     </div>

@@ -26,7 +26,6 @@ export class WeatherService {
     }
 }
 
-
 @Injectable()
 export class HomeNewsService{
 

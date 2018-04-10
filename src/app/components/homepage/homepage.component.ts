@@ -9,7 +9,7 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css'],
+  styleUrls: ['./homepage.component.scss'],
   animations: [
     trigger('fade', [
       transition('void => *', [
@@ -23,7 +23,7 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
 export class HomepageComponent implements OnInit {
   errorMessage: string;
   weather: IWeather[] = [];
-  homeNews: IHomeNews[] =[];
+  homeNews: IHomeNews[] = [];
 
 
   constructor(private _weatherService:WeatherService, private _homeNewsService: HomeNewsService) {

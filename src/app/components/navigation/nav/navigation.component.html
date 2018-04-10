@@ -1,42 +1,21 @@
-<<<<<<< HEAD:src/app/components/navigation/nav/navigation.component.html
-=======
-<div id="toolbar-wrapper">
-        <mat-toolbar class="header-toolbar">
-          <div id="header-logos">
-            <span><mat-icon><img src="./assets/img/ILGU.png"></mat-icon></span>
-            <span><mat-icon><img src="./assets/img/ILGU.png"></mat-icon></span>
-          </div>
-          <span class="example-fill-remaining-space"></span>
-          <span>
-            <button type="button" mat-button routerLink="add-info">
-                <i class="material-icons md-dark md-inactive">info_outline</i>
-            </button>
-          </span>
-        </mat-toolbar>
-
-      </div>
-
->>>>>>> 88301a2178b542cc723bdd6c4fb88c8033f678c1:src/app/components/navigation/navigation.component.html
 <div id="nav-wrapper">
   <mat-toolbar class="app-toolbar">
+  <button type="button" mat-button routerLink="">
+    <i class="material-icons md-dark">home</i>
+  </button>
 
-      <button type="button" mat-button routerLink="">
-        <i class="material-icons md-dark">home</i>
-      </button>
 
-      <button type="button" mat-button routerLink="live-score">
-        <i class="material-icons md-dark">directions_bus</i>
-      </button>
+  <button type="button" mat-button routerLink="live-score">
+    <i class="material-icons md-dark">assessment</i>
+  </button>
 
-      <button type="button" mat-button routerLink="geo-location">
-        <i class="material-icons md-dark md-inactive">event_note</i>
-      </button>
+  <button type="button" mat-button routerLink="events">
+    <i class="material-icons md-dark md-inactive">event_note</i>
+  </button>
 
-      <button type="button" mat-button routerLink="events">
-        <i class="material-icons md-dark md-inactive">location_on</i>
-      </button>
+  <button type="button" mat-button routerLink="geo-location">
+    <i class="material-icons md-dark md-inactive">location_on</i>
+  </button>
 
-    </mat-toolbar>
-  <router-outlet></router-outlet>
-</div>
-
+</mat-toolbar>
+<router-outlet></router-outlet>

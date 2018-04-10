@@ -1,4 +1,4 @@
-<section class="section1">
+<!-- <section class="section1">
   <div class="box"></div>
   <div class="box"></div>
   <div class="box"></div>
@@ -9,47 +9,7 @@
   
   <div class="wrapper">
   <mat-divider class="mat-elevation-z4"></mat-divider>
-    <mat-toolbar class="mat-transport-toogle-toolbar">
-        <mat-form-field class="mat-form">
-            <mat-select [(value)]="selected">
-              <mat-option value="option1" class="mat-select">Carton House</mat-option>
-              <mat-option value="option2" class="mat-select">Maynooth</mat-option>
-            </mat-select>
-          </mat-form-field>
-  
-        <button mat-button class="mat-button">
-            <i class="material-icons">refresh</i>
-        </button>
-    </mat-toolbar>
   <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </div> -->
   
-  <div class="example-container mat-elevation-z8">
-    <mat-table #table [dataSource]="dataSource">
-        
-      <ng-container matColumnDef="position">
-        <mat-header-cell *matHeaderCellDef class="mat-table-centre"> No. </mat-header-cell>
-        <mat-cell *matCellDef="let element" class="mat-table-centre"> {{element.position}} </mat-cell>
-      </ng-container>
-  
-      <ng-container matColumnDef="name">
-        <mat-header-cell *matHeaderCellDef class="mat-table-centre"> Destination </mat-header-cell>
-        <mat-cell *matCellDef="let element"  class="mat-table-centre"> {{element.name}} </mat-cell>
-      </ng-container>
-  
-      <ng-container matColumnDef="time">
-        <mat-header-cell *matHeaderCellDef class="mat-table-centre"> Time </mat-header-cell>
-        <mat-cell *matCellDef="let element" class="mat-table-centre"> {{element.time}} </mat-cell>
-      </ng-container>
-  
-      
-  
-      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-    </mat-table>
-  </div>
-  
-  <mat-divider class="mat-elevation-z4"></mat-divider>
-  
-  <mat-toolbar class="mat-transport-map">
-  <span>Map</span>
-  </mat-toolbar>
+  <app-transport></app-transport>
