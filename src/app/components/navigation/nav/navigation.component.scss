@@ -1,47 +1,15 @@
-.mat-button{
-  min-width: 1%;
-  width: 100%;
-}
-#app-toolbar{
+.app-toolbar{
+    position: fixed; 
+    bottom: 0;
     background-color: #5cd65c;
     height: 40px;
     width: 100%;
     text-align: center;
-    position: fixed; 
-    bottom: 0;
     align-items: center;
     justify-content: center;
-    z-index: 1;
   }
   
 .material-icons.md-dark { color: black; }
 // .material-icons.md-dark.md-inactive { color: black; }
 
-#header-toolbar {
-  background-color: #EEEEEE;
-  width: 100%;
-  height: 100%;
-  }
-
-.example-fill-remaining-space {
-  flex: 1 1 auto;
-  }
-
-  #header-toolbar mat-icon {
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-  }
  
-  #ILGU-logo{
-   width: 150%;
-   height: 150%;
-   
-  }
-
-  #GUI2-logo{
-  width: 40%;
-  height: 40%;
- 
-  margin-left: 6%;
-  }

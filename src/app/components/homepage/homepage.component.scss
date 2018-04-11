@@ -1,6 +1,3 @@
-body{
-    overflow-x: hidden;
-}
 #headerImg img{
     width: 100%;
     height: 100%;
@@ -13,7 +10,6 @@ body{
     font-size: 80%;
     width: 70%;
     text-align: center;
-   
 }
 #direction{
     float: right;
@@ -33,6 +29,7 @@ body{
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    padding: 20px;
 }
 .card-image{
     height: 20%;
@@ -42,8 +39,3 @@ body{
     height: 100%;
     width: 100%;
 }
-.mat-card-content{
-    flex-direction: column;
-    margin-left: 6%;
-}
-

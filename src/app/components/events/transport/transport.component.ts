@@ -1,11 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, state, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-transport',
   templateUrl: './transport.component.html',
-  styleUrls: ['./transport.component.scss']
+  styleUrls: ['./transport.component.scss'],
+  animations: [
+    trigger('fade', [
+      transition('void => *', [
+        style({opacity: 0}),
+        animate(2000, style({opacity: 1}))
+      ])
+    ])
+  ]
 })
 export class TransportComponent{
+  
+  zoom: number = 14;
+
   displayedColumns = ['bus', 'times'];
   dataSource = ELEMENT_DATA;
   NationalAcademylat = 53.394427;
