@@ -1,0 +1,66 @@
+
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+#head-toolbar img{
+    width: 90%;
+    height: 90%;
+    vertical-align: middle;
+    float: right;
+}
+
+#foot-button{
+    font-size: 78%;
+    background-color: #999999;
+}
+
+#name{
+    width: 60%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 78%;
+}
+
+#star-img{
+    width: 55%;
+    
+}
+
+#head-toolbar{
+    width: 100%;
+    
+}
+
+#head-toolbar, #foot-toolbar{
+    background-color: #b3b3b3;
+}
+
+#img-wrapper img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#event-main{
+    margin-bottom: 25%;
+}
+
+#event-child{
+    margin: 4%;
+}
+
+#foot-status-closed{
+    color: red;
+    font-size: 85%;
+}
+
+#foot-status-open{
+    color: green;
+    font-size: 85%;
+}
+

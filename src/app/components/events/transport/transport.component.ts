@@ -48,6 +48,9 @@ export interface Element {
 const ELEMENT_DATA: Element[] = [
   {position: 1, name: '11:30', weight: 1.0079, symbol: 'H'},
   {position: 2, name: '11:00', weight: 4.0026, symbol: 'He'},
+  {position: 2, name: '11:00', weight: 4.0026, symbol: 'He'},
+  {position: 2, name: '11:00', weight: 4.0026, symbol: 'He'},
+  {position: 2, name: '11:00', weight: 4.0026, symbol: 'He'},
   
   
 ];

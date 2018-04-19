@@ -46,6 +46,23 @@
       </div>
     </div>
   </mat-toolbar>
+  <div id="weather-main">
+    <div id="weather-content">
+      <div id="weather-temp">
+          <span>main{{weather.main.temp | number:'1.0-0'}}&deg;c</span>
+          <span>max{{weather.main.temp_max | number:'1.0-0'}}&deg;</span>
+          <span>min{{weather.main.temp_min | number:'1.0-0'}}&deg;</span>
+      </div>
+      <div id="weather-wind">
+          <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>
+          <span>weather: {{weather.weather[0].main}}</span>
+
+      </div>
+      <div id="weather-direction">
+
+      </div>
+    </div>
+  </div>
 
   <mat-list class="news-content-wrapper">
       <mat-list-item role="listitem">
