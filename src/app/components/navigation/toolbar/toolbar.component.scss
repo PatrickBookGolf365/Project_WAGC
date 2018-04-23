@@ -24,20 +24,11 @@
   height: 42%;
   margin-left: 6%;
 }
-
-#info-logo{
-  
+.example-fill-remaining-space {
+  flex: 1 1 auto;
 }
- 
-  
 
-  .example-fill-remaining-space {
-    /* This fills the remaining space, by using flexbox. 
-       Every toolbar row uses a flexbox row layout. */
-    flex: 1 1 auto;
-  }
-
-  .mat-button{
+.mat-button{
     min-width: 1%;
     width: 100%;
-  }
+}
