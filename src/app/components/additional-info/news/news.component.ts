@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsService} from './news.service';
-import { HttpClient } from '@angular/common/http';
 import { INews } from './news';
 
 @Component({
@@ -10,18 +9,24 @@ import { INews } from './news';
 })
 export class NewsComponent implements OnInit {
   errorMessage: string;
-  news: INews[] = [];
-
+  players: any[];
+  news: INews[];
+  
 
   constructor(public _newsService:NewsService) {
 
    }
 
   ngOnInit() {
+    
+
+
     this._newsService.getNews()
     .subscribe(news => {
-      this.news = news;
-    },
+      this.news = news;},
       error => this.errorMessage=<any>error);
+    
+     
   }
   }
+  

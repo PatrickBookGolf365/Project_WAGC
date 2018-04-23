@@ -1,6 +1,6 @@
 .stop-field, #location-field{
     width: 45%;
-    font-size: 70%;
+    font-size: 68%;
 }
 
 agm-map{
@@ -12,7 +12,14 @@ agm-map{
     text-align: center;
 }
 
+
+#tabs{
+    text-align: center;
+}
+
 .example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
     flex: 1 1 auto;
   }
-
+  

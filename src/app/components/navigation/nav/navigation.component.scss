@@ -1,15 +1,17 @@
 .app-toolbar{
-    position: fixed; 
+    position: fixed;
     bottom: 0;
     background-color: #5cd65c;
     height: 40px;
     width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
   }
   
 .material-icons.md-dark { color: black; }
 // .material-icons.md-dark.md-inactive { color: black; }
 
  
+.mat-button{
+  min-width: 1%;
+  width: 100%;
+}
+

@@ -1,0 +1,51 @@
+#live-main{
+    margin-bottom: 25%;
+}
+
+#live-table{
+font-size: 75%;
+width: 100%;
+border-collapse: collapse;
+}
+
+#live-table-header-title{
+    background: cadetblue;
+    height: 40px;
+    text-align: center;
+    
+}
+
+#live-table-header{
+    text-align: center;
+}
+
+.player{
+   
+    text-align: center;
+}
+
+.mat-button{
+    min-width: 1%;
+   
+  }
+
+#live-search{
+    width: 100%;
+}
+
+#live-search mat-form-field{
+    width: 45%;
+    font-size: 68%;
+}
+
+#total{
+    color: red;
+}
+
+tbody:nth-child(even) {background: #CCC}
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }

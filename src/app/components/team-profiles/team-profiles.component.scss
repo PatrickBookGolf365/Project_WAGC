@@ -1,0 +1,83 @@
+.fav{
+ color: yellow;
+}
+
+#fav-button{
+    min-width: 1%;
+}
+
+#team-header-toolbar #title{
+    width: 100%;
+    font-size: 130%;
+}
+
+
+#team-header{
+    text-align: center;
+    
+}
+
+#score-Info table{
+    width: 100%;
+   text-align: center;
+}
+
+
+#team-image{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    
+}
+
+#full-Table{
+    width: 100%;
+    height: 100%;
+}
+
+#static-Table th{
+    float: left;
+    font-size: 120%;
+   
+}
+
+
+#static-Table{
+    height: 100%;
+    width: 40%;
+    float: left;
+    font-size: 100%;
+}
+
+#moving-Table{
+    height: 100%;
+    float: left;
+   
+}
+
+
+
+
+.playerScore th{
+    font-size: 120%;
+    text-align: center;
+}
+
+.playerScore td{
+    font-size: 100%;
+    text-align: center;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+    .card {
+      display: inline-block;
+    }
+  }
+
+#team-body{
+    margin-bottom: 12%;
+}

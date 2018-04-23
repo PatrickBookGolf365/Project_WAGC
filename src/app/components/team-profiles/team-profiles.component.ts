@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var $:any;
+
 @Component({
   selector: 'app-team-profiles',
   templateUrl: './team-profiles.component.html',
@@ -10,6 +12,14 @@ export class TeamProfilesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+      $(document).ready(function(){
+        $("#calculate").click(function(){
+            $("p").toggle();
+        });
+    });
+     
+      
+   
   }
 
 }

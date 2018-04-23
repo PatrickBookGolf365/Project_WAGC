@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-navigation></app-navigation>\n"
+module.exports = "<app-navigation></app-navigation>\r\n"
 
 /***/ }),
 
@@ -75,21 +75,28 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__agm_core__ = __webpack_require__("./node_modules/@agm/core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_navigation_navigation_component__ = __webpack_require__("./src/app/components/navigation/navigation.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_navigation_nav_navigation_component__ = __webpack_require__("./src/app/components/navigation/nav/navigation.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_homepage_homepage_component__ = __webpack_require__("./src/app/components/homepage/homepage.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_live_score_live_score_component__ = __webpack_require__("./src/app/components/live-score/live-score.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_geolocation_geolocation_component__ = __webpack_require__("./src/app/components/geolocation/geolocation.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_events_transport_transport_component__ = __webpack_require__("./src/app/components/events/transport/transport.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_additional_info_additional_info_component__ = __webpack_require__("./src/app/components/additional-info/additional-info.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_additional_info_news_news_component__ = __webpack_require__("./src/app/components/additional-info/news/news.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_additional_info_about_about_component__ = __webpack_require__("./src/app/components/additional-info/about/about.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_additional_info_eligibitity_eligibility_component__ = __webpack_require__("./src/app/components/additional-info/eligibitity/eligibility.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_additional_info_schedule_schedule_component__ = __webpack_require__("./src/app/components/additional-info/schedule/schedule.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_additional_info_contact_contact_component__ = __webpack_require__("./src/app/components/additional-info/contact/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_homepage_weather_service__ = __webpack_require__("./src/app/components/homepage/weather.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_additional_info_news_news_service__ = __webpack_require__("./src/app/components/additional-info/news/news.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_team_profiles_team_profiles_component__ = __webpack_require__("./src/app/components/team-profiles/team-profiles.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_navigation_toolbar_toolbar_component__ = __webpack_require__("./src/app/components/navigation/toolbar/toolbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_additional_info_additional_info_component__ = __webpack_require__("./src/app/components/additional-info/additional-info.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_additional_info_news_news_component__ = __webpack_require__("./src/app/components/additional-info/news/news.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_additional_info_about_about_component__ = __webpack_require__("./src/app/components/additional-info/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_additional_info_eligibitity_eligibility_component__ = __webpack_require__("./src/app/components/additional-info/eligibitity/eligibility.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_additional_info_schedule_schedule_component__ = __webpack_require__("./src/app/components/additional-info/schedule/schedule.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_additional_info_contact_contact_component__ = __webpack_require__("./src/app/components/additional-info/contact/contact.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_events_events_component__ = __webpack_require__("./src/app/components/events/events.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_team_profiles_team_profiles_component__ = __webpack_require__("./src/app/components/team-profiles/team-profiles.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_homepage_services_weather_service__ = __webpack_require__("./src/app/components/homepage/services/weather.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_additional_info_news_news_service__ = __webpack_require__("./src/app/components/additional-info/news/news.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_events_events_service__ = __webpack_require__("./src/app/components/events/events.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_events_event_event_component__ = __webpack_require__("./src/app/components/events/event/event.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_fav_team_profiles_fav_team_profiles_component__ = __webpack_require__("./src/app/components/fav-team-profiles/fav-team-profiles.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_live_score_live_score_service__ = __webpack_require__("./src/app/components/live-score/live-score.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_live_score_live_player_score_live_player_score_component__ = __webpack_require__("./src/app/components/live-score/live-player-score/live-player-score.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_live_score_live_team_score_live_team_score_component__ = __webpack_require__("./src/app/components/live-score/live-team-score/live-team-score.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -120,18 +127,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
+
+
+
 var appRoutes = [
     { path: "", component: __WEBPACK_IMPORTED_MODULE_9__components_homepage_homepage_component__["a" /* HomepageComponent */] },
     { path: 'live-score', component: __WEBPACK_IMPORTED_MODULE_10__components_live_score_live_score_component__["a" /* LiveScoreComponent */] },
     { path: 'geo-location', component: __WEBPACK_IMPORTED_MODULE_11__components_geolocation_geolocation_component__["a" /* GeolocationComponent */] },
     { path: 'events', component: __WEBPACK_IMPORTED_MODULE_21__components_events_events_component__["a" /* EventsComponent */] },
-    { path: 'add-info', component: __WEBPACK_IMPORTED_MODULE_13__components_additional_info_additional_info_component__["a" /* AdditionalInfoComponent */] },
-    { path: 'profiles', component: __WEBPACK_IMPORTED_MODULE_22__components_team_profiles_team_profiles_component__["a" /* TeamProfilesComponent */] },
-    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_15__components_additional_info_about_about_component__["a" /* AboutComponent */] },
-    { path: 'news', component: __WEBPACK_IMPORTED_MODULE_14__components_additional_info_news_news_component__["a" /* NewsComponent */] },
-    { path: 'eligibility', component: __WEBPACK_IMPORTED_MODULE_16__components_additional_info_eligibitity_eligibility_component__["a" /* EligibilityComponent */] },
-    { path: 'schedule', component: __WEBPACK_IMPORTED_MODULE_17__components_additional_info_schedule_schedule_component__["a" /* ScheduleComponent */] },
-    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_18__components_additional_info_contact_contact_component__["a" /* ContactComponent */] },
+    { path: 'add-info', component: __WEBPACK_IMPORTED_MODULE_15__components_additional_info_additional_info_component__["a" /* AdditionalInfoComponent */] },
+    { path: 'teamprofiles', component: __WEBPACK_IMPORTED_MODULE_13__components_team_profiles_team_profiles_component__["a" /* TeamProfilesComponent */] },
+    { path: 'favteamprofiles', component: __WEBPACK_IMPORTED_MODULE_26__components_fav_team_profiles_fav_team_profiles_component__["a" /* FavTeamProfilesComponent */] },
+    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_17__components_additional_info_about_about_component__["a" /* AboutComponent */] },
+    { path: 'news', component: __WEBPACK_IMPORTED_MODULE_16__components_additional_info_news_news_component__["a" /* NewsComponent */] },
+    { path: 'eligibility', component: __WEBPACK_IMPORTED_MODULE_18__components_additional_info_eligibitity_eligibility_component__["a" /* EligibilityComponent */] },
+    { path: 'schedule', component: __WEBPACK_IMPORTED_MODULE_19__components_additional_info_schedule_schedule_component__["a" /* ScheduleComponent */] },
+    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_20__components_additional_info_contact_contact_component__["a" /* ContactComponent */] },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 var AppModule = /** @class */ (function () {
@@ -141,20 +156,25 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__components_navigation_navigation_component__["a" /* NavigationComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__components_navigation_nav_navigation_component__["a" /* NavigationComponent */],
                 __WEBPACK_IMPORTED_MODULE_9__components_homepage_homepage_component__["a" /* HomepageComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__components_live_score_live_score_component__["a" /* LiveScoreComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__components_geolocation_geolocation_component__["a" /* GeolocationComponent */],
                 __WEBPACK_IMPORTED_MODULE_12__components_events_transport_transport_component__["a" /* TransportComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__components_additional_info_additional_info_component__["a" /* AdditionalInfoComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__components_additional_info_news_news_component__["a" /* NewsComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__components_additional_info_about_about_component__["a" /* AboutComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__components_additional_info_eligibitity_eligibility_component__["a" /* EligibilityComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__components_additional_info_schedule_schedule_component__["a" /* ScheduleComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__components_additional_info_contact_contact_component__["a" /* ContactComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__components_additional_info_additional_info_component__["a" /* AdditionalInfoComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__components_additional_info_news_news_component__["a" /* NewsComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__components_additional_info_about_about_component__["a" /* AboutComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__components_additional_info_eligibitity_eligibility_component__["a" /* EligibilityComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__components_additional_info_schedule_schedule_component__["a" /* ScheduleComponent */],
+                __WEBPACK_IMPORTED_MODULE_20__components_additional_info_contact_contact_component__["a" /* ContactComponent */],
                 __WEBPACK_IMPORTED_MODULE_12__components_events_transport_transport_component__["a" /* TransportComponent */],
                 __WEBPACK_IMPORTED_MODULE_21__components_events_events_component__["a" /* EventsComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__components_team_profiles_team_profiles_component__["a" /* TeamProfilesComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__components_team_profiles_team_profiles_component__["a" /* TeamProfilesComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__components_navigation_toolbar_toolbar_component__["a" /* ToolbarComponent */],
+                __WEBPACK_IMPORTED_MODULE_25__components_events_event_event_component__["a" /* EventComponent */],
+                __WEBPACK_IMPORTED_MODULE_26__components_fav_team_profiles_fav_team_profiles_component__["a" /* FavTeamProfilesComponent */],
+                __WEBPACK_IMPORTED_MODULE_28__components_live_score_live_player_score_live_player_score_component__["a" /* LivePlayerScoreComponent */],
+                __WEBPACK_IMPORTED_MODULE_29__components_live_score_live_team_score_live_team_score_component__["a" /* LiveTeamScoreComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -166,7 +186,7 @@ var AppModule = /** @class */ (function () {
                 }),
                 __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRoutes)
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_19__components_homepage_weather_service__["b" /* WeatherService */], __WEBPACK_IMPORTED_MODULE_20__components_additional_info_news_news_service__["a" /* NewsService */], __WEBPACK_IMPORTED_MODULE_19__components_homepage_weather_service__["a" /* HomeNewsService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_22__components_homepage_services_weather_service__["b" /* WeatherService */], __WEBPACK_IMPORTED_MODULE_23__components_additional_info_news_news_service__["a" /* NewsService */], __WEBPACK_IMPORTED_MODULE_22__components_homepage_services_weather_service__["a" /* HomeNewsService */], __WEBPACK_IMPORTED_MODULE_24__components_events_events_service__["a" /* YelpService */], __WEBPACK_IMPORTED_MODULE_27__components_live_score_live_score_service__["a" /* LiveScoreService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -230,7 +250,7 @@ var AboutComponent = /** @class */ (function () {
 /***/ "./src/app/components/additional-info/additional-info.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-list role=\"list\">\r\n    <mat-list-item role=\"listitem\" routerLink=\"/news\">\r\n      \r\n        <span>News</span>\r\n\r\n        <i class=\"material-icons\">navigate_next</i>\r\n    \r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n    \r\n    <mat-list-item role=\"listitem\" routerLink=\"/about\">\r\n\r\n        <span>About</span>\r\n\r\n        <i class=\"material-icons\">navigate_next</i>\r\n\r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-list-item role=\"listitem\" routerLink=\"/eligibility\">\r\n    \r\n        <span>Eligibility</span>\r\n    \r\n      <i class=\"material-icons\">navigate_next</i>\r\n    \r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-list-item role=\"listitem\" routerLink=\"/schedule\">\r\n      \r\n        <span>Full Schedule</span>\r\n    \r\n      <i class=\"material-icons\">navigate_next</i>\r\n\r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-list-item role=\"listitem\" routerLink=\"/contact\">\r\n    \r\n        <span>Contact</span>\r\n    \r\n      <i class=\"material-icons\">navigate_next</i>\r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n  </mat-list>\r\n  <router-outlet></router-outlet>\r\n"
+module.exports = "<mat-list role=\"list\">\r\n    <mat-list-item role=\"listitem\" routerLink=\"/news\">\r\n      \r\n        <span>News</span>\r\n\r\n        <i class=\"material-icons\">navigate_next</i>\r\n    \r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n    \r\n    <mat-list-item role=\"listitem\" routerLink=\"/about\">\r\n\r\n        <span>About</span>\r\n\r\n        <i class=\"material-icons\">navigate_next</i>\r\n\r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-list-item role=\"listitem\" routerLink=\"/eligibility\">\r\n    \r\n        <span>Eligibility</span>\r\n    \r\n      <i class=\"material-icons\">navigate_next</i>\r\n    \r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-list-item role=\"listitem\" routerLink=\"/schedule\">\r\n      \r\n        <span>Full Schedule</span>\r\n    \r\n      <i class=\"material-icons\">navigate_next</i>\r\n\r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-list-item role=\"listitem\" routerLink=\"/contact\">\r\n    \r\n        <span>Contact</span>\r\n    \r\n      <i class=\"material-icons\">navigate_next</i>\r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n  \r\n  \r\n  <mat-list-item role=\"listitem\" routerLink=\"/teamprofiles\">\r\n      \r\n    <span>Team Profiles</span>\r\n\r\n  <i class=\"material-icons\">navigate_next</i>\r\n</mat-list-item>\r\n<mat-divider></mat-divider>\r\n\r\n<mat-list-item role=\"listitem\" routerLink=\"/favteamprofiles\">\r\n    \r\n  <span>Fav Teams</span>\r\n\r\n<i class=\"material-icons\">navigate_next</i>\r\n</mat-list-item>\r\n<mat-divider></mat-divider>\r\n\r\n\r\n</mat-list>\r\n\r\n  <router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -412,7 +432,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var NewsComponent = /** @class */ (function () {
     function NewsComponent(_newsService) {
         this._newsService = _newsService;
-        this.news = [];
     }
     NewsComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -483,6 +502,7 @@ var NewsService = /** @class */ (function () {
     return NewsService;
 }());
 
+//    ga7R1k7BOp852yKSjuawnxv3kFAf2F9Tj7HYgUaJbIskAGUaNaYKIo1LHmnjSQWtCFgLeaPS_RX-vWmvgeLjH1xDrVBTUV97dslQlOrigInePWb8ukT3_5KgJR_OWnYx 
 
 
 /***/ }),
@@ -537,17 +557,74 @@ var ScheduleComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/events/event/event.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"event-main\" >\n  \n  <div id=\"event-child\" *ngFor=\"let yelp of yelp.businesses\">\n  <mat-toolbar id=\"head-toolbar\">\n    <div id=\"name\">\n      {{yelp.name}}\n    </div>\n    <div id=\"star-img\">\n      <span *ngIf=\"yelp.rating >= 1 && yelp.rating <= 1.5\">\n        <img src=\"./assets/img/1star.png\">\n      </span>\n      <span *ngIf=\"yelp.rating >= 2 && yelp.rating <= 2.5\">\n        <img src=\"./assets/img/2star.png\">\n      </span>\n      <span *ngIf=\"yelp.rating >= 3 && yelp.rating <= 3.5\">\n        <img src=\"./assets/img/3star.png\">\n      </span>\n      <span *ngIf=\"yelp.rating >= 4 && yelp.rating <= 4.5\">\n        <img src=\"./assets/img/4star.png\">\n      </span>\n      <span *ngIf=\"yelp.rating >= 5\">\n        <img src=\"./assets/img/5star.png\">\n      </span>\n    </div>\n  </mat-toolbar>\n  <div id=\"img-wrapper\">\n    <img id=\"yelp-img\" src=\"{{yelp.image_url}}\">\n  </div>\n  <mat-toolbar id=\"foot-toolbar\">\n    <span>\n      <form action=\"{{yelp.url}}\">\n        <button id=\"foot-button\" mat-button>Website</button>\n      </form>\n    </span>\n    <span class=\"example-fill-remaining-space\"></span>\n    <span *ngIf=\"yelp.is_closed == true\" id=\"foot-status-closed\">Closed</span>\n    <span *ngIf=\"yelp.is_closed == false\" id=\"foot-status-open\">Open</span>\n  </mat-toolbar>\n</div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/events/event/event.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ".example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto; }\n\n#head-toolbar img {\n  width: 90%;\n  height: 90%;\n  vertical-align: middle;\n  float: right; }\n\n#foot-button {\n  font-size: 78%;\n  background-color: #999999; }\n\n#name {\n  width: 60%;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n  font-size: 78%; }\n\n#star-img {\n  width: 55%; }\n\n#head-toolbar {\n  width: 100%; }\n\n#head-toolbar, #foot-toolbar {\n  background-color: #b3b3b3; }\n\n#img-wrapper img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#event-main {\n  margin-bottom: 25%; }\n\n#event-child {\n  margin: 4%; }\n\n#foot-status-closed {\n  color: red;\n  font-size: 85%; }\n\n#foot-status-open {\n  color: green;\n  font-size: 85%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/events/event/event.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__events_service__ = __webpack_require__("./src/app/components/events/events.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var EventComponent = /** @class */ (function () {
+    function EventComponent(_newsService) {
+        this._newsService = _newsService;
+        this.yelp = [];
+    }
+    EventComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this._newsService.getYelp()
+            .subscribe(function (yelp) { _this.yelp = yelp; }, function (error) { return _this.errorMessage = error; });
+    };
+    EventComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-event',
+            template: __webpack_require__("./src/app/components/events/event/event.component.html"),
+            styles: [__webpack_require__("./src/app/components/events/event/event.component.scss")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__events_service__["a" /* YelpService */]])
+    ], EventComponent);
+    return EventComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/events/events.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <section class=\"section1\">\r\n  <div class=\"box\"></div>\r\n  <div class=\"box\"></div>\r\n  <div class=\"box\"></div>\r\n  <div class=\"box\"></div>\r\n  <div class=\"box\"></div>\r\n  \r\n  </section>\r\n  \r\n  <div class=\"wrapper\">\r\n  <mat-divider class=\"mat-elevation-z4\"></mat-divider>\r\n  <mat-progress-bar mode=\"indeterminate\"></mat-progress-bar>\r\n  </div> -->\r\n  \r\n  <app-transport></app-transport>"
+module.exports = "\r\n    <mat-tab-group id=\"tab\">\r\n        <mat-tab class=\"label\" label=\"transport\">\r\n            <app-transport></app-transport>\r\n        </mat-tab>\r\n        \r\n        <mat-tab class=\"label\" label=\"events\">\r\n            <app-event></app-event>\r\n        </mat-tab>\r\n    </mat-tab-group>\r\n    "
 
 /***/ }),
 
 /***/ "./src/app/components/events/events.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "#tab {\n  width: 100%;\n  height: 100%;\n  position: fixed; }\n"
 
 /***/ }),
 
@@ -563,9 +640,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
 var EventsComponent = /** @class */ (function () {
     function EventsComponent() {
@@ -577,10 +651,66 @@ var EventsComponent = /** @class */ (function () {
             selector: 'app-events',
             template: __webpack_require__("./src/app/components/events/events.component.html"),
             styles: [__webpack_require__("./src/app/components/events/events.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
+        })
     ], EventsComponent);
     return EventsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/events/events.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YelpService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_throw__ = __webpack_require__("./node_modules/rxjs/_esm5/add/observable/throw.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/catch.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_do__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/do.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var YelpService = /** @class */ (function () {
+    function YelpService(_http) {
+        this._http = _http;
+        this._yelpUrl = "https://api.yelp.com/v3/businesses/search?location=Dublin,Ireland";
+        this._yelpBUrl = "https://api.yelp.com/v3/businesses?locale=en_IE";
+    }
+    YelpService.prototype.getYelp = function () {
+        return this._http.get(this._yelpUrl, {
+            headers: new __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["c" /* HttpHeaders */]({
+                'Authorization': 'Bearer ga7R1k7BOp852yKSjuawnxv3kFAf2F9Tj7HYgUaJbIskAGUaNaYKIo1LHmnjSQWtCFgLeaPS_RX-vWmvgeLjH1xDrVBTUV97dslQlOrigInePWb8ukT3_5KgJR_OWnYx',
+                'Access-Control-Allow-Origin': '*'
+            })
+        })
+            .do(function (data) { return console.log("All: " + JSON.stringify(data)); })
+            .catch(this.handleError);
+    };
+    YelpService.prototype.handleError = function (err) {
+        console.log(err.message);
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["a" /* Observable */].throw(err.message);
+    };
+    YelpService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
+    ], YelpService);
+    return YelpService;
 }());
 
 
@@ -590,14 +720,14 @@ var EventsComponent = /** @class */ (function () {
 /***/ "./src/app/components/events/transport/transport.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar id=\"transport-toolbar\">\r\n    <mat-form-field id=\"location-field\">\r\n        <mat-select placeholder=\"Choose an Area\" [(value)]=\"mainSelected\">\r\n            <mat-option value=\"Carton House\" class=\"mat-select\">Carton House</mat-option>\r\n            <mat-option value=\"Maynooth University\" class=\"mat-select\">Maynooth University</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n\r\n    <mat-form-field class=\"stop-field\">\r\n        <mat-select placeholder=\"Choose a location\" [(value)]=\"childSelected\">\r\n            <div *ngIf=\"mainSelected == 'Carton House'\">\r\n                <mat-option value=\"National Academy\" class=\"mat-select\">National Academy</mat-option>\r\n                <mat-option value=\"Hotel Reception\" class=\"mat-select\">Hotel Reception</mat-option>\r\n                <mat-option value=\"Club House Roundabout\" class=\"mat-select\">Club House Roundabout</mat-option>\r\n            </div>\r\n            <div *ngIf=\"mainSelected == 'Maynooth University'\">\r\n                <mat-option value=\"North Campus Apartment Complex\" class=\"mat-select\">North Campus Apartment Complex</mat-option>\r\n                <mat-option value=\"Nort Campus Phonenix Restaurant\" class=\"mat-select\">North Campus Phonenix Restaurant</mat-option>\r\n                <mat-option value=\"North Campus Pedestrian crossing\" class=\"mat-select\">North Campus Pedestrian crossing</mat-option>\r\n            </div>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n</mat-toolbar>\r\n\r\n<agm-map *ngIf=\"mainSelected == 'Carton House'\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\" disableDefaultUI=\"true\" setZoom=\"11\">\r\n        <agm-marker *ngIf=\"mainSelected == 'Carton House' && childSelected == null\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\"></agm-marker>\r\n    <div *ngIf=\"childSelected == 'National Academy'\">\r\n        <agm-marker [latitude]=\"NationalAcademylat\" [longitude]=\"NationalAcademylng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"childSelected == 'Hotel Reception'\">\r\n        <agm-marker [latitude]=\"HotelReceptionlat\" [longitude]=\"HotelReceptionlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"childSelected == 'Club House Roundabout'\">\r\n        <agm-marker [latitude]=\"ClubHouseRoundaboutlat\" [longitude]=\"ClubHouseRoundaboutlng\"></agm-marker>\r\n    </div>\r\n</agm-map>\r\n<agm-map *ngIf=\"mainSelected == 'Maynooth University'\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\" disableDefaultUI=\"true\" setZoom=\"11\">\r\n        <agm-marker *ngIf=\"mainSelected == 'Maynooth University' && childSelected == null\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\"></agm-marker>\r\n    <div *ngIf=\"childSelected == 'North Campus Apartment Complex'\">\r\n        <agm-marker [latitude]=\"ApartmentComplexlat\" [longitude]=\"ApartmentComplexlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"childSelected == 'Nort Campus Phonenix Restaurant'\">\r\n        <agm-marker [latitude]=\"PhoenixRestaurantlat\" [longitude]=\"PhoenixRestaurantlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"childSelected == 'North Campus Pedestrian crossing'\">\r\n        <agm-marker [latitude]=\"PedestrianCrosslat\" [longitude]=\"PedestrianCrosslng\"></agm-marker>\r\n    </div>\r\n</agm-map>\r\n\r\n\r\n<mat-table #table [dataSource]=\"dataSource\" id=\"timetable\">\r\n\r\n    <ng-container matColumnDef=\"bus\">\r\n        <mat-header-cell *matHeaderCellDef> Bus </mat-header-cell>\r\n        <mat-cell *matCellDef=\"let bus\"> {{bus.position}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"times\">\r\n        <mat-header-cell *matHeaderCellDef> Times </mat-header-cell>\r\n        <mat-cell *matCellDef=\"let times\"> {{times.name}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\r\n    <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\r\n</mat-table>"
+module.exports = "\r\n<mat-toolbar id=\"transport-toolbar\">\r\n    <mat-form-field id=\"location-field\">\r\n        <mat-select placeholder=\"Choose an Area\" [(value)]=\"mainSelected\">\r\n            <mat-option value=\"Carton House\" class=\"mat-select\">Carton House</mat-option>\r\n            <mat-option value=\"Maynooth University\" class=\"mat-select\">Maynooth University</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n\r\n    <mat-form-field class=\"stop-field\" *ngIf=\"mainSelected == 'Carton House'\">\r\n            <mat-placeholder>Choose a location</mat-placeholder>\r\n        <mat-select [(value)]=\"CartonSelected\">\r\n            <mat-option value=\"National Academy\" class=\"mat-select\">National Academy</mat-option>\r\n            <mat-option value=\"Hotel Reception\" class=\"mat-select\">Hotel Reception</mat-option>\r\n            <mat-option value=\"Club House Roundabout\" class=\"mat-select\">Club House Roundabout</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"stop-field\" *ngIf=\"mainSelected == 'Maynooth University'\">\r\n            <mat-placeholder >Choose a location</mat-placeholder>\r\n         <mat-select [(value)]=\"MaynoothSelected\">\r\n            <mat-option value=\"North Campus Apartment Complex\" class=\"mat-select\">North Campus Apartment Complex</mat-option>\r\n            <mat-option value=\"Nort Campus Phonenix Restaurant\" class=\"mat-select\">North Campus Phonenix Restaurant</mat-option>\r\n            <mat-option value=\"North Campus Pedestrian crossing\" class=\"mat-select\">North Campus Pedestrian crossing</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n</mat-toolbar>\r\n\r\n<agm-map *ngIf=\"mainSelected == 'Carton House'\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\" [zoom]=\"zoom\"\r\n    [mapTypeId]=\"'hybrid'\" disableDefaultUI=\"true\">\r\n\r\n    <agm-marker *ngIf=\"mainSelected == 'Carton House' && CartonSelected == null\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\"></agm-marker>\r\n\r\n    <div *ngIf=\"CartonSelected == 'National Academy'\">\r\n        <agm-marker [latitude]=\"NationalAcademylat\" [longitude]=\"NationalAcademylng\" ></agm-marker>\r\n    </div>\r\n\r\n    <div *ngIf=\"CartonSelected == 'Hotel Reception'\">\r\n        <agm-marker [latitude]=\"HotelReceptionlat\" [longitude]=\"HotelReceptionlng\"></agm-marker>\r\n    </div>\r\n\r\n    <div *ngIf=\"CartonSelected == 'Club House Roundabout'\">\r\n        <agm-marker [latitude]=\"ClubHouseRoundaboutlat\" [longitude]=\"ClubHouseRoundaboutlng\"></agm-marker>\r\n    </div>\r\n</agm-map>\r\n\r\n<agm-map *ngIf=\"mainSelected == 'Maynooth University'\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\" [zoom]=\"zoom\"\r\n    [mapTypeId]=\"'hybrid'\" disableDefaultUI=\"true\">\r\n\r\n    <agm-marker *ngIf=\"mainSelected == 'Maynooth University' && MaynoothSelected == null\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\"></agm-marker>\r\n\r\n    <div *ngIf=\"MaynoothSelected == 'North Campus Apartment Complex'\">\r\n        <agm-marker [latitude]=\"ApartmentComplexlat\" [longitude]=\"ApartmentComplexlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"MaynoothSelected == 'Nort Campus Phonenix Restaurant'\">\r\n        <agm-marker [latitude]=\"PhoenixRestaurantlat\" [longitude]=\"PhoenixRestaurantlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"MaynoothSelected == 'North Campus Pedestrian crossing'\">\r\n        <agm-marker [latitude]=\"PedestrianCrosslat\" [longitude]=\"PedestrianCrosslng\"></agm-marker>\r\n    </div>\r\n</agm-map>\r\n\r\n\r\n<mat-table #table [dataSource]=\"dataSource\" id=\"timetable\">\r\n\r\n    <ng-container matColumnDef=\"bus\">\r\n        <mat-header-cell *matHeaderCellDef> Bus </mat-header-cell>\r\n        <mat-cell @fade *matCellDef=\"let bus\"> {{bus.position}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"times\">\r\n        <mat-header-cell *matHeaderCellDef> Times </mat-header-cell>\r\n        <mat-cell @fade *matCellDef=\"let times\"> {{times.name}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\r\n    <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\r\n</mat-table>\r\n"
 
 /***/ }),
 
 /***/ "./src/app/components/events/transport/transport.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ".stop-field, #location-field {\n  width: 45%;\n  font-size: 70%; }\n\nagm-map {\n  height: 200px;\n  width: 100%; }\n\n#timetable {\n  text-align: center; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto; }\n"
+module.exports = ".stop-field, #location-field {\n  width: 45%;\n  font-size: 68%; }\n\nagm-map {\n  height: 200px;\n  width: 100%; }\n\n#timetable {\n  text-align: center; }\n\n#tabs {\n  text-align: center; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto; }\n"
 
 /***/ }),
 
@@ -607,6 +737,7 @@ module.exports = ".stop-field, #location-field {\n  width: 45%;\n  font-size: 70
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TransportComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_animations__ = __webpack_require__("./node_modules/@angular/animations/esm5/animations.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -614,8 +745,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
+
 var TransportComponent = /** @class */ (function () {
     function TransportComponent() {
+        this.zoom = 14;
         this.displayedColumns = ['bus', 'times'];
         this.dataSource = ELEMENT_DATA;
         this.NationalAcademylat = 53.394427;
@@ -639,7 +772,15 @@ var TransportComponent = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-transport',
             template: __webpack_require__("./src/app/components/events/transport/transport.component.html"),
-            styles: [__webpack_require__("./src/app/components/events/transport/transport.component.scss")]
+            styles: [__webpack_require__("./src/app/components/events/transport/transport.component.scss")],
+            animations: [
+                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["m" /* trigger */])('fade', [
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["l" /* transition */])('void => *', [
+                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["k" /* style */])({ opacity: 0 }),
+                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* animate */])(2000, Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["k" /* style */])({ opacity: 1 }))
+                    ])
+                ])
+            ]
         })
     ], TransportComponent);
     return TransportComponent;
@@ -648,7 +789,60 @@ var TransportComponent = /** @class */ (function () {
 var ELEMENT_DATA = [
     { position: 1, name: '11:30', weight: 1.0079, symbol: 'H' },
     { position: 2, name: '11:00', weight: 4.0026, symbol: 'He' },
+    { position: 2, name: '11:00', weight: 4.0026, symbol: 'He' },
+    { position: 2, name: '11:00', weight: 4.0026, symbol: 'He' },
+    { position: 2, name: '11:00', weight: 4.0026, symbol: 'He' },
 ];
+
+
+/***/ }),
+
+/***/ "./src/app/components/fav-team-profiles/fav-team-profiles.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"fav-team-wrapper\">\n  <mat-toolbar>\n    <span>Favourite Teams</span>\n    <span><button mat-button><mat-icon>alarm</mat-icon></button></span>\n  </mat-toolbar>\n  <div id=\"fav-team-header\">\n  </div>\n  <div id=\"fav-team-body\">\n    <mat-expansion-panel>\n      <mat-expansion-panel-header>\n        <mat-panel-title>\n          Australia\n        </mat-panel-title>\n      </mat-expansion-panel-header>\n      <app-team-profiles></app-team-profiles>\n\n    </mat-expansion-panel>\n  </div>\n  <div id=\"fav-team-footer\">\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/fav-team-profiles/fav-team-profiles.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/fav-team-profiles/fav-team-profiles.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FavTeamProfilesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FavTeamProfilesComponent = /** @class */ (function () {
+    function FavTeamProfilesComponent() {
+    }
+    FavTeamProfilesComponent.prototype.ngOnInit = function () {
+    };
+    FavTeamProfilesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-fav-team-profiles',
+            template: __webpack_require__("./src/app/components/fav-team-profiles/fav-team-profiles.component.html"),
+            styles: [__webpack_require__("./src/app/components/fav-team-profiles/fav-team-profiles.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FavTeamProfilesComponent);
+    return FavTeamProfilesComponent;
+}());
+
 
 
 /***/ }),
@@ -706,14 +900,14 @@ var GeolocationComponent = /** @class */ (function () {
 /***/ "./src/app/components/homepage/homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\">\r\n</div>\r\n\r\n<div id=\"weather-api\">\r\n  <mat-toolbar id=\"weather-toolbar\">\r\n    <div id=\"forecast\">\r\n      <span>\r\n        {{weather.main.temp | number:'1.0-0'}}&deg;c\r\n      </span>\r\n\r\n    </div><div id=\"wind\">\r\n      <!-- make button to change to fareinhit -->\r\n      <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>\r\n      <div id=\"direction\">\r\n        <span *ngIf=\"weather.wind.deg >= 0 && weather.wind.deg <= 22.50\">\r\n          North\r\n        </span>\r\n        <div *ngIf=\"weather.wind.deg > 22.50 && weather.wind.deg <= 67.50\">\r\n          North-East\r\n        </div>\r\n        <span *ngIf=\"weather.wind.deg > 67.50 && weather.wind.deg <= 112.50\">\r\n          East\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 112.50 && weather.wind.deg <= 157.50\">\r\n          South-East\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 157.50 && weather.wind.deg <= 202.50\">\r\n          South\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 202.50 && weather.wind.deg <= 247.50\">\r\n          South-West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 247.50 && weather.wind.deg <= 292.50\">\r\n          West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 292.50 && weather.wind.deg <= 337.50\">\r\n          North-West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 337.50 && weather.wind.deg <= 360\">\r\n          North\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg == null\">\r\n          Calm wind\r\n        </span>\r\n      </div>\r\n    </div>\r\n  </mat-toolbar>\r\n</div>\r\n<mat-expansion-panel class=\"news-panel-{{homeNews.news[0].severity}}\">\r\n  <mat-expansion-panel-header>\r\n    01/01/2018 - 3:40 - {{homeNews.news[0].title}}\r\n  </mat-expansion-panel-header>\r\n  {{homeNews.news[0].content}}\r\n</mat-expansion-panel>\r\n<mat-divider></mat-divider>\r\n<mat-expansion-panel class=\"news-panel-{{homeNews.news[1].severity}}\">\r\n  <mat-expansion-panel-header>\r\n    01/01/2018 - 2:40 - {{homeNews.news[1]?.title}}\r\n  </mat-expansion-panel-header>\r\n  {{homeNews.news[1].content}}\r\n</mat-expansion-panel>\r\n<mat-divider></mat-divider>\r\n<mat-expansion-panel class=\"news-panel-{{homeNews.news[2].severity}}\">\r\n  <mat-expansion-panel-header>\r\n    01/01/2018 - 1:40 - {{homeNews.news[2]?.title}}\r\n  </mat-expansion-panel-header>\r\n  {{homeNews.news[2].content}}\r\n</mat-expansion-panel>\r\n<mat-divider></mat-divider>"
+module.exports = "<div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\">\r\n</div>\r\n\r\n<div id=\"weather-api\">\r\n  <mat-toolbar id=\"weather-toolbar\">\r\n    <div id=\"forecast\">\r\n      <span>\r\n        {{weather.main.temp | number:'1.0-0'}}&deg;c\r\n      </span>\r\n\r\n    </div><div id=\"wind\">\r\n      <!-- make button to change to fareinhit -->\r\n      <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>\r\n      <div id=\"direction\">\r\n        <span *ngIf=\"weather.wind.deg >= 0 && weather.wind.deg <= 22.50\">\r\n          North\r\n        </span>\r\n        <div *ngIf=\"weather.wind.deg > 22.50 && weather.wind.deg <= 67.50\">\r\n          North-East\r\n        </div>\r\n        <span *ngIf=\"weather.wind.deg > 67.50 && weather.wind.deg <= 112.50\">\r\n          East\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 112.50 && weather.wind.deg <= 157.50\">\r\n          South-East\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 157.50 && weather.wind.deg <= 202.50\">\r\n          South\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 202.50 && weather.wind.deg <= 247.50\">\r\n          South-West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 247.50 && weather.wind.deg <= 292.50\">\r\n          West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 292.50 && weather.wind.deg <= 337.50\">\r\n          North-West\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg > 337.50 && weather.wind.deg <= 360\">\r\n          North\r\n        </span>\r\n        <span *ngIf=\"weather.wind.deg == null\">\r\n          Calm wind\r\n        </span>\r\n      </div>\r\n    </div>\r\n  </mat-toolbar>\r\n  <div id=\"weather-main\">\r\n    <div id=\"weather-content\">\r\n      <div id=\"weather-temp\">\r\n          <span>main{{weather.main.temp | number:'1.0-0'}}&deg;c</span>\r\n          <span>max{{weather.main.temp_max | number:'1.0-0'}}&deg;</span>\r\n          <span>min{{weather.main.temp_min | number:'1.0-0'}}&deg;</span>\r\n      </div>\r\n      <div id=\"weather-wind\">\r\n          <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>\r\n          <span>weather: {{weather.weather[0].main}}</span>\r\n\r\n      </div>\r\n      <div id=\"weather-direction\">\r\n\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <mat-list class=\"news-content-wrapper\">\r\n      <mat-list-item role=\"listitem\">\r\n\r\n          <div class=\"card-image\">\r\n              <img src=\"./assets/img/ILGU.png\" class=\"home-card-img\">\r\n            </div>\r\n\r\n    <div class=\"mat-card-content\">\r\n         <div class=\"mat-card-heading\">\r\n             <h3>Heading</h3>\r\n          </div>\r\n                  \r\n          <div>\r\n            <p>description</p>\r\n          </div>\r\n        </div>\r\n      </mat-list-item>\r\n    \r\n      <mat-divider></mat-divider>\r\n    \r\n    <mat-list-item role=\"listitem\">\r\n\r\n        <div class=\"card-image\">\r\n            <img src=\"./assets/img/ILGU.png\" class=\"home-card-img\">\r\n        </div>\r\n      \r\n        <div class=\"mat-card-content\">\r\n          <div class=\"mat-card-heading\">\r\n             <h3>Heading</h3>\r\n          </div>\r\n                  \r\n          \r\n        <div>\r\n             <p> description</p>\r\n        </div>\r\n    </div>\r\n</mat-list-item>\r\n\r\n      <mat-divider></mat-divider>\r\n\r\n<mat-list-item role=\"listitem\">\r\n   <div class=\"card-image\">\r\n     <img src=\"./assets/img/ILGU.png\" class=\"home-card-img\">\r\n    </div>\r\n\r\n    <div class=\"mat-card-content\">\r\n      <div class=\"mat-card-heading\">\r\n        <h3>Heading</h3>\r\n      </div>\r\n          \r\n        <div>\r\n           <p>description</p>\r\n        </div>\r\n    </div>\r\n</mat-list-item>\r\n    \r\n    <mat-divider></mat-divider>\r\n\r\n</mat-list>\r\n\r\n"
 
 /***/ }),
 
 /***/ "./src/app/components/homepage/homepage.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = "#headerImg img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#wind {\n  font-size: 80%;\n  width: 70%;\n  text-align: center; }\n\n#direction {\n  float: right; }\n\n#forecast {\n  vertical-align: middle;\n  font-size: 165%; }\n\n.horizontal-scroll-wrapper {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  height: 100%;\n  min-height: 100%; }\n\n.mat-grid {\n  height: 100%;\n  width: 100%;\n  margin: 20px; }\n\n.mat-grid-tile {\n  height: 500px;\n  width: 500px; }\n\n#weather-toolbar {\n  width: 100%;\n  background-color: #5cd65c;\n  overflow: hidden; }\n"
+module.exports = "#headerImg img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#weather-toolbar {\n  background-color: #44bd32; }\n\n#wind {\n  font-size: 80%;\n  width: 70%;\n  text-align: center; }\n\n#direction {\n  float: right; }\n\n#forecast {\n  vertical-align: middle;\n  font-size: 165%; }\n\n.news-content-wrapper {\n  height: 100%;\n  width: 100%;\n  overflow: hidden;\n  z-index: -1; }\n\n.home-mat-card {\n  height: 100%;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: nowrap;\n      flex-wrap: nowrap;\n  padding: 20px; }\n\n.card-image {\n  height: 20%;\n  width: 33%; }\n\n.home-card-img {\n  height: 100%;\n  width: 100%; }\n"
 
 /***/ }),
 
@@ -723,7 +917,8 @@ module.exports = "#headerImg img {\n  width: 100%;\n  height: 100%;\n  vertical-
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomepageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__weather_service__ = __webpack_require__("./src/app/components/homepage/weather.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_weather_service__ = __webpack_require__("./src/app/components/homepage/services/weather.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__("./node_modules/@angular/animations/esm5/animations.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -733,6 +928,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 var HomepageComponent = /** @class */ (function () {
@@ -757,9 +953,17 @@ var HomepageComponent = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-homepage',
             template: __webpack_require__("./src/app/components/homepage/homepage.component.html"),
-            styles: [__webpack_require__("./src/app/components/homepage/homepage.component.scss")]
+            styles: [__webpack_require__("./src/app/components/homepage/homepage.component.scss")],
+            animations: [
+                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["m" /* trigger */])('fade', [
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["l" /* transition */])('void => *', [
+                        Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["k" /* style */])({ backgroundColor: 'yellow', opacity: 0 }),
+                        Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])(2000, Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["k" /* style */])({ backgroundColor: 'white', opacity: 1 }))
+                    ])
+                ])
+            ]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__weather_service__["b" /* WeatherService */], __WEBPACK_IMPORTED_MODULE_1__weather_service__["a" /* HomeNewsService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_weather_service__["b" /* WeatherService */], __WEBPACK_IMPORTED_MODULE_1__services_weather_service__["a" /* HomeNewsService */]])
     ], HomepageComponent);
     return HomepageComponent;
 }());
@@ -768,7 +972,7 @@ var HomepageComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/homepage/weather.service.ts":
+/***/ "./src/app/components/homepage/services/weather.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -841,17 +1045,95 @@ var HomeNewsService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/live-score/live-player-score/live-player-score.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"live-main\">\n  <mat-toolbar id=\"live-search\">\n    <mat-form-field>\n      <input matInput placeholder=\"search\">\n    </mat-form-field>\n    <span class=\"example-fill-remaining-space\"></span>\n    <button mat-button>\n      <mat-icon>search</mat-icon>\n    </button>\n  </mat-toolbar>\n  <table id=\"live-table\">\n    <thead>\n      <tr id=\"live-table-header-title\">\n        <th>Pos</th>\n        <th>Player</th>\n        <th>Team</th>\n        <th>Hole</th>\n        <th>Total</th>\n        <th>R1</th>\n        <th>R2</th>\n        <th>R3</th>\n        <th>R4</th>\n        <th>Total</th>\n      </tr>\n    </thead>\n    <tbody *ngFor=\"let live of live\">\n      <tr>\n        <td>{{live.pos}}</td>\n        <td>Cameron Davis</td>\n        <td>Australia</td>\n        <td>F</td>\n        <td>\n          <span id=\"total\">-17</span>\n        </td>\n        <td>67</td>\n        <td>66</td>\n        <td>68</td>\n        <td>68</td>\n        <td>\n          <span id=\"total\">269</span>\n        </td>\n      </tr>\n    </tbody>\n  </table>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/live-score/live-player-score/live-player-score.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = "#live-table {\n  font-size: 75%;\n  width: 100%;\n  border-collapse: collapse; }\n\ntbody:nth-child(even) {\n  background: #CCC; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto; }\n\n.mat-button {\n  min-width: 1%; }\n\n#live-search {\n  width: 100%; }\n\n#live-search mat-form-field {\n  width: 45%;\n  font-size: 68%; }\n\n#live-table-header-title {\n  background: cadetblue;\n  height: 40px;\n  text-align: center; }\n\n#live-main {\n  margin-bottom: 25%; }\n\n#total {\n  color: red; }\n\ntr:nth-child(even) {\n  background: #cccccc; }\n\n#live-table td {\n  text-align: center; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/live-score/live-player-score/live-player-score.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LivePlayerScoreComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__live_score_service__ = __webpack_require__("./src/app/components/live-score/live-score.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LivePlayerScoreComponent = /** @class */ (function () {
+    function LivePlayerScoreComponent(_liveScoreService) {
+        this._liveScoreService = _liveScoreService;
+        this.live = [];
+        this.filterdLive = this.live;
+        this._listFilter = 'cart';
+    }
+    Object.defineProperty(LivePlayerScoreComponent.prototype, "listFilter", {
+        get: function () {
+            return this._listFilter;
+        },
+        set: function (value) {
+            this._listFilter = value;
+            this.filterdLive = this.listFilter ? this.performFilter(this.listFilter) : this.live;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    LivePlayerScoreComponent.prototype.performFilter = function (filterBy) {
+        filterBy = filterBy.toLocaleLowerCase();
+        return this.live.filter(function (teams) {
+            return teams.player.toLocaleLowerCase().indexOf(filterBy) !== -1;
+        });
+    };
+    LivePlayerScoreComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this._liveScoreService.getPlayer()
+            .subscribe(function (live) {
+            _this.live = live;
+        }, function (error) { return _this.errorMessage = error; });
+    };
+    LivePlayerScoreComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-live-player-score',
+            template: __webpack_require__("./src/app/components/live-score/live-player-score/live-player-score.component.html"),
+            styles: [__webpack_require__("./src/app/components/live-score/live-player-score/live-player-score.component.scss")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__live_score_service__["a" /* LiveScoreService */]])
+    ], LivePlayerScoreComponent);
+    return LivePlayerScoreComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/live-score/live-score.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  live-score works!\r\n</p>\r\n"
+module.exports = "<div >\r\n<mat-tab-group id=\"tab\">\r\n  <mat-tab label=\"Player Score\">\r\n    <app-live-player-score></app-live-player-score>\r\n  </mat-tab>\r\n  <mat-tab label=\"Team Score\">\r\n    <app-live-team-score></app-live-team-score>\r\n  </mat-tab>\r\n</mat-tab-group>\r\n</div>"
 
 /***/ }),
 
 /***/ "./src/app/components/live-score/live-score.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "#tab {\n  width: 100%;\n  height: 100%;\n  position: fixed; }\n"
 
 /***/ }),
 
@@ -891,21 +1173,145 @@ var LiveScoreComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/navigation/navigation.component.html":
-/***/ (function(module, exports) {
+/***/ "./src/app/components/live-score/live-score.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "<mat-toolbar id=\"header-toolbar\">\r\n      <span><mat-icon><img src=\"./assets/img/ILGU.png\" id=\"ILGU-logo\"></mat-icon></span>\r\n      <span><mat-icon><img src=\"./assets/img/GUI2.png\" id=\"GUI2-logo\"></mat-icon></span>\r\n      <span><button id=\"Info-button\" type=\"button\" mat-button routerLink=\"add-info\"><mat-icon>info_outline</mat-icon></button></span>\r\n</mat-toolbar>\r\n\r\n<mat-toolbar id=\"app-toolbar\">\r\n\r\n  <button type=\"button\" mat-button routerLink=\"\">\r\n    <i class=\"material-icons md-dark\">home</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"live-score\">\r\n    <i class=\"material-icons md-dark\">assessment</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"events\">\r\n    <i class=\"material-icons md-dark md-inactive\">event_note</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"geo-location\">\r\n    <i class=\"material-icons md-dark md-inactive\">location_on</i>\r\n  </button>\r\n\r\n</mat-toolbar>\r\n<router-outlet></router-outlet>"
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LiveScoreService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_throw__ = __webpack_require__("./node_modules/rxjs/_esm5/add/observable/throw.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/catch.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_do__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/do.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var LiveScoreService = /** @class */ (function () {
+    function LiveScoreService(_http) {
+        this._http = _http;
+        this._leaderUrl = "http://www.ghintpp.com/champ/TPPOnlineScoring/Webservices/strokedata.asmx/ScoringResultsTeamGroup?tournamentID=594&scoreMethod=Gross&players=True&teamGroupID=252&numberToInclude=0&flightID=0&scoreMode=widgetd&scorecardID=0&mobileBrowser=False&noCache=True";
+        this._fakeleadUrl = "https://gist.githubusercontent.com/PatrickBookGolf365/eb9cf24aa4b81ad50446c43359bef544/raw/77c85e4b64e2fb8f77b736ae37f7ee4854ee39ac/live-team.json";
+        this._faketeamUrl = "https://gist.githubusercontent.com/PatrickBookGolf365/6d0b7b66ae3b9b00e2bf0733b743dbb1/raw/448932e0b0a8411dae145831b1c416936425c2d7/live-teams.json";
+    }
+    LiveScoreService.prototype.getPlayer = function () {
+        // var parseString = require('xml2js').parseString;
+        // return this._http.get(this._leaderUrl, { responseType:'text', headers: new HttpHeaders({
+        //     'Content-Type':'text/xml; charset=utf-8'})})
+        // .do(data => (parseString(data, function(err, result){ console.dir("all:"+JSON.stringify(result))})))
+        // .catch(this.handleError)
+        return this._http.get(this._fakeleadUrl)
+            .catch(this.handleError);
+    };
+    LiveScoreService.prototype.getTeam = function () {
+        return this._http.get(this._faketeamUrl)
+            .catch(this.handleError);
+    };
+    LiveScoreService.prototype.handleError = function (err) {
+        console.log(err.message);
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["a" /* Observable */].throw(err.message);
+    };
+    LiveScoreService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
+    ], LiveScoreService);
+    return LiveScoreService;
+}());
+
+
 
 /***/ }),
 
-/***/ "./src/app/components/navigation/navigation.component.scss":
+/***/ "./src/app/components/live-score/live-team-score/live-team-score.component.html":
 /***/ (function(module, exports) {
 
-module.exports = ".mat-button {\n  min-width: 1%;\n  width: 100%; }\n\n#app-toolbar {\n  background-color: #5cd65c;\n  height: 40px;\n  width: 100%;\n  text-align: center;\n  position: fixed;\n  bottom: 0;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  z-index: 1; }\n\n.material-icons.md-dark {\n  color: black; }\n\n#header-toolbar {\n  background-color: #5cd65c;\n  width: 100%;\n  height: 100%; }\n\n.example-fill-remaining-space {\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto; }\n\n#header-toolbar mat-icon {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#ILGU-logo {\n  width: 180%;\n  height: 180%; }\n\n#GUI2-logo {\n  width: 50%;\n  height: 50%;\n  margin-left: 10%; }\n"
+module.exports = "<div id=\"live-main\">\n    <mat-toolbar id=\"live-search\">\n        <mat-form-field>\n            <input matInput placeholder=\"search\">\n        </mat-form-field>\n        <span class=\"example-fill-remaining-space\"></span>\n        <button mat-button>\n            <mat-icon>search</mat-icon>\n        </button>\n    </mat-toolbar>\n    <table id=\"live-table\">\n        <thead>\n            <tr id=\"live-table-header-title\">\n                <th>Ex</th>\n                <th>Pos</th>\n                <th>Team</th>\n                <th>Hole</th>\n                <th>Total</th>\n                <th>R1</th>\n                <th>R2</th>\n                <th>R3</th>\n                <th>R4</th>\n                <th>Total</th>\n            </tr>\n        </thead>\n        <tbody *ngFor=\"let team of team; let i = index\">\n            <tr id=\"live-table-header\">\n                <td>\n                    <button (click)=\"hideStuff[i] = !hideStuff[i]\" mat-button>\n                        <mat-icon>expand_{{hideStuff[i] ? 'less' : 'more'}}</mat-icon>\n                    </button>\n                </td>\n                <td>{{team.pos}}</td>\n                <td>{{team.team}}</td>\n                <td>{{team.hole}}</td>\n                <td>\n                    <span id=\"total\">{{team.total}}</span>\n                </td>\n                <td>{{team.r1}}</td>\n                <td>{{team.r2}}</td>\n                <td>{{team.r3}}</td>\n                <td>{{team.r4}}</td>\n                <td>\n                    <span id=\"total\">{{team.final}}</span>\n                </td>\n            </tr>\n\n            <!--player 1-->\n            <tr class=\"player\" *ngIf=\"hideStuff[i]\">\n                <td></td>\n                <td></td>\n                <td>{{team.player1.name}}</td>\n                <td>{{team.player1.hole}}</td>\n                <td>\n                    <span id=\"total\">{{team.player1.total}}</span>\n                </td>\n                <td>{{team.player1.r1}}</td>\n                <td>{{team.player1.r2}}</td>\n                <td>{{team.player1.r3}}</td>\n                <td>{{team.player1.r4}}</td>\n                <td>\n                    <span id=\"total\">{{team.player1.final}}</span>\n                </td>\n            </tr>\n\n            <!--player 2-->\n            <tr class=\"player\" *ngIf=\"hideStuff[i]\">\n                <td></td>\n                <td></td>\n                <td>{{team.player2.name}}</td>\n                <td>{{team.player2.hole}}</td>\n                <td>\n                    <span id=\"total\">{{team.player2.total}}</span>\n                </td>\n                <td>{{team.player2.r1}}</td>\n                <td>{{team.player2.r2}}</td>\n                <td>{{team.player2.r3}}</td>\n                <td>{{team.player2.r4}}</td>\n                <td>\n                    <span id=\"total\">{{team.player2.final}}</span>\n                </td>\n            </tr>\n            <!--player 3-->\n            <tr class=\"player\" *ngIf=\"hideStuff[i]\">\n                <td></td>\n                <td></td>\n                <td>{{team.player3.name}}</td>\n                <td>{{team.player3.hole}}</td>\n                <td>\n                    <span id=\"total\">{{team.player3.total}}</span>\n                </td>\n                <td>{{team.player3.r1}}</td>\n                <td>{{team.player3.r2}}</td>\n                <td>{{team.player3.r3}}</td>\n                <td>{{team.player3.r4}}</td>\n                <td>\n                    <span id=\"total\">{{team.player3.final}}</span>\n                </td>\n            </tr>\n        </tbody>\n    </table>\n\n    <!-- <table id=\"live-table\" border=\"1\">\n            <tr>\n                <th>Ex</th>\n                <th>Pos</th>\n                <th>Team</th>\n                <th>Hole</th>\n                <th>Total</th>\n                <th>R1</th>\n                <th>R2</th>\n                <th>R3</th>\n                <th>R4</th>\n                <th>Total</th>\n            </tr>\n            <tr>\n                <td>\n                    <button id=\"clickme\" mat-button>\n                        <mat-icon>expand_more</mat-icon>\n                    </button>\n                </td>\n                <td>1</td>\n                <td>Ireland</td>\n                <td>F</td>\n                <td>-38</td>\n                <td>135</td>\n                <td>132</td>\n                <td>121</td>\n                <td>126</td>\n                <td>534</td>\n            </tr>\n            <tr class=\"hideme\">\n                <td></td>\n                <td></td>\n                <td>Patrick</td>\n                <td>F</td>\n                <td>-38</td>\n                <td>135</td>\n                <td>132</td>\n                <td>121</td>\n                <td>126</td>\n                <td>534</td>\n            </tr>\n            <tr class=\"hideme\">\n                <td></td>\n                <td></td>\n                <td>Patrick</td>\n                <td>F</td>\n                <td>-38</td>\n                <td>135</td>\n                <td>132</td>\n                <td>121</td>\n                <td>126</td>\n                <td>534</td>\n            </tr>\n            <tr class=\"hideme\">\n                <td></td>\n                <td></td>\n                <td>Patrick</td>\n                <td>F</td>\n                <td>-38</td>\n                <td>135</td>\n                <td>132</td>\n                <td>121</td>\n                <td>126</td>\n                <td>534</td>\n            </tr>\n\n        </table> -->\n    <mat-divider></mat-divider>\n</div>"
 
 /***/ }),
 
-/***/ "./src/app/components/navigation/navigation.component.ts":
+/***/ "./src/app/components/live-score/live-team-score/live-team-score.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = "#live-main {\n  margin-bottom: 25%; }\n\n#live-table {\n  font-size: 75%;\n  width: 100%;\n  border-collapse: collapse; }\n\n#live-table-header-title {\n  background: cadetblue;\n  height: 40px;\n  text-align: center; }\n\n#live-table-header {\n  text-align: center; }\n\n.player {\n  text-align: center; }\n\n.mat-button {\n  min-width: 1%; }\n\n#live-search {\n  width: 100%; }\n\n#live-search mat-form-field {\n  width: 45%;\n  font-size: 68%; }\n\n#total {\n  color: red; }\n\ntbody:nth-child(even) {\n  background: #CCC; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/live-score/live-team-score/live-team-score.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LiveTeamScoreComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__live_score_service__ = __webpack_require__("./src/app/components/live-score/live-score.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LiveTeamScoreComponent = /** @class */ (function () {
+    function LiveTeamScoreComponent(_liveScoreService) {
+        this._liveScoreService = _liveScoreService;
+        this.team = [];
+        this.hideStuff = [];
+    }
+    LiveTeamScoreComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this._liveScoreService.getTeam()
+            .subscribe(function (team) {
+            _this.team = team;
+        }, function (error) { return _this.errorMessage = error; });
+        //   //   $( "table" ).each(function( index ) {
+        //   //  console.log( index + ": " + $( this ).text() );
+        // });
+    };
+    LiveTeamScoreComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-live-team-score',
+            template: __webpack_require__("./src/app/components/live-score/live-team-score/live-team-score.component.html"),
+            styles: [__webpack_require__("./src/app/components/live-score/live-team-score/live-team-score.component.scss")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__live_score_service__["a" /* LiveScoreService */]])
+    ], LiveTeamScoreComponent);
+    return LiveTeamScoreComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/navigation/nav/navigation.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<app-toolbar></app-toolbar>\r\n\r\n\r\n\r\n<router-outlet></router-outlet>\r\n\r\n\r\n<mat-toolbar class=\"app-toolbar\">\r\n  <button type=\"button\" mat-button routerLink=\"\">\r\n    <i class=\"material-icons md-dark\">home</i>\r\n  </button>\r\n\r\n\r\n  <button type=\"button\" mat-button routerLink=\"live-score\">\r\n    <i class=\"material-icons md-dark\">assessment</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"events\">\r\n    <i class=\"material-icons md-dark md-inactive\">event_note</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"geo-location\">\r\n    <i class=\"material-icons md-dark md-inactive\">location_on</i>\r\n  </button>\r\n\r\n</mat-toolbar>\r\n\r\n\r\n  \r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/navigation/nav/navigation.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ".app-toolbar {\n  position: fixed;\n  bottom: 0;\n  background-color: #5cd65c;\n  height: 40px;\n  width: 100%; }\n\n.material-icons.md-dark {\n  color: black; }\n\n.mat-button {\n  min-width: 1%;\n  width: 100%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/navigation/nav/navigation.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -929,8 +1335,8 @@ var NavigationComponent = /** @class */ (function () {
     NavigationComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-navigation',
-            template: __webpack_require__("./src/app/components/navigation/navigation.component.html"),
-            styles: [__webpack_require__("./src/app/components/navigation/navigation.component.scss")]
+            template: __webpack_require__("./src/app/components/navigation/nav/navigation.component.html"),
+            styles: [__webpack_require__("./src/app/components/navigation/nav/navigation.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], NavigationComponent);
@@ -941,17 +1347,67 @@ var NavigationComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/navigation/toolbar/toolbar.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"top-nav\">\r\n    <mat-toolbar class=\"header-toolbar\">\r\n    <span><mat-icon><img src=\"./assets/img/ILGU.png\" id=\"ILGU-logo\"></mat-icon></span>\r\n    <span><mat-icon><img src=\"./assets/img/GUI2.png\" id=\"GUI2-logo\"></mat-icon></span>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n    <span><button  type=\"button\" mat-button routerLink=\"add-info\"><i class=\"material-icons md-dark md-inactive\">info_outline</i></button></span>\r\n</mat-toolbar>\r\n\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/navigation/toolbar/toolbar.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = "#top-nav mat-toolbar {\n  height: 100%; }\n\n.header-toolbar {\n  background-color: #D8D8D8;\n  height: 40px;\n  width: 100%; }\n\n.header-toolbar mat-icon {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#ILGU-logo {\n  width: 150%;\n  height: 150%; }\n\n#GUI2-logo {\n  width: 42%;\n  height: 42%;\n  margin-left: 6%; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  -webkit-box-flex: 1;\n      -ms-flex: 1 1 auto;\n          flex: 1 1 auto; }\n\n.mat-button {\n  min-width: 1%;\n  width: 100%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/navigation/toolbar/toolbar.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToolbarComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ToolbarComponent = /** @class */ (function () {
+    function ToolbarComponent() {
+    }
+    ToolbarComponent.prototype.ngOnInit = function () {
+    };
+    ToolbarComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-toolbar',
+            template: __webpack_require__("./src/app/components/navigation/toolbar/toolbar.component.html"),
+            styles: [__webpack_require__("./src/app/components/navigation/toolbar/toolbar.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ToolbarComponent);
+    return ToolbarComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/team-profiles/team-profiles.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  team-profiles works!\n</p>\n"
+module.exports = "<button id=\"calculate\">Click</button>\n<p id=\"firstvalue\">2</p>\n<p id=\"secondvalue\">3</p>\n<p type=\"number\" id=\"output\"></p>\n\n\n<div id=\"team-wrapper\">\n  <mat-toolbar id=\"team-header-toolbar\">\n    <span id=\"title\">Australia</span>\n    <button id=\"fav-button\" mat-button><mat-icon class=\"fav\">star</mat-icon></button>\n  </mat-toolbar>\n  <div id=\"team-header\">\n    <span>\n      <img id=\"team-image\" src=\"./assets/img/team.jpg\">\n    </span>\n    <mat-card id=\"score-Info\">\n      <table>\n      <tr>\n        <th>Thru</th><td>F</td>\n        <th>Today</th><td>-13</td>\n        <th>Total</th><td>-38</td>\n        <th>Rank</th><td>1</td>\n      </tr>\n    </table>\n    </mat-card>\n  </div>\n <mat-divider></mat-divider>\n  <div id=\"team-body\">\n    <mat-expansion-panel>\n      <mat-expansion-panel-header>\n        <mat-panel-title>\n          Round One\n        </mat-panel-title>\n      </mat-expansion-panel-header>\n      <div id=\"full-Table\">\n        <div id=\"static-Table\">\n          <table>\n            <!-- Header 1/2 -->\n            <tr>\n              <th>Hole</th>\n            </tr>\n            <tr>\n              <td>Yards</td>\n            </tr>\n            <tr>\n              <td>Par</td>\n            </tr>\n            <tr>\n              <td>Cameron Davis</td>\n            </tr>\n            <tr>\n              <td>Curtis Luck</td>\n            </tr>\n            <tr>\n              <td>Harrison Endycott</td>\n            </tr>\n            <tr>\n              <td>Complete</td>\n            </tr>\n            <tr>\n              <td>Score Against Par</td>\n            </tr>\n          </table>\n        </div>\n        <div class=\"scrolling-wrapper\">\n          <div id=\"moving-Table\">\n            <div class=\"card\">\n              <table class=\"playerScore\">\n                <tr>\n                  <!-- Header 2/2 -->\n                  <th>1</th>\n                  <th>2</th>\n                  <th>3</th>\n                  <th>4</th>\n                  <th>5</th>\n                  <th>6</th>\n                  <th>7</th>\n                  <th>8</th>\n                  <th>9</th>\n                  <th>10</th>\n                  <th>Out</th>\n                  <th>11</th>\n                  <th>12</th>\n                  <th>13</th>\n                  <th>14</th>\n                  <th>15</th>\n                  <th>16</th>\n                  <th>17</th>\n                  <th>18</th>\n                  <th>In</th>\n                  <th>Total</th>\n                </tr>\n\n                <tr>\n                  <!-- Yards -->\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                </tr>\n\n                <tr>\n                  <!-- Par  -->\n                  <td>4</td>\n                  <td>4</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>5</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>3</td>\n                  <td>5</td>\n                  <td>36</td>\n                  <td>4</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>5</td>\n                  <td>3</td>\n                  <td>5</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>36</td>\n                  <td>72</td>\n                </tr>\n\n                <tr>\n                  <!-- Player1  -->\n                  <td>5</td>\n                  <td>4</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>3</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>34</td>\n                  <td>3</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>33</td>\n                  <td>67</td>\n                </tr>\n\n                <tr>\n                  <!-- Player2  -->\n                  <td>3</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>5</td>\n                  <td>4</td>\n                  <td>2</td>\n                  <td>5</td>\n                  <td>35</td>\n                  <td>4</td>\n                  <td>2</td>\n                  <td>5</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>34</td>\n                  <td>69</td>\n                </tr>\n\n                <tr>\n                  <!-- Player3  -->\n                  <td>4</td>\n                  <td>6</td>\n                  <td>3</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>3</td>\n                  <td>3</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>33</td>\n                  <td>5</td>\n                  <td>3</td>\n                  <td>5</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>3</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>4</td>\n                  <td>35</td>\n                  <td>68</td>\n                </tr>\n\n                <tr>\n                  <!-- Round  -->\n                  <td>9</td>\n                  <td>10</td>\n                  <td>6</td>\n                  <td>7</td>\n                  <td>8</td>\n                  <td>6</td>\n                  <td>6</td>\n                  <td>7</td>\n                  <td>8</td>\n                  <td>67</td>\n                  <td>8</td>\n                  <td>6</td>\n                  <td>9</td>\n                  <td>7</td>\n                  <td>8</td>\n                  <td>6</td>\n                  <td>8</td>\n                  <td>8</td>\n                  <td>8</td>\n                  <td>68</td>\n                  <td>135</td>\n                </tr>\n\n                <tr>\n                  <!-- Score Against Par  -->\n                  <td>-3</td>\n                  <td>-1</td>\n                  <td>-1</td>\n                  <td>-2</td>\n                  <td>-4</td>\n                  <td>-6</td>\n                  <td>-8</td>\n                  <td>-7</td>\n                  <td>-9</td>\n                  <td></td>\n                  <td>E</td>\n                  <td>E</td>\n                  <td>+1</td>\n                  <td>E</td>\n                  <td>-2</td>\n                  <td>-2</td>\n                  <td>-4</td>\n                  <td>-4</td>\n                  <td>-4</td>\n                  <td></td>\n                  <td>-9</td>\n                </tr>\n              </table>\n            </div>\n          </div>\n        </div>\n      </div>\n    </mat-expansion-panel>\n    <mat-divider></mat-divider>\n    <mat-expansion-panel>\n      <mat-expansion-panel-header>\n        <mat-panel-title>\n          Round Two\n        </mat-panel-title>\n      </mat-expansion-panel-header>\n      <div id=\"full-Table\">\n        <div id=\"static-Table\">\n          <table>\n            <!-- Header 1/2 -->\n            <tr>\n              <th>Hole</th>\n            </tr>\n            <tr>\n              <td>Yards</td>\n            </tr>\n            <tr>\n              <td>Par</td>\n            </tr>\n            <tr>\n              <td>Cameron Davis</td>\n            </tr>\n            <tr>\n              <td>Curtis Luck</td>\n            </tr>\n            <tr>\n              <td>Harrison Endycott</td>\n            </tr>\n            <tr>\n              <td>Complete</td>\n            </tr>\n            <tr>\n              <td>Score Against Par</td>\n            </tr>\n          </table>\n        </div>\n        <div class=\"scrolling-wrapper\">\n          <div id=\"moving-Table\">\n            <div class=\"card\">\n              <table class=\"playerScore\">\n                <tr>\n                  <!-- Header 1/2 -->\n                  <th>1</th>\n                  <th>2</th>\n                  <th>3</th>\n                  <th>4</th>\n                  <th>5</th>\n                  <th>6</th>\n                  <th>7</th>\n                  <th>8</th>\n                  <th>9</th>\n                  <th>10</th>\n                  <th>Out</th>\n                  <th>11</th>\n                  <th>12</th>\n                  <th>13</th>\n                  <th>14</th>\n                  <th>15</th>\n                  <th>16</th>\n                  <th>17</th>\n                  <th>18</th>\n                  <th>In</th>\n                  <th>Total</th>\n                </tr>\n\n                <tr>\n                  <!-- Yards -->\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                </tr>\n\n                <tr>\n                  <!-- Par  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Player1  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Player2  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Player3  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Round  -->\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Score Against Par  -->\n                  <td>7</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                </tr>\n              </table>\n            </div>\n          </div>\n        </div>\n      </div>\n    </mat-expansion-panel>\n    <mat-divider></mat-divider>\n    <mat-expansion-panel>\n      <mat-expansion-panel-header>\n        <mat-panel-title>\n          Round Three\n        </mat-panel-title>\n      </mat-expansion-panel-header>\n      <div id=\"full-Table\">\n        <div id=\"static-Table\">\n          <table>\n            <!-- Header 1/2 -->\n            <tr>\n              <th>Hole</th>\n            </tr>\n            <tr>\n              <td>Yards</td>\n            </tr>\n            <tr>\n              <td>Par</td>\n            </tr>\n            <tr>\n              <td>Cameron Davis</td>\n            </tr>\n            <tr>\n              <td>Curtis Luck</td>\n            </tr>\n            <tr>\n              <td>Harrison Endycott</td>\n            </tr>\n            <tr>\n              <td>Complete</td>\n            </tr>\n            <tr>\n              <td>Score Against Par</td>\n            </tr>\n          </table>\n        </div>\n        <div class=\"scrolling-wrapper\">\n          <div id=\"moving-Table\">\n            <div class=\"card\">\n              <table class=\"playerScore\">\n                <tr>\n                  <!-- Header 1/2 -->\n                  <th>1</th>\n                  <th>2</th>\n                  <th>3</th>\n                  <th>4</th>\n                  <th>5</th>\n                  <th>6</th>\n                  <th>7</th>\n                  <th>8</th>\n                  <th>9</th>\n                  <th>10</th>\n                  <th>Out</th>\n                  <th>11</th>\n                  <th>12</th>\n                  <th>13</th>\n                  <th>14</th>\n                  <th>15</th>\n                  <th>16</th>\n                  <th>17</th>\n                  <th>18</th>\n                  <th>In</th>\n                  <th>Total</th>\n                </tr>\n\n                <tr>\n                  <!-- Yards -->\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                </tr>\n\n                <tr>\n                  <!-- Par  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Player1  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Player2  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Player3  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Round  -->\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Score Against Par  -->\n                  <td>7</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                </tr>\n              </table>\n            </div>\n          </div>\n        </div>\n      </div>\n    </mat-expansion-panel>\n    <mat-divider></mat-divider>\n    <mat-expansion-panel>\n      <mat-expansion-panel-header>\n        <mat-panel-title>\n          Round Four\n        </mat-panel-title>\n      </mat-expansion-panel-header>\n      <div id=\"full-Table\">\n        <div id=\"static-Table\">\n          <table>\n            <!-- Header 1/2 -->\n            <tr>\n              <th>Hole</th>\n            </tr>\n            <tr>\n              <td>Yards</td>\n            </tr>\n            <tr>\n              <td>Par</td>\n            </tr>\n            <tr>\n              <td>Cameron Davis</td>\n            </tr>\n            <tr>\n              <td>Curtis Luck</td>\n            </tr>\n            <tr>\n              <td>Harrison Endycott</td>\n            </tr>\n            <tr>\n              <td>Complete</td>\n            </tr>\n            <tr>\n              <td>Score Against Par</td>\n            </tr>\n          </table>\n        </div>\n        <div class=\"scrolling-wrapper\">\n          <div id=\"moving-Table\">\n            <div class=\"card\">\n              <table class=\"playerScore\">\n                <tr>\n                  <!-- Header 1/2 -->\n                  <th>1</th>\n                  <th>2</th>\n                  <th>3</th>\n                  <th>4</th>\n                  <th>5</th>\n                  <th>6</th>\n                  <th>7</th>\n                  <th>8</th>\n                  <th>9</th>\n                  <th>10</th>\n                  <th>Out</th>\n                  <th>11</th>\n                  <th>12</th>\n                  <th>13</th>\n                  <th>14</th>\n                  <th>15</th>\n                  <th>16</th>\n                  <th>17</th>\n                  <th>18</th>\n                  <th>In</th>\n                  <th>Total</th>\n                </tr>\n\n                <tr>\n                  <!-- Yards -->\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                  <td>400</td>\n                </tr>\n\n                <tr>\n                  <!-- Par  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Player1  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Player2  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Player3  -->\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Round  -->\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                </tr>\n\n                <tr>\n                  <!-- Score Against Par  -->\n                  <td>7</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>5</td>\n                  <td>6</td>\n                </tr>\n              </table>\n            </div>\n          </div>\n        </div>\n      </div>\n    </mat-expansion-panel>\n    <div id=\"team-footer\">\n\n\n    </div>\n  </div>\n  </div>"
 
 /***/ }),
 
 /***/ "./src/app/components/team-profiles/team-profiles.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".fav {\n  color: yellow; }\n\n#fav-button {\n  min-width: 1%; }\n\n#team-header-toolbar #title {\n  width: 100%;\n  font-size: 130%; }\n\n#team-header {\n  text-align: center; }\n\n#score-Info table {\n  width: 100%;\n  text-align: center; }\n\n#team-image {\n  width: 50%;\n  height: 50%;\n  margin: auto; }\n\n#full-Table {\n  width: 100%;\n  height: 100%; }\n\n#static-Table th {\n  float: left;\n  font-size: 120%; }\n\n#static-Table {\n  height: 100%;\n  width: 40%;\n  float: left;\n  font-size: 100%; }\n\n#moving-Table {\n  height: 100%;\n  float: left; }\n\n.playerScore th {\n  font-size: 120%;\n  text-align: center; }\n\n.playerScore td {\n  font-size: 100%;\n  text-align: center; }\n\n.scrolling-wrapper {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.scrolling-wrapper .card {\n    display: inline-block; }\n\n#team-body {\n  margin-bottom: 12%; }\n"
 
 /***/ }),
 
@@ -975,6 +1431,11 @@ var TeamProfilesComponent = /** @class */ (function () {
     function TeamProfilesComponent() {
     }
     TeamProfilesComponent.prototype.ngOnInit = function () {
+        $(document).ready(function () {
+            $("#calculate").click(function () {
+                $("p").toggle();
+            });
+        });
     };
     TeamProfilesComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({

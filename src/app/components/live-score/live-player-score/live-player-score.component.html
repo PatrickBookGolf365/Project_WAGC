@@ -1,0 +1,45 @@
+<div id="live-main">
+  <mat-toolbar id="live-search">
+    <mat-form-field>
+      <input matInput placeholder="search">
+    </mat-form-field>
+    <span class="example-fill-remaining-space"></span>
+    <button mat-button>
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-toolbar>
+  <table id="live-table">
+    <thead>
+      <tr id="live-table-header-title">
+        <th>Pos</th>
+        <th>Player</th>
+        <th>Team</th>
+        <th>Hole</th>
+        <th>Total</th>
+        <th>R1</th>
+        <th>R2</th>
+        <th>R3</th>
+        <th>R4</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let live of live">
+      <tr>
+        <td>{{live.pos}}</td>
+        <td>Cameron Davis</td>
+        <td>Australia</td>
+        <td>F</td>
+        <td>
+          <span id="total">-17</span>
+        </td>
+        <td>67</td>
+        <td>66</td>
+        <td>68</td>
+        <td>68</td>
+        <td>
+          <span id="total">269</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
