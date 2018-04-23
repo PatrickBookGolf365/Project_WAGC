@@ -8,6 +8,9 @@
       <mat-icon>search</mat-icon>
     </button>
   </mat-toolbar>
+  <div >
+    
+  </div>
   <table id="live-table">
     <thead>
       <tr id="live-table-header-title">
@@ -23,21 +26,34 @@
         <th>Total</th>
       </tr>
     </thead>
-    <tbody *ngFor="let live of live">
-      <tr>
-        <td>{{live.pos}}</td>
-        <td>Cameron Davis</td>
-        <td>Australia</td>
-        <td>F</td>
+    <tbody *ngFor="let number of numbers; let i = index" > 
+      <tr *ngFor="let players of player">
+        <td>{{players.ScoringResult.Results[0].ScoreItem[i].Pos[0]}}</td>
+        <td>{{players.ScoringResult.Results[0].ScoreItem[i].Name[0]}}</td>
+        <td><img src="./assets/img/{{players.ScoringResult.Results[0].ScoreItem[i].Display[0]}}.png"></td>
+        <td>{{players.ScoringResult.Results[0].ScoreItem[i].Hole[0]}}</td>
         <td>
-          <span id="total">-17</span>
+              <span id="total_{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}">{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}</span>
+
+          <!-- <div *ngIf="players.ScoringResult.Results[0].ScoreItem[i].TotalToPar == +2">
+              <span id="total_plus">{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}</span>
+            </div>
+            <div *ngIf="players.ScoringResult.Results[0].ScoreItem[i].TotalToPar == +3">
+                <span id="total_plus">{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}</span>
+              </div>
+              <div *ngIf="players.ScoringResult.Results[0].ScoreItem[i].TotalToPar == +4">
+                  <span id="total_plus">{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}</span>
+                </div>
+                <div *ngIf="players.ScoringResult.Results[0].ScoreItem[i].TotalToPar == +5">
+                    <span id="total_plus">{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}</span>
+                  </div> -->
         </td>
-        <td>67</td>
-        <td>66</td>
-        <td>68</td>
-        <td>68</td>
+        <td>{{players.ScoringResult.Results[0].ScoreItem[i].RoundScore[0].string[0]}}</td>
+        <td>{{players.ScoringResult.Results[0].ScoreItem[i].RoundScore[0].string[1]}}</td>
+        <td>{{players.ScoringResult.Results[0].ScoreItem[i].RoundScore[0].string[2]}}</td>
+        <td>{{players.ScoringResult.Results[0].ScoreItem[i].RoundScore[0].string[3]}}</td>
         <td>
-          <span id="total">269</span>
+          <span id="total_{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}">{{players.ScoringResult.Results[0].ScoreItem[i].Total}}</span>
         </td>
       </tr>
     </tbody>

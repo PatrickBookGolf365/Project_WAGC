@@ -9,37 +9,22 @@ import { LiveScoreService } from '../live-score.service';
 export class LivePlayerScoreComponent implements OnInit {
 
   errorMessage: string;
-  live: any[] = [];
-  
-  _listFilter: string;
-  get listFilter(): string {
-    return this._listFilter;
-  }
-  set listFilter(value:string){
-    this._listFilter = value;
-    this.filterdLive=this.listFilter ? this.performFilter(this.listFilter) : this.live;
-  }
-
-  filterdLive: any[];
-
-
-  performFilter(filterBy: string): any[]{
-    filterBy = filterBy.toLocaleLowerCase();
-    return this.live.filter((teams: any) =>
-      teams.player.toLocaleLowerCase().indexOf(filterBy) !== -1);
-  }
-
-
+  player;
+  numbers = [];
+  plusnumbers = [];
   constructor(public _liveScoreService:LiveScoreService) {
-    this.filterdLive = this.live;
-    this._listFilter = 'cart';
+    this.numbers = Array.from(Array(211)).map((x, i) => i );
+    this.plusnumbers = Array.from(Array(202)).map((x, j) => j );
    }
 
 
+
   ngOnInit() {
-    this._liveScoreService.getPlayer()
-    .subscribe(live => {
-      this.live = live;},
+  
+      this._liveScoreService.getFakePlayer()
+      .subscribe(player => {
+        this.player = player; 
+      },
       error => this.errorMessage=<any>error);
      
    }

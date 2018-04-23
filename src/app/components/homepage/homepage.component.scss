@@ -6,6 +6,50 @@
 #weather-toolbar{
     background-color: #44bd32;
 }
+
+.flex-container{
+  display: flex;
+  justify-content: space-around;
+  background: #76b852;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ 
+}
+
+
+
+.compass-img{
+   width: 245%;
+   height: 245%;
+}
+
+.wind-small{
+    font-size: 70%;
+}
+
+.up{
+    color:blue;
+}
+
+.down{
+    color: red;
+}
+
+.flex-item{
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 2%;
+}
+
+
+.flex-temp .small{
+    font-size: 70%;
+   
+}
+   
+
 #wind{
     font-size: 80%;
     width: 70%;

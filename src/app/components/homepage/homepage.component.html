@@ -3,7 +3,7 @@
 </div>
 
 <div id="weather-api">
-  <mat-toolbar id="weather-toolbar">
+  <!-- <mat-toolbar id="weather-toolbar">
     <div id="forecast">
       <span>
         {{weather.main.temp | number:'1.0-0'}}&deg;c
@@ -11,7 +11,7 @@
 
     </div><div id="wind">
       <!-- make button to change to fareinhit -->
-      <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>
+      <!-- <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>
       <div id="direction">
         <span *ngIf="weather.wind.deg >= 0 && weather.wind.deg <= 22.50">
           North
@@ -45,23 +45,58 @@
         </span>
       </div>
     </div>
-  </mat-toolbar>
-  <div id="weather-main">
-    <div id="weather-content">
-      <div id="weather-temp">
-          <span>main{{weather.main.temp | number:'1.0-0'}}&deg;c</span>
-          <span>max{{weather.main.temp_max | number:'1.0-0'}}&deg;</span>
-          <span>min{{weather.main.temp_min | number:'1.0-0'}}&deg;</span>
+  </mat-toolbar> -->
+  <div class="flex-container">
+      <div class="flex-item">
+        <div clas="flex-temp">
+          <span>{{weather.main.temp | number:'1.0-0'}}&deg;c</span>
+        </div>
+        <div class="flex-temp">
+          <span class="small"><mat-icon class="up">arrow_drop_up</mat-icon>{{weather.main.temp_max | number:'1.0-0'}}&deg;</span> <span class="small">{{weather.main.temp_min | number:'1.0-0'}}&deg;<mat-icon class="down">arrow_drop_down</mat-icon></span>
+        </div>
       </div>
-      <div id="weather-wind">
-          <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>
-          <span>weather: {{weather.weather[0].main}}</span>
-
+      <div class="flex-item">
+        <div class="flex-wind">
+          <span class="wind-text">{{weather.wind.speed | number:'1.0-0'}} km/h</span>
+        </div>
+        <div clas="flex-wind">
+          <span class="wind-small">{{weather.weather[0].main}}</span>
+        </div>
       </div>
-      <div id="weather-direction">
-
+      <div class="flex-item">
+        <div class="flex-direction">
+          <span *ngIf="weather.wind.deg >= 0 && weather.wind.deg <= 22.50"><!--N-->
+           <mat-icon><img class="compass-img" src="./assets/img/north.png"></mat-icon>
+          </span>
+          <div *ngIf="weather.wind.deg > 22.50 && weather.wind.deg <= 67.50"><!--NE-->
+            <mat-icon><img class="compass-img" src="./assets/img/north.png"></mat-icon>
+          </div>
+          <span *ngIf="weather.wind.deg > 67.50 && weather.wind.deg <= 112.50"><!--E-->
+            <mat-icon><img class="compass-img" src="./assets/img/east.png"></mat-icon>
+          </span>
+          <span *ngIf="weather.wind.deg > 112.50 && weather.wind.deg <= 157.50"><!--SE-->
+            <mat-icon><img class="compass-img" src="./assets/img/east.png"></mat-icon>
+          </span>
+          <span *ngIf="weather.wind.deg > 157.50 && weather.wind.deg <= 202.50"> <!--S-->
+            <mat-icon><img  class="compass-img" src="./assets/img/south.png"></mat-icon> 
+          </span>
+          <span *ngIf="weather.wind.deg > 202.50 && weather.wind.deg <= 247.50"> <!--SW-->
+            <mat-icon><img  class="compass-img" src="./assets/img/south.png"></mat-icon>           
+          </span>
+          <span *ngIf="weather.wind.deg > 247.50 && weather.wind.deg <= 292.50"><!--W-->
+            <mat-icon><img class="compass-img" src="./assets/img/west.png"></mat-icon>
+          </span>
+          <span *ngIf="weather.wind.deg > 292.50 && weather.wind.deg <= 337.50"><!--NW-->
+            <mat-icon><img class="compass-img" src="./assets/img/west.png"></mat-icon>
+          </span>
+          <span *ngIf="weather.wind.deg > 337.50 && weather.wind.deg <= 360"><!--N-->
+            <mat-icon><img class="compass-img" src="./assets/img/north.png"></mat-icon>
+          </span>
+          <span *ngIf="weather.wind.deg == null">
+            Calm
+          </span>
+          </div>
       </div>
-    </div>
   </div>
 
   <mat-list class="news-content-wrapper">

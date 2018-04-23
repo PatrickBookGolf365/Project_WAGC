@@ -23,10 +23,5 @@ export class LiveTeamScoreComponent implements OnInit{
     this.team = team;},
     error => this.errorMessage=<any>error);
 
-   
-  //   //   $( "table" ).each(function( index ) {
-  //   //  console.log( index + ": " + $( this ).text() );
-  
-  // });
   }
 }

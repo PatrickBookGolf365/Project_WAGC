@@ -22,8 +22,8 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
 
 export class HomepageComponent implements OnInit {
   errorMessage: string;
-  weather: IWeather[] = [];
-  homeNews: IHomeNews[] = [];
+  weather = [];
+  homeNews = [];
 
 
   constructor(private _weatherService:WeatherService, private _homeNewsService: HomeNewsService) {

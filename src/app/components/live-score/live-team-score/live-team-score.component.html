@@ -23,11 +23,11 @@
                 <th>Total</th>
             </tr>
         </thead>
-        <tbody *ngFor="let team of team; let i = index">
+        <tbody *ngFor="let team of team; let x = index" class="tbody">
             <tr id="live-table-header">
                 <td>
-                    <button (click)="hideStuff[i] = !hideStuff[i]" mat-button>
-                        <mat-icon>expand_{{hideStuff[i] ? 'less' : 'more'}}</mat-icon>
+                    <button class="hide-btn" (click)="hideStuff[x] = !hideStuff[x]">
+                        <mat-icon>expand_{{hideStuff[x] ? 'less' : 'more'}}</mat-icon>
                     </button>
                 </td>
                 <td>{{team.pos}}</td>
@@ -46,8 +46,8 @@
             </tr>
 
             <!--player 1-->
-            <tr class="player" *ngIf="hideStuff[i]">
-                <td></td>
+            <tr class="player" *ngIf="hideStuff[x]">
+                <td>{{x}}</td>
                 <td></td>
                 <td>{{team.player1.name}}</td>
                 <td>{{team.player1.hole}}</td>
@@ -64,7 +64,7 @@
             </tr>
 
             <!--player 2-->
-            <tr class="player" *ngIf="hideStuff[i]">
+            <tr class="player" *ngIf="hideStuff[x]">
                 <td></td>
                 <td></td>
                 <td>{{team.player2.name}}</td>
@@ -81,7 +81,7 @@
                 </td>
             </tr>
             <!--player 3-->
-            <tr class="player" *ngIf="hideStuff[i]">
+            <tr class="player" *ngIf="hideStuff[x]">
                 <td></td>
                 <td></td>
                 <td>{{team.player3.name}}</td>
@@ -96,10 +96,22 @@
                 <td>
                     <span id="total">{{team.player3.final}}</span>
                 </td>
+                <td></td>
             </tr>
         </tbody>
     </table>
-
+    <table border="1">
+        <tr>
+            <th>Team</th>
+        </tr>
+        <tr>
+            <td *ngFor="let team of team">
+            {{team.player1.name}}<br>
+            {{team.player2.name}}<br>
+            {{team.player3.name}}
+            </td>
+        </tr>
+    </table>
     <!-- <table id="live-table" border="1">
             <tr>
                 <th>Ex</th>

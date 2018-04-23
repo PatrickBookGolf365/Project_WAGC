@@ -12,13 +12,6 @@ export class TeamProfilesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-      $(document).ready(function(){
-        $("#calculate").click(function(){
-            $("p").toggle();
-        });
-    });
-     
-      
    
   }
 
