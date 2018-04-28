@@ -1,5 +1,5 @@
 #live-main{
-    margin-bottom: 25%;
+    margin-bottom: 31%;
 }
 
 #live-table{
@@ -48,9 +48,7 @@ border-collapse: collapse;
     color: red;
 }
 
-tbody:nth-child(even) {background: #56ab2f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#player-tbody:nth-child(even) {background: #5cd65c
     }
 
 .example-fill-remaining-space {
@@ -58,3 +56,107 @@ tbody:nth-child(even) {background: #56ab2f;  /* fallback for old browsers */
        Every toolbar row uses a flexbox row layout. */
     flex: 1 1 auto;
   }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .fav{
+    color: #cccc00;
+   }
+   
+   #fav-button{
+       min-width: 1%;
+   }
+   
+   #team-header-toolbar #title{
+       width: 100%;
+       font-size: 130%;
+   }
+   
+   
+   #team-header{
+       text-align: center;
+       
+   }
+   
+   #score-Info table{
+       width: 100%;
+      text-align: center;
+   }
+   
+   
+   #team-image{
+       width: 50%;
+       height: 50%;
+       margin: auto;
+       
+   }
+   
+   #full-Table{
+       width: 100%;
+       height: 100%;
+   }
+   
+   #static-Table th{
+       float: left;
+       font-size: 120%;
+      
+   }
+   
+   
+   #static-Table{
+       height: 100%;
+       width: 40%;
+       float: left;
+       font-size: 100%;
+   }
+   
+   #moving-Table{
+       height: 100%;
+       float: left;
+      
+   }
+   
+   
+   
+   
+   .playerScore th{
+       font-size: 120%;
+       text-align: center;
+   }
+   
+   .playerScore td{
+       font-size: 100%;
+       text-align: center;
+   }
+   
+   .scrolling-wrapper {
+       overflow-x: scroll;
+       overflow-y: hidden;
+       white-space: nowrap;
+     
+       .card {
+         display: inline-block;
+       }
+     }
+   
+   #team-body{
+       margin-bottom: 12%;
+   }

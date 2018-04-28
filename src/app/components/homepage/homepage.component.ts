@@ -23,22 +23,35 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
 export class HomepageComponent implements OnInit {
   errorMessage: string;
   weather = [];
+  forecast;
   homeNews = [];
-
+  forecast_repeat;
 
   constructor(private _weatherService:WeatherService, private _homeNewsService: HomeNewsService) {
-
+    this.forecast_repeat = Array.from(Array(5)).map((x, i) => i+1 );
    }
 
   ngOnInit() {
     this._weatherService.getWeather()
     .subscribe(weather => {
       this.weather = weather;
-    this._homeNewsService.getHomeNews()
-    .subscribe(homeNews =>{
-      this.homeNews = homeNews;
+    
     })
-    },
-      error => this.errorMessage=<any>error);
+      error => this.errorMessage=<any>error
+      this._weatherService.getWeatherForecast()
+    .subscribe(forecast => {
+      this.forecast = forecast;
+    
+    })
+      error => this.errorMessage=<any>error
+      this._homeNewsService.getHomeNews()
+  .subscribe(homeNews =>{
+    this.homeNews = homeNews;
+    
+    })
+      error => this.errorMessage=<any>error
   }
-  }
+}
+  
+  
+    

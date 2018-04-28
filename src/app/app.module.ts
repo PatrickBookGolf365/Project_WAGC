@@ -29,7 +29,6 @@ import { NewsService} from './components/additional-info/news/news.service';
 import { HomeNewsService } from './components/homepage/services/weather.service';
 import { YelpService } from './components/events/events.service';
 import { EventComponent } from './components/events/event/event.component';
-import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 import { LiveScoreService } from './components/live-score/live-score.service';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
 import { LiveTeamScoreComponent } from './components/live-score/live-team-score/live-team-score.component';
@@ -41,7 +40,6 @@ const appRoutes:
     { path: 'events', component: EventsComponent },
     { path: 'add-info', component: AdditionalInfoComponent },
     { path: 'teamprofiles', component: TeamProfilesComponent },
-    { path: 'favteamprofiles' , component: FavTeamProfilesComponent},
     { path: 'about', component: AboutComponent },
     { path: 'news' , component: NewsComponent},
     { path: 'eligibility', component: EligibilityComponent },
@@ -69,7 +67,6 @@ const appRoutes:
     TeamProfilesComponent,
     ToolbarComponent,
     EventComponent,
-    FavTeamProfilesComponent,
     LivePlayerScoreComponent,
     LiveTeamScoreComponent
   ],

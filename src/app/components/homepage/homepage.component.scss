@@ -17,7 +17,11 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
  
 }
 
-
+.box {
+    display: flex;
+    align-items:center;
+    width: 100%;
+ }
 
 .compass-img{
    width: 245%;
@@ -84,3 +88,13 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
 .mat-item-para{
     height: 30%;
 }
+
+.weather_child{
+    font-size: 160%;
+   
+}
+
+.weather_card{
+    margin-bottom: 3%;
+}
+

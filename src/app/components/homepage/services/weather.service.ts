@@ -11,12 +11,19 @@ import {IHomeNews} from './news';
 @Injectable()
 export class WeatherService {
     
-   private _weatherUrl="http://api.openweathermap.org/data/2.5/weather?lat=53.3909&lon=-6.5665&units=metric&appid=30e47e75d5f18740d0765320a709ce40"
-    
+   private _weatherUrl="http://api.openweathermap.org/data/2.5/weather?lat=53.3909&lon=-6.5665&units=metric&appid=30e47e75d5f18740d0765320a709ce40" 
+   private _weatherUrl2="http://api.openweathermap.org/data/2.5/forecast?lat=53.3909&lon=-6.5665&units=metric&appid=30e47e75d5f18740d0765320a709ce40";
+
    constructor(private _http: HttpClient){}
        getWeather(): Observable<IWeather[]>{
         return this._http.get<IWeather[]>(this._weatherUrl)
-        .do(data => console.log("All: "+JSON.stringify(data)))
+        .do(data => console.log("Weather: "+JSON.stringify(data)))
+        .catch(this.handleError);
+       }
+
+       getWeatherForecast(){
+        return this._http.get(this._weatherUrl2)
+        .do(data => console.log("Forecast: "+JSON.stringify(data)))
         .catch(this.handleError);
        }
 
