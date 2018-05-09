@@ -35,7 +35,7 @@ import { MapService } from './shared/map.service';
 import { LiveScoreService } from './components/live-score/live-score.service';
 
 import { EventComponent } from './components/events/event/event.component';
-import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
+// import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
 import { LiveTeamScoreComponent } from './components/live-score/live-team-score/live-team-score.component';
 import { SidenavComponent } from './components/geolocation/sidenav/sidenav.component';
@@ -69,7 +69,6 @@ import { HaversineService } from "ng2-haversine";
     TeamProfilesComponent,
     ToolbarComponent,
     EventComponent,
-    FavTeamProfilesComponent,
     LivePlayerScoreComponent,
     LiveTeamScoreComponent,
     SidenavComponent,

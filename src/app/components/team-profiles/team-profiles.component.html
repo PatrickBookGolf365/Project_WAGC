@@ -1,12 +1,14 @@
-<button id="calculate">Click</button>
-<p id="firstvalue">2</p>
-<p id="secondvalue">3</p>
-<p type="number" id="output"></p>
+<mat-expansion-panel *ngFor="let team of team">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+          {{team.team}}
+      </mat-panel-title>
+      </mat-expansion-panel-header>
 
-
+      
 <div id="team-wrapper">
   <mat-toolbar id="team-header-toolbar">
-    <span id="title">Australia</span>
+    <span id="title"> {{team.team}}</span>
     <button id="fav-button" mat-button><mat-icon class="fav">star</mat-icon></button>
   </mat-toolbar>
   <div id="team-header">

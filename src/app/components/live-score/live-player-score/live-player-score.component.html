@@ -26,7 +26,7 @@
         <th>Total</th>
       </tr>
     </thead>
-    <tbody *ngFor="let number of numbers; let i = index" > 
+    <tbody id="player-tbody" *ngFor="let number of numbers; let i = index" > 
       <tr *ngFor="let players of player">
         <td>{{players.ScoringResult.Results[0].ScoreItem[i].Pos[0]}}</td>
         <td>{{players.ScoringResult.Results[0].ScoreItem[i].Name[0]}}</td>

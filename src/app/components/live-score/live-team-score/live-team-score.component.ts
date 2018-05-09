@@ -13,7 +13,7 @@ export class LiveTeamScoreComponent implements OnInit{
   errorMessage: string;
   team: any[] = [];
   hideStuff = []; 
-  
+  player;
 
   constructor(public _liveScoreService:LiveScoreService) { }
 
@@ -22,6 +22,10 @@ export class LiveTeamScoreComponent implements OnInit{
   .subscribe(team => {
     this.team = team;},
     error => this.errorMessage=<any>error);
-
+    this._liveScoreService.getFakePlayer()
+    .subscribe(player => {
+      this.player = player; 
+    },
+    error => this.errorMessage=<any>error);
   }
 }

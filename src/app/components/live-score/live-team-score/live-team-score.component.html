@@ -1,4 +1,1018 @@
-<div id="live-main">
+<div *ngIf="hideall">   
+<div id="team-wrapper">
+  <mat-toolbar id="team-header-toolbar">
+    <span><button class="hide-btn" (click)="hideall = !hideall"><mat-icon>arrow_back</mat-icon></button></span><span id="title">{{team[p].team}}</span>
+    <button id="fav-button" mat-button><mat-icon class="fav">star</mat-icon></button>
+  </mat-toolbar>
+  <div id="team-header">
+    <span>
+      <img id="team-image" src="./assets/img/team.jpg">
+    </span>
+    <mat-card id="score-Info">
+      <table>
+      <tr>
+        <th>Thru</th><td>F</td>
+        <th>Today</th><td>-13</td>
+        <th>Total</th><td>-38</td>
+        <th>Rank</th><td>1</td>
+      </tr>
+    </table>
+    </mat-card>
+  </div>
+ <mat-divider></mat-divider>
+  <div id="team-body">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Round One
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div id="full-Table">
+        <div id="static-Table">
+          <table>
+            <!-- Header 1/2 -->
+            <tr>
+              <th>Hole</th>
+            </tr>
+            <tr>
+              <td>Yards</td>
+            </tr>
+            <tr>
+              <td>Par</td>
+            </tr>
+            <tr>
+              <td>{{team[p].player1.name}}</td>
+            </tr>
+            <tr>
+              <td>{{team[p].player2.name}}</td>
+            </tr>
+            <tr>
+              <td>{{team[p].player3.name}}</td>
+            </tr>
+            <tr>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <td>Score Against Par</td>
+            </tr>
+          </table>
+        </div>
+        <div class="scrolling-wrapper">
+          <div id="moving-Table">
+            <div class="card">
+              <table class="playerScore">
+                <tr>
+                  <!-- Header 2/2 -->
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                  <th>9</th>
+                  <th>10</th>
+                  <th>Out</th>
+                  <th>11</th>
+                  <th>12</th>
+                  <th>13</th>
+                  <th>14</th>
+                  <th>15</th>
+                  <th>16</th>
+                  <th>17</th>
+                  <th>18</th>
+                  <th>In</th>
+                  <th>Total</th>
+                </tr>
+                <tbody *ngFor="let players of player">
+                <tr>
+                  <!-- Yards -->
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[0]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[1]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[2]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[3]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[4]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[5]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[6]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[7]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[8]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[9]}}</td>
+                  <td></td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[10]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[11]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[12]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[13]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[14]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[15]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[16]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Yards[0].int[17]}}</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <!-- Par  -->
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[0]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[1]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[2]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[3]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[4]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[5]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[6]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[7]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[8]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[9]}}</td>
+                  <td></td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[10]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[11]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[12]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[13]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[14]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[15]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[16]}}</td>
+                  <td>{{players.ScoringResult.HBHTee[0].HBHTeeInfo[1].Par[0].int[17]}}</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <!-- Player1  -->
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[0]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[1]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[2]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[3]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[4]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[5]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[6]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[7]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[8]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[9]}}</td>
+                  <td></td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[10]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[11]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[12]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[13]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[14]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[15]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[16]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[p].Score[0].string[17]}}</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <!-- Player2  -->
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[0]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[1]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[2]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[3]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[4]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[5]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[6]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[7]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[8]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[9]}}</td>
+                  <td></td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[10]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[11]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[12]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[13]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[14]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[15]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[16]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[1].Score[0].string[17]}}</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <!-- Player3  -->
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[0]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[1]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[2]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[3]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[4]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[5]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[6]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[7]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[8]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[9]}}</td>
+                  <td></td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[10]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[11]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[12]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[13]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[14]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[15]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[16]}}</td>
+                  <td>{{players.ScoringResult.Results[0].ScoreItem[0].HBH[0].HBHRound[0].Score[0].string[17]}}</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <!-- Round  -->
+                  <td>9</td>
+                  <td>10</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>6</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>67</td>
+                  <td>8</td>
+                  <td>6</td>
+                  <td>9</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>6</td>
+                  <td>8</td>
+                  <td>8</td>
+                  <td>8</td>
+                  <td>68</td>
+                  <td>135</td>
+                </tr>
+
+                <tr>
+                  <!-- Score Against Par  -->
+                  <td>-3</td>
+                  <td>-1</td>
+                  <td>-1</td>
+                  <td>-2</td>
+                  <td>-4</td>
+                  <td>-6</td>
+                  <td>-8</td>
+                  <td>-7</td>
+                  <td>-9</td>
+                  <td></td>
+                  <td>E</td>
+                  <td>E</td>
+                  <td>+1</td>
+                  <td>E</td>
+                  <td>-2</td>
+                  <td>-2</td>
+                  <td>-4</td>
+                  <td>-4</td>
+                  <td>-4</td>
+                  <td></td>
+                  <td>-9</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Round Two
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div id="full-Table">
+        <div id="static-Table">
+          <table>
+            <!-- Header 1/2 -->
+            <tr>
+              <th>Hole</th>
+            </tr>
+            <tr>
+              <td>Yards</td>
+            </tr>
+            <tr>
+              <td>Par</td>
+            </tr>
+            <tr>
+              <td>Cameron Davis</td>
+            </tr>
+            <tr>
+              <td>Curtis Luck</td>
+            </tr>
+            <tr>
+              <td>Harrison Endycott</td>
+            </tr>
+            <tr>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <td>Score Against Par</td>
+            </tr>
+          </table>
+        </div>
+        <div class="scrolling-wrapper">
+          <div id="moving-Table">
+            <div class="card">
+              <table class="playerScore">
+                <tr>
+                  <!-- Header 1/2 -->
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                  <th>9</th>
+                  <th>10</th>
+                  <th>Out</th>
+                  <th>11</th>
+                  <th>12</th>
+                  <th>13</th>
+                  <th>14</th>
+                  <th>15</th>
+                  <th>16</th>
+                  <th>17</th>
+                  <th>18</th>
+                  <th>In</th>
+                  <th>Total</th>
+                </tr>
+
+                <tr>
+                  <!-- Yards -->
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                </tr>
+
+                <tr>
+                  <!-- Par  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Player1  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Player2  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Player3  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Round  -->
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Score Against Par  -->
+                  <td>7</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Round Three
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div id="full-Table">
+        <div id="static-Table">
+          <table>
+            <!-- Header 1/2 -->
+            <tr>
+              <th>Hole</th>
+            </tr>
+            <tr>
+              <td>Yards</td>
+            </tr>
+            <tr>
+              <td>Par</td>
+            </tr>
+            <tr>
+              <td>Cameron Davis</td>
+            </tr>
+            <tr>
+              <td>Curtis Luck</td>
+            </tr>
+            <tr>
+              <td>Harrison Endycott</td>
+            </tr>
+            <tr>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <td>Score Against Par</td>
+            </tr>
+          </table>
+        </div>
+        <div class="scrolling-wrapper">
+          <div id="moving-Table">
+            <div class="card">
+              <table class="playerScore">
+                <tr>
+                  <!-- Header 1/2 -->
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                  <th>9</th>
+                  <th>10</th>
+                  <th>Out</th>
+                  <th>11</th>
+                  <th>12</th>
+                  <th>13</th>
+                  <th>14</th>
+                  <th>15</th>
+                  <th>16</th>
+                  <th>17</th>
+                  <th>18</th>
+                  <th>In</th>
+                  <th>Total</th>
+                </tr>
+
+                <tr>
+                  <!-- Yards -->
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                </tr>
+
+                <tr>
+                  <!-- Par  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Player1  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Player2  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Player3  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Round  -->
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Score Against Par  -->
+                  <td>7</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Round Four
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div id="full-Table">
+        <div id="static-Table">
+          <table>
+            <!-- Header 1/2 -->
+            <tr>
+              <th>Hole</th>
+            </tr>
+            <tr>
+              <td>Yards</td>
+            </tr>
+            <tr>
+              <td>Par</td>
+            </tr>
+            <tr>
+              <td>Cameron Davis</td>
+            </tr>
+            <tr>
+              <td>Curtis Luck</td>
+            </tr>
+            <tr>
+              <td>Harrison Endycott</td>
+            </tr>
+            <tr>
+              <td>Complete</td>
+            </tr>
+            <tr>
+              <td>Score Against Par</td>
+            </tr>
+          </table>
+        </div>
+        <div class="scrolling-wrapper">
+          <div id="moving-Table">
+            <div class="card">
+              <table class="playerScore">
+                <tr>
+                  <!-- Header 1/2 -->
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                  <th>9</th>
+                  <th>10</th>
+                  <th>Out</th>
+                  <th>11</th>
+                  <th>12</th>
+                  <th>13</th>
+                  <th>14</th>
+                  <th>15</th>
+                  <th>16</th>
+                  <th>17</th>
+                  <th>18</th>
+                  <th>In</th>
+                  <th>Total</th>
+                </tr>
+
+                <tr>
+                  <!-- Yards -->
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                  <td>400</td>
+                </tr>
+
+                <tr>
+                  <!-- Par  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Player1  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Player2  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Player3  -->
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Round  -->
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <!-- Score Against Par  -->
+                  <td>7</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+    <div id="team-footer">
+
+
+    </div>
+  </div>
+  </div>
+</div>
+<div id="live-main" *ngIf="!hideall">
     <mat-toolbar id="live-search">
         <mat-form-field>
             <input matInput placeholder="search">
@@ -11,7 +1025,7 @@
     <table id="live-table">
         <thead>
             <tr id="live-table-header-title">
-                <th>Ex</th>
+                <th></th>
                 <th>Pos</th>
                 <th>Team</th>
                 <th>Hole</th>
@@ -23,7 +1037,7 @@
                 <th>Total</th>
             </tr>
         </thead>
-        <tbody *ngFor="let team of team; let x = index" class="tbody">
+        <tbody id="player-tbody"*ngFor="let team of team; let x = index" class="tbody">
             <tr id="live-table-header">
                 <td>
                     <button class="hide-btn" (click)="hideStuff[x] = !hideStuff[x]">
@@ -31,7 +1045,7 @@
                     </button>
                 </td>
                 <td>{{team.pos}}</td>
-                <td>{{team.team}}</td>
+                <td><button class="" (click)="hideall = !hideall; p = [x]" mat-button>{{team.team}}</button></td>
                 <td>{{team.hole}}</td>
                 <td>
                     <span id="total">{{team.total}}</span>
@@ -100,84 +1114,5 @@
             </tr>
         </tbody>
     </table>
-    <table border="1">
-        <tr>
-            <th>Team</th>
-        </tr>
-        <tr>
-            <td *ngFor="let team of team">
-            {{team.player1.name}}<br>
-            {{team.player2.name}}<br>
-            {{team.player3.name}}
-            </td>
-        </tr>
-    </table>
-    <!-- <table id="live-table" border="1">
-            <tr>
-                <th>Ex</th>
-                <th>Pos</th>
-                <th>Team</th>
-                <th>Hole</th>
-                <th>Total</th>
-                <th>R1</th>
-                <th>R2</th>
-                <th>R3</th>
-                <th>R4</th>
-                <th>Total</th>
-            </tr>
-            <tr>
-                <td>
-                    <button id="clickme" mat-button>
-                        <mat-icon>expand_more</mat-icon>
-                    </button>
-                </td>
-                <td>1</td>
-                <td>Ireland</td>
-                <td>F</td>
-                <td>-38</td>
-                <td>135</td>
-                <td>132</td>
-                <td>121</td>
-                <td>126</td>
-                <td>534</td>
-            </tr>
-            <tr class="hideme">
-                <td></td>
-                <td></td>
-                <td>Patrick</td>
-                <td>F</td>
-                <td>-38</td>
-                <td>135</td>
-                <td>132</td>
-                <td>121</td>
-                <td>126</td>
-                <td>534</td>
-            </tr>
-            <tr class="hideme">
-                <td></td>
-                <td></td>
-                <td>Patrick</td>
-                <td>F</td>
-                <td>-38</td>
-                <td>135</td>
-                <td>132</td>
-                <td>121</td>
-                <td>126</td>
-                <td>534</td>
-            </tr>
-            <tr class="hideme">
-                <td></td>
-                <td></td>
-                <td>Patrick</td>
-                <td>F</td>
-                <td>-38</td>
-                <td>135</td>
-                <td>132</td>
-                <td>121</td>
-                <td>126</td>
-                <td>534</td>
-            </tr>
-
-        </table> -->
     <mat-divider></mat-divider>
 </div>
