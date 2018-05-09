@@ -1,16 +1,1 @@
-<div id="newsWrapper">
-  <div id="Severity-group">
-    <div id="Severity-1"  *ngFor="let news of news" >
-      <mat-card id="newsCard-severity-{{news.severity}}" >
-        <table>
-          <tr>
-            <th>01/01/2018 - {{news.severity}} - {{news.title}}</th>
-          </tr>
-        </table>
-        <mat-card>
-          <td>{{news.content}}</td>
-        </mat-card>
-      </mat-card>
-    </div>
-  </div>
-</div>
+<app-news-quote *ngFor="let quote of quotes" [quote]="quote"></app-news-quote>

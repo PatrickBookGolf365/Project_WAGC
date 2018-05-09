@@ -16,7 +16,7 @@ export class WeatherService {
    constructor(private _http: HttpClient){}
        getWeather(): Observable<IWeather[]>{
         return this._http.get<IWeather[]>(this._weatherUrl)
-        .do(data => console.log("All: "+JSON.stringify(data)))
+        //.do(data => console.log("All: "+JSON.stringify(data)))
         .catch(this.handleError);
        }
 

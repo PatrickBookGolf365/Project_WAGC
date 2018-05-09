@@ -34,10 +34,10 @@ export class HomepageComponent implements OnInit {
     this._weatherService.getWeather()
     .subscribe(weather => {
       this.weather = weather;
-    this._homeNewsService.getHomeNews()
-    .subscribe(homeNews =>{
-      this.homeNews = homeNews;
-    })
+    // this._homeNewsService.getHomeNews()
+    // .subscribe(homeNews =>{
+    //   this.homeNews = homeNews;
+    // })
     },
       error => this.errorMessage=<any>error);
   }

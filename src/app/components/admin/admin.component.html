@@ -1,0 +1,3 @@
+<button mat-button class="button"  [routerLink]="['/admin-create']" >Create</button>
+
+<app-admin-quote *ngFor="let quote of quotes" [quote]="quote" (quoteDeleted)="onDeleted($event)"></app-admin-quote>

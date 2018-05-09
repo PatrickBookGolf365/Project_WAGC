@@ -1,15 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule, Component } from '@angular/core';
-import { MaterialModule } from './shared/material.module';
-import { HttpClientModule } from '@angular/common/http';
-import { AgmCoreModule } from '@agm/core';
-import { LeafletModule } from '@asymmetrik/ngx-leaflet';
-import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
+import { ModuleWithProviders } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 
 import { AppComponent } from './app.component';
-import { routing } from "./app.routing";
 import { NavigationComponent } from './components/navigation/nav/navigation.component';
 import { HomepageComponent } from './components//homepage/homepage.component';
 import { LiveScoreComponent } from './components//live-score/live-score.component';
@@ -30,73 +22,42 @@ import { WeatherService} from './components/homepage/services/weather.service';
 import { NewsService} from './components/additional-info/news/news.service';
 import { HomeNewsService } from './components/homepage/services/weather.service';
 import { YelpService } from './components/events/events.service';
-import { QuoteService } from './shared/quote.service';
-import { MapService } from './shared/map.service';
-import { LiveScoreService } from './components/live-score/live-score.service';
-
 import { EventComponent } from './components/events/event/event.component';
 import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
+import { LiveScoreService } from './components/live-score/live-score.service';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
 import { LiveTeamScoreComponent } from './components/live-score/live-team-score/live-team-score.component';
 import { SidenavComponent } from './components/geolocation/sidenav/sidenav.component';
 import { QuotesComponent } from './components/homepage/quotes/quotes.component';
+import { QuoteService } from "./shared/quote.service";
 import { QuoteComponent } from './components/homepage/quote/quote.component';
 import { NewsQuoteComponent } from './components/additional-info/news/news-quote/news-quote.component';
 import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
 import { AdminQuoteComponent } from './components/admin/admin-quote/admin-quote.component';
 import { AdminComponent } from './components/admin/admin.component';
-import { MapComponent } from './components/geolocation/map/map.component';
-import { TestGeoComponent } from './components/test/test-geo.component';
-import { TestComp2Component } from './components/test-comp-2/test-comp-2.component';
-import { HaversineService } from "ng2-haversine";
+import { TestGeoComponent } from "./components/test/test-geo.component";
+import { TestComp2Component } from "./components/test-comp-2/test-comp-2.component";
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    NavigationComponent,
-    HomepageComponent,
-    LiveScoreComponent,
-    GeolocationComponent,
-    TransportComponent,
-    AdditionalInfoComponent,
-    NewsComponent,
-    AboutComponent,
-    EligibilityComponent,
-    ScheduleComponent,
-    ContactComponent,
-    TransportComponent,
-    EventsComponent,
-    TeamProfilesComponent,
-    ToolbarComponent,
-    EventComponent,
-    FavTeamProfilesComponent,
-    LivePlayerScoreComponent,
-    LiveTeamScoreComponent,
-    SidenavComponent,
-    QuotesComponent,
-    QuoteComponent,
-    NewsQuoteComponent,
-    AdminCreateComponent,
-    AdminQuoteComponent,
-    AdminComponent,
-    MapComponent,
-    TestGeoComponent,
-    TestComp2Component,
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    MaterialModule,
-    HttpClientModule,
-    HttpModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCPZDSf-Sp9Ivqq7ojJx39IZhHPK54bjnI'
-    }),
-    LeafletModule.forRoot(),
-    routing
-  ],
-  providers: [WeatherService, NewsService, HomeNewsService, YelpService, LiveScoreService, QuoteService, MapService, HaversineService],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+const appRoutes:
+  Routes = [
+    { path: "", component: HomepageComponent },
+    { path: 'live-score', component: LiveScoreComponent },
+    { path: 'geo-location', component: GeolocationComponent },
+    { path: 'events', component: EventsComponent },
+    { path: 'add-info', component: AdditionalInfoComponent },
+    { path: 'teamprofiles', component: TeamProfilesComponent },
+    { path: 'favteamprofiles' , component: FavTeamProfilesComponent},
+    { path: 'about', component: AboutComponent },
+    { path: 'news' , component: NewsComponent},
+    { path: 'eligibility', component: EligibilityComponent },
+    { path: 'schedule', component: ScheduleComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'admin', component: AdminComponent },
+    { path: 'admin-create', component: AdminCreateComponent },
+    { path: 'test2', component: TestComp2Component },
+    { path: 'test-geo', component: TestGeoComponent },
+    { path: '**', redirectTo: '', pathMatch: 'full'}
+  ]
+
+  
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

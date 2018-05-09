@@ -64,8 +64,8 @@
         </div>
       </div>
       <div class="flex-item">
-        <div class="flex-direction">
-          <span *ngIf="weather.wind.deg >= 0 && weather.wind.deg <= 22.50"><!--N-->
+        <div class="flex-direction">  <!-- 0 22.5 -->
+          <span *ngIf="weather.wind.deg > 0 && weather.wind.deg <= 22.5"><!--N-->
            <mat-icon><img class="compass-img" src="./assets/img/north.png"></mat-icon>
           </span>
           <div *ngIf="weather.wind.deg > 22.50 && weather.wind.deg <= 67.50"><!--NE-->
@@ -99,25 +99,6 @@
       </div>
   </div>
 
-  <mat-list class="news-content-wrapper">
-      <mat-list-item class="mat-item">
-
-          
-      <img src="./assets/img/ILGU.png" class="mat-item-img">
-          
-
-    <div class="mat-item-content">
-         <div class="mat-item-heading">
-             <h3>Heading</h3>
-          </div>
-                  
-          <div class="mat-item-para">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </mat-list-item>
-    
-      <mat-divider></mat-divider>
-
-</mat-list>
+  
+  <app-quotes></app-quotes>
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-geolocation',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeolocationComponent implements OnInit {
 
+  showFiller = false;
+
   constructor() { }
 
   ngOnInit() {
+    
   }
 
+  
 }
