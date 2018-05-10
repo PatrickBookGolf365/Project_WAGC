@@ -25,6 +25,7 @@ import { EligibilityComponent } from './components/additional-info/eligibitity/e
 import { ScheduleComponent } from './components/additional-info/schedule/schedule.component';
 import { ContactComponent } from './components/additional-info/contact/contact.component';
 import { EventsComponent } from './components/events/events.component';
+import { GeoCoord } from "./components/test-comp-2/geo-coord";
 
 import { WeatherService} from './components/homepage/services/weather.service';
 import { NewsService} from './components/additional-info/news/news.service';
@@ -81,6 +82,7 @@ import { HaversineService } from "ng2-haversine";
     MapComponent,
     TestGeoComponent,
     TestComp2Component,
+    
   ],
   imports: [
     BrowserModule,
