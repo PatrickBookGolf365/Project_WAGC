@@ -1,11 +1,10 @@
 export interface IWeather {
-      "wind": {
+      'wind': {
             speed: number;
             deg: number;
-      },
-      
-      "main": {
+      };
+      'main': {
             temp: number;
-      }     
-};
+      };
+}
 

@@ -11,7 +11,7 @@ declare var $:any;
 })
 export class LiveTeamScoreComponent implements OnInit{
   errorMessage: string;
-  team: any[] = [];
+  team: any = [];
   hideStuff = []; 
   player;
 

@@ -9,7 +9,7 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { routing } from "./app.routing";
+import { routing } from './app.routing';
 import { NavigationComponent } from './components/navigation/nav/navigation.component';
 import { HomepageComponent } from './components//homepage/homepage.component';
 import { LiveScoreComponent } from './components//live-score/live-score.component';
@@ -25,7 +25,7 @@ import { EligibilityComponent } from './components/additional-info/eligibitity/e
 import { ScheduleComponent } from './components/additional-info/schedule/schedule.component';
 import { ContactComponent } from './components/additional-info/contact/contact.component';
 import { EventsComponent } from './components/events/events.component';
-import { GeoCoord } from "./components/test-comp-2/geo-coord";
+import { GeoCoord } from './components/test-comp-2/services/geo-coord';
 
 import { WeatherService} from './components/homepage/services/weather.service';
 import { NewsService} from './components/additional-info/news/news.service';
@@ -39,7 +39,7 @@ import { EventComponent } from './components/events/event/event.component';
 // import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
 import { LiveTeamScoreComponent } from './components/live-score/live-team-score/live-team-score.component';
-import { SidenavComponent } from './components/geolocation/sidenav/sidenav.component';
+import { SidenavComponent } from './components/test-comp-2/side-nav/sidenav.component';
 import { QuotesComponent } from './components/homepage/quotes/quotes.component';
 import { QuoteComponent } from './components/homepage/quote/quote.component';
 import { NewsQuoteComponent } from './components/additional-info/news/news-quote/news-quote.component';
@@ -49,7 +49,11 @@ import { AdminComponent } from './components/admin/admin.component';
 import { MapComponent } from './components/geolocation/map/map.component';
 import { TestGeoComponent } from './components/test/test-geo.component';
 import { TestComp2Component } from './components/test-comp-2/test-comp-2.component';
-import { HaversineService } from "ng2-haversine";
+import { ActivityListComponent } from './components/test-comp-2/activity-list/activity-list.component';
+// import { BottomSheetComponent } from './components/test-comp-2/test-comp-2.component';
+import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/test-comp-2.component';
+
+
 
 @NgModule({
   declarations: [
@@ -82,7 +86,8 @@ import { HaversineService } from "ng2-haversine";
     MapComponent,
     TestGeoComponent,
     TestComp2Component,
-    
+    ActivityListComponent,
+    BottomSheetOverviewExampleSheet,
   ],
   imports: [
     BrowserModule,
@@ -97,7 +102,16 @@ import { HaversineService } from "ng2-haversine";
     LeafletModule.forRoot(),
     routing
   ],
-  providers: [WeatherService, NewsService, HomeNewsService, YelpService, LiveScoreService, QuoteService, MapService, HaversineService],
+  entryComponents: [ BottomSheetOverviewExampleSheet],
+  providers: [
+    WeatherService,
+    NewsService,
+    HomeNewsService,
+    YelpService,
+    LiveScoreService,
+    QuoteService,
+    MapService,
+   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

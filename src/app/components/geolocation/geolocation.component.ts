@@ -7,7 +7,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class GeolocationComponent implements OnInit {
 
-  showFiller = false;
 
   constructor() { }
 

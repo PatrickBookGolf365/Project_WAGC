@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var $:any;
+declare var $: any;
 
 @Component({
   selector: 'app-live-score',
@@ -8,12 +8,12 @@ declare var $:any;
   styleUrls: ['./live-score.component.scss']
 })
 export class LiveScoreComponent implements OnInit {
-  
+
   constructor() { }
 
 
   ngOnInit() {
-   
+
   }
 }
 

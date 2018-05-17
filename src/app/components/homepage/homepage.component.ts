@@ -27,8 +27,8 @@ export class HomepageComponent implements OnInit {
   homeNews = [];
   forecast_repeat;
 
-  constructor(private _weatherService:WeatherService, private _homeNewsService: HomeNewsService) {
-    this.forecast_repeat = Array.from(Array(5)).map((x, i) => i+1 );
+  constructor(private _weatherService: WeatherService, private _homeNewsService: HomeNewsService) {
+    this.forecast_repeat = Array.from(Array(5)).map((x, i) => i + 1 );
    }
 
   ngOnInit() {
@@ -40,10 +40,9 @@ export class HomepageComponent implements OnInit {
     //   this.homeNews = homeNews;
     // })
     },
-      error => this.errorMessage=<any>error);
+      error => this.errorMessage = <any>error);
   }
   }
 
-  
-  
-    
+
+

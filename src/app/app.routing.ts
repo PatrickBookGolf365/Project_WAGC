@@ -1,5 +1,5 @@
-import { ModuleWithProviders } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/nav/navigation.component';
@@ -27,20 +27,20 @@ import { EventComponent } from './components/events/event/event.component';
 import { LiveScoreService } from './components/live-score/live-score.service';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
 import { LiveTeamScoreComponent } from './components/live-score/live-team-score/live-team-score.component';
-import { SidenavComponent } from './components/geolocation/sidenav/sidenav.component';
 import { QuotesComponent } from './components/homepage/quotes/quotes.component';
-import { QuoteService } from "./shared/quote.service";
+import { QuoteService } from './shared/quote.service';
 import { QuoteComponent } from './components/homepage/quote/quote.component';
 import { NewsQuoteComponent } from './components/additional-info/news/news-quote/news-quote.component';
 import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
 import { AdminQuoteComponent } from './components/admin/admin-quote/admin-quote.component';
 import { AdminComponent } from './components/admin/admin.component';
-import { TestGeoComponent } from "./components/test/test-geo.component";
-import { TestComp2Component } from "./components/test-comp-2/test-comp-2.component";
+import { TestGeoComponent } from './components/test/test-geo.component';
+import { TestComp2Component } from './components/test-comp-2/test-comp-2.component';
+// import { BottomSheetComponent } from './components/test-comp-2/bottom-sheet/bottom-sheet.component';
 
 const appRoutes:
   Routes = [
-    { path: "", component: HomepageComponent },
+    { path: '', component: HomepageComponent },
     { path: 'live-score', component: LiveScoreComponent },
     { path: 'geo-location', component: GeolocationComponent },
     { path: 'events', component: EventsComponent },
@@ -56,8 +56,9 @@ const appRoutes:
     { path: 'admin-create', component: AdminCreateComponent },
     { path: 'test2', component: TestComp2Component },
     { path: 'test-geo', component: TestGeoComponent },
+    // { path: 'bot', component: BottomSheetComponent },
     { path: '**', redirectTo: '', pathMatch: 'full'}
-  ]
+  ];
 
-  
+
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
