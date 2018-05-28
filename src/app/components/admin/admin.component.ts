@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Http, Response } from "@angular/http";
+import { Http, Response } from '@angular/http';
 
 import { Quote } from '../../shared/quote.interface';
 import { QuoteService } from '../../shared/quote.service';

@@ -32,7 +32,6 @@ import { NewsService} from './components/additional-info/news/news.service';
 import { HomeNewsService } from './components/homepage/services/weather.service';
 import { YelpService } from './components/events/events.service';
 import { QuoteService } from './shared/quote.service';
-import { MapService } from './shared/map.service';
 import { LiveScoreService } from './components/live-score/live-score.service';
 
 import { EventComponent } from './components/events/event/event.component';
@@ -49,10 +48,9 @@ import { AdminComponent } from './components/admin/admin.component';
 import { MapComponent } from './components/geolocation/map/map.component';
 import { TestGeoComponent } from './components/test/test-geo.component';
 import { TestComp2Component } from './components/test-comp-2/test-comp-2.component';
-import { ActivityListComponent } from './components/test-comp-2/activity-list/activity-list.component';
 // import { BottomSheetComponent } from './components/test-comp-2/test-comp-2.component';
-import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/test-comp-2.component';
-
+// import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
+import { BottomSheetOverviewExampleSheetComponent } from './components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component';
 
 
 @NgModule({
@@ -86,8 +84,7 @@ import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/test-c
     MapComponent,
     TestGeoComponent,
     TestComp2Component,
-    ActivityListComponent,
-    BottomSheetOverviewExampleSheet,
+    BottomSheetOverviewExampleSheetComponent,
   ],
   imports: [
     BrowserModule,
@@ -102,7 +99,7 @@ import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/test-c
     //LeafletModule.forRoot(),
     routing
   ],
-  entryComponents: [ BottomSheetOverviewExampleSheet],
+  entryComponents: [ BottomSheetOverviewExampleSheetComponent],
   providers: [
     WeatherService,
     NewsService,
@@ -110,7 +107,6 @@ import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/test-c
     YelpService,
     LiveScoreService,
     QuoteService,
-    MapService,
    ],
   bootstrap: [AppComponent]
 })

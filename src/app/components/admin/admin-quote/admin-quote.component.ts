@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
-
 import { Quote } from '../../../shared/quote.interface';
 import { QuoteService } from '../../../shared/quote.service';
 
@@ -25,14 +24,14 @@ export class AdminQuoteComponent implements OnInit {
   ngOnInit() {
   }
 
-  onEdit(){
+  onEdit() {
     this.editing = true;
     this.editValueTitle = this.quote.title;
     this.editValueContent = this.quote.content;
     this.editValueSeverity = this.quote.severity;
   }
 
-  onUpdate(){
+  onUpdate() {
     this.quoteService.updateQuote(this.quote.id, this.editValueTitle, this.editValueContent, this.editValueSeverity)
     .subscribe(
       (quote: Quote) => {
