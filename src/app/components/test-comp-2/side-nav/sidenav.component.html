@@ -1,19 +1,44 @@
-<div id="wrapper">
-<mat-drawer-container class="example-container" autosize>
-        <mat-drawer #drawer class="example-sidenav mat-elevation-z10" mode="side">
-
-            <mat-list role="list">
-                <mat-list-item role="listitem">Montgomerie</mat-list-item>
-                <mat-list-item role="listitem">O'Meara</mat-list-item>
-            </mat-list>
-        </mat-drawer>
-      
-    
-</mat-drawer-container>
-
-</div>
-<div class="example-sidenav-content">
-    <button type="button" class="mat-button" mat-button (click)="drawer.toggle()">
-        <i class="material-icons">menu</i>
+<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
+  <mat-sidenav-content>
+    <p><button mat-button (click)="sidenav.open()">
+      <i class="material-icons">menu</i>
     </button>
+    </p>
+
+  </mat-sidenav-content>
+
+  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          Montgomorie
+        </mat-expansion-panel-header>
+
+        <mat-list role="list" *ngFor="let hole of holes ">
+            <mat-list-item role="listitem" class="mat-side-list">
+              <button mat-button (click)="openBottomSheet()" [routerLink]="['/test2', hole.id]"><span>Hole {{hole.id}}</span></button>
+            </mat-list-item>
+        </mat-list>
+
+
+      </mat-expansion-panel>
+  </mat-sidenav>
+</mat-sidenav-container>
+
+
+<div>
+  <p>hole {{ hole.hole }}</p>
+  <p>par {{ hole.par }}</p>
+  <p>{{hole.description}}</p>
+  <p>{{hole.flyover }}</p>
 </div>
+
+<!-- [routerLink]="['/test2', hole.id]" -->
+<!-- <div *ngFor="let hole of holes">
+    <p>{{hole.hole}}</p>
+    <p>{{hole.par}}</p>
+    <p>{{hole.flyover}}</p>
+  </div> -->
+
+
+
+

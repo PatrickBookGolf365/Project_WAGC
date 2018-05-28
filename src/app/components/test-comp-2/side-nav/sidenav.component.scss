@@ -5,24 +5,13 @@
   height: 100%;
   min-height: 100%;
 }
-
-.example-sidenav-content {
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  right: 45px;
-  top: 60px;
-}
-
-.example-sidenav {
-  margin-top: 44px;
-  display: flex;
-  width: 150px;
-  background-color: #F5F5F5;
-  height: 100%;
+.mat-side-list{
+  margin: 0;
 }
 .mat-button{
-  background-color: #F5F5F5;
-  height: 40px;
+  margin: 0px;
+}
+.hole{
+  width: 300px;
 }
 

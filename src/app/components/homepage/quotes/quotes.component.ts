@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Http, Response } from "@angular/http";
+import { Http, Response } from '@angular/http';
 
-import { Quote } from "../../../shared/quote.interface";
-import { QuoteService } from "../../../shared/quote.service";
+import { Quote } from '../../../shared/quote.interface';
+import { QuoteService } from '../../../shared/quote.service';
 
 @Component({
   selector: 'app-quotes',
@@ -13,7 +13,7 @@ export class QuotesComponent implements OnInit {
 
 
   quotes: Quote[];
-  
+
   constructor(private quoteService: QuoteService) { }
 
   ngOnInit() {
@@ -21,7 +21,7 @@ export class QuotesComponent implements OnInit {
       .subscribe(
         (quotes: Quote[]) => this.quotes = quotes,
         (error: Response) => console.log(error)
-       );  
+       );
   }
 
 }

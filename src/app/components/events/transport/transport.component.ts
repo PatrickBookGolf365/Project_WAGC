@@ -14,15 +14,13 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
     ])
   ]
 })
-export class TransportComponent{
-  
-  zoom: number = 14;
+export class TransportComponent {
+
+  zoom = 14;
 
   displayedColumns = ['bus', 'times'];
   dataSource = ELEMENT_DATA;
 
-
- 
   NationalAcademylat = 53.394427;
   NationalAcademylng = -6.560887;
 
@@ -35,7 +33,7 @@ export class TransportComponent{
   Cartondefaultlat = 53.390995;
   Cartondefaultlng = -6.566462;
 
-  MaynoothDefaultlat = 53.380809; 
+  MaynoothDefaultlat = 53.380809;
   MaynoothDefaultlng = -6.594588;
 
   ApartmentComplexlat = 53.380337;
@@ -43,7 +41,7 @@ export class TransportComponent{
 
   PhoenixRestaurantlat = 53.383985;
   PhoenixRestaurantlng = -6.604083;
-  
+
   PedestrianCrosslat = 53.382562;
   PedestrianCrosslng = -6.600772;
 }
@@ -56,6 +54,6 @@ export interface Element {
 const ELEMENT_DATA: Element[] = [
   {position: 1, name: '11:30'},
   {position: 2, name: '11:00'},
-  
-  
+
+
 ];
