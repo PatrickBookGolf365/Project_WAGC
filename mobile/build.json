@@ -1,0 +1,11 @@
+{
+    "android": {
+      "release": {
+        "keystore":"c:\\dev\\jd-release-key.keystore",
+        "storePassword":"bookgolf365",
+        "alias":"android-key",
+        "password":"bookgolf365",
+        "keystoreType":""
+      }
+    }
+  }

@@ -23,16 +23,16 @@ export class NewsComponent implements OnInit {
    }
 
   ngOnInit() {
-    // this._newsService.getNews()
-    // .subscribe(news => {
-    //   this.news = news;},
-    //   error => this.errorMessage=<any>error);
+    this._newsService.getNews()
+    .subscribe(news => {
+      this.news = news;},
+      error => this.errorMessage=<any>error);
 
-    this.quoteService.getQuotes()
-      .subscribe(
-        (quotes: Quote[]) => this.quotes = quotes,
-        (error: Response) => console.log(error)
-       );
+    // this.quoteService.getQuotes()
+    //   .subscribe(
+    //     (quotes: Quote[]) => this.quotes = quotes,
+    //     (error: Response) => console.log(error)
+    //    );
     }
   }
   

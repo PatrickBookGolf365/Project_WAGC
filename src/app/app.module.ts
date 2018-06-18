@@ -13,7 +13,6 @@ import { routing } from './app.routing';
 import { NavigationComponent } from './components/navigation/nav/navigation.component';
 import { HomepageComponent } from './components//homepage/homepage.component';
 import { LiveScoreComponent } from './components//live-score/live-score.component';
-import { GeolocationComponent } from './components//geolocation/geolocation.component';
 import { TransportComponent } from './components/events/transport/transport.component';
 import { TeamProfilesComponent } from './components/team-profiles/team-profiles.component';
 import { ToolbarComponent } from './components/navigation/toolbar/toolbar.component';
@@ -45,7 +44,6 @@ import { NewsQuoteComponent } from './components/additional-info/news/news-quote
 import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
 import { AdminQuoteComponent } from './components/admin/admin-quote/admin-quote.component';
 import { AdminComponent } from './components/admin/admin.component';
-import { MapComponent } from './components/geolocation/map/map.component';
 import { TestGeoComponent } from './components/test/test-geo.component';
 import { TestComp2Component } from './components/test-comp-2/test-comp-2.component';
 // import { BottomSheetComponent } from './components/test-comp-2/test-comp-2.component';
@@ -59,7 +57,6 @@ import { BottomSheetOverviewExampleSheetComponent } from './components/test-comp
     NavigationComponent,
     HomepageComponent,
     LiveScoreComponent,
-    GeolocationComponent,
     TransportComponent,
     AdditionalInfoComponent,
     NewsComponent,
@@ -81,7 +78,6 @@ import { BottomSheetOverviewExampleSheetComponent } from './components/test-comp
     AdminCreateComponent,
     AdminQuoteComponent,
     AdminComponent,
-    MapComponent,
     TestGeoComponent,
     TestComp2Component,
     BottomSheetOverviewExampleSheetComponent,

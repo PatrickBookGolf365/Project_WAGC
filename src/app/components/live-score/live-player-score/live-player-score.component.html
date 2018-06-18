@@ -8,9 +8,6 @@
       <mat-icon>search</mat-icon>
     </button>
   </mat-toolbar>
-  <div >
-    
-  </div>
   <table id="live-table">
     <thead>
       <tr id="live-table-header-title">
@@ -18,7 +15,6 @@
         <th>Player</th>
         <th>Team</th>
         <th>Hole</th>
-        <th>Total</th>
         <th>R1</th>
         <th>R2</th>
         <th>R3</th>
@@ -26,36 +22,19 @@
         <th>Total</th>
       </tr>
     </thead>
-    <tbody id="player-tbody" *ngFor="let number of numbers; let i = index" > 
-      <tr *ngFor="let players of player">
-        <td>{{players.ScoringResult.Results[0].ScoreItem[i].Pos[0]}}</td>
-        <td>{{players.ScoringResult.Results[0].ScoreItem[i].Name[0]}}</td>
-        <td><img src="./assets/img/{{players.ScoringResult.Results[0].ScoreItem[i].Display[0]}}.png"></td>
-        <td>{{players.ScoringResult.Results[0].ScoreItem[i].Hole[0]}}</td>
-        <td>
-              <span id="total_{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}">{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}</span>
-
-          <!-- <div *ngIf="players.ScoringResult.Results[0].ScoreItem[i].TotalToPar == +2">
-              <span id="total_plus">{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}</span>
-            </div>
-            <div *ngIf="players.ScoringResult.Results[0].ScoreItem[i].TotalToPar == +3">
-                <span id="total_plus">{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}</span>
-              </div>
-              <div *ngIf="players.ScoringResult.Results[0].ScoreItem[i].TotalToPar == +4">
-                  <span id="total_plus">{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}</span>
-                </div>
-                <div *ngIf="players.ScoringResult.Results[0].ScoreItem[i].TotalToPar == +5">
-                    <span id="total_plus">{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}</span>
-                  </div> -->
-        </td>
-        <td>{{players.ScoringResult.Results[0].ScoreItem[i].RoundScore[0].string[0]}}</td>
-        <td>{{players.ScoringResult.Results[0].ScoreItem[i].RoundScore[0].string[1]}}</td>
-        <td>{{players.ScoringResult.Results[0].ScoreItem[i].RoundScore[0].string[2]}}</td>
-        <td>{{players.ScoringResult.Results[0].ScoreItem[i].RoundScore[0].string[3]}}</td>
-        <td>
-          <span id="total_{{players.ScoringResult.Results[0].ScoreItem[i].TotalToPar}}">{{players.ScoringResult.Results[0].ScoreItem[i].Total}}</span>
-        </td>
+    <tbody id="player-tbody" *ngFor="let datas of data.event.tournament.players.player; let i = index" > 
+      <tr>
+        <td>{{datas.totals.position}}</td>
+        <td>{{datas.firstname}} {{datas.lastname}}</td>
+        <td><img src="./assets/img/{{datas.teamname}}.png" title="{{datas.teamname}}"></td>
+        <td>Hole</td>
+        <td>{{datas.round[0].strokes}}</td>
+        <td>{{datas.round[1].strokes}}</td>
+        <td>{{datas.round[2].strokes}}</td>
+        <td>{{datas.round[3].strokes}}</td>
+        <td>{{(datas.round[0].strokes * 1)  + (datas.round[1].strokes * 1) + (datas.round[2].strokes * 1) + (datas.round[3].strokes * 1)}}</td>
       </tr>
     </tbody>
   </table>
 </div>
+

@@ -1,1 +1,21 @@
-<app-news-quote *ngFor="let quote of quotes" [quote]="quote"></app-news-quote>
+
+   <div id="newsUpdate" *ngFor="let news of news.update">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div class="box">
+            <span>
+              <mat-icon id="newsSeverity{{news.severity}}">{{news.type}}</mat-icon>
+            </span>
+            <span>{{news.desc}}</span>
+          </div>
+        </mat-panel-title>
+        <mat-panel-description>
+          <div class="box">
+            <span>10:30 am</span>
+          </div>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      {{news.content}}
+    </mat-expansion-panel>
+  </div>

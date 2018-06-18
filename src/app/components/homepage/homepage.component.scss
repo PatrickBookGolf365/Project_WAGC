@@ -1,3 +1,16 @@
+#homepage-body{
+    margin-bottom: 20%;
+}
+
+.box {
+    display: flex;
+    align-items:center;
+ }
+
+ .box span{
+     font-size: 100%;
+ }
+
 #headerImg img{
     width: 100%;
     height: 100%;
@@ -54,7 +67,10 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
 }
 #forecast{
     vertical-align: middle;
-    font-size: 165%;
+    font-size: 50%;
+}
+#compass{
+    float: right;
 }
 
 .mat-item-img{
@@ -70,11 +86,33 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
 }
 
 .weather_child{
-    font-size: 160%;
+    font-size: 110%;
    
 }
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
 
 .weather_card{
     margin-bottom: 3%;
 }
 
+#newsSeverity1{
+    color: red;
+}
+
+#newsSeverity2{
+    color: orange;
+}
+#newsSeverity3{
+    color: green;
+}
+
+
+#newsUpdate{
+    margin: 1%;
+    margin-top: 2%;
+}

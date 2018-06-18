@@ -1,5 +1,5 @@
 
-<mat-toolbar id="transport-toolbar">
+<!-- <mat-toolbar id="transport-toolbar">
     <mat-form-field id="location-field">
         <mat-select placeholder="Choose an Area" [(value)]="mainSelected">
             <mat-option value="Carton House" class="mat-select">Carton House</mat-option>
@@ -60,9 +60,23 @@
     <div *ngIf="MaynoothSelected == 'North Campus Pedestrian crossing'">
         <agm-marker [latitude]="PedestrianCrosslat" [longitude]="PedestrianCrosslng"></agm-marker>
     </div>
-</agm-map>
+</agm-map> -->
 
+<iframe width="640" height="360" src="https://gaming.youtube.com/embed/live_stream?autoplay=1&controls=0&showinfo=0&autohide=1&channel=UCImGQwk9qTNjwhhdzzTKIdg"  autoplay=true frameborder="0"></iframe>
 
+    <!-- <div id="twitchStream">
+                <iframe
+                src="http://player.twitch.tv/?channel=Patrickbookgolf&muted=true"
+                height="720"
+                width="1280"
+                frameborder="1"
+                scrolling="no"
+                allowfullscreen="false">
+            </iframe>
+    </div> -->
+    <div>
+
+    
 <mat-table #table [dataSource]="dataSource" id="timetable">
 
     <ng-container matColumnDef="bus">
@@ -78,3 +92,4 @@
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
 </mat-table>
+</div>

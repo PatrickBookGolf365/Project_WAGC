@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/nav/navigation.component';
 import { HomepageComponent } from './components//homepage/homepage.component';
 import { LiveScoreComponent } from './components//live-score/live-score.component';
-import { GeolocationComponent } from './components//geolocation/geolocation.component';
 import { TransportComponent } from './components/events/transport/transport.component';
 import { TeamProfilesComponent } from './components/team-profiles/team-profiles.component';
 import { ToolbarComponent } from './components/navigation/toolbar/toolbar.component';
@@ -30,6 +29,7 @@ import { LiveTeamScoreComponent } from './components/live-score/live-team-score/
 import { QuotesComponent } from './components/homepage/quotes/quotes.component';
 import { QuoteService } from './shared/quote.service';
 import { QuoteComponent } from './components/homepage/quote/quote.component';
+
 import { NewsQuoteComponent } from './components/additional-info/news/news-quote/news-quote.component';
 import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
 import { AdminQuoteComponent } from './components/admin/admin-quote/admin-quote.component';
@@ -45,7 +45,6 @@ const appRoutes:
   Routes = [
     { path: '', component: HomepageComponent },
     { path: 'live-score', component: LiveScoreComponent },
-    { path: 'geo-location', component: GeolocationComponent },
     { path: 'events', component: EventsComponent },
     { path: 'add-info', component: AdditionalInfoComponent },
     { path: 'teamprofiles', component: TeamProfilesComponent },
@@ -54,6 +53,9 @@ const appRoutes:
     { path: 'news' , component: NewsComponent},
     { path: 'eligibility', component: EligibilityComponent },
     { path: 'schedule', component: ScheduleComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'livescoring', component: LiveScoreComponent },
+    { path: 'transport', component: EventsComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'admin', component: AdminComponent },
     { path: 'admin-create', component: AdminCreateComponent },

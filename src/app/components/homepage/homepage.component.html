@@ -1,208 +1,135 @@
 <div id="headerImg">
   <img src="./assets/img/WATC.jpg">
 </div>
-
-<div id="weather-api">
-  <!-- <mat-toolbar id="weather-toolbar">
-    <div id="forecast">
-      <span>
-        {{weather.main.temp | number:'1.0-0'}}&deg;c
-      </span>
-
-    </div><div id="wind">
-      <!-- make button to change to fareinhit -->
-      <!-- <span>Wind: {{weather.wind.speed | number:'1.0-0'}} km/h</span>
-      <div id="direction">
-        <span *ngIf="weather.wind.deg >= 0 && weather.wind.deg <= 22.50">
-          North
-        </span>
-        <div *ngIf="weather.wind.deg > 22.50 && weather.wind.deg <= 67.50">
-          North-East
-        </div>
-        <span *ngIf="weather.wind.deg > 67.50 && weather.wind.deg <= 112.50">
-          East
-        </span>
-        <span *ngIf="weather.wind.deg > 112.50 && weather.wind.deg <= 157.50">
-          South-East
-        </span>
-        <span *ngIf="weather.wind.deg > 157.50 && weather.wind.deg <= 202.50">
-          South
-        </span>
-        <span *ngIf="weather.wind.deg > 202.50 && weather.wind.deg <= 247.50">
-          South-West
-        </span>
-        <span *ngIf="weather.wind.deg > 247.50 && weather.wind.deg <= 292.50">
-          West
-        </span>
-        <span *ngIf="weather.wind.deg > 292.50 && weather.wind.deg <= 337.50">
-          North-West
-        </span>
-        <span *ngIf="weather.wind.deg > 337.50 && weather.wind.deg <= 360">
-          North
-        </span>
-        <span *ngIf="weather.wind.deg == null">
-          Calm wind
-        </span>
-      </div>
-    </div>
-  </mat-toolbar> -->
-  <div class="flex-container">
-      <div class="flex-item">
-        <div clas="flex-temp">
-          <span>{{weather.main.temp | number:'1.0-0'}}&deg;c</span>
-        </div>
-      </div>
-      <div class="flex-item">
-        <div class="flex-wind">
-          <span class="wind-text">{{weather.wind.speed | number:'1.0-0'}} km/h</span>
-        </div>
-      </div>
-      <div class="flex-item">
-        <div class="flex-direction">  <!-- 0 22.5 -->
-          <span *ngIf="weather.wind.deg > 0 && weather.wind.deg <= 22.5"><!--N-->
-           <mat-icon><img class="compass-img" src="./assets/img/north.png"></mat-icon>
-          </span>
-          <div *ngIf="forecast.list[0].wind.deg > 22.50 && forecast.list[0].wind.deg <= 67.50"><!--NE-->
-            <mat-icon><img class="compass-img" src="./assets/img/north.png"></mat-icon>
-          </div>
-          <span *ngIf="forecast.list[0].wind.deg > 67.50 && forecast.list[0].wind.deg <= 112.50"><!--E-->
-            <mat-icon><img class="compass-img" src="./assets/img/east.png"></mat-icon>
-          </span>
-          <span *ngIf="forecast.list[0].wind.deg > 112.50 && forecast.list[0].wind.deg <= 157.50"><!--SE-->
-            <mat-icon><img class="compass-img" src="./assets/img/east.png"></mat-icon>
-          </span>
-          <span *ngIf="forecast.list[0].wind.deg > 157.50 && forecast.list[0].wind.deg <= 202.50"> <!--S-->
-            <mat-icon><img  class="compass-img" src="./assets/img/south.png"></mat-icon> 
-          </span>
-          <span *ngIf="forecast.list[0].wind.deg > 202.50 && forecast.list[0].wind.deg <= 247.50"> <!--SW-->
-            <mat-icon><img  class="compass-img" src="./assets/img/south.png"></mat-icon>           
-          </span>
-          <span *ngIf="forecast.list[0].wind.deg > 247.50 && forecast.list[0].wind.deg <= 292.50"><!--W-->
-            <mat-icon><img class="compass-img" src="./assets/img/west.png"></mat-icon>
-          </span>
-          <span *ngIf="forecast.list[0].wind.deg > 292.50 && forecast.list[0].wind.deg <= 337.50"><!--NW-->
-            <mat-icon><img class="compass-img" src="./assets/img/west.png"></mat-icon>
-          </span>
-          <span *ngIf="forecast.list[0].wind.deg > 337.50 && forecast.list[0].wind.deg <= 360"><!--N-->
-            <mat-icon><img class="compass-img" src="./assets/img/north.png"></mat-icon>
-          </span>
-          <span *ngIf="forecast.list[0].wind.deg == null">
-            Calm
-          </span>
-          </div>
-      </div>
-  </div>
+<div id="homepage-body">
   <div>
-      <mat-accordion>
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                  <span>{{forecast.list[0].main.temp | number:'1.0-0'}}&deg;c</span>
-                  <span class="wind-text">{{forecast.list[0].wind.speed | number:'1.0-0'}} km/h</span>
-                  <span>{{forecast.list[0].dt_txt}}</span>
-                  <span *ngIf="forecast.list[0].wind.deg >= 0 && forecast.list[0].wind.deg <= 22.50"><!--N-->
-                    <!-- <mat-icon><img class="compass-img" src="./assets/img/north.png"></mat-icon> -->
-                    North
-                   </span>
-                   <div *ngIf="forecast.list[0].wind.deg > 22.50 && forecast.list[0].wind.deg <= 67.50"><!--NE-->
-                     <!-- <mat-icon><img class="compass-img" src="./assets/img/north.png"></mat-icon> -->
-                     NorthEast
-                   </div>
-                   <span *ngIf="forecast.list[0].wind.deg > 67.50 && forecast.list[0].wind.deg <= 112.50"><!--E-->
-                     <!-- <mat-icon><img class="compass-img" src="./assets/img/east.png"></mat-icon> -->
-                     East
-                   </span>
-                   <span *ngIf="forecast.list[0].wind.deg > 112.50 && forecast.list[0].wind.deg <= 157.50"><!--SE-->
-                     <!-- <mat-icon><img class="compass-img" src="./assets/img/east.png"></mat-icon> -->
-                     SouthEast
-                   </span>
-                   <span *ngIf="forecast.list[0].wind.deg > 157.50 && forecast.list[0].wind.deg <= 202.50"> <!--S-->
-                     <!-- <mat-icon><img  class="compass-img" src="./assets/img/south.png"></mat-icon>  -->
-                     South
-                   </span>
-                   <span *ngIf="forecast.list[0].wind.deg > 202.50 && forecast.list[0].wind.deg <= 247.50"> <!--SW-->
-                     <!-- <mat-icon><img  class="compass-img" src="./assets/img/south.png"></mat-icon>            -->
-                     SouthWest
-                   </span>
-                   <span *ngIf="forecast.list[0].wind.deg > 247.50 && forecast.list[0].wind.deg <= 292.50"><!--W-->
-                     <!-- <mat-icon><img class="compass-img" src="./assets/img/west.png"></mat-icon> -->
-                     West
-                   </span>
-                   <span *ngIf="forecast.list[0].wind.deg > 292.50 && forecast.list[0].wind.deg <= 337.50"><!--NW-->
-                     <!-- <mat-icon><img class="compass-img" src="./assets/img/west.png"></mat-icon> -->
-                   </span>
-                   <span *ngIf="forecast.list[0].wind.deg > 337.50 && forecast.list[0].wind.deg <= 360"><!--N-->
-                     <!-- <mat-icon><img class="compass-img" src="./assets/img/north.png"></mat-icon> -->
-                     North
-                   </span>
-                   <span *ngIf="forecast.list[0].wind.deg == null">
-                     Calm
-                   </span>
-              </mat-panel-title>
-              </mat-expansion-panel-header>
-                <div id="" >
-                  <!-- index 1 -->
-                  <mat-card class="weather_card">
-                    <div class="weather_child">
-                        <mat-card-subtitle>
-                          {{forecast.list[1].dt_txt}}
-                        </mat-card-subtitle>
-                        <div class="box">
-                          <img src="https://openweathermap.org/img/w/{{forecast.list[1].weather[0].icon}}.png">
-                        {{forecast.list[1].main.temp | number:'1.0-0'}}&deg;c
-                        {{forecast.list[1].wind.speed | number:'1.0-0'}}kmh  
-                        </div>
-                    </div>
-                  </mat-card>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <div class="weather_child">
+              <div class="box">
+                <span>
+                  Current:
+                </span>
+                <span>
+                  <img src="https://openweathermap.org/img/w/{{forecast.list[0].weather[0].icon}}.png">
+                </span>
+                <span>
+                  {{forecast.list[0].main.temp | number:'1.0-0'}}&deg;c
+                </span>
+                <span>
+                </span>
+              </div>
+            </div>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div id="">
+          <!-- index 1 -->
+          <ng-container *ngFor="let loop of [1,2,3,4]">
+            <div class="weather_child">
+              <div class="box">
+                <span>
+                  {{(forecast.list[loop].dt_txt[11]) + (forecast.list[loop].dt_txt[12]) + (forecast.list[loop].dt_txt[13]) + (forecast.list[loop].dt_txt[14])
+                  + (forecast.list[loop].dt_txt[15])}} - {{(forecast.list[loop+1].dt_txt[11]) + (forecast.list[loop+1].dt_txt[12])
+                  + (forecast.list[loop+1].dt_txt[13]) + (forecast.list[loop+1].dt_txt[14]) + (forecast.list[loop+1].dt_txt[15])}}
+                </span>
+                <span class="example-fill-remaining-space"></span>
+                <span>
+                  <img src="https://openweathermap.org/img/w/{{forecast.list[loop].weather[0].icon}}.png">
+                </span>
+                <span>
+                  {{forecast.list[loop].main.temp | number:'1.0-0'}}&deg;c
+                </span>
 
-                   <!-- index 2 -->
-                  <mat-card class="weather_card">
-                      <div class="weather_child">
-                          <mat-card-subtitle>
-                            {{forecast.list[2].dt_txt}}
-                          </mat-card-subtitle>
-                          <div class="box">
-                            <img src="https://openweathermap.org/img/w/{{forecast.list[2].weather[0].icon}}.png">
-                          {{forecast.list[2].main.temp | number:'1.0-0'}}&deg;c
-                          {{forecast.list[2].wind.speed | number:'1.0-0'}}kmh  
-                          </div>
-                      </div>
-                  </mat-card>
+                <!-- <ng-container id="compass">
+                  <span *ngIf="forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45">
+                    
+                    <mat-icon>
+                      <img class="compass-img" src="./assets/img/north.png">
+                    </mat-icon>
 
-                   <!-- index 3 -->
-                  <mat-card class="weather_card">
-                      <div class="weather_child">
-                          <mat-card-subtitle>
-                            {{forecast.list[3].dt_txt}}
-                          </mat-card-subtitle>
-                          <div class="box">
-                            <img src="https://openweathermap.org/img/w/{{forecast.list[3].weather[0].icon}}.png">
-                          {{forecast.list[3].main.temp | number:'1.0-0'}}&deg;c
-                          {{forecast.list[3].wind.speed | number:'1.0-0'}}kmh  
-                          </div>
-                      </div>
-                  </mat-card>
+                  </span>
+                  <span *ngIf="forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135">
+                    
+                    <mat-icon>
+                      <img class="compass-img" src="./assets/img/east.png">
+                    </mat-icon>
 
-                   <!-- index 4 -->
-                  <mat-card class="weather_card">
-                      <div class="weather_child">
-                          <mat-card-subtitle>
-                            {{forecast.list[4].dt_txt}}
-                          </mat-card-subtitle>
-                          <div class="box">
-                            <img src="https://openweathermap.org/img/w/{{forecast.list[4].weather[0].icon}}.png">
-                          {{forecast.list[4].main.temp | number:'1.0-0'}}&deg;c
-                          <br>
-                          {{forecast.list[4].wind.speed | number:'1.0-0'}}kmh  
-                        </div>
-                      </div>
-                  </mat-card>
-                </div>
-                
-              </mat-expansion-panel>
-              </mat-accordion>
+                  </span>
+                  <span *ngIf="forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225">
+                    
+                    <mat-icon>
+                      <img class="compass-img" src="./assets/img/south.png">
+                    </mat-icon>
+
+                  </span>
+                  <span *ngIf="forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315">
+
+                    <mat-icon>
+                      <img class="compass-img" src="./assets/img/west.png">
+                    </mat-icon>
+
+                  </span>
+                  <span *ngIf="forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360">
+                    
+                    <mat-icon>
+                      <img class="compass-img" src="./assets/img/north.png">
+                    </mat-icon>
+                  </span>
+                  <span *ngIf="forecast.list[loop].wind.deg == null">
+                    Calm
+                  </span>
+                  </ng-container> -->
+              </div>
+            </div>
+            <mat-divider></mat-divider>
+          </ng-container>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
+  <ng-container *ngFor="let loop of [0,1,2]">
+      <mat-expansion-panel  id="newsUpdate">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <div class="box">
+              <span>
+                <mat-icon id="newsSeverity{{homeNews.update[loop].severity}}">{{homeNews.update[loop].type}}</mat-icon>
+              </span>
+              <span>{{homeNews.update[loop].desc}}</span>
+            </div>
+          </mat-panel-title>
+          <mat-panel-description>
+            <div class="box">
+              <span>10:30 am</span>
+            </div>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        {{homeNews.update[loop].content}}
+      </mat-expansion-panel>
+    </ng-container>
+    </div>
 
   
-  <app-quotes></app-quotes>
-
+  <!-- <div id="newsUpdate" *ngFor="let news of homeNews.update">
+    <mat-expansion-panel  id="newsUpdate">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <div class="box">
+            <span>
+              <mat-icon id="newsSeverity{{homeNews.update[0].severity}}">{{homeNews.update[0].type}}</mat-icon>
+            </span>
+            <span>{{homeNews.update[0].desc}}</span>
+          </div>
+        </mat-panel-title>
+        <mat-panel-description>
+          <div class="box">
+            <span>10:30 am</span>
+          </div>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      {{homeNews.update[0].content}}
+    </mat-expansion-panel>
+  </div> -->
+  

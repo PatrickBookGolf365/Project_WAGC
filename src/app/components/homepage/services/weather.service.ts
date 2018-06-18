@@ -12,15 +12,21 @@ import {IHomeNews} from './news';
 export class WeatherService {
 
    // tslint:disable-next-line:max-line-length
-   private _weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?lat=53.3909&lon=-6.5665&units=metric&appid=30e47e75d5f18740d0765320a709ce40';
+   private _weatherCurrent = 'http://api.openweathermap.org/data/2.5/weather?lat=53.3909&lon=-6.5665&units=metric&appid=6864244ceeeaa2b28fad8845b7113272';
    // tslint:disable-next-line:max-line-length
-   private _weatherUrl2 = 'http://api.openweathermap.org/data/2.5/forecast?lat=53.3909&lon=-6.5665&units=metric&appid=30e47e75d5f18740d0765320a709ce40';
+   private _weatherForecast = 'http://api.openweathermap.org/data/2.5/forecast?lat=53.3909&lon=-6.5665&units=metric&appid=6864244ceeeaa2b28fad8845b7113272';
 
    constructor(private _http: HttpClient) {}
 
-       getWeather(): Observable<IWeather[]> {
-        return this._http.get<IWeather[]>(this._weatherUrl)
-        // .do(data => console.log("All: "+JSON.stringify(data)))
+       getForecast(): Observable<any[]> {
+        return this._http.get<any[]>(this._weatherForecast)
+        .do(data => console.log("Forecast: "+JSON.stringify(data)))
+        .catch(this.handleError);
+       }
+
+       getWeather(): Observable<any[]> {
+        return this._http.get<any[]>(this._weatherCurrent)
+        .do(data => console.log("Weather: "+JSON.stringify(data)))
         .catch(this.handleError);
        }
 
@@ -33,14 +39,14 @@ export class WeatherService {
 @Injectable()
 export class HomeNewsService {
 
-    // tslint:disable-next-line:max-line-length
-    private _homeNewsUrl = 'https://gist.githubusercontent.com/PatrickBookGolf365/5efbf456b43bb5f27ae1d1f34d060a38/raw/75cda83d26e27a868cbc7bdafe8b8c4014bb11f0/homenews.json';
+    
+    private _homeNewsUrl = 'https://gist.githubusercontent.com/PatrickBookGolf365/b124a8e610abd4e659b203b9b925f7fc/raw/f6ab4e4a342ecafd31e04756419b932db5d01705/news.json';
 
     constructor(private _http: HttpClient) {}
 
-       getHomeNews(): Observable<IHomeNews[]> {
-        return this._http.get<IHomeNews[]>(this._homeNewsUrl)
-        .do(data => console.log('All: ' + JSON.stringify(data)))
+       getHomeNews(): Observable<any[]> {
+        return this._http.get<any[]>(this._homeNewsUrl)
+        .do(data => console.log('news: ' + JSON.stringify(data)))
         .catch(this.handleError);
        }
 

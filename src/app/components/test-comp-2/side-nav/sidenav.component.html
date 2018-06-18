@@ -24,20 +24,29 @@
   </mat-sidenav>
 </mat-sidenav-container>
 
+<div id="map"></div>
 
-<div>
-  <p>hole {{ hole.hole }}</p>
-  <p>par {{ hole.par }}</p>
-  <p>{{hole.description}}</p>
-  <p>{{hole.flyover }}</p>
-</div>
+<div class="contain">
+    <mat-grid-list cols="2" rowHeight="1:1">
+        <mat-grid-tile>
+            <mat-nav-list>
+                <p>Metres: {{metres}}</p>
+                <p>Yards: {{yards}}</p>
+                <p>Kilometres: {{kilometres}}</p>
+                <p>Miles: {{miles}}</p>
+            </mat-nav-list>
+        </mat-grid-tile>
 
-<!-- [routerLink]="['/test2', hole.id]" -->
-<!-- <div *ngFor="let hole of holes">
-    <p>{{hole.hole}}</p>
-    <p>{{hole.par}}</p>
-    <p>{{hole.flyover}}</p>
-  </div> -->
+    <mat-grid-tile>
+            <mat-nav-list>
+                <p>hole {{ hole.hole }}</p>
+                <p>par {{ hole.par }}</p>
+                <p>{{hole.description}}</p>
+                <!-- {{hole.flyover }} -->
+                <p>Flyover Link</p>
+            </mat-nav-list>
+        </mat-grid-tile>
+    </mat-grid-list>
 
 
 

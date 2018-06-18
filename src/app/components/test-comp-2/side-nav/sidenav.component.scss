@@ -10,8 +10,14 @@
 }
 .mat-button{
   margin: 0px;
+  float: right;
 }
-.hole{
-  width: 300px;
+.contain{
+  margin: 5px;
 }
-
+#map{
+   position: absolute;
+   top: 40px;
+   height: 60%;
+   width: 100%;
+}

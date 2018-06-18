@@ -22,4 +22,10 @@ agm-map{
        Every toolbar row uses a flexbox row layout. */
     flex: 1 1 auto;
   }
-  
+
+
+
+iframe{
+    max-width:  99% !important;
+    max-height: 50% !important;
+}

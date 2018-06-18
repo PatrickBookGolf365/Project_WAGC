@@ -12,6 +12,7 @@ export class LivePlayerScoreComponent implements OnInit {
   player;
   numbers = [];
   plusnumbers = [];
+  data;
   constructor(public _liveScoreService:LiveScoreService) {
     this.numbers = Array.from(Array(211)).map((x, i) => i );
     this.plusnumbers = Array.from(Array(202)).map((x, j) => j );
@@ -26,6 +27,15 @@ export class LivePlayerScoreComponent implements OnInit {
         this.player = player; 
       },
       error => this.errorMessage=<any>error);
+
+      
+    this._liveScoreService.getRealJsonData()
+    .subscribe(data => {
+      this.data = data;},
+    error => this.errorMessage=<any>error);
+
+
+   
      
    }
   }
