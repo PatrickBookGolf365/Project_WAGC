@@ -1,0 +1,148 @@
+<div id="event-main" >
+    <ng-container>
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom"  [disableDefaultUI] ="true">
+            
+          <!-- Automatic locations -->
+          <agm-marker *ngFor="let yelp of yelp.businesses" [latitude]="yelp.coordinates.latitude" [longitude]="yelp.coordinates.longitude">
+              <agm-info-window>
+                  <!-- <ng-container *ngFor="let yelp of yelp.businesses"> -->
+                    <strong>
+                      <table>
+                        <tr>
+                            <th id="nameMiddle">{{yelp.name}}</th>
+                          <th>
+                              <span *ngIf="yelp.is_closed == 'true'" id="foot-status-closed">Closed</span>
+                              <span *ngIf="yelp.is_closed == 'false'" id="foot-status-open">Open</span>
+                          </th>
+                        </tr>
+                        <tr>
+                          <td id="star-img">
+                              <span *ngIf="yelp.rating >= 1 && yelp.rating <= 1.5">
+                                <img src="./assets/img/1star.png">
+                              </span>
+                              <span *ngIf="yelp.rating >= 2 && yelp.rating <= 2.5">
+                                <img src="./assets/img/2star.png">
+                              </span>
+                              <span *ngIf="yelp.rating >= 3 && yelp.rating <= 3.5">
+                                <img src="./assets/img/3star.png">
+                              </span>
+                              <span *ngIf="yelp.rating >= 4 && yelp.rating <= 4.5">
+                                <img src="./assets/img/4star.png">
+                              </span>
+                              <span *ngIf="yelp.rating >= 5">
+                                <img src="./assets/img/5star.png">
+                              </span>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>{{yelp.location.city}}</td>
+                          </tr>
+                          <tr>
+                            <td>{{yelp.location.address1}}</td>
+                          </tr>
+                          <tr>
+                            <td><a class="para" href="tel:{{yelp.display_phone}}">{{yelp.display_phone}}</a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="{{yelp.url}}">More Info</a></td>
+                          </tr>
+                      </table>
+                    </strong>
+                  <!-- </ng-container>   -->
+                  </agm-info-window>
+            </agm-marker>
+            
+            
+          <!-- Player picked location -->
+            <agm-marker [latitude]="lat" [longitude]="lng">
+              <agm-info-window>
+                <!-- <ng-container *ngFor="let yelp of yelp.businesses"> -->
+                  <strong>
+                    <table>
+                      <tr>
+                          <th id="nameMiddle">{{yelpName}}</th>
+                        <th>
+                            <span *ngIf="yelpClose == 'true'" id="foot-status-closed">Closed</span>
+                            <span *ngIf="yelpClose == 'false'" id="foot-status-open">Open</span>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td id="star-img">
+                            <span *ngIf="yelpRating >= 1 && yelpRating <= 1.5">
+                              <img src="./assets/img/1star.png">
+                            </span>
+                            <span *ngIf="yelpRating >= 2 && yelpRating <= 2.5">
+                              <img src="./assets/img/2star.png">
+                            </span>
+                            <span *ngIf="yelpRating >= 3 && yelpRating <= 3.5">
+                              <img src="./assets/img/3star.png">
+                            </span>
+                            <span *ngIf="yelpRating >= 4 && yelpRating <= 4.5">
+                              <img src="./assets/img/4star.png">
+                            </span>
+                            <span *ngIf="yelpRating >= 5">
+                              <img src="./assets/img/5star.png">
+                            </span>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>{{yelpCity}}</td>
+                        </tr>
+                        <tr>
+                          <td>{{yelpAddress}}</td>
+                        </tr>
+                        <tr>
+                          <td><a class="para" href="tel:{{yelpNumber}}">{{yelpNumber}}</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="{{YelpURL}}">More Info</a></td>
+                        </tr>
+                    </table>
+                    
+                  </strong>
+                <!-- </ng-container>   -->
+                
+                </agm-info-window>
+          </agm-marker>
+        </agm-map>
+        </ng-container>
+        
+        
+        <div id="yelp-container-child">
+            <ng-container *ngFor="let yelp of yelp.businesses">
+          <mat-toolbar id="head-toolbar">
+            
+            <div id="name">
+              {{yelp.name}}
+            </div>
+            <span class="example-fill-remaining-space"></span>
+            <button mat-button id="foot-button" (click)="lat = (yelp.coordinates.latitude); lng = (yelp.coordinates.longitude); 
+            yelpID     = [yelp.id]; 
+            yelpName   = [yelp.name];
+            yelpClose  = [yelp.is_closed];
+            yelpRating = [yelp.rating];
+            yelpCity   = [yelp.location.city];
+            yelpAddress= [yelp.location.address1];
+            yelpNumber = [yelp.display_phone];
+            YelpURL    = [yelp.url];
+            ">Location</button>
+            
+           
+          </mat-toolbar>
+          <mat-divider></mat-divider>
+          </ng-container>
+                    </div>
+                   
+                   
+          <!-- <mat-toolbar id="foot-toolbar" >
+             
+          
+          <!-- <span *ngIf="yelp.is_closed == true" id="foot-status-closed">Closed</span>
+          <span *ngIf="yelp.is_closed == false" id="foot-status-open">Open</span> -->
+        <!-- </mat-toolbar> -->
+       
+</div>
+
+
+
+

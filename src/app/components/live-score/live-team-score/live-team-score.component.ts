@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { LiveScoreService } from '../live-score.service';
+import { ITeam } from './live-team-score';
 
 
 declare var $:any;
@@ -20,37 +21,24 @@ declare var $:any;
 
 export class LiveTeamScoreComponent implements OnInit{
   errorMessage: string;
-  team: any = [];
   hideStuff = []; 
-  player;
   data;
+  searchTerm: string;
  
-  arrayOne(n: number): any[] {
-    return Array(n);
-  }
+ 
 
 
   constructor(public _liveScoreService:LiveScoreService) {
 
    }
 
-  ngOnInit() {
-  this._liveScoreService.getTeam()
-  .subscribe(team => {
-    this.team = team;},
-    error => this.errorMessage=<any>error);
-    
-    this._liveScoreService.getFakePlayer()
-    .subscribe(player => {
-      this.player = player;},
-    error => this.errorMessage=<any>error);
+  ngOnInit(){
 
     this._liveScoreService.getRealJsonData()
     .subscribe(data => {
       this.data = data;},
     error => this.errorMessage=<any>error);
       
-   
 
   }
 }

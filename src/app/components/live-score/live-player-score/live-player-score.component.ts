@@ -10,33 +10,19 @@ export class LivePlayerScoreComponent implements OnInit {
 
   errorMessage: string;
   player;
-  numbers = [];
-  plusnumbers = [];
   data;
   constructor(public _liveScoreService:LiveScoreService) {
-    this.numbers = Array.from(Array(211)).map((x, i) => i );
-    this.plusnumbers = Array.from(Array(202)).map((x, j) => j );
+   
    }
 
 
 
   ngOnInit() {
-  
-      this._liveScoreService.getFakePlayer()
-      .subscribe(player => {
-        this.player = player; 
-      },
-      error => this.errorMessage=<any>error);
-
-      
+        
     this._liveScoreService.getRealJsonData()
     .subscribe(data => {
       this.data = data;},
-    error => this.errorMessage=<any>error);
-
-
-   
-     
+    error => this.errorMessage=<any>error);   
    }
   }
 

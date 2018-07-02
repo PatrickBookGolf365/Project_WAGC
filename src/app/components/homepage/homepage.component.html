@@ -89,25 +89,28 @@
       </mat-expansion-panel>
     </mat-accordion>
   </div>
-  <ng-container *ngFor="let loop of [0,1,2]">
-      <mat-expansion-panel  id="newsUpdate">
+  
+  <ng-container *ngFor="let news of homeNews.update">
+    <ng-container *ngIf="news.key == 'true'"> 
+      <mat-expansion-panel  id="newsUpdate" >
         <mat-expansion-panel-header>
           <mat-panel-title>
             <div class="box">
               <span>
-                <mat-icon id="newsSeverity{{homeNews.update[loop].severity}}">{{homeNews.update[loop].type}}</mat-icon>
+                <mat-icon id="newsSeverity{{news.severity}}">{{news.type}}</mat-icon>
               </span>
-              <span>{{homeNews.update[loop].desc}}</span>
+              <span>{{news.desc}}</span>
             </div>
           </mat-panel-title>
           <mat-panel-description>
             <div class="box">
-              <span>10:30 am</span>
+              <span>{{news.timeStamp}}</span>
             </div>
           </mat-panel-description>
         </mat-expansion-panel-header>
-        {{homeNews.update[loop].content}}
+        {{news.content}}
       </mat-expansion-panel>
+      </ng-container>
     </ng-container>
     </div>
 

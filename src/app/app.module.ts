@@ -13,7 +13,7 @@ import { routing } from './app.routing';
 import { NavigationComponent } from './components/navigation/nav/navigation.component';
 import { HomepageComponent } from './components//homepage/homepage.component';
 import { LiveScoreComponent } from './components//live-score/live-score.component';
-import { TransportComponent } from './components/events/transport/transport.component';
+import { TransportComponent } from './components/transport/transport.component';
 import { TeamProfilesComponent } from './components/team-profiles/team-profiles.component';
 import { ToolbarComponent } from './components/navigation/toolbar/toolbar.component';
 
@@ -23,17 +23,16 @@ import { AboutComponent } from './components/additional-info/about/about.compone
 import { EligibilityComponent } from './components/additional-info/eligibitity/eligibility.component';
 import { ScheduleComponent } from './components/additional-info/schedule/schedule.component';
 import { ContactComponent } from './components/additional-info/contact/contact.component';
-import { EventsComponent } from './components/events/events.component';
 import { GeoCoord } from './components/test-comp-2/services/geo-coord';
 
 import { WeatherService} from './components/homepage/services/weather.service';
 import { NewsService} from './components/additional-info/news/news.service';
 import { HomeNewsService } from './components/homepage/services/weather.service';
-import { YelpService } from './components/events/events.service';
+import { YelpService } from './components/event/event.service';
 import { QuoteService } from './shared/quote.service';
 import { LiveScoreService } from './components/live-score/live-score.service';
 
-import { EventComponent } from './components/events/event/event.component';
+import { EventComponent } from './components/event/event.component';
 // import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
 import { LiveTeamScoreComponent } from './components/live-score/live-team-score/live-team-score.component';
@@ -49,6 +48,8 @@ import { TestComp2Component } from './components/test-comp-2/test-comp-2.compone
 // import { BottomSheetComponent } from './components/test-comp-2/test-comp-2.component';
 // import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
 import { BottomSheetOverviewExampleSheetComponent } from './components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component';
+import { SortPipe } from './pipes/sort/sort.pipe';
+
 
 
 @NgModule({
@@ -65,7 +66,7 @@ import { BottomSheetOverviewExampleSheetComponent } from './components/test-comp
     ScheduleComponent,
     ContactComponent,
     TransportComponent,
-    EventsComponent,
+    EventComponent,
     TeamProfilesComponent,
     ToolbarComponent,
     EventComponent,
@@ -81,6 +82,8 @@ import { BottomSheetOverviewExampleSheetComponent } from './components/test-comp
     TestGeoComponent,
     TestComp2Component,
     BottomSheetOverviewExampleSheetComponent,
+    SortPipe,
+  
   ],
   imports: [
     BrowserModule,

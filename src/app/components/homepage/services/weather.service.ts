@@ -40,7 +40,7 @@ export class WeatherService {
 export class HomeNewsService {
 
     
-    private _homeNewsUrl = 'https://gist.githubusercontent.com/PatrickBookGolf365/b124a8e610abd4e659b203b9b925f7fc/raw/f6ab4e4a342ecafd31e04756419b932db5d01705/news.json';
+    private _homeNewsUrl = 'http://news.bookgolf365.ie/news.json';
 
     constructor(private _http: HttpClient) {}
 
@@ -55,3 +55,6 @@ export class HomeNewsService {
         return Observable.throw(err.message);
     }
 }
+
+// https://gist.githubusercontent.com/PatrickBookGolf365/b124a8e610abd4e659b203b9b925f7fc/raw/f6ab4e4a342ecafd31e04756419b932db5d01705/news.json
+// http://news.bookgolf365.ie/news.json

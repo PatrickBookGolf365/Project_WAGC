@@ -1,0 +1,94 @@
+
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+#head-toolbar img{
+    width: 90%;
+    height: 90%;
+    vertical-align: middle;
+    float: right;
+}
+
+agm-map {
+    height: 250px;
+  }
+
+#foot-button {
+    font-size: 78%;
+    background-color: #999999;
+  
+  
+    
+}
+
+#yelp-container-child{
+margin: 2%;
+overflow-y: auto; 
+height:260px;
+}
+
+
+
+#event-main{
+margin-bottom: 17.5%;
+}
+
+#text-center{
+    vertical-align: middle;
+    margin-right: 20%;
+}
+
+#name{
+    width: 60%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 78%;
+}
+
+
+#nameMiddle{
+    vertical-align: middle;
+}
+
+#star-img img{
+   width: 115px;
+   height: 20px;
+    
+}
+
+#head-toolbar{
+   background-color: #ffffff;
+    margin-bottom: 2%;
+    width: 100%;
+    
+}
+
+
+
+#img-wrapper img{
+    width: 50%;
+    height: 50%;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+#foot-status-closed{
+    color: red;
+    font-size: 85%;
+}
+
+#foot-status-open{
+    color: green;
+    font-size: 85%;
+}
+

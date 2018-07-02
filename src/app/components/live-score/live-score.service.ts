@@ -41,19 +41,6 @@ export class LiveScoreService {
     }   
 
 
-    getPlayerFake(){
-        return this._http.get(this._fakeleadUrl)
-        // .do(data =>  console.log("all:"+JSON.stringify(data)))
-        .catch(this.handleError);
-       
-    }   
-
-    getFakePlayer(){
-        return this._http.get(this._playerfakeUrl)
-    //    .do(data =>  console.log("all:"+JSON.stringify(data)))
-        .catch(this.handleError);
-    }
-
     getTeam(){
         return this._http.get(this._faketeamUrl)
         // .do(data =>  console.log("getTeam:"+JSON.stringify(data)))

@@ -26,6 +26,19 @@
     text-align: center;
 }
 
+.scroll-main{
+    height: 100%;
+    margin-top: 3%;
+    overflow: hidden;
+    
+}
+
+.scroll-child{
+     height:250px;
+     overflow-y: scroll;
+    
+}
+
 .hide-btn{
     min-width: 1%;
     background-color: Transparent;
@@ -36,6 +49,15 @@
     outline:none;
    
   }
+.roundCard{
+    margin: 2%;
+   
+}
+.roundCard span{
+    
+  
+    font-size:75%;
+}
 
 #live-search{
     width: 100%;
@@ -130,9 +152,13 @@
    
    
    //Header
-   
+   #main{
+       margin-bottom: 30%;
+   }
+
+
    #team-body{
-       margin-bottom: 12%;
+       margin-bottom: 5%;
      
     }
     
