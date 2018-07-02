@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './components/navigation/nav/navigation.component';
 import { HomepageComponent } from './components//homepage/homepage.component';
 import { LiveScoreComponent } from './components//live-score/live-score.component';
-import { GeolocationComponent } from './components//geolocation/geolocation.component';
 import { TransportComponent } from './components/events/transport/transport.component';
 import { TeamProfilesComponent } from './components/team-profiles/team-profiles.component';
 import { ToolbarComponent } from './components/navigation/toolbar/toolbar.component';
@@ -45,7 +44,6 @@ const appRoutes:
   Routes = [
     { path: '', component: HomepageComponent },
     { path: 'live-score', component: LiveScoreComponent },
-    { path: 'geo-location', component: GeolocationComponent },
     { path: 'events', component: EventsComponent },
     { path: 'add-info', component: AdditionalInfoComponent },
     { path: 'teamprofiles', component: TeamProfilesComponent },
