@@ -4,7 +4,7 @@ import { NgModule, Component } from '@angular/core';
 import { MaterialModule } from './shared/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
-import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+//import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
@@ -94,7 +94,7 @@ import { MapComponent } from './components/test-comp-2/map/map.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCPZDSf-Sp9Ivqq7ojJx39IZhHPK54bjnI'
     }),
-    LeafletModule.forRoot(),
+    //LeafletModule.forRoot(),
     routing
   ],
   entryComponents: [ BottomSheetOverviewExampleSheetComponent],
