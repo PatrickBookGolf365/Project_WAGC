@@ -24,6 +24,7 @@ export class HomepageComponent implements OnInit {
   errorMessage: string;
   weather;
   forecast;
+  forecastFH;
   homeNews = [];
   forecast_repeat;
 
@@ -32,14 +33,15 @@ export class HomepageComponent implements OnInit {
    }
 
   ngOnInit() {
-    this._weatherService.getWeather()
-    .subscribe(weather => {
-      this.weather = weather;
-    });
-
+    
       this._weatherService.getForecast()
       .subscribe(forecast => {
         this.forecast = forecast;
+      })
+
+        this._weatherService.getForecastFH()
+        .subscribe(forecastFH => {
+          this.forecastFH = forecastFH;
         
     this._homeNewsService.getHomeNews()
     .subscribe(homeNews =>{

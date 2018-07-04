@@ -511,15 +511,28 @@
 
 
 
-{{profiles}}
-<div id="live-main" *ngIf="!hideall">
 
-  
-    
+<div id="live-main" *ngIf="!hideall">
+    <!-- <table matSort (matSortChange)="sortData($event)">
+        <tr>
+         
+          <th mat-sort-header="position">Pos</th>
+          <th>Name</th>
+        </tr>
+      
+        <tr *ngFor="let players of sortedData">
+          <td>{{players.position}}</td>
+          <td>{{players.name}}</td>
+          <td>{{players.fat}}</td>
+          
+        </tr>
+      </table>
+   -->
+   
  
   <mat-toolbar id="live-search">
     <mat-form-field>
-      <input type="text" matInput placeholder="search" [(ngModel)]=searchTerm> {{searchTerm}}
+      <input type="text" matInput placeholder="search" #box (keyup)="0">
     </mat-form-field>
     <span class="example-fill-remaining-space"></span>
     <button mat-button>
@@ -541,41 +554,42 @@
         <th>Total</th>
       </tr>
     </thead>
-    <tbody id="player-tbody" *ngFor="let datas of data.event.tournament.teams.team | teamFilter:searchTerm; let x = index;" class="tbody ">
+    <tbody id="player-tbody" *ngFor="let teamdata of data.event.tournament.teams.team; let x = index;" class="tbody ">
+      <ng-container *ngIf="teamdata.name == box.value || box.value == ''">
       <tr id="live-table-header">
         <td>
           <button class="hide-btn" (click)="hideStuff[x] = !hideStuff[x]">
             <mat-icon>expand_{{hideStuff[x] ? 'less' : 'more'}}</mat-icon>
           </button>
         </td>
-        <td>{{datas.totals.position}}</td>
+        <td>{{teamdata.totals.position}}</td>
         <td>
-          <button class="" (click)="hidealll = !hideall; profiles = (datas.name) ;" mat-button>
-            <img src="./assets/img/{{datas.name}}.png" title="{{datas.name}}">
+          <button class="" (click)="hidealll = !hideall; profiles = (teamdata.name) ;" mat-button>
+            <img src="./assets/img/{{teamdata.name}}.png" title="{{teamdata.name}}">
           </button>
         </td>
         <td>null</td>
-        <ng-container *ngIf="datas.totals.totaltopar[0] == '+'">
-          <td id="parblue">{{datas.totals.totaltopar}}</td>
+        <ng-container *ngIf="teamdata.totals.totaltopar[0] == '+'">
+          <td id="parblue">{{teamdata.totals.totaltopar}}</td>
         </ng-container>
-        <ng-container *ngIf="datas.totals.totaltopar[0] == '-'">
-          <td id="parred">{{datas.totals.totaltopar}}</td>
+        <ng-container *ngIf="teamdata.totals.totaltopar[0] == '-'">
+          <td id="parred">{{teamdata.totals.totaltopar}}</td>
         </ng-container>
-        <ng-container *ngIf="datas.totals.totaltopar[0] != '-' && datas.totals.totaltopar[0] != '+'">
-          <td>{{datas.totals.totaltopar}}</td>
+        <ng-container *ngIf="teamdata.totals.totaltopar[0] != '-' && teamdata.totals.totaltopar[0] != '+'">
+          <td>{{teamdata.totals.totaltopar}}</td>
         </ng-container>
-        <td>{{datas.round[0].strokes}}</td>
-        <td>{{datas.round[1].strokes}}</td>
-        <td>{{datas.round[2].strokes}}</td>
-        <td>{{datas.round[3].strokes}}</td>
+        <td>{{teamdata.round[0].strokes}}</td>
+        <td>{{teamdata.round[1].strokes}}</td>
+        <td>{{teamdata.round[2].strokes}}</td>
+        <td>{{teamdata.round[3].strokes}}</td>
         <td>
-          <span id="total">{{(datas.round[0].strokes * 1) + (datas.round[1].strokes * 1) + (datas.round[2].strokes * 1) + (datas.round[3].strokes
+          <span id="total">{{(teamdata.round[0].strokes * 1) + (teamdata.round[1].strokes * 1) + (teamdata.round[2].strokes * 1) + (teamdata.round[3].strokes
             * 1)}}</span>
         </td>
       </tr>
       <ng-container *ngIf="hideStuff[x]">
         <tr class="player" *ngFor="let players of data.event.tournament.players.player">
-          <ng-container *ngIf="datas.name == players.teamname">
+          <ng-container *ngIf="teamdata.name == players.teamname">
             <td></td>
             <td>{{players.totals.position}}</td>
             <td>{{players.firstname}} {{players.lastname}}</td>
@@ -597,6 +611,7 @@
           </ng-container>
         </tr>
       </ng-container>
+    </ng-container>
     </tbody>
   </table>
   <!-- *ngFor="let team of data.event.tournament.players.player -->

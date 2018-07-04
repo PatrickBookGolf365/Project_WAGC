@@ -54,6 +54,7 @@ import { SortPipe } from './pipes/sort/sort.pipe';
 
 @NgModule({
   declarations: [
+    SortPipe,
     AppComponent,
     NavigationComponent,
     HomepageComponent,
@@ -82,7 +83,7 @@ import { SortPipe } from './pipes/sort/sort.pipe';
     TestGeoComponent,
     TestComp2Component,
     BottomSheetOverviewExampleSheetComponent,
-    SortPipe,
+    
   
   ],
   imports: [

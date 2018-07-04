@@ -1,14 +1,27 @@
 <div id="live-main">
+    <!-- <table matSort (matSortChange)="sortData($event)">
+        <tr>
+         
+          <th mat-sort-header="position">Pos</th>
+          <th>Name</th>
+        </tr>
+      
+        <tr *ngFor="let players of playerinfo.event.tournament.players.player; let i = index">
+       {{i}}
+          
+        </tr>
+      </table> -->
   <mat-toolbar id="live-search">
     <mat-form-field>
-      <input matInput placeholder="search">
+      <input matInput placeholder="search" #box (keyup)="0">
     </mat-form-field>
     <span class="example-fill-remaining-space"></span>
     <button mat-button>
       <mat-icon>search</mat-icon>
     </button>
   </mat-toolbar>
-  <table id="live-table">
+  
+      <table  id="live-table">
     <thead>
       <tr id="live-table-header-title">
         <th>Pos</th>
@@ -22,19 +35,22 @@
         <th>Total</th>
       </tr>
     </thead>
-    <tbody id="player-tbody" *ngFor="let datas of data.event.tournament.players.player; let i = index" > 
+    <tbody id="player-tbody" *ngFor="let playerdata of playerdata.event.tournament.players.player; let i = index" > 
+      <ng-container *ngIf="playerdata.teamname == box.value || box.value == ''">
       <tr>
-        <td>{{datas.totals.position}}</td>
-        <td>{{datas.firstname}} {{datas.lastname}}</td>
-        <td><img src="./assets/img/{{datas.teamname}}.png" title="{{datas.teamname}}"></td>
+        <td>{{playerdata.totals.position}}</td>
+        <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>
+        <td><img src="./assets/img/{{playerdata.teamname}}.png" title="{{playerdata.teamname}}"></td>
         <td>Hole</td>
-        <td>{{datas.round[0].strokes}}</td>
-        <td>{{datas.round[1].strokes}}</td>
-        <td>{{datas.round[2].strokes}}</td>
-        <td>{{datas.round[3].strokes}}</td>
-        <td>{{(datas.round[0].strokes * 1)  + (datas.round[1].strokes * 1) + (datas.round[2].strokes * 1) + (datas.round[3].strokes * 1)}}</td>
+        <td>{{playerdata.round[0].strokes}}</td>
+        <td>{{playerdata.round[1].strokes}}</td>
+        <td>{{playerdata.round[2].strokes}}</td>
+        <td>{{playerdata.round[3].strokes}}</td>
+        <td>{{(playerdata.round[0].strokes * 1)  + (playerdata.round[1].strokes * 1) + (playerdata.round[2].strokes * 1) + (playerdata.round[3].strokes * 1)}}</td>
       </tr>
+      </ng-container>
     </tbody>
+  
   </table>
 </div>
 

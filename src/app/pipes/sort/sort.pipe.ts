@@ -5,15 +5,13 @@ import { ITeam } from '../../components/live-score/live-team-score/live-team-sco
   name: 'teamFilter'
 })
 export class SortPipe implements PipeTransform {
-
-  transform(data: ITeam[], searchTerm:string){
-
+  transform(value: any[], args: string): any {
+    if(args == 'up'){
+        return value.sort();
+      
+    } else if (args == 'down'){
+        return value.sort();
+    }
+  }
   
-  if(!data || !searchTerm){
-    return data;
-  }
-
-    return data.filter(data => 
-      data.teamname.toLowerCase().indexOf(searchTerm.toLocaleLowerCase()) !== -1);
-  }
 }
