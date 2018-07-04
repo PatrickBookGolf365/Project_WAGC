@@ -4,7 +4,6 @@ import { NgModule, Component } from '@angular/core';
 import { MaterialModule } from './shared/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AgmCoreModule } from '@agm/core';
-import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
@@ -43,7 +42,6 @@ import { NewsQuoteComponent } from './components/additional-info/news/news-quote
 import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
 import { AdminQuoteComponent } from './components/admin/admin-quote/admin-quote.component';
 import { AdminComponent } from './components/admin/admin.component';
-import { TestGeoComponent } from './components/test/test-geo.component';
 import { TestComp2Component } from './components/test-comp-2/test-comp-2.component';
 // import { BottomSheetComponent } from './components/test-comp-2/test-comp-2.component';
 // import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
@@ -80,7 +78,6 @@ import { InstagramFeedComponent } from './components/homepage/instagram-feed/ins
     AdminCreateComponent,
     AdminQuoteComponent,
     AdminComponent,
-    TestGeoComponent,
     TestComp2Component,
     BottomSheetOverviewExampleSheetComponent,
     SortPipe,
@@ -96,7 +93,6 @@ import { InstagramFeedComponent } from './components/homepage/instagram-feed/ins
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCPZDSf-Sp9Ivqq7ojJx39IZhHPK54bjnI'
     }),
-    LeafletModule.forRoot(),
     routing
   ],
   entryComponents: [ BottomSheetOverviewExampleSheetComponent],
