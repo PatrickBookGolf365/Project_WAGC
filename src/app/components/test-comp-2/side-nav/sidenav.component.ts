@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatSidenav, MatBottomSheetRef, MatBottomSheet } from '@angular/material';
 import { GeoCoord } from '../services/geo-coord';
@@ -8,17 +8,36 @@ import { HOLES_INFO } from '../services/hole';
 import { ActivatedRoute } from '@angular/router';
 import { BottomSheetOverviewExampleSheetComponent } from '../bottom-sheet/bottom-sheet-overview-example.component';
 import { Location } from '@angular/common';
+import {trigger, transition, style, animate, query, stagger} from '@angular/animations';
 
 declare var holes: IHoles[];
 
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
-  styleUrls: ['./sidenav.component.scss']
+  styleUrls: ['./sidenav.component.scss'],
+  animations: [
+  trigger('listAnimation', [
+    transition('* => *', [ // each time the binding value changes
+      query(':leave', [
+        stagger(100, [
+          animate('0.5s', style({ opacity: 0 }))
+        ])
+      ]),
+      query(':enter', [
+        style({ opacity: 0 }),
+        stagger(100, [
+          animate('0.5s', style({ opacity: 1 }))
+        ])
+      ])
+    ])
+  ])
+]
 })
 export class SidenavComponent implements OnInit {
 
   @ViewChild('sidenav') sidenav: MatSidenav;
+  @ViewChild('button') button: ElementRef;
 
   private _earthRadiusInMeters = 6378137;
   private _earthRadiusInYards = 6975174.98;
@@ -36,6 +55,8 @@ export class SidenavComponent implements OnInit {
   reason = '';
   myLat: any;
   myLng: any;
+  courseLat: any;
+  courseLng: any;
   metres: any;
   kilometres: any;
   miles: any;
@@ -50,7 +71,7 @@ export class SidenavComponent implements OnInit {
 
   constructor(private bottomSheet: MatBottomSheet,
               private _courseDataService: CourseDataService,
-              private _route: ActivatedRoute) { }
+              private _route: ActivatedRoute) {}
 
   openBottomSheet(): void {
      window.location.reload();
@@ -86,8 +107,13 @@ export class SidenavComponent implements OnInit {
       this.myLat = x.coords.latitude;
       this.myLng = x.coords.longitude;
 
-   console.log(`longitude: ${ this.myLat } | latitude: ${ this.myLng }`);
+      this.courseLat = this._courseDataService.getCoordsLat;
+      this.courseLng = this._courseDataService.getCoordsLng;
 
+
+    console.log(`longitude: ${ this.myLat } | latitude: ${ this.myLng }`);
+    // console.log(`longitude: ${ this.myLat } | latitude: ${ this.myLng }`);
+    // get courseLat+Lng working
 
     const myCoords: GeoCoord = {
       latitude: this.myLat,
@@ -95,8 +121,10 @@ export class SidenavComponent implements OnInit {
     };
 
     const dominos: GeoCoord = {
-        latitude: 53.352454,
-        longitude: -6.295462
+      latitude: 53.354307,
+      longitude:  -6.284543
+        // latitude: this.courseLat,
+        // longitude: this.courseLng
     };
 
     this.metres = this.getDistanceInMeters(myCoords, dominos);
@@ -157,15 +185,3 @@ getDistanceInYards(coord1: GeoCoord, coord2: GeoCoord): number {
       return this._earthRadiusInMiles * c;
  }
 }
-
-
-
-
-
-    // this.hole = this._courseDataService.getHoleBy(+this._route.snapshot.params.id);
-    // this.holeId = this.hole.id;
-    //  this.holeHole = this.hole.hole;
-    //  this.holePar = this.hole.par;
-    //  this.holeDesc = this.hole.description;
-    //  this.holeFly = this.hole.flyover;
-    // console.log(this.holeHole, this.holePar, this.holeDesc, this.holeFly);
