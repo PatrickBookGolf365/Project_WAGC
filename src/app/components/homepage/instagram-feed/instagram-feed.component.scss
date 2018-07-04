@@ -1,0 +1,11 @@
+#instagram-feed{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.mat-card{
+  width: 33%;
+}

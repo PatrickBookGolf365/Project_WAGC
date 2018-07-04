@@ -25,7 +25,7 @@ import { ScheduleComponent } from './components/additional-info/schedule/schedul
 import { ContactComponent } from './components/additional-info/contact/contact.component';
 import { GeoCoord } from './components/test-comp-2/services/geo-coord';
 
-import { WeatherService} from './components/homepage/services/weather.service';
+import { WeatherService, InstagramFeedService} from './components/homepage/services/weather.service';
 import { NewsService} from './components/additional-info/news/news.service';
 import { HomeNewsService } from './components/homepage/services/weather.service';
 import { YelpService } from './components/event/event.service';
@@ -49,6 +49,7 @@ import { TestComp2Component } from './components/test-comp-2/test-comp-2.compone
 // import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
 import { BottomSheetOverviewExampleSheetComponent } from './components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component';
 import { SortPipe } from './pipes/sort/sort.pipe';
+import { InstagramFeedComponent } from './components/homepage/instagram-feed/instagram-feed.component';
 
 
 
@@ -83,7 +84,7 @@ import { SortPipe } from './pipes/sort/sort.pipe';
     TestComp2Component,
     BottomSheetOverviewExampleSheetComponent,
     SortPipe,
-  
+    InstagramFeedComponent,
   ],
   imports: [
     BrowserModule,
@@ -102,6 +103,7 @@ import { SortPipe } from './pipes/sort/sort.pipe';
   providers: [
     WeatherService,
     NewsService,
+    InstagramFeedService,
     HomeNewsService,
     YelpService,
     LiveScoreService,

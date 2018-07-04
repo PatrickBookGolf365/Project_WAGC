@@ -1,5 +1,6 @@
 #homepage-body{
     margin-bottom: 20%;
+    overflow: hidden;
 }
 
 .box {
@@ -26,7 +27,7 @@
   background: #76b852;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- 
+
 }
 
 .compass-img{
@@ -54,9 +55,9 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
 
 .flex-temp .small{
     font-size: 70%;
-   
+
 }
-   
+
 #wind{
     font-size: 80%;
     width: 70%;
@@ -72,26 +73,21 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
 #compass{
     float: right;
 }
-
-.mat-item-img{
-    height: 200%;
-    width: 33%;
-    margin-left: -50px;
-}
-.mat-item-content{
-    margin-left: 30px;
-}
-.mat-item-para{
-    height: 30%;
-}
-
 .weather_child{
     font-size: 110%;
-   
 }
-
+.news-image-right {
+  position: fixed;
+  margin: 3%;
+  overflow: hidden;
+}
+.news-content-aside {
+  position: relative;
+  left: 50px;
+  margin: 5px;
+}
 .example-fill-remaining-space {
-    /* This fills the remaining space, by using flexbox. 
+    /* This fills the remaining space, by using flexbox.
        Every toolbar row uses a flexbox row layout. */
     flex: 1 1 auto;
   }
@@ -110,8 +106,6 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
 #newsSeverity3{
     color: green;
 }
-
-
 #newsUpdate{
     margin: 1%;
     margin-top: 2%;
