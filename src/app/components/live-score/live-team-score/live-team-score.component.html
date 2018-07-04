@@ -1,5 +1,4 @@
 <div id="main" *ngIf="hideall">
-  <div id="team-wrapper" *ngFor="let teams of data.event.tournament.teams.team; let x = index">
     <ng-container *ngIf="teams.name == profiles">
       <mat-toolbar id="team-header-toolbar">
         <span id="title">
@@ -8,7 +7,7 @@
               <mat-icon>arrow_back</mat-icon>
             </button>
           </span>
-          {{teams.name}}
+          {{profiles}}
           <button id="fav-button" mat-button>
             <mat-icon class="fav">star</mat-icon>
           </button>
@@ -70,56 +69,39 @@
 
               <!-- Scroll table -->
               <div class="scrolling-wrapper">
-                <table class="scroll-table">
-                  <tr>
-                    <!-- Header 1/2 -->
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>Out</th>
-                    <th>10</th>
-                    <th>11</th>
-                    <th>12</th>
-                    <th>13</th>
-                    <th>14</th>
-                    <th>15</th>
-                    <th>16</th>
-                    <th>17</th>
-                    <th>18</th>
-                    <th>In</th>
-                    <th>Total</th>
-                  </tr>
-                  <tr *ngFor="let players of data.event.tournament.players.player">
-
-                    <td>{{players.round[0].score[0].strokes}}</td>
-                    <td>{{players.round[0].score[1].strokes}}</td>
-                    <td>{{players.round[0].score[2].strokes}}</td>
-                    <td>{{players.round[0].score[3].strokes}}</td>
-                    <td>{{players.round[0].score[4].strokes}}</td>
-                    <td>{{players.round[0].score[5].strokes}}</td>
-                    <td>{{players.round[0].score[6].strokes}}</td>
-                    <td>{{players.round[0].score[7].strokes}}</td>
-                    <td>{{players.round[0].score[8].strokes}}</td>
-                    <td>{{players.round[0].score[8].strokes}}</td>
-                    <td>{{players.round[0].score[9].strokes}}</td>
-                    <td>{{players.round[0].score[10].strokes}}</td>
-                    <td>{{players.round[0].score[11].strokes}}</td>
-                    <td>{{players.round[0].score[12].strokes}}</td>
-                    <td>{{players.round[0].score[13].strokes}}</td>
-                    <td>{{players.round[0].score[14].strokes}}</td>
-                    <td>{{players.round[0].score[15].strokes}}</td>
-                    <td>{{players.round[0].score[16].strokes}}</td>
-                    <td>{{players.round[0].score[17].strokes}}</td>
-
-                  </tr>
-
-                </table>
+                  <table>
+                      <thead>
+                        <tr>   
+                          <th>Name</th>
+                          <th>1</th>
+                          <th>2</th>
+                          <th>3</th>
+                          <th>4</th>
+                          <th>5</th>
+                          <th>6</th>
+                          <th>7</th>
+                          <th>8</th>
+                          <th>9</th>
+                          <th>10</th>
+                          <th>11</th>
+                          <th>12</th>
+                          <th>13</th>
+                          <th>14</th>
+                          <th>15</th>
+                          <th>16</th>
+                          <th>17</th>
+                          <th>18</th>
+                        </tr>
+                      </thead>
+                      <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index" >     
+                        <ng-container *ngIf="playerdata.teamname == teamProfiles">
+                        <tr *ngIf="playerdata.totals.status == 'ok'">
+                          <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                          <td *ngFor="let loop of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]">{{playerdata.round[0].score[loop].strokes}}</td>
+                        </tr>
+                        </ng-container>
+                      </tbody>
+                      </table>
               </div>
 
               <!-- </mat-expansion-panel> -->
@@ -400,7 +382,6 @@
         </div>
       </div>
     </ng-container>
-  </div>
 </div>
 <!-- Par  -->
 
@@ -564,7 +545,7 @@
         </td>
         <td>{{teamdata.totals.position}}</td>
         <td>
-          <button class="" (click)="hidealll = !hideall; profiles = (teamdata.name) ;" mat-button>
+          <button class="" (click)="hideall = !hideall; profiles = (teamdata.name) ;" mat-button>
             <img src="./assets/img/{{teamdata.name}}.png" title="{{teamdata.name}}">
           </button>
         </td>
@@ -590,16 +571,13 @@
       <ng-container *ngIf="hideStuff[x]">
         <tr class="player" *ngFor="let players of data.event.tournament.players.player">
           <ng-container *ngIf="teamdata.name == players.teamname">
+            <ng-container *ngIf="players.totals.status == 'ok'">
             <td></td>
             <td>{{players.totals.position}}</td>
             <td>{{players.firstname}} {{players.lastname}}</td>
-            <td></td>
-            <ng-container *ngIf="players.totals.totaltopar[0] == '+'">
-              <td id="parblue">{{players.totals.totaltopar}}</td>
-            </ng-container>
-            <ng-container *ngIf="players.totals.totaltopar[0] == '-'">
-              <td id="parred">{{players.totals.totaltopar}}</td>
-            </ng-container>
+            <td>null</td>
+            <td *ngIf="players.totals.totaltopar[0] == '+'" id="parblue">{{players.totals.totaltopar}}</td>
+            <td *ngIf="players.totals.totaltopar[0] == '-'" id="parred">{{players.totals.totaltopar}}</td>
             <!-- <td *ngFor="let loop of [0,1,2,4,5,6,7,8]">{{players.round[0].score[loop].strokes}}</td> -->
             <td>{{players.round[0].strokes}}</td>
             <td>{{players.round[1].strokes}}</td>
@@ -607,7 +585,7 @@
             <td>{{players.round[3].strokes}}</td>
             <td>{{(players.round[0].strokes * 1) + (players.round[1].strokes * 1) + (players.round[2].strokes * 1) + (players.round[3].strokes
               * 1)}}</td>
-
+              </ng-container>
           </ng-container>
         </tr>
       </ng-container>
