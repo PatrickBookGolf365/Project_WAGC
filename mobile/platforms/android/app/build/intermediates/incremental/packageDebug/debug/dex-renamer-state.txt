@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Wed Jul 04 13:37:57 BST 2018
+=======
+#Wed Jul 04 14:04:37 BST 2018
+>>>>>>> 9d4da0e7bab3267e9d90ea72b8bac67bc805e135
 base.0=C\:\\Users\\BookGolf365\\Desktop\\part 2\\Project_WAGC\\mobile\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
 file.0=C\:\\Users\\BookGolf365\\Desktop\\part 2\\Project_WAGC\\mobile\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

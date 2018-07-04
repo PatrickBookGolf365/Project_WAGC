@@ -2,14 +2,14 @@
   <img src="./assets/img/WATC.jpg">
 </div>
 <div id="homepage-body">
-<button mat-button (click)="metric = !metric">{{metric ? '&deg;C' : '&deg;F'}}</button> 
-    <div>     
+<button mat-button (click)="metric = !metric">{{metric ? '&deg;C' : '&deg;F'}}</button>
+    <div>
         <ng-container *ngIf="!metric">
-        <mat-accordion>    
+        <mat-accordion>
           <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title>
-               
+
                 <div class="weather_child">
                   <div class="box">
                     <span>
@@ -46,38 +46,38 @@
                     <span>
                       {{forecast.list[loop].main.temp | number:'1.0-0'}}&deg;C
                     </span>
-    
+
                     <!-- <ng-container id="compass">
                       <span *ngIf="forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45">
-                        
+
                         <mat-icon>
                           <img class="compass-img" src="./assets/img/north.png">
                         </mat-icon>
-    
+
                       </span>
                       <span *ngIf="forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135">
-                        
+
                         <mat-icon>
                           <img class="compass-img" src="./assets/img/east.png">
                         </mat-icon>
-    
+
                       </span>
                       <span *ngIf="forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225">
-                        
+
                         <mat-icon>
                           <img class="compass-img" src="./assets/img/south.png">
                         </mat-icon>
-    
+
                       </span>
                       <span *ngIf="forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315">
-    
+
                         <mat-icon>
                           <img class="compass-img" src="./assets/img/west.png">
                         </mat-icon>
-    
+
                       </span>
                       <span *ngIf="forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360">
-                        
+
                         <mat-icon>
                           <img class="compass-img" src="./assets/img/north.png">
                         </mat-icon>
@@ -99,11 +99,11 @@
 
   <div>
     <ng-container *ngIf="metric">
-    <mat-accordion>    
+    <mat-accordion>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-           
+
             <div class="weather_child">
               <div class="box">
                 <span>
@@ -141,35 +141,30 @@
 
                 <!-- <ng-container id="compass">
                   <span *ngIf="forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45">
-                    
+
                     <mat-icon>
                       <img class="compass-img" src="./assets/img/north.png">
                     </mat-icon>
-
                   </span>
                   <span *ngIf="forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135">
-                    
+
                     <mat-icon>
                       <img class="compass-img" src="./assets/img/east.png">
                     </mat-icon>
-
                   </span>
                   <span *ngIf="forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225">
-                    
+
                     <mat-icon>
                       <img class="compass-img" src="./assets/img/south.png">
                     </mat-icon>
-
                   </span>
                   <span *ngIf="forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315">
-
                     <mat-icon>
                       <img class="compass-img" src="./assets/img/west.png">
                     </mat-icon>
-
                   </span>
                   <span *ngIf="forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360">
-                    
+
                     <mat-icon>
                       <img class="compass-img" src="./assets/img/north.png">
                     </mat-icon>
@@ -187,32 +182,36 @@
     </mat-accordion>
     </ng-container>
   </div>
-  
-  <ng-container *ngFor="let news of homeNews.update">
-    <ng-container *ngIf="news.key == 'true'"> 
-      <mat-expansion-panel  id="newsUpdate" >
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            <div class="box">
-              <span>
-                <mat-icon id="newsSeverity{{news.severity}}">{{news.type}}</mat-icon>
-              </span>
-              <span>{{news.desc}}</span>
-            </div>
-          </mat-panel-title>
-          <mat-panel-description>
-            <div class="box">
-              <span>{{news.timeStamp}}</span>
-            </div>
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        {{news.content}}
-      </mat-expansion-panel>
-      </ng-container>
-    </ng-container>
-    </div>
 
-  
+        <!-- <mat-icon id="newsSeverity{{news.severity}}">{{news.type}}</mat-icon>
+
+        {{news.desc}}
+        {{news.timeStamp}}
+        {{news.content}} -->
+
+     <div id="content" *ngFor="let news of homeNews.update | slice:0:4; let i=index">
+
+            <div class="news-image-right" (activate)="onActivate($event)">
+              <mat-icon id="newsSeverity{{news.severity}}">{{news.type}}</mat-icon>
+            </div>
+
+            <div class="news-content">
+
+                <h4  class="news-content-aside" >{{news.desc}}</h4>
+
+                <p  class="news-content-aside">{{news.content}}</p>
+
+                <p>{{news.timeStamp}}</p>
+
+              </div>
+
+            <mat-divider class="mat-elevation-z2"></mat-divider>
+
+      </div>
+
+      <app-instagram-feed></app-instagram-feed>
+
+
   <!-- <div id="newsUpdate" *ngFor="let news of homeNews.update">
     <mat-expansion-panel  id="newsUpdate">
       <mat-expansion-panel-header>
@@ -233,4 +232,4 @@
       {{homeNews.update[0].content}}
     </mat-expansion-panel>
   </div> -->
-  
+</div>
