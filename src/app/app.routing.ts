@@ -33,7 +33,6 @@ import { NewsQuoteComponent } from './components/additional-info/news/news-quote
 import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
 import { AdminQuoteComponent } from './components/admin/admin-quote/admin-quote.component';
 import { AdminComponent } from './components/admin/admin.component';
-import { TestGeoComponent } from './components/test/test-geo.component';
 import { TestComp2Component } from './components/test-comp-2/test-comp-2.component';
 import { BottomSheetOverviewExampleSheetComponent } from './components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component';
 import { SidenavComponent } from './components/test-comp-2/side-nav/sidenav.component';
@@ -57,7 +56,6 @@ const appRoutes:
     { path: 'admin-create', component: AdminCreateComponent },
     { path: 'test2', component: TestComp2Component },
     { path: 'test2/:id', component: TestComp2Component },
-    { path: 'test-geo', component: TestGeoComponent },
     { path: '**', redirectTo: '', pathMatch: 'full'}
   ];
 
