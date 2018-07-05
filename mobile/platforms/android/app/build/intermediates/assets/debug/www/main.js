@@ -134,6 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_test_comp_2_test_comp_2_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/test-comp-2/test-comp-2.component */ "./src/app/components/test-comp-2/test-comp-2.component.ts");
 /* harmony import */ var _components_test_comp_2_bottom_sheet_bottom_sheet_overview_example_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component */ "./src/app/components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component.ts");
 /* harmony import */ var _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./pipes/sort/sort.pipe */ "./src/app/pipes/sort/sort.pipe.ts");
+/* harmony import */ var _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./components/homepage/instagram-feed/instagram-feed.component */ "./src/app/components/homepage/instagram-feed/instagram-feed.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -186,6 +187,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 // import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -221,6 +223,8 @@ var AppModule = /** @class */ (function () {
                 _components_test_test_geo_component__WEBPACK_IMPORTED_MODULE_38__["TestGeoComponent"],
                 _components_test_comp_2_test_comp_2_component__WEBPACK_IMPORTED_MODULE_39__["TestComp2Component"],
                 _components_test_comp_2_bottom_sheet_bottom_sheet_overview_example_component__WEBPACK_IMPORTED_MODULE_40__["BottomSheetOverviewExampleSheetComponent"],
+                _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_41__["SortPipe"],
+                _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_42__["InstagramFeedComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -239,6 +243,7 @@ var AppModule = /** @class */ (function () {
             providers: [
                 _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_23__["WeatherService"],
                 _components_additional_info_news_news_service__WEBPACK_IMPORTED_MODULE_24__["NewsService"],
+                _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_23__["InstagramFeedService"],
                 _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_23__["HomeNewsService"],
                 _components_event_event_service__WEBPACK_IMPORTED_MODULE_25__["YelpService"],
                 _components_live_score_live_score_service__WEBPACK_IMPORTED_MODULE_27__["LiveScoreService"],
@@ -1238,7 +1243,7 @@ var YelpService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\">\r\n</div>\r\n<div id=\"homepage-body\">\r\n<button mat-button (click)=\"metric = !metric\">{{metric ? '&deg;C' : '&deg;F'}}</button> \r\n    <div>     \r\n        <ng-container *ngIf=\"!metric\">\r\n        <mat-accordion>    \r\n          <mat-expansion-panel>\r\n            <mat-expansion-panel-header>\r\n              <mat-panel-title>\r\n               \r\n                <div class=\"weather_child\">\r\n                  <div class=\"box\">\r\n                    <span>\r\n                      Current:\r\n                    </span>\r\n                    <ng-container id=\"ImgTemp\">\r\n                    <span>\r\n                      <img src=\"https://openweathermap.org/img/w/{{forecast.list[0].weather[0].icon}}.png\">\r\n                    </span>\r\n                    <span>\r\n                      {{forecast.list[0].main.temp | number:'1.0-0'}}&deg;C\r\n                    </span>\r\n                    </ng-container>\r\n                    <span>\r\n                    </span>\r\n                  </div>\r\n                </div>\r\n              </mat-panel-title>\r\n            </mat-expansion-panel-header>\r\n            <div id=\"\">\r\n              <!-- index 1 -->\r\n              <ng-container *ngFor=\"let loop of [1,2,3,4]\">\r\n                <div class=\"weather_child\">\r\n                  <div class=\"box\">\r\n                    <span>\r\n                      {{(forecast.list[loop].dt_txt[11]) + (forecast.list[loop].dt_txt[12]) + (forecast.list[loop].dt_txt[13]) + (forecast.list[loop].dt_txt[14])\r\n                      + (forecast.list[loop].dt_txt[15])}} - {{(forecast.list[loop+1].dt_txt[11]) + (forecast.list[loop+1].dt_txt[12])\r\n                      + (forecast.list[loop+1].dt_txt[13]) + (forecast.list[loop+1].dt_txt[14]) + (forecast.list[loop+1].dt_txt[15])}}\r\n                    </span>\r\n                    <span class=\"example-fill-remaining-space\"></span>\r\n                    <span>\r\n                      <img src=\"https://openweathermap.org/img/w/{{forecast.list[loop].weather[0].icon}}.png\">\r\n                    </span>\r\n                    <span>\r\n                      {{forecast.list[loop].main.temp | number:'1.0-0'}}&deg;C\r\n                    </span>\r\n    \r\n                    <!-- <ng-container id=\"compass\">\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45\">\r\n                        \r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                        </mat-icon>\r\n    \r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135\">\r\n                        \r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/east.png\">\r\n                        </mat-icon>\r\n    \r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225\">\r\n                        \r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/south.png\">\r\n                        </mat-icon>\r\n    \r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315\">\r\n    \r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/west.png\">\r\n                        </mat-icon>\r\n    \r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360\">\r\n                        \r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                        </mat-icon>\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg == null\">\r\n                        Calm\r\n                      </span>\r\n                      </ng-container> -->\r\n                  </div>\r\n                </div>\r\n                <mat-divider></mat-divider>\r\n              </ng-container>\r\n            </div>\r\n          </mat-expansion-panel>\r\n        </mat-accordion>\r\n        </ng-container>\r\n      </div>\r\n\r\n\r\n  <div>\r\n    <ng-container *ngIf=\"metric\">\r\n    <mat-accordion>    \r\n      <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n           \r\n            <div class=\"weather_child\">\r\n              <div class=\"box\">\r\n                <span>\r\n                  Current:\r\n                </span>\r\n                <span>\r\n                  <img src=\"https://openweathermap.org/img/w/{{forecastFH.list[0].weather[0].icon}}.png\">\r\n                </span>\r\n                <span>\r\n                  {{forecastFH.list[0].main.temp | number:'1.0-0'}}&deg;F\r\n                </span>\r\n                <span>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n        <div id=\"\">\r\n          <!-- index 1 -->\r\n          <ng-container *ngFor=\"let loop of [1,2,3,4]\">\r\n            <div class=\"weather_child\">\r\n              <div class=\"box\">\r\n                <span>\r\n                  {{(forecastFH.list[loop].dt_txt[11]) + (forecastFH.list[loop].dt_txt[12]) + (forecastFH.list[loop].dt_txt[13]) + (forecastFH.list[loop].dt_txt[14])\r\n                  + (forecastFH.list[loop].dt_txt[15])}} - {{(forecastFH.list[loop+1].dt_txt[11]) + (forecastFH.list[loop+1].dt_txt[12])\r\n                  + (forecastFH.list[loop+1].dt_txt[13]) + (forecastFH.list[loop+1].dt_txt[14]) + (forecastFH.list[loop+1].dt_txt[15])}}\r\n                </span>\r\n                <span class=\"example-fill-remaining-space\"></span>\r\n                <span>\r\n                  <img src=\"https://openweathermap.org/img/w/{{forecastFH.list[loop].weather[0].icon}}.png\">\r\n                </span>\r\n                <span>\r\n                  {{forecastFH.list[loop].main.temp | number:'1.0-0'}}&deg;F\r\n                </span>\r\n\r\n                <!-- <ng-container id=\"compass\">\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45\">\r\n                    \r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135\">\r\n                    \r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/east.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225\">\r\n                    \r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/south.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/west.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360\">\r\n                    \r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg == null\">\r\n                    Calm\r\n                  </span>\r\n                  </ng-container> -->\r\n              </div>\r\n            </div>\r\n            <mat-divider></mat-divider>\r\n          </ng-container>\r\n        </div>\r\n      </mat-expansion-panel>\r\n    </mat-accordion>\r\n    </ng-container>\r\n  </div>\r\n  \r\n  <ng-container *ngFor=\"let news of homeNews.update\">\r\n    <ng-container *ngIf=\"news.key == 'true'\"> \r\n      <mat-expansion-panel  id=\"newsUpdate\" >\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            <div class=\"box\">\r\n              <span>\r\n                <mat-icon id=\"newsSeverity{{news.severity}}\">{{news.type}}</mat-icon>\r\n              </span>\r\n              <span>{{news.desc}}</span>\r\n            </div>\r\n          </mat-panel-title>\r\n          <mat-panel-description>\r\n            <div class=\"box\">\r\n              <span>{{news.timeStamp}}</span>\r\n            </div>\r\n          </mat-panel-description>\r\n        </mat-expansion-panel-header>\r\n        {{news.content}}\r\n      </mat-expansion-panel>\r\n      </ng-container>\r\n    </ng-container>\r\n    </div>\r\n\r\n  \r\n  <!-- <div id=\"newsUpdate\" *ngFor=\"let news of homeNews.update\">\r\n    <mat-expansion-panel  id=\"newsUpdate\">\r\n      <mat-expansion-panel-header>\r\n        <mat-panel-title>\r\n          <div class=\"box\">\r\n            <span>\r\n              <mat-icon id=\"newsSeverity{{homeNews.update[0].severity}}\">{{homeNews.update[0].type}}</mat-icon>\r\n            </span>\r\n            <span>{{homeNews.update[0].desc}}</span>\r\n          </div>\r\n        </mat-panel-title>\r\n        <mat-panel-description>\r\n          <div class=\"box\">\r\n            <span>10:30 am</span>\r\n          </div>\r\n        </mat-panel-description>\r\n      </mat-expansion-panel-header>\r\n      {{homeNews.update[0].content}}\r\n    </mat-expansion-panel>\r\n  </div> -->\r\n  "
+module.exports = "<div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\">\r\n</div>\r\n\r\n <div id=\"homepage-body\">\r\n  <div>\r\n    <mat-accordion>\r\n      <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            <div class=\"weather_child\">\r\n              <div class=\"box\">\r\n                <span>\r\n                  Current:\r\n                </span>\r\n                <span>\r\n                  <img src=\"https://openweathermap.org/img/w/{{forecast.list[0].weather[0].icon}}.png\">\r\n                </span>\r\n                <span>\r\n                  {{forecast.list[0].main.temp | number:'1.0-0'}}&deg;c\r\n                </span>\r\n                <span>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n        <div id=\"\">\r\n          <!-- index 1 -->\r\n          <ng-container *ngFor=\"let loop of [1,2,3,4]\">\r\n            <div class=\"weather_child\">\r\n              <div class=\"box\">\r\n                <span>\r\n                  {{(forecast.list[loop].dt_txt[11]) + (forecast.list[loop].dt_txt[12]) + (forecast.list[loop].dt_txt[13]) + (forecast.list[loop].dt_txt[14])\r\n                  + (forecast.list[loop].dt_txt[15])}} - {{(forecast.list[loop+1].dt_txt[11]) + (forecast.list[loop+1].dt_txt[12])\r\n                  + (forecast.list[loop+1].dt_txt[13]) + (forecast.list[loop+1].dt_txt[14]) + (forecast.list[loop+1].dt_txt[15])}}\r\n                </span>\r\n                <span class=\"example-fill-remaining-space\"></span>\r\n                <span>\r\n                  <img src=\"https://openweathermap.org/img/w/{{forecast.list[loop].weather[0].icon}}.png\">\r\n                </span>\r\n                <span>\r\n                  {{forecast.list[loop].main.temp | number:'1.0-0'}}&deg;c\r\n                </span>\r\n\r\n                <!-- <ng-container id=\"compass\">\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/east.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/south.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/west.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg == null\">\r\n                    Calm\r\n                  </span>\r\n                  </ng-container> -->\r\n              </div>\r\n            </div>\r\n            <mat-divider></mat-divider>\r\n          </ng-container>\r\n        </div>\r\n      </mat-expansion-panel>\r\n    </mat-accordion>\r\n  </div>\r\n\r\n\r\n        <!-- <mat-icon id=\"newsSeverity{{news.severity}}\">{{news.type}}</mat-icon>\r\n\r\n        {{news.desc}}\r\n        {{news.timeStamp}}\r\n        {{news.content}} -->\r\n\r\n     <div id=\"content\" *ngFor=\"let news of homeNews.update | slice:0:4; let i=index\">\r\n\r\n            <div class=\"news-image-right\" (activate)=\"onActivate($event)\">\r\n              <mat-icon id=\"newsSeverity{{news.severity}}\">{{news.type}}</mat-icon>\r\n            </div>\r\n\r\n            <div class=\"news-content\">\r\n\r\n                <h4  class=\"news-content-aside\" >{{news.desc}}</h4>\r\n\r\n                <p  class=\"news-content-aside\">{{news.content}}</p>\r\n\r\n                <p>{{news.timeStamp}}</p>\r\n\r\n              </div>\r\n\r\n            <mat-divider class=\"mat-elevation-z2\"></mat-divider>\r\n\r\n      </div>\r\n\r\n      <app-instagram-feed></app-instagram-feed>\r\n\r\n\r\n  <!-- <div id=\"newsUpdate\" *ngFor=\"let news of homeNews.update\">\r\n    <mat-expansion-panel  id=\"newsUpdate\">\r\n      <mat-expansion-panel-header>\r\n        <mat-panel-title>\r\n          <div class=\"box\">\r\n            <span>\r\n              <mat-icon id=\"newsSeverity{{homeNews.update[0].severity}}\">{{homeNews.update[0].type}}</mat-icon>\r\n            </span>\r\n            <span>{{homeNews.update[0].desc}}</span>\r\n          </div>\r\n        </mat-panel-title>\r\n        <mat-panel-description>\r\n          <div class=\"box\">\r\n            <span>10:30 am</span>\r\n          </div>\r\n        </mat-panel-description>\r\n      </mat-expansion-panel-header>\r\n      {{homeNews.update[0].content}}\r\n    </mat-expansion-panel>\r\n  </div> -->\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1249,7 +1254,7 @@ module.exports = "<div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#homepage-body {\n  margin-bottom: 20%; }\n\n.box {\n  display: flex;\n  align-items: center; }\n\n.box span {\n  font-size: 100%; }\n\n#headerImg img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#weather-toolbar {\n  background-color: #5cd65c; }\n\n.flex-container {\n  display: flex;\n  justify-content: space-around;\n  background: #76b852;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to left, #8DC26F, #76b852);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n.compass-img {\n  width: 245%;\n  height: 245%; }\n\n.wind-small {\n  font-size: 70%; }\n\n.up {\n  color: blue; }\n\n.down {\n  color: red; }\n\n.flex-item {\n  width: 100%;\n  text-align: center;\n  font-size: 150%;\n  margin-top: 2%; }\n\n.flex-temp .small {\n  font-size: 70%; }\n\n#wind {\n  font-size: 80%;\n  width: 70%;\n  text-align: center; }\n\n#direction {\n  float: right; }\n\n#forecast {\n  vertical-align: middle;\n  font-size: 50%; }\n\n#compass {\n  float: right; }\n\n.mat-item-img {\n  height: 200%;\n  width: 33%;\n  margin-left: -50px; }\n\n.mat-item-content {\n  margin-left: 30px; }\n\n.mat-item-para {\n  height: 30%; }\n\n.weather_child {\n  font-size: 110%; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.weather_card {\n  margin-bottom: 3%; }\n\n#newsSeverity1 {\n  color: red; }\n\n#newsSeverity2 {\n  color: orange; }\n\n#newsSeverity3 {\n  color: green; }\n\n#newsUpdate {\n  margin: 1%;\n  margin-top: 2%; }\n"
+module.exports = "#homepage-body {\n  margin-bottom: 20%;\n  overflow: hidden; }\n\n.box {\n  display: flex;\n  align-items: center; }\n\n.box span {\n  font-size: 100%; }\n\n#headerImg img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#weather-toolbar {\n  background-color: #5cd65c; }\n\n.flex-container {\n  display: flex;\n  justify-content: space-around;\n  background: #76b852;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to left, #8DC26F, #76b852);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n.compass-img {\n  width: 245%;\n  height: 245%; }\n\n.wind-small {\n  font-size: 70%; }\n\n.up {\n  color: blue; }\n\n.down {\n  color: red; }\n\n.flex-item {\n  width: 100%;\n  text-align: center;\n  font-size: 150%;\n  margin-top: 2%; }\n\n.flex-temp .small {\n  font-size: 70%; }\n\n#wind {\n  font-size: 80%;\n  width: 70%;\n  text-align: center; }\n\n#direction {\n  float: right; }\n\n#forecast {\n  vertical-align: middle;\n  font-size: 50%; }\n\n#compass {\n  float: right; }\n\n.weather_child {\n  font-size: 110%; }\n\n.news-image-right {\n  position: fixed;\n  margin: 3%;\n  overflow: hidden; }\n\n.news-content-aside {\n  position: relative;\n  left: 50px;\n  margin: 5px; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox.\r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.weather_card {\n  margin-bottom: 3%; }\n\n#newsSeverity1 {\n  color: red; }\n\n#newsSeverity2 {\n  color: orange; }\n\n#newsSeverity3 {\n  color: green; }\n\n#newsUpdate {\n  margin: 1%;\n  margin-top: 2%; }\n"
 
 /***/ }),
 
@@ -1279,12 +1284,19 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var HomepageComponent = /** @class */ (function () {
-    function HomepageComponent(_weatherService, _homeNewsService) {
+    function HomepageComponent(_weatherService, _homeNewsService, _instagramFeed) {
         this._weatherService = _weatherService;
         this._homeNewsService = _homeNewsService;
+        this._instagramFeed = _instagramFeed;
         this.homeNews = [];
     }
     HomepageComponent.prototype.ngOnInit = function () {
+        this.InjectableService();
+    };
+    HomepageComponent.prototype.onActivate = function (event) {
+        // preventDefault();
+    };
+    HomepageComponent.prototype.InjectableService = function () {
         var _this = this;
         this._weatherService.getForecast()
             .subscribe(function (forecast) {
@@ -1313,9 +1325,82 @@ var HomepageComponent = /** @class */ (function () {
                 ])
             ]
         }),
-        __metadata("design:paramtypes", [_services_weather_service__WEBPACK_IMPORTED_MODULE_1__["WeatherService"], _services_weather_service__WEBPACK_IMPORTED_MODULE_1__["HomeNewsService"]])
+        __metadata("design:paramtypes", [_services_weather_service__WEBPACK_IMPORTED_MODULE_1__["WeatherService"],
+            _services_weather_service__WEBPACK_IMPORTED_MODULE_1__["HomeNewsService"],
+            _services_weather_service__WEBPACK_IMPORTED_MODULE_1__["InstagramFeedService"]])
     ], HomepageComponent);
     return HomepageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/homepage/instagram-feed/instagram-feed.component.html":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/homepage/instagram-feed/instagram-feed.component.html ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"instagram-feed\">\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[0].images.thumbnail.url}}\">\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[1].images.thumbnail.url}}\">\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[2].images.thumbnail.url}}\">\r\n    </mat-card>\r\n</div>\r\n<!-- *ngFor=\"let loop of [0,1,2,3,4]; let i = index\" -->\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/homepage/instagram-feed/instagram-feed.component.scss":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/homepage/instagram-feed/instagram-feed.component.scss ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#instagram-feed {\n  display: flex;\n  flex-direction: row;\n  position: fixed;\n  bottom: 40px;\n  overflow-y: auto;\n  overflow-x: hidden; }\n\n.mat-card {\n  width: 33%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/homepage/instagram-feed/instagram-feed.component.ts":
+/*!********************************************************************************!*\
+  !*** ./src/app/components/homepage/instagram-feed/instagram-feed.component.ts ***!
+  \********************************************************************************/
+/*! exports provided: InstagramFeedComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstagramFeedComponent", function() { return InstagramFeedComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_weather_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/weather.service */ "./src/app/components/homepage/services/weather.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var InstagramFeedComponent = /** @class */ (function () {
+    function InstagramFeedComponent(_instagramFeed) {
+        this._instagramFeed = _instagramFeed;
+    }
+    InstagramFeedComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this._instagramFeed.getInstagramFeed()
+            .subscribe(function (instaFeed) {
+            _this.instaFeed = instaFeed;
+        });
+    };
+    InstagramFeedComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-instagram-feed',
+            template: __webpack_require__(/*! ./instagram-feed.component.html */ "./src/app/components/homepage/instagram-feed/instagram-feed.component.html"),
+            styles: [__webpack_require__(/*! ./instagram-feed.component.scss */ "./src/app/components/homepage/instagram-feed/instagram-feed.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_services_weather_service__WEBPACK_IMPORTED_MODULE_1__["InstagramFeedService"]])
+    ], InstagramFeedComponent);
+    return InstagramFeedComponent;
 }());
 
 
@@ -1462,13 +1547,14 @@ var QuotesComponent = /** @class */ (function () {
 /*!*****************************************************************!*\
   !*** ./src/app/components/homepage/services/weather.service.ts ***!
   \*****************************************************************/
-/*! exports provided: WeatherService, HomeNewsService */
+/*! exports provided: WeatherService, HomeNewsService, InstagramFeedService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WeatherService", function() { return WeatherService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeNewsService", function() { return HomeNewsService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstagramFeedService", function() { return InstagramFeedService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var rxjs_Observable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/Observable */ "./node_modules/rxjs-compat/_esm5/Observable.js");
@@ -1500,12 +1586,12 @@ var WeatherService = /** @class */ (function () {
     }
     WeatherService.prototype.getForecast = function () {
         return this._http.get(this._weatherForecast)
-            .do(function (data) { return console.log("Forecast: " + JSON.stringify(data)); })
+            .do(function (data) { return JSON.stringify(data); })
             .catch(this.handleError);
     };
-    WeatherService.prototype.getForecastFH = function () {
-        return this._http.get(this._weatherForecastFH)
-            .do(function (data) { return console.log("ForecastFH: " + JSON.stringify(data)); })
+    WeatherService.prototype.getWeather = function () {
+        return this._http.get(this._weatherCurrent)
+            .do(function (data) { return +JSON.stringify(data); })
             .catch(this.handleError);
     };
     WeatherService.prototype.handleError = function (err) {
@@ -1526,7 +1612,7 @@ var HomeNewsService = /** @class */ (function () {
     }
     HomeNewsService.prototype.getHomeNews = function () {
         return this._http.get(this._homeNewsUrl)
-            .do(function (data) { return console.log('news: ' + JSON.stringify(data)); })
+            .do(function (data) { return JSON.stringify(data); })
             .catch(this.handleError);
     };
     HomeNewsService.prototype.handleError = function (err) {
@@ -1540,6 +1626,29 @@ var HomeNewsService = /** @class */ (function () {
     return HomeNewsService;
 }());
 
+var InstagramFeedService = /** @class */ (function () {
+    function InstagramFeedService(_http) {
+        this._http = _http;
+        // tslint:disable-next-line:max-line-length
+        this._instagramFeedUrl = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=8144523052.2216fb3.4cfe98c30fbb4c57a6049b5980ccb6fc';
+    }
+    InstagramFeedService.prototype.getInstagramFeed = function () {
+        return this._http.get(this._instagramFeedUrl)
+            .do(function (data) { return console.log('Insta: ' + JSON.stringify(data)); })
+            .catch(this.handleError);
+    };
+    InstagramFeedService.prototype.handleError = function (err) {
+        console.log(err.message);
+        return rxjs_Observable__WEBPACK_IMPORTED_MODULE_2__["Observable"].throw(err.message);
+    };
+    InstagramFeedService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], InstagramFeedService);
+    return InstagramFeedService;
+}());
+
+// tslint:disable-next-line:max-line-length
 // https://gist.githubusercontent.com/PatrickBookGolf365/b124a8e610abd4e659b203b9b925f7fc/raw/f6ab4e4a342ecafd31e04756419b932db5d01705/news.json
 // http://news.bookgolf365.ie/news.json
 
@@ -1864,7 +1973,7 @@ var LiveTeamScoreComponent = /** @class */ (function () {
         //   private profiles: string;
         // }
         // get default(){
-        //       return this.profiles 
+        //       return this.profiles
         // }
         ,
         __metadata("design:paramtypes", [_live_score_service__WEBPACK_IMPORTED_MODULE_1__["LiveScoreService"]])

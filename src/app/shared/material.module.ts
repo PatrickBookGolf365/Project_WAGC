@@ -43,7 +43,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // import {BottomSheetOverviewExampleSheet} from '../components/test-comp-2/side-nav/sidenav.component';
-import { BottomSheetOverviewExampleSheetComponent } from '../components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component';
+import { BottomSheetOverviewExampleSheetComponent } from '../components/geolocation/bottom-sheet/bottom-sheet-overview-example.component';
 
 @NgModule({
   exports: [
