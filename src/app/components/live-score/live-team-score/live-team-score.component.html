@@ -1,5 +1,4 @@
 <div id="main" *ngIf="hideall">
-    <ng-container *ngIf="teams.name == profiles">
       <mat-toolbar id="team-header-toolbar">
         <span id="title">
           <span>
@@ -46,15 +45,8 @@
               </span>
             </mat-card-title>
             <div id="team-body" *ngIf="hideRoundOne">
-              <!-- <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          {{x}}{{profiles}} Round One
-        </mat-panel-title>
-      </mat-expansion-panel-header> -->
-
               <!-- Static table -->
-              <div class="static-wrapper">
+              <!-- <div class="static-wrapper">
                 <table class="static-table">
                   <tr>
                     <th>Hole</th>
@@ -65,10 +57,10 @@
                     </ng-container>
                   </tr>
                 </table>
-              </div>
+              </div> -->
 
               <!-- Scroll table -->
-              <div class="scrolling-wrapper">
+              <!-- <div class="scrolling-wrapper"> -->
                   <table>
                       <thead>
                         <tr>   
@@ -94,7 +86,7 @@
                         </tr>
                       </thead>
                       <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index" >     
-                        <ng-container *ngIf="playerdata.teamname == teamProfiles">
+                        <ng-container *ngIf="playerdata.teamname == profiles">
                         <tr *ngIf="playerdata.totals.status == 'ok'">
                           <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>
                           <td *ngFor="let loop of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]">{{playerdata.round[0].score[loop].strokes}}</td>
@@ -102,7 +94,7 @@
                         </ng-container>
                       </tbody>
                       </table>
-              </div>
+              <!-- </div> -->
 
               <!-- </mat-expansion-panel> -->
             </div>
@@ -110,278 +102,204 @@
 
           <!-- Round Two -->
           <mat-card class="roundCard">
-            <mat-card-title>
-              <button class="hide-btn" (click)="hideRoundTwo = !hideRoundTwo">
-                <mat-icon>expand_{{hideRoundTwo ? 'less' : 'more'}}</mat-icon>
-              </button>
-              <span>
-                Round Two
-              </span>
-            </mat-card-title>
-            <div id="team-body" *ngIf="hideRoundTwo">
-              <!-- <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          {{x}}{{profiles}} Round One
-        </mat-panel-title>
-      </mat-expansion-panel-header> -->
-
-              <!-- Static table -->
-              <div class="static-wrapper">
-                <table class="static-table">
-                  <tr>
-                    <th>Hole</th>
-                  </tr>
-                  <tr *ngFor="let players of data.event.tournament.players.player;">
-                    <ng-container *ngIf="players.teamname == profiles">
-                      {{players.firstname}} {{players.lastname}}
-                    </ng-container>
-                  </tr>
-                </table>
+              <mat-card-title>
+                <button class="hide-btn" (click)="hideRoundTwo = !hideRoundTwo">
+                  <mat-icon>expand_{{hideRoundTwo ? 'less' : 'more'}}</mat-icon>
+                </button>
+                <span>
+                  Round Two
+                </span>
+              </mat-card-title>
+              <div id="team-body" *ngIf="hideRoundTwo">
+                <!-- Static table -->
+                <!-- <div class="static-wrapper">
+                  <table class="static-table">
+                    <tr>
+                      <th>Hole</th>
+                    </tr>
+                    <tr *ngFor="let players of data.event.tournament.players.player;">
+                      <ng-container *ngIf="players.teamname == profiles">
+                        {{players.firstname}} {{players.lastname}}
+                      </ng-container>
+                    </tr>
+                  </table>
+                </div> -->
+  
+                <!-- Scroll table -->
+                <!-- <div class="scrolling-wrapper"> -->
+                    <table>
+                        <thead>
+                          <tr>   
+                            <th>Name</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                          </tr>
+                        </thead>
+                        <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index" >     
+                          <ng-container *ngIf="playerdata.teamname == profiles">
+                          <tr *ngIf="playerdata.totals.status == 'ok'">
+                            <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                            <td *ngFor="let loop of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]">{{playerdata.round[1].score[loop].strokes}}</td>
+                          </tr>
+                          </ng-container>
+                        </tbody>
+                        </table>
+                <!-- </div> -->
+  
+                <!-- </mat-expansion-panel> -->
               </div>
-
-              <!-- Scroll table -->
-              <div class="scrolling-wrapper">
-                <table class="scroll-table">
-                  <tr>
-                    <!-- Header 1/2 -->
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>Out</th>
-                    <th>10</th>
-                    <th>11</th>
-                    <th>12</th>
-                    <th>13</th>
-                    <th>14</th>
-                    <th>15</th>
-                    <th>16</th>
-                    <th>17</th>
-                    <th>18</th>
-                    <th>In</th>
-                    <th>Total</th>
-                  </tr>
-
-                  <tr *ngFor="let players of data.event.tournament.players.player">
-
-                    <td>{{players.round[1].score[0].strokes}}</td>
-                    <td>{{players.round[1].score[1].strokes}}</td>
-                    <td>{{players.round[1].score[2].strokes}}</td>
-                    <td>{{players.round[1].score[3].strokes}}</td>
-                    <td>{{players.round[1].score[4].strokes}}</td>
-                    <td>{{players.round[1].score[5].strokes}}</td>
-                    <td>{{players.round[1].score[6].strokes}}</td>
-                    <td>{{players.round[1].score[7].strokes}}</td>
-                    <td>{{players.round[1].score[8].strokes}}</td>
-                    <td>{{players.round[1].score[8].strokes}}</td>
-                    <td>{{players.round[1].score[9].strokes}}</td>
-                    <td>{{players.round[1].score[10].strokes}}</td>
-                    <td>{{players.round[1].score[11].strokes}}</td>
-                    <td>{{players.round[1].score[12].strokes}}</td>
-                    <td>{{players.round[1].score[13].strokes}}</td>
-                    <td>{{players.round[1].score[14].strokes}}</td>
-                    <td>{{players.round[1].score[15].strokes}}</td>
-                    <td>{{players.round[1].score[16].strokes}}</td>
-                    <td>{{players.round[1].score[17].strokes}}</td>
-
-                  </tr>
-                </table>
-              </div>
-
-              <!-- </mat-expansion-panel> -->
-            </div>
-          </mat-card>
-
+            </mat-card>
+        
           <!-- Round three -->
           <mat-card class="roundCard">
-            <mat-card-title>
-              <button class="hide-btn" (click)="hideRondThree = !hideRondThree">
-                <mat-icon>expand_{{hideRondThree ? 'less' : 'more'}}</mat-icon>
-              </button>
-              <span>
-                Round Three
-              </span>
-            </mat-card-title>
-            <div id="team-body" *ngIf="hideRondThree">
-              <!-- <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            {{x}}{{profiles}} Round One
-          </mat-panel-title>
-        </mat-expansion-panel-header> -->
-
-              <!-- Static table -->
-              <div class="static-wrapper">
-                <table class="static-table">
-                  <tr>
-                    <th>Hole</th>
-                  </tr>
-                  <tr *ngFor="let players of data.event.tournament.players.player;">
-                    <ng-container *ngIf="players.teamname == profiles">
-                      {{players.firstname}} {{players.lastname}}
-                    </ng-container>
-                  </tr>
-                </table>
+              <mat-card-title>
+                <button class="hide-btn" (click)="hideRoundThree = !hideRoundThree">
+                  <mat-icon>expand_{{hideRoundThree ? 'less' : 'more'}}</mat-icon>
+                </button>
+                <span>
+                  Round Three
+                </span>
+              </mat-card-title>
+              <div id="team-body" *ngIf="hideRoundThree">
+                <!-- Static table -->
+                <!-- <div class="static-wrapper">
+                  <table class="static-table">
+                    <tr>
+                      <th>Hole</th>
+                    </tr>
+                    <tr *ngFor="let players of data.event.tournament.players.player;">
+                      <ng-container *ngIf="players.teamname == profiles">
+                        {{players.firstname}} {{players.lastname}}
+                      </ng-container>
+                    </tr>
+                  </table>
+                </div> -->
+  
+                <!-- Scroll table -->
+                <!-- <div class="scrolling-wrapper"> -->
+                    <table>
+                        <thead>
+                          <tr>   
+                            <th>Name</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                          </tr>
+                        </thead>
+                        <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index" >     
+                          <ng-container *ngIf="playerdata.teamname == profiles">
+                          <tr *ngIf="playerdata.totals.status == 'ok'">
+                            <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                            <td *ngFor="let loop of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]">{{playerdata.round[2].score[loop].strokes}}</td>
+                          </tr>
+                          </ng-container>
+                        </tbody>
+                        </table>
+                <!-- </div> -->
+  
+                <!-- </mat-expansion-panel> -->
               </div>
-
-              <!-- Scroll table -->
-              <div class="scrolling-wrapper">
-                <table class="scroll-table">
-                  <tr>
-                    <!-- Header 1/2 -->
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>Out</th>
-                    <th>10</th>
-                    <th>11</th>
-                    <th>12</th>
-                    <th>13</th>
-                    <th>14</th>
-                    <th>15</th>
-                    <th>16</th>
-                    <th>17</th>
-                    <th>18</th>
-                    <th>In</th>
-                    <th>Total</th>
-                  </tr>
-                  <!-- <tr *ngFor="let players of data.event.tournament.players.player"> -->
-
-                  <tr *ngFor="let players of data.event.tournament.players.player">
-
-                    <td>{{players.round[2].score[0].strokes}}</td>
-                    <td>{{players.round[2].score[1].strokes}}</td>
-                    <td>{{players.round[2].score[2].strokes}}</td>
-                    <td>{{players.round[2].score[3].strokes}}</td>
-                    <td>{{players.round[2].score[4].strokes}}</td>
-                    <td>{{players.round[2].score[5].strokes}}</td>
-                    <td>{{players.round[2].score[6].strokes}}</td>
-                    <td>{{players.round[2].score[7].strokes}}</td>
-                    <td>{{players.round[2].score[8].strokes}}</td>
-                    <td>{{players.round[2].score[8].strokes}}</td>
-                    <td>{{players.round[2].score[9].strokes}}</td>
-                    <td>{{players.round[2].score[10].strokes}}</td>
-                    <td>{{players.round[2].score[11].strokes}}</td>
-                    <td>{{players.round[2].score[12].strokes}}</td>
-                    <td>{{players.round[2].score[13].strokes}}</td>
-                    <td>{{players.round[2].score[14].strokes}}</td>
-                    <td>{{players.round[2].score[15].strokes}}</td>
-                    <td>{{players.round[2].score[16].strokes}}</td>
-                    <td>{{players.round[2].score[17].strokes}}</td>
-
-                  </tr>
-
-
-                </table>
-              </div>
-
-              <!-- </mat-expansion-panel> -->
-            </div>
-          </mat-card>
-
+            </mat-card>
+         
           <!-- Round Four -->
           <mat-card class="roundCard">
-            <mat-card-title>
-              <button class="hide-btn" (click)="hideRoundFour = !hideRoundFour">
-                <mat-icon>expand_{{hideRoundFour ? 'less' : 'more'}}</mat-icon>
-              </button>
-              <span>
-                Round Four
-              </span>
-            </mat-card-title>
-            <div id="team-body" *ngIf="hideRoundFour">
-              <!-- <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            {{x}}{{profiles}} Round One
-          </mat-panel-title>
-        </mat-expansion-panel-header> -->
-
-              <!-- Static table -->
-              <div class="static-wrapper">
-                <table class="static-table">
-                  <tr>
-                    <th>Hole</th>
-                  </tr>
-                  <tr *ngFor="let players of data.event.tournament.players.player;">
-                    <ng-container *ngIf="players.teamname == profiles">
-                      {{players.firstname}} {{players.lastname}}
-                    </ng-container>
-                  </tr>
-                </table>
+              <mat-card-title>
+                <button class="hide-btn" (click)="hideRoundFour = !hideRoundFour">
+                  <mat-icon>expand_{{hideRoundFour ? 'less' : 'more'}}</mat-icon>
+                </button>
+                <span>
+                  Round Four
+                </span>
+              </mat-card-title>
+              <div id="team-body" *ngIf="hideRoundFour">
+                <!-- Static table -->
+                <!-- <div class="static-wrapper">
+                  <table class="static-table">
+                    <tr>
+                      <th>Hole</th>
+                    </tr>
+                    <tr *ngFor="let players of data.event.tournament.players.player;">
+                      <ng-container *ngIf="players.teamname == profiles">
+                        {{players.firstname}} {{players.lastname}}
+                      </ng-container>
+                    </tr>
+                  </table>
+                </div> -->
+  
+                <!-- Scroll table -->
+                <!-- <div class="scrolling-wrapper"> -->
+                    <table>
+                        <thead>
+                          <tr>   
+                            <th>Name</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                          </tr>
+                        </thead>
+                        <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index" >     
+                          <ng-container *ngIf="playerdata.teamname == profiles">
+                          <tr *ngIf="playerdata.totals.status == 'ok'">
+                            <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                            <td *ngFor="let loop of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]">{{playerdata.round[3].score[loop].strokes}}</td>
+                          </tr>
+                          </ng-container>
+                        </tbody>
+                        </table>
+                <!-- </div> -->
+  
+                <!-- </mat-expansion-panel> -->
               </div>
-
-              <!-- Scroll table -->
-              <div class="scrolling-wrapper">
-                <table class="scroll-table">
-                  <tr>
-                    <!-- Header 1/2 -->
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                    <th>9</th>
-                    <th>Out</th>
-                    <th>10</th>
-                    <th>11</th>
-                    <th>12</th>
-                    <th>13</th>
-                    <th>14</th>
-                    <th>15</th>
-                    <th>16</th>
-                    <th>17</th>
-                    <th>18</th>
-                    <th>In</th>
-                    <th>Total</th>
-                  </tr>
-                  <tr *ngFor="let players of data.event.tournament.players.player">
-                    <td>{{players.round[3].score[0].strokes}}</td>
-                    <td>{{players.round[3].score[1].strokes}}</td>
-                    <td>{{players.round[3].score[2].strokes}}</td>
-                    <td>{{players.round[3].score[3].strokes}}</td>
-                    <td>{{players.round[3].score[4].strokes}}</td>
-                    <td>{{players.round[3].score[5].strokes}}</td>
-                    <td>{{players.round[3].score[6].strokes}}</td>
-                    <td>{{players.round[3].score[7].strokes}}</td>
-                    <td>{{players.round[3].score[8].strokes}}</td>
-                    <td>{{players.round[3].score[8].strokes}}</td>
-                    <td>{{players.round[3].score[9].strokes}}</td>
-                    <td>{{players.round[3].score[10].strokes}}</td>
-                    <td>{{players.round[3].score[11].strokes}}</td>
-                    <td>{{players.round[3].score[12].strokes}}</td>
-                    <td>{{players.round[3].score[13].strokes}}</td>
-                    <td>{{players.round[3].score[14].strokes}}</td>
-                    <td>{{players.round[3].score[15].strokes}}</td>
-                    <td>{{players.round[3].score[16].strokes}}</td>
-                    <td>{{players.round[3].score[17].strokes}}</td>
-
-                  </tr>
-
-                </table>
-              </div>
-
-              <!-- </mat-expansion-panel> -->
-            </div>
-          </mat-card>
+            </mat-card>
+        
         </div>
-      </div>
-    </ng-container>
+     </div>
 </div>
 <!-- Par  -->
 
