@@ -10,23 +10,23 @@ import 'rxjs/add/operator/do';
 export class WeatherService {
 
    // tslint:disable-next-line:max-line-length
-   private _weatherCurrent = 'http://api.openweathermap.org/data/2.5/weather?lat=53.3909&lon=-6.5665&units=metric&appid=6864244ceeeaa2b28fad8845b7113272';
+   private _weatherForecastFH = 'http://api.openweathermap.org/data/2.5/forecast?lat=53.3909&lon=-6.5665&units=imperial&appid=6864244ceeeaa2b28fad8845b7113272';
    // tslint:disable-next-line:max-line-length
    private _weatherForecast = 'http://api.openweathermap.org/data/2.5/forecast?lat=53.3909&lon=-6.5665&units=metric&appid=6864244ceeeaa2b28fad8845b7113272';
 
    constructor(private _http: HttpClient) {}
 
-       getForecast(): Observable<any[]> {
-        return this._http.get<any[]>(this._weatherForecast)
-        .do(data => JSON.stringify(data))
-        .catch(this.handleError);
-       }
+   getForecast(): Observable<any[]> {
+    return this._http.get<any[]>(this._weatherForecast)
+    .do(data => console.log('Forecast: ' + JSON.stringify(data)))
+    .catch(this.handleError);
+   }
 
-       getWeather(): Observable<any[]> {
-        return this._http.get<any[]>(this._weatherCurrent)
-        .do(data =>  + JSON.stringify(data))
-        .catch(this.handleError);
-       }
+   getForecastFH(): Observable<any[]> {
+    return this._http.get<any[]>(this._weatherForecastFH)
+    .do(data => console.log('ForecastFH: ' + JSON.stringify(data)))
+    .catch(this.handleError);
+   }
 
        private handleError(err: HttpErrorResponse) {
         console.log(err.message);

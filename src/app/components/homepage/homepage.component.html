@@ -1,23 +1,119 @@
 <div id="headerImg">
   <img src="./assets/img/WATC.jpg">
 </div>
+<div id="homepage-body">
+<button mat-button (click)="metric = !metric">{{metric ? '&deg;C' : '&deg;F'}}</button>
+    <div>
+        <ng-container *ngIf="!metric">
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
 
- <div id="homepage-body">
+                <div class="weather_child">
+                  <div class="box">
+                    <span>
+                      Current:
+                    </span>
+                    <ng-container id="ImgTemp">
+                    <span>
+                      <img src="https://openweathermap.org/img/w/{{forecast.list[0].weather[0].icon}}.png">
+                    </span>
+                    <span>
+                      {{forecast.list[0].main.temp | number:'1.0-0'}}&deg;C
+                    </span>
+                    </ng-container>
+                    <span>
+                    </span>
+                  </div>
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div id="">
+              <!-- index 1 -->
+              <ng-container *ngFor="let loop of [1,2,3,4]">
+                <div class="weather_child">
+                  <div class="box">
+                    <span>
+                      {{(forecast.list[loop].dt_txt[11]) + (forecast.list[loop].dt_txt[12]) + (forecast.list[loop].dt_txt[13]) + (forecast.list[loop].dt_txt[14])
+                      + (forecast.list[loop].dt_txt[15])}} - {{(forecast.list[loop+1].dt_txt[11]) + (forecast.list[loop+1].dt_txt[12])
+                      + (forecast.list[loop+1].dt_txt[13]) + (forecast.list[loop+1].dt_txt[14]) + (forecast.list[loop+1].dt_txt[15])}}
+                    </span>
+                    <span class="example-fill-remaining-space"></span>
+                    <span>
+                      <img src="https://openweathermap.org/img/w/{{forecast.list[loop].weather[0].icon}}.png">
+                    </span>
+                    <span>
+                      {{forecast.list[loop].main.temp | number:'1.0-0'}}&deg;C
+                    </span>
+
+                    <!-- <ng-container id="compass">
+                      <span *ngIf="forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45">
+
+                        <mat-icon>
+                          <img class="compass-img" src="./assets/img/north.png">
+                        </mat-icon>
+
+                      </span>
+                      <span *ngIf="forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135">
+
+                        <mat-icon>
+                          <img class="compass-img" src="./assets/img/east.png">
+                        </mat-icon>
+
+                      </span>
+                      <span *ngIf="forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225">
+
+                        <mat-icon>
+                          <img class="compass-img" src="./assets/img/south.png">
+                        </mat-icon>
+
+                      </span>
+                      <span *ngIf="forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315">
+
+                        <mat-icon>
+                          <img class="compass-img" src="./assets/img/west.png">
+                        </mat-icon>
+
+                      </span>
+                      <span *ngIf="forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360">
+
+                        <mat-icon>
+                          <img class="compass-img" src="./assets/img/north.png">
+                        </mat-icon>
+                      </span>
+                      <span *ngIf="forecast.list[loop].wind.deg == null">
+                        Calm
+                      </span>
+                      </ng-container> -->
+                  </div>
+                </div>
+                <mat-divider></mat-divider>
+              </ng-container>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        </ng-container>
+      </div>
+
+
   <div>
+    <ng-container *ngIf="metric">
     <mat-accordion>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
+
             <div class="weather_child">
               <div class="box">
                 <span>
                   Current:
                 </span>
                 <span>
-                  <img src="https://openweathermap.org/img/w/{{forecast.list[0].weather[0].icon}}.png">
+                  <img src="https://openweathermap.org/img/w/{{forecastFH.list[0].weather[0].icon}}.png">
                 </span>
                 <span>
-                  {{forecast.list[0].main.temp | number:'1.0-0'}}&deg;c
+                  {{forecastFH.list[0].main.temp | number:'1.0-0'}}&deg;F
                 </span>
                 <span>
                 </span>
@@ -31,16 +127,16 @@
             <div class="weather_child">
               <div class="box">
                 <span>
-                  {{(forecast.list[loop].dt_txt[11]) + (forecast.list[loop].dt_txt[12]) + (forecast.list[loop].dt_txt[13]) + (forecast.list[loop].dt_txt[14])
-                  + (forecast.list[loop].dt_txt[15])}} - {{(forecast.list[loop+1].dt_txt[11]) + (forecast.list[loop+1].dt_txt[12])
-                  + (forecast.list[loop+1].dt_txt[13]) + (forecast.list[loop+1].dt_txt[14]) + (forecast.list[loop+1].dt_txt[15])}}
+                  {{(forecastFH.list[loop].dt_txt[11]) + (forecastFH.list[loop].dt_txt[12]) + (forecastFH.list[loop].dt_txt[13]) + (forecastFH.list[loop].dt_txt[14])
+                  + (forecastFH.list[loop].dt_txt[15])}} - {{(forecastFH.list[loop+1].dt_txt[11]) + (forecastFH.list[loop+1].dt_txt[12])
+                  + (forecastFH.list[loop+1].dt_txt[13]) + (forecastFH.list[loop+1].dt_txt[14]) + (forecastFH.list[loop+1].dt_txt[15])}}
                 </span>
                 <span class="example-fill-remaining-space"></span>
                 <span>
-                  <img src="https://openweathermap.org/img/w/{{forecast.list[loop].weather[0].icon}}.png">
+                  <img src="https://openweathermap.org/img/w/{{forecastFH.list[loop].weather[0].icon}}.png">
                 </span>
                 <span>
-                  {{forecast.list[loop].main.temp | number:'1.0-0'}}&deg;c
+                  {{forecastFH.list[loop].main.temp | number:'1.0-0'}}&deg;F
                 </span>
 
                 <!-- <ng-container id="compass">
@@ -49,28 +145,23 @@
                     <mat-icon>
                       <img class="compass-img" src="./assets/img/north.png">
                     </mat-icon>
-
                   </span>
                   <span *ngIf="forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135">
 
                     <mat-icon>
                       <img class="compass-img" src="./assets/img/east.png">
                     </mat-icon>
-
                   </span>
                   <span *ngIf="forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225">
 
                     <mat-icon>
                       <img class="compass-img" src="./assets/img/south.png">
                     </mat-icon>
-
                   </span>
                   <span *ngIf="forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315">
-
                     <mat-icon>
                       <img class="compass-img" src="./assets/img/west.png">
                     </mat-icon>
-
                   </span>
                   <span *ngIf="forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360">
 
@@ -89,8 +180,8 @@
         </div>
       </mat-expansion-panel>
     </mat-accordion>
+    </ng-container>
   </div>
-
 
         <!-- <mat-icon id="newsSeverity{{news.severity}}">{{news.type}}</mat-icon>
 

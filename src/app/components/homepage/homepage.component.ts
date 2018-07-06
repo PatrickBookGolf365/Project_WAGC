@@ -20,8 +20,10 @@ declare var Instafeed;
 })
 
 export class HomepageComponent implements OnInit {
+
   errorMessage: string;
   weather;
+  forecastFH;
   forecast;
   instaFeed;
   homeNews = [];
@@ -48,14 +50,14 @@ export class HomepageComponent implements OnInit {
 
    InjectableService() {
 
-    this._weatherService.getWeather()
-    .subscribe(weather => {
-      this.weather = weather;
+    this._weatherService.getForecast()
+    .subscribe(forecast => {
+      this.forecast = forecast;
     });
 
-        this._weatherService.getForecast()
-        .subscribe(forecast => {
-          this.forecast = forecast;
+      this._weatherService.getForecastFH()
+      .subscribe(forecastFH => {
+        this.forecastFH = forecastFH;
 
       this._homeNewsService.getHomeNews()
       .subscribe(homeNews => {

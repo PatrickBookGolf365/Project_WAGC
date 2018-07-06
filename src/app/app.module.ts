@@ -22,7 +22,7 @@ import { AboutComponent } from './components/additional-info/about/about.compone
 import { EligibilityComponent } from './components/additional-info/eligibitity/eligibility.component';
 import { ScheduleComponent } from './components/additional-info/schedule/schedule.component';
 import { ContactComponent } from './components/additional-info/contact/contact.component';
-import { GeoCoord } from './components/test-comp-2/services/geo-coord';
+import { GeoCoord } from './components/geolocation/services/geo-coord';
 
 import { WeatherService, InstagramFeedService} from './components/homepage/services/weather.service';
 import { NewsService} from './components/additional-info/news/news.service';
@@ -35,17 +35,17 @@ import { EventComponent } from './components/event/event.component';
 // import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
 import { LiveTeamScoreComponent } from './components/live-score/live-team-score/live-team-score.component';
-import { SidenavComponent } from './components/test-comp-2/side-nav/sidenav.component';
+import { SidenavComponent } from './components/geolocation/side-nav/sidenav.component';
 import { QuotesComponent } from './components/homepage/quotes/quotes.component';
 import { QuoteComponent } from './components/homepage/quote/quote.component';
 import { NewsQuoteComponent } from './components/additional-info/news/news-quote/news-quote.component';
 import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
 import { AdminQuoteComponent } from './components/admin/admin-quote/admin-quote.component';
 import { AdminComponent } from './components/admin/admin.component';
-import { TestComp2Component } from './components/test-comp-2/test-comp-2.component';
+import { GeolocationComponent } from './components/geolocation/geolocation.component';
 // import { BottomSheetComponent } from './components/test-comp-2/test-comp-2.component';
 // import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
-import { BottomSheetOverviewExampleSheetComponent } from './components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component';
+import { BottomSheetOverviewExampleSheetComponent } from './components/geolocation/bottom-sheet/bottom-sheet-overview-example.component';
 import { SortPipe } from './pipes/sort/sort.pipe';
 import { InstagramFeedComponent } from './components/homepage/instagram-feed/instagram-feed.component';
 
@@ -54,6 +54,7 @@ import { InstagramFeedComponent } from './components/homepage/instagram-feed/ins
 
 @NgModule({
   declarations: [
+    SortPipe,
     AppComponent,
     NavigationComponent,
     HomepageComponent,
@@ -79,9 +80,8 @@ import { InstagramFeedComponent } from './components/homepage/instagram-feed/ins
     AdminCreateComponent,
     AdminQuoteComponent,
     AdminComponent,
-    TestComp2Component,
+    GeolocationComponent,
     BottomSheetOverviewExampleSheetComponent,
-    SortPipe,
     InstagramFeedComponent,
   ],
   imports: [
