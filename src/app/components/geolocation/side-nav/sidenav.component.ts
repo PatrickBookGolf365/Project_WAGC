@@ -74,7 +74,7 @@ export class SidenavComponent implements OnInit {
               private _route: ActivatedRoute) {}
 
   openBottomSheet(): void {
-     window.location.reload();
+     location.reload();
      // this.bottomSheet.open(BottomSheetOverviewExampleSheetComponent);
   }
 
