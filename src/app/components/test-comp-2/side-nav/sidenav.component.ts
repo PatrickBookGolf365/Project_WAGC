@@ -73,30 +73,13 @@ export class SidenavComponent implements OnInit {
               private _courseDataService: CourseDataService,
               private _route: ActivatedRoute) {}
 
-  openBottomSheet(): void {
-     window.location.reload();
-     // this.bottomSheet.open(BottomSheetOverviewExampleSheetComponent);
-  }
+  openBottomSheet(): void {}
 
-  refreshPage() {
-  }
-
-  getHolesId(id: number) {
-    this._courseDataService.getHoleById(id).subscribe(
-    hole => this.hole = hole
-    );
-  }
 
   ngOnInit() {
     this.Haversine();
-    this.holes = this._courseDataService.getSideNavHoles();
     this.hole = +this._route.snapshot.paramMap.get('id');
-    this._courseDataService.showMap(+this._route.snapshot.params['id']);
-      if (this.hole) {
-      const id = +this.hole;
-      this.getHolesId(id);
-      console.log(id);
-    }
+    this.showMap();
     console.log(this.hole);
   }
 
@@ -184,4 +167,19 @@ getDistanceInYards(coord1: GeoCoord, coord2: GeoCoord): number {
       // d = R ⋅ c
       return this._earthRadiusInMiles * c;
  }
+
+    getHolesId(id: number) {
+      this._courseDataService.getHolesById(id).subscribe(
+      hole => this.hole = hole
+    );
+    }
+
+    showMap() {
+      this._courseDataService.showMap(+this._route.snapshot.params['id']);
+        if (this.hole) {
+        const id = +this.hole;
+        this.getHolesId(id);
+        console.log(id);
+      }
+    }
 }

@@ -68,11 +68,9 @@ export class CourseDataService {
   }
 
 
-   getHoleById(id: number) {
+   getHolesById(id: number) {
      return this.getHoles()
      .pipe(map((holes: IHoles[]) => holes.find(hole => hole.id === id)));
-    //  ,
-    //        switchMap(() => interval(500)));
    }
 
     getHoleBy(id: number) {
