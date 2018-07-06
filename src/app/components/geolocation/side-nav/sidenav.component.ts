@@ -1,13 +1,9 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { MatSidenav, MatBottomSheetRef, MatBottomSheet } from '@angular/material';
+import { MatSidenav, MatBottomSheet } from '@angular/material';
 import { GeoCoord } from '../services/geo-coord';
 import { CourseDataService } from '../services/course-data.service';
 import { IHoles } from '../services/holes.model';
-import { HOLES_INFO } from '../services/hole';
 import { ActivatedRoute } from '@angular/router';
-import { BottomSheetOverviewExampleSheetComponent } from '../bottom-sheet/bottom-sheet-overview-example.component';
-import { Location } from '@angular/common';
 import {trigger, transition, style, animate, query, stagger} from '@angular/animations';
 
 declare var holes: IHoles[];
@@ -73,10 +69,7 @@ export class SidenavComponent implements OnInit {
               private _courseDataService: CourseDataService,
               private _route: ActivatedRoute) {}
 
-  openBottomSheet(): void {
-     window.location.reload();
-     // this.bottomSheet.open(BottomSheetOverviewExampleSheetComponent);
-  }
+  openBottomSheet(): void { window.location.reload(true); }
 
   refreshPage() {
   }
