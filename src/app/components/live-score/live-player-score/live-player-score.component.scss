@@ -4,7 +4,7 @@
     border-collapse:collapse;
 }
 
-tbody:nth-child(even) {background-color: #adebad}
+#player-tbody:nth-child(even) {background-color: #adebad}
 
 .example-fill-remaining-space {
     /* This fills the remaining space, by using flexbox. 
@@ -45,6 +45,10 @@ tbody:nth-child(even) {background-color: #adebad}
     color: blue;
 }
 
+#total{
+    color: red;
+}
+
 #total_Even{
     color: red;
 }
@@ -61,7 +65,75 @@ tr:nth-child(even) {background: #56ab2f;  /* fallback for old browsers */
 
 
 
+#main{
+    margin-bottom: 30%;
+}
 
+#team-header-toolbar #title{
+    width: 100%;
+    font-size: 130%;
+}
 
+.hide-btn{
+    min-width: 1%;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+   
+  }
 
+  .fav{
+    color: #cccc00;
+   }
+   
+   #fav-button{
+       min-width: 1%;
+   }
 
+   #team-header{
+    text-align: center;
+    
+}
+
+#team-image{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    
+}
+
+#score-Info table{
+    width: 100%;
+   text-align: center;
+}
+
+.scroll-main{
+    height: 100%;
+    margin-top: 3%;
+    overflow: hidden;
+    
+}
+
+.scroll-child{
+     height:250px;
+     overflow-y: scroll;
+    
+}
+
+.roundCard{
+    margin: 2%;
+   
+}
+.roundCard span{
+    
+  
+    font-size:75%;
+}
+
+#team-body{
+    margin-bottom: 5%;
+  
+ }

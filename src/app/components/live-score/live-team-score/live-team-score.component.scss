@@ -3,6 +3,28 @@
 }
 
 
+#staticTable{
+    
+    width: 40%;
+    float: left;
+}
+
+#scrollingTable{
+    
+    overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-align: center;
+    
+}
+
+
+
+.scrollingCard{
+display: inline-block;
+
+}
+
 #live-table{
     font-size: 75%;
     width: 100%;
@@ -66,6 +88,7 @@
 #live-search mat-form-field{
     width: 45%;
     font-size: 68%;
+    
 }
 
 #total{
@@ -153,14 +176,16 @@
    
    //Header
    #main{
-       margin-bottom: 30%;
+      
    }
 
 
-   #team-body{
-       margin-bottom: 5%;
-     
-    }
+   
+   #team-expansion{
+    margin: 2%;
+    
+   
+   }
     
     //static table  
 
