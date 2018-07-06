@@ -47,6 +47,7 @@ const appRoutes:
     { path: 'admin-create', component: AdminCreateComponent },
     { path: 'geolocation', component: GeolocationComponent },
     { path: 'geolocation/:id', component: GeolocationComponent },
+    // { path: 'geolocation/:id', component: GeolocationComponent },
     { path: '**', redirectTo: '', pathMatch: 'full'}
   ];
 

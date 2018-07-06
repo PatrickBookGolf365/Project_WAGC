@@ -32,7 +32,6 @@ import { QuoteService } from './shared/quote.service';
 import { LiveScoreService } from './components/live-score/live-score.service';
 
 import { EventComponent } from './components/event/event.component';
-// import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
 import { LiveTeamScoreComponent } from './components/live-score/live-team-score/live-team-score.component';
 import { SidenavComponent } from './components/geolocation/side-nav/sidenav.component';
@@ -43,13 +42,9 @@ import { AdminCreateComponent } from './components/admin/admin-create/admin-crea
 import { AdminQuoteComponent } from './components/admin/admin-quote/admin-quote.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { GeolocationComponent } from './components/geolocation/geolocation.component';
-// import { BottomSheetComponent } from './components/test-comp-2/test-comp-2.component';
-// import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
-import { BottomSheetOverviewExampleSheetComponent } from './components/geolocation/bottom-sheet/bottom-sheet-overview-example.component';
 import { SortPipe } from './pipes/sort/sort.pipe';
 import { InstagramFeedComponent } from './components/homepage/instagram-feed/instagram-feed.component';
-
-
+import { GeolocationDetailComponent } from './components/geolocation/geolocation-detail/geolocation-detail.component';
 
 
 @NgModule({
@@ -81,8 +76,8 @@ import { InstagramFeedComponent } from './components/homepage/instagram-feed/ins
     AdminQuoteComponent,
     AdminComponent,
     GeolocationComponent,
-    BottomSheetOverviewExampleSheetComponent,
     InstagramFeedComponent,
+    GeolocationDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -96,7 +91,7 @@ import { InstagramFeedComponent } from './components/homepage/instagram-feed/ins
     }),
     routing
   ],
-  entryComponents: [ BottomSheetOverviewExampleSheetComponent],
+  entryComponents: [ ],
   providers: [
     WeatherService,
     NewsService,
