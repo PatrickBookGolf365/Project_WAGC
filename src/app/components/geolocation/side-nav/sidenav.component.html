@@ -1,47 +1,42 @@
-<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
-  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+<div *ngIf="showIndicator">Loading...</div>
 
-      <!-- <img src="./assets/img/WATC.jpeg"> -->
+ <mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
+    <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+      <mat-toolbar class="geo-heading">
+            <h3>Geolocation</h3>
+      </mat-toolbar>
 
-      <div class="geo-heading">
-          <h3>Geolocation</h3>
-      </div>
-
-    <div class="banner"></div>
-
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          Montgomorie
-        </mat-expansion-panel-header>
-
-        <mat-list role="list" *ngFor="let hole of holes ">
-
-            <mat-list-item role="listitem" class="mat-side-list">
-              <button mat-button (click)="openBottomSheet()" [routerLink]="['/geolocation', hole.id]"><span>Hole {{hole.id}}</span></button>
-            </mat-list-item>
-
-        </mat-list>
-
-
-      </mat-expansion-panel>
+      <div class="banner"></div>
 
       <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            Montgomorie
+          </mat-expansion-panel-header>
+
+      <mat-list role="list" *ngFor="let hole of hole$ | async">
+        <mat-list-item role="listitem" class="mat-side-list">
+            <button mat-button [routerLink]="['/geolocation', hole.id]"><span>Hole {{hole.id}}</span></button>
+        </mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
         <mat-expansion-panel-header>
           O'Meara
         </mat-expansion-panel-header>
 
-        <mat-list role="list" *ngFor="let hole of holes ">
+    <mat-list role="list" *ngFor="let hole of hole$ | async">
+      <mat-list-item role="listitem" class="mat-side-list">
+          <button mat-button [routerLink]="['/geolocation', hole.id]"><span>Hole {{hole.id}}</span></button>
+      </mat-list-item>
+    </mat-list>
+  </mat-expansion-panel>
 
-            <mat-list-item role="listitem" class="mat-side-list">
-<<<<<<< HEAD
-              <button mat-button (click)="openBottomSheet()" [routerLink]="['/geoloaction', hole.id]"><span>Hole {{hole.id}}</span></button>
-=======
-              <button mat-button (click)="openBottomSheet()" [routerLink]="['/geolocation', hole.id]"><span>Hole {{hole.id}}</span></button>
->>>>>>> 8cea85484991261267c67ad5463e52866800f69f
-            </mat-list-item>
+  <!-- geolocation-maynooth -->
+  <button class="mat-raised-button" mat-raised-button [routerLink]="['/geolocation-maynooth']"><span>Maynooth</span></button><br>
 
-        </mat-list>
-      </mat-expansion-panel>
+  <button class="mat-raised-button" mat-button><span class="mat-button-span">Yelp</span></button>
+
   </mat-sidenav>
 </mat-sidenav-container>
 
@@ -50,42 +45,3 @@
       <i class="material-icons">menu</i>
     </button>
   </p>
-
- <div id="map"></div>
-
-
-<div class="contain" *ngIf="hole.id">
-  <mat-card class="mat-elevation-z20">
-    <div class="flex-item1">
-        <p>Metres: {{metres}}</p>
-
-        <p>Yards: {{yards}}</p>
-
-        <p>Kilometres: {{kilometres}}</p>
-
-        <p>Miles: {{miles}}</p>
-    </div>
-
-    <div class="flex-item2">
-        <p>hole {{ hole.hole }}</p>
-
-        <p>par {{ hole.par }}</p>
-
-        <p>{{hole.description}}</p>
-
-        <p>Flyover</p>
-        <!-- <p>{{hole.flyover }}</p> -->
-    </div>
-  </mat-card>
-</div>
-
-<div class="contain" *ngIf="!hole.id">
-    <mat-card class="mat-elevation-z20">
-      <p>Welcome to geolocation!</p>
-    </mat-card>
-</div>
-
-
-
-
-

@@ -22,7 +22,6 @@ import { AboutComponent } from './components/additional-info/about/about.compone
 import { EligibilityComponent } from './components/additional-info/eligibitity/eligibility.component';
 import { ScheduleComponent } from './components/additional-info/schedule/schedule.component';
 import { ContactComponent } from './components/additional-info/contact/contact.component';
-import { GeoCoord } from './components/geolocation/services/geo-coord';
 
 import { WeatherService, InstagramFeedService} from './components/homepage/services/weather.service';
 import { NewsService} from './components/additional-info/news/news.service';
@@ -45,6 +44,11 @@ import { GeolocationComponent } from './components/geolocation/geolocation.compo
 import { SortPipe } from './pipes/sort/sort.pipe';
 import { InstagramFeedComponent } from './components/homepage/instagram-feed/instagram-feed.component';
 import { GeolocationDetailComponent } from './components/geolocation/geolocation-detail/geolocation-detail.component';
+import { MapService } from './components/geolocation/services/map.service';
+import { HaversineService } from './components/geolocation/services/haversine.service';
+// tslint:disable-next-line:max-line-length
+import { GeolocationMaynoothDetailComponent } from './components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component';
+import { BottomSheetOverviewComponent } from './components/geolocation/bottom-sheet/bottom-sheet-overview.component';
 
 
 @NgModule({
@@ -77,7 +81,9 @@ import { GeolocationDetailComponent } from './components/geolocation/geolocation
     AdminComponent,
     GeolocationComponent,
     InstagramFeedComponent,
-    GeolocationDetailComponent
+    GeolocationDetailComponent,
+    BottomSheetOverviewComponent,
+    GeolocationMaynoothDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -91,7 +97,7 @@ import { GeolocationDetailComponent } from './components/geolocation/geolocation
     }),
     routing
   ],
-  entryComponents: [ ],
+  entryComponents: [ BottomSheetOverviewComponent ],
   providers: [
     WeatherService,
     NewsService,
@@ -100,6 +106,8 @@ import { GeolocationDetailComponent } from './components/geolocation/geolocation
     YelpService,
     LiveScoreService,
     QuoteService,
+    MapService,
+    HaversineService
    ],
   bootstrap: [AppComponent]
 })

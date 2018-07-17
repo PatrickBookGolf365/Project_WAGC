@@ -1,8 +1,6 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { NavigationComponent } from './components/navigation/nav/navigation.component';
 import { HomepageComponent } from './components//homepage/homepage.component';
 import { LiveScoreComponent } from './components//live-score/live-score.component';
 import { TransportComponent } from './components/transport/transport.component';
@@ -24,8 +22,9 @@ import { EventComponent } from './components/event/event.component';
 import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { GeolocationComponent } from './components/geolocation/geolocation.component';
-// import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
-// import { BottomSheetComponent } from './components/test-comp-2/bottom-sheet/bottom-sheet.component';
+import { GeolocationDetailComponent } from './components/geolocation/geolocation-detail/geolocation-detail.component';
+// tslint:disable-next-line:max-line-length
+import { GeolocationMaynoothDetailComponent } from './components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component';
 
 const appRoutes:
   Routes = [
@@ -46,8 +45,8 @@ const appRoutes:
     { path: 'admin', component: AdminComponent },
     { path: 'admin-create', component: AdminCreateComponent },
     { path: 'geolocation', component: GeolocationComponent },
-    { path: 'geolocation/:id', component: GeolocationComponent },
-    // { path: 'geolocation/:id', component: GeolocationComponent },
+    { path: 'geolocation/:id', component: GeolocationDetailComponent },
+    { path: 'geolocation-maynooth', component: GeolocationMaynoothDetailComponent },
     { path: '**', redirectTo: '', pathMatch: 'full'}
   ];
 

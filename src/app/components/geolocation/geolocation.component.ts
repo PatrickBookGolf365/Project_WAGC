@@ -1,8 +1,7 @@
-import { Component, OnInit, Output } from '@angular/core';
-import { CourseDataService } from './services/course-data.service';
-import { IHoles } from './services/holes.model';
-import { HOLES_INFO } from './services/hole';
+import { Component, OnInit } from '@angular/core';
+import { MontgomorieService } from './services/montgomorie.service';
 import { ActivatedRoute } from '@angular/router';
+import { MapService } from './services/map.service';
 
 @Component({
   selector: 'app-geolocation',
@@ -11,16 +10,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class GeolocationComponent implements OnInit {
 
-  bottomSheetRef: any;
-  showFiller = false;
-
-  holes: IHoles[];
-
-  constructor(private _courseDataService: CourseDataService) {}
+  constructor(private _mont: MontgomorieService,
+              private _map: MapService,
+              private _route: ActivatedRoute) {}
 
 
-  ngOnInit() {}
-
-
+  ngOnInit() {
+    this._map.showMap(+this._route.snapshot.params['id']);
+  }
 
 }

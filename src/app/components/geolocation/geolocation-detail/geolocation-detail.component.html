@@ -1,3 +1,29 @@
-<p>
-  geolocation-detail works!
-</p>
+<div id="map"></div>
+
+<div *ngIf="hole$ | async as hole">
+    <div class="contain">
+        <mat-card class="mat-elevation-z10">
+          <div class="flex-item1">
+              <p>Metres: {{metres}}</p>
+
+              <p>Yards: {{yards}}</p>
+
+              <p>Kilometres: {{kilometres}}</p>
+
+              <p>Miles: {{miles}}</p>
+          </div>
+
+          <div class="flex-item2">
+              <p>{{ hole.name }}</p>
+
+              <p>par {{ hole.par }}</p>
+
+              <p>Description {{hole.description}}</p>
+
+              <p> Flyover {{hole.flyover }}</p>
+          </div>
+        </mat-card>
+      </div>
+<div>
+
+<button class="mat-button" mat-button (click)="Back()">Back</button>

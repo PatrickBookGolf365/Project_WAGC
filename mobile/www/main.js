@@ -130,9 +130,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_admin_admin_quote_admin_quote_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/admin/admin-quote/admin-quote.component */ "./src/app/components/admin/admin-quote/admin-quote.component.ts");
 /* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
 /* harmony import */ var _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/geolocation/geolocation.component */ "./src/app/components/geolocation/geolocation.component.ts");
-/* harmony import */ var _components_geolocation_bottom_sheet_bottom_sheet_overview_example_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./components/geolocation/bottom-sheet/bottom-sheet-overview-example.component */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview-example.component.ts");
-/* harmony import */ var _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./pipes/sort/sort.pipe */ "./src/app/pipes/sort/sort.pipe.ts");
-/* harmony import */ var _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/homepage/instagram-feed/instagram-feed.component */ "./src/app/components/homepage/instagram-feed/instagram-feed.component.ts");
+/* harmony import */ var _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pipes/sort/sort.pipe */ "./src/app/pipes/sort/sort.pipe.ts");
+/* harmony import */ var _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/homepage/instagram-feed/instagram-feed.component */ "./src/app/components/homepage/instagram-feed/instagram-feed.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts");
+/* harmony import */ var _components_geolocation_services_map_service__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./components/geolocation/services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
+/* harmony import */ var _components_geolocation_services_haversine_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./components/geolocation/services/haversine.service */ "./src/app/components/geolocation/services/haversine.service.ts");
+/* harmony import */ var _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component */ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.ts");
+/* harmony import */ var _components_geolocation_bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./components/geolocation/bottom-sheet/bottom-sheet-overview.component */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -168,7 +172,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-// import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 
 
 
@@ -179,9 +182,12 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-// import { BottomSheetComponent } from './components/test-comp-2/test-comp-2.component';
-// import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
 
+
+
+
+
+// tslint:disable-next-line:max-line-length
 
 
 var AppModule = /** @class */ (function () {
@@ -190,7 +196,7 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_39__["SortPipe"],
+                _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_38__["SortPipe"],
                 _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
                 _components_navigation_nav_navigation_component__WEBPACK_IMPORTED_MODULE_10__["NavigationComponent"],
                 _components_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_11__["HomepageComponent"],
@@ -217,8 +223,10 @@ var AppModule = /** @class */ (function () {
                 _components_admin_admin_quote_admin_quote_component__WEBPACK_IMPORTED_MODULE_35__["AdminQuoteComponent"],
                 _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_36__["AdminComponent"],
                 _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_37__["GeolocationComponent"],
-                _components_geolocation_bottom_sheet_bottom_sheet_overview_example_component__WEBPACK_IMPORTED_MODULE_38__["BottomSheetOverviewExampleSheetComponent"],
-                _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_40__["InstagramFeedComponent"],
+                _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_39__["InstagramFeedComponent"],
+                _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_40__["GeolocationDetailComponent"],
+                _components_geolocation_bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_44__["BottomSheetOverviewComponent"],
+                _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_43__["GeolocationMaynoothDetailComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -232,7 +240,7 @@ var AppModule = /** @class */ (function () {
                 }),
                 _app_routing__WEBPACK_IMPORTED_MODULE_9__["routing"]
             ],
-            entryComponents: [_components_geolocation_bottom_sheet_bottom_sheet_overview_example_component__WEBPACK_IMPORTED_MODULE_38__["BottomSheetOverviewExampleSheetComponent"]],
+            entryComponents: [_components_geolocation_bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_44__["BottomSheetOverviewComponent"]],
             providers: [
                 _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_22__["WeatherService"],
                 _components_additional_info_news_news_service__WEBPACK_IMPORTED_MODULE_23__["NewsService"],
@@ -241,6 +249,8 @@ var AppModule = /** @class */ (function () {
                 _components_event_event_service__WEBPACK_IMPORTED_MODULE_24__["YelpService"],
                 _components_live_score_live_score_service__WEBPACK_IMPORTED_MODULE_26__["LiveScoreService"],
                 _shared_quote_service__WEBPACK_IMPORTED_MODULE_25__["QuoteService"],
+                _components_geolocation_services_map_service__WEBPACK_IMPORTED_MODULE_41__["MapService"],
+                _components_geolocation_services_haversine_service__WEBPACK_IMPORTED_MODULE_42__["HaversineService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
         })
@@ -277,6 +287,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/admin/admin-create/admin-create.component */ "./src/app/components/admin/admin-create/admin-create.component.ts");
 /* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
 /* harmony import */ var _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/geolocation/geolocation.component */ "./src/app/components/geolocation/geolocation.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component */ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.ts");
 
 
 
@@ -293,8 +305,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
-// import { BottomSheetComponent } from './components/test-comp-2/bottom-sheet/bottom-sheet.component';
+
+// tslint:disable-next-line:max-line-length
+
 var appRoutes = [
     { path: '', component: _components_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_1__["HomepageComponent"] },
     { path: 'live-score', component: _components_live_score_live_score_component__WEBPACK_IMPORTED_MODULE_2__["LiveScoreComponent"] },
@@ -313,7 +326,8 @@ var appRoutes = [
     { path: 'admin', component: _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_13__["AdminComponent"] },
     { path: 'admin-create', component: _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_12__["AdminCreateComponent"] },
     { path: 'geolocation', component: _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_14__["GeolocationComponent"] },
-    { path: 'geolocation/:id', component: _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_14__["GeolocationComponent"] },
+    { path: 'geolocation/:id', component: _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_15__["GeolocationDetailComponent"] },
+    { path: 'geolocation-maynooth', component: _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_16__["GeolocationMaynoothDetailComponent"] },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(appRoutes);
@@ -328,7 +342,7 @@ var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\n\n<mat-card class=\"example-card\">\n    <mat-card-header>\n      <div mat-card-avatar class=\"example-header-image\"></div>\n      <mat-card-title>About </mat-card-title>\n      <mat-card-subtitle>World Amatuer Team Championships</mat-card-subtitle>\n    </mat-card-header>\n    <img class=\"mat-card-image\" src=\"assets/img/cartonHouse2.jpg\" alt=\"Photo of a Shiba Inu\" >\n    <mat-card-content class=\"mat-card-content\">\n      <h3>About WATC 2018 in Ireland</h3>\n      <p>\n          The Golfing Union of Ireland (GUI) and the Irish Ladies Golfing Union (ILGU) will host the 2018 World Amateur Team Championships - with the Epsirito Santo Trophy (women) being competed for from Wednesday 29th August until Saturday 1st September and the Eisenhower Trophy (men) being competed for from Wednesday 5th September until Saturday 8th September. The two events will be staged at Carton House, where players will be tested on the world-famous O’Meara and Montgomerie courses . The Championships together represent an international festival of golf, during which time a Championship Gala Dinner for all participants will be staged at Maynooth University and the Biennial Meeting of the International Golf Federation will be held in Carton House on Monday 3rd September.\n      </p>\n    </mat-card-content>\n    <mat-card-actions>\n      <button mat-button>LIKE</button>\n      <button mat-button>SHARE</button>\n    </mat-card-actions>\n  </mat-card>\n"
+module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\r\n\r\n<mat-card class=\"example-card\">\r\n    <mat-card-header>\r\n      <div mat-card-avatar class=\"example-header-image\"></div>\r\n      <mat-card-title>About </mat-card-title>\r\n      <mat-card-subtitle>World Amatuer Team Championships</mat-card-subtitle>\r\n    </mat-card-header>\r\n    <img class=\"mat-card-image\" src=\"assets/img/cartonHouse2.jpg\" alt=\"Photo of a Shiba Inu\" >\r\n    <mat-card-content class=\"mat-card-content\">\r\n      <h3>About WATC 2018 in Ireland</h3>\r\n      <p>\r\n          The Golfing Union of Ireland (GUI) and the Irish Ladies Golfing Union (ILGU) will host the 2018 World Amateur Team Championships - with the Epsirito Santo Trophy (women) being competed for from Wednesday 29th August until Saturday 1st September and the Eisenhower Trophy (men) being competed for from Wednesday 5th September until Saturday 8th September. The two events will be staged at Carton House, where players will be tested on the world-famous O’Meara and Montgomerie courses . The Championships together represent an international festival of golf, during which time a Championship Gala Dinner for all participants will be staged at Maynooth University and the Biennial Meeting of the International Golf Federation will be held in Carton House on Monday 3rd September.\r\n      </p>\r\n    </mat-card-content>\r\n    <mat-card-actions>\r\n      <button mat-button>LIKE</button>\r\n      <button mat-button>SHARE</button>\r\n    </mat-card-actions>\r\n  </mat-card>\r\n"
 
 /***/ }),
 
@@ -517,7 +531,7 @@ var ContactComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\n\n<mat-card class=\"example-card\">\n    <mat-card-header>\n      <div mat-card-avatar class=\"example-header-image\"></div>\n      <mat-card-title>Eligibility</mat-card-title>\n      <mat-card-subtitle>World Amatuer Team Championships</mat-card-subtitle>\n    </mat-card-header>\n    <img class=\"mat-card-image\" src=\"assets/img/cartonHouse2.jpg\" alt=\"Photo of a Shiba Inu\" >\n    <mat-card-content class=\"mat-card-content\">\n      <h3>Eligibility</h3>\n      <p>\n          IGF National Federation Members may enter one women’s team and one men’s team. Players must be amateur golfers under the Rules of Amateur Status of the R&A and the United States Golf Association and nationals of the countries they represent, as defined in the IGF’s Nationality Policy.\n      </p>\n    </mat-card-content>\n  </mat-card>\n"
+module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\r\n\r\n<mat-card class=\"example-card\">\r\n    <mat-card-header>\r\n      <div mat-card-avatar class=\"example-header-image\"></div>\r\n      <mat-card-title>Eligibility</mat-card-title>\r\n      <mat-card-subtitle>World Amatuer Team Championships</mat-card-subtitle>\r\n    </mat-card-header>\r\n    <img class=\"mat-card-image\" src=\"assets/img/cartonHouse2.jpg\" alt=\"Photo of a Shiba Inu\" >\r\n    <mat-card-content class=\"mat-card-content\">\r\n      <h3>Eligibility</h3>\r\n      <p>\r\n          IGF National Federation Members may enter one women’s team and one men’s team. Players must be amateur golfers under the Rules of Amateur Status of the R&A and the United States Golf Association and nationals of the countries they represent, as defined in the IGF’s Nationality Policy.\r\n      </p>\r\n    </mat-card-content>\r\n  </mat-card>\r\n"
 
 /***/ }),
 
@@ -580,7 +594,7 @@ var EligibilityComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"news-card-severity-{{quote.severity}}\">\n  <mat-list>\n    <mat-list-item>\n  \n    <div class=\"image-card-severity-{{quote.severity}}\">\n      <img src=\"assets/img/{{quote.severity}}.svg\">\n    </div>\n    \n    <div>\n      <p>{{ quote.content }}</p>\n    </div>\n\n\n    </mat-list-item>  \n  </mat-list>\n</div>"
+module.exports = "<div class=\"news-card-severity-{{quote.severity}}\">\r\n  <mat-list>\r\n    <mat-list-item>\r\n  \r\n    <div class=\"image-card-severity-{{quote.severity}}\">\r\n      <img src=\"assets/img/{{quote.severity}}.svg\">\r\n    </div>\r\n    \r\n    <div>\r\n      <p>{{ quote.content }}</p>\r\n    </div>\r\n\r\n\r\n    </mat-list-item>  \r\n  </mat-list>\r\n</div>"
 
 /***/ }),
 
@@ -783,7 +797,7 @@ var NewsService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\n\n<mat-accordion class=\"mat-accordion\">\n    <mat-expansion-panel (opened)=\"panelOpenState = true\"\n                        (closed)=\"panelOpenState = false\"\n                        class=\"mat-expansion-panel\">\n    <mat-expansion-panel-header>\n\n    <mat-panel-title>\n        Friday 24th August\n    </mat-panel-title>\n\n    </mat-expansion-panel-header>\n      <mat-list role=\"list\">\n          <mat-list-item role=\"listitem\"><p>Women's Team Arrivals</p></mat-list-item>\n          <mat-list-item role=\"listitem\"><p>Courses are Closed.</p> </mat-list-item>\n\n      </mat-list>\n    </mat-expansion-panel>\n</mat-accordion>\n\n<mat-accordion class=\"mat-accordion\">\n    <mat-expansion-panel (opened)=\"panelOpenState = true\"\n                        (closed)=\"panelOpenState = false\"\n                        class=\"mat-expansion-panel\">\n    <mat-expansion-panel-header>\n\n    <mat-panel-title>\n        Saturday 25th August\n    </mat-panel-title>\n\n    </mat-expansion-panel-header>\n      <mat-list role=\"list\">\n          <mat-list-item role=\"listitem\"><p>Women's Team Arrivals</p></mat-list-item>\n          <mat-list-item role=\"listitem\"><p>Courses are Closed; Practice Facilities will be Open.</p></mat-list-item>\n          <mat-list-item role=\"listitem\"><p>Women's Registration  (1000hrs-1800hrs)</p></mat-list-item>\n      </mat-list>\n    </mat-expansion-panel>\n</mat-accordion>\n\n<mat-accordion class=\"mat-accordion\">\n    <mat-expansion-panel (opened)=\"panelOpenState = true\"\n                        (closed)=\"panelOpenState = false\"\n                        class=\"mat-expansion-panel\">\n    <mat-expansion-panel-header>\n\n    <mat-panel-title>\n        Sunday 26th August \n    </mat-panel-title>\n\n    </mat-expansion-panel-header>\n      <mat-list role=\"list\">\n          <mat-list-item role=\"listitem\"><p>Courses are Closed; Teams can walk courses and Practice Facilities will be Open. </p></mat-list-item>\n          <mat-list-item role=\"listitem\"><p>Women's Registration (0800hrs-1800hrs)</p></mat-list-item>\n      </mat-list>\n    </mat-expansion-panel>\n</mat-accordion>\n\n<mat-accordion class=\"mat-accordion\">\n    <mat-expansion-panel (opened)=\"panelOpenState = true\"\n                        (closed)=\"panelOpenState = false\"\n                        class=\"mat-expansion-panel\">\n    <mat-expansion-panel-header>\n\n    <mat-panel-title>\n        Monday 27th August \n    </mat-panel-title>\n\n    </mat-expansion-panel-header>\n      <mat-list role=\"list\">\n          <mat-list-item role=\"listitem\"><p>Women's Practice Round</p></mat-list-item>\n          <mat-list-item role=\"listitem\"><p>Team Captains' Meeting (1600hrs, Carton House Kildare Suites on first floor)</p></mat-list-item>\n      </mat-list>\n    </mat-expansion-panel>\n</mat-accordion>\n\n<mat-accordion class=\"mat-accordion\">\n    <mat-expansion-panel (opened)=\"panelOpenState = true\"\n                        (closed)=\"panelOpenState = false\"\n                        class=\"mat-expansion-panel\">\n    <mat-expansion-panel-header>\n\n    <mat-panel-title>\n        Tuesday 28th August\n    </mat-panel-title>\n\n    </mat-expansion-panel-header>\n      <mat-list role=\"list\">\n          <mat-list-item role=\"listitem\"><p>Women's Practice Round</p></mat-list-item>\n          <mat-list-item role=\"listitem\"><p>Referee's Meeting (1100hrs, Carton House Kildare Suites on first floor)</p></mat-list-item>\n          <mat-list-item role=\"listitem\"><p>Women's Team Photographs (Tyrconnell Room near Carton House courtyard, timetable TBC)</p></mat-list-item>\n          <mat-list-item role=\"listitem\"><p>Women's Opening Ceremony, followed by reception (Carton House)</p></mat-list-item>\n      </mat-list>\n    </mat-expansion-panel>\n</mat-accordion>\n"
+module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\r\n\r\n<mat-accordion class=\"mat-accordion\">\r\n    <mat-expansion-panel (opened)=\"panelOpenState = true\"\r\n                        (closed)=\"panelOpenState = false\"\r\n                        class=\"mat-expansion-panel\">\r\n    <mat-expansion-panel-header>\r\n\r\n    <mat-panel-title>\r\n        Friday 24th August\r\n    </mat-panel-title>\r\n\r\n    </mat-expansion-panel-header>\r\n      <mat-list role=\"list\">\r\n          <mat-list-item role=\"listitem\"><p>Women's Team Arrivals</p></mat-list-item>\r\n          <mat-list-item role=\"listitem\"><p>Courses are Closed.</p> </mat-list-item>\r\n\r\n      </mat-list>\r\n    </mat-expansion-panel>\r\n</mat-accordion>\r\n\r\n<mat-accordion class=\"mat-accordion\">\r\n    <mat-expansion-panel (opened)=\"panelOpenState = true\"\r\n                        (closed)=\"panelOpenState = false\"\r\n                        class=\"mat-expansion-panel\">\r\n    <mat-expansion-panel-header>\r\n\r\n    <mat-panel-title>\r\n        Saturday 25th August\r\n    </mat-panel-title>\r\n\r\n    </mat-expansion-panel-header>\r\n      <mat-list role=\"list\">\r\n          <mat-list-item role=\"listitem\"><p>Women's Team Arrivals</p></mat-list-item>\r\n          <mat-list-item role=\"listitem\"><p>Courses are Closed; Practice Facilities will be Open.</p></mat-list-item>\r\n          <mat-list-item role=\"listitem\"><p>Women's Registration  (1000hrs-1800hrs)</p></mat-list-item>\r\n      </mat-list>\r\n    </mat-expansion-panel>\r\n</mat-accordion>\r\n\r\n<mat-accordion class=\"mat-accordion\">\r\n    <mat-expansion-panel (opened)=\"panelOpenState = true\"\r\n                        (closed)=\"panelOpenState = false\"\r\n                        class=\"mat-expansion-panel\">\r\n    <mat-expansion-panel-header>\r\n\r\n    <mat-panel-title>\r\n        Sunday 26th August \r\n    </mat-panel-title>\r\n\r\n    </mat-expansion-panel-header>\r\n      <mat-list role=\"list\">\r\n          <mat-list-item role=\"listitem\"><p>Courses are Closed; Teams can walk courses and Practice Facilities will be Open. </p></mat-list-item>\r\n          <mat-list-item role=\"listitem\"><p>Women's Registration (0800hrs-1800hrs)</p></mat-list-item>\r\n      </mat-list>\r\n    </mat-expansion-panel>\r\n</mat-accordion>\r\n\r\n<mat-accordion class=\"mat-accordion\">\r\n    <mat-expansion-panel (opened)=\"panelOpenState = true\"\r\n                        (closed)=\"panelOpenState = false\"\r\n                        class=\"mat-expansion-panel\">\r\n    <mat-expansion-panel-header>\r\n\r\n    <mat-panel-title>\r\n        Monday 27th August \r\n    </mat-panel-title>\r\n\r\n    </mat-expansion-panel-header>\r\n      <mat-list role=\"list\">\r\n          <mat-list-item role=\"listitem\"><p>Women's Practice Round</p></mat-list-item>\r\n          <mat-list-item role=\"listitem\"><p>Team Captains' Meeting (1600hrs, Carton House Kildare Suites on first floor)</p></mat-list-item>\r\n      </mat-list>\r\n    </mat-expansion-panel>\r\n</mat-accordion>\r\n\r\n<mat-accordion class=\"mat-accordion\">\r\n    <mat-expansion-panel (opened)=\"panelOpenState = true\"\r\n                        (closed)=\"panelOpenState = false\"\r\n                        class=\"mat-expansion-panel\">\r\n    <mat-expansion-panel-header>\r\n\r\n    <mat-panel-title>\r\n        Tuesday 28th August\r\n    </mat-panel-title>\r\n\r\n    </mat-expansion-panel-header>\r\n      <mat-list role=\"list\">\r\n          <mat-list-item role=\"listitem\"><p>Women's Practice Round</p></mat-list-item>\r\n          <mat-list-item role=\"listitem\"><p>Referee's Meeting (1100hrs, Carton House Kildare Suites on first floor)</p></mat-list-item>\r\n          <mat-list-item role=\"listitem\"><p>Women's Team Photographs (Tyrconnell Room near Carton House courtyard, timetable TBC)</p></mat-list-item>\r\n          <mat-list-item role=\"listitem\"><p>Women's Opening Ceremony, followed by reception (Carton House)</p></mat-list-item>\r\n      </mat-list>\r\n    </mat-expansion-panel>\r\n</mat-accordion>\r\n"
 
 /***/ }),
 
@@ -846,7 +860,7 @@ var ScheduleComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-container\">\n  <form #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\n    <mat-form-field>\n      <input matInput id=\"title\" name=\"title\" ngModel placeholder=\"Title\">\n    </mat-form-field>\n  \n    <mat-form-field>\n      <textarea matInput id=\"content\" name=\"content\" ngModel placeholder=\"Content\"></textarea>\n    </mat-form-field>\n  \n    <mat-form-field>\n        <input matInput id=\"severity\" name=\"severity\" ngModel placeholder=\"Severity\">\n    </mat-form-field>\n    <button mat-button type=\"submit\" class=\"button\">Submit</button>\n</form> \n</div>"
+module.exports = "<div class=\"example-container\">\r\n  <form #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\r\n    <mat-form-field>\r\n      <input matInput id=\"title\" name=\"title\" ngModel placeholder=\"Title\">\r\n    </mat-form-field>\r\n  \r\n    <mat-form-field>\r\n      <textarea matInput id=\"content\" name=\"content\" ngModel placeholder=\"Content\"></textarea>\r\n    </mat-form-field>\r\n  \r\n    <mat-form-field>\r\n        <input matInput id=\"severity\" name=\"severity\" ngModel placeholder=\"Severity\">\r\n    </mat-form-field>\r\n    <button mat-button type=\"submit\" class=\"button\">Submit</button>\r\n</form> \r\n</div>"
 
 /***/ }),
 
@@ -917,7 +931,7 @@ var AdminCreateComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"news-card-severity-{{quote.severity}}\">\n  <mat-list>\n    <mat-list-item>\n      \n      <div class=\"image-card-severity-{{quote.severity}}\">\n        <img src=\"assets/img/{{quote.severity}}.svg\">\n      </div>\n        \n      <div>\n        <p>{{ quote.content }}</p>\n      </div>\n\n  </mat-list-item> \n</mat-list>\n<div *ngIf=\"editing\">\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueTitle\">\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueContent\">\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueSeverity\">\n    <button mat-button (click)=\"onUpdate()\">Update</button>\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\n  </div>\n  <div *ngIf=\"!editing\">\n    <button mat-button (click)=\"onEdit()\">Edit</button>\n    <button mat-button (click)=\"onDelete()\">Delete</button>\n</div>\n</div>\n"
+module.exports = "<div class=\"news-card-severity-{{quote.severity}}\">\r\n  <mat-list>\r\n    <mat-list-item>\r\n      \r\n      <div class=\"image-card-severity-{{quote.severity}}\">\r\n        <img src=\"assets/img/{{quote.severity}}.svg\">\r\n      </div>\r\n        \r\n      <div>\r\n        <p>{{ quote.content }}</p>\r\n      </div>\r\n\r\n  </mat-list-item> \r\n</mat-list>\r\n<div *ngIf=\"editing\">\r\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueTitle\">\r\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueContent\">\r\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueSeverity\">\r\n    <button mat-button (click)=\"onUpdate()\">Update</button>\r\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\r\n  </div>\r\n  <div *ngIf=\"!editing\">\r\n    <button mat-button (click)=\"onEdit()\">Edit</button>\r\n    <button mat-button (click)=\"onDelete()\">Delete</button>\r\n</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1029,7 +1043,7 @@ var AdminQuoteComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button mat-button class=\"button\"  [routerLink]=\"['/admin-create']\" >Create</button>\n\n<app-admin-quote *ngFor=\"let quote of quotes\" [quote]=\"quote\" (quoteDeleted)=\"onDeleted($event)\"></app-admin-quote>\n"
+module.exports = "<button mat-button class=\"button\"  [routerLink]=\"['/admin-create']\" >Create</button>\r\n\r\n<app-admin-quote *ngFor=\"let quote of quotes\" [quote]=\"quote\" (quoteDeleted)=\"onDeleted($event)\"></app-admin-quote>\r\n"
 
 /***/ }),
 
@@ -1147,7 +1161,9 @@ var EventComponent = /** @class */ (function () {
     EventComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._newsService.getYelp()
-            .subscribe(function (yelp) { _this.yelp = yelp; }, function (error) { return _this.errorMessage = error; });
+            .subscribe(function (yelp) {
+            _this.yelp = yelp;
+        }, function (error) { return _this.errorMessage = error; });
     };
     EventComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1198,18 +1214,19 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var YelpService = /** @class */ (function () {
     function YelpService(_http) {
         this._http = _http;
-        this._yelpUrl = "https://api.yelp.com/v3/businesses/search?location=Dublin,Ireland";
-        this._yelpBUrl = "https://api.yelp.com/v3/businesses?locale=en_IE";
-        this._LiveBus = "";
+        this._yelpUrl = 'https://api.yelp.com/v3/businesses/search?location=Dublin,Ireland';
+        this._yelpBUrl = 'https://api.yelp.com/v3/businesses?locale=en_IE';
+        this._LiveBus = '';
     }
     YelpService.prototype.getYelp = function () {
         return this._http.get(this._yelpUrl, {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                // tslint:disable-next-line:max-line-length
                 'Authorization': 'Bearer ga7R1k7BOp852yKSjuawnxv3kFAf2F9Tj7HYgUaJbIskAGUaNaYKIo1LHmnjSQWtCFgLeaPS_RX-vWmvgeLjH1xDrVBTUV97dslQlOrigInePWb8ukT3_5KgJR_OWnYx',
                 'Access-Control-Allow-Origin': '*'
             })
         })
-            .do(function (data) { return console.log("All: " + JSON.stringify(data)); })
+            .do(function (data) { return console.log('All: ' + JSON.stringify(data)); })
             .catch(this.handleError);
     };
     YelpService.prototype.handleError = function (err) {
@@ -1227,31 +1244,114 @@ var YelpService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview-example-sheet.html":
-/*!**********************************************************************************************!*\
-  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview-example-sheet.html ***!
-  \**********************************************************************************************/
+/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.html":
+/*!******************************************************************************************!*\
+  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.html ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"contain\">\r\n    <mat-grid-list cols=\"2\" rowHeight=\"1:1\">\r\n        <mat-grid-tile>\r\n            <mat-nav-list>\r\n                <button mat-button>Toggle location</button>\r\n                <p>Metres: {{metres}}</p>\r\n                <p>Yards: {{yards}}</p>\r\n                <p>Kilometres: {{kilometres}}</p>\r\n                <p>Miles: {{miles}}</p>\r\n            </mat-nav-list>\r\n        </mat-grid-tile>\r\n\r\n    <mat-grid-tile>\r\n            <mat-nav-list>\r\n                <!-- <p>hole {{hole.hole}}</p> -->\r\n                <p>{{ holePar }}</p>\r\n                <p>{{ holeDescription }}</p>\r\n                <p>{{ holeFlyover }}</p>\r\n            </mat-nav-list>\r\n        </mat-grid-tile>\r\n    </mat-grid-list>\r\n</div>\r\n"
+module.exports = "<mat-nav-list >\n  <p>sadasdada</p>\n\n  <p>sadasdada</p>\n\n  <p>sadasdada</p>\n\n  <p>sadasdada</p>\n</mat-nav-list>\n"
 
 /***/ }),
 
-/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview-example.component.ts":
-/*!************************************************************************************************!*\
-  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview-example.component.ts ***!
-  \************************************************************************************************/
-/*! exports provided: BottomSheetOverviewExampleSheetComponent */
+/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.scss":
+/*!******************************************************************************************!*\
+  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.scss ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts":
+/*!****************************************************************************************!*\
+  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts ***!
+  \****************************************************************************************/
+/*! exports provided: BottomSheetOverviewComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BottomSheetOverviewExampleSheetComponent", function() { return BottomSheetOverviewExampleSheetComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BottomSheetOverviewComponent", function() { return BottomSheetOverviewComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _services_course_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/course-data.service */ "./src/app/components/geolocation/services/course-data.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var BottomSheetOverviewComponent = /** @class */ (function () {
+    function BottomSheetOverviewComponent(bottomSheetRef) {
+        this.bottomSheetRef = bottomSheetRef;
+    }
+    BottomSheetOverviewComponent.prototype.ngOnInit = function () {
+    };
+    BottomSheetOverviewComponent.prototype.openLink = function (event) {
+        this.bottomSheetRef.dismiss();
+        event.preventDefault();
+    };
+    BottomSheetOverviewComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-bottom-sheet-overview',
+            template: __webpack_require__(/*! ./bottom-sheet-overview.component.html */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.html"),
+            styles: [__webpack_require__(/*! ./bottom-sheet-overview.component.scss */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"]])
+    ], BottomSheetOverviewComponent);
+    return BottomSheetOverviewComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"map\"></div>\r\n\r\n<div *ngIf=\"hole$ | async as hole\">\r\n    <div class=\"contain\">\r\n        <mat-card class=\"mat-elevation-z10\">\r\n          <div class=\"flex-item1\">\r\n              <p>Metres: {{metres}}</p>\r\n\r\n              <p>Yards: {{yards}}</p>\r\n\r\n              <p>Kilometres: {{kilometres}}</p>\r\n\r\n              <p>Miles: {{miles}}</p>\r\n          </div>\r\n\r\n          <div class=\"flex-item2\">\r\n              <p>{{ hole.name }}</p>\r\n\r\n              <p>par {{ hole.par }}</p>\r\n\r\n              <p>Description {{hole.description}}</p>\r\n\r\n              <p> Flyover {{hole.flyover }}</p>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n<div>\r\n\r\n<button class=\"mat-button\" mat-button (click)=\"Back()\">Back</button>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 50%;\n  width: 100%;\n  z-index: -1; }\n\n.mat-button {\n  position: absolute;\n  bottom: 10%;\n  right: 5px;\n  margin: 3%;\n  background-color: #D8D8D8; }\n\n.contain {\n  position: fixed;\n  top: 50%;\n  width: 100%;\n  display: flex;\n  flex-direction: column; }\n\n.flex-item1 {\n  justify-content: space-between;\n  text-align: center;\n  width: 50%;\n  float: left; }\n\n.flex-item2 {\n  margin-left: 50%;\n  justify-content: space-between;\n  text-align: center; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts ***!
+  \*******************************************************************************************/
+/*! exports provided: GeolocationDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeolocationDetailComponent", function() { return GeolocationDetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_montgomorie_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/montgomorie.service */ "./src/app/components/geolocation/services/montgomorie.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
+/* harmony import */ var _services_haversine_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/haversine.service */ "./src/app/components/geolocation/services/haversine.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1265,46 +1365,160 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-var BottomSheetOverviewExampleSheetComponent = /** @class */ (function () {
-    function BottomSheetOverviewExampleSheetComponent(bottomSheetRef, _courseDataService, _route) {
-        this.bottomSheetRef = bottomSheetRef;
-        this._courseDataService = _courseDataService;
+
+
+var GeolocationDetailComponent = /** @class */ (function () {
+    function GeolocationDetailComponent(_mont, _route, _haversine, router, _map) {
+        this._mont = _mont;
         this._route = _route;
+        this._haversine = _haversine;
+        this.router = router;
+        this._map = _map;
     }
-    BottomSheetOverviewExampleSheetComponent.prototype.openLink = function (event) {
-        this.bottomSheetRef.dismiss();
-        event.preventDefault();
+    GeolocationDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])(function (params) {
+            return _this._mont.getHole(params.get('id'));
+        }));
+        this._route.paramMap.
+            subscribe(function (params) {
+            return _this._mont.showMap(+params.get('id'));
+        });
+        this.Haversine();
     };
-    BottomSheetOverviewExampleSheetComponent.prototype.ngOnInit = function () {
-        //  this.Haversine();
-        console.log(this.hole);
-        console.log(this._courseDataService.getHoles());
+    GeolocationDetailComponent.prototype.Back = function () {
+        this.router.navigate(['../geolocation']);
     };
-    BottomSheetOverviewExampleSheetComponent = __decorate([
+    GeolocationDetailComponent.prototype.Haversine = function () {
+        var _this = this;
+        var id = +this._route.snapshot.paramMap.get('id');
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (x) {
+                _this.myLat = x.coords.latitude;
+                _this.myLng = x.coords.longitude;
+                _this._mont.getHoleLat(id).subscribe(function (hole) { return _this.courseLat = hole; });
+                _this._mont.getHoleLng(id).subscribe(function (hole) { return _this.courseLng = hole; });
+                console.log("longitude: " + _this.courseLat + " | latitude: " + _this.courseLng);
+                console.log("longitude: " + _this.myLat + " | latitude: " + _this.myLng);
+                var myCoords = {
+                    latitude: _this.myLat,
+                    longitude: _this.myLng
+                };
+                var courseCoords = {
+                    latitude: _this.courseLat,
+                    longitude: _this.courseLng
+                };
+                _this.metres = _this._haversine.getDistanceInMeters(myCoords, courseCoords);
+                _this.yards = _this._haversine.getDistanceInYards(myCoords, courseCoords);
+                _this.kilometres = _this._haversine.getDistanceInKilometers(myCoords, courseCoords);
+                _this.miles = _this._haversine.getDistanceInMiles(myCoords, courseCoords);
+                _this.metres = _this.metres.toFixed(2);
+                _this.yards = _this.yards.toFixed(2);
+                _this.kilometres = _this.kilometres.toFixed(2);
+                _this.miles = _this.miles.toFixed(2);
+            });
+        }
+    };
+    GeolocationDetailComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-bottom-sheet-overview-example',
-            template: __webpack_require__(/*! ./bottom-sheet-overview-example-sheet.html */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview-example-sheet.html"),
-            styles: [__webpack_require__(/*! ./bottom-sheet.component.scss */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet.component.scss")]
+            selector: 'app-geolocation-detail',
+            template: __webpack_require__(/*! ./geolocation-detail.component.html */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html"),
+            styles: [__webpack_require__(/*! ./geolocation-detail.component.scss */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss")]
         }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"],
-            _services_course_data_service__WEBPACK_IMPORTED_MODULE_2__["CourseDataService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
-    ], BottomSheetOverviewExampleSheetComponent);
-    return BottomSheetOverviewExampleSheetComponent;
+        __metadata("design:paramtypes", [_services_montgomorie_service__WEBPACK_IMPORTED_MODULE_1__["MontgomorieService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            _services_haversine_service__WEBPACK_IMPORTED_MODULE_5__["HaversineService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            _services_map_service__WEBPACK_IMPORTED_MODULE_4__["MapService"]])
+    ], GeolocationDetailComponent);
+    return GeolocationDetailComponent;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet.component.scss":
-/*!*********************************************************************************!*\
-  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet.component.scss ***!
-  \*********************************************************************************/
+/***/ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.html":
+/*!***************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.html ***!
+  \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "<app-sidenav></app-sidenav>\n\n    <p>\n      <button mat-icon-button [matMenuTriggerFor]=\"menu\" class=\"mat-ham-button\">\n          <i class=\"material-icons\">bookmarks</i>\n      </button>\n    </p>\n\n    <mat-menu #menu=\"matMenu\">\n        <button mat-menu-item (click)=\"openBottomSheet()\">Dublin Bus Stops</button>\n        <button mat-menu-item>Carton House Info</button>\n    </mat-menu>\n\n<div id=\"map\"></div>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.scss":
+/*!***************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.scss ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 90%;\n  width: 100%;\n  z-index: -1; }\n\n.mat-ham-button {\n  background-color: white;\n  position: fixed;\n  right: 12px;\n  top: 12%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.ts":
+/*!*************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.ts ***!
+  \*************************************************************************************************************/
+/*! exports provided: GeolocationMaynoothDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeolocationMaynoothDetailComponent", function() { return GeolocationMaynoothDetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_maynooth_map_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/maynooth-map.service */ "./src/app/components/geolocation/services/maynooth-map.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../bottom-sheet/bottom-sheet-overview.component */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var GeolocationMaynoothDetailComponent = /** @class */ (function () {
+    function GeolocationMaynoothDetailComponent(_route, _maynooth, bottomSheet) {
+        this._route = _route;
+        this._maynooth = _maynooth;
+        this.bottomSheet = bottomSheet;
+    }
+    GeolocationMaynoothDetailComponent.prototype.openBottomSheet = function () {
+        this.bottomSheet.open(_bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_4__["BottomSheetOverviewComponent"]);
+    };
+    GeolocationMaynoothDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this._route.paramMap.
+            subscribe(function (params) {
+            return _this._maynooth.showMap(+params.get('id'));
+        });
+    };
+    GeolocationMaynoothDetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-geolocation-maynooth-detail',
+            template: __webpack_require__(/*! ./geolocation-maynooth-detail.component.html */ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.html"),
+            styles: [__webpack_require__(/*! ./geolocation-maynooth-detail.component.scss */ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"],
+            _services_maynooth_map_service__WEBPACK_IMPORTED_MODULE_2__["MaynoothMapService"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatBottomSheet"]])
+    ], GeolocationMaynoothDetailComponent);
+    return GeolocationMaynoothDetailComponent;
+}());
+
+
 
 /***/ }),
 
@@ -1315,7 +1529,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-sidenav></app-sidenav>\r\n\r\n<!-- <mat-spinner></mat-spinner> -->\r\n"
+module.exports = "<app-sidenav></app-sidenav>\r\n\r\n<div id=\"map\"></div>\r\n"
 
 /***/ }),
 
@@ -1326,7 +1540,7 @@ module.exports = "<app-sidenav></app-sidenav>\r\n\r\n<!-- <mat-spinner></mat-spi
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#map {\n  position: relative;\n  top: 41px;\n  height: 60%;\n  width: 100%; }\n"
+module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 90%;\n  width: 100%;\n  z-index: -1; }\n"
 
 /***/ }),
 
@@ -1341,7 +1555,9 @@ module.exports = "#map {\n  position: relative;\n  top: 41px;\n  height: 60%;\n 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeolocationComponent", function() { return GeolocationComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_course_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./services/course-data.service */ "./src/app/components/geolocation/services/course-data.service.ts");
+/* harmony import */ var _services_montgomorie_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./services/montgomorie.service */ "./src/app/components/geolocation/services/montgomorie.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1353,19 +1569,26 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
+
 var GeolocationComponent = /** @class */ (function () {
-    function GeolocationComponent(_courseDataService) {
-        this._courseDataService = _courseDataService;
-        this.showFiller = false;
+    function GeolocationComponent(_mont, _map, _route) {
+        this._mont = _mont;
+        this._map = _map;
+        this._route = _route;
     }
-    GeolocationComponent.prototype.ngOnInit = function () { };
+    GeolocationComponent.prototype.ngOnInit = function () {
+        this._map.showMap(+this._route.snapshot.params['id']);
+    };
     GeolocationComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-geolocation',
             template: __webpack_require__(/*! ./geolocation.component.html */ "./src/app/components/geolocation/geolocation.component.html"),
             styles: [__webpack_require__(/*! ./geolocation.component.scss */ "./src/app/components/geolocation/geolocation.component.scss")],
         }),
-        __metadata("design:paramtypes", [_services_course_data_service__WEBPACK_IMPORTED_MODULE_1__["CourseDataService"]])
+        __metadata("design:paramtypes", [_services_montgomorie_service__WEBPACK_IMPORTED_MODULE_1__["MontgomorieService"],
+            _services_map_service__WEBPACK_IMPORTED_MODULE_3__["MapService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
     ], GeolocationComponent);
     return GeolocationComponent;
 }());
@@ -1374,20 +1597,97 @@ var GeolocationComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/geolocation/services/course-data.service.ts":
-/*!************************************************************************!*\
-  !*** ./src/app/components/geolocation/services/course-data.service.ts ***!
-  \************************************************************************/
-/*! exports provided: CourseDataService */
+/***/ "./src/app/components/geolocation/services/haversine.service.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/components/geolocation/services/haversine.service.ts ***!
+  \**********************************************************************/
+/*! exports provided: HaversineService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseDataService", function() { return CourseDataService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HaversineService", function() { return HaversineService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _hole__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hole */ "./src/app/components/geolocation/services/hole.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HaversineService = /** @class */ (function () {
+    function HaversineService() {
+        this._earthRadiusInMeters = 6378137;
+        this._earthRadiusInYards = 6975174.98;
+        this._earthRadiusInKilometers = 6371;
+        this._earthRadiusInMiles = 3960;
+    }
+    HaversineService.prototype._toRadians = function (value) {
+        return value * Math.PI / 180;
+    };
+    HaversineService.prototype._getDistance = function (coord1, coord2) {
+        var φ1 = this._toRadians(coord1.latitude);
+        var φ2 = this._toRadians(coord2.latitude);
+        var Δφ = this._toRadians(coord2.latitude - coord1.latitude);
+        var Δλ = this._toRadians(coord2.longitude - coord1.longitude);
+        // a = sin²(Δφ / 2) + cos φ1 ⋅ cos φ2 ⋅ sin²(Δλ / 2)
+        var a = Math.pow(Math.sin(Δφ / 2), 2) +
+            Math.cos(φ1) *
+                Math.cos(φ2) *
+                Math.pow(Math.sin(Δλ / 2), 2);
+        // c = 2 ⋅ atan2(√a, √(1−a))
+        return 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    };
+    HaversineService.prototype.getDistanceInMeters = function (coord1, coord2) {
+        var c = this._getDistance(coord1, coord2);
+        // d = R ⋅ c
+        return this._earthRadiusInMeters * c;
+    };
+    HaversineService.prototype.getDistanceInYards = function (coord1, coord2) {
+        var c = this._getDistance(coord1, coord2);
+        // d = R ⋅ c
+        return this._earthRadiusInYards * c;
+    };
+    HaversineService.prototype.getDistanceInKilometers = function (coord1, coord2) {
+        var c = this._getDistance(coord1, coord2);
+        // d = R ⋅ c
+        return this._earthRadiusInKilometers * c;
+    };
+    HaversineService.prototype.getDistanceInMiles = function (coord1, coord2) {
+        var c = this._getDistance(coord1, coord2);
+        // d = R ⋅ c
+        return this._earthRadiusInMiles * c;
+    };
+    HaversineService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [])
+    ], HaversineService);
+    return HaversineService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/services/map.service.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/components/geolocation/services/map.service.ts ***!
+  \****************************************************************/
+/*! exports provided: Hole, MapService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Hole", function() { return Hole; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapService", function() { return MapService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1400,15 +1700,152 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-
-var CourseDataService = /** @class */ (function () {
-    function CourseDataService(_http) {
-        this._http = _http;
-        // tslint:disable-next-line:max-line-length
-        this._montURL = 'https://gist.githubusercontent.com/Cavinnnn/f8a22ecb12fe1be811194131393895eb/raw/ebdfebf1ee157875eeeb4c2340465edaf6b3e5eb/Montgomerie';
-        this._montgomerieHoleLocations = '';
+var Hole = /** @class */ (function () {
+    function Hole(id, lat, lng) {
+        this.id = id;
+        this.lat = lat;
+        this.lng = lng;
     }
-    CourseDataService.prototype.showMap = function (id) {
+    return Hole;
+}());
+
+var HOLES = [
+    new Hole(1, 53.387792, -6.569634),
+    new Hole(2, 53.386737, -6.574668),
+    new Hole(3, 53.387792, -6.569634),
+    new Hole(4, 53.387792, -6.569634),
+    new Hole(5, 53.387792, -6.569634),
+    new Hole(6, 53.387792, -6.569634),
+    new Hole(7, 53.387792, -6.569634),
+    new Hole(8, 53.387792, -6.569634),
+    new Hole(9, 53.387792, -6.569634),
+    new Hole(10, 53.387792, -6.569634),
+    new Hole(11, 53.387792, -6.569634),
+    new Hole(12, 53.387792, -6.569634),
+    new Hole(13, 53.387792, -6.569634),
+    new Hole(14, 53.387792, -6.569634),
+    new Hole(15, 53.387792, -6.569634),
+    new Hole(16, 53.387792, -6.569634),
+    new Hole(17, 53.387792, -6.569634),
+    new Hole(18, 53.387792, -6.569634),
+];
+var MapService = /** @class */ (function () {
+    function MapService() {
+    }
+    MapService.prototype.showMap = function (id) {
+        // tslint:disable-next-line:no-shadowed-variable
+        var map;
+        map = L.map('map').setView([53.384973, -6.555245], 14.6);
+        // tslint:disable-next-line:max-line-length
+        L.tileLayer('https://api.mapbox.com/styles/v1/cavinn/cjgqloyl000082roe1rz35om8/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
+            attribution: '',
+            maxZoom: 18,
+        }).addTo(map);
+    };
+    MapService.prototype.getHoles = function () { return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(HOLES); };
+    MapService.prototype.getHole = function (id) {
+        return this.getHoles().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === +id; }); }));
+    };
+    MapService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [])
+    ], MapService);
+    return MapService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/services/maynooth-map.service.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/geolocation/services/maynooth-map.service.ts ***!
+  \*************************************************************************/
+/*! exports provided: MaynoothMapService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaynoothMapService", function() { return MaynoothMapService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MaynoothMapService = /** @class */ (function () {
+    function MaynoothMapService() {
+    }
+    MaynoothMapService.prototype.showMap = function (id) {
+        // tslint:disable-next-line:no-shadowed-variable
+        var map;
+        // ../assets/img/map.svg
+        var myIcon = L.divIcon('my-div-icon');
+        map = L.map('map').setView([53.381635, -6.590960], 14.6);
+        // tslint:disable-next-line:max-line-length
+        L.tileLayer('https://api.mapbox.com/styles/v1/cavinn/cjjjwiuit35ru2smgwllle9um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
+            attribution: '',
+            maxZoom: 18,
+        }).addTo(map);
+        L.marker([53.381635, -6.590960], myIcon).addTo(map);
+    };
+    MaynoothMapService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [])
+    ], MaynoothMapService);
+    return MaynoothMapService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/services/montgomorie.service.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/components/geolocation/services/montgomorie.service.ts ***!
+  \************************************************************************/
+/*! exports provided: MontgomorieService, Hole */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MontgomorieService", function() { return MontgomorieService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Hole", function() { return Hole; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var MontgomorieService = /** @class */ (function () {
+    function MontgomorieService() {
+    }
+    MontgomorieService.prototype.getHoles = function () { return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(HOLES); };
+    MontgomorieService.prototype.getHole = function (id) {
+        return this.getHoles().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === +id; }); }));
+    };
+    MontgomorieService.prototype.getHoleLat = function (id) {
+        return this.getHoles().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === +id; }).lat; }));
+    };
+    MontgomorieService.prototype.getHoleLng = function (id) {
+        return this.getHoles().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === +id; }).lng; }));
+    };
+    MontgomorieService.prototype.showMap = function (id) {
         // tslint:disable-next-line:no-shadowed-variable
         var map;
         var coordsLng;
@@ -1419,205 +1856,49 @@ var CourseDataService = /** @class */ (function () {
             attribution: '',
             maxZoom: 18,
         }).addTo(map);
-        coordsLng = _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; }).lng;
-        coordsLat = _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; }).lat;
+        coordsLng = HOLES.find(function (hole) { return hole.id === id; }).lng;
+        coordsLat = HOLES.find(function (hole) { return hole.id === id; }).lat;
         map.fitBounds([
             [coordsLat, coordsLng]
         ]);
     };
-    CourseDataService.prototype.getSideNavHoles = function () {
-        return _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"];
-    };
-    CourseDataService.prototype.getCoordsLat = function (id) {
-        var coordsLat;
-        coordsLat = _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; }).lat;
-    };
-    CourseDataService.prototype.getCoordsLng = function (id) {
-        var coordsLng;
-        coordsLng = _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; }).lng;
-    };
-    CourseDataService.prototype.getHoles = function () {
-        return this._http.get(this._montURL)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function (data) { return console.log('All ' + JSON.stringify(data)); }));
-    };
-    CourseDataService.prototype.getHoleById = function (id) {
-        return this.getHoles()
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === id; }); }));
-        //  ,
-        //        switchMap(() => interval(500)));
-    };
-    CourseDataService.prototype.getHoleBy = function (id) {
-        return _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; });
-    };
-    CourseDataService = __decorate([
+    MontgomorieService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
-        }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
-    ], CourseDataService);
-    return CourseDataService;
+        })
+    ], MontgomorieService);
+    return MontgomorieService;
 }());
 
-
-
-/***/ }),
-
-/***/ "./src/app/components/geolocation/services/hole.ts":
-/*!*********************************************************!*\
-  !*** ./src/app/components/geolocation/services/hole.ts ***!
-  \*********************************************************/
-/*! exports provided: HOLES_INFO */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HOLES_INFO", function() { return HOLES_INFO; });
-var HOLES_INFO = [
-    {
-        'id': 1,
-        'hole': 1,
-        'par': 1,
-        'description': 'description1',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 2,
-        'hole': 2,
-        'par': 2,
-        'description': 'description2',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.386737,
-        'lng': -6.574668
-    }, {
-        'id': 3,
-        'hole': 3,
-        'par': 3,
-        'description': 'description3',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 4,
-        'hole': 4,
-        'par': 4,
-        'description': 'description4',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 5,
-        'hole': 5,
-        'par': 5,
-        'description': 'description5',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 6,
-        'hole': 6,
-        'par': 6,
-        'description': 'description6',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 7,
-        'hole': 7,
-        'par': 7,
-        'description': 'description7',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 8,
-        'hole': 8,
-        'par': 8,
-        'description': 'description8',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 9,
-        'hole': 9,
-        'par': 9,
-        'description': 'description9',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 10,
-        'hole': 10,
-        'par': 10,
-        'description': 'description10',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 11,
-        'hole': 11,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 12,
-        'hole': 12,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 13,
-        'hole': 13,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 14,
-        'hole': 14,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 15,
-        'hole': 15,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 16,
-        'hole': 16,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 17,
-        'hole': 17,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
-    }, {
-        'id': 18,
-        'hole': 18,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 53.387792,
-        'lng': -6.569634
+var Hole = /** @class */ (function () {
+    function Hole(id, name, lat, lng) {
+        this.id = id;
+        this.name = name;
+        this.lat = lat;
+        this.lng = lng;
     }
+    return Hole;
+}());
+
+var HOLES = [
+    new Hole(1, 'Hole 1', 53.387792, -6.569634),
+    new Hole(2, 'Hole 2', 53.386737, -6.574668),
+    new Hole(3, 'Hole 3', 53.385048, -6.572094),
+    new Hole(4, 'Hole 4', 53.382720, -6.565754),
+    new Hole(5, 'Hole 5', 53.386264, -6.568703),
+    new Hole(6, 'Hole 6', 53.383838, -6.563968),
+    new Hole(7, 'Hole 7', 53.383164, -6.561684),
+    new Hole(8, 'Hole 8', 53.381575, -6.568951),
+    new Hole(9, 'Hole 9', 53.381030, -6.563088),
+    new Hole(10, 'Hole 10', 53.379296, -6.556906),
+    new Hole(11, 'Hole 11', 53.378104, -6.548422),
+    new Hole(12, 'Hole 12', 53.379468, -6.548469),
+    new Hole(13, 'Hole 13', 53.378950, -6.543071),
+    new Hole(14, 'Hole 14', 53.380214, -6.547637),
+    new Hole(15, 'Hole 15', 53.380593, -6.555184),
+    new Hole(16, 'Hole 16', 53.382494, -6.560319),
+    new Hole(17, 'Hole 17', 53.384131, -6.559146),
+    new Hole(18, 'Hole 18', 53.386657, -6.565981),
 ];
 
 
@@ -1630,7 +1911,7 @@ var HOLES_INFO = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container class=\"example-container\" (backdropClick)=\"close('backdrop')\">\r\n  <mat-sidenav #sidenav (keydown.escape)=\"close('escape')\" disableClose>\r\n\r\n      <!-- <img src=\"./assets/img/WATC.jpeg\"> -->\r\n\r\n      <div class=\"geo-heading\">\r\n          <h3>Geolocation</h3>\r\n      </div>\r\n\r\n    <div class=\"banner\"></div>\r\n\r\n    <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          Montgomorie\r\n        </mat-expansion-panel-header>\r\n\r\n        <mat-list role=\"list\" *ngFor=\"let hole of holes \">\r\n\r\n            <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n              <button mat-button (click)=\"openBottomSheet()\" [routerLink]=\"['/geolocation']\"><span>Hole {{hole.id}}</span></button>\r\n            </mat-list-item>\r\n\r\n        </mat-list>\r\n\r\n\r\n      </mat-expansion-panel>\r\n\r\n      <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          O'Meara\r\n        </mat-expansion-panel-header>\r\n\r\n        <mat-list role=\"list\" *ngFor=\"let hole of holes \">\r\n\r\n            <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n              <button mat-button (click)=\"openBottomSheet()\" [routerLink]=\"['/geoloaction', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n            </mat-list-item>\r\n\r\n        </mat-list>\r\n      </mat-expansion-panel>\r\n  </mat-sidenav>\r\n</mat-sidenav-container>\r\n\r\n  <p>\r\n    <button mat-button class=\"mat-ham-button\" (click)=\"sidenav.open()\">\r\n      <i class=\"material-icons\">menu</i>\r\n    </button>\r\n  </p>\r\n\r\n <div id=\"map\"></div>\r\n\r\n\r\n<div class=\"contain\" *ngIf=\"hole.id\">\r\n  <mat-card class=\"mat-elevation-z20\">\r\n    <div class=\"flex-item1\">\r\n        <p>Metres: {{metres}}</p>\r\n\r\n        <p>Yards: {{yards}}</p>\r\n\r\n        <p>Kilometres: {{kilometres}}</p>\r\n\r\n        <p>Miles: {{miles}}</p>\r\n    </div>\r\n\r\n    <div class=\"flex-item2\">\r\n        <p>hole {{ hole.hole }}</p>\r\n\r\n        <p>par {{ hole.par }}</p>\r\n\r\n        <p>{{hole.description}}</p>\r\n\r\n        <p>Flyover</p>\r\n        <!-- <p>{{hole.flyover }}</p> -->\r\n    </div>\r\n  </mat-card>\r\n</div>\r\n\r\n<div class=\"contain\" *ngIf=\"!hole.id\">\r\n    <mat-card class=\"mat-elevation-z20\">\r\n      <p>Welcome to geolocation!</p>\r\n    </mat-card>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n"
+module.exports = "<div *ngIf=\"showIndicator\">Loading...</div>\r\n\r\n <mat-sidenav-container class=\"example-container\" (backdropClick)=\"close('backdrop')\">\r\n    <mat-sidenav #sidenav (keydown.escape)=\"close('escape')\" disableClose>\r\n      <mat-toolbar class=\"geo-heading\">\r\n            <h3>Geolocation</h3>\r\n      </mat-toolbar>\r\n\r\n      <div class=\"banner\"></div>\r\n\r\n      <mat-expansion-panel>\r\n          <mat-expansion-panel-header>\r\n            Montgomorie\r\n          </mat-expansion-panel-header>\r\n\r\n      <mat-list role=\"list\" *ngFor=\"let hole of hole$ | async\">\r\n        <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n            <button mat-button [routerLink]=\"['/geolocation', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n        </mat-list-item>\r\n      </mat-list>\r\n    </mat-expansion-panel>\r\n\r\n    <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          O'Meara\r\n        </mat-expansion-panel-header>\r\n\r\n    <mat-list role=\"list\" *ngFor=\"let hole of hole$ | async\">\r\n      <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n          <button mat-button [routerLink]=\"['/geolocation', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n      </mat-list-item>\r\n    </mat-list>\r\n  </mat-expansion-panel>\r\n\r\n  <!-- geolocation-maynooth -->\r\n  <button class=\"mat-raised-button\" mat-raised-button [routerLink]=\"['/geolocation-maynooth']\"><span>Maynooth</span></button><br>\r\n\r\n  <button class=\"mat-raised-button\" mat-button><span class=\"mat-button-span\">Yelp</span></button>\r\n\r\n  </mat-sidenav>\r\n</mat-sidenav-container>\r\n\r\n  <p>\r\n    <button mat-button class=\"mat-ham-button\" (click)=\"sidenav.open()\">\r\n      <i class=\"material-icons\">menu</i>\r\n    </button>\r\n  </p>\r\n"
 
 /***/ }),
 
@@ -1641,7 +1922,7 @@ module.exports = "<mat-sidenav-container class=\"example-container\" (backdropCl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-container {\n  position: static;\n  width: 100%;\n  min-width: 100%;\n  height: 100%;\n  min-height: 100%; }\n\n.mat-side-list {\n  margin: 0; }\n\n.mat-ham-button {\n  margin: 0px;\n  float: right; }\n\nmat-card {\n  margin: 5%;\n  background-color: #D8D8D8; }\n\n.contain {\n  position: fixed;\n  bottom: 10px;\n  width: 100%;\n  display: flex;\n  flex-direction: column; }\n\n.flex-item1 {\n  justify-content: space-between;\n  text-align: center;\n  width: 50%;\n  float: left; }\n\n.flex-item2 {\n  margin-left: 50%;\n  justify-content: space-between;\n  text-align: center; }\n\n#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 60%;\n  width: 100%;\n  z-index: -1; }\n\n.banner {\n  height: 50px;\n  background-color: #5cd65c; }\n\n.geo-heading {\n  background-color: #5cd65c;\n  position: fixed;\n  top: 0;\n  height: 5px; }\n"
+module.exports = ".example-container {\n  position: static;\n  width: 100%;\n  min-width: 100%;\n  height: 100%;\n  min-height: 100%; }\n\n.mat-side-list {\n  margin: 0; }\n\n.mat-ham-button {\n  margin: 0px;\n  float: right; }\n\n.mat-raised-button {\n  width: 200px;\n  height: 6%; }\n\n.banner {\n  height: 50px;\n  background-color: #5cd65c; }\n\n.geo-heading {\n  background-color: #5cd65c;\n  position: fixed;\n  top: 0; }\n\n.right-bottom {\n  position: absolute;\n  left: 0;\n  bottom: 60px; }\n"
 
 /***/ }),
 
@@ -1657,9 +1938,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SidenavComponent", function() { return SidenavComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _services_course_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/course-data.service */ "./src/app/components/geolocation/services/course-data.service.ts");
+/* harmony import */ var _services_montgomorie_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/montgomorie.service */ "./src/app/components/geolocation/services/montgomorie.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1674,119 +1957,44 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
 var SidenavComponent = /** @class */ (function () {
-    function SidenavComponent(bottomSheet, _courseDataService, _route) {
-        this.bottomSheet = bottomSheet;
-        this._courseDataService = _courseDataService;
+    function SidenavComponent(_mont, _map, _route, route) {
+        var _this = this;
+        this._mont = _mont;
+        this._map = _map;
         this._route = _route;
-        this._earthRadiusInMeters = 6378137;
-        this._earthRadiusInYards = 6975174.98;
-        this._earthRadiusInKilometers = 6371;
-        this._earthRadiusInMiles = 3960;
-        this.reason = '';
+        this.route = route;
+        this.showIndicator = true;
+        this.route.events.subscribe(function (routerEvent) {
+            if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationStart"]) {
+                _this.showIndicator = true;
+            }
+            if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationEnd"]) {
+                _this.showIndicator = false;
+            }
+        });
     }
+    // get working!
     SidenavComponent.prototype.close = function (reason) {
         this.reason = reason;
         this.sidenav.close();
     };
-    SidenavComponent.prototype.openBottomSheet = function () {
-        // location.reload();
-        // this.bottomSheet.open(BottomSheetOverviewExampleSheetComponent);
-    };
-    SidenavComponent.prototype.refreshPage = function () {
-    };
-    SidenavComponent.prototype.getHolesId = function (id) {
-        var _this = this;
-        this._courseDataService.getHoleById(id).subscribe(function (hole) { return _this.hole = hole; });
-    };
     SidenavComponent.prototype.ngOnInit = function () {
-        this.Haversine();
-        this.holes = this._courseDataService.getSideNavHoles();
-        this.hole = +this._route.snapshot.paramMap.get('id');
-        this._courseDataService.showMap(+this._route.snapshot.params['id']);
-        if (this.hole) {
-            var id = +this.hole;
-            this.getHolesId(id);
-            console.log(id);
-        }
-        console.log(this.hole);
-    };
-    SidenavComponent.prototype.Haversine = function () {
         var _this = this;
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (x) {
-                _this.myLat = x.coords.latitude;
-                _this.myLng = x.coords.longitude;
-                _this.courseLat = _this._courseDataService.getCoordsLat;
-                _this.courseLng = _this._courseDataService.getCoordsLng;
-                console.log("longitude: " + _this.myLat + " | latitude: " + _this.myLng);
-                // console.log(`longitude: ${ this.myLat } | latitude: ${ this.myLng }`);
-                // get courseLat+Lng working
-                var myCoords = {
-                    latitude: _this.myLat,
-                    longitude: _this.myLng
-                };
-                var dominos = {
-                    latitude: 53.354307,
-                    longitude: -6.284543
-                    // latitude: this.courseLat,
-                    // longitude: this.courseLng
-                };
-                _this.metres = _this.getDistanceInMeters(myCoords, dominos);
-                _this.yards = _this.getDistanceInYards(myCoords, dominos);
-                _this.kilometres = _this.getDistanceInKilometers(myCoords, dominos);
-                _this.miles = _this.getDistanceInMiles(myCoords, dominos);
-                _this.metres = _this.metres.toFixed(2);
-                _this.yards = _this.yards.toFixed(2);
-                _this.kilometres = _this.kilometres.toFixed(2);
-                _this.miles = _this.miles.toFixed(2);
-            });
-        }
-    };
-    SidenavComponent.prototype._toRadians = function (value) {
-        return value * Math.PI / 180;
-    };
-    SidenavComponent.prototype._getDistance = function (coord1, coord2) {
-        var φ1 = this._toRadians(coord1.latitude);
-        var φ2 = this._toRadians(coord2.latitude);
-        var Δφ = this._toRadians(coord2.latitude - coord1.latitude);
-        var Δλ = this._toRadians(coord2.longitude - coord1.longitude);
-        // a = sin²(Δφ / 2) + cos φ1 ⋅ cos φ2 ⋅ sin²(Δλ / 2)
-        var a = Math.pow(Math.sin(Δφ / 2), 2) +
-            Math.cos(φ1) *
-                Math.cos(φ2) *
-                Math.pow(Math.sin(Δλ / 2), 2);
-        // c = 2 ⋅ atan2(√a, √(1−a))
-        return 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    };
-    SidenavComponent.prototype.getDistanceInMeters = function (coord1, coord2) {
-        var c = this._getDistance(coord1, coord2);
-        // d = R ⋅ c
-        return this._earthRadiusInMeters * c;
-    };
-    SidenavComponent.prototype.getDistanceInYards = function (coord1, coord2) {
-        var c = this._getDistance(coord1, coord2);
-        // d = R ⋅ c
-        return this._earthRadiusInYards * c;
-    };
-    SidenavComponent.prototype.getDistanceInKilometers = function (coord1, coord2) {
-        var c = this._getDistance(coord1, coord2);
-        // d = R ⋅ c
-        return this._earthRadiusInKilometers * c;
-    };
-    SidenavComponent.prototype.getDistanceInMiles = function (coord1, coord2) {
-        var c = this._getDistance(coord1, coord2);
-        // d = R ⋅ c
-        return this._earthRadiusInMiles * c;
+        this.hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])(function (params) {
+            _this.selectedId = +params.get('id');
+            return _this._mont.getHoles();
+        }));
+        // this._route.paramMap.
+        // subscribe((params: ParamMap) =>
+        // this._mont.showMap(+params.get('id')));
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('sidenav'),
         __metadata("design:type", _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatSidenav"])
     ], SidenavComponent.prototype, "sidenav", void 0);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('button'),
-        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
-    ], SidenavComponent.prototype, "button", void 0);
     SidenavComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-sidenav',
@@ -1810,9 +2018,10 @@ var SidenavComponent = /** @class */ (function () {
                 ])
             ]
         }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheet"],
-            _services_course_data_service__WEBPACK_IMPORTED_MODULE_2__["CourseDataService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
+        __metadata("design:paramtypes", [_services_montgomorie_service__WEBPACK_IMPORTED_MODULE_2__["MontgomorieService"],
+            _services_map_service__WEBPACK_IMPORTED_MODULE_6__["MapService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], SidenavComponent);
     return SidenavComponent;
 }());
@@ -1928,7 +2137,7 @@ var HomepageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"instagram-feed\">\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[0].images.thumbnail.url}}\">\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[1].images.thumbnail.url}}\">\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[2].images.thumbnail.url}}\">\r\n    </mat-card>\r\n</div>\r\n<!-- *ngFor=\"let loop of [0,1,2,3,4]; let i = index\" -->\r\n"
+module.exports = "<div id=\"instagram-feed\">\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[0].images.thumbnail.url}}\">\r\n        <span>caption</span>\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[1].images.thumbnail.url}}\">\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[2].images.thumbnail.url}}\">\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[3].images.thumbnail.url}}\">\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[4].images.thumbnail.url}}\">\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[5].images.thumbnail.url}}\">\r\n    </mat-card>\r\n</div>\r\n<!-- *ngFor=\"let loop of [0,1,2,3,4]; let i = index\" -->\r\n"
 
 /***/ }),
 
@@ -1939,7 +2148,7 @@ module.exports = "<div id=\"instagram-feed\">\r\n    <mat-card class=\"mat-card\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#instagram-feed {\n  display: flex;\n  flex-direction: row;\n  position: fixed;\n  bottom: 40px;\n  overflow-y: auto;\n  overflow-x: hidden; }\n\n.mat-card {\n  width: 33%; }\n"
+module.exports = "#instagram-feed {\n  display: flex;\n  flex-direction: row;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.mat-card {\n  width: 33%;\n  display: inline-block; }\n"
 
 /***/ }),
 
@@ -1999,7 +2208,7 @@ var InstagramFeedComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-list>\n  <mat-list-item class=\"mat-item\">\n\n          \n  <img src=\"./assets/img/ILGU.png\" class=\"mat-item-img\">\n    \n      <div class=\"mat-item-content\">\n        <div class=\"mat-item-heading\">\n          <h3>{{ quote.title }}</h3>\n        </div>\n                      \n        <div class=\"mat-item-para\">\n          {{ quote.content }}\n        </div>\n\n      </div>\n    </mat-list-item>\n  </mat-list>\n<mat-divider></mat-divider>"
+module.exports = "<mat-list>\r\n  <mat-list-item class=\"mat-item\">\r\n\r\n          \r\n  <img src=\"./assets/img/ILGU.png\" class=\"mat-item-img\">\r\n    \r\n      <div class=\"mat-item-content\">\r\n        <div class=\"mat-item-heading\">\r\n          <h3>{{ quote.title }}</h3>\r\n        </div>\r\n                      \r\n        <div class=\"mat-item-para\">\r\n          {{ quote.content }}\r\n        </div>\r\n\r\n      </div>\r\n    </mat-list-item>\r\n  </mat-list>\r\n<mat-divider></mat-divider>"
 
 /***/ }),
 
@@ -2247,7 +2456,7 @@ var InstagramFeedService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar id=\"team-header-toolbar\">\r\n    <span id=\"title\">\r\n      <span>\r\n        <button class=\"hide-btn\" (click)=\"hideall = !hideall\">\r\n          <mat-icon>arrow_back</mat-icon>\r\n        </button>\r\n      </span>\r\n      {{teams.name}}\r\n      <button id=\"fav-button\" mat-button>\r\n        <mat-icon class=\"fav\">star</mat-icon>\r\n      </button>\r\n    </span>\r\n  </mat-toolbar>\r\n\r\n  <div id=\"team-header\">\r\n    <span>\r\n      <img id=\"team-image\" src=\"./assets/img/team.jpg\">\r\n    </span>\r\n    <mat-card id=\"score-Info\">\r\n      <table>\r\n        <!-- <tr *ngFor=\"let teams of data.event.tournament.teams.team\">\r\n        \r\n        <ng-container *ngIf=\"teams.name == profiles\"> -->\r\n        <tr>\r\n          <th>Thru</th>test\r\n          <th>Today</th>null\r\n          <th>Total</th>test\r\n          <th>Rank</th>test\r\n          <!-- </ng-container> -->\r\n        </tr>\r\n      </table>\r\n    </mat-card>\r\n  </div>\r\n  \r\n    <mat-expansion-panel class=\"roundsPanel\">\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n          Round one\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n <div>\r\n <table>\r\n<thead>\r\n  <tr>   \r\n    <th>Name</th>\r\n    <th>1</th>\r\n    <th>2</th>\r\n    <th>3</th>\r\n    <th>4</th>\r\n    <th>5</th>\r\n    <th>6</th>\r\n    <th>7</th>\r\n    <th>8</th>\r\n    <th>9</th>\r\n    <th>10</th>\r\n    <th>11</th>\r\n    <th>12</th>\r\n    <th>13</th>\r\n    <th>14</th>\r\n    <th>15</th>\r\n    <th>16</th>\r\n    <th>17</th>\r\n    <th>18</th>\r\n  </tr>\r\n</thead>\r\n<tbody *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\" >     \r\n  <ng-container *ngIf=\"playerdata.teamname == teamProfiles\">\r\n  <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n    <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n    <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n  </tr>\r\n  </ng-container>\r\n</tbody>\r\n</table>\r\n</div>\r\n</mat-expansion-panel>\r\n\r\n\r\n<mat-expansion-panel class=\"roundsPanel\">\r\n    <mat-expansion-panel-header>\r\n      <mat-panel-title>\r\n      Round two\r\n      </mat-panel-title>\r\n     \r\n    </mat-expansion-panel-header>\r\n<table>\r\n    <thead>\r\n      <tr>\r\n       \r\n        <th>Name</th>\r\n        <th>1</th>\r\n        <th>2</th>\r\n        <th>3</th>\r\n        <th>4</th>\r\n        <th>5</th>\r\n        <th>6</th>\r\n        <th>7</th>\r\n        <th>8</th>\r\n        <th>9</th>\r\n        <th>10</th>\r\n        <th>11</th>\r\n        <th>12</th>\r\n        <th>13</th>\r\n        <th>14</th>\r\n        <th>15</th>\r\n        <th>16</th>\r\n        <th>17</th>\r\n        <th>18</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\" >     \r\n      <ng-container *ngIf=\"playerdata.teamname == teamProfiles\">\r\n      <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n        <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n        <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n      </tr>\r\n      </ng-container>\r\n    </tbody>\r\n    </table>\r\n    </mat-expansion-panel>\r\n\r\n    <mat-expansion-panel class=\"roundsPanel\">\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n          Round three\r\n          </mat-panel-title>\r\n         \r\n        </mat-expansion-panel-header>\r\n      \r\n    <table>\r\n        <thead>\r\n          <tr>\r\n            <th>Name</th>\r\n            <th>1</th>\r\n            <th>2</th>\r\n            <th>3</th>\r\n            <th>4</th>\r\n            <th>5</th>\r\n            <th>6</th>\r\n            <th>7</th>\r\n            <th>8</th>\r\n            <th>9</th>\r\n            <th>10</th>\r\n            <th>11</th>\r\n            <th>12</th>\r\n            <th>13</th>\r\n            <th>14</th>\r\n            <th>15</th>\r\n            <th>16</th>\r\n            <th>17</th>\r\n            <th>18</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\" >     \r\n          <ng-container *ngIf=\"playerdata.teamname == teamProfiles\">\r\n          <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n            <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n            <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n          </tr>\r\n          </ng-container>\r\n        </tbody>\r\n        </table>\r\n        </mat-expansion-panel>\r\n\r\n\r\n        <mat-expansion-panel class=\"roundsPanel\">\r\n            <mat-expansion-panel-header>\r\n              <mat-panel-title>\r\n              Round four\r\n              </mat-panel-title>\r\n             \r\n            </mat-expansion-panel-header>\r\n          \r\n        <table>\r\n            <thead>\r\n              <tr>\r\n                <th>Name</th>\r\n                <th>1</th>\r\n                <th>2</th>\r\n                <th>3</th>\r\n                <th>4</th>\r\n                <th>5</th>\r\n                <th>6</th>\r\n                <th>7</th>\r\n                <th>8</th>\r\n                <th>9</th>\r\n                <th>10</th>\r\n                <th>11</th>\r\n                <th>12</th>\r\n                <th>13</th>\r\n                <th>14</th>\r\n                <th>15</th>\r\n                <th>16</th>\r\n                <th>17</th>\r\n                <th>18</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\" >     \r\n              <ng-container *ngIf=\"playerdata.teamname == teamProfiles\">\r\n              <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n              </tr>\r\n              </ng-container>\r\n            </tbody>\r\n            </table>\r\n            </mat-expansion-panel>\r\n\r\n\r\n\r\n<div id=\"live-main\">\r\n    <!-- <table matSort (matSortChange)=\"sortData($event)\">\r\n        <tr>\r\n         \r\n          <th mat-sort-header=\"position\">Pos</th>\r\n          <th>Name</th>\r\n        </tr>\r\n      \r\n        <tr *ngFor=\"let players of playerinfo.event.tournament.players.player; let i = index\">\r\n       {{i}}\r\n          \r\n        </tr>\r\n      </table> -->\r\n  <mat-toolbar id=\"live-search\">\r\n    <mat-form-field>\r\n      <input matInput placeholder=\"search\" #box (keyup)=\"0\">\r\n    </mat-form-field>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n    <button mat-button>\r\n      <mat-icon>search</mat-icon>\r\n    </button>\r\n  </mat-toolbar>\r\n  \r\n      <table  id=\"live-table\">\r\n    <thead>\r\n      <tr id=\"live-table-header-title\">\r\n        <th>Pos</th>\r\n        <th>Player</th>\r\n        <th>Team</th>\r\n        <th>Hole</th>\r\n        <th>R1</th>\r\n        <th>R2</th>\r\n        <th>R3</th>\r\n        <th>R4</th>\r\n        <th>Total</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody id=\"player-tbody\" *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\" > \r\n      <ng-container *ngIf=\"playerdata.teamname == box.value || box.value == ''\">\r\n        \r\n      <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n        <td>{{playerdata.totals.position}}</td>\r\n        <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n        <td> <button class=\"\" (click)=\"teamProfiles = (playerdata.teamname) ;\" mat-button>\r\n            <img src=\"./assets/img/{{playerdata.teamname}}.png\" title=\"{{playerdata.teamname}}\">\r\n          </button></td>\r\n        <td>{{teamProfiles}}</td>\r\n        <td>{{playerdata.round[0].strokes}}</td>\r\n        <td>{{playerdata.round[1].strokes}}</td>\r\n        <td>{{playerdata.round[2].strokes}}</td>\r\n        <td>{{playerdata.round[3].strokes}}</td>\r\n        <td>{{(playerdata.round[0].strokes * 1)  + (playerdata.round[1].strokes * 1) + (playerdata.round[2].strokes * 1) + (playerdata.round[3].strokes * 1)}}</td>\r\n      </tr>\r\n      \r\n      </ng-container>\r\n    </tbody>\r\n  \r\n  </table>\r\n</div>\r\n\r\n"
+module.exports = "<div id=\"main\" *ngIf=\"hideall\">\r\n  <mat-toolbar id=\"team-header-toolbar\">\r\n    <span id=\"title\">\r\n      <span>\r\n        <button class=\"hide-btn\" (click)=\"hideall = !hideall\">\r\n          <mat-icon>arrow_back</mat-icon>\r\n        </button>\r\n      </span>\r\n      {{playerProfilesFirst}} {{playerProfilesLast}}\r\n      <button id=\"fav-button\" mat-button>\r\n        <mat-icon class=\"fav\">star</mat-icon>\r\n      </button>\r\n    </span>\r\n  </mat-toolbar>\r\n\r\n  <div id=\"team-header\">\r\n    <span>\r\n      <img id=\"team-image\" src=\"./assets/img/team.jpg\">\r\n    </span>\r\n    <!-- <mat-card id=\"score-Info\"> -->\r\n    <!-- <table> -->\r\n    <!-- <tr *ngFor=\"let teams of data.event.tournament.teams.team\">\r\n          \r\n          <ng-container *ngIf=\"teams.name == teamProfiles\"> -->\r\n    <!-- <tr>\r\n          <th>Thru</th>test\r\n          <th>Today</th>null\r\n          <th>Total</th>test\r\n          <th>Rank</th>test -->\r\n    <!-- </ng-container> -->\r\n    <!-- </tr>\r\n      </table>\r\n    </mat-card> -->\r\n  </div>\r\n  <mat-tab-group>\r\n    <mat-tab label=\"R1\">\r\n      <div id=\"playerScore\">\r\n        <table>\r\n          <thead>\r\n            <tr>\r\n              <th>01</th>\r\n              <th>02</th>\r\n              <th>03</th>\r\n              <th>04</th>\r\n              <th>05</th>\r\n              <th>06</th>\r\n              <th>07</th>\r\n              <th>08</th>\r\n              <th>09</th>\r\n              <th>Out</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\">\r\n            <ng-container *ngIf=\"playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast\">\r\n              <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n                <td>{{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes\r\n                  * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes\r\n                  * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes\r\n                  * 1)}}</td>\r\n              </tr>\r\n              <tr>\r\n                <th>10</th>\r\n                <th>11</th>\r\n                <th>12</th>\r\n                <th>13</th>\r\n                <th>14</th>\r\n                <th>15</th>\r\n                <th>16</th>\r\n                <th>17</th>\r\n                <th>18</th>\r\n                <th>In</th>\r\n              </tr>\r\n              <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n                <td>{{(playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes\r\n                  * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) + (playerdata.round[0].score[14].strokes\r\n                  * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[16].strokes * 1) + (playerdata.round[0].score[17].strokes\r\n                  * 1)}}</td>\r\n              </tr>\r\n\r\n              <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                <th>Total</th>\r\n                <td></td>\r\n              </tr>\r\n            </ng-container>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n\r\n\r\n    </mat-tab>\r\n    <mat-tab label=\"R2\">\r\n      <div id=\"playerScore\">\r\n        <table>\r\n          <thead>\r\n            <tr>\r\n              <th>01</th>\r\n              <th>02</th>\r\n              <th>03</th>\r\n              <th>04</th>\r\n              <th>05</th>\r\n              <th>06</th>\r\n              <th>07</th>\r\n              <th>08</th>\r\n              <th>09</th>\r\n              <th>Out</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\">\r\n            <ng-container *ngIf=\"playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast\">\r\n              <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n                <td>{{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes\r\n                  * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes\r\n                  * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes\r\n                  * 1)}}</td>\r\n              </tr>\r\n              <tr>\r\n                <th>10</th>\r\n                <th>11</th>\r\n                <th>12</th>\r\n                <th>13</th>\r\n                <th>14</th>\r\n                <th>15</th>\r\n                <th>16</th>\r\n                <th>17</th>\r\n                <th>18</th>\r\n                <th>In</th>\r\n              </tr>\r\n              <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n                <td>{{(playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes\r\n                  * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) + (playerdata.round[1].score[14].strokes\r\n                  * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[16].strokes * 1) + (playerdata.round[1].score[17].strokes\r\n                  * 1)}}</td>\r\n              </tr>\r\n            </ng-container>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n\r\n    </mat-tab>\r\n    <mat-tab label=\"R3\">\r\n      <div id=\"playerScore\">\r\n        <table>\r\n          <thead>\r\n            <tr>\r\n              <th>01</th>\r\n              <th>02</th>\r\n              <th>03</th>\r\n              <th>04</th>\r\n              <th>05</th>\r\n              <th>06</th>\r\n              <th>07</th>\r\n              <th>08</th>\r\n              <th>09</th>\r\n              <th>Out</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\">\r\n            <ng-container *ngIf=\"playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast\">\r\n              <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n                <td>{{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes\r\n                  * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes\r\n                  * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes\r\n                  * 1)}}</td>\r\n              </tr>\r\n              <tr>\r\n                <th>10</th>\r\n                <th>11</th>\r\n                <th>12</th>\r\n                <th>13</th>\r\n                <th>14</th>\r\n                <th>15</th>\r\n                <th>16</th>\r\n                <th>17</th>\r\n                <th>18</th>\r\n                <th>In</th>\r\n              </tr>\r\n              <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n                <td>{{(playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes\r\n                  * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) + (playerdata.round[2].score[14].strokes\r\n                  * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[16].strokes * 1) + (playerdata.round[2].score[17].strokes\r\n                  * 1)}}</td>\r\n              </tr>\r\n            </ng-container>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n\r\n    </mat-tab>\r\n    <mat-tab label=\"R4\">\r\n      <div id=\"playerScore\">\r\n        <table>\r\n          <thead>\r\n            <tr>\r\n              <th>01</th>\r\n              <th>02</th>\r\n              <th>03</th>\r\n              <th>04</th>\r\n              <th>05</th>\r\n              <th>06</th>\r\n              <th>07</th>\r\n              <th>08</th>\r\n              <th>09</th>\r\n              <th>Out</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\">\r\n            <ng-container *ngIf=\"playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast\">\r\n              <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n                <td>{{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes\r\n                  * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes\r\n                  * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes\r\n                  * 1)}}</td>\r\n              </tr>\r\n              <tr>\r\n                <th>10</th>\r\n                <th>11</th>\r\n                <th>12</th>\r\n                <th>13</th>\r\n                <th>14</th>\r\n                <th>15</th>\r\n                <th>16</th>\r\n                <th>17</th>\r\n                <th>18</th>\r\n                <th>In</th>\r\n              </tr>\r\n              <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n                <td>{{(playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes\r\n                  * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) + (playerdata.round[3].score[14].strokes\r\n                  * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[16].strokes * 1) + (playerdata.round[3].score[17].strokes\r\n                  * 1)}}</td>\r\n              </tr>\r\n            </ng-container>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n\r\n    </mat-tab>\r\n  </mat-tab-group>\r\n</div>\r\n\r\n\r\n\r\n<div id=\"live-main\" *ngIf=\"!hideall\">\r\n  <!-- <table matSort (matSortChange)=\"sortData($event)\">\r\n        <tr>\r\n         \r\n          <th mat-sort-header=\"position\">Pos</th>\r\n          <th>Name</th>\r\n        </tr>\r\n      \r\n        <tr *ngFor=\"let players of playerinfo.event.tournament.players.player; let i = index\">\r\n       {{i}}\r\n          \r\n        </tr>\r\n      </table> -->\r\n  <mat-toolbar id=\"live-search\">\r\n    <mat-form-field>\r\n      <input matInput placeholder=\"search\" #box (keyup)=\"0\">\r\n    </mat-form-field>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n    <button mat-button>\r\n      <mat-icon>search</mat-icon>\r\n    </button>\r\n  </mat-toolbar>\r\n\r\n  <table id=\"live-table\">\r\n    <thead>\r\n      <tr id=\"live-table-header-title\">\r\n        <th>Pos</th>\r\n        <th>Player</th>\r\n        <th>Team</th>\r\n        <th>R1</th>\r\n        <th>R2</th>\r\n        <th>R3</th>\r\n        <th>R4</th>\r\n        <th>Total</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody id=\"player-tbody\" *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\">\r\n      <ng-container *ngIf=\"playerdata.teamname == box.value || box.value == ''\">\r\n\r\n        <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n          <td>{{playerdata.totals.position}}</td>\r\n          <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n          <td>\r\n            <button class=\"\" (click)=\"hideall = !hideall; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]\"\r\n              mat-button>\r\n              <img src=\"./assets/img/{{playerdata.teamname}}.png\" title=\"{{playerdata.teamname}}\">\r\n            </button>\r\n          </td>\r\n          <td>{{playerdata.round[0].strokes}}</td>\r\n          <td>{{playerdata.round[1].strokes}}</td>\r\n          <td>{{playerdata.round[2].strokes}}</td>\r\n          <td>{{playerdata.round[3].strokes}}</td>\r\n          <td id=\"total\">{{(playerdata.round[0].strokes * 1) + (playerdata.round[1].strokes * 1) + (playerdata.round[2].strokes * 1) + (playerdata.round[3].strokes\r\n            * 1)}}</td>\r\n        </tr>\r\n\r\n      </ng-container>\r\n    </tbody>\r\n\r\n  </table>\r\n</div>"
 
 /***/ }),
 
@@ -2258,7 +2467,7 @@ module.exports = "<mat-toolbar id=\"team-header-toolbar\">\r\n    <span id=\"tit
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#live-table {\n  font-size: 75%;\n  width: 100%;\n  border-collapse: collapse; }\n\ntbody:nth-child(even) {\n  background-color: #adebad; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.roundsPanel {\n  width: 100%; }\n\n.mat-button {\n  min-width: 1%; }\n\n#live-search {\n  width: 100%; }\n\n#live-search mat-form-field {\n  width: 45%;\n  font-size: 68%; }\n\n#live-table-header-title {\n  height: 40px;\n  text-align: center; }\n\n#live-main {\n  margin-bottom: 31%; }\n\n#total_plus {\n  color: blue; }\n\n#total_Even {\n  color: red; }\n\ntr:nth-child(even) {\n  background: #56ab2f;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to right, #a8e063, #56ab2f);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n#live-table td {\n  text-align: center; }\n"
+module.exports = "#live-table {\n  font-size: 75%;\n  width: 100%;\n  border-collapse: collapse; }\n\n#player-tbody:nth-child(even) {\n  background-color: #adebad; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.roundsPanel {\n  width: 100%; }\n\n.mat-button {\n  min-width: 1%; }\n\n#live-search {\n  width: 100%; }\n\n#live-search mat-form-field {\n  width: 45%;\n  font-size: 68%; }\n\n#live-table-header-title {\n  height: 40px;\n  text-align: center; }\n\n#live-main {\n  margin-bottom: 31%; }\n\n#total_plus {\n  color: blue; }\n\n#total {\n  color: red; }\n\n#total_Even {\n  color: red; }\n\ntr:nth-child(even) {\n  background: #56ab2f;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to right, #a8e063, #56ab2f);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n#live-table td {\n  text-align: center; }\n\n#main {\n  margin-bottom: 30%; }\n\n#team-header-toolbar #title {\n  width: 100%;\n  font-size: 130%; }\n\n.hide-btn {\n  min-width: 1%;\n  background-color: Transparent;\n  background-repeat: no-repeat;\n  border: none;\n  cursor: pointer;\n  overflow: hidden;\n  outline: none; }\n\n.fav {\n  color: #cccc00; }\n\n#fav-button {\n  min-width: 1%; }\n\n#team-header {\n  text-align: center; }\n\n#team-image {\n  width: 50%;\n  height: 50%;\n  margin: auto; }\n\n#score-Info table {\n  width: 100%;\n  text-align: center; }\n\n.scroll-main {\n  height: 100%;\n  margin-top: 3%;\n  overflow: hidden; }\n\n.scroll-child {\n  height: 250px;\n  overflow-y: scroll; }\n\n.roundCard {\n  margin: 2%; }\n\n.roundCard span {\n  font-size: 75%; }\n\n#team-body {\n  margin-bottom: 5%; }\n"
 
 /***/ }),
 
@@ -2497,7 +2706,7 @@ var LiveScoreService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"main\" *ngIf=\"hideall\">\r\n      <mat-toolbar id=\"team-header-toolbar\">\r\n        <span id=\"title\">\r\n          <span>\r\n            <button class=\"hide-btn\" (click)=\"hideall = !hideall\">\r\n              <mat-icon>arrow_back</mat-icon>\r\n            </button>\r\n          </span>\r\n          {{profiles}}\r\n          <button id=\"fav-button\" mat-button>\r\n            <mat-icon class=\"fav\">star</mat-icon>\r\n          </button>\r\n        </span>\r\n      </mat-toolbar>\r\n\r\n      <div id=\"team-header\">\r\n        <span>\r\n          <img id=\"team-image\" src=\"./assets/img/team.jpg\">\r\n        </span>\r\n        <mat-card id=\"score-Info\">\r\n          <table>\r\n            <!-- <tr *ngFor=\"let teams of data.event.tournament.teams.team\">\r\n            \r\n            <ng-container *ngIf=\"teams.name == profiles\"> -->\r\n            <tr>\r\n              <th>Thru</th>test\r\n              <th>Today</th>null\r\n              <th>Total</th>test\r\n              <th>Rank</th>test\r\n              <!-- </ng-container> -->\r\n            </tr>\r\n          </table>\r\n        </mat-card>\r\n      </div>\r\n      <div class=\"scroll-main\">\r\n        <div class=\"scroll-child\">\r\n          \r\n          <!-- Round one -->\r\n          <mat-card class=\"roundCard\">\r\n            <mat-card-title>\r\n              <button class=\"hide-btn\" (click)=\"hideRoundOne = !hideRoundOne\">\r\n                <mat-icon>expand_{{hideRoundOne ? 'less' : 'more'}}</mat-icon>\r\n              </button>\r\n              <span>\r\n                Round One\r\n              </span>\r\n            </mat-card-title>\r\n            <div id=\"team-body\" *ngIf=\"hideRoundOne\">\r\n              <!-- Static table -->\r\n              <!-- <div class=\"static-wrapper\">\r\n                <table class=\"static-table\">\r\n                  <tr>\r\n                    <th>Hole</th>\r\n                  </tr>\r\n                  <tr *ngFor=\"let players of data.event.tournament.players.player;\">\r\n                    <ng-container *ngIf=\"players.teamname == profiles\">\r\n                      {{players.firstname}} {{players.lastname}}\r\n                    </ng-container>\r\n                  </tr>\r\n                </table>\r\n              </div> -->\r\n\r\n              <!-- Scroll table -->\r\n              <!-- <div class=\"scrolling-wrapper\"> -->\r\n                  <table>\r\n                      <thead>\r\n                        <tr>   \r\n                          <th>Holes</th>\r\n                          <th>1</th>\r\n                          <th>2</th>\r\n                          <th>3</th>\r\n                          <th>4</th>\r\n                          <th>5</th>\r\n                          <th>6</th>\r\n                          <th>7</th>\r\n                          <th>8</th>\r\n                          <th>9</th>\r\n                          <th>Out</th>\r\n                          <th>10</th>\r\n                          <th>11</th>\r\n                          <th>12</th>\r\n                          <th>13</th>\r\n                          <th>14</th>\r\n                          <th>15</th>\r\n                          <th>16</th>\r\n                          <th>17</th>\r\n                          <th>18</th>\r\n                          <th>In</th>\r\n                          <th>Total</th>\r\n                        </tr>\r\n                      </thead>\r\n                      <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\" >     \r\n                        <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                        <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                          <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                          <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n                          <td>{{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes * 1)}}</td>\r\n                          <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n                          <td>{{(playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) + (playerdata.round[0].score[14].strokes * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[17].strokes * 1) + (playerdata.round[0].score[17].strokes * 1)}}</td>\r\n                          <td>Total</td>\r\n                        </tr>\r\n                        </ng-container>\r\n                      </tbody>\r\n                      </table>\r\n              <!-- </div> -->\r\n\r\n              <!-- </mat-expansion-panel> -->\r\n            </div>\r\n          </mat-card>\r\n\r\n          <!-- Round Two -->\r\n          <mat-card class=\"roundCard\">\r\n              <mat-card-title>\r\n                <button class=\"hide-btn\" (click)=\"hideRoundTwo = !hideRoundTwo\">\r\n                  <mat-icon>expand_{{hideRoundTwo ? 'less' : 'more'}}</mat-icon>\r\n                </button>\r\n                <span>\r\n                  Round Two\r\n                </span>\r\n              </mat-card-title>\r\n              <div id=\"team-body\" *ngIf=\"hideRoundTwo\">\r\n                <!-- Static table -->\r\n                <!-- <div class=\"static-wrapper\">\r\n                  <table class=\"static-table\">\r\n                    <tr>\r\n                      <th>Hole</th>\r\n                    </tr>\r\n                    <tr *ngFor=\"let players of data.event.tournament.players.player;\">\r\n                      <ng-container *ngIf=\"players.teamname == profiles\">\r\n                        {{players.firstname}} {{players.lastname}}\r\n                      </ng-container>\r\n                    </tr>\r\n                  </table>\r\n                </div> -->\r\n  \r\n                <!-- Scroll table -->\r\n                <!-- <div class=\"scrolling-wrapper\"> -->\r\n                    <table>\r\n                        <thead>\r\n                          <tr>   \r\n                            <th>Holes</th>\r\n                            <th>1</th>\r\n                            <th>2</th>\r\n                            <th>3</th>\r\n                            <th>4</th>\r\n                            <th>5</th>\r\n                            <th>6</th>\r\n                            <th>7</th>\r\n                            <th>8</th>\r\n                            <th>9</th>\r\n                            <th>Out</th>\r\n                            <th>10</th>\r\n                            <th>11</th>\r\n                            <th>12</th>\r\n                            <th>13</th>\r\n                            <th>14</th>\r\n                            <th>15</th>\r\n                            <th>16</th>\r\n                            <th>17</th>\r\n                            <th>18</th>\r\n                            <th>In</th>\r\n                            <th>Total</th>\r\n                          </tr>\r\n                        </thead>\r\n                        <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\" >     \r\n                          <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                          <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                            <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                            <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n                            <td>Out</td>\r\n                            <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n                            <td>In</td>\r\n                            <td>Total</td>\r\n                          </tr>\r\n                          </ng-container>\r\n                        </tbody>\r\n                        </table>\r\n                <!-- </div> -->\r\n  \r\n                <!-- </mat-expansion-panel> -->\r\n              </div>\r\n            </mat-card>\r\n        \r\n          <!-- Round three -->\r\n          <mat-card class=\"roundCard\">\r\n              <mat-card-title>\r\n                <button class=\"hide-btn\" (click)=\"hideRoundThree = !hideRoundThree\">\r\n                  <mat-icon>expand_{{hideRoundThree ? 'less' : 'more'}}</mat-icon>\r\n                </button>\r\n                <span>\r\n                  Round Three\r\n                </span>\r\n              </mat-card-title>\r\n              <div id=\"team-body\" *ngIf=\"hideRoundThree\">\r\n                <!-- Static table -->\r\n                <!-- <div class=\"static-wrapper\">\r\n                  <table class=\"static-table\">\r\n                    <tr>\r\n                      <th>Hole</th>\r\n                    </tr>\r\n                    <tr *ngFor=\"let players of data.event.tournament.players.player;\">\r\n                      <ng-container *ngIf=\"players.teamname == profiles\">\r\n                        {{players.firstname}} {{players.lastname}}\r\n                      </ng-container>\r\n                    </tr>\r\n                  </table>\r\n                </div> -->\r\n  \r\n                <!-- Scroll table -->\r\n                <!-- <div class=\"scrolling-wrapper\"> -->\r\n                    <table>\r\n                        <thead>\r\n                          <tr>   \r\n                            <th>Holes</th>\r\n                            <th>1</th>\r\n                            <th>2</th>\r\n                            <th>3</th>\r\n                            <th>4</th>\r\n                            <th>5</th>\r\n                            <th>6</th>\r\n                            <th>7</th>\r\n                            <th>8</th>\r\n                            <th>9</th>\r\n                            <th>Out</th>\r\n                            <th>10</th>\r\n                            <th>11</th>\r\n                            <th>12</th>\r\n                            <th>13</th>\r\n                            <th>14</th>\r\n                            <th>15</th>\r\n                            <th>16</th>\r\n                            <th>17</th>\r\n                            <th>18</th>\r\n                            <th>In</th>\r\n                            <th>Total</th>\r\n                          </tr>\r\n                        </thead>\r\n                        <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\" >     \r\n                          <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                          <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                            <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                            <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n                            <td>Out</td>\r\n                            <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n                            <td>In</td>\r\n                            <td>Total</td>\r\n                          </tr>\r\n                          </ng-container>\r\n                        </tbody>\r\n                        </table>\r\n                <!-- </div> -->\r\n  \r\n                <!-- </mat-expansion-panel> -->\r\n              </div>\r\n            </mat-card>\r\n         \r\n          <!-- Round Four -->\r\n          <mat-card class=\"roundCard\">\r\n              <mat-card-title>\r\n                <button class=\"hide-btn\" (click)=\"hideRoundFour = !hideRoundFour\">\r\n                  <mat-icon>expand_{{hideRoundFour ? 'less' : 'more'}}</mat-icon>\r\n                </button>\r\n                <span>\r\n                  Round Four\r\n                </span>\r\n              </mat-card-title>\r\n              <div id=\"team-body\" *ngIf=\"hideRoundFour\">\r\n                <!-- Static table -->\r\n                <!-- <div class=\"static-wrapper\">\r\n                  <table class=\"static-table\">\r\n                    <tr>\r\n                      <th>Hole</th>\r\n                    </tr>\r\n                    <tr *ngFor=\"let players of data.event.tournament.players.player;\">\r\n                      <ng-container *ngIf=\"players.teamname == profiles\">\r\n                        {{players.firstname}} {{players.lastname}}\r\n                      </ng-container>\r\n                    </tr>\r\n                  </table>\r\n                </div> -->\r\n  \r\n                <!-- Scroll table -->\r\n                <!-- <div class=\"scrolling-wrapper\"> -->\r\n                    <table>\r\n                        <thead>\r\n                          <tr>   \r\n                            <th>Holes</th>\r\n                            <th>1</th>\r\n                            <th>2</th>\r\n                            <th>3</th>\r\n                            <th>4</th>\r\n                            <th>5</th>\r\n                            <th>6</th>\r\n                            <th>7</th>\r\n                            <th>8</th>\r\n                            <th>9</th>\r\n                            <th>Out</th>\r\n                            <th>10</th>\r\n                            <th>11</th>\r\n                            <th>12</th>\r\n                            <th>13</th>\r\n                            <th>14</th>\r\n                            <th>15</th>\r\n                            <th>16</th>\r\n                            <th>17</th>\r\n                            <th>18</th>\r\n                            <th>In</th>\r\n                            <th>Total</th>\r\n                          </tr>\r\n                        </thead>\r\n                        <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\" >     \r\n                          <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                          <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                            <td >{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                            <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n                            <td>Out</td>\r\n                            <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n                            <td>In</td>\r\n                            <td>Total</td>\r\n                          </tr>\r\n                          </ng-container>\r\n                        </tbody>\r\n                        </table>\r\n                <!-- </div> -->\r\n  \r\n                <!-- </mat-expansion-panel> -->\r\n              </div>\r\n            </mat-card>\r\n        \r\n        </div>\r\n     </div>\r\n</div>\r\n<!-- Par  -->\r\n\r\n<!-- Player1  -->\r\n\r\n<!-- <ng-container *ngFor=\"let players of data.event.tournament.players.player;\">\r\n            <tr *ngIf=\"profiles == players.teamname\" >\r\n              <tr>\r\n              <td>{{players.round[0].score[0].strokes}}</td>\r\n              <td>{{players.round[0].score[1].strokes}}</td>\r\n              <td>{{(players.round[0].score[0].strokes * 1) + (players.round[0].score[1].strokes * 1) + (players.round[0].score[2].strokes * 1) + (players.round[0].score[3].strokes * 1) + (players.round[0].score[4].strokes * 1) + (players.round[0].score[5].strokes * 1) + (players.round[0].score[6].strokes * 1) + (players.round[0].score[7].strokes * 1) + (players.round[0].score[8].strokes * 1)}}</td>\r\n              <td>{{players.round[0].score[9].strokes}}</td>\r\n              <td>{{players.round[0].score[10].strokes}}</td>\r\n              <td>{{players.round[0].score[11].strokes}}</td>\r\n              <td>{{players.round[0].score[12].strokes}}</td>\r\n              <td>{{players.round[0].score[13].strokes}}</td>\r\n              <td>{{players.round[0].score[14].strokes}}</td>\r\n              <td>{{players.round[0].score[15].strokes}}</td>\r\n              <td>{{players.round[0].score[16].strokes}}</td>\r\n              <td>{{players.round[0].score[17].strokes}}</td>\r\n              <td>{{(players.round[0].score[9].strokes * 1) + (players.round[0].score[10].strokes * 1) + (players.round[0].score[11].strokes * 1) + \r\n                  (players.round[0].score[12].strokes * 1) + (players.round[0].score[13].strokes * 1) + (players.round[0].score[14].strokes * 1) + \r\n                  (players.round[0].score[15].strokes * 1) + (players.round[0].score[16].strokes * 1) + (players.round[0].score[17].strokes * 1)}}</td>\r\n              <td>{{(players.round[0].score[9].strokes * 1) + (players.round[0].score[10].strokes * 1) + (players.round[0].score[11].strokes * 1) + \r\n                  (players.round[0].score[12].strokes * 1) + (players.round[0].score[13].strokes * 1) + (players.round[0].score[14].strokes * 1) + \r\n                  (players.round[0].score[15].strokes * 1) + (players.round[0].score[16].strokes * 1) + (players.round[0].score[17].strokes * 1) + \r\n                  (players.round[0].score[0].strokes * 1) + (players.round[0].score[1].strokes * 1) + (players.round[0].score[2].strokes * 1) +  \r\n                  (players.round[0].score[3].strokes * 1) + (players.round[0].score[4].strokes * 1) + (players.round[0].score[5].strokes * 1) + \r\n                  (players.round[0].score[6].strokes * 1) + (players.round[0].score[7].strokes * 1) + (players.round[0].score[8].strokes * 1)}}</td>\r\n                </tr> -->\r\n\r\n<!-- Round  -->\r\n\r\n<!-- Score Against Par  -->\r\n<!--  \r\n              </table>\r\n    </mat-expansion-panel>\r\n  </div>\r\n</div> -->\r\n<!-- \r\n<mat-expansion-panel [disabled]=\"isDisabled\">\r\n    <mat-expansion-panel-header>\r\n      This is the expansion title\r\n    </mat-expansion-panel-header>\r\n    <mat-panel-description>\r\n      This is a summary of the content\r\n    </mat-panel-description>\r\n\r\n<table>\r\n    <thead>\r\n      <th >Hole</th>\r\n      <th>1</th>\r\n      <th>2</th>\r\n      <th>3</th>\r\n      <th>4</th>\r\n      <th>5</th>\r\n      <th>6</th>\r\n      <th>7</th>\r\n      <th>8</th>\r\n      <th>9</th>   \r\n      <th>Out</th>\r\n      <th>10</th>\r\n      <th>11</th>\r\n      <th>12</th>\r\n      <th>13</th>\r\n      <th>14</th>\r\n      <th>15</th>\r\n      <th>16</th>\r\n      <th>17</th>\r\n      <th>18</th>\r\n      <th>In</th>\r\n      <th>Total</th>\r\n    </thead>\r\n    <tbody>\r\n      <tr  *ngFor=\"let players of data.event.tournament.players.player\">\r\n        <ng-container *ngIf=\"players.teamname == profiles\">\r\n          <td>{{players.firstname}} {{players.lastname}}</td>\r\n           <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{players.round[0].score[loop].strokes}}</td>\r\n          <td>{{(players.round[0].score[0].strokes * 1) + (players.round[0].score[1].strokes * 1) + (players.round[0].score[2].strokes * 1) + (players.round[0].score[3].strokes * 1) + (players.round[0].score[4].strokes * 1) + (players.round[0].score[5].strokes * 1) + (players.round[0].score[6].strokes * 1) + (players.round[0].score[7].strokes * 1) + (players.round[0].score[8].strokes * 1)}}</td>\r\n          <td *ngFor=\"let loop2 of [9,10,11,12,13,14,15,16,17]\">{{players.round[0].score[loop2].strokes}}</td>\r\n          <td>{{(players.round[0].score[9].strokes * 1) + (players.round[0].score[10].strokes * 1) + (players.round[0].score[11].strokes * 1) + (players.round[0].score[12].strokes * 1) + (players.round[0].score[13].strokes * 1) + (players.round[0].score[14].strokes * 1) + (players.round[0].score[15].strokes * 1) + (players.round[0].score[16].strokes * 1) + (players.round[0].score[17].strokes * 1)}}</td>\r\n          <td>{{(players.round[0].score[0].strokes * 1) + (players.round[0].score[1].strokes * 1) + (players.round[0].score[2].strokes * 1) + (players.round[0].score[3].strokes * 1) + (players.round[0].score[4].strokes * 1) + (players.round[0].score[5].strokes * 1) + (players.round[0].score[6].strokes * 1) + (players.round[0].score[7].strokes * 1) + (players.round[0].score[8].strokes * 1) + (players.round[0].score[9].strokes * 1) + (players.round[0].score[10].strokes * 1) + (players.round[0].score[11].strokes * 1) + (players.round[0].score[12].strokes * 1) + (players.round[0].score[13].strokes * 1) + (players.round[0].score[14].strokes * 1) + (players.round[0].score[15].strokes * 1) + (players.round[0].score[16].strokes * 1) + (players.round[0].score[17].strokes * 1)}} </td> -->\r\n<!-- </ng-container>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</mat-expansion-panel> -->\r\n\r\n<!-- <div *ngFor=\"let teaminfo of data.event.tournament.teams.team\"></div>\r\n    <div *ngFor=\"let playerinfo of data.event.tournament.players.player\">\r\n      \r\n        \r\n        {{playerinfo.firstname}} {{playerinfo.lastname}} \r\n        \r\n     \r\n    </div>\r\n    \r\n    \r\n   \r\n</div> -->\r\n\r\n\r\n\r\n      \r\n     \r\n \r\n  \r\n\r\n\r\n\r\n\r\n<div id=\"live-main\" *ngIf=\"!hideall\">\r\n    <!-- <table matSort (matSortChange)=\"sortData($event)\">\r\n        <tr>\r\n         \r\n          <th mat-sort-header=\"position\">Pos</th>\r\n          <th>Name</th>\r\n        </tr>\r\n      \r\n        <tr *ngFor=\"let players of sortedData\">\r\n          <td>{{players.position}}</td>\r\n          <td>{{players.name}}</td>\r\n          <td>{{players.fat}}</td>\r\n          \r\n        </tr>\r\n      </table>\r\n   -->\r\n   \r\n \r\n  <mat-toolbar id=\"live-search\">\r\n    <mat-form-field>\r\n      <input type=\"text\" matInput placeholder=\"search\" #box (keyup)=\"0\">\r\n    </mat-form-field>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n    <button mat-button>\r\n      <mat-icon>search</mat-icon>\r\n    </button>\r\n  </mat-toolbar>\r\n  <table id=\"live-table\">\r\n    <thead>\r\n      <tr id=\"live-table-header-title\">\r\n        <th></th>\r\n        <th>Pos</th>\r\n        <th>Team</th>\r\n        <th>Hole</th>\r\n        <th>Par</th>\r\n        <th>R1</th>\r\n        <th>R2</th>\r\n        <th>R3</th>\r\n        <th>R4</th>\r\n        <th>Total</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody id=\"player-tbody\" *ngFor=\"let teamdata of data.event.tournament.teams.team; let x = index;\" class=\"tbody \">\r\n      <ng-container *ngIf=\"teamdata.name == box.value || box.value == ''\">\r\n      <tr id=\"live-table-header\">\r\n        <td>\r\n          <button class=\"hide-btn\" (click)=\"hideStuff[x] = !hideStuff[x]\">\r\n            <mat-icon>expand_{{hideStuff[x] ? 'less' : 'more'}}</mat-icon>\r\n          </button>\r\n        </td>\r\n        <td>{{teamdata.totals.position}}</td>\r\n        <td>\r\n          <button class=\"\" (click)=\"hideall = !hideall; profiles = (teamdata.name) ;\" mat-button>\r\n            <img src=\"./assets/img/{{teamdata.name}}.png\" title=\"{{teamdata.name}}\">\r\n          </button>\r\n        </td>\r\n        <td>null</td>\r\n        <ng-container *ngIf=\"teamdata.totals.totaltopar[0] == '+'\">\r\n          <td id=\"parblue\">{{teamdata.totals.totaltopar}}</td>\r\n        </ng-container>\r\n        <ng-container *ngIf=\"teamdata.totals.totaltopar[0] == '-'\">\r\n          <td id=\"parred\">{{teamdata.totals.totaltopar}}</td>\r\n        </ng-container>\r\n        <ng-container *ngIf=\"teamdata.totals.totaltopar[0] != '-' && teamdata.totals.totaltopar[0] != '+'\">\r\n          <td>{{teamdata.totals.totaltopar}}</td>\r\n        </ng-container>\r\n        <td>{{teamdata.round[0].strokes}}</td>\r\n        <td>{{teamdata.round[1].strokes}}</td>\r\n        <td>{{teamdata.round[2].strokes}}</td>\r\n        <td>{{teamdata.round[3].strokes}}</td>\r\n        <td>\r\n          <span id=\"total\">{{(teamdata.round[0].strokes * 1) + (teamdata.round[1].strokes * 1) + (teamdata.round[2].strokes * 1) + (teamdata.round[3].strokes\r\n            * 1)}}</span>\r\n        </td>\r\n      </tr>\r\n      <ng-container *ngIf=\"hideStuff[x]\">\r\n        <tr class=\"player\" *ngFor=\"let players of data.event.tournament.players.player\">\r\n          <ng-container *ngIf=\"teamdata.name == players.teamname\">\r\n            <ng-container *ngIf=\"players.totals.status == 'ok'\">\r\n            <td></td>\r\n            <td>{{players.totals.position}}</td>\r\n            <td>{{players.firstname}} {{players.lastname}}</td>\r\n            <td>null</td>\r\n            <td *ngIf=\"players.totals.totaltopar[0] == '+'\" id=\"parblue\">{{players.totals.totaltopar}}</td>\r\n            <td *ngIf=\"players.totals.totaltopar[0] == '-'\" id=\"parred\">{{players.totals.totaltopar}}</td>\r\n            <!-- <td *ngFor=\"let loop of [0,1,2,4,5,6,7,8]\">{{players.round[0].score[loop].strokes}}</td> -->\r\n            <td>{{players.round[0].strokes}}</td>\r\n            <td>{{players.round[1].strokes}}</td>\r\n            <td>{{players.round[2].strokes}}</td>\r\n            <td>{{players.round[3].strokes}}</td>\r\n            <td>{{(players.round[0].strokes * 1) + (players.round[1].strokes * 1) + (players.round[2].strokes * 1) + (players.round[3].strokes\r\n              * 1)}}</td>\r\n              </ng-container>\r\n          </ng-container>\r\n        </tr>\r\n      </ng-container>\r\n    </ng-container>\r\n    </tbody>\r\n  </table>\r\n  <!-- *ngFor=\"let team of data.event.tournament.players.player -->\r\n\r\n  <!--  -->\r\n\r\n  <!--player 1-->\r\n  <mat-divider></mat-divider>\r\n</div>"
+module.exports = "<div id=\"main\" *ngIf=\"hideall\">\r\n  <mat-toolbar id=\"team-header-toolbar\">\r\n    <span id=\"title\">\r\n      <span>\r\n        <button class=\"hide-btn\" (click)=\"hideall = !hideall\">\r\n          <mat-icon>arrow_back</mat-icon>\r\n        </button>\r\n      </span>\r\n      {{profiles}}\r\n      <button id=\"fav-button\" mat-button>\r\n        <mat-icon class=\"fav\">star</mat-icon>\r\n      </button>\r\n    </span>\r\n  </mat-toolbar>\r\n\r\n  <div id=\"team-header\">\r\n    <span>\r\n      <img id=\"team-image\" src=\"./assets/img/team.jpg\">\r\n    </span>\r\n    <mat-card id=\"score-Info\">\r\n      <table>\r\n        <!-- <tr *ngFor=\"let teams of data.event.tournament.teams.team\">\r\n            \r\n            <ng-container *ngIf=\"teams.name == profiles\"> -->\r\n        <tr>\r\n          <th>Thru</th>test\r\n          <th>Today</th>null\r\n          <th>Total</th>test\r\n          <th>Rank</th>test\r\n          <!-- </ng-container> -->\r\n        </tr>\r\n      </table>\r\n    </mat-card>\r\n  </div>\r\n  <div class=\"scroll-main\">\r\n    <div class=\"scroll-child\">\r\n\r\n      <!-- Round one -->\r\n      <mat-expansion-panel id=\"team-expansion\">\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            Round One\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n\r\n        <div id=\"staticTable\">\r\n          <table>\r\n            <thead>\r\n              <tr>\r\n                <th>Holes</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n              <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                </tr>\r\n\r\n              </ng-container>\r\n            </tbody>\r\n\r\n          </table>\r\n        </div>\r\n        <div id=\"scrollingTable\">\r\n          <div class=\"scrollingCard\">\r\n            <table>\r\n              <thead>\r\n                <tr>\r\n                  <th>01</th>\r\n                  <th>02</th>\r\n                  <th>03</th>\r\n                  <th>04</th>\r\n                  <th>05</th>\r\n                  <th>06</th>\r\n                  <th>07</th>\r\n                  <th>08</th>\r\n                  <th>09</th>\r\n                  <th>Out</th>\r\n                  <th>10</th>\r\n                  <th>11</th>\r\n                  <th>12</th>\r\n                  <th>13</th>\r\n                  <th>14</th>\r\n                  <th>15</th>\r\n                  <th>16</th>\r\n                  <th>17</th>\r\n                  <th>18</th>\r\n                  <th>In</th>\r\n                  <th>Total</th>\r\n                </tr>\r\n              </thead>\r\n              <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n                <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                  <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                    <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes\r\n                      * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes\r\n                      * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes\r\n                      * 1)}}</td>\r\n                    <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes\r\n                      * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) +\r\n                      (playerdata.round[0].score[14].strokes * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[17].strokes\r\n                      * 1) + (playerdata.round[0].score[17].strokes * 1)}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes\r\n                      * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes\r\n                      * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes\r\n                      * 1) + (playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes\r\n                      * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) +\r\n                      (playerdata.round[0].score[14].strokes * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[16].strokes\r\n                      * 1) + (playerdata.round[0].score[17].strokes * 1)}}</td>\r\n                  </tr>\r\n                </ng-container>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </mat-expansion-panel>\r\n      <!-- </div> -->\r\n      <!-- </mat-card> -->\r\n\r\n      <!-- Round Two -->\r\n      <mat-expansion-panel id=\"team-expansion\">\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            Round Two\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n        <div id=\"staticTable\">\r\n          <table>\r\n            <thead>\r\n              <tr>\r\n                <th>Holes</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n              <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                </tr>\r\n\r\n              </ng-container>\r\n            </tbody>\r\n\r\n          </table>\r\n        </div>\r\n        <div id=\"scrollingTable\">\r\n          <div class=\"scrollingCard\">\r\n            <table>\r\n              <thead>\r\n                <tr>\r\n                  <th>01</th>\r\n                  <th>02</th>\r\n                  <th>03</th>\r\n                  <th>04</th>\r\n                  <th>05</th>\r\n                  <th>06</th>\r\n                  <th>07</th>\r\n                  <th>08</th>\r\n                  <th>09</th>\r\n                  <th>Out</th>\r\n                  <th>10</th>\r\n                  <th>11</th>\r\n                  <th>12</th>\r\n                  <th>13</th>\r\n                  <th>14</th>\r\n                  <th>15</th>\r\n                  <th>16</th>\r\n                  <th>17</th>\r\n                  <th>18</th>\r\n                  <th>In</th>\r\n                  <th>Total</th>\r\n                </tr>\r\n              </thead>\r\n              <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n                <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                  <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                    <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes\r\n                      * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes\r\n                      * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes\r\n                      * 1)}}</td>\r\n                    <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes\r\n                      * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) +\r\n                      (playerdata.round[1].score[14].strokes * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[17].strokes\r\n                      * 1) + (playerdata.round[1].score[17].strokes * 1)}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes\r\n                      * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes\r\n                      * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes\r\n                      * 1) + (playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes\r\n                      * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) +\r\n                      (playerdata.round[1].score[14].strokes * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[16].strokes\r\n                      * 1) + (playerdata.round[1].score[17].strokes * 1)}}</td>\r\n\r\n                  </tr>\r\n                </ng-container>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </mat-expansion-panel>\r\n\r\n\r\n      <!-- Round three -->\r\n      <mat-expansion-panel id=\"team-expansion\">\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            Round Three\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n        <div id=\"staticTable\">\r\n          <table>\r\n            <thead>\r\n              <tr>\r\n                <th>Holes</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n              <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                </tr>\r\n\r\n              </ng-container>\r\n            </tbody>\r\n\r\n          </table>\r\n        </div>\r\n        <div id=\"scrollingTable\">\r\n          <div class=\"scrollingCard\">\r\n            <table>\r\n              <thead>\r\n                <tr>\r\n                  <th>01</th>\r\n                  <th>02</th>\r\n                  <th>03</th>\r\n                  <th>04</th>\r\n                  <th>05</th>\r\n                  <th>06</th>\r\n                  <th>07</th>\r\n                  <th>08</th>\r\n                  <th>09</th>\r\n                  <th>Out</th>\r\n                  <th>10</th>\r\n                  <th>11</th>\r\n                  <th>12</th>\r\n                  <th>13</th>\r\n                  <th>14</th>\r\n                  <th>15</th>\r\n                  <th>16</th>\r\n                  <th>17</th>\r\n                  <th>18</th>\r\n                  <th>In</th>\r\n                  <th>Total</th>\r\n                </tr>\r\n              </thead>\r\n              <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n                <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                  <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                    <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes\r\n                      * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes\r\n                      * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes\r\n                      * 1)}}</td>\r\n                    <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes\r\n                      * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) +\r\n                      (playerdata.round[2].score[14].strokes * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[17].strokes\r\n                      * 1) + (playerdata.round[2].score[17].strokes * 1)}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes\r\n                      * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes\r\n                      * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes\r\n                      * 1) + (playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes\r\n                      * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) +\r\n                      (playerdata.round[2].score[14].strokes * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[16].strokes\r\n                      * 1) + (playerdata.round[2].score[17].strokes * 1)}}</td>\r\n\r\n                  </tr>\r\n                </ng-container>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </mat-expansion-panel>\r\n\r\n      <!-- Round Four -->\r\n\r\n      <mat-expansion-panel id=\"team-expansion\">\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            Round Four\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n        <div id=\"staticTable\">\r\n          <table>\r\n            <thead>\r\n              <tr>\r\n                <th>Holes</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n              <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                </tr>\r\n\r\n              </ng-container>\r\n            </tbody>\r\n\r\n          </table>\r\n        </div>\r\n        <div id=\"scrollingTable\">\r\n          <div class=\"scrollingCard\">\r\n            <table>\r\n              <thead>\r\n                <tr>\r\n                  <th>01</th>\r\n                  <th>02</th>\r\n                  <th>03</th>\r\n                  <th>04</th>\r\n                  <th>05</th>\r\n                  <th>06</th>\r\n                  <th>07</th>\r\n                  <th>08</th>\r\n                  <th>09</th>\r\n                  <th>Out</th>\r\n                  <th>10</th>\r\n                  <th>11</th>\r\n                  <th>12</th>\r\n                  <th>13</th>\r\n                  <th>14</th>\r\n                  <th>15</th>\r\n                  <th>16</th>\r\n                  <th>17</th>\r\n                  <th>18</th>\r\n                  <th>In</th>\r\n                  <th>Total</th>\r\n                </tr>\r\n              </thead>\r\n              <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n                <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                  <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                    <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes\r\n                      * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes\r\n                      * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes\r\n                      * 1)}}</td>\r\n                    <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes\r\n                      * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) +\r\n                      (playerdata.round[3].score[14].strokes * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[17].strokes\r\n                      * 1) + (playerdata.round[3].score[17].strokes * 1)}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes\r\n                      * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes\r\n                      * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes\r\n                      * 1) + (playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes\r\n                      * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) +\r\n                      (playerdata.round[3].score[14].strokes * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[16].strokes\r\n                      * 1) + (playerdata.round[3].score[17].strokes * 1)}}</td>\r\n\r\n                  </tr>\r\n                </ng-container>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </mat-expansion-panel>\r\n\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n<div id=\"live-main\" *ngIf=\"!hideall\">\r\n  <!-- <table matSort (matSortChange)=\"sortData($event)\">\r\n        <tr>\r\n         \r\n          <th mat-sort-header=\"position\">Pos</th>\r\n          <th>Name</th>\r\n        </tr>\r\n      \r\n        <tr *ngFor=\"let players of sortedData\">\r\n          <td>{{players.position}}</td>\r\n          <td>{{players.name}}</td>\r\n          <td>{{players.fat}}</td>\r\n          \r\n        </tr>\r\n      </table>\r\n   -->\r\n\r\n\r\n  <mat-toolbar id=\"live-search\">\r\n    <mat-form-field>\r\n      <input type=\"text\" matInput placeholder=\"search\" #box (keyup)=\"0\">\r\n    </mat-form-field>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n  </mat-toolbar>\r\n  <table id=\"live-table\">\r\n    <thead>\r\n      <tr id=\"live-table-header-title\">\r\n        <th></th>\r\n        <th>Pos</th>\r\n        <th>Team</th>\r\n        <th>Par</th>\r\n        <th>R1</th>\r\n        <th>R2</th>\r\n        <th>R3</th>\r\n        <th>R4</th>\r\n        <th>Total</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody id=\"player-tbody\" *ngFor=\"let teamdata of data.event.tournament.teams.team; let x = index;\" class=\"tbody \">\r\n      <ng-container *ngIf=\"teamdata.name == box.value || box.value == ''\">\r\n        <tr id=\"live-table-header\">\r\n          <td>\r\n            <button class=\"hide-btn\" (click)=\"hideStuff[x] = !hideStuff[x]\">\r\n              <mat-icon>expand_{{hideStuff[x] ? 'less' : 'more'}}</mat-icon>\r\n            </button>\r\n          </td>\r\n          <td>{{teamdata.totals.position}}</td>\r\n          <td>\r\n            <button class=\"\" (click)=\"hideall = !hideall; profiles = (teamdata.name) ;\" mat-button>\r\n              <img src=\"./assets/img/{{teamdata.name}}.png\" title=\"{{teamdata.name}}\">\r\n            </button>\r\n          </td>\r\n          <ng-container *ngIf=\"teamdata.totals.totaltopar[0] == '+'\">\r\n            <td id=\"parblue\">{{teamdata.totals.totaltopar}}</td>\r\n          </ng-container>\r\n          <ng-container *ngIf=\"teamdata.totals.totaltopar[0] == '-'\">\r\n            <td id=\"parred\">{{teamdata.totals.totaltopar}}</td>\r\n          </ng-container>\r\n          <ng-container *ngIf=\"teamdata.totals.totaltopar[0] != '-' && teamdata.totals.totaltopar[0] != '+'\">\r\n            <td>{{teamdata.totals.totaltopar}}</td>\r\n          </ng-container>\r\n          <td>{{teamdata.round[0].strokes}}</td>\r\n          <td>{{teamdata.round[1].strokes}}</td>\r\n          <td>{{teamdata.round[2].strokes}}</td>\r\n          <td>{{teamdata.round[3].strokes}}</td>\r\n          <td>\r\n            <span id=\"total\">{{(teamdata.round[0].strokes * 1) + (teamdata.round[1].strokes * 1) + (teamdata.round[2].strokes * 1) + (teamdata.round[3].strokes\r\n              * 1)}}</span>\r\n          </td>\r\n        </tr>\r\n        <ng-container *ngIf=\"hideStuff[x]\">\r\n          <tr class=\"player\" *ngFor=\"let players of data.event.tournament.players.player\">\r\n            <ng-container *ngIf=\"teamdata.name == players.teamname\">\r\n              <ng-container *ngIf=\"players.totals.status == 'ok'\">\r\n                <td></td>\r\n                <td>{{players.totals.position}}</td>\r\n                <td>{{players.firstname}} {{players.lastname}}</td>\r\n\r\n                <td *ngIf=\"players.totals.totaltopar[0] == '+'\" id=\"parblue\">{{players.totals.totaltopar}}</td>\r\n                <td *ngIf=\"players.totals.totaltopar[0] == '-'\" id=\"parred\">{{players.totals.totaltopar}}</td>\r\n                <!-- <td *ngFor=\"let loop of [0,1,2,4,5,6,7,8]\">{{players.round[0].score[loop].strokes}}</td> -->\r\n                <td>{{players.round[0].strokes}}</td>\r\n                <td>{{players.round[1].strokes}}</td>\r\n                <td>{{players.round[2].strokes}}</td>\r\n                <td>{{players.round[3].strokes}}</td>\r\n                <td id=\"total\">{{(players.round[0].strokes * 1) + (players.round[1].strokes * 1) + (players.round[2].strokes * 1) + (players.round[3].strokes\r\n                  * 1)}}</td>\r\n              </ng-container>\r\n            </ng-container>\r\n          </tr>\r\n        </ng-container>\r\n      </ng-container>\r\n    </tbody>\r\n  </table>\r\n  <!-- *ngFor=\"let team of data.event.tournament.players.player -->\r\n\r\n  <!--  -->\r\n\r\n  <!--player 1-->\r\n  <mat-divider></mat-divider>\r\n</div>"
 
 /***/ }),
 
@@ -2508,7 +2717,7 @@ module.exports = "<div id=\"main\" *ngIf=\"hideall\">\r\n      <mat-toolbar id=\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#live-main {\n  margin-bottom: 31%; }\n\n#live-table {\n  font-size: 75%;\n  width: 100%;\n  border-collapse: collapse; }\n\n#live-table-header-title {\n  height: 40px;\n  text-align: center; }\n\n#live-table-header {\n  text-align: center; }\n\n.player {\n  text-align: center; }\n\n.scroll-main {\n  height: 100%;\n  margin-top: 3%;\n  overflow: hidden; }\n\n.scroll-child {\n  height: 250px;\n  overflow-y: scroll; }\n\n.hide-btn {\n  min-width: 1%;\n  background-color: Transparent;\n  background-repeat: no-repeat;\n  border: none;\n  cursor: pointer;\n  overflow: hidden;\n  outline: none; }\n\n.roundCard {\n  margin: 2%; }\n\n.roundCard span {\n  font-size: 75%; }\n\n#live-search {\n  width: 100%; }\n\n#live-search mat-form-field {\n  width: 45%;\n  font-size: 68%; }\n\n#total {\n  color: red; }\n\n#parblue {\n  color: blue; }\n\n#parred {\n  color: red; }\n\n#player-tbody:nth-child(even) {\n  background: #adebad; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.fav {\n  color: #cccc00; }\n\n#fav-button {\n  min-width: 1%; }\n\n#team-header-toolbar #title {\n  width: 100%;\n  font-size: 130%; }\n\n#team-header {\n  text-align: center; }\n\n#score-Info table {\n  width: 100%;\n  text-align: center; }\n\n#team-image {\n  width: 50%;\n  height: 50%;\n  margin: auto; }\n\n#main {\n  margin-bottom: 30%; }\n\n#team-body {\n  margin-bottom: 5%; }\n\n.static-table {\n  width: 40%;\n  float: left;\n  table-layout: fixed;\n  border-collapse: collapse;\n  white-space: nowrap;\n  overflow: hidden; }\n\n.static-table th {\n  font-size: 120%;\n  text-align: left; }\n\n.static-table td {\n  font-size: 100%;\n  text-align: left; }\n\n.scrolling-wrapper {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.scroll-table {\n  width: 100%;\n  border-collapse: collapse; }\n\n.scroll-table th {\n  font-size: 120%;\n  text-align: center; }\n\n.scroll-table td {\n  font-size: 100%;\n  text-align: center; }\n"
+module.exports = "#live-main {\n  margin-bottom: 31%; }\n\n#staticTable {\n  width: 40%;\n  float: left; }\n\n#scrollingTable {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  text-align: center; }\n\n.scrollingCard {\n  display: inline-block; }\n\n#live-table {\n  font-size: 75%;\n  width: 100%;\n  border-collapse: collapse; }\n\n#live-table-header-title {\n  height: 40px;\n  text-align: center; }\n\n#live-table-header {\n  text-align: center; }\n\n.player {\n  text-align: center; }\n\n.scroll-main {\n  height: 100%;\n  margin-top: 3%;\n  overflow: hidden; }\n\n.scroll-child {\n  height: 250px;\n  overflow-y: scroll; }\n\n.hide-btn {\n  min-width: 1%;\n  background-color: Transparent;\n  background-repeat: no-repeat;\n  border: none;\n  cursor: pointer;\n  overflow: hidden;\n  outline: none; }\n\n.roundCard {\n  margin: 2%; }\n\n.roundCard span {\n  font-size: 75%; }\n\n#live-search {\n  width: 100%; }\n\n#live-search mat-form-field {\n  width: 45%;\n  font-size: 68%; }\n\n#total {\n  color: red; }\n\n#parblue {\n  color: blue; }\n\n#parred {\n  color: red; }\n\n#player-tbody:nth-child(even) {\n  background: #adebad; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.fav {\n  color: #cccc00; }\n\n#fav-button {\n  min-width: 1%; }\n\n#team-header-toolbar #title {\n  width: 100%;\n  font-size: 130%; }\n\n#team-header {\n  text-align: center; }\n\n#score-Info table {\n  width: 100%;\n  text-align: center; }\n\n#team-image {\n  width: 50%;\n  height: 50%;\n  margin: auto; }\n\n#team-expansion {\n  margin: 2%; }\n\n.static-table {\n  width: 40%;\n  float: left;\n  table-layout: fixed;\n  border-collapse: collapse;\n  white-space: nowrap;\n  overflow: hidden; }\n\n.static-table th {\n  font-size: 120%;\n  text-align: left; }\n\n.static-table td {\n  font-size: 100%;\n  text-align: left; }\n\n.scrolling-wrapper {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.scroll-table {\n  width: 100%;\n  border-collapse: collapse; }\n\n.scroll-table th {\n  font-size: 120%;\n  text-align: center; }\n\n.scroll-table td {\n  font-size: 100%;\n  text-align: center; }\n"
 
 /***/ }),
 
@@ -2777,7 +2986,7 @@ var TeamProfilesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<!-- <mat-toolbar id=\"transport-toolbar\">\r\n    <mat-form-field id=\"location-field\">\r\n        <mat-select placeholder=\"Choose an Area\" [(value)]=\"mainSelected\">\r\n            <mat-option value=\"Carton House\" class=\"mat-select\">Carton House</mat-option>\r\n            <mat-option value=\"Maynooth University\" class=\"mat-select\">Maynooth University</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n\r\n    <mat-form-field class=\"stop-field\" *ngIf=\"mainSelected == 'Carton House'\">\r\n            <mat-placeholder>Choose a location</mat-placeholder>\r\n        <mat-select [(value)]=\"CartonSelected\">\r\n            <mat-option value=\"National Academy\" class=\"mat-select\">National Academy</mat-option>\r\n            <mat-option value=\"Hotel Reception\" class=\"mat-select\">Hotel Reception</mat-option>\r\n            <mat-option value=\"Club House Roundabout\" class=\"mat-select\">Club House Roundabout</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"stop-field\" *ngIf=\"mainSelected == 'Maynooth University'\">\r\n            <mat-placeholder >Choose a location</mat-placeholder>\r\n         <mat-select [(value)]=\"MaynoothSelected\">\r\n            <mat-option value=\"North Campus Apartment Complex\" class=\"mat-select\">North Campus Apartment Complex</mat-option>\r\n            <mat-option value=\"Nort Campus Phonenix Restaurant\" class=\"mat-select\">North Campus Phonenix Restaurant</mat-option>\r\n            <mat-option value=\"North Campus Pedestrian crossing\" class=\"mat-select\">North Campus Pedestrian crossing</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n</mat-toolbar>\r\n\r\n<agm-map *ngIf=\"mainSelected == 'Carton House'\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\" [zoom]=\"zoom\"\r\n    [mapTypeId]=\"'hybrid'\" disableDefaultUI=\"true\">\r\n\r\n    <agm-marker *ngIf=\"mainSelected == 'Carton House' && CartonSelected == null\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\"></agm-marker>\r\n\r\n    <div *ngIf=\"CartonSelected == 'National Academy'\">\r\n        <agm-marker [latitude]=\"NationalAcademylat\" [longitude]=\"NationalAcademylng\" ></agm-marker>\r\n    </div>\r\n\r\n    <div *ngIf=\"CartonSelected == 'Hotel Reception'\">\r\n        <agm-marker [latitude]=\"HotelReceptionlat\" [longitude]=\"HotelReceptionlng\"></agm-marker>\r\n    </div>\r\n\r\n    <div *ngIf=\"CartonSelected == 'Club House Roundabout'\">\r\n        <agm-marker [latitude]=\"ClubHouseRoundaboutlat\" [longitude]=\"ClubHouseRoundaboutlng\"></agm-marker>\r\n    </div>\r\n</agm-map>\r\n\r\n<agm-map *ngIf=\"mainSelected == 'Maynooth University'\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\" [zoom]=\"zoom\"\r\n    [mapTypeId]=\"'hybrid'\" disableDefaultUI=\"true\">\r\n\r\n    <agm-marker *ngIf=\"mainSelected == 'Maynooth University' && MaynoothSelected == null\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\"></agm-marker>\r\n\r\n    <div *ngIf=\"MaynoothSelected == 'North Campus Apartment Complex'\">\r\n        <agm-marker [latitude]=\"ApartmentComplexlat\" [longitude]=\"ApartmentComplexlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"MaynoothSelected == 'Nort Campus Phonenix Restaurant'\">\r\n        <agm-marker [latitude]=\"PhoenixRestaurantlat\" [longitude]=\"PhoenixRestaurantlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"MaynoothSelected == 'North Campus Pedestrian crossing'\">\r\n        <agm-marker [latitude]=\"PedestrianCrosslat\" [longitude]=\"PedestrianCrosslng\"></agm-marker>\r\n    </div>\r\n</agm-map> -->\r\n\r\n<iframe width=\"640\" height=\"360\" src=\"https://gaming.youtube.com/embed/live_stream?autoplay=1&controls=0&showinfo=0&autohide=1&channel=UCImGQwk9qTNjwhhdzzTKIdg\"  autoplay=true frameborder=\"0\"></iframe>\r\n\r\n    <!-- <div id=\"twitchStream\">\r\n                <iframe\r\n                src=\"http://player.twitch.tv/?channel=Patrickbookgolf&muted=true\"\r\n                height=\"720\"\r\n                width=\"1280\"\r\n                frameborder=\"1\"\r\n                scrolling=\"no\"\r\n                allowfullscreen=\"false\">\r\n            </iframe>\r\n    </div> -->\r\n    <div>\r\n\r\n    \r\n<mat-table #table [dataSource]=\"dataSource\" id=\"timetable\">\r\n\r\n    <ng-container matColumnDef=\"bus\">\r\n        <mat-header-cell *matHeaderCellDef> Bus </mat-header-cell>\r\n        <mat-cell @fade *matCellDef=\"let bus\"> {{bus.position}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"times\">\r\n        <mat-header-cell *matHeaderCellDef> Times </mat-header-cell>\r\n        <mat-cell @fade *matCellDef=\"let times\"> {{times.name}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\r\n    <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\r\n</mat-table>\r\n</div>"
+module.exports = "<div class=\"centre\">\r\n  <h3>Currently awaiting Kinesis API for bus tracking.</h3>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2788,7 +2997,7 @@ module.exports = "\r\n<!-- <mat-toolbar id=\"transport-toolbar\">\r\n    <mat-fo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".stop-field, #location-field {\n  width: 45%;\n  font-size: 68%; }\n\nagm-map {\n  height: 200px;\n  width: 100%; }\n\n#timetable {\n  text-align: center; }\n\n#tabs {\n  text-align: center; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\niframe {\n  max-width: 99% !important;\n  max-height: 50% !important; }\n"
+module.exports = "h3 {\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  text-align: center; }\n\n.centre {\n  position: absolute;\n  top: 40%; }\n"
 
 /***/ }),
 
@@ -3093,7 +3302,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\BookGolf365\Desktop\part 2\Project_WAGC\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\HappyUser\Project_WAGC-4\src\main.ts */"./src/main.ts");
 
 
 /***/ })
