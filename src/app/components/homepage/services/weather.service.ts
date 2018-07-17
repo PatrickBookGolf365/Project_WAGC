@@ -38,7 +38,7 @@ export class WeatherService {
 export class HomeNewsService {
 
 
-    private _homeNewsUrl = 'http://news.bookgolf365.ie/news.json';
+    private _homeNewsUrl = 'http://watc.bookgolf365.ie/news.json';
 
     constructor(private _http: HttpClient) {}
 

@@ -1,3 +1,20 @@
+body{
+  overflow: hidden;
+  height: 100%;
+}
+.main{
+  height: 100vh;
+  overflow-y: scroll;
+}
 .mat-accordion{
     height: 10%;
+}
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
 }
