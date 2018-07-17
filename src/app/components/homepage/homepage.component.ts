@@ -28,6 +28,7 @@ export class HomepageComponent implements OnInit {
   instaFeed;
   homeNews = [];
   forecast_repeat;
+  step = 0;
 
   constructor(private _weatherService: WeatherService,
               private _homeNewsService: HomeNewsService,
@@ -66,4 +67,16 @@ export class HomepageComponent implements OnInit {
       },
       error => this.errorMessage = <any>error);
    }
+
+   setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
 }

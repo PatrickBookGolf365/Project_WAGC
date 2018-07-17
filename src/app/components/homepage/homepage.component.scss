@@ -125,3 +125,15 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
     margin: 1%;
     margin-top: 2%;
 }
+.mat-accordion{
+  height: 10%;
+}
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+justify-content: space-between;
+align-items: center;
+}

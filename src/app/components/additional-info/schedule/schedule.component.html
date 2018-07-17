@@ -1,95 +1,437 @@
-<mat-toolbar class="mat-toolbar-add-info">my app</mat-toolbar>
-
-<mat-accordion class="mat-accordion">
-    <mat-expansion-panel (opened)="panelOpenState = true"
-                        (closed)="panelOpenState = false"
-                        class="mat-expansion-panel">
-    <mat-expansion-panel-header>
-
-    <mat-panel-title>
-        Friday 24th August
-    </mat-panel-title>
-
-    </mat-expansion-panel-header>
-      <mat-list role="list">
-          <mat-list-item role="listitem"><p>Women's Team Arrivals</p></mat-list-item>
-          <mat-list-item role="listitem"><p>Courses are Closed.</p> </mat-list-item>
-
-      </mat-list>
+<div class="main">
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Friday 24th August
+        </mat-panel-title>
+        <mat-panel-description>
+            Women's Team Arrivals
+        <mat-icon>account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+          <ul>
+            <li>
+              Women's Team Arrivals
+            </li>
+            <li>
+              Courses are Closed.
+            </li>
+          </ul>
+      <mat-action-row>
+        <button mat-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
     </mat-expansion-panel>
-</mat-accordion>
 
-<mat-accordion class="mat-accordion">
-    <mat-expansion-panel (opened)="panelOpenState = true"
-                        (closed)="panelOpenState = false"
-                        class="mat-expansion-panel">
-    <mat-expansion-panel-header>
-
-    <mat-panel-title>
-        Saturday 25th August
-    </mat-panel-title>
-
-    </mat-expansion-panel-header>
-      <mat-list role="list">
-          <mat-list-item role="listitem"><p>Women's Team Arrivals</p></mat-list-item>
-          <mat-list-item role="listitem"><p>Courses are Closed; Practice Facilities will be Open.</p></mat-list-item>
-          <mat-list-item role="listitem"><p>Women's Registration  (1000hrs-1800hrs)</p></mat-list-item>
-      </mat-list>
+    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            Saturday 25th August
+        </mat-panel-title>
+        <mat-panel-description>
+            Women's Registration
+          <mat-icon>map</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <ul>
+          <li>
+            Women's Team Arrivals
+          </li>
+          <li>
+            Courses are Closed.
+          </li>
+          <li>
+            Women's Registration  (10:00hrs-18:00hrs)
+          </li>
+      </ul>
+      <mat-action-row>
+          <button mat-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-button color="primary" (click)="nextStep()">Next</button>
+        </mat-action-row>
     </mat-expansion-panel>
-</mat-accordion>
 
-<mat-accordion class="mat-accordion">
-    <mat-expansion-panel (opened)="panelOpenState = true"
-                        (closed)="panelOpenState = false"
-                        class="mat-expansion-panel">
-    <mat-expansion-panel-header>
-
-    <mat-panel-title>
-        Sunday 26th August 
-    </mat-panel-title>
-
-    </mat-expansion-panel-header>
-      <mat-list role="list">
-          <mat-list-item role="listitem"><p>Courses are Closed; Teams can walk courses and Practice Facilities will be Open. </p></mat-list-item>
-          <mat-list-item role="listitem"><p>Women's Registration (0800hrs-1800hrs)</p></mat-list-item>
-      </mat-list>
+    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            Sunday 26th August
+        </mat-panel-title>
+        <mat-panel-description>
+            Women's Registration
+          <mat-icon>date_range</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <ul>
+          <li>
+            Courses are Closed; Teams can walk courses and Practice Facilities will be Open.
+          </li>
+          <li>
+            Women's Registration  (08:00hrs-18:00hrs)
+          </li>
+      </ul>
+      <mat-action-row>
+        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
     </mat-expansion-panel>
-</mat-accordion>
 
-<mat-accordion class="mat-accordion">
-    <mat-expansion-panel (opened)="panelOpenState = true"
-                        (closed)="panelOpenState = false"
-                        class="mat-expansion-panel">
+    <mat-expansion-panel [expanded]="step === 3" (opened)="setStep(3)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+              Monday 27th August
+          </mat-panel-title>
+          <mat-panel-description>
+            Women's Practice Round
+          <mat-icon>date_range</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <ul>
+            <li>
+              Team Captains' Meeting (16:00hrs, Carton House Kildare Suites on first floor)
+            </li>
+        </ul>
+        <mat-action-row>
+          <button mat-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-button color="primary" (click)="nextStep()">Next</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel [expanded]="step === 4" (opened)="setStep(4)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Tuesday 28th August
+            </mat-panel-title>
+            <mat-panel-description>
+              Women's Practice Round
+            <mat-icon>date_range</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <ul>
+              <li>
+                Referee's Meeting (1100hrs, Carton House Kildare Suites on first floor)
+              </li>
+              <li>
+                  Women's Team Photographs (Tyrconnell Room near Carton House courtyard, timetable TBC)
+              </li>
+              <li>
+                  Women's Opening Ceremony, followed by reception (Carton House)
+              </li>
+          </ul>
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" (click)="nextStep()">Next</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="step === 5" (opened)="setStep(5)" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                  Wednesday 29th August
+              </mat-panel-title>
+              <mat-panel-description>
+                  Espirito Santo Trophy, First Round
+              <mat-icon>date_range</mat-icon>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <ul>
+                <li>
+                    Espirito Santo Trophy, First Round
+                </li>
+            </ul>
+            <mat-action-row>
+              <button mat-button color="warn" (click)="prevStep()">Previous</button>
+              <button mat-button color="primary" (click)="nextStep()">Next</button>
+            </mat-action-row>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel [expanded]="step === 6" (opened)="setStep(6)" hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Thursday 30th August
+                </mat-panel-title>
+                <mat-panel-description>
+                    Espirito Santo Trophy, Second Round
+                <mat-icon>date_range</mat-icon>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <ul>
+                  <li>
+              Espirito Santo Trophy, Second Round
+            </li>
+          </ul>
+        <mat-action-row>
+      <button mat-button color="warn" (click)="prevStep()">Previous</button>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="step === 7" (opened)="setStep(7)" hideToggle>
     <mat-expansion-panel-header>
-
-    <mat-panel-title>
-        Monday 27th August 
-    </mat-panel-title>
-
+      <mat-panel-title>
+         Friday 31st August
+      </mat-panel-title>
+      <mat-panel-description>
+        Espirito Santo Trophy, Third Round
+      <mat-icon>date_range</mat-icon>
+    </mat-panel-description>
     </mat-expansion-panel-header>
-      <mat-list role="list">
-          <mat-list-item role="listitem"><p>Women's Practice Round</p></mat-list-item>
-          <mat-list-item role="listitem"><p>Team Captains' Meeting (1600hrs, Carton House Kildare Suites on first floor)</p></mat-list-item>
-      </mat-list>
-    </mat-expansion-panel>
-</mat-accordion>
+      <ul>
+        <li>
+          Espirito Santo Trophy, Third Round
+       </li>
+    </ul>
+  <mat-action-row>
+    <button mat-button color="warn" (click)="prevStep()">Previous</button>
+    <button mat-button color="primary" (click)="nextStep()">Next</button>
+  </mat-action-row>
+</mat-expansion-panel>
 
-<mat-accordion class="mat-accordion">
-    <mat-expansion-panel (opened)="panelOpenState = true"
-                        (closed)="panelOpenState = false"
-                        class="mat-expansion-panel">
+  <mat-expansion-panel [expanded]="step === 8" (opened)="setStep(8)" hideToggle>
     <mat-expansion-panel-header>
-
-    <mat-panel-title>
-        Tuesday 28th August
-    </mat-panel-title>
-
+      <mat-panel-title>
+        Saturday 1st September
+      </mat-panel-title>
+      <mat-panel-description>
+        Men's Team Arrivals
+      <mat-icon>date_range</mat-icon>
+    </mat-panel-description>
     </mat-expansion-panel-header>
-      <mat-list role="list">
-          <mat-list-item role="listitem"><p>Women's Practice Round</p></mat-list-item>
-          <mat-list-item role="listitem"><p>Referee's Meeting (1100hrs, Carton House Kildare Suites on first floor)</p></mat-list-item>
-          <mat-list-item role="listitem"><p>Women's Team Photographs (Tyrconnell Room near Carton House courtyard, timetable TBC)</p></mat-list-item>
-          <mat-list-item role="listitem"><p>Women's Opening Ceremony, followed by reception (Carton House)</p></mat-list-item>
-      </mat-list>
+    <ul>
+      <li>
+        Men's Registration (1000-1800hrs)
+      </li>
+      <li>
+        Espirito Santo Trophy, Fourth Round
+      </li>
+      <li>
+        Men's Teams may walk golf courses as spectators in Espirito Santo Trophy Final Round
+      </li>
+      <li>
+         Practice Facilities Open
+      </li>
+      <li>
+          Women's Awards Ceremony / Gala Dinner (Maynooth University)
+      </li>
+    </ul>
+  <mat-action-row>
+    <button mat-button color="warn" (click)="prevStep()">Previous</button>
+    <button mat-button color="primary" (click)="nextStep()">Next</button>
+  </mat-action-row>
+</mat-expansion-panel>
+
+<mat-expansion-panel [expanded]="step === 9" (opened)="setStep(9)" hideToggle>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+       Sunday 2nd September
+    </mat-panel-title>
+      <mat-panel-description>
+        Men's Team Arrivals
+      <mat-icon>date_range</mat-icon>
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+      <ul>
+        <li>
+          Men's Registration (1000-1800hrs)
+        </li>
+        <li>
+          Espirito Santo Trophy, Fourth Round
+        </li>
+        <li>
+          Men's Teams may walk golf courses as spectators in Espirito Santo Trophy Final Round
+        </li>
+        <li>
+          Practice Facilities Open
+        </li>
+        <li>
+          Women's Awards Ceremony / Gala Dinner (Maynooth University)
+        </li>
+      </ul>
+      <mat-action-row>
+        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+  </mat-expansion-panel>
+
+<mat-expansion-panel [expanded]="step === 10" (opened)="setStep(10)" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+          Monday 3rd September
+      </mat-panel-title>
+      <mat-panel-description>
+          IGF Biennial Meeting (Carton House - Carton Suites)
+      <mat-icon>date_range</mat-icon>
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+    <ul>
+      <li>
+        IGF Biennial Meeting (Carton House - Carton Suites)
+      </li>
+      <li>
+          Men's Practice Round
+     </li>
+      <li>
+          Team Captains' Meeting (1600hrs, Carton House Kildare Suites on first floor)
+      </li>
+      <li>
+          Delegates and Duffers Competition (Luttrellstown Castle)
+      </li>
+      <li>
+          Women's Team Departures
+      </li>
+    </ul>
+    <mat-action-row>
+      <button mat-button color="warn" (click)="prevStep()">Previous</button>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+
+    <mat-expansion-panel [expanded]="step === 11" (opened)="setStep(11)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Tuesday 4th September
+        </mat-panel-title>
+        <mat-panel-description>
+            Men's Practice Round
+        <mat-icon>date_range</mat-icon>
+      </mat-panel-description>
+      </mat-expansion-panel-header>
+       <ul>
+         <li>
+          Referee's Meeting (1100hrs, Carton House Kildare Suites on first floor)
+        </li>
+         <li>
+          Men's Team Photographs (Tyrconnell Room near Carton House courtyard, timetable TBC)
+        </li>
+        <li>
+          Men's Opening Ceremony, followed by reception (Carton House)
+        </li>
+         <li>
+          Practice Facilities Open
+        </li>
+      </ul>
+    <mat-action-row>
+      <button mat-button color="warn" (click)="prevStep()">Previous</button>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+
+    <mat-expansion-panel [expanded]="step === 12" (opened)="setStep(12)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Wednesday 5th September
+        </mat-panel-title>
+          <mat-panel-description>
+            Eisenhower Trophy, First Round
+          <mat-icon>date_range</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <ul>
+        <li>
+        Men's Registration (1000-1800hrs)
+       </li>
+        <li>
+          Espirito Santo Trophy, Fourth Round
+        </li>
+        <li>
+          Men's Teams may walk golf courses as spectators in Espirito Santo Trophy Final Round
+        </li>
+        <li>
+          Practice Facilities Open
+        </li>
+        <li>
+          Women's Awards Ceremony / Gala Dinner (Maynooth University)
+        </li>
+      </ul>
+       <mat-action-row>
+        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()">Next</button>
+      </mat-action-row>
+   </mat-expansion-panel>
+
+   <mat-expansion-panel [expanded]="step === 13" (opened)="setStep(13)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+          Friday 7th September
+         </mat-panel-title>
+         <mat-panel-description>
+           Men's Team Arrivals
+        <mat-icon>date_range</mat-icon>
+      </mat-panel-description>
+      </mat-expansion-panel-header>
+            <ul>
+              <li>
+                Men's Registration (1000-1800hrs)
+              </li>
+              <li>
+                Espirito Santo Trophy, Fourth Round
+              </li>
+              <li>
+                Men's Teams may walk golf courses as spectators in Espirito Santo Trophy Final Round
+              </li>
+              <li>
+                Practice Facilities Open
+              </li>
+              <li>
+                Women's Awards Ceremony / Gala Dinner (Maynooth University)
+              </li>
+          </ul>
+        <mat-action-row>
+          <button mat-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-button color="primary" (click)="nextStep()">Next</button>
+       </mat-action-row>
     </mat-expansion-panel>
+
+    <mat-expansion-panel [expanded]="step === 14" (opened)="setStep(14)" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Saturday 8th September
+         </mat-panel-title>
+         <mat-panel-description>
+           Men's Team Arrivals
+        <mat-icon>date_range</mat-icon>
+      </mat-panel-description>
+      </mat-expansion-panel-header>
+            <ul>
+              <li>
+                Eisenhower Trophy, Fourth Round
+              </li>
+              <li>
+                  Men's Awards Ceremony / Farewell Reception
+              </li>
+              <li>
+                Men's Teams may walk golf courses as spectators in Espirito Santo Trophy Final Round
+              </li>
+          </ul>
+        <mat-action-row>
+          <button mat-button color="warn" (click)="prevStep()">Previous</button>
+          <button mat-button color="primary" (click)="nextStep()">Next</button>
+       </mat-action-row>
+    </mat-expansion-panel>
+  
+
+  <mat-expansion-panel [expanded]="step === 15" (opened)="setStep(15)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+        Sunday 9th September​
+       </mat-panel-title>
+       <mat-panel-description>
+         Men's Team Arrivals
+      <mat-icon>date_range</mat-icon>
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+          <ul>
+            <li>
+                Completion of Eisenhower Trophy (if needed)
+            </li>
+            <li>
+                Men's Awards Ceremony (if needed)
+            </li>
+        </ul>
+      <mat-action-row>
+        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()">End</button>
+     </mat-action-row>
+  </mat-expansion-panel>
 </mat-accordion>
+</div>
