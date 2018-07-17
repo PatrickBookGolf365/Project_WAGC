@@ -98,14 +98,29 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
 
 #newsSeverity1{
     color: red;
-}
-
-#newsSeverity2{
+    padding-right: 15px;
+  }
+  
+  #newsSeverity2{
     color: orange;
-}
-#newsSeverity3{
+    padding-right: 15px;
+  }
+  #newsSeverity3{
     color: green;
-}
+    padding-right: 15px;
+  }
+  
+  #newsDesc{
+    width: 100%;
+      overflow:hidden; 
+      white-space:nowrap; 
+      text-overflow: ellipsis;
+    
+  }
+  
+  #newsTimeStamp{
+    padding-right: 15px;
+  }
 #newsUpdate{
     margin: 1%;
     margin-top: 2%;

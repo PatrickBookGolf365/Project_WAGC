@@ -7,15 +7,19 @@
         </button>
       </span>
       {{playerProfilesFirst}} {{playerProfilesLast}}
+      <span class="example-fill-remaining-space"></span>
       <button id="fav-button" mat-button>
-        <mat-icon class="fav">star</mat-icon>
+        <!-- <mat-icon class="fav">star</mat-icon> -->
       </button>
     </span>
   </mat-toolbar>
 
   <div id="team-header">
     <span>
-      <img id="team-image" src="./assets/img/team.jpg">
+        <span>
+            <img id="team-image" class="thumbnail-image" src="http://watc.bookgolf365.ie/images/{{teamProfiles | lowercase}}.png"
+            onError="this.src='./assets/img/team.jpg';"  alt="..." />
+        </span>
     </span>
     
     <!-- <div *ngFor="let playerdata of playerdata.event.tournament.players.player">
@@ -379,10 +383,11 @@
         <tr id="player-tr" *ngIf="playerdata.totals.status == 'ok'">
 
           <td>{{playerdata.totals.position}}</td>
-          <td (click)="hideall = !hideall; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+          <td (click)="hideall = !hideall; teamProfiles = (playerdata.teamname); playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
           <td>
 
-            <img src="./assets/img/{{playerdata.teamname}}.png" title="{{playerdata.teamname}}">
+              <img id="teamNameImage" class="thumbnail-image" src="http://watc.bookgolf365.ie/images/{{playerdata.teamname | lowercase}}.png"
+              onError="this.src='./assets/img/team.jpg';"  alt="..." />
 
           </td>
           <td>{{playerdata.round[0].strokes}}</td>

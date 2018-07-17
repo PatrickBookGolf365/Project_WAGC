@@ -1,11 +1,12 @@
 <div *ngIf="!hideTeam">
-<div *ngFor="let teamdata of data.event.tournament.teams.team">
-<mat-card (click)="mainProfiles = (teamdata.name); hideTeam = !hideTeam">
-  {{teamdata.name | lowercase}}
-  <span class="example-fill-remaining-space"></span>
-  <mat-icon>keyboard_arrow_right</mat-icon>
-  </mat-card>
-  </div>
+    <mat-list role="list"  *ngFor="let teamdata of data.event.tournament.teams.team">
+        <mat-list-item role="listitem" (click)="mainProfiles = (teamdata.name); hideTeam = !hideTeam">
+      
+          <span>{{teamdata.name}}</span>
+      
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        </mat-list>
   </div>
   <div *ngIf="hideTeam">
       <mat-toolbar id="team-header-toolbar">

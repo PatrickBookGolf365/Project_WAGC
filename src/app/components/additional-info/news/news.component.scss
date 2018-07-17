@@ -1,13 +1,30 @@
 #newsSeverity1{
   color: red;
+  padding-right: 15px;
 }
 
 #newsSeverity2{
   color: orange;
+  padding-right: 15px;
 }
 #newsSeverity3{
   color: green;
+  padding-right: 15px;
 }
+
+#newsDesc{
+  width: 100%;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+  
+}
+
+#newsTimeStamp{
+  padding-right: 15px;
+}
+
+
 
 
 #newsUpdate{

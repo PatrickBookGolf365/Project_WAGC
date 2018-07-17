@@ -11,7 +11,7 @@ import {INews} from './news';
 @Injectable()
 export class NewsService {
     
- public _newsUrl="http://news.bookgolf365.ie/news.json"
+ public _newsUrl="http://watc.bookgolf365.ie/news.json"
   
    constructor(public _http: HttpClient){}
     

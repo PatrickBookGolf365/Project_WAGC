@@ -1,85 +1,274 @@
-.fav{
- color: #cccc00;
+#live-main{
+    margin-bottom: 31%;
 }
 
-#fav-button{
-    min-width: 1%;
-}
-
-#team-header-toolbar #title{
-    width: 100%;
-    font-size: 130%;
-}
-
-
-#team-header{
-    text-align: center;
-    
-}
-
-#score-Info table{
-    width: 100%;
-   text-align: center;
-}
-
-
-#team-image{
-    width: 50%;
-    height: 50%;
-    margin: auto;
-    
-}
-
-#full-Table{
-    width: 100%;
-    height: 100%;
-}
-
-#static-Table th{
-    float: left;
-    font-size: 120%;
-   
-}
-
-
-#static-Table{
-    height: 100%;
-    width: 40%;
-    float: left;
-    font-size: 100%;
-}
-
-#moving-Table{
-    height: 100%;
-    float: left;
-   
-}
-
-.example-fill-remaining-space {
-  flex: 1 1 auto;
-}
-
-
-.playerScore th{
-    font-size: 120%;
-    text-align: center;
-}
-
-.playerScore td{
-    font-size: 100%;
-    text-align: center;
-}
-
-.scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-  
-    .card {
-      display: inline-block;
-    }
-  }
-
-#team-body{
+#main{
     margin-bottom: 30%;
 }
+
+.holeHeader{
+    text-align: center;
+  border: 1px solid black;
+   
+    
+ }
+
+.holeByHole{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.holeTotal{
+    text-align: center;
+    border: 1px solid black;
+    color: red;
+}
+
+ .holeBody{
+    text-align: center;
+    border: 1px solid black;
+ }
+
+
+#staticTable{
+    
+    width: 40%;
+    float: left;
+}
+
+#scrollingTable{
+   
+    overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-align: center;
+    
+}
+
+
+
+.scrollingCard{
+display: inline-block;
+width: 100%;
+
+}
+
+#live-table{
+    font-size: 75%;
+    width: 100%;
+    border-collapse: collapse;
+    
+    }
+    
+
+#live-table-header-title{
+    height: 40px;
+    text-align: center;
+    
+}
+
+#live-table-header{
+    text-align: center;
+}
+
+.player{
+   
+    text-align: center;
+}
+
+.scroll-main{
+    height: 100%;
+    margin-top: 3%;
+    overflow: hidden;
+    
+}
+
+.scroll-child{
+     height:250px;
+     overflow-y: scroll;
+    
+}
+
+.hide-btn{
+    min-width: 1%;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+   
+  }
+.roundCard{
+    margin: 2%;
+   
+}
+
+#player-expansion{
+    margin: 2%;
+}
+
+.roundCard span{
+    
+  
+    font-size:75%;
+}
+
+#live-search{
+    width: 100%;
+}
+
+#live-search mat-form-field{
+    width: 45%;
+    font-size: 68%;
+    
+}
+
+#total{
+    color: red;
+}
+
+#parblue{
+    color: blue;
+}
+
+#parred{
+    color: red;
+}
+
+#player-tbody:nth-child(even) {background: #adebad
+    }
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .fav{
+    color: #cccc00;
+   }
+   
+   #fav-button{
+       min-width: 1%;
+   }
+   
+   #team-header-toolbar #title{
+       width: 100%;
+       font-size: 130%;
+      
+   }
+   
+   
+   #team-header{
+       text-align: center;
+       
+   }
+   
+   #score-Info table{
+       
+       width: 100%;
+      text-align: center;
+   }
+   
+   
+   #team-image{
+       width: 50%;
+       height: 50%;
+       margin: auto;
+       
+   }
+   
+   
+   #teamNameImage{
+       width: 25%
+   }
+   
+   .example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+ 
+  
+   
+   .flexcontainer{
+       display: flex;
+   }
+   
+  
+   
+   #team-expansion{
+    margin: 2%;
+    
+   
+   }
+   
+    
+    //static table  
+
+    .static-table{
+        width: 40%;
+        float: left;
+        table-layout:fixed;
+        border-collapse: collapse;
+        white-space: nowrap;
+        overflow: hidden;
+        
+    }
+
+    .static-table th{
+        font-size: 120%;
+        text-align: left;
+    }
+
+    .static-table td{
+       
+        font-size: 100%;
+        text-align: left;
+        
+    }
+    
+    //scrolling table
+
+    .scrolling-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    
+    .scroll-table{
+        width: 100%;
+        border-collapse: collapse; 
+    }
+
+    .scroll-table th{
+        font-size: 120%;
+        text-align: center;
+    }
+    
+    .scroll-table td{
+        font-size: 100%;
+        text-align: center;
+    }

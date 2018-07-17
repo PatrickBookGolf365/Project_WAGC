@@ -7,6 +7,7 @@
         </button>
       </span>
       {{profiles}}
+      <span class="example-fill-remaining-space"></span>
       <button id="fav-button" mat-button>
         <mat-icon class="fav">star</mat-icon>
       </button>
@@ -14,12 +15,12 @@
   </mat-toolbar>
 
   <div id="team-header">
-    <span>
+    
         <span>
             <img id="team-image" class="thumbnail-image" src="http://watc.bookgolf365.ie/images/{{profiles | lowercase}}.png"
             onError="this.src='./assets/img/team.jpg';"  alt="..." />
         </span>
-    </span>
+    
    
     <!-- <mat-card id="score-Info"> -->
     <!-- <table> -->
@@ -58,7 +59,8 @@
             <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
               <ng-container *ngIf="playerdata.teamname == profiles">
                 <tr *ngIf="playerdata.totals.status == 'ok'">
-                  <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                    <!-- (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]" -->
+                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>
                 </tr>
 
               </ng-container>
@@ -142,7 +144,7 @@
             <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
                 <ng-container *ngIf="playerdata.teamname == profiles">
                   <tr *ngIf="playerdata.totals.status == 'ok'">
-                    <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                    <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>
                   </tr>
   
                 </ng-container>
@@ -225,7 +227,7 @@
             <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
                 <ng-container *ngIf="playerdata.teamname == profiles">
                   <tr *ngIf="playerdata.totals.status == 'ok'">
-                    <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                    <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>
                   </tr>
   
                 </ng-container>
@@ -308,7 +310,7 @@
             <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
                 <ng-container *ngIf="playerdata.teamname == profiles">
                   <tr *ngIf="playerdata.totals.status == 'ok'">
-                    <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                    <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>
                   </tr>
   
                 </ng-container>
@@ -467,7 +469,7 @@
           <mat-icon>arrow_back</mat-icon>
         </button>
       </span>
-      {{playerProfilesFirst}} {{playerProfilesLast}}
+      {{playerProfilesFirst}} {{playerProfilesLast}} {{teamProfiles}}
       <button id="fav-button" mat-button>
         <mat-icon class="fav">star</mat-icon>
       </button>
@@ -476,7 +478,9 @@
 
   <div id="team-header">
     <span>
-      <img id="team-image" src="./assets/img/team.jpg">
+        <img id="team-image" class="thumbnail-image" src="http://watc.bookgolf365.ie/images/{{teamProfiles | lowercase}}.png"
+            onError="this.src='./assets/img/team.jpg';"  alt="..." />
+    
     </span>
     <!-- <mat-card id="score-Info"> -->
     <!-- <table> -->
