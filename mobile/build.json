@@ -13,5 +13,21 @@
                 "LD_RUNPATH_SEARCH_PATHS = \"@executable_path/Frameworks\""
             ]
         }
-    }
-}
+    },
+
+    
+    
+        "android": {
+          "release": {
+            "keystore":"c:\\dev\\jd-release-key.keystore",
+            "storePassword":"bookgolf365",
+            "alias":"android-key",
+            "password":"bookgolf365",
+            "keystoreType":""
+          }
+        }
+      }
+
+    
+
+    

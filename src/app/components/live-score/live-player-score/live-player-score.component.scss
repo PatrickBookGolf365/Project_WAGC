@@ -6,6 +6,10 @@
 
 #player-tbody:nth-child(even) {background-color: #adebad}
 
+#player-expansion{
+    margin: 2%;
+}
+
 .example-fill-remaining-space {
     /* This fills the remaining space, by using flexbox. 
        Every toolbar row uses a flexbox row layout. */
@@ -37,6 +41,7 @@
     
 }
 
+
 #live-main{
     margin-bottom: 31%;
 }
@@ -53,7 +58,7 @@
     color: red;
 }
 
-tr:nth-child(even) {background: #56ab2f;  /* fallback for old browsers */
+#player-tr:nth-child(even) {background: #56ab2f;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
@@ -136,4 +141,27 @@ tr:nth-child(even) {background: #56ab2f;  /* fallback for old browsers */
 #team-body{
     margin-bottom: 5%;
   
+ }
+ .holeHeader{
+    text-align: center;
+  border: 1px solid black;
+   
+    
+ }
+
+.holeByHole{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.holeTotal{
+    text-align: center;
+    border: 1px solid black;
+    color: red;
+}
+
+ .holeBody{
+    text-align: center;
+    border: 1px solid black;
  }

@@ -1,8 +1,8 @@
-<div id="main" *ngIf="hideall">
+<div *ngIf="hideTeam">
   <mat-toolbar id="team-header-toolbar">
     <span id="title">
       <span>
-        <button class="hide-btn" (click)="hideall = !hideall">
+        <button class="hide-btn" (click)="hideTeam = !hideTeam; hideScore = !hideScore">
           <mat-icon>arrow_back</mat-icon>
         </button>
       </span>
@@ -15,31 +15,36 @@
 
   <div id="team-header">
     <span>
-      <img id="team-image" src="./assets/img/team.jpg">
+        <span>
+            <img id="team-image" class="thumbnail-image" src="http://watc.bookgolf365.ie/images/{{profiles | lowercase}}.png"
+            onError="this.src='./assets/img/team.jpg';"  alt="..." />
+        </span>
     </span>
-    <mat-card id="score-Info">
-      <table>
-        <!-- <tr *ngFor="let teams of data.event.tournament.teams.team">
+   
+    <!-- <mat-card id="score-Info"> -->
+    <!-- <table> -->
+    <!-- <tr *ngFor="let teams of data.event.tournament.teams.team">
             
             <ng-container *ngIf="teams.name == profiles"> -->
-        <tr>
+    <!-- <tr>
           <th>Thru</th>test
           <th>Today</th>null
           <th>Total</th>test
-          <th>Rank</th>test
-          <!-- </ng-container> -->
-        </tr>
+          <th>Rank</th>test -->
+    <!-- </ng-container> -->
+    <!-- </tr>
       </table>
-    </mat-card>
+    </mat-card> -->
   </div>
   <div class="scroll-main">
     <div class="scroll-child">
 
       <!-- Round one -->
+      
       <mat-expansion-panel id="team-expansion">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            Round One
+                <td>Round One</td>
           </mat-panel-title>
         </mat-expansion-panel-header>
 
@@ -53,7 +58,7 @@
             <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
               <ng-container *ngIf="playerdata.teamname == profiles">
                 <tr *ngIf="playerdata.totals.status == 'ok'">
-                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                  <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
                 </tr>
 
               </ng-container>
@@ -123,6 +128,7 @@
       <mat-expansion-panel id="team-expansion">
         <mat-expansion-panel-header>
           <mat-panel-title>
+             
             Round Two
           </mat-panel-title>
         </mat-expansion-panel-header>
@@ -134,13 +140,13 @@
               </tr>
             </thead>
             <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
-              <ng-container *ngIf="playerdata.teamname == profiles">
-                <tr *ngIf="playerdata.totals.status == 'ok'">
-                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>
-                </tr>
-
-              </ng-container>
-            </tbody>
+                <ng-container *ngIf="playerdata.teamname == profiles">
+                  <tr *ngIf="playerdata.totals.status == 'ok'">
+                    <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                  </tr>
+  
+                </ng-container>
+              </tbody>
 
           </table>
         </div>
@@ -206,7 +212,7 @@
       <mat-expansion-panel id="team-expansion">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            Round Three
+              Round Three
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div id="staticTable">
@@ -217,13 +223,13 @@
               </tr>
             </thead>
             <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
-              <ng-container *ngIf="playerdata.teamname == profiles">
-                <tr *ngIf="playerdata.totals.status == 'ok'">
-                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>
-                </tr>
-
-              </ng-container>
-            </tbody>
+                <ng-container *ngIf="playerdata.teamname == profiles">
+                  <tr *ngIf="playerdata.totals.status == 'ok'">
+                    <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                  </tr>
+  
+                </ng-container>
+              </tbody>
 
           </table>
         </div>
@@ -289,7 +295,7 @@
       <mat-expansion-panel id="team-expansion">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            Round Four
+              Round Four
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div id="staticTable">
@@ -300,13 +306,13 @@
               </tr>
             </thead>
             <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
-              <ng-container *ngIf="playerdata.teamname == profiles">
-                <tr *ngIf="playerdata.totals.status == 'ok'">
-                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>
-                </tr>
-
-              </ng-container>
-            </tbody>
+                <ng-container *ngIf="playerdata.teamname == profiles">
+                  <tr *ngIf="playerdata.totals.status == 'ok'">
+                    <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                  </tr>
+  
+                </ng-container>
+              </tbody>
 
           </table>
         </div>
@@ -315,15 +321,15 @@
             <table>
               <thead>
                 <tr>
-                  <th>01</th>
-                  <th>02</th>
-                  <th>03</th>
-                  <th>04</th>
-                  <th>05</th>
-                  <th>06</th>
-                  <th>07</th>
-                  <th>08</th>
-                  <th>09</th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                  <th>9</th>
                   <th>Out</th>
                   <th>10</th>
                   <th>11</th>
@@ -367,13 +373,397 @@
         </div>
       </mat-expansion-panel>
 
+  
+      <!-- <mat-expansion-panel id="team-expansion" *ngFor="let roundLoop of [0,1,2,3]">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                  <td>Round {{roundLoop + 1}}</td>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+  
+          <div id="staticTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Holes</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+                <ng-container *ngIf="playerdata.teamname == profiles">
+                  <tr *ngIf="playerdata.totals.status == 'ok'">
+                    <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                  </tr>
+  
+                </ng-container>
+              </tbody>
+  
+            </table>
+          </div>
+          <div id="scrollingTable">
+            <div class="scrollingCard">
+              <table>
+                <thead>
+                  <tr>
+                    <th>01</th>
+                    <th>02</th>
+                    <th>03</th>
+                    <th>04</th>
+                    <th>05</th>
+                    <th>06</th>
+                    <th>07</th>
+                    <th>08</th>
+                    <th>09</th>
+                    <th>Out</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>In</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+                  <ng-container *ngIf="playerdata.teamname == profiles">
+                    <tr *ngIf="playerdata.totals.status == 'ok'">
+                      <td *ngFor="let loop of [0,1,2,3,4,5,6,7,8]">{{playerdata.round[roundLoop].score[0].strokes}}</td>
+                      <td id="total">{{(playerdata.round[roundLoop].score[0].strokes * 1) + (playerdata.round[roundLoop].score[1].strokes * 1) + (playerdata.round[roundLoop].score[2].strokes
+                        * 1) + (playerdata.round[roundLoop].score[3].strokes * 1) + (playerdata.round[roundLoop].score[4].strokes * 1) + (playerdata.round[roundLoop].score[5].strokes
+                        * 1) + (playerdata.round[roundLoop].score[6].strokes * 1) + (playerdata.round[roundLoop].score[7].strokes * 1) + (playerdata.round[roundLoop].score[8].strokes
+                        * 1)}}</td>
+                      <td *ngFor="let loop of [9,10,11,12,13,14,15,16,17]">{{playerdata.round[roundLoop].score[loop].strokes}}</td>
+                      <td id="total">{{(playerdata.round[roundLoop].score[9].strokes * 1) + (playerdata.round[roundLoop].score[10].strokes * 1) + (playerdata.round[roundLoop].score[11].strokes
+                        * 1) + (playerdata.round[roundLoop].score[12].strokes * 1) + (playerdata.round[roundLoop].score[13].strokes * 1) +
+                        (playerdata.round[roundLoop].score[14].strokes * 1) + (playerdata.round[roundLoop].score[15].strokes * 1) + (playerdata.round[roundLoop].score[17].strokes
+                        * 1) + (playerdata.round[roundLoop].score[17].strokes * 1)}}</td>
+                      <td id="total">{{(playerdata.round[roundLoop].score[0].strokes * 1) + (playerdata.round[roundLoop].score[1].strokes * 1) + (playerdata.round[roundLoop].score[2].strokes
+                        * 1) + (playerdata.round[roundLoop].score[3].strokes * 1) + (playerdata.round[roundLoop].score[4].strokes * 1) + (playerdata.round[roundLoop].score[5].strokes
+                        * 1) + (playerdata.round[roundLoop].score[6].strokes * 1) + (playerdata.round[roundLoop].score[7].strokes * 1) + (playerdata.round[roundLoop].score[8].strokes
+                        * 1) + (playerdata.round[roundLoop].score[9].strokes * 1) + (playerdata.round[roundLoop].score[10].strokes * 1) + (playerdata.round[roundLoop].score[11].strokes
+                        * 1) + (playerdata.round[roundLoop].score[12].strokes * 1) + (playerdata.round[roundLoop].score[13].strokes * 1) +
+                        (playerdata.round[roundLoop].score[14].strokes * 1) + (playerdata.round[roundLoop].score[15].strokes * 1) + (playerdata.round[roundLoop].score[16].strokes
+                        * 1) + (playerdata.round[roundLoop].score[17].strokes * 1)}}</td>
+                    </tr>
+                  </ng-container>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </mat-expansion-panel> -->
+
 
     </div>
   </div>
 </div>
+<div id="main" *ngIf="hidePlayer">
+  <mat-toolbar id="team-header-toolbar">
+    <span id="title">
+      <span>
+        <button class="hide-btn" (click)="hidePlayer = !hidePlayer;  hideScore = !hideScore">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+      </span>
+      {{playerProfilesFirst}} {{playerProfilesLast}}
+      <button id="fav-button" mat-button>
+        <mat-icon class="fav">star</mat-icon>
+      </button>
+    </span>
+  </mat-toolbar>
+
+  <div id="team-header">
+    <span>
+      <img id="team-image" src="./assets/img/team.jpg">
+    </span>
+    <!-- <mat-card id="score-Info"> -->
+    <!-- <table> -->
+    <!-- <tr *ngFor="let teams of data.event.tournament.teams.team">
+            
+            <ng-container *ngIf="teams.name == teamProfiles"> -->
+    <!-- <tr>
+            <th>Thru</th>test
+            <th>Today</th>null
+            <th>Total</th>test
+            <th>Rank</th>test -->
+    <!-- </ng-container> -->
+    <!-- </tr>
+        </table>
+      </mat-card> -->
+  </div>
+
+  <div *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+    <mat-expansion-panel id="player-expansion" *ngIf="playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Round One
+          <br> Total Score: {{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes
+          * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes
+          * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes
+          * 1) + (playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes
+          * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) + (playerdata.round[0].score[14].strokes
+          * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[16].strokes * 1) + (playerdata.round[0].score[17].strokes
+          * 1)}}
+
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div id="playerScore">
+        <table class="holeByHole">
+          <thead>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>Out</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr *ngIf="playerdata.totals.status == 'ok'">
+              <td class="holeBody" *ngFor="let loop of [0,1,2,3,4,5,6,7,8]">{{playerdata.round[0].score[loop].strokes}}</td>
+              <td class="holeTotal">{{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes
+                * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes
+                * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes
+                * 1)}}</td>
+            </tr>
+            <br>
+            <tr>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              <th>In</th>
+            </tr>
+            <tr *ngIf="playerdata.totals.status == 'ok'">
+              <td class="holeBody" *ngFor="let loop of [9,10,11,12,13,14,15,16,17]">{{playerdata.round[0].score[loop].strokes}}
+                <sup>
+                  <sup>m</sup>
+                </sup>
+              </td>
+              <td class="holeTotal">{{(playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes
+                * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) + (playerdata.round[0].score[14].strokes
+                * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[16].strokes * 1) + (playerdata.round[0].score[17].strokes
+                * 1)}}</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </mat-expansion-panel>
+  </div>
 
 
-<div id="live-main" *ngIf="!hideall">
+  <div *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+    <mat-expansion-panel id="player-expansion" *ngIf="playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Round Two
+          <br> Total Score: {{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes
+          * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes
+          * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes
+          * 1) + (playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes
+          * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) + (playerdata.round[1].score[14].strokes
+          * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[16].strokes * 1) + (playerdata.round[1].score[17].strokes
+          * 1)}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div id="playerScore">
+        <table class="holeByHole">
+          <thead>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>Out</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr *ngIf="playerdata.totals.status == 'ok'">
+              <td class="holeBody" *ngFor="let loop of [0,1,2,3,4,5,6,7,8]">{{playerdata.round[1].score[loop].strokes}}</td>
+              <td class="holeTotal">{{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes
+                * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes
+                * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes
+                * 1)}}</td>
+            </tr>
+            <br>
+            <tr>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              <th>In</th>
+            </tr>
+            <tr *ngIf="playerdata.totals.status == 'ok'">
+              <td class="holeBody" *ngFor="let loop of [9,10,11,12,13,14,15,16,17]">{{playerdata.round[1].score[loop].strokes}}</td>
+              <td class="holeTotal">{{(playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes
+                * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) + (playerdata.round[1].score[14].strokes
+                * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[16].strokes * 1) + (playerdata.round[1].score[17].strokes
+                * 1)}}</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </mat-expansion-panel>
+  </div>
+
+  <div *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+    <mat-expansion-panel id="player-expansion" *ngIf="playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Round Three
+          <br> Total Score: {{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes
+          * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes
+          * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes
+          * 1) + (playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes
+          * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) + (playerdata.round[2].score[14].strokes
+          * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[16].strokes * 1) + (playerdata.round[2].score[17].strokes
+          * 1)}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div id="playerScore">
+        <table class="holeByHole">
+          <thead>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>Out</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngIf="playerdata.totals.status == 'ok'">
+              <td class="holeBody" *ngFor="let loop of [0,1,2,3,4,5,6,7,8]">{{playerdata.round[2].score[loop].strokes}}</td>
+              <td class="holeTotal">{{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes
+                * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes
+                * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes
+                * 1)}}</td>
+            </tr>
+            <br>
+            <tr>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              <th>In</th>
+            </tr>
+            <tr *ngIf="playerdata.totals.status == 'ok'">
+              <td class="holeBody" *ngFor="let loop of [9,10,11,12,13,14,15,16,17]">{{playerdata.round[2].score[loop].strokes}}</td>
+              <td class="holeTotal">{{(playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes
+                * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) + (playerdata.round[2].score[14].strokes
+                * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[16].strokes * 1) + (playerdata.round[2].score[17].strokes
+                * 1)}}</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </mat-expansion-panel>
+  </div>
+  <div *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+    <mat-expansion-panel id="player-expansion" *ngIf="playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Round Four
+          <br> Total Score: {{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes
+          * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes
+          * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes
+          * 1) + (playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes
+          * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) + (playerdata.round[3].score[14].strokes
+          * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[16].strokes * 1) + (playerdata.round[3].score[17].strokes
+          * 1)}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div id="playerScore">
+        <table class="holeByHole">
+          <thead>
+            <tr>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>Out</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngIf="playerdata.totals.status == 'ok'">
+              <td class="holeBody" *ngFor="let loop of [0,1,2,3,4,5,6,7,8]">{{playerdata.round[3].score[loop].strokes}}</td>
+              <td class="holeTotal">{{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes
+                * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes
+                * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes
+                * 1)}}</td>
+            </tr>
+            <br>
+            <tr>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              <th>In</th>
+            </tr>
+            <tr *ngIf="playerdata.totals.status == 'ok'">
+              <td class="holeBody" *ngFor="let loop of [9,10,11,12,13,14,15,16,17]">{{playerdata.round[3].score[loop].strokes}}</td>
+              <td class="holeTotal">{{(playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes
+                * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) + (playerdata.round[3].score[14].strokes
+                * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[16].strokes * 1) + (playerdata.round[3].score[17].strokes
+                * 1)}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-expansion-panel>
+  </div>
+</div>
+
+<div id="live-main" *ngIf="!hideScore">
   <!-- <table matSort (matSortChange)="sortData($event)">
         <tr>
          
@@ -392,8 +782,9 @@
 
 
   <mat-toolbar id="live-search">
+      <span class="example-fill-remaining-space"></span>
     <mat-form-field>
-      <input type="text" matInput placeholder="search" #box (keyup)="0">
+      <input type="text" matInput placeholder="Search for Team" #box (keyup)="0">
     </mat-form-field>
     <span class="example-fill-remaining-space"></span>
   </mat-toolbar>
@@ -421,9 +812,11 @@
           </td>
           <td>{{teamdata.totals.position}}</td>
           <td>
-            <button class="" (click)="hideall = !hideall; profiles = (teamdata.name) ;" mat-button>
-              <img src="./assets/img/{{teamdata.name}}.png" title="{{teamdata.name}}">
-            </button>
+           
+                <img (click)="hideTeam = !hideTeam;  hideScore = !hideScore; profiles = (teamdata.name) ;" id="teamNameImage" class="thumbnail-image" src="http://watc.bookgolf365.ie/images/{{teamdata.name | lowercase}}.png"
+                onError="this.src='./assets/img/team.jpg';"  alt="..." />
+            
+           
           </td>
           <ng-container *ngIf="teamdata.totals.totaltopar[0] == '+'">
             <td id="parblue">{{teamdata.totals.totaltopar}}</td>
@@ -449,7 +842,8 @@
               <ng-container *ngIf="players.totals.status == 'ok'">
                 <td></td>
                 <td>{{players.totals.position}}</td>
-                <td>{{players.firstname}} {{players.lastname}}</td>
+                <td (click)="hidePlayer = !hidePlayer; hideScore = !hideScore; teamProfiles = [players.teamname]; playerProfilesFirst = [players.firstname]; playerProfilesLast = [players.lastname]">
+                  {{players.firstname}} {{players.lastname}}</td>
 
                 <td *ngIf="players.totals.totaltopar[0] == '+'" id="parblue">{{players.totals.totaltopar}}</td>
                 <td *ngIf="players.totals.totaltopar[0] == '-'" id="parred">{{players.totals.totaltopar}}</td>

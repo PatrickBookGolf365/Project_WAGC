@@ -1,7 +1,8 @@
-<div id="headerImg">
+<!-- <div id="headerImg">
   <img src="./assets/img/WATC.jpg">
-</div>
+</div> -->
 <div id="homepage-body">
+ 
 <button mat-button (click)="metric = !metric">{{metric ? '&deg;C' : '&deg;F'}}</button>
     <div>
         <ng-container *ngIf="!metric">
@@ -189,7 +190,7 @@
         {{news.timeStamp}}
         {{news.content}} -->
 
-     <div id="content" *ngFor="let news of homeNews.update | slice:0:4; let i=index">
+     <!-- <div id="content" *ngFor="let news of homeNews.update | slice:0:4; let i=index">
 
             <div class="news-image-right" (activate)="onActivate($event)">
               <mat-icon id="newsSeverity{{news.severity}}">{{news.type}}</mat-icon>
@@ -207,29 +208,29 @@
 
             <mat-divider class="mat-elevation-z2"></mat-divider>
 
-      </div>
+      </div> -->
 
       <app-instagram-feed></app-instagram-feed>
 
 
-  <!-- <div id="newsUpdate" *ngFor="let news of homeNews.update">
-    <mat-expansion-panel  id="newsUpdate">
+  <div id="newsUpdate" *ngFor="let news of homeNews.update">
+    <mat-expansion-panel  id="newsUpdate" *ngIf="news.homepage == 'true'">
       <mat-expansion-panel-header>
         <mat-panel-title>
           <div class="box">
             <span>
-              <mat-icon id="newsSeverity{{homeNews.update[0].severity}}">{{homeNews.update[0].type}}</mat-icon>
+              <mat-icon id="newsSeverity{{news.severity}}">{{news.type}}</mat-icon>
             </span>
-            <span>{{homeNews.update[0].desc}}</span>
+            <span>{{news.desc}}</span>
           </div>
         </mat-panel-title>
         <mat-panel-description>
           <div class="box">
-            <span>10:30 am</span>
+            <span>{{news.timeStamp}}</span>
           </div>
         </mat-panel-description>
       </mat-expansion-panel-header>
-      {{homeNews.update[0].content}}
+      {{news.content}}
     </mat-expansion-panel>
-  </div> -->
+  </div>
 </div>

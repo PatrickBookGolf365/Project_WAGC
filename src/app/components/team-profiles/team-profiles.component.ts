@@ -9,15 +9,17 @@ declare var $:any;
 })
 export class TeamProfilesComponent implements OnInit {
 errorMessage: string;
-team;
+data;
 
   constructor(public _liveScoreService:LiveScoreService) { }
 
-  ngOnInit() {
-    this._liveScoreService.getTeam()
-    .subscribe(team => {
-      this.team = team;},
-      error => this.errorMessage=<any>error);
-  }
+  ngOnInit(){
+
+    this._liveScoreService.getRealJsonData()
+    .subscribe(data => {
+      this.data = data;},
+    error => this.errorMessage=<any>error);
+      }
+     
 
 }

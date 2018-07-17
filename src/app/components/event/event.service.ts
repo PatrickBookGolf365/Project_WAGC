@@ -8,9 +8,9 @@ import "rxjs/add/operator/do";
 @Injectable()
 export class YelpService {
 
-    public _yelpUrl = "https://api.yelp.com/v3/businesses/search?location=Dublin,Ireland"
+    public _yelpUrl = "https://api.yelp.com/v3/businesses/search?location=Dublin,Ireland";
     public _yelpBUrl = "https://api.yelp.com/v3/businesses?locale=en_IE";
-    public _LiveBus = ""
+   
 
     constructor(public _http: HttpClient) { }
 

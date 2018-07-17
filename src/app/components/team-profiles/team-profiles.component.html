@@ -1,1019 +1,383 @@
-<mat-expansion-panel *ngFor="let team of team">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-          {{team.team}}
-      </mat-panel-title>
-      </mat-expansion-panel-header>
-
-      
-<div id="team-wrapper">
-  <mat-toolbar id="team-header-toolbar">
-    <span id="title"> {{team.team}}</span>
-    <button id="fav-button" mat-button><mat-icon class="fav">star</mat-icon></button>
-  </mat-toolbar>
-  <div id="team-header">
-    <span>
-      <img id="team-image" src="./assets/img/team.jpg">
-    </span>
-    <mat-card id="score-Info">
-      <table>
-      <tr>
-        <th>Thru</th><td>F</td>
-        <th>Today</th><td>-13</td>
-        <th>Total</th><td>-38</td>
-        <th>Rank</th><td>1</td>
-      </tr>
-    </table>
-    </mat-card>
+<div *ngIf="!hideTeam">
+<div *ngFor="let teamdata of data.event.tournament.teams.team">
+<mat-card (click)="mainProfiles = (teamdata.name); hideTeam = !hideTeam">
+  {{teamdata.name | lowercase}}
+  <span class="example-fill-remaining-space"></span>
+  <mat-icon>keyboard_arrow_right</mat-icon>
+  </mat-card>
   </div>
- <mat-divider></mat-divider>
-  <div id="team-body">
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Round One
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <div id="full-Table">
-        <div >
-          <table>
-            <!-- Header 1/2 -->
-            <tr>
-              <th>Hole</th>
-            </tr>
-            <tr>
-              <td>Yards</td>
-            </tr>
-            <tr>
-              <td>Par</td>
-            </tr>
-            <tr>
-              <td>Cameron Davis</td>
-            </tr>
-            <tr>
-              <td>Curtis Luck</td>
-            </tr>
-            <tr>
-              <td>Harrison Endycott</td>
-            </tr>
-            <tr>
-              <td>Complete</td>
-            </tr>
-            <tr>
-              <td>Score Against Par</td>
-            </tr>
-          </table>
-        </div>
-        <div class="scrolling-wrapper">
-          <div id="moving-Table">
-            <div class="card">
-              <table class="playerScore">
-                <tr>
-                  <!-- Header 2/2 -->
-                  <th>1</th>
-                  <th>2</th>
-                  <th>3</th>
-                  <th>4</th>
-                  <th>5</th>
-                  <th>6</th>
-                  <th>7</th>
-                  <th>8</th>
-                  <th>9</th>
-                  <th>10</th>
-                  <th>Out</th>
-                  <th>11</th>
-                  <th>12</th>
-                  <th>13</th>
-                  <th>14</th>
-                  <th>15</th>
-                  <th>16</th>
-                  <th>17</th>
-                  <th>18</th>
-                  <th>In</th>
-                  <th>Total</th>
-                </tr>
-
-                <tr>
-                  <!-- Yards -->
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                </tr>
-
-                <tr>
-                  <!-- Par  -->
-                  <td>4</td>
-                  <td>4</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>36</td>
-                  <td>4</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>36</td>
-                  <td>72</td>
-                </tr>
-
-                <tr>
-                  <!-- Player1  -->
-                  <td>5</td>
-                  <td>4</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>3</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>34</td>
-                  <td>3</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>33</td>
-                  <td>67</td>
-                </tr>
-
-                <tr>
-                  <!-- Player2  -->
-                  <td>3</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>4</td>
-                  <td>2</td>
-                  <td>5</td>
-                  <td>35</td>
-                  <td>4</td>
-                  <td>2</td>
-                  <td>5</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>34</td>
-                  <td>69</td>
-                </tr>
-
-                <tr>
-                  <!-- Player3  -->
-                  <td>4</td>
-                  <td>6</td>
-                  <td>3</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>3</td>
-                  <td>3</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>33</td>
-                  <td>5</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>4</td>
-                  <td>35</td>
-                  <td>68</td>
-                </tr>
-
-                <tr>
-                  <!-- Round  -->
-                  <td>9</td>
-                  <td>10</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>6</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>67</td>
-                  <td>8</td>
-                  <td>6</td>
-                  <td>9</td>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>6</td>
-                  <td>8</td>
-                  <td>8</td>
-                  <td>8</td>
-                  <td>68</td>
-                  <td>135</td>
-                </tr>
-
-                <tr>
-                  <!-- Score Against Par  -->
-                  <td>-3</td>
-                  <td>-1</td>
-                  <td>-1</td>
-                  <td>-2</td>
-                  <td>-4</td>
-                  <td>-6</td>
-                  <td>-8</td>
-                  <td>-7</td>
-                  <td>-9</td>
-                  <td></td>
-                  <td>E</td>
-                  <td>E</td>
-                  <td>+1</td>
-                  <td>E</td>
-                  <td>-2</td>
-                  <td>-2</td>
-                  <td>-4</td>
-                  <td>-4</td>
-                  <td>-4</td>
-                  <td></td>
-                  <td>-9</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </mat-expansion-panel>
-    <mat-divider></mat-divider>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Round Two
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <div id="full-Table">
-        <div id="static-Table">
-          <table>
-            <!-- Header 1/2 -->
-            <tr>
-              <th>Hole</th>
-            </tr>
-            <tr>
-              <td>Yards</td>
-            </tr>
-            <tr>
-              <td>Par</td>
-            </tr>
-            <tr>
-              <td>Cameron Davis</td>
-            </tr>
-            <tr>
-              <td>Curtis Luck</td>
-            </tr>
-            <tr>
-              <td>Harrison Endycott</td>
-            </tr>
-            <tr>
-              <td>Complete</td>
-            </tr>
-            <tr>
-              <td>Score Against Par</td>
-            </tr>
-          </table>
-        </div>
-        <div class="scrolling-wrapper">
-          <div id="moving-Table">
-            <div class="card">
-              <table class="playerScore">
-                <tr>
-                  <!-- Header 1/2 -->
-                  <th>1</th>
-                  <th>2</th>
-                  <th>3</th>
-                  <th>4</th>
-                  <th>5</th>
-                  <th>6</th>
-                  <th>7</th>
-                  <th>8</th>
-                  <th>9</th>
-                  <th>10</th>
-                  <th>Out</th>
-                  <th>11</th>
-                  <th>12</th>
-                  <th>13</th>
-                  <th>14</th>
-                  <th>15</th>
-                  <th>16</th>
-                  <th>17</th>
-                  <th>18</th>
-                  <th>In</th>
-                  <th>Total</th>
-                </tr>
-
-                <tr>
-                  <!-- Yards -->
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                </tr>
-
-                <tr>
-                  <!-- Par  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Player1  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Player2  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Player3  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Round  -->
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Score Against Par  -->
-                  <td>7</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </mat-expansion-panel>
-    <mat-divider></mat-divider>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Round Three
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <div id="full-Table">
-        <div id="static-Table">
-          <table>
-            <!-- Header 1/2 -->
-            <tr>
-              <th>Hole</th>
-            </tr>
-            <tr>
-              <td>Yards</td>
-            </tr>
-            <tr>
-              <td>Par</td>
-            </tr>
-            <tr>
-              <td>Cameron Davis</td>
-            </tr>
-            <tr>
-              <td>Curtis Luck</td>
-            </tr>
-            <tr>
-              <td>Harrison Endycott</td>
-            </tr>
-            <tr>
-              <td>Complete</td>
-            </tr>
-            <tr>
-              <td>Score Against Par</td>
-            </tr>
-          </table>
-        </div>
-        <div class="scrolling-wrapper">
-          <div id="moving-Table">
-            <div class="card">
-              <table class="playerScore">
-                <tr>
-                  <!-- Header 1/2 -->
-                  <th>1</th>
-                  <th>2</th>
-                  <th>3</th>
-                  <th>4</th>
-                  <th>5</th>
-                  <th>6</th>
-                  <th>7</th>
-                  <th>8</th>
-                  <th>9</th>
-                  <th>10</th>
-                  <th>Out</th>
-                  <th>11</th>
-                  <th>12</th>
-                  <th>13</th>
-                  <th>14</th>
-                  <th>15</th>
-                  <th>16</th>
-                  <th>17</th>
-                  <th>18</th>
-                  <th>In</th>
-                  <th>Total</th>
-                </tr>
-
-                <tr>
-                  <!-- Yards -->
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                </tr>
-
-                <tr>
-                  <!-- Par  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Player1  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Player2  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Player3  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Round  -->
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Score Against Par  -->
-                  <td>7</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </mat-expansion-panel>
-    <mat-divider></mat-divider>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Round Four
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <div id="full-Table">
-        <div id="static-Table">
-          <table>
-            <!-- Header 1/2 -->
-            <tr>
-              <th>Hole</th>
-            </tr>
-            <tr>
-              <td>Yards</td>
-            </tr>
-            <tr>
-              <td>Par</td>
-            </tr>
-            <tr>
-              <td>Cameron Davis</td>
-            </tr>
-            <tr>
-              <td>Curtis Luck</td>
-            </tr>
-            <tr>
-              <td>Harrison Endycott</td>
-            </tr>
-            <tr>
-              <td>Complete</td>
-            </tr>
-            <tr>
-              <td>Score Against Par</td>
-            </tr>
-          </table>
-        </div>
-        <div class="scrolling-wrapper">
-          <div id="moving-Table">
-            <div class="card">
-              <table class="playerScore">
-                <tr>
-                  <!-- Header 1/2 -->
-                  <th>1</th>
-                  <th>2</th>
-                  <th>3</th>
-                  <th>4</th>
-                  <th>5</th>
-                  <th>6</th>
-                  <th>7</th>
-                  <th>8</th>
-                  <th>9</th>
-                  <th>10</th>
-                  <th>Out</th>
-                  <th>11</th>
-                  <th>12</th>
-                  <th>13</th>
-                  <th>14</th>
-                  <th>15</th>
-                  <th>16</th>
-                  <th>17</th>
-                  <th>18</th>
-                  <th>In</th>
-                  <th>Total</th>
-                </tr>
-
-                <tr>
-                  <!-- Yards -->
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>400</td>
-                </tr>
-
-                <tr>
-                  <!-- Par  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Player1  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Player2  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Player3  -->
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Round  -->
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                </tr>
-
-                <tr>
-                  <!-- Score Against Par  -->
-                  <td>7</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>5</td>
-                  <td>6</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </mat-expansion-panel>
-    <div id="team-footer">
-
-
+  </div>
+  <div *ngIf="hideTeam">
+      <mat-toolbar id="team-header-toolbar">
+          <span id="title">
+            <span>
+                <mat-icon (click)="hideTeam = !hideTeam; hideScore = !hideScore" >arrow_back</mat-icon>
+            </span>
+            {{mainProfiles}}
+            <button id="fav-button" mat-button>
+              <mat-icon class="fav">star</mat-icon>
+            </button>
+          </span>
+        </mat-toolbar>
+    <div id="team-header">
+      <span>
+          <span>
+              <img id="team-image" class="thumbnail-image" src="http://watc.bookgolf365.ie/images/{{mainProfiles | lowercase}}.png"/>
+          </span>
+      </span>
+     
+      <!-- <mat-card id="score-Info"> -->
+      <!-- <table> -->
+      <!-- <tr *ngFor="let teams of data.event.tournament.teams.team">
+              
+              <ng-container *ngIf="teams.name == mainProfiles"> -->
+      <!-- <tr>
+            <th>Thru</th>test
+            <th>Today</th>null
+            <th>Total</th>test
+            <th>Rank</th>test -->
+      <!-- </ng-container> -->
+      <!-- </tr>
+        </table>
+      </mat-card> -->
     </div>
-  </div>
-  </div>
+    <div class="scroll-main">
+      <div class="scroll-child">
+  
+        <!-- Round one -->
+        
+        <mat-expansion-panel id="team-expansion">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                  <td>Round One</td>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+  
+          <div id="staticTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Holes</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+                <ng-container *ngIf="playerdata.teamname == mainProfiles">
+                  <tr *ngIf="playerdata.totals.status == 'ok'">
+                    <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                  </tr>
+  
+                </ng-container>
+              </tbody>
+  
+            </table>
+          </div>
+          <div id="scrollingTable">
+            <div class="scrollingCard">
+              <table>
+                <thead>
+                  <tr>
+                    <th>01</th>
+                    <th>02</th>
+                    <th>03</th>
+                    <th>04</th>
+                    <th>05</th>
+                    <th>06</th>
+                    <th>07</th>
+                    <th>08</th>
+                    <th>09</th>
+                    <th>Out</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>In</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+                  <ng-container *ngIf="playerdata.teamname == mainProfiles">
+                    <tr *ngIf="playerdata.totals.status == 'ok'">
+                      <td *ngFor="let loop of [0,1,2,3,4,5,6,7,8]">{{playerdata.round[0].score[loop].strokes}}</td>
+                      <td id="total">{{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes
+                        * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes
+                        * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes
+                        * 1)}}</td>
+                      <td *ngFor="let loop of [9,10,11,12,13,14,15,16,17]">{{playerdata.round[0].score[loop].strokes}}</td>
+                      <td id="total">{{(playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes
+                        * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) +
+                        (playerdata.round[0].score[14].strokes * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[17].strokes
+                        * 1) + (playerdata.round[0].score[17].strokes * 1)}}</td>
+                      <td id="total">{{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes
+                        * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes
+                        * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes
+                        * 1) + (playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes
+                        * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) +
+                        (playerdata.round[0].score[14].strokes * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[16].strokes
+                        * 1) + (playerdata.round[0].score[17].strokes * 1)}}</td>
+                    </tr>
+                  </ng-container>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </mat-expansion-panel>
+        <!-- </div> -->
+        <!-- </mat-card> -->
+  
+        <!-- Round Two -->
+        <mat-expansion-panel id="team-expansion">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+               
+              Round Two
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div id="staticTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Holes</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+                  <ng-container *ngIf="playerdata.teamname == mainProfiles">
+                    <tr *ngIf="playerdata.totals.status == 'ok'">
+                      <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                    </tr>
+    
+                  </ng-container>
+                </tbody>
+  
+            </table>
+          </div>
+          <div id="scrollingTable">
+            <div class="scrollingCard">
+              <table>
+                <thead>
+                  <tr>
+                    <th>01</th>
+                    <th>02</th>
+                    <th>03</th>
+                    <th>04</th>
+                    <th>05</th>
+                    <th>06</th>
+                    <th>07</th>
+                    <th>08</th>
+                    <th>09</th>
+                    <th>Out</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>In</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+                  <ng-container *ngIf="playerdata.teamname == mainProfiles">
+                    <tr *ngIf="playerdata.totals.status == 'ok'">
+                      <td *ngFor="let loop of [0,1,2,3,4,5,6,7,8]">{{playerdata.round[1].score[loop].strokes}}</td>
+                      <td id="total">{{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes
+                        * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes
+                        * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes
+                        * 1)}}</td>
+                      <td *ngFor="let loop of [9,10,11,12,13,14,15,16,17]">{{playerdata.round[1].score[loop].strokes}}</td>
+                      <td id="total">{{(playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes
+                        * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) +
+                        (playerdata.round[1].score[14].strokes * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[17].strokes
+                        * 1) + (playerdata.round[1].score[17].strokes * 1)}}</td>
+                      <td id="total">{{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes
+                        * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes
+                        * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes
+                        * 1) + (playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes
+                        * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) +
+                        (playerdata.round[1].score[14].strokes * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[16].strokes
+                        * 1) + (playerdata.round[1].score[17].strokes * 1)}}</td>
+  
+                    </tr>
+                  </ng-container>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </mat-expansion-panel>
+  
+  
+        <!-- Round three -->
+        <mat-expansion-panel id="team-expansion">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                Round Three
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div id="staticTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Holes</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+                  <ng-container *ngIf="playerdata.teamname == mainProfiles">
+                    <tr *ngIf="playerdata.totals.status == 'ok'">
+                      <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                    </tr>
+    
+                  </ng-container>
+                </tbody>
+  
+            </table>
+          </div>
+          <div id="scrollingTable">
+            <div class="scrollingCard">
+              <table>
+                <thead>
+                  <tr>
+                    <th>01</th>
+                    <th>02</th>
+                    <th>03</th>
+                    <th>04</th>
+                    <th>05</th>
+                    <th>06</th>
+                    <th>07</th>
+                    <th>08</th>
+                    <th>09</th>
+                    <th>Out</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>In</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+                  <ng-container *ngIf="playerdata.teamname == mainProfiles">
+                    <tr *ngIf="playerdata.totals.status == 'ok'">
+                      <td *ngFor="let loop of [0,1,2,3,4,5,6,7,8]">{{playerdata.round[2].score[loop].strokes}}</td>
+                      <td id="total">{{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes
+                        * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes
+                        * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes
+                        * 1)}}</td>
+                      <td *ngFor="let loop of [9,10,11,12,13,14,15,16,17]">{{playerdata.round[2].score[loop].strokes}}</td>
+                      <td id="total">{{(playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes
+                        * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) +
+                        (playerdata.round[2].score[14].strokes * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[17].strokes
+                        * 1) + (playerdata.round[2].score[17].strokes * 1)}}</td>
+                      <td id="total">{{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes
+                        * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes
+                        * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes
+                        * 1) + (playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes
+                        * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) +
+                        (playerdata.round[2].score[14].strokes * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[16].strokes
+                        * 1) + (playerdata.round[2].score[17].strokes * 1)}}</td>
+  
+                    </tr>
+                  </ng-container>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </mat-expansion-panel>
+  
+        <!-- Round Four -->
+  
+        <mat-expansion-panel id="team-expansion">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                Round Four
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div id="staticTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Holes</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+                  <ng-container *ngIf="playerdata.teamname == mainProfiles">
+                    <tr *ngIf="playerdata.totals.status == 'ok'">
+                      <td (click)="hideTeam = !hideTeam; hidePlayer = !hidePlayer; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                    </tr>
+    
+                  </ng-container>
+                </tbody>
+  
+            </table>
+          </div>
+          <div id="scrollingTable">
+            <div class="scrollingCard">
+              <table>
+                <thead>
+                  <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>Out</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>In</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let playerdata of data.event.tournament.players.player; let i = index">
+                  <ng-container *ngIf="playerdata.teamname == mainProfiles">
+                    <tr *ngIf="playerdata.totals.status == 'ok'">
+                      <td *ngFor="let loop of [0,1,2,3,4,5,6,7,8]">{{playerdata.round[3].score[loop].strokes}}</td>
+                      <td id="total">{{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes
+                        * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes
+                        * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes
+                        * 1)}}</td>
+                      <td *ngFor="let loop of [9,10,11,12,13,14,15,16,17]">{{playerdata.round[3].score[loop].strokes}}</td>
+                      <td id="total">{{(playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes
+                        * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) +
+                        (playerdata.round[3].score[14].strokes * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[17].strokes
+                        * 1) + (playerdata.round[3].score[17].strokes * 1)}}</td>
+                      <td id="total">{{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes
+                        * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes
+                        * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes
+                        * 1) + (playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes
+                        * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) +
+                        (playerdata.round[3].score[14].strokes * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[16].strokes
+                        * 1) + (playerdata.round[3].score[17].strokes * 1)}}</td>
+  
+                    </tr>
+                  </ng-container>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </mat-expansion-panel>
+        </div>
+        </div>
+        </div>
+        

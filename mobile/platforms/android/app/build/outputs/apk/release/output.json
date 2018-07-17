@@ -1,1 +1,1 @@
-[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":30000},"path":"app-release.apk","properties":{"packageId":"io.cordova.LiveScore","split":"","minSdkVersion":"16"}}]
+[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":600000},"path":"app-release.apk","properties":{"packageId":"io.cordova.LiveScore","split":"","minSdkVersion":"16"}}]

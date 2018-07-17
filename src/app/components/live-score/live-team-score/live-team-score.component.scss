@@ -2,6 +2,34 @@
     margin-bottom: 31%;
 }
 
+#main{
+    margin-bottom: 30%;
+}
+
+.holeHeader{
+    text-align: center;
+  border: 1px solid black;
+   
+    
+ }
+
+.holeByHole{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.holeTotal{
+    text-align: center;
+    border: 1px solid black;
+    color: red;
+}
+
+ .holeBody{
+    text-align: center;
+    border: 1px solid black;
+ }
+
 
 #staticTable{
     
@@ -10,7 +38,7 @@
 }
 
 #scrollingTable{
-    
+   
     overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -22,6 +50,7 @@
 
 .scrollingCard{
 display: inline-block;
+width: 100%;
 
 }
 
@@ -75,6 +104,11 @@ display: inline-block;
     margin: 2%;
    
 }
+
+#player-expansion{
+    margin: 2%;
+}
+
 .roundCard span{
     
   
@@ -165,21 +199,18 @@ display: inline-block;
    }
    
    
+   #teamNameImage{
+       width: 20%
+   }
    
-   
-      
+ 
   
    
-   
-   
-   
-   
-   //Header
-   #main{
-      
+   .flexcontainer{
+       display: flex;
    }
-
-
+   
+  
    
    #team-expansion{
     margin: 2%;
@@ -205,6 +236,7 @@ display: inline-block;
     }
 
     .static-table td{
+       
         font-size: 100%;
         text-align: left;
         

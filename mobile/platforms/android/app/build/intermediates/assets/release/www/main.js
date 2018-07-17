@@ -98,42 +98,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_material_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shared/material.module */ "./src/app/shared/material.module.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/index.js");
-/* harmony import */ var _asymmetrik_ngx_leaflet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @asymmetrik/ngx-leaflet */ "./node_modules/@asymmetrik/ngx-leaflet/dist/index.js");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
-/* harmony import */ var _components_navigation_nav_navigation_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/navigation/nav/navigation.component */ "./src/app/components/navigation/nav/navigation.component.ts");
-/* harmony import */ var _components_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components//homepage/homepage.component */ "./src/app/components/homepage/homepage.component.ts");
-/* harmony import */ var _components_live_score_live_score_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components//live-score/live-score.component */ "./src/app/components/live-score/live-score.component.ts");
-/* harmony import */ var _components_events_transport_transport_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/events/transport/transport.component */ "./src/app/components/events/transport/transport.component.ts");
-/* harmony import */ var _components_team_profiles_team_profiles_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/team-profiles/team-profiles.component */ "./src/app/components/team-profiles/team-profiles.component.ts");
-/* harmony import */ var _components_navigation_toolbar_toolbar_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/navigation/toolbar/toolbar.component */ "./src/app/components/navigation/toolbar/toolbar.component.ts");
-/* harmony import */ var _components_additional_info_additional_info_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/additional-info/additional-info.component */ "./src/app/components/additional-info/additional-info.component.ts");
-/* harmony import */ var _components_additional_info_news_news_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/additional-info/news/news.component */ "./src/app/components/additional-info/news/news.component.ts");
-/* harmony import */ var _components_additional_info_about_about_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/additional-info/about/about.component */ "./src/app/components/additional-info/about/about.component.ts");
-/* harmony import */ var _components_additional_info_eligibitity_eligibility_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/additional-info/eligibitity/eligibility.component */ "./src/app/components/additional-info/eligibitity/eligibility.component.ts");
-/* harmony import */ var _components_additional_info_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/additional-info/schedule/schedule.component */ "./src/app/components/additional-info/schedule/schedule.component.ts");
-/* harmony import */ var _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/additional-info/contact/contact.component */ "./src/app/components/additional-info/contact/contact.component.ts");
-/* harmony import */ var _components_events_events_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/events/events.component */ "./src/app/components/events/events.component.ts");
-/* harmony import */ var _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/homepage/services/weather.service */ "./src/app/components/homepage/services/weather.service.ts");
-/* harmony import */ var _components_additional_info_news_news_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/additional-info/news/news.service */ "./src/app/components/additional-info/news/news.service.ts");
-/* harmony import */ var _components_events_events_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/events/events.service */ "./src/app/components/events/events.service.ts");
-/* harmony import */ var _shared_quote_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./shared/quote.service */ "./src/app/shared/quote.service.ts");
-/* harmony import */ var _components_live_score_live_score_service__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/live-score/live-score.service */ "./src/app/components/live-score/live-score.service.ts");
-/* harmony import */ var _components_events_event_event_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/events/event/event.component */ "./src/app/components/events/event/event.component.ts");
-/* harmony import */ var _components_live_score_live_player_score_live_player_score_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/live-score/live-player-score/live-player-score.component */ "./src/app/components/live-score/live-player-score/live-player-score.component.ts");
-/* harmony import */ var _components_live_score_live_team_score_live_team_score_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/live-score/live-team-score/live-team-score.component */ "./src/app/components/live-score/live-team-score/live-team-score.component.ts");
-/* harmony import */ var _components_test_comp_2_side_nav_sidenav_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/test-comp-2/side-nav/sidenav.component */ "./src/app/components/test-comp-2/side-nav/sidenav.component.ts");
-/* harmony import */ var _components_homepage_quotes_quotes_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/homepage/quotes/quotes.component */ "./src/app/components/homepage/quotes/quotes.component.ts");
-/* harmony import */ var _components_homepage_quote_quote_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/homepage/quote/quote.component */ "./src/app/components/homepage/quote/quote.component.ts");
-/* harmony import */ var _components_additional_info_news_news_quote_news_quote_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/additional-info/news/news-quote/news-quote.component */ "./src/app/components/additional-info/news/news-quote/news-quote.component.ts");
-/* harmony import */ var _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/admin/admin-create/admin-create.component */ "./src/app/components/admin/admin-create/admin-create.component.ts");
-/* harmony import */ var _components_admin_admin_quote_admin_quote_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/admin/admin-quote/admin-quote.component */ "./src/app/components/admin/admin-quote/admin-quote.component.ts");
-/* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
-/* harmony import */ var _components_test_test_geo_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/test/test-geo.component */ "./src/app/components/test/test-geo.component.ts");
-/* harmony import */ var _components_test_comp_2_test_comp_2_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/test-comp-2/test-comp-2.component */ "./src/app/components/test-comp-2/test-comp-2.component.ts");
-/* harmony import */ var _components_test_comp_2_bottom_sheet_bottom_sheet_overview_example_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component */ "./src/app/components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component.ts");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
+/* harmony import */ var _components_navigation_nav_navigation_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/navigation/nav/navigation.component */ "./src/app/components/navigation/nav/navigation.component.ts");
+/* harmony import */ var _components_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components//homepage/homepage.component */ "./src/app/components/homepage/homepage.component.ts");
+/* harmony import */ var _components_live_score_live_score_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components//live-score/live-score.component */ "./src/app/components/live-score/live-score.component.ts");
+/* harmony import */ var _components_transport_transport_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/transport/transport.component */ "./src/app/components/transport/transport.component.ts");
+/* harmony import */ var _components_team_profiles_team_profiles_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/team-profiles/team-profiles.component */ "./src/app/components/team-profiles/team-profiles.component.ts");
+/* harmony import */ var _components_navigation_toolbar_toolbar_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/navigation/toolbar/toolbar.component */ "./src/app/components/navigation/toolbar/toolbar.component.ts");
+/* harmony import */ var _components_additional_info_additional_info_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/additional-info/additional-info.component */ "./src/app/components/additional-info/additional-info.component.ts");
+/* harmony import */ var _components_additional_info_news_news_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/additional-info/news/news.component */ "./src/app/components/additional-info/news/news.component.ts");
+/* harmony import */ var _components_additional_info_about_about_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/additional-info/about/about.component */ "./src/app/components/additional-info/about/about.component.ts");
+/* harmony import */ var _components_additional_info_eligibitity_eligibility_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/additional-info/eligibitity/eligibility.component */ "./src/app/components/additional-info/eligibitity/eligibility.component.ts");
+/* harmony import */ var _components_additional_info_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/additional-info/schedule/schedule.component */ "./src/app/components/additional-info/schedule/schedule.component.ts");
+/* harmony import */ var _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/additional-info/contact/contact.component */ "./src/app/components/additional-info/contact/contact.component.ts");
+/* harmony import */ var _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/homepage/services/weather.service */ "./src/app/components/homepage/services/weather.service.ts");
+/* harmony import */ var _components_additional_info_news_news_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/additional-info/news/news.service */ "./src/app/components/additional-info/news/news.service.ts");
+/* harmony import */ var _components_event_event_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/event/event.service */ "./src/app/components/event/event.service.ts");
+/* harmony import */ var _shared_quote_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./shared/quote.service */ "./src/app/shared/quote.service.ts");
+/* harmony import */ var _components_live_score_live_score_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/live-score/live-score.service */ "./src/app/components/live-score/live-score.service.ts");
+/* harmony import */ var _components_event_event_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/event/event.component */ "./src/app/components/event/event.component.ts");
+/* harmony import */ var _components_live_score_live_player_score_live_player_score_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/live-score/live-player-score/live-player-score.component */ "./src/app/components/live-score/live-player-score/live-player-score.component.ts");
+/* harmony import */ var _components_live_score_live_team_score_live_team_score_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/live-score/live-team-score/live-team-score.component */ "./src/app/components/live-score/live-team-score/live-team-score.component.ts");
+/* harmony import */ var _components_geolocation_side_nav_sidenav_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/geolocation/side-nav/sidenav.component */ "./src/app/components/geolocation/side-nav/sidenav.component.ts");
+/* harmony import */ var _components_homepage_quotes_quotes_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/homepage/quotes/quotes.component */ "./src/app/components/homepage/quotes/quotes.component.ts");
+/* harmony import */ var _components_homepage_quote_quote_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/homepage/quote/quote.component */ "./src/app/components/homepage/quote/quote.component.ts");
+/* harmony import */ var _components_additional_info_news_news_quote_news_quote_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/additional-info/news/news-quote/news-quote.component */ "./src/app/components/additional-info/news/news-quote/news-quote.component.ts");
+/* harmony import */ var _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/admin/admin-create/admin-create.component */ "./src/app/components/admin/admin-create/admin-create.component.ts");
+/* harmony import */ var _components_admin_admin_quote_admin_quote_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/admin/admin-quote/admin-quote.component */ "./src/app/components/admin/admin-quote/admin-quote.component.ts");
+/* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/geolocation/geolocation.component */ "./src/app/components/geolocation/geolocation.component.ts");
+/* harmony import */ var _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pipes/sort/sort.pipe */ "./src/app/pipes/sort/sort.pipe.ts");
+/* harmony import */ var _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/homepage/instagram-feed/instagram-feed.component */ "./src/app/components/homepage/instagram-feed/instagram-feed.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -171,7 +170,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-// import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 
 
 
@@ -182,9 +180,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
-// import { BottomSheetComponent } from './components/test-comp-2/test-comp-2.component';
-// import { BottomSheetOverviewExampleSheet } from './components/test-comp-2/side-nav/sidenav.component';
 
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -192,58 +187,59 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"],
-                _components_navigation_nav_navigation_component__WEBPACK_IMPORTED_MODULE_11__["NavigationComponent"],
-                _components_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_12__["HomepageComponent"],
-                _components_live_score_live_score_component__WEBPACK_IMPORTED_MODULE_13__["LiveScoreComponent"],
-                _components_events_transport_transport_component__WEBPACK_IMPORTED_MODULE_14__["TransportComponent"],
-                _components_additional_info_additional_info_component__WEBPACK_IMPORTED_MODULE_17__["AdditionalInfoComponent"],
-                _components_additional_info_news_news_component__WEBPACK_IMPORTED_MODULE_18__["NewsComponent"],
-                _components_additional_info_about_about_component__WEBPACK_IMPORTED_MODULE_19__["AboutComponent"],
-                _components_additional_info_eligibitity_eligibility_component__WEBPACK_IMPORTED_MODULE_20__["EligibilityComponent"],
-                _components_additional_info_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_21__["ScheduleComponent"],
-                _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_22__["ContactComponent"],
-                _components_events_transport_transport_component__WEBPACK_IMPORTED_MODULE_14__["TransportComponent"],
-                _components_events_events_component__WEBPACK_IMPORTED_MODULE_23__["EventsComponent"],
-                _components_team_profiles_team_profiles_component__WEBPACK_IMPORTED_MODULE_15__["TeamProfilesComponent"],
-                _components_navigation_toolbar_toolbar_component__WEBPACK_IMPORTED_MODULE_16__["ToolbarComponent"],
-                _components_events_event_event_component__WEBPACK_IMPORTED_MODULE_29__["EventComponent"],
-                _components_live_score_live_player_score_live_player_score_component__WEBPACK_IMPORTED_MODULE_30__["LivePlayerScoreComponent"],
-                _components_live_score_live_team_score_live_team_score_component__WEBPACK_IMPORTED_MODULE_31__["LiveTeamScoreComponent"],
-                _components_test_comp_2_side_nav_sidenav_component__WEBPACK_IMPORTED_MODULE_32__["SidenavComponent"],
-                _components_homepage_quotes_quotes_component__WEBPACK_IMPORTED_MODULE_33__["QuotesComponent"],
-                _components_homepage_quote_quote_component__WEBPACK_IMPORTED_MODULE_34__["QuoteComponent"],
-                _components_additional_info_news_news_quote_news_quote_component__WEBPACK_IMPORTED_MODULE_35__["NewsQuoteComponent"],
-                _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_36__["AdminCreateComponent"],
-                _components_admin_admin_quote_admin_quote_component__WEBPACK_IMPORTED_MODULE_37__["AdminQuoteComponent"],
-                _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_38__["AdminComponent"],
-                _components_test_test_geo_component__WEBPACK_IMPORTED_MODULE_39__["TestGeoComponent"],
-                _components_test_comp_2_test_comp_2_component__WEBPACK_IMPORTED_MODULE_40__["TestComp2Component"],
-                _components_test_comp_2_bottom_sheet_bottom_sheet_overview_example_component__WEBPACK_IMPORTED_MODULE_41__["BottomSheetOverviewExampleSheetComponent"],
+                _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_38__["SortPipe"],
+                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+                _components_navigation_nav_navigation_component__WEBPACK_IMPORTED_MODULE_10__["NavigationComponent"],
+                _components_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_11__["HomepageComponent"],
+                _components_live_score_live_score_component__WEBPACK_IMPORTED_MODULE_12__["LiveScoreComponent"],
+                _components_transport_transport_component__WEBPACK_IMPORTED_MODULE_13__["TransportComponent"],
+                _components_additional_info_additional_info_component__WEBPACK_IMPORTED_MODULE_16__["AdditionalInfoComponent"],
+                _components_additional_info_news_news_component__WEBPACK_IMPORTED_MODULE_17__["NewsComponent"],
+                _components_additional_info_about_about_component__WEBPACK_IMPORTED_MODULE_18__["AboutComponent"],
+                _components_additional_info_eligibitity_eligibility_component__WEBPACK_IMPORTED_MODULE_19__["EligibilityComponent"],
+                _components_additional_info_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_20__["ScheduleComponent"],
+                _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_21__["ContactComponent"],
+                _components_transport_transport_component__WEBPACK_IMPORTED_MODULE_13__["TransportComponent"],
+                _components_event_event_component__WEBPACK_IMPORTED_MODULE_27__["EventComponent"],
+                _components_team_profiles_team_profiles_component__WEBPACK_IMPORTED_MODULE_14__["TeamProfilesComponent"],
+                _components_navigation_toolbar_toolbar_component__WEBPACK_IMPORTED_MODULE_15__["ToolbarComponent"],
+                _components_event_event_component__WEBPACK_IMPORTED_MODULE_27__["EventComponent"],
+                _components_live_score_live_player_score_live_player_score_component__WEBPACK_IMPORTED_MODULE_28__["LivePlayerScoreComponent"],
+                _components_live_score_live_team_score_live_team_score_component__WEBPACK_IMPORTED_MODULE_29__["LiveTeamScoreComponent"],
+                _components_geolocation_side_nav_sidenav_component__WEBPACK_IMPORTED_MODULE_30__["SidenavComponent"],
+                _components_homepage_quotes_quotes_component__WEBPACK_IMPORTED_MODULE_31__["QuotesComponent"],
+                _components_homepage_quote_quote_component__WEBPACK_IMPORTED_MODULE_32__["QuoteComponent"],
+                _components_additional_info_news_news_quote_news_quote_component__WEBPACK_IMPORTED_MODULE_33__["NewsQuoteComponent"],
+                _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_34__["AdminCreateComponent"],
+                _components_admin_admin_quote_admin_quote_component__WEBPACK_IMPORTED_MODULE_35__["AdminQuoteComponent"],
+                _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_36__["AdminComponent"],
+                _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_37__["GeolocationComponent"],
+                _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_39__["InstagramFeedComponent"],
+                _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_40__["GeolocationDetailComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_1__["BrowserAnimationsModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
                 _shared_material_module__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
-                _angular_http__WEBPACK_IMPORTED_MODULE_7__["HttpModule"],
+                _angular_http__WEBPACK_IMPORTED_MODULE_6__["HttpModule"],
                 _agm_core__WEBPACK_IMPORTED_MODULE_5__["AgmCoreModule"].forRoot({
                     apiKey: 'AIzaSyCPZDSf-Sp9Ivqq7ojJx39IZhHPK54bjnI'
                 }),
-                _asymmetrik_ngx_leaflet__WEBPACK_IMPORTED_MODULE_6__["LeafletModule"].forRoot(),
-                _app_routing__WEBPACK_IMPORTED_MODULE_10__["routing"]
+                _app_routing__WEBPACK_IMPORTED_MODULE_9__["routing"]
             ],
-            entryComponents: [_components_test_comp_2_bottom_sheet_bottom_sheet_overview_example_component__WEBPACK_IMPORTED_MODULE_41__["BottomSheetOverviewExampleSheetComponent"]],
+            entryComponents: [],
             providers: [
-                _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_24__["WeatherService"],
-                _components_additional_info_news_news_service__WEBPACK_IMPORTED_MODULE_25__["NewsService"],
-                _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_24__["HomeNewsService"],
-                _components_events_events_service__WEBPACK_IMPORTED_MODULE_26__["YelpService"],
-                _components_live_score_live_score_service__WEBPACK_IMPORTED_MODULE_28__["LiveScoreService"],
-                _shared_quote_service__WEBPACK_IMPORTED_MODULE_27__["QuoteService"],
+                _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_22__["WeatherService"],
+                _components_additional_info_news_news_service__WEBPACK_IMPORTED_MODULE_23__["NewsService"],
+                _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_22__["InstagramFeedService"],
+                _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_22__["HomeNewsService"],
+                _components_event_event_service__WEBPACK_IMPORTED_MODULE_24__["YelpService"],
+                _components_live_score_live_score_service__WEBPACK_IMPORTED_MODULE_26__["LiveScoreService"],
+                _shared_quote_service__WEBPACK_IMPORTED_MODULE_25__["QuoteService"],
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -266,18 +262,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _components_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components//homepage/homepage.component */ "./src/app/components/homepage/homepage.component.ts");
 /* harmony import */ var _components_live_score_live_score_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components//live-score/live-score.component */ "./src/app/components/live-score/live-score.component.ts");
-/* harmony import */ var _components_team_profiles_team_profiles_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/team-profiles/team-profiles.component */ "./src/app/components/team-profiles/team-profiles.component.ts");
-/* harmony import */ var _components_additional_info_additional_info_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/additional-info/additional-info.component */ "./src/app/components/additional-info/additional-info.component.ts");
-/* harmony import */ var _components_additional_info_news_news_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/additional-info/news/news.component */ "./src/app/components/additional-info/news/news.component.ts");
-/* harmony import */ var _components_additional_info_about_about_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/additional-info/about/about.component */ "./src/app/components/additional-info/about/about.component.ts");
-/* harmony import */ var _components_additional_info_eligibitity_eligibility_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/additional-info/eligibitity/eligibility.component */ "./src/app/components/additional-info/eligibitity/eligibility.component.ts");
-/* harmony import */ var _components_additional_info_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/additional-info/schedule/schedule.component */ "./src/app/components/additional-info/schedule/schedule.component.ts");
-/* harmony import */ var _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/additional-info/contact/contact.component */ "./src/app/components/additional-info/contact/contact.component.ts");
-/* harmony import */ var _components_events_events_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/events/events.component */ "./src/app/components/events/events.component.ts");
-/* harmony import */ var _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/admin/admin-create/admin-create.component */ "./src/app/components/admin/admin-create/admin-create.component.ts");
-/* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
-/* harmony import */ var _components_test_test_geo_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/test/test-geo.component */ "./src/app/components/test/test-geo.component.ts");
-/* harmony import */ var _components_test_comp_2_test_comp_2_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/test-comp-2/test-comp-2.component */ "./src/app/components/test-comp-2/test-comp-2.component.ts");
+/* harmony import */ var _components_transport_transport_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/transport/transport.component */ "./src/app/components/transport/transport.component.ts");
+/* harmony import */ var _components_team_profiles_team_profiles_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/team-profiles/team-profiles.component */ "./src/app/components/team-profiles/team-profiles.component.ts");
+/* harmony import */ var _components_additional_info_additional_info_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/additional-info/additional-info.component */ "./src/app/components/additional-info/additional-info.component.ts");
+/* harmony import */ var _components_additional_info_news_news_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/additional-info/news/news.component */ "./src/app/components/additional-info/news/news.component.ts");
+/* harmony import */ var _components_additional_info_about_about_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/additional-info/about/about.component */ "./src/app/components/additional-info/about/about.component.ts");
+/* harmony import */ var _components_additional_info_eligibitity_eligibility_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/additional-info/eligibitity/eligibility.component */ "./src/app/components/additional-info/eligibitity/eligibility.component.ts");
+/* harmony import */ var _components_additional_info_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/additional-info/schedule/schedule.component */ "./src/app/components/additional-info/schedule/schedule.component.ts");
+/* harmony import */ var _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/additional-info/contact/contact.component */ "./src/app/components/additional-info/contact/contact.component.ts");
+/* harmony import */ var _components_event_event_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/event/event.component */ "./src/app/components/event/event.component.ts");
+/* harmony import */ var _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/admin/admin-create/admin-create.component */ "./src/app/components/admin/admin-create/admin-create.component.ts");
+/* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/geolocation/geolocation.component */ "./src/app/components/geolocation/geolocation.component.ts");
 
 
 
@@ -290,6 +286,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 
 
 
@@ -298,20 +295,23 @@ __webpack_require__.r(__webpack_exports__);
 var appRoutes = [
     { path: '', component: _components_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_1__["HomepageComponent"] },
     { path: 'live-score', component: _components_live_score_live_score_component__WEBPACK_IMPORTED_MODULE_2__["LiveScoreComponent"] },
-    { path: 'events', component: _components_events_events_component__WEBPACK_IMPORTED_MODULE_10__["EventsComponent"] },
-    { path: 'add-info', component: _components_additional_info_additional_info_component__WEBPACK_IMPORTED_MODULE_4__["AdditionalInfoComponent"] },
-    { path: 'teamprofiles', component: _components_team_profiles_team_profiles_component__WEBPACK_IMPORTED_MODULE_3__["TeamProfilesComponent"] },
+    { path: 'events', component: _components_event_event_component__WEBPACK_IMPORTED_MODULE_11__["EventComponent"] },
+    { path: 'add-info', component: _components_additional_info_additional_info_component__WEBPACK_IMPORTED_MODULE_5__["AdditionalInfoComponent"] },
+    { path: 'teamprofiles', component: _components_team_profiles_team_profiles_component__WEBPACK_IMPORTED_MODULE_4__["TeamProfilesComponent"] },
     // { path: 'favteamprofiles' , component: FavTeamProfilesComponent},
-    { path: 'about', component: _components_additional_info_about_about_component__WEBPACK_IMPORTED_MODULE_6__["AboutComponent"] },
-    { path: 'news', component: _components_additional_info_news_news_component__WEBPACK_IMPORTED_MODULE_5__["NewsComponent"] },
-    { path: 'eligibility', component: _components_additional_info_eligibitity_eligibility_component__WEBPACK_IMPORTED_MODULE_7__["EligibilityComponent"] },
-    { path: 'schedule', component: _components_additional_info_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_8__["ScheduleComponent"] },
-    { path: 'contact', component: _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_9__["ContactComponent"] },
-    { path: 'admin', component: _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_12__["AdminComponent"] },
-    { path: 'admin-create', component: _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_11__["AdminCreateComponent"] },
-    { path: 'test2', component: _components_test_comp_2_test_comp_2_component__WEBPACK_IMPORTED_MODULE_14__["TestComp2Component"] },
-    { path: 'test2/:id', component: _components_test_comp_2_test_comp_2_component__WEBPACK_IMPORTED_MODULE_14__["TestComp2Component"] },
-    { path: 'test-geo', component: _components_test_test_geo_component__WEBPACK_IMPORTED_MODULE_13__["TestGeoComponent"] },
+    { path: 'about', component: _components_additional_info_about_about_component__WEBPACK_IMPORTED_MODULE_7__["AboutComponent"] },
+    { path: 'news', component: _components_additional_info_news_news_component__WEBPACK_IMPORTED_MODULE_6__["NewsComponent"] },
+    { path: 'eligibility', component: _components_additional_info_eligibitity_eligibility_component__WEBPACK_IMPORTED_MODULE_8__["EligibilityComponent"] },
+    { path: 'schedule', component: _components_additional_info_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_9__["ScheduleComponent"] },
+    { path: 'contact', component: _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_10__["ContactComponent"] },
+    { path: 'livescoring', component: _components_live_score_live_score_component__WEBPACK_IMPORTED_MODULE_2__["LiveScoreComponent"] },
+    { path: 'transport', component: _components_transport_transport_component__WEBPACK_IMPORTED_MODULE_3__["TransportComponent"] },
+    { path: 'contact', component: _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_10__["ContactComponent"] },
+    { path: 'admin', component: _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_13__["AdminComponent"] },
+    { path: 'admin-create', component: _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_12__["AdminCreateComponent"] },
+    { path: 'geolocation', component: _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_14__["GeolocationComponent"] },
+    { path: 'geolocation/:id', component: _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_14__["GeolocationComponent"] },
+    // { path: 'geolocation/:id', component: GeolocationComponent },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(appRoutes);
@@ -389,7 +389,7 @@ var AboutComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-list role=\"list\">\r\n    <mat-list-item role=\"listitem\" routerLink=\"/news\">\r\n      \r\n        <span>News</span>\r\n\r\n        <i class=\"material-icons\">navigate_next</i>\r\n    \r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n    \r\n    <mat-list-item role=\"listitem\" routerLink=\"/about\">\r\n\r\n        <span>About</span>\r\n\r\n        <i class=\"material-icons\">navigate_next</i>\r\n\r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-list-item role=\"listitem\" routerLink=\"/eligibility\">\r\n    \r\n        <span>Eligibility</span>\r\n    \r\n      <i class=\"material-icons\">navigate_next</i>\r\n    \r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-list-item role=\"listitem\" routerLink=\"/schedule\">\r\n      \r\n        <span>Full Schedule</span>\r\n    \r\n      <i class=\"material-icons\">navigate_next</i>\r\n\r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-list-item role=\"listitem\" routerLink=\"/contact\">\r\n    \r\n        <span>Contact</span>\r\n    \r\n      <i class=\"material-icons\">navigate_next</i>\r\n    </mat-list-item>\r\n    <mat-divider></mat-divider>\r\n  \r\n  \r\n  <mat-list-item role=\"listitem\" routerLink=\"/teamprofiles\">\r\n      \r\n    <span>Team Profiles</span>\r\n\r\n  <i class=\"material-icons\">navigate_next</i>\r\n</mat-list-item>\r\n<mat-divider></mat-divider>\r\n</mat-list>\r\n\r\n  <router-outlet></router-outlet>\r\n"
+module.exports = "<mat-list role=\"list\">\r\n  <mat-list-item role=\"listitem\" routerLink=\"/news\">\r\n\r\n    <span>News</span>\r\n\r\n    <i class=\"material-icons\">navigate_next</i>\r\n\r\n  </mat-list-item>\r\n  <mat-divider></mat-divider>\r\n\r\n  <mat-list-item role=\"listitem\" routerLink=\"/about\">\r\n\r\n    <span>About</span>\r\n\r\n    <i class=\"material-icons\">navigate_next</i>\r\n\r\n  </mat-list-item>\r\n  <mat-divider></mat-divider>\r\n\r\n  <mat-list-item role=\"listitem\" routerLink=\"/eligibility\">\r\n\r\n    <span>Eligibility</span>\r\n\r\n    <i class=\"material-icons\">navigate_next</i>\r\n\r\n  </mat-list-item>\r\n  <mat-divider></mat-divider>\r\n\r\n  <mat-list-item role=\"listitem\" routerLink=\"/schedule\">\r\n\r\n    <span>Full Schedule</span>\r\n\r\n    <i class=\"material-icons\">navigate_next</i>\r\n\r\n  </mat-list-item>\r\n  <mat-divider></mat-divider>\r\n\r\n  <mat-list-item role=\"listitem\" routerLink=\"/contact\">\r\n\r\n    <span>Contact</span>\r\n\r\n    <i class=\"material-icons\">navigate_next</i>\r\n  </mat-list-item>\r\n  <mat-divider></mat-divider>\r\n\r\n\r\n  <mat-list-item role=\"listitem\" routerLink=\"/teamprofiles\">\r\n\r\n    <span>Team Profiles</span>\r\n\r\n    <i class=\"material-icons\">navigate_next</i>\r\n  </mat-list-item>\r\n  <mat-divider></mat-divider>\r\n\r\n  <mat-list-item role=\"listitem\" routerLink=\"/livescoring\">\r\n\r\n    <span>Live Scoring</span>\r\n\r\n    <i class=\"material-icons\">navigate_next</i>\r\n  </mat-list-item>\r\n  <mat-divider></mat-divider>\r\n\r\n  <mat-list-item role=\"listitem\" routerLink=\"/transport\">\r\n\r\n    <span>Transport</span>\r\n\r\n    <i class=\"material-icons\">navigate_next</i>\r\n  </mat-list-item>\r\n  <mat-divider></mat-divider>\r\n\r\n  <mat-list-item role=\"listitem\" routerLink=\"/events\">\r\n\r\n    <span>Events</span>\r\n\r\n    <i class=\"material-icons\">navigate_next</i>\r\n  </mat-list-item>\r\n  <mat-divider></mat-divider>\r\n</mat-list>\r\n\r\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -452,7 +452,7 @@ var AdditionalInfoComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\n\n<mat-card class=\"example-card\">\n    <mat-card-header>\n      <div mat-card-avatar class=\"example-header-image\"></div>\n      <mat-card-title><h3>Contact Us</h3></mat-card-title>\n      <mat-card-subtitle>World Amatuer Team Championships</mat-card-subtitle>\n    </mat-card-header>\n    \n    <mat-card-content>\n        <mat-grid-list cols=\"2\" rowHeight=\"3:1\">\n          <mat-grid-tile>\n            <i class=\"material-icons\">phone</i>\n            <h3>Telephone</h3>\n          </mat-grid-tile>\n          \n          <mat-grid-tile>\n              <i class=\"material-icons\">email</i>\n            <h3>Email</h3>\n          </mat-grid-tile>\n\n          <mat-grid-tile>\n              <p class=\"para\">+353 1 531 4118</p>\n          </mat-grid-tile>\n\n          <mat-grid-tile>\n              <p class=\"para\"> info@watc2018.ie</p>\n          </mat-grid-tile>\n        </mat-grid-list>\n    </mat-card-content>\n\n    <mat-card-content class=\"mat-card-content-head\">\n      \n          <h3>Address</h3>\n          <p>Carton Demesne,\n              Maynooth,\n              County Kildare,\n              ​Ireland\n          </p>\n        </mat-card-content>\n\n    <mat-card-content >\n        <mat-grid-list cols=\"2\" rowHeight=\"2:1\">\n          <mat-grid-tile>\n\n            <a href=\"https://www.facebook.com/golfingunionofireland/ \">\n              <img src=\"https://png.icons8.com/color/50/000000/facebook.png\" >\n            </a>\n\n            <h3>Facebook</h3>\n          </mat-grid-tile>\n\n          <mat-grid-tile>\n\n            <a href=\"https://twitter.com/guigolf?lang=en\">\n              <img src=\"https://png.icons8.com/color/50/000000/twitter.png\">\n            </a>\n\n\n            <h3>Twitter</h3>\n        </mat-grid-tile>\n      </mat-grid-list>    \n    </mat-card-content>\n\n\n  </mat-card>\n"
+module.exports = "<mat-toolbar class=\"mat-toolbar-add-info\">my app</mat-toolbar>\r\n\r\n<mat-card class=\"example-card\">\r\n    <mat-card-header>\r\n      <div mat-card-avatar class=\"example-header-image\"></div>\r\n      <mat-card-title><h3>Contact Us</h3></mat-card-title>\r\n      <mat-card-subtitle>World Amatuer Team Championships</mat-card-subtitle>\r\n    </mat-card-header>\r\n    \r\n    <mat-card-content>\r\n        <mat-grid-list cols=\"2\" rowHeight=\"3:1\">\r\n          <mat-grid-tile>\r\n            <i class=\"material-icons\">phone</i>\r\n            <h3>Telephone</h3>\r\n          </mat-grid-tile>\r\n          \r\n          <mat-grid-tile>\r\n              <i class=\"material-icons\">email</i>\r\n            <h3>Email</h3>\r\n          </mat-grid-tile>\r\n\r\n          <mat-grid-tile>\r\n              <a  class=\"para\"href=\"tel:+123 123456789\">+123 123456789</a>\r\n          </mat-grid-tile>\r\n\r\n          <mat-grid-tile>\r\n              <p class=\"para\"> info@watc2018.ie</p>\r\n          </mat-grid-tile>\r\n        </mat-grid-list>\r\n    </mat-card-content>\r\n\r\n    <mat-card-content class=\"mat-card-content-head\">\r\n      \r\n          <h3>Address</h3>\r\n          <p>Carton Demesne,\r\n              Maynooth,\r\n              County Kildare,\r\n              ​Ireland\r\n          </p>\r\n        </mat-card-content>\r\n\r\n    <mat-card-content >\r\n        <mat-grid-list cols=\"2\" rowHeight=\"2:1\">\r\n          <mat-grid-tile>\r\n\r\n            <a href=\"https://www.facebook.com/golfingunionofireland/ \">\r\n              <img src=\"https://png.icons8.com/color/50/000000/facebook.png\" >\r\n            </a>\r\n\r\n            <h3>Facebook</h3>\r\n          </mat-grid-tile>\r\n\r\n          <mat-grid-tile>\r\n\r\n            <a href=\"https://twitter.com/guigolf?lang=en\">\r\n              <img src=\"https://png.icons8.com/color/50/000000/twitter.png\">\r\n            </a>\r\n\r\n\r\n            <h3>Twitter</h3>\r\n        </mat-grid-tile>\r\n      </mat-grid-list>    \r\n    </mat-card-content>\r\n\r\n\r\n  </mat-card>\r\n"
 
 /***/ }),
 
@@ -645,7 +645,7 @@ var NewsQuoteComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-news-quote *ngFor=\"let quote of quotes\" [quote]=\"quote\"></app-news-quote>"
+module.exports = "\r\n   <ng-container *ngFor=\"let news of news.update\">\r\n        <mat-expansion-panel  id=\"newsUpdate\" >\r\n          <mat-expansion-panel-header>\r\n            <mat-panel-title>\r\n              <div class=\"box\">\r\n                <span>\r\n                  <mat-icon id=\"newsSeverity{{news.severity}}\">{{news.type}}</mat-icon>\r\n                </span>\r\n                <span>{{news.desc}}</span>\r\n              </div>\r\n            </mat-panel-title>\r\n            <mat-panel-description>\r\n              <div class=\"box\">\r\n                <!-- <span>{{yelp.timeStamp}}</span> -->\r\n              </div>\r\n            </mat-panel-description>\r\n          </mat-expansion-panel-header>\r\n          {{news.content}}\r\n        </mat-expansion-panel>\r\n      </ng-container>"
 
 /***/ }),
 
@@ -656,7 +656,7 @@ module.exports = "<app-news-quote *ngFor=\"let quote of quotes\" [quote]=\"quote
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#newsWrapper {\n  margin-bottom: 18%; }\n\n#newsCard-severity-1 {\n  background: #DCE35B;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to top, #45B649, #DCE35B);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n  margin: 3%; }\n\n#newsCard-severity-2 {\n  background: #b9b42d;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to bottom, #ecf570, #b9b42d);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n  margin: 3%; }\n\n#newsCard-severity-3 {\n  background: #e23403;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to bottom, #f9ca6c, #e23403);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n  margin: 3%; }\n\n#newsCard-severity-4 {\n  background: #bc2938;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to bottom, #f5918a, #bc2938);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n  margin: 3%; }\n"
+module.exports = "#newsSeverity1 {\n  color: red; }\n\n#newsSeverity2 {\n  color: orange; }\n\n#newsSeverity3 {\n  color: green; }\n\n#newsUpdate {\n  margin: 1%;\n  margin-top: 2%; }\n\n.box {\n  display: flex;\n  align-items: center; }\n"
 
 /***/ }),
 
@@ -691,13 +691,16 @@ var NewsComponent = /** @class */ (function () {
         this.quoteService = quoteService;
     }
     NewsComponent.prototype.ngOnInit = function () {
-        // this._newsService.getNews()
-        // .subscribe(news => {
-        //   this.news = news;},
-        //   error => this.errorMessage=<any>error);
         var _this = this;
-        this.quoteService.getQuotes()
-            .subscribe(function (quotes) { return _this.quotes = quotes; }, function (error) { return console.log(error); });
+        this._newsService.getNews()
+            .subscribe(function (news) {
+            _this.news = news;
+        }, function (error) { return _this.errorMessage = error; });
+        // this.quoteService.getQuotes()
+        //   .subscribe(
+        //     (quotes: Quote[]) => this.quotes = quotes,
+        //     (error: Response) => console.log(error)
+        //    );
     };
     NewsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -748,7 +751,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var NewsService = /** @class */ (function () {
     function NewsService(_http) {
         this._http = _http;
-        this._newsUrl = "https://gist.githubusercontent.com/PatrickBookGolf365/88a79f87a0d75cb9c5e7d2e4e0468205/raw/e553efff8367dadc5930de49e88c9d14df5f5f82/news.json";
+        this._newsUrl = "http://news.bookgolf365.ie/news.json";
     }
     NewsService.prototype.getNews = function () {
         return this._http.get(this._newsUrl)
@@ -1086,32 +1089,32 @@ var AdminComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/events/event/event.component.html":
-/*!**************************************************************!*\
-  !*** ./src/app/components/events/event/event.component.html ***!
-  \**************************************************************/
+/***/ "./src/app/components/event/event.component.html":
+/*!*******************************************************!*\
+  !*** ./src/app/components/event/event.component.html ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div id=\"event-main\" >\r\n  \r\n  <div id=\"event-child\" *ngFor=\"let yelp of yelp.businesses\">\r\n  <mat-toolbar id=\"head-toolbar\">\r\n    <div id=\"name\">\r\n      {{yelp.name}}\r\n    </div>\r\n    <div id=\"star-img\">\r\n      <span *ngIf=\"yelp.rating >= 1 && yelp.rating <= 1.5\">\r\n        <img src=\"./assets/img/1star.png\">\r\n      </span>\r\n      <span *ngIf=\"yelp.rating >= 2 && yelp.rating <= 2.5\">\r\n        <img src=\"./assets/img/2star.png\">\r\n      </span>\r\n      <span *ngIf=\"yelp.rating >= 3 && yelp.rating <= 3.5\">\r\n        <img src=\"./assets/img/3star.png\">\r\n      </span>\r\n      <span *ngIf=\"yelp.rating >= 4 && yelp.rating <= 4.5\">\r\n        <img src=\"./assets/img/4star.png\">\r\n      </span>\r\n      <span *ngIf=\"yelp.rating >= 5\">\r\n        <img src=\"./assets/img/5star.png\">\r\n      </span>\r\n    </div>\r\n  </mat-toolbar>\r\n  <div id=\"img-wrapper\">\r\n    <img id=\"yelp-img\" src=\"{{yelp.image_url}}\">\r\n  </div>\r\n  <mat-toolbar id=\"foot-toolbar\">\r\n    <span>\r\n      <form action=\"{{yelp.url}}\">\r\n        <button id=\"foot-button\" mat-button>Website</button>\r\n      </form>\r\n    </span>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n    <span *ngIf=\"yelp.is_closed == true\" id=\"foot-status-closed\">Closed</span>\r\n    <span *ngIf=\"yelp.is_closed == false\" id=\"foot-status-open\">Open</span>\r\n  </mat-toolbar>\r\n</div>\r\n</div> -->\r\n\r\n\r\n"
+module.exports = "<div id=\"event-main\" >\r\n    <ng-container>\r\n        <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoom\"  [disableDefaultUI] =\"true\">\r\n            \r\n          <!-- Automatic locations -->\r\n          <agm-marker *ngFor=\"let yelp of yelp.businesses\" [latitude]=\"yelp.coordinates.latitude\" [longitude]=\"yelp.coordinates.longitude\">\r\n              <agm-info-window>\r\n                  <!-- <ng-container *ngFor=\"let yelp of yelp.businesses\"> -->\r\n                    <strong>\r\n                      <table>\r\n                        <tr>\r\n                            <th id=\"nameMiddle\">{{yelp.name}}</th>\r\n                          <th>\r\n                              <span *ngIf=\"yelp.is_closed == 'true'\" id=\"foot-status-closed\">Closed</span>\r\n                              <span *ngIf=\"yelp.is_closed == 'false'\" id=\"foot-status-open\">Open</span>\r\n                          </th>\r\n                        </tr>\r\n                        <tr>\r\n                          <td id=\"star-img\">\r\n                              <span *ngIf=\"yelp.rating >= 1 && yelp.rating <= 1.5\">\r\n                                <img src=\"./assets/img/1star.png\">\r\n                              </span>\r\n                              <span *ngIf=\"yelp.rating >= 2 && yelp.rating <= 2.5\">\r\n                                <img src=\"./assets/img/2star.png\">\r\n                              </span>\r\n                              <span *ngIf=\"yelp.rating >= 3 && yelp.rating <= 3.5\">\r\n                                <img src=\"./assets/img/3star.png\">\r\n                              </span>\r\n                              <span *ngIf=\"yelp.rating >= 4 && yelp.rating <= 4.5\">\r\n                                <img src=\"./assets/img/4star.png\">\r\n                              </span>\r\n                              <span *ngIf=\"yelp.rating >= 5\">\r\n                                <img src=\"./assets/img/5star.png\">\r\n                              </span>\r\n                          </td>\r\n                        </tr>\r\n                        <tr>\r\n                            <td>{{yelp.location.city}}</td>\r\n                          </tr>\r\n                          <tr>\r\n                            <td>{{yelp.location.address1}}</td>\r\n                          </tr>\r\n                          <tr>\r\n                            <td><a class=\"para\" href=\"tel:{{yelp.display_phone}}\">{{yelp.display_phone}}</a></td>\r\n                          </tr>\r\n                          <tr>\r\n                            <td><a href=\"{{yelp.url}}\">More Info</a></td>\r\n                          </tr>\r\n                      </table>\r\n                    </strong>\r\n                  <!-- </ng-container>   -->\r\n                  </agm-info-window>\r\n            </agm-marker>\r\n            \r\n            \r\n          <!-- Player picked location -->\r\n            <agm-marker [latitude]=\"lat\" [longitude]=\"lng\">\r\n              <agm-info-window>\r\n                <!-- <ng-container *ngFor=\"let yelp of yelp.businesses\"> -->\r\n                  <strong>\r\n                    <table>\r\n                      <tr>\r\n                          <th id=\"nameMiddle\">{{yelpName}}</th>\r\n                        <th>\r\n                            <span *ngIf=\"yelpClose == 'true'\" id=\"foot-status-closed\">Closed</span>\r\n                            <span *ngIf=\"yelpClose == 'false'\" id=\"foot-status-open\">Open</span>\r\n                        </th>\r\n                      </tr>\r\n                      <tr>\r\n                        <td id=\"star-img\">\r\n                            <span *ngIf=\"yelpRating >= 1 && yelpRating <= 1.5\">\r\n                              <img src=\"./assets/img/1star.png\">\r\n                            </span>\r\n                            <span *ngIf=\"yelpRating >= 2 && yelpRating <= 2.5\">\r\n                              <img src=\"./assets/img/2star.png\">\r\n                            </span>\r\n                            <span *ngIf=\"yelpRating >= 3 && yelpRating <= 3.5\">\r\n                              <img src=\"./assets/img/3star.png\">\r\n                            </span>\r\n                            <span *ngIf=\"yelpRating >= 4 && yelpRating <= 4.5\">\r\n                              <img src=\"./assets/img/4star.png\">\r\n                            </span>\r\n                            <span *ngIf=\"yelpRating >= 5\">\r\n                              <img src=\"./assets/img/5star.png\">\r\n                            </span>\r\n                        </td>\r\n                      </tr>\r\n                      <tr>\r\n                          <td>{{yelpCity}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                          <td>{{yelpAddress}}</td>\r\n                        </tr>\r\n                        <tr>\r\n                          <td><a class=\"para\" href=\"tel:{{yelpNumber}}\">{{yelpNumber}}</a></td>\r\n                        </tr>\r\n                        <tr>\r\n                          <td><a href=\"{{YelpURL}}\">More Info</a></td>\r\n                        </tr>\r\n                    </table>\r\n                    \r\n                  </strong>\r\n                <!-- </ng-container>   -->\r\n                \r\n                </agm-info-window>\r\n          </agm-marker>\r\n        </agm-map>\r\n        </ng-container>\r\n        \r\n        \r\n        <div id=\"yelp-container-child\">\r\n            <ng-container *ngFor=\"let yelp of yelp.businesses\">\r\n          <mat-toolbar id=\"head-toolbar\">\r\n            \r\n            <div id=\"name\">\r\n              {{yelp.name}}\r\n            </div>\r\n            <span class=\"example-fill-remaining-space\"></span>\r\n            <button mat-button id=\"foot-button\" (click)=\"lat = (yelp.coordinates.latitude); lng = (yelp.coordinates.longitude); \r\n            yelpID     = [yelp.id]; \r\n            yelpName   = [yelp.name];\r\n            yelpClose  = [yelp.is_closed];\r\n            yelpRating = [yelp.rating];\r\n            yelpCity   = [yelp.location.city];\r\n            yelpAddress= [yelp.location.address1];\r\n            yelpNumber = [yelp.display_phone];\r\n            YelpURL    = [yelp.url];\r\n            \">Location</button>\r\n            \r\n           \r\n          </mat-toolbar>\r\n          <mat-divider></mat-divider>\r\n          </ng-container>\r\n                    </div>\r\n                   \r\n                   \r\n          <!-- <mat-toolbar id=\"foot-toolbar\" >\r\n             \r\n          \r\n          <!-- <span *ngIf=\"yelp.is_closed == true\" id=\"foot-status-closed\">Closed</span>\r\n          <span *ngIf=\"yelp.is_closed == false\" id=\"foot-status-open\">Open</span> -->\r\n        <!-- </mat-toolbar> -->\r\n       \r\n</div>\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
-/***/ "./src/app/components/events/event/event.component.scss":
-/*!**************************************************************!*\
-  !*** ./src/app/components/events/event/event.component.scss ***!
-  \**************************************************************/
+/***/ "./src/app/components/event/event.component.scss":
+/*!*******************************************************!*\
+  !*** ./src/app/components/event/event.component.scss ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n#head-toolbar img {\n  width: 90%;\n  height: 90%;\n  vertical-align: middle;\n  float: right; }\n\n#foot-button {\n  font-size: 78%;\n  background-color: #999999; }\n\n#name {\n  width: 60%;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n  font-size: 78%; }\n\n#star-img {\n  width: 55%; }\n\n#head-toolbar {\n  width: 100%; }\n\n#head-toolbar, #foot-toolbar {\n  background-color: #b3b3b3; }\n\n#img-wrapper img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#event-main {\n  margin-bottom: 25%; }\n\n#event-child {\n  margin: 4%; }\n\n#foot-status-closed {\n  color: red;\n  font-size: 85%; }\n\n#foot-status-open {\n  color: green;\n  font-size: 85%; }\n"
+module.exports = ".example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n#head-toolbar img {\n  width: 90%;\n  height: 90%;\n  vertical-align: middle;\n  float: right; }\n\nagm-map {\n  height: 250px; }\n\n#foot-button {\n  font-size: 78%;\n  background-color: #999999; }\n\n#yelp-container-child {\n  margin: 2%;\n  overflow-y: auto;\n  height: 260px; }\n\n#event-main {\n  margin-bottom: 17.5%; }\n\n#text-center {\n  vertical-align: middle;\n  margin-right: 20%; }\n\n#name {\n  width: 60%;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n  font-size: 78%; }\n\n#nameMiddle {\n  vertical-align: middle; }\n\n#star-img img {\n  width: 115px;\n  height: 20px; }\n\n#head-toolbar {\n  background-color: #ffffff;\n  margin-bottom: 2%;\n  width: 100%; }\n\n#img-wrapper img {\n  width: 50%;\n  height: 50%;\n  vertical-align: middle; }\n\n#foot-status-closed {\n  color: red;\n  font-size: 85%; }\n\n#foot-status-open {\n  color: green;\n  font-size: 85%; }\n"
 
 /***/ }),
 
-/***/ "./src/app/components/events/event/event.component.ts":
-/*!************************************************************!*\
-  !*** ./src/app/components/events/event/event.component.ts ***!
-  \************************************************************/
+/***/ "./src/app/components/event/event.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/components/event/event.component.ts ***!
+  \*****************************************************/
 /*! exports provided: EventComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1119,7 +1122,7 @@ module.exports = ".example-fill-remaining-space {\n  /* This fills the remaining
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EventComponent", function() { return EventComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _events_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../events.service */ "./src/app/components/events/events.service.ts");
+/* harmony import */ var _event_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./event.service */ "./src/app/components/event/event.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1135,18 +1138,22 @@ var EventComponent = /** @class */ (function () {
     function EventComponent(_newsService) {
         this._newsService = _newsService;
         this.yelp = [];
+        this.zoom = 17;
+        this.lat = 53.360258;
+        this.lng = -6.265690;
     }
     EventComponent.prototype.ngOnInit = function () {
-        // this._newsService.getYelp()
-        // .subscribe(yelp => { this.yelp = yelp;}, error => this.errorMessage=<any>error);
+        var _this = this;
+        this._newsService.getYelp()
+            .subscribe(function (yelp) { _this.yelp = yelp; }, function (error) { return _this.errorMessage = error; });
     };
     EventComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-event',
-            template: __webpack_require__(/*! ./event.component.html */ "./src/app/components/events/event/event.component.html"),
-            styles: [__webpack_require__(/*! ./event.component.scss */ "./src/app/components/events/event/event.component.scss")]
+            template: __webpack_require__(/*! ./event.component.html */ "./src/app/components/event/event.component.html"),
+            styles: [__webpack_require__(/*! ./event.component.scss */ "./src/app/components/event/event.component.scss")]
         }),
-        __metadata("design:paramtypes", [_events_service__WEBPACK_IMPORTED_MODULE_1__["YelpService"]])
+        __metadata("design:paramtypes", [_event_service__WEBPACK_IMPORTED_MODULE_1__["YelpService"]])
     ], EventComponent);
     return EventComponent;
 }());
@@ -1155,69 +1162,10 @@ var EventComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/events/events.component.html":
-/*!*********************************************************!*\
-  !*** ./src/app/components/events/events.component.html ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "    <mat-tab-group id=\"tab\">\r\n        <mat-tab class=\"label\" label=\"transport\">\r\n            <app-transport></app-transport>\r\n        </mat-tab>\r\n        \r\n        <mat-tab class=\"label\" label=\"events\">\r\n            <app-event></app-event>\r\n        </mat-tab>\r\n    </mat-tab-group>\r\n    "
-
-/***/ }),
-
-/***/ "./src/app/components/events/events.component.scss":
-/*!*********************************************************!*\
-  !*** ./src/app/components/events/events.component.scss ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "#tab {\n  width: 100%;\n  height: 100%;\n  position: fixed; }\n"
-
-/***/ }),
-
-/***/ "./src/app/components/events/events.component.ts":
-/*!*******************************************************!*\
-  !*** ./src/app/components/events/events.component.ts ***!
-  \*******************************************************/
-/*! exports provided: EventsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EventsComponent", function() { return EventsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var EventsComponent = /** @class */ (function () {
-    function EventsComponent() {
-    }
-    EventsComponent.prototype.ngOnInit = function () {
-    };
-    EventsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-events',
-            template: __webpack_require__(/*! ./events.component.html */ "./src/app/components/events/events.component.html"),
-            styles: [__webpack_require__(/*! ./events.component.scss */ "./src/app/components/events/events.component.scss")]
-        })
-    ], EventsComponent);
-    return EventsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/events/events.service.ts":
-/*!*****************************************************!*\
-  !*** ./src/app/components/events/events.service.ts ***!
-  \*****************************************************/
+/***/ "./src/app/components/event/event.service.ts":
+/*!***************************************************!*\
+  !*** ./src/app/components/event/event.service.ts ***!
+  \***************************************************/
 /*! exports provided: YelpService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1226,9 +1174,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YelpService", function() { return YelpService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_add_observable_throw__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/observable/throw */ "./node_modules/rxjs-compat/_esm5/add/observable/throw.js");
-/* harmony import */ var rxjs_add_operator_catch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/operator/catch */ "./node_modules/rxjs-compat/_esm5/add/operator/catch.js");
-/* harmony import */ var rxjs_add_operator_do__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/do */ "./node_modules/rxjs-compat/_esm5/add/operator/do.js");
+/* harmony import */ var rxjs_Observable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/Observable */ "./node_modules/rxjs-compat/_esm5/Observable.js");
+/* harmony import */ var rxjs_add_observable_throw__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/observable/throw */ "./node_modules/rxjs-compat/_esm5/add/observable/throw.js");
+/* harmony import */ var rxjs_add_operator_catch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/catch */ "./node_modules/rxjs-compat/_esm5/add/operator/catch.js");
+/* harmony import */ var rxjs_add_operator_do__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/add/operator/do */ "./node_modules/rxjs-compat/_esm5/add/operator/do.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1243,12 +1192,28 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var YelpService = /** @class */ (function () {
     function YelpService(_http) {
         this._http = _http;
         this._yelpUrl = "https://api.yelp.com/v3/businesses/search?location=Dublin,Ireland";
         this._yelpBUrl = "https://api.yelp.com/v3/businesses?locale=en_IE";
+        this._LiveBus = "";
     }
+    YelpService.prototype.getYelp = function () {
+        return this._http.get(this._yelpUrl, {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({
+                'Authorization': 'Bearer ga7R1k7BOp852yKSjuawnxv3kFAf2F9Tj7HYgUaJbIskAGUaNaYKIo1LHmnjSQWtCFgLeaPS_RX-vWmvgeLjH1xDrVBTUV97dslQlOrigInePWb8ukT3_5KgJR_OWnYx',
+                'Access-Control-Allow-Origin': '*'
+            })
+        })
+            .do(function (data) { return console.log("All: " + JSON.stringify(data)); })
+            .catch(this.handleError);
+    };
+    YelpService.prototype.handleError = function (err) {
+        console.log(err.message);
+        return rxjs_Observable__WEBPACK_IMPORTED_MODULE_2__["Observable"].throw(err.message);
+    };
     YelpService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
@@ -1260,92 +1225,575 @@ var YelpService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/events/transport/transport.component.html":
-/*!**********************************************************************!*\
-  !*** ./src/app/components/events/transport/transport.component.html ***!
-  \**********************************************************************/
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<!-- <mat-toolbar id=\"transport-toolbar\">\r\n    <mat-form-field id=\"location-field\">\r\n        <mat-select placeholder=\"Choose an Area\" [(value)]=\"mainSelected\">\r\n            <mat-option value=\"Carton House\" class=\"mat-select\">Carton House</mat-option>\r\n            <mat-option value=\"Maynooth University\" class=\"mat-select\">Maynooth University</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n\r\n    <mat-form-field class=\"stop-field\" *ngIf=\"mainSelected == 'Carton House'\">\r\n            <mat-placeholder>Choose a location</mat-placeholder>\r\n        <mat-select [(value)]=\"CartonSelected\">\r\n            <mat-option value=\"National Academy\" class=\"mat-select\">National Academy</mat-option>\r\n            <mat-option value=\"Hotel Reception\" class=\"mat-select\">Hotel Reception</mat-option>\r\n            <mat-option value=\"Club House Roundabout\" class=\"mat-select\">Club House Roundabout</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"stop-field\" *ngIf=\"mainSelected == 'Maynooth University'\">\r\n            <mat-placeholder >Choose a location</mat-placeholder>\r\n         <mat-select [(value)]=\"MaynoothSelected\">\r\n            <mat-option value=\"North Campus Apartment Complex\" class=\"mat-select\">North Campus Apartment Complex</mat-option>\r\n            <mat-option value=\"Nort Campus Phonenix Restaurant\" class=\"mat-select\">North Campus Phonenix Restaurant</mat-option>\r\n            <mat-option value=\"North Campus Pedestrian crossing\" class=\"mat-select\">North Campus Pedestrian crossing</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n</mat-toolbar>\r\n\r\n<agm-map *ngIf=\"mainSelected == 'Carton House'\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\" [zoom]=\"zoom\"\r\n    [mapTypeId]=\"'hybrid'\" disableDefaultUI=\"true\">\r\n\r\n    <agm-marker *ngIf=\"mainSelected == 'Carton House' && CartonSelected == null\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\"></agm-marker>\r\n\r\n    <div *ngIf=\"CartonSelected == 'National Academy'\">\r\n        <agm-marker [latitude]=\"NationalAcademylat\" [longitude]=\"NationalAcademylng\" ></agm-marker>\r\n    </div>\r\n\r\n    <div *ngIf=\"CartonSelected == 'Hotel Reception'\">\r\n        <agm-marker [latitude]=\"HotelReceptionlat\" [longitude]=\"HotelReceptionlng\"></agm-marker>\r\n    </div>\r\n\r\n    <div *ngIf=\"CartonSelected == 'Club House Roundabout'\">\r\n        <agm-marker [latitude]=\"ClubHouseRoundaboutlat\" [longitude]=\"ClubHouseRoundaboutlng\"></agm-marker>\r\n    </div>\r\n</agm-map>\r\n\r\n<agm-map *ngIf=\"mainSelected == 'Maynooth University'\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\" [zoom]=\"zoom\"\r\n    [mapTypeId]=\"'hybrid'\" disableDefaultUI=\"true\">\r\n\r\n    <agm-marker *ngIf=\"mainSelected == 'Maynooth University' && MaynoothSelected == null\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\"></agm-marker>\r\n\r\n    <div *ngIf=\"MaynoothSelected == 'North Campus Apartment Complex'\">\r\n        <agm-marker [latitude]=\"ApartmentComplexlat\" [longitude]=\"ApartmentComplexlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"MaynoothSelected == 'Nort Campus Phonenix Restaurant'\">\r\n        <agm-marker [latitude]=\"PhoenixRestaurantlat\" [longitude]=\"PhoenixRestaurantlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"MaynoothSelected == 'North Campus Pedestrian crossing'\">\r\n        <agm-marker [latitude]=\"PedestrianCrosslat\" [longitude]=\"PedestrianCrosslng\"></agm-marker>\r\n    </div>\r\n</agm-map> -->\r\n\r\n<iframe width=\"640\" height=\"360\" src=\"https://gaming.youtube.com/embed/live_stream?autoplay=1&controls=0&showinfo=0&autohide=1&channel=UCImGQwk9qTNjwhhdzzTKIdg\"  autoplay=true frameborder=\"0\"></iframe>\r\n\r\n    <!-- <div id=\"twitchStream\">\r\n                <iframe\r\n                src=\"http://player.twitch.tv/?channel=Patrickbookgolf&muted=true\"\r\n                height=\"720\"\r\n                width=\"1280\"\r\n                frameborder=\"1\"\r\n                scrolling=\"no\"\r\n                allowfullscreen=\"false\">\r\n            </iframe>\r\n    </div> -->\r\n    <div>\r\n\r\n    \r\n<mat-table #table [dataSource]=\"dataSource\" id=\"timetable\">\r\n\r\n    <ng-container matColumnDef=\"bus\">\r\n        <mat-header-cell *matHeaderCellDef> Bus </mat-header-cell>\r\n        <mat-cell @fade *matCellDef=\"let bus\"> {{bus.position}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"times\">\r\n        <mat-header-cell *matHeaderCellDef> Times </mat-header-cell>\r\n        <mat-cell @fade *matCellDef=\"let times\"> {{times.name}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\r\n    <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\r\n</mat-table>\r\n</div>"
+module.exports = "<p>\r\n  geolocation-detail works!\r\n</p>\r\n"
 
 /***/ }),
 
-/***/ "./src/app/components/events/transport/transport.component.scss":
-/*!**********************************************************************!*\
-  !*** ./src/app/components/events/transport/transport.component.scss ***!
-  \**********************************************************************/
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".stop-field, #location-field {\n  width: 45%;\n  font-size: 68%; }\n\nagm-map {\n  height: 200px;\n  width: 100%; }\n\n#timetable {\n  text-align: center; }\n\n#tabs {\n  text-align: center; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\niframe {\n  max-width: 99% !important;\n  max-height: 50% !important; }\n"
+module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/components/events/transport/transport.component.ts":
-/*!********************************************************************!*\
-  !*** ./src/app/components/events/transport/transport.component.ts ***!
-  \********************************************************************/
-/*! exports provided: TransportComponent */
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts ***!
+  \*******************************************************************************************/
+/*! exports provided: GeolocationDetailComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TransportComponent", function() { return TransportComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeolocationDetailComponent", function() { return GeolocationDetailComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
-
-var TransportComponent = /** @class */ (function () {
-    function TransportComponent() {
-        this.zoom = 14;
-        this.displayedColumns = ['bus', 'times'];
-        this.dataSource = ELEMENT_DATA;
-        this.NationalAcademylat = 53.394427;
-        this.NationalAcademylng = -6.560887;
-        this.HotelReceptionlat = 53.391241;
-        this.HotelReceptionlng = -6.566353;
-        this.ClubHouseRoundaboutlat = 53.390675;
-        this.ClubHouseRoundaboutlng = -6.567644;
-        this.Cartondefaultlat = 53.390995;
-        this.Cartondefaultlng = -6.566462;
-        this.MaynoothDefaultlat = 53.380809;
-        this.MaynoothDefaultlng = -6.594588;
-        this.ApartmentComplexlat = 53.380337;
-        this.ApartmentComplexlng = -6.595629;
-        this.PhoenixRestaurantlat = 53.383985;
-        this.PhoenixRestaurantlng = -6.604083;
-        this.PedestrianCrosslat = 53.382562;
-        this.PedestrianCrosslng = -6.600772;
+var GeolocationDetailComponent = /** @class */ (function () {
+    function GeolocationDetailComponent() {
     }
-    TransportComponent = __decorate([
+    GeolocationDetailComponent.prototype.ngOnInit = function () {
+    };
+    GeolocationDetailComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-transport',
-            template: __webpack_require__(/*! ./transport.component.html */ "./src/app/components/events/transport/transport.component.html"),
-            styles: [__webpack_require__(/*! ./transport.component.scss */ "./src/app/components/events/transport/transport.component.scss")],
+            selector: 'app-geolocation-detail',
+            template: __webpack_require__(/*! ./geolocation-detail.component.html */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html"),
+            styles: [__webpack_require__(/*! ./geolocation-detail.component.scss */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], GeolocationDetailComponent);
+    return GeolocationDetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation.component.html":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation.component.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-sidenav></app-sidenav>\r\n\r\n<!-- <mat-spinner></mat-spinner> -->\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation.component.scss":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation.component.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#map {\n  position: relative;\n  top: 41px;\n  height: 60%;\n  width: 100%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: GeolocationComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeolocationComponent", function() { return GeolocationComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_course_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./services/course-data.service */ "./src/app/components/geolocation/services/course-data.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var GeolocationComponent = /** @class */ (function () {
+    function GeolocationComponent(_courseDataService) {
+        this._courseDataService = _courseDataService;
+        this.showFiller = false;
+    }
+    GeolocationComponent.prototype.ngOnInit = function () { };
+    GeolocationComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-geolocation',
+            template: __webpack_require__(/*! ./geolocation.component.html */ "./src/app/components/geolocation/geolocation.component.html"),
+            styles: [__webpack_require__(/*! ./geolocation.component.scss */ "./src/app/components/geolocation/geolocation.component.scss")],
+        }),
+        __metadata("design:paramtypes", [_services_course_data_service__WEBPACK_IMPORTED_MODULE_1__["CourseDataService"]])
+    ], GeolocationComponent);
+    return GeolocationComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/services/course-data.service.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/components/geolocation/services/course-data.service.ts ***!
+  \************************************************************************/
+/*! exports provided: CourseDataService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseDataService", function() { return CourseDataService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _hole__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hole */ "./src/app/components/geolocation/services/hole.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CourseDataService = /** @class */ (function () {
+    function CourseDataService(_http) {
+        this._http = _http;
+        // tslint:disable-next-line:max-line-length
+        this._montURL = 'https://gist.githubusercontent.com/Cavinnnn/f8a22ecb12fe1be811194131393895eb/raw/ebdfebf1ee157875eeeb4c2340465edaf6b3e5eb/Montgomerie';
+        this._montgomerieHoleLocations = '';
+    }
+    CourseDataService.prototype.showMap = function (id) {
+        // tslint:disable-next-line:no-shadowed-variable
+        var map;
+        var coordsLng;
+        var coordsLat;
+        map = L.map('map').setView([53.384767, -6.564879], 14);
+        // tslint:disable-next-line:max-line-length
+        L.tileLayer('https://api.mapbox.com/styles/v1/cavinn/cjgqloyl000082roe1rz35om8/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
+            attribution: '',
+            maxZoom: 18,
+        }).addTo(map);
+        coordsLng = _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; }).lng;
+        coordsLat = _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; }).lat;
+        map.fitBounds([
+            [coordsLat, coordsLng]
+        ]);
+    };
+    CourseDataService.prototype.getSideNavHoles = function () {
+        return _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"];
+    };
+    CourseDataService.prototype.getCoordsLat = function (id) {
+        var coordsLat;
+        coordsLat = _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; }).lat;
+    };
+    CourseDataService.prototype.getCoordsLng = function (id) {
+        var coordsLng;
+        coordsLng = _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; }).lng;
+    };
+    CourseDataService.prototype.getHoles = function () {
+        return this._http.get(this._montURL)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function (data) { return console.log('All ' + JSON.stringify(data)); }));
+    };
+    CourseDataService.prototype.getHoleById = function (id) {
+        return this.getHoles()
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === id; }); }));
+        //  ,
+        //        switchMap(() => interval(500)));
+    };
+    CourseDataService.prototype.getHoleBy = function (id) {
+        return _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; });
+    };
+    CourseDataService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], CourseDataService);
+    return CourseDataService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/services/hole.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/components/geolocation/services/hole.ts ***!
+  \*********************************************************/
+/*! exports provided: HOLES_INFO */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HOLES_INFO", function() { return HOLES_INFO; });
+var HOLES_INFO = [
+    {
+        'id': 1,
+        'hole': 1,
+        'par': 1,
+        'description': 'description1',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 2,
+        'hole': 2,
+        'par': 2,
+        'description': 'description2',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.386737,
+        'lng': -6.574668
+    }, {
+        'id': 3,
+        'hole': 3,
+        'par': 3,
+        'description': 'description3',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 4,
+        'hole': 4,
+        'par': 4,
+        'description': 'description4',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 5,
+        'hole': 5,
+        'par': 5,
+        'description': 'description5',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 6,
+        'hole': 6,
+        'par': 6,
+        'description': 'description6',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 7,
+        'hole': 7,
+        'par': 7,
+        'description': 'description7',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 8,
+        'hole': 8,
+        'par': 8,
+        'description': 'description8',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 9,
+        'hole': 9,
+        'par': 9,
+        'description': 'description9',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 10,
+        'hole': 10,
+        'par': 10,
+        'description': 'description10',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 11,
+        'hole': 11,
+        'par': 3,
+        'description': 'description',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 12,
+        'hole': 12,
+        'par': 3,
+        'description': 'description',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 13,
+        'hole': 13,
+        'par': 3,
+        'description': 'description',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 14,
+        'hole': 14,
+        'par': 3,
+        'description': 'description',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 15,
+        'hole': 15,
+        'par': 3,
+        'description': 'description',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 16,
+        'hole': 16,
+        'par': 3,
+        'description': 'description',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 17,
+        'hole': 17,
+        'par': 3,
+        'description': 'description',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }, {
+        'id': 18,
+        'hole': 18,
+        'par': 3,
+        'description': 'description',
+        'flyover': 'https://vimeo.com/171598568',
+        'lat': 53.387792,
+        'lng': -6.569634
+    }
+];
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/side-nav/sidenav.component.html":
+/*!************************************************************************!*\
+  !*** ./src/app/components/geolocation/side-nav/sidenav.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-sidenav-container class=\"example-container\" (backdropClick)=\"close('backdrop')\">\r\n  <mat-sidenav #sidenav (keydown.escape)=\"close('escape')\" disableClose>\r\n\r\n      <!-- <img src=\"./assets/img/WATC.jpeg\"> -->\r\n\r\n      <div class=\"geo-heading\">\r\n          <h3>Geolocation</h3>\r\n      </div>\r\n\r\n    <div class=\"banner\"></div>\r\n\r\n    <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          Montgomorie\r\n        </mat-expansion-panel-header>\r\n\r\n        <mat-list role=\"list\" *ngFor=\"let hole of holes \">\r\n\r\n            <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n              <button mat-button (click)=\"openBottomSheet()\" [routerLink]=\"['/geolocation', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n            </mat-list-item>\r\n\r\n        </mat-list>\r\n\r\n\r\n      </mat-expansion-panel>\r\n\r\n      <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          O'Meara\r\n        </mat-expansion-panel-header>\r\n\r\n        <mat-list role=\"list\" *ngFor=\"let hole of holes \">\r\n\r\n            <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n              <button mat-button (click)=\"openBottomSheet()\" [routerLink]=\"['/geolocation', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n            </mat-list-item>\r\n\r\n        </mat-list>\r\n      </mat-expansion-panel>\r\n  </mat-sidenav>\r\n</mat-sidenav-container>\r\n\r\n  <p>\r\n    <button mat-button class=\"mat-ham-button\" (click)=\"sidenav.open()\">\r\n      <i class=\"material-icons\">menu</i>\r\n    </button>\r\n  </p>\r\n\r\n <div id=\"map\"></div>\r\n\r\n\r\n<div class=\"contain\" *ngIf=\"hole.id\">\r\n  <mat-card class=\"mat-elevation-z20\">\r\n    <div class=\"flex-item1\">\r\n        <p>Metres: {{metres}}</p>\r\n\r\n        <p>Yards: {{yards}}</p>\r\n\r\n        <p>Kilometres: {{kilometres}}</p>\r\n\r\n        <p>Miles: {{miles}}</p>\r\n    </div>\r\n\r\n    <div class=\"flex-item2\">\r\n        <p>hole {{ hole.hole }}</p>\r\n\r\n        <p>par {{ hole.par }}</p>\r\n\r\n        <p>{{hole.description}}</p>\r\n\r\n        <p>Flyover</p>\r\n        <!-- <p>{{hole.flyover }}</p> -->\r\n    </div>\r\n  </mat-card>\r\n</div>\r\n\r\n<div class=\"contain\" *ngIf=\"!hole.id\">\r\n    <mat-card class=\"mat-elevation-z20\">\r\n      <p>Welcome to geolocation!</p>\r\n    </mat-card>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/side-nav/sidenav.component.scss":
+/*!************************************************************************!*\
+  !*** ./src/app/components/geolocation/side-nav/sidenav.component.scss ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".example-container {\n  position: static;\n  width: 100%;\n  min-width: 100%;\n  height: 100%;\n  min-height: 100%; }\n\n.mat-side-list {\n  margin: 0; }\n\n.mat-ham-button {\n  margin: 0px;\n  float: right; }\n\nmat-card {\n  margin: 5%;\n  background-color: #D8D8D8; }\n\n.contain {\n  position: fixed;\n  bottom: 10px;\n  width: 100%;\n  display: flex;\n  flex-direction: column; }\n\n.flex-item1 {\n  justify-content: space-between;\n  text-align: center;\n  width: 50%;\n  float: left; }\n\n.flex-item2 {\n  margin-left: 50%;\n  justify-content: space-between;\n  text-align: center; }\n\n#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 60%;\n  width: 100%;\n  z-index: -1; }\n\n.banner {\n  height: 50px;\n  background-color: #5cd65c; }\n\n.geo-heading {\n  background-color: #5cd65c;\n  position: fixed;\n  top: 0;\n  height: 5px; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/side-nav/sidenav.component.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/components/geolocation/side-nav/sidenav.component.ts ***!
+  \**********************************************************************/
+/*! exports provided: SidenavComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SidenavComponent", function() { return SidenavComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _services_course_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/course-data.service */ "./src/app/components/geolocation/services/course-data.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var SidenavComponent = /** @class */ (function () {
+    function SidenavComponent(bottomSheet, _courseDataService, _route) {
+        this.bottomSheet = bottomSheet;
+        this._courseDataService = _courseDataService;
+        this._route = _route;
+        this._earthRadiusInMeters = 6378137;
+        this._earthRadiusInYards = 6975174.98;
+        this._earthRadiusInKilometers = 6371;
+        this._earthRadiusInMiles = 3960;
+        this.reason = '';
+    }
+    SidenavComponent.prototype.close = function (reason) {
+        this.reason = reason;
+        this.sidenav.close();
+    };
+    SidenavComponent.prototype.openBottomSheet = function () { window.location.reload(true); };
+    SidenavComponent.prototype.refreshPage = function () {
+    };
+    SidenavComponent.prototype.getHolesId = function (id) {
+        var _this = this;
+        this._courseDataService.getHoleById(id).subscribe(function (hole) { return _this.hole = hole; });
+    };
+    SidenavComponent.prototype.ngOnInit = function () {
+        this.Haversine();
+        this.holes = this._courseDataService.getSideNavHoles();
+        this.hole = +this._route.snapshot.paramMap.get('id');
+        this._courseDataService.showMap(+this._route.snapshot.params['id']);
+        if (this.hole) {
+            var id = +this.hole;
+            this.getHolesId(id);
+            console.log(id);
+        }
+        console.log(this.hole);
+    };
+    SidenavComponent.prototype.Haversine = function () {
+        var _this = this;
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (x) {
+                _this.myLat = x.coords.latitude;
+                _this.myLng = x.coords.longitude;
+                _this.courseLat = _this._courseDataService.getCoordsLat;
+                _this.courseLng = _this._courseDataService.getCoordsLng;
+                console.log("longitude: " + _this.myLat + " | latitude: " + _this.myLng);
+                // console.log(`longitude: ${ this.myLat } | latitude: ${ this.myLng }`);
+                // get courseLat+Lng working
+                var myCoords = {
+                    latitude: _this.myLat,
+                    longitude: _this.myLng
+                };
+                var dominos = {
+                    latitude: 53.354307,
+                    longitude: -6.284543
+                    // latitude: this.courseLat,
+                    // longitude: this.courseLng
+                };
+                _this.metres = _this.getDistanceInMeters(myCoords, dominos);
+                _this.yards = _this.getDistanceInYards(myCoords, dominos);
+                _this.kilometres = _this.getDistanceInKilometers(myCoords, dominos);
+                _this.miles = _this.getDistanceInMiles(myCoords, dominos);
+                _this.metres = _this.metres.toFixed(2);
+                _this.yards = _this.yards.toFixed(2);
+                _this.kilometres = _this.kilometres.toFixed(2);
+                _this.miles = _this.miles.toFixed(2);
+            });
+        }
+    };
+    SidenavComponent.prototype._toRadians = function (value) {
+        return value * Math.PI / 180;
+    };
+    SidenavComponent.prototype._getDistance = function (coord1, coord2) {
+        var φ1 = this._toRadians(coord1.latitude);
+        var φ2 = this._toRadians(coord2.latitude);
+        var Δφ = this._toRadians(coord2.latitude - coord1.latitude);
+        var Δλ = this._toRadians(coord2.longitude - coord1.longitude);
+        // a = sin²(Δφ / 2) + cos φ1 ⋅ cos φ2 ⋅ sin²(Δλ / 2)
+        var a = Math.pow(Math.sin(Δφ / 2), 2) +
+            Math.cos(φ1) *
+                Math.cos(φ2) *
+                Math.pow(Math.sin(Δλ / 2), 2);
+        // c = 2 ⋅ atan2(√a, √(1−a))
+        return 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    };
+    SidenavComponent.prototype.getDistanceInMeters = function (coord1, coord2) {
+        var c = this._getDistance(coord1, coord2);
+        // d = R ⋅ c
+        return this._earthRadiusInMeters * c;
+    };
+    SidenavComponent.prototype.getDistanceInYards = function (coord1, coord2) {
+        var c = this._getDistance(coord1, coord2);
+        // d = R ⋅ c
+        return this._earthRadiusInYards * c;
+    };
+    SidenavComponent.prototype.getDistanceInKilometers = function (coord1, coord2) {
+        var c = this._getDistance(coord1, coord2);
+        // d = R ⋅ c
+        return this._earthRadiusInKilometers * c;
+    };
+    SidenavComponent.prototype.getDistanceInMiles = function (coord1, coord2) {
+        var c = this._getDistance(coord1, coord2);
+        // d = R ⋅ c
+        return this._earthRadiusInMiles * c;
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('sidenav'),
+        __metadata("design:type", _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatSidenav"])
+    ], SidenavComponent.prototype, "sidenav", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('button'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], SidenavComponent.prototype, "button", void 0);
+    SidenavComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-sidenav',
+            template: __webpack_require__(/*! ./sidenav.component.html */ "./src/app/components/geolocation/side-nav/sidenav.component.html"),
+            styles: [__webpack_require__(/*! ./sidenav.component.scss */ "./src/app/components/geolocation/side-nav/sidenav.component.scss")],
             animations: [
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('fade', [
-                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('void => *', [
-                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ opacity: 0 }),
-                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])(2000, Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ opacity: 1 }))
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["trigger"])('listAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])('* => *', [
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["query"])(':leave', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["stagger"])(100, [
+                                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('0.5s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({ opacity: 0 }))
+                            ])
+                        ]),
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["query"])(':enter', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({ opacity: 0 }),
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["stagger"])(100, [
+                                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('0.5s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({ opacity: 1 }))
+                            ])
+                        ])
                     ])
                 ])
             ]
-        })
-    ], TransportComponent);
-    return TransportComponent;
+        }),
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheet"],
+            _services_course_data_service__WEBPACK_IMPORTED_MODULE_2__["CourseDataService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
+    ], SidenavComponent);
+    return SidenavComponent;
 }());
 
-var ELEMENT_DATA = [
-    { position: 1, name: '11:30' },
-    { position: 2, name: '11:00' },
-];
 
 
 /***/ }),
@@ -1357,7 +1805,7 @@ var ELEMENT_DATA = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\">\r\n</div>\r\n<div id=\"homepage-body\">\r\n  <div>\r\n    <mat-accordion>\r\n      <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            <div class=\"weather_child\">\r\n              <div class=\"box\">\r\n                <span>\r\n                    Current:  \r\n                </span>\r\n                <span>\r\n                  <img src=\"https://openweathermap.org/img/w/{{forecast.list[0].weather[0].icon}}.png\">\r\n                </span>\r\n                <span>\r\n                  {{forecast.list[0].main.temp | number:'1.0-0'}}&deg;c \r\n                </span>\r\n                <span>\r\n                  </span>\r\n              </div>\r\n            </div>\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n        <div id=\"\">\r\n          <!-- index 1 -->\r\n          <ng-container *ngFor=\"let loop of [1,2,3,4]\">\r\n            <div class=\"weather_child\">\r\n              <div class=\"box\">\r\n                  <span>\r\n                      {{(forecast.list[loop].dt_txt[11]) + (forecast.list[loop].dt_txt[12]) + (forecast.list[loop].dt_txt[13]) + (forecast.list[loop].dt_txt[14]) + (forecast.list[loop].dt_txt[15])}} - {{(forecast.list[loop+1].dt_txt[11]) + (forecast.list[loop+1].dt_txt[12]) + (forecast.list[loop+1].dt_txt[13]) + (forecast.list[loop+1].dt_txt[14]) + (forecast.list[loop+1].dt_txt[15])}}\r\n                  </span>\r\n                  <span class=\"example-fill-remaining-space\"></span>\r\n                  <span>\r\n                    <img src=\"https://openweathermap.org/img/w/{{forecast.list[loop].weather[0].icon}}.png\">\r\n                  </span>\r\n                  <span>\r\n                    {{forecast.list[loop].main.temp | number:'1.0-0'}}&deg;c\r\n                  </span>\r\n                  \r\n                  <!-- <ng-container id=\"compass\">\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45\">\r\n                    \r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135\">\r\n                    \r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/east.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225\">\r\n                    \r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/south.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/west.png\">\r\n                    </mat-icon>\r\n\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360\">\r\n                    \r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg == null\">\r\n                    Calm\r\n                  </span>\r\n                  </ng-container> -->\r\n              </div>\r\n            </div>\r\n            <mat-divider></mat-divider>\r\n          </ng-container>\r\n        </div>\r\n      </mat-expansion-panel>\r\n    </mat-accordion>\r\n  </div> \r\n  <div id=\"newsUpdate\" *ngFor=\"let loop of [1,2,3,4]\">\r\n      <mat-expansion-panel id=\"panelcolor\">\r\n          <mat-expansion-panel-header>\r\n            <mat-panel-title>\r\n                <div class=\"box\">\r\n          <span><mat-icon  id=\"newsSeverity{{loop}}\">report_problem</mat-icon></span>\r\n          <span>This is an error</span>\r\n          <span>10:30 am</span>\r\n          </div>\r\n          </mat-panel-title>\r\n          </mat-expansion-panel-header>\r\n          Something really bad happened\r\n          </mat-expansion-panel>\r\n  </div>\r\n  "
+module.exports = "<div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\">\r\n</div>\r\n<div id=\"homepage-body\">\r\n<button mat-button (click)=\"metric = !metric\">{{metric ? '&deg;C' : '&deg;F'}}</button>\r\n    <div>\r\n        <ng-container *ngIf=\"!metric\">\r\n        <mat-accordion>\r\n          <mat-expansion-panel>\r\n            <mat-expansion-panel-header>\r\n              <mat-panel-title>\r\n\r\n                <div class=\"weather_child\">\r\n                  <div class=\"box\">\r\n                    <span>\r\n                      Current:\r\n                    </span>\r\n                    <ng-container id=\"ImgTemp\">\r\n                    <span>\r\n                      <img src=\"https://openweathermap.org/img/w/{{forecast.list[0].weather[0].icon}}.png\">\r\n                    </span>\r\n                    <span>\r\n                      {{forecast.list[0].main.temp | number:'1.0-0'}}&deg;C\r\n                    </span>\r\n                    </ng-container>\r\n                    <span>\r\n                    </span>\r\n                  </div>\r\n                </div>\r\n              </mat-panel-title>\r\n            </mat-expansion-panel-header>\r\n            <div id=\"\">\r\n              <!-- index 1 -->\r\n              <ng-container *ngFor=\"let loop of [1,2,3,4]\">\r\n                <div class=\"weather_child\">\r\n                  <div class=\"box\">\r\n                    <span>\r\n                      {{(forecast.list[loop].dt_txt[11]) + (forecast.list[loop].dt_txt[12]) + (forecast.list[loop].dt_txt[13]) + (forecast.list[loop].dt_txt[14])\r\n                      + (forecast.list[loop].dt_txt[15])}} - {{(forecast.list[loop+1].dt_txt[11]) + (forecast.list[loop+1].dt_txt[12])\r\n                      + (forecast.list[loop+1].dt_txt[13]) + (forecast.list[loop+1].dt_txt[14]) + (forecast.list[loop+1].dt_txt[15])}}\r\n                    </span>\r\n                    <span class=\"example-fill-remaining-space\"></span>\r\n                    <span>\r\n                      <img src=\"https://openweathermap.org/img/w/{{forecast.list[loop].weather[0].icon}}.png\">\r\n                    </span>\r\n                    <span>\r\n                      {{forecast.list[loop].main.temp | number:'1.0-0'}}&deg;C\r\n                    </span>\r\n\r\n                    <!-- <ng-container id=\"compass\">\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/east.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/south.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/west.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                        </mat-icon>\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg == null\">\r\n                        Calm\r\n                      </span>\r\n                      </ng-container> -->\r\n                  </div>\r\n                </div>\r\n                <mat-divider></mat-divider>\r\n              </ng-container>\r\n            </div>\r\n          </mat-expansion-panel>\r\n        </mat-accordion>\r\n        </ng-container>\r\n      </div>\r\n\r\n\r\n  <div>\r\n    <ng-container *ngIf=\"metric\">\r\n    <mat-accordion>\r\n      <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n\r\n            <div class=\"weather_child\">\r\n              <div class=\"box\">\r\n                <span>\r\n                  Current:\r\n                </span>\r\n                <span>\r\n                  <img src=\"https://openweathermap.org/img/w/{{forecastFH.list[0].weather[0].icon}}.png\">\r\n                </span>\r\n                <span>\r\n                  {{forecastFH.list[0].main.temp | number:'1.0-0'}}&deg;F\r\n                </span>\r\n                <span>\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n        <div id=\"\">\r\n          <!-- index 1 -->\r\n          <ng-container *ngFor=\"let loop of [1,2,3,4]\">\r\n            <div class=\"weather_child\">\r\n              <div class=\"box\">\r\n                <span>\r\n                  {{(forecastFH.list[loop].dt_txt[11]) + (forecastFH.list[loop].dt_txt[12]) + (forecastFH.list[loop].dt_txt[13]) + (forecastFH.list[loop].dt_txt[14])\r\n                  + (forecastFH.list[loop].dt_txt[15])}} - {{(forecastFH.list[loop+1].dt_txt[11]) + (forecastFH.list[loop+1].dt_txt[12])\r\n                  + (forecastFH.list[loop+1].dt_txt[13]) + (forecastFH.list[loop+1].dt_txt[14]) + (forecastFH.list[loop+1].dt_txt[15])}}\r\n                </span>\r\n                <span class=\"example-fill-remaining-space\"></span>\r\n                <span>\r\n                  <img src=\"https://openweathermap.org/img/w/{{forecastFH.list[loop].weather[0].icon}}.png\">\r\n                </span>\r\n                <span>\r\n                  {{forecastFH.list[loop].main.temp | number:'1.0-0'}}&deg;F\r\n                </span>\r\n\r\n                <!-- <ng-container id=\"compass\">\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/east.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/south.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315\">\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/west.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg == null\">\r\n                    Calm\r\n                  </span>\r\n                  </ng-container> -->\r\n              </div>\r\n            </div>\r\n            <mat-divider></mat-divider>\r\n          </ng-container>\r\n        </div>\r\n      </mat-expansion-panel>\r\n    </mat-accordion>\r\n    </ng-container>\r\n  </div>\r\n\r\n        <!-- <mat-icon id=\"newsSeverity{{news.severity}}\">{{news.type}}</mat-icon>\r\n\r\n        {{news.desc}}\r\n        {{news.timeStamp}}\r\n        {{news.content}} -->\r\n\r\n     <div id=\"content\" *ngFor=\"let news of homeNews.update | slice:0:4; let i=index\">\r\n\r\n            <div class=\"news-image-right\" (activate)=\"onActivate($event)\">\r\n              <mat-icon id=\"newsSeverity{{news.severity}}\">{{news.type}}</mat-icon>\r\n            </div>\r\n\r\n            <div class=\"news-content\">\r\n\r\n                <h4  class=\"news-content-aside\" >{{news.desc}}</h4>\r\n\r\n                <p  class=\"news-content-aside\">{{news.content}}</p>\r\n\r\n                <p>{{news.timeStamp}}</p>\r\n\r\n              </div>\r\n\r\n            <mat-divider class=\"mat-elevation-z2\"></mat-divider>\r\n\r\n      </div>\r\n\r\n      <app-instagram-feed></app-instagram-feed>\r\n\r\n\r\n  <!-- <div id=\"newsUpdate\" *ngFor=\"let news of homeNews.update\">\r\n    <mat-expansion-panel  id=\"newsUpdate\">\r\n      <mat-expansion-panel-header>\r\n        <mat-panel-title>\r\n          <div class=\"box\">\r\n            <span>\r\n              <mat-icon id=\"newsSeverity{{homeNews.update[0].severity}}\">{{homeNews.update[0].type}}</mat-icon>\r\n            </span>\r\n            <span>{{homeNews.update[0].desc}}</span>\r\n          </div>\r\n        </mat-panel-title>\r\n        <mat-panel-description>\r\n          <div class=\"box\">\r\n            <span>10:30 am</span>\r\n          </div>\r\n        </mat-panel-description>\r\n      </mat-expansion-panel-header>\r\n      {{homeNews.update[0].content}}\r\n    </mat-expansion-panel>\r\n  </div> -->\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1368,7 +1816,7 @@ module.exports = "<div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#homepage-body {\n  margin-bottom: 12%; }\n\n.box {\n  display: flex;\n  align-items: center; }\n\n.box span {\n  font-size: 100%; }\n\n#headerImg img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#weather-toolbar {\n  background-color: #5cd65c; }\n\n.flex-container {\n  display: flex;\n  justify-content: space-around;\n  background: #76b852;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to left, #8DC26F, #76b852);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n.compass-img {\n  width: 245%;\n  height: 245%; }\n\n.wind-small {\n  font-size: 70%; }\n\n.up {\n  color: blue; }\n\n.down {\n  color: red; }\n\n.flex-item {\n  width: 100%;\n  text-align: center;\n  font-size: 150%;\n  margin-top: 2%; }\n\n.flex-temp .small {\n  font-size: 70%; }\n\n#wind {\n  font-size: 80%;\n  width: 70%;\n  text-align: center; }\n\n#direction {\n  float: right; }\n\n#forecast {\n  vertical-align: middle;\n  font-size: 50%; }\n\n#compass {\n  float: right; }\n\n.mat-item-img {\n  height: 200%;\n  width: 33%;\n  margin-left: -50px; }\n\n.mat-item-content {\n  margin-left: 30px; }\n\n.mat-item-para {\n  height: 30%; }\n\n.weather_child {\n  font-size: 110%; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.weather_card {\n  margin-bottom: 3%; }\n\n#newsSeverity1 {\n  color: red; }\n\n#newsSeverity2 {\n  color: orange; }\n\n#newsSeverity3 {\n  color: yellow; }\n\n#newsSeverity4 {\n  color: green; }\n\n#newsUpdate {\n  margin: 1%;\n  margin-top: 2%; }\n"
+module.exports = "#homepage-body {\n  margin-bottom: 20%;\n  overflow: hidden; }\n\n.box {\n  display: flex;\n  align-items: center; }\n\n.box span {\n  font-size: 100%; }\n\n#headerImg img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#weather-toolbar {\n  background-color: #5cd65c; }\n\n.flex-container {\n  display: flex;\n  justify-content: space-around;\n  background: #76b852;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to left, #8DC26F, #76b852);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n.compass-img {\n  width: 245%;\n  height: 245%; }\n\n.wind-small {\n  font-size: 70%; }\n\n.up {\n  color: blue; }\n\n.down {\n  color: red; }\n\n.flex-item {\n  width: 100%;\n  text-align: center;\n  font-size: 150%;\n  margin-top: 2%; }\n\n.flex-temp .small {\n  font-size: 70%; }\n\n#wind {\n  font-size: 80%;\n  width: 70%;\n  text-align: center; }\n\n#direction {\n  float: right; }\n\n#forecast {\n  vertical-align: middle;\n  font-size: 50%; }\n\n#compass {\n  float: right; }\n\n.weather_child {\n  font-size: 110%; }\n\n.news-image-right {\n  position: fixed;\n  margin: 3%;\n  overflow: hidden; }\n\n.news-content-aside {\n  position: relative;\n  left: 50px;\n  margin: 5px; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox.\r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.weather_card {\n  margin-bottom: 3%; }\n\n#newsSeverity1 {\n  color: red; }\n\n#newsSeverity2 {\n  color: orange; }\n\n#newsSeverity3 {\n  color: green; }\n\n#newsUpdate {\n  margin: 1%;\n  margin-top: 2%; }\n"
 
 /***/ }),
 
@@ -1398,24 +1846,31 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var HomepageComponent = /** @class */ (function () {
-    function HomepageComponent(_weatherService, _homeNewsService) {
+    function HomepageComponent(_weatherService, _homeNewsService, _instagramFeed) {
         this._weatherService = _weatherService;
         this._homeNewsService = _homeNewsService;
+        this._instagramFeed = _instagramFeed;
         this.homeNews = [];
     }
     HomepageComponent.prototype.ngOnInit = function () {
+        this.InjectableService();
+    };
+    HomepageComponent.prototype.onActivate = function (event) {
+        // preventDefault();
+    };
+    HomepageComponent.prototype.InjectableService = function () {
         var _this = this;
-        this._weatherService.getWeather()
-            .subscribe(function (weather) {
-            _this.weather = weather;
-        });
         this._weatherService.getForecast()
             .subscribe(function (forecast) {
             _this.forecast = forecast;
-            // this._homeNewsService.getHomeNews()
-            // .subscribe(homeNews =>{
-            //   this.homeNews = homeNews;
-            // })
+        });
+        this._weatherService.getForecastFH()
+            .subscribe(function (forecastFH) {
+            _this.forecastFH = forecastFH;
+            _this._homeNewsService.getHomeNews()
+                .subscribe(function (homeNews) {
+                _this.homeNews = homeNews;
+            });
         }, function (error) { return _this.errorMessage = error; });
     };
     HomepageComponent = __decorate([
@@ -1432,9 +1887,82 @@ var HomepageComponent = /** @class */ (function () {
                 ])
             ]
         }),
-        __metadata("design:paramtypes", [_services_weather_service__WEBPACK_IMPORTED_MODULE_1__["WeatherService"], _services_weather_service__WEBPACK_IMPORTED_MODULE_1__["HomeNewsService"]])
+        __metadata("design:paramtypes", [_services_weather_service__WEBPACK_IMPORTED_MODULE_1__["WeatherService"],
+            _services_weather_service__WEBPACK_IMPORTED_MODULE_1__["HomeNewsService"],
+            _services_weather_service__WEBPACK_IMPORTED_MODULE_1__["InstagramFeedService"]])
     ], HomepageComponent);
     return HomepageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/homepage/instagram-feed/instagram-feed.component.html":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/homepage/instagram-feed/instagram-feed.component.html ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"instagram-feed\">\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[0].images.thumbnail.url}}\">\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[1].images.thumbnail.url}}\">\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mat-card\">\r\n        <img src=\"{{instaFeed.data[2].images.thumbnail.url}}\">\r\n    </mat-card>\r\n</div>\r\n<!-- *ngFor=\"let loop of [0,1,2,3,4]; let i = index\" -->\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/homepage/instagram-feed/instagram-feed.component.scss":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/homepage/instagram-feed/instagram-feed.component.scss ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#instagram-feed {\n  display: flex;\n  flex-direction: row;\n  position: fixed;\n  bottom: 40px;\n  overflow-y: auto;\n  overflow-x: hidden; }\n\n.mat-card {\n  width: 33%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/homepage/instagram-feed/instagram-feed.component.ts":
+/*!********************************************************************************!*\
+  !*** ./src/app/components/homepage/instagram-feed/instagram-feed.component.ts ***!
+  \********************************************************************************/
+/*! exports provided: InstagramFeedComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstagramFeedComponent", function() { return InstagramFeedComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_weather_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/weather.service */ "./src/app/components/homepage/services/weather.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var InstagramFeedComponent = /** @class */ (function () {
+    function InstagramFeedComponent(_instagramFeed) {
+        this._instagramFeed = _instagramFeed;
+    }
+    InstagramFeedComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this._instagramFeed.getInstagramFeed()
+            .subscribe(function (instaFeed) {
+            _this.instaFeed = instaFeed;
+        });
+    };
+    InstagramFeedComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-instagram-feed',
+            template: __webpack_require__(/*! ./instagram-feed.component.html */ "./src/app/components/homepage/instagram-feed/instagram-feed.component.html"),
+            styles: [__webpack_require__(/*! ./instagram-feed.component.scss */ "./src/app/components/homepage/instagram-feed/instagram-feed.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_services_weather_service__WEBPACK_IMPORTED_MODULE_1__["InstagramFeedService"]])
+    ], InstagramFeedComponent);
+    return InstagramFeedComponent;
 }());
 
 
@@ -1581,13 +2109,14 @@ var QuotesComponent = /** @class */ (function () {
 /*!*****************************************************************!*\
   !*** ./src/app/components/homepage/services/weather.service.ts ***!
   \*****************************************************************/
-/*! exports provided: WeatherService, HomeNewsService */
+/*! exports provided: WeatherService, HomeNewsService, InstagramFeedService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WeatherService", function() { return WeatherService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeNewsService", function() { return HomeNewsService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstagramFeedService", function() { return InstagramFeedService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var rxjs_Observable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/Observable */ "./node_modules/rxjs-compat/_esm5/Observable.js");
@@ -1613,18 +2142,18 @@ var WeatherService = /** @class */ (function () {
     function WeatherService(_http) {
         this._http = _http;
         // tslint:disable-next-line:max-line-length
-        this._weatherCurrent = 'http://api.openweathermap.org/data/2.5/weather?lat=53.3909&lon=-6.5665&units=metric&appid=6864244ceeeaa2b28fad8845b7113272';
+        this._weatherForecastFH = 'http://api.openweathermap.org/data/2.5/forecast?lat=53.3909&lon=-6.5665&units=imperial&appid=6864244ceeeaa2b28fad8845b7113272';
         // tslint:disable-next-line:max-line-length
         this._weatherForecast = 'http://api.openweathermap.org/data/2.5/forecast?lat=53.3909&lon=-6.5665&units=metric&appid=6864244ceeeaa2b28fad8845b7113272';
     }
     WeatherService.prototype.getForecast = function () {
         return this._http.get(this._weatherForecast)
-            .do(function (data) { return console.log("Forecast: " + JSON.stringify(data)); })
+            .do(function (data) { return console.log('Forecast: ' + JSON.stringify(data)); })
             .catch(this.handleError);
     };
-    WeatherService.prototype.getWeather = function () {
-        return this._http.get(this._weatherCurrent)
-            .do(function (data) { return console.log("Weather: " + JSON.stringify(data)); })
+    WeatherService.prototype.getForecastFH = function () {
+        return this._http.get(this._weatherForecastFH)
+            .do(function (data) { return console.log('ForecastFH: ' + JSON.stringify(data)); })
             .catch(this.handleError);
     };
     WeatherService.prototype.handleError = function (err) {
@@ -1641,12 +2170,11 @@ var WeatherService = /** @class */ (function () {
 var HomeNewsService = /** @class */ (function () {
     function HomeNewsService(_http) {
         this._http = _http;
-        // tslint:disable-next-line:max-line-length
-        this._homeNewsUrl = 'https://gist.githubusercontent.com/PatrickBookGolf365/5efbf456b43bb5f27ae1d1f34d060a38/raw/75cda83d26e27a868cbc7bdafe8b8c4014bb11f0/homenews.json';
+        this._homeNewsUrl = 'http://news.bookgolf365.ie/news.json';
     }
     HomeNewsService.prototype.getHomeNews = function () {
         return this._http.get(this._homeNewsUrl)
-            .do(function (data) { return console.log('All: ' + JSON.stringify(data)); })
+            .do(function (data) { return JSON.stringify(data); })
             .catch(this.handleError);
     };
     HomeNewsService.prototype.handleError = function (err) {
@@ -1660,6 +2188,31 @@ var HomeNewsService = /** @class */ (function () {
     return HomeNewsService;
 }());
 
+var InstagramFeedService = /** @class */ (function () {
+    function InstagramFeedService(_http) {
+        this._http = _http;
+        // tslint:disable-next-line:max-line-length
+        this._instagramFeedUrl = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=8144523052.2216fb3.4cfe98c30fbb4c57a6049b5980ccb6fc';
+    }
+    InstagramFeedService.prototype.getInstagramFeed = function () {
+        return this._http.get(this._instagramFeedUrl)
+            .do(function (data) { return console.log('Insta: ' + JSON.stringify(data)); })
+            .catch(this.handleError);
+    };
+    InstagramFeedService.prototype.handleError = function (err) {
+        console.log(err.message);
+        return rxjs_Observable__WEBPACK_IMPORTED_MODULE_2__["Observable"].throw(err.message);
+    };
+    InstagramFeedService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], InstagramFeedService);
+    return InstagramFeedService;
+}());
+
+// tslint:disable-next-line:max-line-length
+// https://gist.githubusercontent.com/PatrickBookGolf365/b124a8e610abd4e659b203b9b925f7fc/raw/f6ab4e4a342ecafd31e04756419b932db5d01705/news.json
+// http://news.bookgolf365.ie/news.json
 
 
 /***/ }),
@@ -1671,7 +2224,7 @@ var HomeNewsService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"live-main\">\r\n  <mat-toolbar id=\"live-search\">\r\n    <mat-form-field>\r\n      <input matInput placeholder=\"search\">\r\n    </mat-form-field>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n    <button mat-button>\r\n      <mat-icon>search</mat-icon>\r\n    </button>\r\n  </mat-toolbar>\r\n  <table id=\"live-table\">\r\n    <thead>\r\n      <tr id=\"live-table-header-title\">\r\n        <th>Pos</th>\r\n        <th>Player</th>\r\n        <th>Team</th>\r\n        <th>Hole</th>\r\n        <th>R1</th>\r\n        <th>R2</th>\r\n        <th>R3</th>\r\n        <th>R4</th>\r\n        <th>Total</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody id=\"player-tbody\" *ngFor=\"let datas of data.event.tournament.players.player; let i = index\" > \r\n      <tr>\r\n        <td>{{datas.totals.position}}</td>\r\n        <td>{{datas.firstname}} {{datas.lastname}}</td>\r\n        <td>{{i}}<img src=\"./assets/img/{{datas.teamname}}.png\" title=\"{{datas.teamname}}\"></td>\r\n        <td>Hole</td>\r\n        <td>{{datas.round[0].strokes}}</td>\r\n        <td>{{datas.round[1].strokes}}</td>\r\n        <td>{{datas.round[2].strokes}}</td>\r\n        <td>{{datas.round[3].strokes}}</td>\r\n        <td>{{(datas.round[0].strokes * 1)  + (datas.round[1].strokes * 1) + (datas.round[2].strokes * 1) + (datas.round[3].strokes * 1)}}</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>\r\n\r\n"
+module.exports = "<div id=\"main\" *ngIf=\"hideall\">\r\n  <mat-toolbar id=\"team-header-toolbar\">\r\n    <span id=\"title\">\r\n      <span>\r\n        <button class=\"hide-btn\" (click)=\"hideall = !hideall\">\r\n          <mat-icon>arrow_back</mat-icon>\r\n        </button>\r\n      </span>\r\n      {{playerProfilesFirst}} {{playerProfilesLast}}\r\n      <button id=\"fav-button\" mat-button>\r\n        <mat-icon class=\"fav\">star</mat-icon>\r\n      </button>\r\n    </span>\r\n  </mat-toolbar>\r\n\r\n  <div id=\"team-header\">\r\n    <span>\r\n      <img id=\"team-image\" src=\"./assets/img/team.jpg\">\r\n    </span>\r\n    <!-- <mat-card id=\"score-Info\"> -->\r\n    <!-- <table> -->\r\n    <!-- <tr *ngFor=\"let teams of data.event.tournament.teams.team\">\r\n          \r\n          <ng-container *ngIf=\"teams.name == teamProfiles\"> -->\r\n    <!-- <tr>\r\n          <th>Thru</th>test\r\n          <th>Today</th>null\r\n          <th>Total</th>test\r\n          <th>Rank</th>test -->\r\n    <!-- </ng-container> -->\r\n    <!-- </tr>\r\n      </table>\r\n    </mat-card> -->\r\n  </div>\r\n  <div *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\">\r\n    <mat-expansion-panel id=\"player-expansion\" *ngIf=\"playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast\">\r\n      <mat-expansion-panel-header>\r\n        <mat-panel-title>\r\n          Round One\r\n          <br> Total Score: {{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes\r\n            * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes\r\n            * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes\r\n            * 1) + (playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes\r\n            * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) +\r\n            (playerdata.round[0].score[14].strokes * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[16].strokes\r\n            * 1) + (playerdata.round[0].score[17].strokes * 1)}}\r\n        </mat-panel-title>\r\n      </mat-expansion-panel-header>\r\n      <div id=\"playerScore\">\r\n        <table class=\"holeByHole\">\r\n          <thead>\r\n            <tr>\r\n              <th>01</th>\r\n              <th>02</th>\r\n              <th>03</th>\r\n              <th>04</th>\r\n              <th>05</th>\r\n              <th>06</th>\r\n              <th>07</th>\r\n              <th>08</th>\r\n              <th>09</th>\r\n              <th>Out</th>\r\n            </tr>\r\n          </thead>\r\n\r\n          <tbody>\r\n\r\n            <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n              <td class=\"holeBody\" *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n              <td class=\"holeBody\">{{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes\r\n                * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes\r\n                * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes\r\n                * 1)}}</td>\r\n            </tr>\r\n            <br>\r\n            <tr>\r\n              <th>10</th>\r\n              <th>11</th>\r\n              <th>12</th>\r\n              <th>13</th>\r\n              <th>14</th>\r\n              <th>15</th>\r\n              <th>16</th>\r\n              <th>17</th>\r\n              <th>18</th>\r\n              <th>In</th>\r\n            </tr>\r\n            <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n              <td class=\"holeBody\" *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n              <td class=\"holeBody\">{{(playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes\r\n                * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) + (playerdata.round[0].score[14].strokes\r\n                * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[16].strokes * 1) + (playerdata.round[0].score[17].strokes\r\n                * 1)}}</td>\r\n            </tr>\r\n\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n    </mat-expansion-panel>\r\n  </div>\r\n\r\n\r\n  <div *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\">\r\n    <mat-expansion-panel id=\"player-expansion\" *ngIf=\"playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast\">\r\n      <mat-expansion-panel-header>\r\n        <mat-panel-title>\r\n          Round Two\r\n          <br> Total Score: {{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes\r\n            * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes\r\n            * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes\r\n            * 1) + (playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes\r\n            * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) +\r\n            (playerdata.round[1].score[14].strokes * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[16].strokes\r\n            * 1) + (playerdata.round[1].score[17].strokes * 1)}}\r\n        </mat-panel-title>\r\n      </mat-expansion-panel-header>\r\n      <div id=\"playerScore\">\r\n        <table class=\"holeByHole\">\r\n          <thead>\r\n            <tr>\r\n              <th>01</th>\r\n              <th>02</th>\r\n              <th>03</th>\r\n              <th>04</th>\r\n              <th>05</th>\r\n              <th>06</th>\r\n              <th>07</th>\r\n              <th>08</th>\r\n              <th>09</th>\r\n              <th>Out</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n            <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n              <td class=\"holeBody\" *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n              <td class=\"holeBody\">{{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes\r\n                * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes\r\n                * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes\r\n                * 1)}}</td>\r\n            </tr>\r\n            <br>\r\n            <tr>\r\n              <th>10</th>\r\n              <th>11</th>\r\n              <th>12</th>\r\n              <th>13</th>\r\n              <th>14</th>\r\n              <th>15</th>\r\n              <th>16</th>\r\n              <th>17</th>\r\n              <th>18</th>\r\n              <th>In</th>\r\n            </tr>\r\n            <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n              <td class=\"holeBody\" *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n              <td class=\"holeBody\">{{(playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes\r\n                * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) + (playerdata.round[1].score[14].strokes\r\n                * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[16].strokes * 1) + (playerdata.round[1].score[17].strokes\r\n                * 1)}}</td>\r\n            </tr>\r\n\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n    </mat-expansion-panel>\r\n  </div>\r\n\r\n  <div *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\">\r\n    <mat-expansion-panel id=\"player-expansion\" *ngIf=\"playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast\">\r\n      <mat-expansion-panel-header>\r\n        <mat-panel-title>\r\n          Round Three\r\n          <br> Total Score: {{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes\r\n            * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes\r\n            * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes\r\n            * 1) + (playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes\r\n            * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) +\r\n            (playerdata.round[2].score[14].strokes * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[16].strokes\r\n            * 1) + (playerdata.round[2].score[17].strokes * 1)}}\r\n        </mat-panel-title>\r\n      </mat-expansion-panel-header>\r\n      <div id=\"playerScore\">\r\n        <table class=\"holeByHole\">\r\n          <thead>\r\n            <tr>\r\n              <th>01</th>\r\n              <th>02</th>\r\n              <th>03</th>\r\n              <th>04</th>\r\n              <th>05</th>\r\n              <th>06</th>\r\n              <th>07</th>\r\n              <th>08</th>\r\n              <th>09</th>\r\n              <th>Out</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n              <td class=\"holeBody\" *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n              <td class=\"holeBody\">{{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes\r\n                * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes\r\n                * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes\r\n                * 1)}}</td>\r\n            </tr>\r\n            <br>\r\n            <tr>\r\n              <th>10</th>\r\n              <th>11</th>\r\n              <th>12</th>\r\n              <th>13</th>\r\n              <th>14</th>\r\n              <th>15</th>\r\n              <th>16</th>\r\n              <th>17</th>\r\n              <th>18</th>\r\n              <th>In</th>\r\n            </tr>\r\n            <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n              <td class=\"holeBody\" *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n              <td class=\"holeBody\">{{(playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes\r\n                * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) + (playerdata.round[2].score[14].strokes\r\n                * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[16].strokes * 1) + (playerdata.round[2].score[17].strokes\r\n                * 1)}}</td>\r\n            </tr>\r\n\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n\r\n    </mat-expansion-panel>\r\n  </div>\r\n  <div *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\">\r\n    <mat-expansion-panel id=\"player-expansion\" *ngIf=\"playerdata.firstname == playerProfilesFirst && playerdata.lastname == playerProfilesLast\">\r\n      <mat-expansion-panel-header>\r\n        <mat-panel-title>\r\n          Round Four\r\n          <br> Total Score: {{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes\r\n            * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes\r\n            * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes\r\n            * 1) + (playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes\r\n            * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) +\r\n            (playerdata.round[3].score[14].strokes * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[16].strokes\r\n            * 1) + (playerdata.round[3].score[17].strokes * 1)}}\r\n        </mat-panel-title>\r\n      </mat-expansion-panel-header>\r\n      <div id=\"playerScore\">\r\n        <table class=\"holeByHole\">\r\n          <thead>\r\n            <tr>\r\n              <th>01</th>\r\n              <th>02</th>\r\n              <th>03</th>\r\n              <th>04</th>\r\n              <th>05</th>\r\n              <th>06</th>\r\n              <th>07</th>\r\n              <th>08</th>\r\n              <th>09</th>\r\n              <th>Out</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n              <td class=\"holeBody\" *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n              <td class=\"holeBody\">{{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes\r\n                * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes\r\n                * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes\r\n                * 1)}}</td>\r\n            </tr>\r\n            <br>\r\n            <tr>\r\n              <th>10</th>\r\n              <th>11</th>\r\n              <th>12</th>\r\n              <th>13</th>\r\n              <th>14</th>\r\n              <th>15</th>\r\n              <th>16</th>\r\n              <th>17</th>\r\n              <th>18</th>\r\n              <th>In</th>\r\n            </tr>\r\n            <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n              <td class=\"holeBody\" *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n              <td class=\"holeBody\">{{(playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes\r\n                * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) + (playerdata.round[3].score[14].strokes\r\n                * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[16].strokes * 1) + (playerdata.round[3].score[17].strokes\r\n                * 1)}}</td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n    </mat-expansion-panel>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<div id=\"live-main\" *ngIf=\"!hideall\">\r\n  <!-- <table matSort (matSortChange)=\"sortData($event)\">\r\n        <tr>\r\n         \r\n          <th mat-sort-header=\"position\">Pos</th>\r\n          <th>Name</th>\r\n        </tr>\r\n      \r\n        <tr *ngFor=\"let players of playerinfo.event.tournament.players.player; let i = index\">\r\n       {{i}}\r\n          \r\n        </tr>\r\n      </table> -->\r\n  <mat-toolbar id=\"live-search\">\r\n    <mat-form-field>\r\n      <input matInput placeholder=\"Search for Team\" #teambox (keyup)=\"0\">\r\n    </mat-form-field>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n    <mat-form-field>\r\n      <input matInput placeholder=\"Search for Player\" #playerbox (keyup)=\"0\">\r\n    </mat-form-field>\r\n  </mat-toolbar>\r\n\r\n  <table id=\"live-table\">\r\n    <thead>\r\n      <tr id=\"live-table-header-title\">\r\n        <th>Profile</th>\r\n        <th>Pos</th>\r\n        <th>Player</th>\r\n        <th>Team</th>\r\n        <th>R1</th>\r\n        <th>R2</th>\r\n        <th>R3</th>\r\n        <th>R4</th>\r\n        <th>Total</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody id=\"player-tbody\" *ngFor=\"let playerdata of playerdata.event.tournament.players.player; let i = index\">\r\n      <ng-container *ngIf=\"playerdata.teamname == teambox.value  || playerdata.firstname == playerbox.value || playerdata.lastname == playerbox.value || playerbox.value == ''\">\r\n\r\n        <tr id=\"player-tr\" *ngIf=\"playerdata.totals.status == 'ok'\">\r\n          <td><button class=\"\" (click)=\"hideall = !hideall; teamProfiles = [playerdata.teamname]; playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]\"\r\n            mat-button><mat-icon>person</mat-icon></button>\r\n          </td>\r\n          <td>{{playerdata.totals.position}}</td>\r\n          <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n          <td>\r\n            \r\n              <img src=\"./assets/img/{{playerdata.teamname}}.png\" title=\"{{playerdata.teamname}}\">\r\n            \r\n          </td>\r\n          <td>{{playerdata.round[0].strokes}}</td>\r\n          <td>{{playerdata.round[1].strokes}}</td>\r\n          <td>{{playerdata.round[2].strokes}}</td>\r\n          <td>{{playerdata.round[3].strokes}}</td>\r\n          <td id=\"total\">{{(playerdata.round[0].strokes * 1) + (playerdata.round[1].strokes * 1) + (playerdata.round[2].strokes * 1) + (playerdata.round[3].strokes\r\n            * 1)}}</td>\r\n        </tr>\r\n\r\n      </ng-container>\r\n    </tbody>\r\n\r\n  </table>\r\n</div>"
 
 /***/ }),
 
@@ -1682,7 +2235,7 @@ module.exports = "<div id=\"live-main\">\r\n  <mat-toolbar id=\"live-search\">\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#live-table {\n  font-size: 75%;\n  width: 100%;\n  border-collapse: collapse; }\n\ntbody:nth-child(even) {\n  background-color: #adebad; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.mat-button {\n  min-width: 1%; }\n\n#live-search {\n  width: 100%; }\n\n#live-search mat-form-field {\n  width: 45%;\n  font-size: 68%; }\n\n#live-table-header-title {\n  height: 40px;\n  text-align: center; }\n\n#live-main {\n  margin-bottom: 31%; }\n\n#total_plus {\n  color: blue; }\n\n#total_Even {\n  color: red; }\n\ntr:nth-child(even) {\n  background: #56ab2f;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to right, #a8e063, #56ab2f);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n#live-table td {\n  text-align: center; }\n"
+module.exports = "#live-table {\n  font-size: 75%;\n  width: 100%;\n  border-collapse: collapse; }\n\n#player-tbody:nth-child(even) {\n  background-color: #adebad; }\n\n#player-expansion {\n  margin: 2%; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.roundsPanel {\n  width: 100%; }\n\n.mat-button {\n  min-width: 1%; }\n\n#live-search {\n  width: 100%; }\n\n#live-search mat-form-field {\n  width: 45%;\n  font-size: 68%; }\n\n#live-table-header-title {\n  height: 40px;\n  text-align: center; }\n\n#live-main {\n  margin-bottom: 31%; }\n\n#total_plus {\n  color: blue; }\n\n#total {\n  color: red; }\n\n#total_Even {\n  color: red; }\n\n#player-tr:nth-child(even) {\n  background: #56ab2f;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to right, #a8e063, #56ab2f);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n#live-table td {\n  text-align: center; }\n\n#main {\n  margin-bottom: 30%; }\n\n#team-header-toolbar #title {\n  width: 100%;\n  font-size: 130%; }\n\n.hide-btn {\n  min-width: 1%;\n  background-color: Transparent;\n  background-repeat: no-repeat;\n  border: none;\n  cursor: pointer;\n  overflow: hidden;\n  outline: none; }\n\n.fav {\n  color: #cccc00; }\n\n#fav-button {\n  min-width: 1%; }\n\n#team-header {\n  text-align: center; }\n\n#team-image {\n  width: 50%;\n  height: 50%;\n  margin: auto; }\n\n#score-Info table {\n  width: 100%;\n  text-align: center; }\n\n.scroll-main {\n  height: 100%;\n  margin-top: 3%;\n  overflow: hidden; }\n\n.scroll-child {\n  height: 250px;\n  overflow-y: scroll; }\n\n.roundCard {\n  margin: 2%; }\n\n.roundCard span {\n  font-size: 75%; }\n\n#team-body {\n  margin-bottom: 5%; }\n\n.holeHeader {\n  text-align: center;\n  border: 1px solid black; }\n\n.holeByHole {\n  width: 100%;\n  border-collapse: collapse; }\n\n.holeBody {\n  text-align: center;\n  border: 1px solid black; }\n"
 
 /***/ }),
 
@@ -1710,22 +2263,52 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 var LivePlayerScoreComponent = /** @class */ (function () {
+    //   sortedData;
     function LivePlayerScoreComponent(_liveScoreService) {
         this._liveScoreService = _liveScoreService;
-        this.numbers = [];
-        this.plusnumbers = [];
-        this.numbers = Array.from(Array(211)).map(function (x, i) { return i; });
-        this.plusnumbers = Array.from(Array(202)).map(function (x, j) { return j; });
+        this.playerinfo = [
+            {
+                event: {
+                    tournament: {
+                        players: {
+                            player: [
+                                {
+                                    firstname: "Hannah",
+                                    totals: {
+                                        position: "1",
+                                    },
+                                },
+                                {
+                                    firstname: "Bannana",
+                                    totals: {
+                                        position: "8",
+                                    },
+                                },
+                                {
+                                    firstname: "Tanna",
+                                    totals: {
+                                        position: "4",
+                                    },
+                                },
+                                {
+                                    firstname: "FriedHamma",
+                                    totals: {
+                                        position: "7",
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ];
+        //  this.sortedData = this.playerinfo;
     }
     LivePlayerScoreComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this._liveScoreService.getFakePlayer()
-            .subscribe(function (player) {
-            _this.player = player;
-        }, function (error) { return _this.errorMessage = error; });
         this._liveScoreService.getRealJsonData()
-            .subscribe(function (data) {
-            _this.data = data;
+            .subscribe(function (playerdata) {
+            _this.playerdata = playerdata;
         }, function (error) { return _this.errorMessage = error; });
     };
     LivePlayerScoreComponent = __decorate([
@@ -1739,6 +2322,9 @@ var LivePlayerScoreComponent = /** @class */ (function () {
     return LivePlayerScoreComponent;
 }());
 
+function compare(a, b, isAsc) {
+    return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
+}
 
 
 /***/ }),
@@ -1862,14 +2448,6 @@ var LiveScoreService = /** @class */ (function () {
             .do(function (data) { return console.log("real data:" + JSON.stringify(data)); })
             .catch(this.handleError);
     };
-    LiveScoreService.prototype.getPlayerFake = function () {
-        return this._http.get(this._fakeleadUrl)
-            .catch(this.handleError);
-    };
-    LiveScoreService.prototype.getFakePlayer = function () {
-        return this._http.get(this._playerfakeUrl)
-            .catch(this.handleError);
-    };
     LiveScoreService.prototype.getTeam = function () {
         return this._http.get(this._faketeamUrl)
             .catch(this.handleError);
@@ -1896,7 +2474,7 @@ var LiveScoreService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"team-wrapper\" *ngIf=\"hideall\">\r\n  <mat-toolbar id=\"team-header-toolbar\">\r\n      <ng-container *ngFor=\"let players of data.event.tournament.teams.team\">\r\n          <span  *ngIf=\"profiles == players.name\" id=\"title\">\r\n    <span>\r\n      <button class=\"hide-btn\" (click)=\"hideall = !hideall\">\r\n        <mat-icon>arrow_back</mat-icon>\r\n      </button>\r\n    </span>\r\n    \r\n      {{players.name}}\r\n    <button id=\"fav-button\" mat-button>\r\n      <mat-icon  class=\"fav\">star</mat-icon>\r\n    </button>\r\n  </span>\r\n  </ng-container>\r\n  </mat-toolbar>\r\n\r\n  <div id=\"team-header\">\r\n      <span>\r\n        <img id=\"team-image\" src=\"./assets/img/team.jpg\">\r\n      </span>\r\n      <!-- <mat-card id=\"score-Info\">\r\n          <table>\r\n          <tr *ngFor=\"let teams of data.event.tournament.teams.team\">\r\n            <ng-container *ngIf=\"teams.name == profiles\">\r\n              <th>Thru</th>{{teams.totals.status}}\r\n              <th>Today</th>null\r\n              <th>Total</th>{{teams.totals.totaltopar}}\r\n              <th>Rank</th>{{teams.totals.position}}\r\n          </ng-container>\r\n          </tr>\r\n        </table>\r\n        </mat-card> -->\r\n    </div>\r\n  <div id=\"team-body\">\r\n    <mat-expansion-panel>\r\n      <mat-expansion-panel-header>\r\n        <mat-panel-title>\r\n          Round One\r\n        </mat-panel-title>\r\n      </mat-expansion-panel-header>\r\n     \r\n      <!-- Static table -->\r\n      <div class=\"static-wrapper\">\r\n        <table class=\"static-table\">\r\n            <tr>\r\n              <th>Hole</th>\r\n            </tr>\r\n            <ng-container>\r\n              <tr *ngFor=\"let players of data.event.tournament.players.player\">\r\n              <td *ngIf=\"profiles == players.teamname\">{{players.firstname}} {{players.lastname}}</td>\r\n            </tr>\r\n            </ng-container>\r\n        </table>\r\n      </div>\r\n      \r\n      <!-- Scroll table -->\r\n      <div class=\"scrolling-wrapper\">\r\n        <table class=\"scroll-table\">\r\n          <tr>\r\n            <!-- Header 1/2 -->\r\n            <th>1</th>\r\n            <th>2</th>\r\n            <th>3</th>\r\n            <th>4</th>\r\n            <th>5</th>\r\n            <th>6</th>\r\n            <th>7</th>\r\n            <th>8</th>\r\n            <th>9</th>\r\n            <th>Out</th>\r\n            <th>10</th>\r\n            <th>11</th>\r\n            <th>12</th>\r\n            <th>13</th>\r\n            <th>14</th>\r\n            <th>15</th>\r\n            <th>16</th>\r\n            <th>17</th>\r\n            <th>18</th>\r\n            <th>In</th>\r\n            <th>Total</th>\r\n          </tr>\r\n          \r\n          <!-- Par  -->\r\n\r\n          <!-- Player1  -->\r\n          <tr *ngFor=\"let players of data.event.tournament.players.player;\">\r\n            <ng-container *ngFor=\"let number of [0,1,2,3,4,5,6,7,8]; let i = index;\">\r\n              <td *ngIf=\"profiles == players.teamname\">{{players.round[0].score[i].strokes}}</td>\r\n            </ng-container>\r\n            <ng-container *ngFor=\"let number of [0,1,2,3,4,5,6,7,8];\">\r\n              <td *ngIf=\"profiles == players.teamname\">{{(players.round[0].score[i].strokes)}}</td>\r\n            </ng-container>\r\n              \r\n              <ng-container *ngFor=\"let number of [9,10,11,12,13,14,15,16,17]; let i = index;\">\r\n                  <td *ngIf=\"profiles == players.teamname\">{{players.round[0].score[i].strokes}}</td>\r\n                </ng-container>\r\n              <!-- <td>{{players.round[0].score[1].strokes}}</td>\r\n              <td>{{players.round[0].score[2].strokes}}</td>\r\n              <td>{{players.round[0].score[3].strokes}}</td>\r\n              <td>{{players.round[0].score[4].strokes}}</td>\r\n              <td>{{players.round[0].score[5].strokes}}</td>\r\n              <td>{{players.round[0].score[6].strokes}}</td>\r\n              <td>{{players.round[0].score[7].strokes}}</td>\r\n              <td>{{players.round[0].score[8].strokes}}</td>\r\n              <td>{{(players.round[0].score[0].strokes * 1) + (players.round[0].score[1].strokes * 1) + (players.round[0].score[2].strokes * 1) + (players.round[0].score[3].strokes * 1) + (players.round[0].score[4].strokes * 1) + (players.round[0].score[5].strokes * 1) + (players.round[0].score[6].strokes * 1) + (players.round[0].score[7].strokes * 1) + (players.round[0].score[8].strokes * 1)}}</td>\r\n              <td>{{players.round[0].score[9].strokes}}</td>\r\n              <td>{{players.round[0].score[10].strokes}}</td>\r\n              <td>{{players.round[0].score[11].strokes}}</td>\r\n              <td>{{players.round[0].score[12].strokes}}</td>\r\n              <td>{{players.round[0].score[13].strokes}}</td>\r\n              <td>{{players.round[0].score[14].strokes}}</td>\r\n              <td>{{players.round[0].score[15].strokes}}</td>\r\n              <td>{{players.round[0].score[16].strokes}}</td>\r\n              <td>{{players.round[0].score[17].strokes}}</td>\r\n              <td>{{(players.round[0].score[9].strokes * 1) + (players.round[0].score[10].strokes * 1) + (players.round[0].score[11].strokes * 1) + \r\n                  (players.round[0].score[12].strokes * 1) + (players.round[0].score[13].strokes * 1) + (players.round[0].score[14].strokes * 1) + \r\n                  (players.round[0].score[15].strokes * 1) + (players.round[0].score[16].strokes * 1) + (players.round[0].score[17].strokes * 1)}}</td>\r\n              <td>{{(players.round[0].score[9].strokes * 1) + (players.round[0].score[10].strokes * 1) + (players.round[0].score[11].strokes * 1) + \r\n                  (players.round[0].score[12].strokes * 1) + (players.round[0].score[13].strokes * 1) + (players.round[0].score[14].strokes * 1) + \r\n                  (players.round[0].score[15].strokes * 1) + (players.round[0].score[16].strokes * 1) + (players.round[0].score[17].strokes * 1) + \r\n                  (players.round[0].score[0].strokes * 1) + (players.round[0].score[1].strokes * 1) + (players.round[0].score[2].strokes * 1) +  \r\n                  (players.round[0].score[3].strokes * 1) + (players.round[0].score[4].strokes * 1) + (players.round[0].score[5].strokes * 1) + \r\n                  (players.round[0].score[6].strokes * 1) + (players.round[0].score[7].strokes * 1) + (players.round[0].score[8].strokes * 1)}}</td> -->\r\n          </tr>\r\n          <!-- Round  -->\r\n        \r\n           <!-- Score Against Par  -->\r\n        \r\n        </table>\r\n      </div>\r\n    </mat-expansion-panel>\r\n  </div>\r\n</div>\r\n<div id=\"live-main\" *ngIf=\"!hideall\">\r\n  <mat-toolbar id=\"live-search\">\r\n    <mat-form-field>\r\n      <input matInput placeholder=\"search\">\r\n    </mat-form-field>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n    <button mat-button>\r\n      <mat-icon>search</mat-icon>\r\n    </button>\r\n  </mat-toolbar>\r\n  <table id=\"live-table\">\r\n    <thead>\r\n      <tr id=\"live-table-header-title\">\r\n        <th>Pos</th>\r\n        <th>Team</th>\r\n        <th>Hole</th>\r\n        <th>Total</th>\r\n        <th>Par</th>\r\n        <th>R1</th>\r\n        <th>R2</th>\r\n        <th>R3</th>\r\n        <th>R4</th>\r\n        <th>Total</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody id=\"player-tbody\" *ngFor=\"let datas of data.event.tournament.teams.team; let x = index\" class=\"tbody\">\r\n      <tr id=\"live-table-header\">\r\n        <td>\r\n          <button class=\"hide-btn\" (click)=\"hideStuff[x] = !hideStuff[x]\">\r\n            <mat-icon>expand_{{hideStuff[x] ? 'less' : 'more'}}</mat-icon>\r\n          </button>\r\n        </td>\r\n        <td>{{datas.totals.position}}</td>\r\n        <td>\r\n          <button class=\"\" (click)=\"hideall = !hideall; profiles = [datas.name]\" mat-button>\r\n            <img src=\"./assets/img/{{datas.name}}.png\" title=\"{{datas.name}}\">\r\n          </button>\r\n        </td>\r\n        <td>null</td>\r\n        <ng-container *ngIf=\"datas.totals.totaltopar[0] == '+'\">\r\n        <td id=\"parblue\">{{datas.totals.totaltopar}}</td>\r\n        </ng-container>\r\n        <ng-container *ngIf=\"datas.totals.totaltopar[0] == '-'\">\r\n            <td id=\"parred\">{{datas.totals.totaltopar}}</td>\r\n            </ng-container>\r\n        <td>{{datas.round[0].strokes}}</td>\r\n        <td>{{datas.round[1].strokes}}</td>\r\n        <td>{{datas.round[2].strokes}}</td>\r\n        <td>{{datas.round[3].strokes}}</td>\r\n        <td>\r\n          <span id=\"total\">{{(datas.round[0].strokes * 1) + (datas.round[1].strokes * 1) + (datas.round[2].strokes * 1) + (datas.round[3].strokes\r\n            * 1)}}</span>\r\n        </td>\r\n      </tr>\r\n      <ng-container *ngIf=\"hideStuff[x]\">\r\n        <tr class=\"player\" *ngFor=\"let players of data.event.tournament.players.player\">\r\n          <ng-container *ngIf=\"datas.name == players.teamname\">\r\n            <td></td>\r\n            <td>{{players.totals.position}}</td>\r\n            <td>{{players.firstname}} {{players.lastname}}</td>\r\n            <td></td>\r\n            <ng-container *ngIf=\"players.totals.totaltopar[0] == '+'\">\r\n              <td id=\"parblue\">{{players.totals.totaltopar}}</td>\r\n            </ng-container>\r\n            <ng-container *ngIf=\"players.totals.totaltopar[0] == '-'\">\r\n                <td id=\"parred\">{{players.totals.totaltopar}}</td>\r\n            </ng-container>\r\n            <td>{{players.round[0].strokes}}</td>\r\n            <td>{{players.round[1].strokes}}</td>\r\n            <td>{{players.round[2].strokes}}</td>\r\n            <td>{{players.round[3].strokes}}</td>\r\n            <td>{{(players.round[0].strokes * 1) + (players.round[1].strokes * 1) + (players.round[2].strokes * 1) + (players.round[3].strokes\r\n              * 1)}}</td>\r\n\r\n          </ng-container>\r\n        </tr>\r\n      </ng-container>\r\n    </tbody>\r\n  </table>\r\n  <!-- *ngFor=\"let team of data.event.tournament.players.player -->\r\n\r\n  <!--  -->\r\n\r\n  <!--player 1-->\r\n  <mat-divider></mat-divider>\r\n</div>"
+module.exports = "<div id=\"main\" *ngIf=\"hideall\">\r\n  <mat-toolbar id=\"team-header-toolbar\">\r\n    <span id=\"title\">\r\n      <span>\r\n        <button class=\"hide-btn\" (click)=\"hideall = !hideall\">\r\n          <mat-icon>arrow_back</mat-icon>\r\n        </button>\r\n      </span>\r\n      {{profiles}}\r\n      <button id=\"fav-button\" mat-button>\r\n        <mat-icon class=\"fav\">star</mat-icon>\r\n      </button>\r\n    </span>\r\n  </mat-toolbar>\r\n\r\n  <div id=\"team-header\">\r\n    <span>\r\n      <img id=\"team-image\" src=\"./assets/img/team.jpg\">\r\n    </span>\r\n    <mat-card id=\"score-Info\">\r\n      <table>\r\n        <!-- <tr *ngFor=\"let teams of data.event.tournament.teams.team\">\r\n            \r\n            <ng-container *ngIf=\"teams.name == profiles\"> -->\r\n        <tr>\r\n          <th>Thru</th>test\r\n          <th>Today</th>null\r\n          <th>Total</th>test\r\n          <th>Rank</th>test\r\n          <!-- </ng-container> -->\r\n        </tr>\r\n      </table>\r\n    </mat-card>\r\n  </div>\r\n  <div class=\"scroll-main\">\r\n    <div class=\"scroll-child\">\r\n\r\n      <!-- Round one -->\r\n      <mat-expansion-panel id=\"team-expansion\">\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            Round One\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n\r\n        <div id=\"staticTable\">\r\n          <table>\r\n            <thead>\r\n              <tr>\r\n                <th>Holes</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n              <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                </tr>\r\n\r\n              </ng-container>\r\n            </tbody>\r\n\r\n          </table>\r\n        </div>\r\n        <div id=\"scrollingTable\">\r\n          <div class=\"scrollingCard\">\r\n            <table>\r\n              <thead>\r\n                <tr>\r\n                  <th>01</th>\r\n                  <th>02</th>\r\n                  <th>03</th>\r\n                  <th>04</th>\r\n                  <th>05</th>\r\n                  <th>06</th>\r\n                  <th>07</th>\r\n                  <th>08</th>\r\n                  <th>09</th>\r\n                  <th>Out</th>\r\n                  <th>10</th>\r\n                  <th>11</th>\r\n                  <th>12</th>\r\n                  <th>13</th>\r\n                  <th>14</th>\r\n                  <th>15</th>\r\n                  <th>16</th>\r\n                  <th>17</th>\r\n                  <th>18</th>\r\n                  <th>In</th>\r\n                  <th>Total</th>\r\n                </tr>\r\n              </thead>\r\n              <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n                <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                  <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                    <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes\r\n                      * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes\r\n                      * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes\r\n                      * 1)}}</td>\r\n                    <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[0].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes\r\n                      * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) +\r\n                      (playerdata.round[0].score[14].strokes * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[17].strokes\r\n                      * 1) + (playerdata.round[0].score[17].strokes * 1)}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[0].score[0].strokes * 1) + (playerdata.round[0].score[1].strokes * 1) + (playerdata.round[0].score[2].strokes\r\n                      * 1) + (playerdata.round[0].score[3].strokes * 1) + (playerdata.round[0].score[4].strokes * 1) + (playerdata.round[0].score[5].strokes\r\n                      * 1) + (playerdata.round[0].score[6].strokes * 1) + (playerdata.round[0].score[7].strokes * 1) + (playerdata.round[0].score[8].strokes\r\n                      * 1) + (playerdata.round[0].score[9].strokes * 1) + (playerdata.round[0].score[10].strokes * 1) + (playerdata.round[0].score[11].strokes\r\n                      * 1) + (playerdata.round[0].score[12].strokes * 1) + (playerdata.round[0].score[13].strokes * 1) +\r\n                      (playerdata.round[0].score[14].strokes * 1) + (playerdata.round[0].score[15].strokes * 1) + (playerdata.round[0].score[16].strokes\r\n                      * 1) + (playerdata.round[0].score[17].strokes * 1)}}</td>\r\n                  </tr>\r\n                </ng-container>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </mat-expansion-panel>\r\n      <!-- </div> -->\r\n      <!-- </mat-card> -->\r\n\r\n      <!-- Round Two -->\r\n      <mat-expansion-panel id=\"team-expansion\">\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            Round Two\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n        <div id=\"staticTable\">\r\n          <table>\r\n            <thead>\r\n              <tr>\r\n                <th>Holes</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n              <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                </tr>\r\n\r\n              </ng-container>\r\n            </tbody>\r\n\r\n          </table>\r\n        </div>\r\n        <div id=\"scrollingTable\">\r\n          <div class=\"scrollingCard\">\r\n            <table>\r\n              <thead>\r\n                <tr>\r\n                  <th>01</th>\r\n                  <th>02</th>\r\n                  <th>03</th>\r\n                  <th>04</th>\r\n                  <th>05</th>\r\n                  <th>06</th>\r\n                  <th>07</th>\r\n                  <th>08</th>\r\n                  <th>09</th>\r\n                  <th>Out</th>\r\n                  <th>10</th>\r\n                  <th>11</th>\r\n                  <th>12</th>\r\n                  <th>13</th>\r\n                  <th>14</th>\r\n                  <th>15</th>\r\n                  <th>16</th>\r\n                  <th>17</th>\r\n                  <th>18</th>\r\n                  <th>In</th>\r\n                  <th>Total</th>\r\n                </tr>\r\n              </thead>\r\n              <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n                <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                  <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                    <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes\r\n                      * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes\r\n                      * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes\r\n                      * 1)}}</td>\r\n                    <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[1].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes\r\n                      * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) +\r\n                      (playerdata.round[1].score[14].strokes * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[17].strokes\r\n                      * 1) + (playerdata.round[1].score[17].strokes * 1)}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[1].score[0].strokes * 1) + (playerdata.round[1].score[1].strokes * 1) + (playerdata.round[1].score[2].strokes\r\n                      * 1) + (playerdata.round[1].score[3].strokes * 1) + (playerdata.round[1].score[4].strokes * 1) + (playerdata.round[1].score[5].strokes\r\n                      * 1) + (playerdata.round[1].score[6].strokes * 1) + (playerdata.round[1].score[7].strokes * 1) + (playerdata.round[1].score[8].strokes\r\n                      * 1) + (playerdata.round[1].score[9].strokes * 1) + (playerdata.round[1].score[10].strokes * 1) + (playerdata.round[1].score[11].strokes\r\n                      * 1) + (playerdata.round[1].score[12].strokes * 1) + (playerdata.round[1].score[13].strokes * 1) +\r\n                      (playerdata.round[1].score[14].strokes * 1) + (playerdata.round[1].score[15].strokes * 1) + (playerdata.round[1].score[16].strokes\r\n                      * 1) + (playerdata.round[1].score[17].strokes * 1)}}</td>\r\n\r\n                  </tr>\r\n                </ng-container>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </mat-expansion-panel>\r\n\r\n\r\n      <!-- Round three -->\r\n      <mat-expansion-panel id=\"team-expansion\">\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            Round Three\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n        <div id=\"staticTable\">\r\n          <table>\r\n            <thead>\r\n              <tr>\r\n                <th>Holes</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n              <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                </tr>\r\n\r\n              </ng-container>\r\n            </tbody>\r\n\r\n          </table>\r\n        </div>\r\n        <div id=\"scrollingTable\">\r\n          <div class=\"scrollingCard\">\r\n            <table>\r\n              <thead>\r\n                <tr>\r\n                  <th>01</th>\r\n                  <th>02</th>\r\n                  <th>03</th>\r\n                  <th>04</th>\r\n                  <th>05</th>\r\n                  <th>06</th>\r\n                  <th>07</th>\r\n                  <th>08</th>\r\n                  <th>09</th>\r\n                  <th>Out</th>\r\n                  <th>10</th>\r\n                  <th>11</th>\r\n                  <th>12</th>\r\n                  <th>13</th>\r\n                  <th>14</th>\r\n                  <th>15</th>\r\n                  <th>16</th>\r\n                  <th>17</th>\r\n                  <th>18</th>\r\n                  <th>In</th>\r\n                  <th>Total</th>\r\n                </tr>\r\n              </thead>\r\n              <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n                <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                  <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                    <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes\r\n                      * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes\r\n                      * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes\r\n                      * 1)}}</td>\r\n                    <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[2].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes\r\n                      * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) +\r\n                      (playerdata.round[2].score[14].strokes * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[17].strokes\r\n                      * 1) + (playerdata.round[2].score[17].strokes * 1)}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[2].score[0].strokes * 1) + (playerdata.round[2].score[1].strokes * 1) + (playerdata.round[2].score[2].strokes\r\n                      * 1) + (playerdata.round[2].score[3].strokes * 1) + (playerdata.round[2].score[4].strokes * 1) + (playerdata.round[2].score[5].strokes\r\n                      * 1) + (playerdata.round[2].score[6].strokes * 1) + (playerdata.round[2].score[7].strokes * 1) + (playerdata.round[2].score[8].strokes\r\n                      * 1) + (playerdata.round[2].score[9].strokes * 1) + (playerdata.round[2].score[10].strokes * 1) + (playerdata.round[2].score[11].strokes\r\n                      * 1) + (playerdata.round[2].score[12].strokes * 1) + (playerdata.round[2].score[13].strokes * 1) +\r\n                      (playerdata.round[2].score[14].strokes * 1) + (playerdata.round[2].score[15].strokes * 1) + (playerdata.round[2].score[16].strokes\r\n                      * 1) + (playerdata.round[2].score[17].strokes * 1)}}</td>\r\n\r\n                  </tr>\r\n                </ng-container>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </mat-expansion-panel>\r\n\r\n      <!-- Round Four -->\r\n\r\n      <mat-expansion-panel id=\"team-expansion\">\r\n        <mat-expansion-panel-header>\r\n          <mat-panel-title>\r\n            Round Four\r\n          </mat-panel-title>\r\n        </mat-expansion-panel-header>\r\n        <div id=\"staticTable\">\r\n          <table>\r\n            <thead>\r\n              <tr>\r\n                <th>Holes</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n              <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                  <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>\r\n                </tr>\r\n\r\n              </ng-container>\r\n            </tbody>\r\n\r\n          </table>\r\n        </div>\r\n        <div id=\"scrollingTable\">\r\n          <div class=\"scrollingCard\">\r\n            <table>\r\n              <thead>\r\n                <tr>\r\n                  <th>01</th>\r\n                  <th>02</th>\r\n                  <th>03</th>\r\n                  <th>04</th>\r\n                  <th>05</th>\r\n                  <th>06</th>\r\n                  <th>07</th>\r\n                  <th>08</th>\r\n                  <th>09</th>\r\n                  <th>Out</th>\r\n                  <th>10</th>\r\n                  <th>11</th>\r\n                  <th>12</th>\r\n                  <th>13</th>\r\n                  <th>14</th>\r\n                  <th>15</th>\r\n                  <th>16</th>\r\n                  <th>17</th>\r\n                  <th>18</th>\r\n                  <th>In</th>\r\n                  <th>Total</th>\r\n                </tr>\r\n              </thead>\r\n              <tbody *ngFor=\"let playerdata of data.event.tournament.players.player; let i = index\">\r\n                <ng-container *ngIf=\"playerdata.teamname == profiles\">\r\n                  <tr *ngIf=\"playerdata.totals.status == 'ok'\">\r\n                    <td *ngFor=\"let loop of [0,1,2,3,4,5,6,7,8]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes\r\n                      * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes\r\n                      * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes\r\n                      * 1)}}</td>\r\n                    <td *ngFor=\"let loop of [9,10,11,12,13,14,15,16,17]\">{{playerdata.round[3].score[loop].strokes}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes\r\n                      * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) +\r\n                      (playerdata.round[3].score[14].strokes * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[17].strokes\r\n                      * 1) + (playerdata.round[3].score[17].strokes * 1)}}</td>\r\n                    <td id=\"total\">{{(playerdata.round[3].score[0].strokes * 1) + (playerdata.round[3].score[1].strokes * 1) + (playerdata.round[3].score[2].strokes\r\n                      * 1) + (playerdata.round[3].score[3].strokes * 1) + (playerdata.round[3].score[4].strokes * 1) + (playerdata.round[3].score[5].strokes\r\n                      * 1) + (playerdata.round[3].score[6].strokes * 1) + (playerdata.round[3].score[7].strokes * 1) + (playerdata.round[3].score[8].strokes\r\n                      * 1) + (playerdata.round[3].score[9].strokes * 1) + (playerdata.round[3].score[10].strokes * 1) + (playerdata.round[3].score[11].strokes\r\n                      * 1) + (playerdata.round[3].score[12].strokes * 1) + (playerdata.round[3].score[13].strokes * 1) +\r\n                      (playerdata.round[3].score[14].strokes * 1) + (playerdata.round[3].score[15].strokes * 1) + (playerdata.round[3].score[16].strokes\r\n                      * 1) + (playerdata.round[3].score[17].strokes * 1)}}</td>\r\n\r\n                  </tr>\r\n                </ng-container>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </mat-expansion-panel>\r\n\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n<div id=\"live-main\" *ngIf=\"!hideall\">\r\n  <!-- <table matSort (matSortChange)=\"sortData($event)\">\r\n        <tr>\r\n         \r\n          <th mat-sort-header=\"position\">Pos</th>\r\n          <th>Name</th>\r\n        </tr>\r\n      \r\n        <tr *ngFor=\"let players of sortedData\">\r\n          <td>{{players.position}}</td>\r\n          <td>{{players.name}}</td>\r\n          <td>{{players.fat}}</td>\r\n          \r\n        </tr>\r\n      </table>\r\n   -->\r\n\r\n\r\n  <mat-toolbar id=\"live-search\">\r\n    <mat-form-field>\r\n      <input type=\"text\" matInput placeholder=\"search\" #box (keyup)=\"0\">\r\n    </mat-form-field>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n  </mat-toolbar>\r\n  <table id=\"live-table\">\r\n    <thead>\r\n      <tr id=\"live-table-header-title\">\r\n        <th></th>\r\n        <th>Pos</th>\r\n        <th>Team</th>\r\n        <th>Par</th>\r\n        <th>R1</th>\r\n        <th>R2</th>\r\n        <th>R3</th>\r\n        <th>R4</th>\r\n        <th>Total</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody id=\"player-tbody\" *ngFor=\"let teamdata of data.event.tournament.teams.team; let x = index;\" class=\"tbody \">\r\n      <ng-container *ngIf=\"teamdata.name == box.value || box.value == ''\">\r\n        <tr id=\"live-table-header\">\r\n          <td>\r\n            <button class=\"hide-btn\" (click)=\"hideStuff[x] = !hideStuff[x]\">\r\n              <mat-icon>expand_{{hideStuff[x] ? 'less' : 'more'}}</mat-icon>\r\n            </button>\r\n          </td>\r\n          <td>{{teamdata.totals.position}}</td>\r\n          <td>\r\n            <button class=\"\" (click)=\"hideall = !hideall; profiles = (teamdata.name) ;\" mat-button>\r\n              <img src=\"./assets/img/{{teamdata.name}}.png\" title=\"{{teamdata.name}}\">\r\n            </button>\r\n          </td>\r\n          <ng-container *ngIf=\"teamdata.totals.totaltopar[0] == '+'\">\r\n            <td id=\"parblue\">{{teamdata.totals.totaltopar}}</td>\r\n          </ng-container>\r\n          <ng-container *ngIf=\"teamdata.totals.totaltopar[0] == '-'\">\r\n            <td id=\"parred\">{{teamdata.totals.totaltopar}}</td>\r\n          </ng-container>\r\n          <ng-container *ngIf=\"teamdata.totals.totaltopar[0] != '-' && teamdata.totals.totaltopar[0] != '+'\">\r\n            <td>{{teamdata.totals.totaltopar}}</td>\r\n          </ng-container>\r\n          <td>{{teamdata.round[0].strokes}}</td>\r\n          <td>{{teamdata.round[1].strokes}}</td>\r\n          <td>{{teamdata.round[2].strokes}}</td>\r\n          <td>{{teamdata.round[3].strokes}}</td>\r\n          <td>\r\n            <span id=\"total\">{{(teamdata.round[0].strokes * 1) + (teamdata.round[1].strokes * 1) + (teamdata.round[2].strokes * 1) + (teamdata.round[3].strokes\r\n              * 1)}}</span>\r\n          </td>\r\n        </tr>\r\n        <ng-container *ngIf=\"hideStuff[x]\">\r\n          <tr class=\"player\" *ngFor=\"let players of data.event.tournament.players.player\">\r\n            <ng-container *ngIf=\"teamdata.name == players.teamname\">\r\n              <ng-container *ngIf=\"players.totals.status == 'ok'\">\r\n                <td></td>\r\n                <td>{{players.totals.position}}</td>\r\n                <td>{{players.firstname}} {{players.lastname}}</td>\r\n\r\n                <td *ngIf=\"players.totals.totaltopar[0] == '+'\" id=\"parblue\">{{players.totals.totaltopar}}</td>\r\n                <td *ngIf=\"players.totals.totaltopar[0] == '-'\" id=\"parred\">{{players.totals.totaltopar}}</td>\r\n                <!-- <td *ngFor=\"let loop of [0,1,2,4,5,6,7,8]\">{{players.round[0].score[loop].strokes}}</td> -->\r\n                <td>{{players.round[0].strokes}}</td>\r\n                <td>{{players.round[1].strokes}}</td>\r\n                <td>{{players.round[2].strokes}}</td>\r\n                <td>{{players.round[3].strokes}}</td>\r\n                <td id=\"total\">{{(players.round[0].strokes * 1) + (players.round[1].strokes * 1) + (players.round[2].strokes * 1) + (players.round[3].strokes\r\n                  * 1)}}</td>\r\n              </ng-container>\r\n            </ng-container>\r\n          </tr>\r\n        </ng-container>\r\n      </ng-container>\r\n    </tbody>\r\n  </table>\r\n  <!-- *ngFor=\"let team of data.event.tournament.players.player -->\r\n\r\n  <!--  -->\r\n\r\n  <!--player 1-->\r\n  <mat-divider></mat-divider>\r\n</div>"
 
 /***/ }),
 
@@ -1907,7 +2485,7 @@ module.exports = "<div id=\"team-wrapper\" *ngIf=\"hideall\">\r\n  <mat-toolbar 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#live-main {\n  margin-bottom: 31%; }\n\n#live-table {\n  font-size: 75%;\n  width: 100%;\n  border-collapse: collapse; }\n\n#live-table-header-title {\n  height: 40px;\n  text-align: center; }\n\n#live-table-header {\n  text-align: center; }\n\n.player {\n  text-align: center; }\n\n.hide-btn {\n  min-width: 1%;\n  background-color: Transparent;\n  background-repeat: no-repeat;\n  border: none;\n  cursor: pointer;\n  overflow: hidden;\n  outline: none; }\n\n#live-search {\n  width: 100%; }\n\n#live-search mat-form-field {\n  width: 45%;\n  font-size: 68%; }\n\n#total {\n  color: red; }\n\n#parblue {\n  color: blue; }\n\n#parred {\n  color: red; }\n\n#player-tbody:nth-child(even) {\n  background: #adebad; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.fav {\n  color: #cccc00; }\n\n#fav-button {\n  min-width: 1%; }\n\n#team-header-toolbar #title {\n  width: 100%;\n  font-size: 130%; }\n\n#team-header {\n  text-align: center; }\n\n#score-Info table {\n  width: 100%;\n  text-align: center; }\n\n#team-image {\n  width: 50%;\n  height: 50%;\n  margin: auto; }\n\n#team-body {\n  margin-bottom: 12%; }\n\n.static-table {\n  width: 40%;\n  float: left;\n  table-layout: fixed;\n  border-collapse: collapse;\n  white-space: nowrap;\n  overflow: hidden; }\n\n.static-table th {\n  font-size: 120%;\n  text-align: left; }\n\n.static-table td {\n  font-size: 100%;\n  text-align: left; }\n\n.scrolling-wrapper {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.scroll-table {\n  width: 100%;\n  border-collapse: collapse; }\n\n.scroll-table th {\n  font-size: 120%;\n  text-align: center; }\n\n.scroll-table td {\n  font-size: 100%;\n  text-align: center; }\n"
+module.exports = "#live-main {\n  margin-bottom: 31%; }\n\n#staticTable {\n  width: 40%;\n  float: left; }\n\n#scrollingTable {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  text-align: center; }\n\n.scrollingCard {\n  display: inline-block; }\n\n#live-table {\n  font-size: 75%;\n  width: 100%;\n  border-collapse: collapse; }\n\n#live-table-header-title {\n  height: 40px;\n  text-align: center; }\n\n#live-table-header {\n  text-align: center; }\n\n.player {\n  text-align: center; }\n\n.scroll-main {\n  height: 100%;\n  margin-top: 3%;\n  overflow: hidden; }\n\n.scroll-child {\n  height: 250px;\n  overflow-y: scroll; }\n\n.hide-btn {\n  min-width: 1%;\n  background-color: Transparent;\n  background-repeat: no-repeat;\n  border: none;\n  cursor: pointer;\n  overflow: hidden;\n  outline: none; }\n\n.roundCard {\n  margin: 2%; }\n\n.roundCard span {\n  font-size: 75%; }\n\n#live-search {\n  width: 100%; }\n\n#live-search mat-form-field {\n  width: 45%;\n  font-size: 68%; }\n\n#total {\n  color: red; }\n\n#parblue {\n  color: blue; }\n\n#parred {\n  color: red; }\n\n#player-tbody:nth-child(even) {\n  background: #adebad; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.fav {\n  color: #cccc00; }\n\n#fav-button {\n  min-width: 1%; }\n\n#team-header-toolbar #title {\n  width: 100%;\n  font-size: 130%; }\n\n#team-header {\n  text-align: center; }\n\n#score-Info table {\n  width: 100%;\n  text-align: center; }\n\n#team-image {\n  width: 50%;\n  height: 50%;\n  margin: auto; }\n\n#team-expansion {\n  margin: 2%; }\n\n.static-table {\n  width: 40%;\n  float: left;\n  table-layout: fixed;\n  border-collapse: collapse;\n  white-space: nowrap;\n  overflow: hidden; }\n\n.static-table th {\n  font-size: 120%;\n  text-align: left; }\n\n.static-table td {\n  font-size: 100%;\n  text-align: left; }\n\n.scrolling-wrapper {\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.scroll-table {\n  width: 100%;\n  border-collapse: collapse; }\n\n.scroll-table th {\n  font-size: 120%;\n  text-align: center; }\n\n.scroll-table td {\n  font-size: 100%;\n  text-align: center; }\n"
 
 /***/ }),
 
@@ -1937,22 +2515,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var LiveTeamScoreComponent = /** @class */ (function () {
     function LiveTeamScoreComponent(_liveScoreService) {
         this._liveScoreService = _liveScoreService;
-        this.team = [];
         this.hideStuff = [];
+        // this.sortedData = this.playerdata;
     }
-    LiveTeamScoreComponent.prototype.arrayOne = function (n) {
-        return Array(n);
-    };
     LiveTeamScoreComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this._liveScoreService.getTeam()
-            .subscribe(function (team) {
-            _this.team = team;
-        }, function (error) { return _this.errorMessage = error; });
-        this._liveScoreService.getFakePlayer()
-            .subscribe(function (player) {
-            _this.player = player;
-        }, function (error) { return _this.errorMessage = error; });
         this._liveScoreService.getRealJsonData()
             .subscribe(function (data) {
             _this.data = data;
@@ -1976,6 +2543,9 @@ var LiveTeamScoreComponent = /** @class */ (function () {
     return LiveTeamScoreComponent;
 }());
 
+// function compare(a, b, isAsc) {
+//   return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
+// }
 
 
 /***/ }),
@@ -1987,7 +2557,7 @@ var LiveTeamScoreComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-toolbar></app-toolbar>\r\n\r\n\r\n\r\n<router-outlet></router-outlet>\r\n\r\n\r\n<mat-toolbar class=\"app-toolbar\">\r\n  <button type=\"button\" mat-button routerLink=\"\">\r\n    <i class=\"material-icons md-dark\">home</i>\r\n  </button>\r\n\r\n\r\n  <button type=\"button\" mat-button routerLink=\"live-score\">\r\n    <i class=\"material-icons md-dark\">assessment</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"events\">\r\n    <i class=\"material-icons md-dark md-inactive\">event_note</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"geo-location\">\r\n    <i class=\"material-icons md-dark md-inactive\">location_on</i>\r\n  </button>\r\n\r\n</mat-toolbar>\r\n\r\n\r\n  \r\n\r\n"
+module.exports = "<app-toolbar></app-toolbar>\r\n\r\n\r\n\r\n<router-outlet></router-outlet>\r\n\r\n\r\n<mat-toolbar class=\"app-toolbar\">\r\n  <button type=\"button\" mat-button routerLink=\"\">\r\n    <i class=\"material-icons md-dark\">home</i>\r\n  </button>\r\n\r\n\r\n  <button type=\"button\" mat-button routerLink=\"live-score\">\r\n    <i class=\"material-icons md-dark\">flag</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"transport\">\r\n    <i class=\"material-icons md-dark md-inactive\">directions_bus</i>\r\n  </button>\r\n\r\n  <button type=\"button\" mat-button routerLink=\"geolocation\">\r\n    <i class=\"material-icons md-dark md-inactive\">location_on</i>\r\n  </button>\r\n\r\n</mat-toolbar>\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -2050,7 +2620,7 @@ var NavigationComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"top-nav\">\r\n    <mat-toolbar class=\"header-toolbar\">\r\n    <span><mat-icon><img src=\"./assets/img/ILGU.png\" id=\"ILGU-logo\"></mat-icon></span>\r\n    <span><mat-icon><img src=\"./assets/img/GUI2.png\" id=\"GUI2-logo\"></mat-icon></span>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n    <span><button  type=\"button\" mat-button routerLink=\"add-info\"><i class=\"material-icons md-dark md-inactive\">info_outline</i></button></span>\r\n</mat-toolbar>\r\n\r\n</div>\r\n"
+module.exports = "<div id=\"top-nav\">\r\n    <mat-toolbar class=\"header-toolbar\">\r\n    <span><mat-icon><img src=\"./assets/img/ILGU.png\" id=\"ILGU-logo\"></mat-icon></span>\r\n    <span><mat-icon><img src=\"./assets/img/GUI2.png\" id=\"GUI2-logo\"></mat-icon></span>\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n    <span><button  type=\"button\" mat-button routerLink=\"add-info\"><i class=\"material-icons md-dark md-inactive\">reorder</i></button></span>\r\n</mat-toolbar>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2177,644 +2747,131 @@ var TeamProfilesComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/test-comp-2/bottom-sheet/bottom-sheet-overview-example-sheet.html":
-/*!**********************************************************************************************!*\
-  !*** ./src/app/components/test-comp-2/bottom-sheet/bottom-sheet-overview-example-sheet.html ***!
-  \**********************************************************************************************/
+/***/ "./src/app/components/transport/transport.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/components/transport/transport.component.html ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"contain\">\r\n    <mat-grid-list cols=\"2\" rowHeight=\"1:1\">\r\n        <mat-grid-tile>\r\n            <mat-nav-list>\r\n                <button mat-button>Toggle location</button>\r\n                <p>Metres: {{metres}}</p>\r\n                <p>Yards: {{yards}}</p>\r\n                <p>Kilometres: {{kilometres}}</p>\r\n                <p>Miles: {{miles}}</p>\r\n            </mat-nav-list>\r\n        </mat-grid-tile>\r\n\r\n    <mat-grid-tile>\r\n            <mat-nav-list>\r\n                <!-- <p>hole {{hole.hole}}</p> -->\r\n                <p>{{ holePar }}</p>\r\n                <p>{{ holeDescription }}</p>\r\n                <p>{{ holeFlyover }}</p>\r\n            </mat-nav-list>\r\n        </mat-grid-tile>\r\n    </mat-grid-list>\r\n</div>\r\n"
+module.exports = "\r\n<!-- <mat-toolbar id=\"transport-toolbar\">\r\n    <mat-form-field id=\"location-field\">\r\n        <mat-select placeholder=\"Choose an Area\" [(value)]=\"mainSelected\">\r\n            <mat-option value=\"Carton House\" class=\"mat-select\">Carton House</mat-option>\r\n            <mat-option value=\"Maynooth University\" class=\"mat-select\">Maynooth University</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n    <span class=\"example-fill-remaining-space\"></span>\r\n\r\n    <mat-form-field class=\"stop-field\" *ngIf=\"mainSelected == 'Carton House'\">\r\n            <mat-placeholder>Choose a location</mat-placeholder>\r\n        <mat-select [(value)]=\"CartonSelected\">\r\n            <mat-option value=\"National Academy\" class=\"mat-select\">National Academy</mat-option>\r\n            <mat-option value=\"Hotel Reception\" class=\"mat-select\">Hotel Reception</mat-option>\r\n            <mat-option value=\"Club House Roundabout\" class=\"mat-select\">Club House Roundabout</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n\r\n    <mat-form-field class=\"stop-field\" *ngIf=\"mainSelected == 'Maynooth University'\">\r\n            <mat-placeholder >Choose a location</mat-placeholder>\r\n         <mat-select [(value)]=\"MaynoothSelected\">\r\n            <mat-option value=\"North Campus Apartment Complex\" class=\"mat-select\">North Campus Apartment Complex</mat-option>\r\n            <mat-option value=\"Nort Campus Phonenix Restaurant\" class=\"mat-select\">North Campus Phonenix Restaurant</mat-option>\r\n            <mat-option value=\"North Campus Pedestrian crossing\" class=\"mat-select\">North Campus Pedestrian crossing</mat-option>\r\n        </mat-select>\r\n    </mat-form-field>\r\n</mat-toolbar>\r\n\r\n<agm-map *ngIf=\"mainSelected == 'Carton House'\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\" [zoom]=\"zoom\"\r\n    [mapTypeId]=\"'hybrid'\" disableDefaultUI=\"true\">\r\n\r\n    <agm-marker *ngIf=\"mainSelected == 'Carton House' && CartonSelected == null\" [latitude]=\"Cartondefaultlat\" [longitude]=\"Cartondefaultlng\"></agm-marker>\r\n\r\n    <div *ngIf=\"CartonSelected == 'National Academy'\">\r\n        <agm-marker [latitude]=\"NationalAcademylat\" [longitude]=\"NationalAcademylng\" ></agm-marker>\r\n    </div>\r\n\r\n    <div *ngIf=\"CartonSelected == 'Hotel Reception'\">\r\n        <agm-marker [latitude]=\"HotelReceptionlat\" [longitude]=\"HotelReceptionlng\"></agm-marker>\r\n    </div>\r\n\r\n    <div *ngIf=\"CartonSelected == 'Club House Roundabout'\">\r\n        <agm-marker [latitude]=\"ClubHouseRoundaboutlat\" [longitude]=\"ClubHouseRoundaboutlng\"></agm-marker>\r\n    </div>\r\n</agm-map>\r\n\r\n<agm-map *ngIf=\"mainSelected == 'Maynooth University'\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\" [zoom]=\"zoom\"\r\n    [mapTypeId]=\"'hybrid'\" disableDefaultUI=\"true\">\r\n\r\n    <agm-marker *ngIf=\"mainSelected == 'Maynooth University' && MaynoothSelected == null\" [latitude]=\"MaynoothDefaultlat\" [longitude]=\"MaynoothDefaultlng\"></agm-marker>\r\n\r\n    <div *ngIf=\"MaynoothSelected == 'North Campus Apartment Complex'\">\r\n        <agm-marker [latitude]=\"ApartmentComplexlat\" [longitude]=\"ApartmentComplexlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"MaynoothSelected == 'Nort Campus Phonenix Restaurant'\">\r\n        <agm-marker [latitude]=\"PhoenixRestaurantlat\" [longitude]=\"PhoenixRestaurantlng\"></agm-marker>\r\n    </div>\r\n    <div *ngIf=\"MaynoothSelected == 'North Campus Pedestrian crossing'\">\r\n        <agm-marker [latitude]=\"PedestrianCrosslat\" [longitude]=\"PedestrianCrosslng\"></agm-marker>\r\n    </div>\r\n</agm-map> -->\r\n\r\n<iframe width=\"640\" height=\"360\" src=\"https://gaming.youtube.com/embed/live_stream?autoplay=1&controls=0&showinfo=0&autohide=1&channel=UCImGQwk9qTNjwhhdzzTKIdg\"  autoplay=true frameborder=\"0\"></iframe>\r\n\r\n    <!-- <div id=\"twitchStream\">\r\n                <iframe\r\n                src=\"http://player.twitch.tv/?channel=Patrickbookgolf&muted=true\"\r\n                height=\"720\"\r\n                width=\"1280\"\r\n                frameborder=\"1\"\r\n                scrolling=\"no\"\r\n                allowfullscreen=\"false\">\r\n            </iframe>\r\n    </div> -->\r\n    <div>\r\n\r\n    \r\n<mat-table #table [dataSource]=\"dataSource\" id=\"timetable\">\r\n\r\n    <ng-container matColumnDef=\"bus\">\r\n        <mat-header-cell *matHeaderCellDef> Bus </mat-header-cell>\r\n        <mat-cell @fade *matCellDef=\"let bus\"> {{bus.position}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <ng-container matColumnDef=\"times\">\r\n        <mat-header-cell *matHeaderCellDef> Times </mat-header-cell>\r\n        <mat-cell @fade *matCellDef=\"let times\"> {{times.name}} </mat-cell>\r\n    </ng-container>\r\n\r\n    <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\r\n    <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\r\n</mat-table>\r\n</div>"
 
 /***/ }),
 
-/***/ "./src/app/components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component.ts":
-/*!************************************************************************************************!*\
-  !*** ./src/app/components/test-comp-2/bottom-sheet/bottom-sheet-overview-example.component.ts ***!
-  \************************************************************************************************/
-/*! exports provided: BottomSheetOverviewExampleSheetComponent */
+/***/ "./src/app/components/transport/transport.component.scss":
+/*!***************************************************************!*\
+  !*** ./src/app/components/transport/transport.component.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".stop-field, #location-field {\n  width: 45%;\n  font-size: 68%; }\n\nagm-map {\n  height: 200px;\n  width: 100%; }\n\n#timetable {\n  text-align: center; }\n\n#tabs {\n  text-align: center; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox. \r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\niframe {\n  max-width: 99% !important;\n  max-height: 50% !important; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/transport/transport.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/components/transport/transport.component.ts ***!
+  \*************************************************************/
+/*! exports provided: TransportComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BottomSheetOverviewExampleSheetComponent", function() { return BottomSheetOverviewExampleSheetComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TransportComponent", function() { return TransportComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _services_course_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/course-data.service */ "./src/app/components/test-comp-2/services/course-data.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
 
-
-
-var BottomSheetOverviewExampleSheetComponent = /** @class */ (function () {
-    function BottomSheetOverviewExampleSheetComponent(bottomSheetRef, _courseDataService, _route) {
-        this.bottomSheetRef = bottomSheetRef;
-        this._courseDataService = _courseDataService;
-        this._route = _route;
+var TransportComponent = /** @class */ (function () {
+    function TransportComponent() {
+        this.zoom = 14;
+        this.displayedColumns = ['bus', 'times'];
+        this.dataSource = ELEMENT_DATA;
+        this.NationalAcademylat = 53.394427;
+        this.NationalAcademylng = -6.560887;
+        this.HotelReceptionlat = 53.391241;
+        this.HotelReceptionlng = -6.566353;
+        this.ClubHouseRoundaboutlat = 53.390675;
+        this.ClubHouseRoundaboutlng = -6.567644;
+        this.Cartondefaultlat = 53.390995;
+        this.Cartondefaultlng = -6.566462;
+        this.MaynoothDefaultlat = 53.380809;
+        this.MaynoothDefaultlng = -6.594588;
+        this.ApartmentComplexlat = 53.380337;
+        this.ApartmentComplexlng = -6.595629;
+        this.PhoenixRestaurantlat = 53.383985;
+        this.PhoenixRestaurantlng = -6.604083;
+        this.PedestrianCrosslat = 53.382562;
+        this.PedestrianCrosslng = -6.600772;
     }
-    BottomSheetOverviewExampleSheetComponent.prototype.openLink = function (event) {
-        this.bottomSheetRef.dismiss();
-        event.preventDefault();
-    };
-    BottomSheetOverviewExampleSheetComponent.prototype.ngOnInit = function () {
-        //  this.Haversine();
-        console.log(this.hole);
-        console.log(this._courseDataService.getHoles());
-    };
-    BottomSheetOverviewExampleSheetComponent = __decorate([
+    TransportComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-bottom-sheet-overview-example',
-            template: __webpack_require__(/*! ./bottom-sheet-overview-example-sheet.html */ "./src/app/components/test-comp-2/bottom-sheet/bottom-sheet-overview-example-sheet.html"),
-            styles: [__webpack_require__(/*! ./bottom-sheet.component.scss */ "./src/app/components/test-comp-2/bottom-sheet/bottom-sheet.component.scss")]
-        }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"],
-            _services_course_data_service__WEBPACK_IMPORTED_MODULE_2__["CourseDataService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
-    ], BottomSheetOverviewExampleSheetComponent);
-    return BottomSheetOverviewExampleSheetComponent;
+            selector: 'app-transport',
+            template: __webpack_require__(/*! ./transport.component.html */ "./src/app/components/transport/transport.component.html"),
+            styles: [__webpack_require__(/*! ./transport.component.scss */ "./src/app/components/transport/transport.component.scss")],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('fade', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('void => *', [
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ opacity: 0 }),
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])(2000, Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({ opacity: 1 }))
+                    ])
+                ])
+            ]
+        })
+    ], TransportComponent);
+    return TransportComponent;
 }());
 
-
-
-/***/ }),
-
-/***/ "./src/app/components/test-comp-2/bottom-sheet/bottom-sheet.component.scss":
-/*!*********************************************************************************!*\
-  !*** ./src/app/components/test-comp-2/bottom-sheet/bottom-sheet.component.scss ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/components/test-comp-2/services/course-data.service.ts":
-/*!************************************************************************!*\
-  !*** ./src/app/components/test-comp-2/services/course-data.service.ts ***!
-  \************************************************************************/
-/*! exports provided: CourseDataService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseDataService", function() { return CourseDataService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _hole__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hole */ "./src/app/components/test-comp-2/services/hole.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var CourseDataService = /** @class */ (function () {
-    function CourseDataService(_http) {
-        this._http = _http;
-        // hole: IHoles[] = [];
-        // tslint:disable-next-line:max-line-length
-        this._montURL = 'https://gist.githubusercontent.com/Cavinnnn/f8a22ecb12fe1be811194131393895eb/raw/ebdfebf1ee157875eeeb4c2340465edaf6b3e5eb/Montgomerie';
-    }
-    CourseDataService.prototype.showMap = function (id) {
-        // tslint:disable-next-line:no-shadowed-variable
-        var map;
-        // tslint:disable-next-line:prefer-const
-        var defaultCoords;
-        // tslint:disable-next-line:prefer-const
-        var defaultZoom;
-        map = L.map('map');
-        // tslint:disable-next-line:max-line-length
-        L.tileLayer('https://api.mapbox.com/styles/v1/cavinn/cjgqloyl000082roe1rz35om8/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
-            attribution: '',
-            maxZoom: 18,
-            center: [-122.420679, 37.772537],
-            zoom: 13,
-        }).addTo(map);
-    };
-    CourseDataService.prototype.getSideNavHoles = function () {
-        return _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"];
-    };
-    CourseDataService.prototype.getHoles = function () {
-        return this._http.get(this._montURL)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function (data) { return console.log('All ' + JSON.stringify(data)); }));
-    };
-    CourseDataService.prototype.getHoleById = function (id) {
-        return this.getHoles()
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === id; }); }));
-        //  ,
-        //        switchMap(() => interval(500)));
-    };
-    CourseDataService.prototype.getHoleBy = function (id) {
-        return _hole__WEBPACK_IMPORTED_MODULE_1__["HOLES_INFO"].find(function (hole) { return hole.id === id; });
-    };
-    CourseDataService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
-            providedIn: 'root'
-        }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
-    ], CourseDataService);
-    return CourseDataService;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/test-comp-2/services/hole.ts":
-/*!*********************************************************!*\
-  !*** ./src/app/components/test-comp-2/services/hole.ts ***!
-  \*********************************************************/
-/*! exports provided: HOLES_INFO */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HOLES_INFO", function() { return HOLES_INFO; });
-var HOLES_INFO = [
-    {
-        'id': 1,
-        'hole': 1,
-        'par': 1,
-        'description': 'description1',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 2,
-        'hole': 2,
-        'par': 2,
-        'description': 'description2',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 3,
-        'hole': 3,
-        'par': 3,
-        'description': 'description3',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 4,
-        'hole': 4,
-        'par': 4,
-        'description': 'description4',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 5,
-        'hole': 5,
-        'par': 5,
-        'description': 'description5',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 6,
-        'hole': 6,
-        'par': 6,
-        'description': 'description6',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 7,
-        'hole': 7,
-        'par': 7,
-        'description': 'description7',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 8,
-        'hole': 8,
-        'par': 8,
-        'description': 'description8',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 9,
-        'hole': 9,
-        'par': 9,
-        'description': 'description9',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 10,
-        'hole': 10,
-        'par': 10,
-        'description': 'description10',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 11,
-        'hole': 11,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 12,
-        'hole': 12,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 13,
-        'hole': 13,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 14,
-        'hole': 14,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 15,
-        'hole': 15,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 16,
-        'hole': 16,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 17,
-        'hole': 17,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }, {
-        'id': 18,
-        'hole': 18,
-        'par': 3,
-        'description': 'description',
-        'flyover': 'https://vimeo.com/171598568',
-        'lat': 12312313,
-        'lng': 123123131
-    }
+var ELEMENT_DATA = [
+    { position: 1, name: '11:30' },
+    { position: 2, name: '11:00' },
 ];
 
 
 /***/ }),
 
-/***/ "./src/app/components/test-comp-2/side-nav/sidenav.component.html":
-/*!************************************************************************!*\
-  !*** ./src/app/components/test-comp-2/side-nav/sidenav.component.html ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<mat-sidenav-container class=\"example-container\" (backdropClick)=\"close('backdrop')\">\n  <mat-sidenav-content>\n    <p><button mat-button (click)=\"sidenav.open()\">\n      <i class=\"material-icons\">menu</i>\n    </button>\n    </p>\n\n  </mat-sidenav-content>\n\n  <mat-sidenav #sidenav (keydown.escape)=\"close('escape')\" disableClose>\n    <mat-expansion-panel>\n        <mat-expansion-panel-header>\n          Montgomorie\n        </mat-expansion-panel-header>\n\n        <mat-list role=\"list\" *ngFor=\"let hole of holes \">\n            <mat-list-item role=\"listitem\" class=\"mat-side-list\">\n              <button mat-button (click)=\"openBottomSheet()\" [routerLink]=\"['/test2', hole.id]\"><span>Hole {{hole.id}}</span></button>\n            </mat-list-item>\n        </mat-list>\n\n\n      </mat-expansion-panel>\n  </mat-sidenav>\n</mat-sidenav-container>\n\n<div id=\"map\"></div>\n\n<div class=\"contain\">\n    <mat-grid-list cols=\"2\" rowHeight=\"1:1\">\n        <mat-grid-tile>\n            <mat-nav-list>\n                <p>Metres: {{metres}}</p>\n                <p>Yards: {{yards}}</p>\n                <p>Kilometres: {{kilometres}}</p>\n                <p>Miles: {{miles}}</p>\n            </mat-nav-list>\n        </mat-grid-tile>\n\n    <mat-grid-tile>\n            <mat-nav-list>\n                <p>hole {{ hole.hole }}</p>\n                <p>par {{ hole.par }}</p>\n                <p>{{hole.description}}</p>\n                <!-- {{hole.flyover }} -->\n                <p>Flyover Link</p>\n            </mat-nav-list>\n        </mat-grid-tile>\n    </mat-grid-list>\n\n\n\n\n"
-
-/***/ }),
-
-/***/ "./src/app/components/test-comp-2/side-nav/sidenav.component.scss":
-/*!************************************************************************!*\
-  !*** ./src/app/components/test-comp-2/side-nav/sidenav.component.scss ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".example-container {\n  position: static;\n  width: 100%;\n  min-width: 100%;\n  height: 100%;\n  min-height: 100%; }\n\n.mat-side-list {\n  margin: 0; }\n\n.mat-button {\n  margin: 0px;\n  float: right; }\n\n.contain {\n  margin: 5px; }\n\n#map {\n  position: absolute;\n  top: 40px;\n  height: 60%;\n  width: 100%; }\n"
-
-/***/ }),
-
-/***/ "./src/app/components/test-comp-2/side-nav/sidenav.component.ts":
-/*!**********************************************************************!*\
-  !*** ./src/app/components/test-comp-2/side-nav/sidenav.component.ts ***!
-  \**********************************************************************/
-/*! exports provided: SidenavComponent */
+/***/ "./src/app/pipes/sort/sort.pipe.ts":
+/*!*****************************************!*\
+  !*** ./src/app/pipes/sort/sort.pipe.ts ***!
+  \*****************************************/
+/*! exports provided: SortPipe */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SidenavComponent", function() { return SidenavComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SortPipe", function() { return SortPipe; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _services_course_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/course-data.service */ "./src/app/components/test-comp-2/services/course-data.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
-
-
-
-var SidenavComponent = /** @class */ (function () {
-    function SidenavComponent(bottomSheet, _courseDataService, _route) {
-        this.bottomSheet = bottomSheet;
-        this._courseDataService = _courseDataService;
-        this._route = _route;
-        this._earthRadiusInMeters = 6378137;
-        this._earthRadiusInYards = 6975174.98;
-        this._earthRadiusInKilometers = 6371;
-        this._earthRadiusInMiles = 3960;
-        this.reason = '';
+var SortPipe = /** @class */ (function () {
+    function SortPipe() {
     }
-    SidenavComponent.prototype.close = function (reason) {
-        this.reason = reason;
-        this.sidenav.close();
-    };
-    SidenavComponent.prototype.openBottomSheet = function () {
-        window.location.reload();
-        // this.bottomSheet.open(BottomSheetOverviewExampleSheetComponent);
-    };
-    SidenavComponent.prototype.refreshPage = function () {
-    };
-    SidenavComponent.prototype.getHolesId = function (id) {
-        var _this = this;
-        this._courseDataService.getHoleById(id).subscribe(function (hole) { return _this.hole = hole; });
-    };
-    SidenavComponent.prototype.ngOnInit = function () {
-        this.Haversine();
-        this.holes = this._courseDataService.getSideNavHoles();
-        this.hole = +this._route.snapshot.paramMap.get('id');
-        this._courseDataService.showMap(+this._route.snapshot.params['id']);
-        if (this.hole) {
-            var id = +this.hole;
-            this.getHolesId(id);
-            console.log(id);
+    SortPipe.prototype.transform = function (value, args) {
+        if (args == 'up') {
+            return value.sort();
         }
-        console.log(this.hole);
-    };
-    SidenavComponent.prototype.Haversine = function () {
-        var _this = this;
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (x) {
-                _this.myLat = x.coords.latitude;
-                _this.myLng = x.coords.longitude;
-                console.log("longitude: " + _this.myLat + " | latitude: " + _this.myLng);
-                var myCoords = {
-                    latitude: _this.myLat,
-                    longitude: _this.myLng
-                };
-                var dominos = {
-                    latitude: 53.352454,
-                    longitude: -6.295462
-                };
-                _this.metres = _this.getDistanceInMeters(myCoords, dominos);
-                _this.yards = _this.getDistanceInYards(myCoords, dominos);
-                _this.kilometres = _this.getDistanceInKilometers(myCoords, dominos);
-                _this.miles = _this.getDistanceInMiles(myCoords, dominos);
-                _this.metres = _this.metres.toFixed(2);
-                _this.yards = _this.yards.toFixed(2);
-                _this.kilometres = _this.kilometres.toFixed(2);
-                _this.miles = _this.miles.toFixed(2);
-            });
+        else if (args == 'down') {
+            return value.sort();
         }
     };
-    SidenavComponent.prototype._toRadians = function (value) {
-        return value * Math.PI / 180;
-    };
-    SidenavComponent.prototype._getDistance = function (coord1, coord2) {
-        var φ1 = this._toRadians(coord1.latitude);
-        var φ2 = this._toRadians(coord2.latitude);
-        var Δφ = this._toRadians(coord2.latitude - coord1.latitude);
-        var Δλ = this._toRadians(coord2.longitude - coord1.longitude);
-        // a = sin²(Δφ / 2) + cos φ1 ⋅ cos φ2 ⋅ sin²(Δλ / 2)
-        var a = Math.pow(Math.sin(Δφ / 2), 2) +
-            Math.cos(φ1) *
-                Math.cos(φ2) *
-                Math.pow(Math.sin(Δλ / 2), 2);
-        // c = 2 ⋅ atan2(√a, √(1−a))
-        return 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    };
-    SidenavComponent.prototype.getDistanceInMeters = function (coord1, coord2) {
-        var c = this._getDistance(coord1, coord2);
-        // d = R ⋅ c
-        return this._earthRadiusInMeters * c;
-    };
-    SidenavComponent.prototype.getDistanceInYards = function (coord1, coord2) {
-        var c = this._getDistance(coord1, coord2);
-        // d = R ⋅ c
-        return this._earthRadiusInYards * c;
-    };
-    SidenavComponent.prototype.getDistanceInKilometers = function (coord1, coord2) {
-        var c = this._getDistance(coord1, coord2);
-        // d = R ⋅ c
-        return this._earthRadiusInKilometers * c;
-    };
-    SidenavComponent.prototype.getDistanceInMiles = function (coord1, coord2) {
-        var c = this._getDistance(coord1, coord2);
-        // d = R ⋅ c
-        return this._earthRadiusInMiles * c;
-    };
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('sidenav'),
-        __metadata("design:type", _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatSidenav"])
-    ], SidenavComponent.prototype, "sidenav", void 0);
-    SidenavComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-sidenav',
-            template: __webpack_require__(/*! ./sidenav.component.html */ "./src/app/components/test-comp-2/side-nav/sidenav.component.html"),
-            styles: [__webpack_require__(/*! ./sidenav.component.scss */ "./src/app/components/test-comp-2/side-nav/sidenav.component.scss")]
-        }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheet"],
-            _services_course_data_service__WEBPACK_IMPORTED_MODULE_2__["CourseDataService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
-    ], SidenavComponent);
-    return SidenavComponent;
-}());
-
-// this.hole = this._courseDataService.getHoleBy(+this._route.snapshot.params.id);
-// this.holeId = this.hole.id;
-//  this.holeHole = this.hole.hole;
-//  this.holePar = this.hole.par;
-//  this.holeDesc = this.hole.description;
-//  this.holeFly = this.hole.flyover;
-// console.log(this.holeHole, this.holePar, this.holeDesc, this.holeFly);
-
-
-/***/ }),
-
-/***/ "./src/app/components/test-comp-2/test-comp-2.component.html":
-/*!*******************************************************************!*\
-  !*** ./src/app/components/test-comp-2/test-comp-2.component.html ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<app-sidenav></app-sidenav>\r\n\r\n"
-
-/***/ }),
-
-/***/ "./src/app/components/test-comp-2/test-comp-2.component.scss":
-/*!*******************************************************************!*\
-  !*** ./src/app/components/test-comp-2/test-comp-2.component.scss ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".example-container {\n  position: static;\n  width: 100%;\n  min-width: 100%;\n  height: 100%;\n  min-height: 100%; }\n\n.example-sidenav-content {\n  height: 40px;\n  width: 40px;\n  position: fixed;\n  right: 45px;\n  top: 60px; }\n\n.example-sidenav {\n  margin-top: 44px;\n  display: flex;\n  width: 150px;\n  background-color: #F5F5F5;\n  height: 100%; }\n\n.mat-button {\n  background-color: #F5F5F5;\n  height: 40px; }\n"
-
-/***/ }),
-
-/***/ "./src/app/components/test-comp-2/test-comp-2.component.ts":
-/*!*****************************************************************!*\
-  !*** ./src/app/components/test-comp-2/test-comp-2.component.ts ***!
-  \*****************************************************************/
-/*! exports provided: TestComp2Component */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestComp2Component", function() { return TestComp2Component; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_course_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./services/course-data.service */ "./src/app/components/test-comp-2/services/course-data.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var TestComp2Component = /** @class */ (function () {
-    function TestComp2Component(_courseDataService) {
-        this._courseDataService = _courseDataService;
-        this.showFiller = false;
-    }
-    TestComp2Component.prototype.ngOnInit = function () { };
-    TestComp2Component = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-test-comp-2',
-            template: __webpack_require__(/*! ./test-comp-2.component.html */ "./src/app/components/test-comp-2/test-comp-2.component.html"),
-            styles: [__webpack_require__(/*! ./test-comp-2.component.scss */ "./src/app/components/test-comp-2/test-comp-2.component.scss")],
-        }),
-        __metadata("design:paramtypes", [_services_course_data_service__WEBPACK_IMPORTED_MODULE_1__["CourseDataService"]])
-    ], TestComp2Component);
-    return TestComp2Component;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/test/test-geo.component.html":
-/*!*********************************************************!*\
-  !*** ./src/app/components/test/test-geo.component.html ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"leaf-map\"\n     leaflet \n     [leafletOptions]=\"options\">\n</div>\n "
-
-/***/ }),
-
-/***/ "./src/app/components/test/test-geo.component.scss":
-/*!*********************************************************!*\
-  !*** ./src/app/components/test/test-geo.component.scss ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".leaf-map {\n  height: 88%;\n  width: 100%;\n  position: absolute; }\n"
-
-/***/ }),
-
-/***/ "./src/app/components/test/test-geo.component.ts":
-/*!*******************************************************!*\
-  !*** ./src/app/components/test/test-geo.component.ts ***!
-  \*******************************************************/
-/*! exports provided: TestGeoComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestGeoComponent", function() { return TestGeoComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! leaflet */ "./node_modules/leaflet/dist/leaflet-src.js");
-/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_1__);
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-// import L from 'leaflet';
-// var map: any;
-var TestGeoComponent = /** @class */ (function () {
-    function TestGeoComponent() {
-        // tslint:disable-next-line:member-ordering
-        this.options = {
-            layers: [
-                // tslint:disable-next-line:max-line-length
-                Object(leaflet__WEBPACK_IMPORTED_MODULE_1__["tileLayer"])('https://api.mapbox.com/styles/v1/cavinn/cjgqloyl000082roe1rz35om8/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
-                    maxZoom: 18,
-                    attribution: '...'
-                }),
-            ],
-            zoom: 16.5,
-            center: Object(leaflet__WEBPACK_IMPORTED_MODULE_1__["latLng"])(53.386012, -6.556897),
-            pitch: 60,
-        };
-    }
-    TestGeoComponent.prototype.ngOnInit = function () {
-    };
-    TestGeoComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-test-geo',
-            template: __webpack_require__(/*! ./test-geo.component.html */ "./src/app/components/test/test-geo.component.html"),
-            styles: [__webpack_require__(/*! ./test-geo.component.scss */ "./src/app/components/test/test-geo.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], TestGeoComponent);
-    return TestGeoComponent;
+    SortPipe = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"])({
+            name: 'teamFilter'
+        })
+    ], SortPipe);
+    return SortPipe;
 }());
 
 
@@ -2843,6 +2900,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+// import {BottomSheetOverviewExampleSheet} from '../components/test-comp-2/side-nav/sidenav.component';
 var MaterialModule = /** @class */ (function () {
     function MaterialModule() {
     }
