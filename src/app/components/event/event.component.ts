@@ -14,15 +14,16 @@ export class EventComponent implements OnInit {
   yelp: any[] = [];
 
   zoom = 17;
-  lat: number = 53.360258;
-  lng: number = -6.265690;
-  
-  constructor(public _newsService:YelpService) { }
- 
+  lat = 53.360258;
+  lng = -6.265690;
+
+  constructor(public _newsService: YelpService) { }
+
   ngOnInit() {
     this._newsService.getYelp()
-    .subscribe(yelp => { this.yelp = yelp;}, error => this.errorMessage=<any>error);
-     
-    
+    .subscribe(yelp => {
+      this.yelp = yelp;
+    }, error => this.errorMessage = <any>error);
+
   }
 }

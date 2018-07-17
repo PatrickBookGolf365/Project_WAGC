@@ -1,11 +1,15 @@
 #instagram-feed{
   display: flex;
   flex-direction: row;
-  position: fixed;
-  bottom: 40px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: 5px;
 }
 .mat-card{
+  height: 100%;
   width: 33%;
+  display: inline-block;
+  margin: 0px;
+  padding: 5px;
 }
