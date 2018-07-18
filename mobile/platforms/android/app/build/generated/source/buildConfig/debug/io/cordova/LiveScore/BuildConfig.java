@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "io.cordova.LiveScore";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 800000;
+  public static final int VERSION_CODE = 900000;
   public static final String VERSION_NAME = "4.0.0";
 }

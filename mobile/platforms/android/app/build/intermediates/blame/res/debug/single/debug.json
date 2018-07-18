@@ -16,12 +16,12 @@
         "source": "C:\\Users\\BookGolf365\\Desktop\\part 2\\Project_WAGC\\mobile\\platforms\\android\\app\\src\\main\\res\\drawable-land-xxxhdpi\\screen.png"
     },
     {
-        "merged": "C:\\Users\\BookGolf365\\Desktop\\part 2\\Project_WAGC\\mobile\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_icon.png.flat",
-        "source": "C:\\Users\\BookGolf365\\Desktop\\part 2\\Project_WAGC\\mobile\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
-    },
-    {
         "merged": "C:\\Users\\HappyUser\\Project_WAGC-4\\mobile\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_icon.png.flat",
         "source": "C:\\Users\\HappyUser\\Project_WAGC-4\\mobile\\platforms\\android\\app\\src\\main\\res\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\BookGolf365\\Desktop\\part 2\\Project_WAGC\\mobile\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_icon.png.flat",
+        "source": "C:\\Users\\BookGolf365\\Desktop\\part 2\\Project_WAGC\\mobile\\platforms\\android\\app\\src\\main\\res\\mipmap-ldpi\\icon.png"
     },
     {
         "merged": "C:\\Users\\BookGolf365\\Desktop\\part 2\\Project_WAGC\\mobile\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-ldpi_screen.png.flat",
