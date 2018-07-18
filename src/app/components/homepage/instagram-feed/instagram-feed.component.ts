@@ -9,6 +9,7 @@ import { InstagramFeedService } from '../services/weather.service';
 export class InstagramFeedComponent implements OnInit {
 
   instaFeed;
+  title = 'title';
 
   constructor(private _instagramFeed: InstagramFeedService) { }
 
@@ -16,6 +17,7 @@ export class InstagramFeedComponent implements OnInit {
     this._instagramFeed.getInstagramFeed()
     .subscribe(instaFeed => {
       this.instaFeed = instaFeed;
+      console.log(this.instaFeed)
     });
   }
 

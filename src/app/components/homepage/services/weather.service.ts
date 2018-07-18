@@ -18,13 +18,13 @@ export class WeatherService {
 
    getForecast(): Observable<any[]> {
     return this._http.get<any[]>(this._weatherForecast)
-    .do(data => console.log('Forecast: ' + JSON.stringify(data)))
+    .do(data => console.log((data)))
     .catch(this.handleError);
    }
 
    getForecastFH(): Observable<any[]> {
     return this._http.get<any[]>(this._weatherForecastFH)
-    .do(data => console.log('ForecastFH: ' + JSON.stringify(data)))
+    .do(data => console.log((data)))
     .catch(this.handleError);
    }
 
@@ -57,21 +57,21 @@ export class HomeNewsService {
 @Injectable()
 export class InstagramFeedService {
 
-    // tslint:disable-next-line:max-line-length
-    private _instagramFeedUrl = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=8144523052.2216fb3.4cfe98c30fbb4c57a6049b5980ccb6fc';
+   // tslint:disable-next-line:max-line-length
+   private _instagramFeedUrl = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=8144523052.2216fb3.4cfe98c30fbb4c57a6049b5980ccb6fc';
 
-    constructor(private _http: HttpClient) {}
+   constructor(private _http: HttpClient) {}
 
-    getInstagramFeed(): Observable<any[]> {
-      return this._http.get<any[]>(this._instagramFeedUrl)
-        .do(data => console.log('Insta: ' + JSON.stringify(data)))
-        .catch(this.handleError);
-       }
+   getInstagramFeed(): Observable<any[]> {
+     return this._http.get<any[]>(this._instagramFeedUrl)
+       .do(data => console.log('Insta: ' + JSON.stringify(data)))
+       .catch(this.handleError);
+      }
 
-       private handleError(err: HttpErrorResponse) {
-        console.log(err.message);
-        return Observable.throw(err.message);
-    }
+      private handleError(err: HttpErrorResponse) {
+       console.log(err.message);
+       return Observable.throw(err.message);
+   }
 }
 
 

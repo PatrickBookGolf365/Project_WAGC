@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-#Wed Jul 11 16:26:44 BST 2018
+#Wed Jul 18 10:38:26 BST 2018
 base.0=C\:\\Users\\BookGolf365\\Desktop\\part 2\\Project_WAGC\\mobile\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-=======
-#Mon Jul 16 13:23:34 BST 2018
-=======
-#Tue Jul 17 16:24:42 BST 2018
->>>>>>> origin/Cavin's-Newest-Branch
-base.0=C\:\\Users\\HappyUser\\Project_WAGC-4\\mobile\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
->>>>>>> 75331b92647e05c36e606c286fa32aec295903f7
 renamed.0=classes.dex
-file.0=C\:\\Users\\HappyUser\\Project_WAGC-4\\mobile\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
+file.0=C\:\\Users\\BookGolf365\\Desktop\\part 2\\Project_WAGC\\mobile\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

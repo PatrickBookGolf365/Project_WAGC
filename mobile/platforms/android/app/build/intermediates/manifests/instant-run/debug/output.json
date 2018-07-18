@@ -1,1 +1,1 @@
-[{"outputType":{"type":"INSTANT_RUN_MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":700000},"path":"AndroidManifest.xml","properties":{"packageId":"io.cordova.LiveScore","split":"","minSdkVersion":"16"}}]
+[{"outputType":{"type":"INSTANT_RUN_MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":800000},"path":"AndroidManifest.xml","properties":{"packageId":"io.cordova.LiveScore","split":"","minSdkVersion":"16"}}]

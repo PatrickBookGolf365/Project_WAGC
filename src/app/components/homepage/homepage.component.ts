@@ -64,6 +64,8 @@ export class HomepageComponent implements OnInit {
       .subscribe(homeNews => {
         this.homeNews = homeNews;
         });
+
+        
       },
       error => this.errorMessage = <any>error);
    }
