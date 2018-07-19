@@ -4,20 +4,21 @@
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  margin: 10px;
 }
-.mat-card{
-  height: 100%;
-  width: 33%;
-  display: inline-block;
-  margin: 10px;
+.instafeed-container{
+	width: 100%;
+}
+.transparent-instafeed{
+  height: 40vh;
+  width: 90vw;
+}
+.para{
+  color: white;
+  position: relative;
+  top: -17%;
+  left: -90%;
 }
 img{
-  width: 100%;
+  width: 90%;
 }
 
-
-.widthoverride {
-  min-width: 500px;
-
-}

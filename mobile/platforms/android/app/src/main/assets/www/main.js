@@ -594,7 +594,7 @@ var EligibilityComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"news-card-severity-{{quote.severity}}\">\n  <mat-list>\n    <mat-list-item>\n  \n    <div class=\"image-card-severity-{{quote.severity}}\">\n      <img src=\"assets/img/{{quote.severity}}.svg\">\n    </div>\n    \n    <div>\n      <p>{{ quote.content }}</p>\n    </div>\n\n\n    </mat-list-item>  \n  </mat-list>\n</div>"
+module.exports = "<div class=\"news-card-severity-{{quote.severity}}\">\r\n  <mat-list>\r\n    <mat-list-item>\r\n  \r\n    <div class=\"image-card-severity-{{quote.severity}}\">\r\n      <img src=\"assets/img/{{quote.severity}}.svg\">\r\n    </div>\r\n    \r\n    <div>\r\n      <p>{{ quote.content }}</p>\r\n    </div>\r\n\r\n\r\n    </mat-list-item>  \r\n  </mat-list>\r\n</div>"
 
 /***/ }),
 
@@ -870,7 +870,7 @@ var ScheduleComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"example-container\">\n  <form #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\n    <mat-form-field>\n      <input matInput id=\"title\" name=\"title\" ngModel placeholder=\"Title\">\n    </mat-form-field>\n  \n    <mat-form-field>\n      <textarea matInput id=\"content\" name=\"content\" ngModel placeholder=\"Content\"></textarea>\n    </mat-form-field>\n  \n    <mat-form-field>\n        <input matInput id=\"severity\" name=\"severity\" ngModel placeholder=\"Severity\">\n    </mat-form-field>\n    <button mat-button type=\"submit\" class=\"button\">Submit</button>\n</form> \n</div>"
+module.exports = "<div class=\"example-container\">\r\n  <form #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\r\n    <mat-form-field>\r\n      <input matInput id=\"title\" name=\"title\" ngModel placeholder=\"Title\">\r\n    </mat-form-field>\r\n  \r\n    <mat-form-field>\r\n      <textarea matInput id=\"content\" name=\"content\" ngModel placeholder=\"Content\"></textarea>\r\n    </mat-form-field>\r\n  \r\n    <mat-form-field>\r\n        <input matInput id=\"severity\" name=\"severity\" ngModel placeholder=\"Severity\">\r\n    </mat-form-field>\r\n    <button mat-button type=\"submit\" class=\"button\">Submit</button>\r\n</form> \r\n</div>"
 
 /***/ }),
 
@@ -941,7 +941,7 @@ var AdminCreateComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"news-card-severity-{{quote.severity}}\">\n  <mat-list>\n    <mat-list-item>\n      \n      <div class=\"image-card-severity-{{quote.severity}}\">\n        <img src=\"assets/img/{{quote.severity}}.svg\">\n      </div>\n        \n      <div>\n        <p>{{ quote.content }}</p>\n      </div>\n\n  </mat-list-item> \n</mat-list>\n<div *ngIf=\"editing\">\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueTitle\">\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueContent\">\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueSeverity\">\n    <button mat-button (click)=\"onUpdate()\">Update</button>\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\n  </div>\n  <div *ngIf=\"!editing\">\n    <button mat-button (click)=\"onEdit()\">Edit</button>\n    <button mat-button (click)=\"onDelete()\">Delete</button>\n</div>\n</div>\n"
+module.exports = "<div class=\"news-card-severity-{{quote.severity}}\">\r\n  <mat-list>\r\n    <mat-list-item>\r\n      \r\n      <div class=\"image-card-severity-{{quote.severity}}\">\r\n        <img src=\"assets/img/{{quote.severity}}.svg\">\r\n      </div>\r\n        \r\n      <div>\r\n        <p>{{ quote.content }}</p>\r\n      </div>\r\n\r\n  </mat-list-item> \r\n</mat-list>\r\n<div *ngIf=\"editing\">\r\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueTitle\">\r\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueContent\">\r\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueSeverity\">\r\n    <button mat-button (click)=\"onUpdate()\">Update</button>\r\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\r\n  </div>\r\n  <div *ngIf=\"!editing\">\r\n    <button mat-button (click)=\"onEdit()\">Edit</button>\r\n    <button mat-button (click)=\"onDelete()\">Delete</button>\r\n</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1053,7 +1053,7 @@ var AdminQuoteComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<button mat-button class=\"button\"  [routerLink]=\"['/admin-create']\" >Create</button>\n\n<app-admin-quote *ngFor=\"let quote of quotes\" [quote]=\"quote\" (quoteDeleted)=\"onDeleted($event)\"></app-admin-quote>\n"
+module.exports = "<button mat-button class=\"button\"  [routerLink]=\"['/admin-create']\" >Create</button>\r\n\r\n<app-admin-quote *ngFor=\"let quote of quotes\" [quote]=\"quote\" (quoteDeleted)=\"onDeleted($event)\"></app-admin-quote>\r\n"
 
 /***/ }),
 
@@ -2157,7 +2157,7 @@ var HomepageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"instagram-feed\">\r\n  \r\n  <mat-card class=\"mat-card\">\r\n      <img src=\"{{instaFeed.data[0].images.thumbnail.url}}\">\r\n          <p class=\"widthoverride\">\r\n            Carton House\r\n          </p>\r\n  </mat-card>\r\n\r\n  <mat-card class=\"mat-card\">\r\n      <img src=\"{{instaFeed.data[1].images.thumbnail.url}}\">\r\n        <p class=\"widthoverride\">\r\n        Visit Us 🌞⛳\r\n        </p>\r\n  </mat-card>\r\n\r\n  <mat-card class=\"mat-card\">\r\n      <img src=\"{{instaFeed.data[2].images.thumbnail.url}}\">\r\n        <p>\r\n          O'Meara Green\r\n        </p>\r\n  </mat-card>\r\n\r\n  <mat-card class=\"mat-card\">\r\n      <img src=\"{{instaFeed.data[3].images.thumbnail.url}}\">\r\n        <p class=\"widthoverride\">\r\n          #bunkers\r\n        </p>\r\n  </mat-card>\r\n\r\n  <mat-card class=\"mat-card\">\r\n      <img src=\"{{instaFeed.data[4].images.thumbnail.url}}\">\r\n        <p class=\"widthoverride\">\r\n          Caddie Services\r\n        </p>\r\n  </mat-card>\r\n\r\n  <mat-card class=\"mat-card\">\r\n      <img src=\"{{instaFeed.data[5].images.thumbnail.url}}\">\r\n      <p class=\"widthoverride\">\r\n          #OldHouse\r\n        </p>\r\n  </mat-card>\r\n</div> \r\n"
+module.exports = "<div id=\"instagram-feed\">\r\n  <div class=\"instafeed-container\">\r\n      <video class=\"transparent-instafeed\" src={{link}} autoplay> </video>\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[1].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[2].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[3].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[4].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[5].images.standard_resolution.url}}\">\r\n  </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -2168,7 +2168,7 @@ module.exports = "<div id=\"instagram-feed\">\r\n  \r\n  <mat-card class=\"mat-c
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#instagram-feed {\n  display: flex;\n  flex-direction: row;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap;\n  margin: 10px; }\n\n.mat-card {\n  height: 100%;\n  width: 33%;\n  display: inline-block;\n  margin: 10px; }\n\nimg {\n  width: 100%; }\n\n.widthoverride {\n  min-width: 500px; }\n"
+module.exports = "#instagram-feed {\n  display: flex;\n  flex-direction: row;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.instafeed-container {\n  width: 100%; }\n\n.transparent-instafeed {\n  height: 40vh;\n  width: 90vw; }\n\n.para {\n  color: white;\n  position: relative;\n  top: -17%;\n  left: -90%; }\n\nimg {\n  width: 90%; }\n"
 
 /***/ }),
 
@@ -2199,13 +2199,14 @@ var InstagramFeedComponent = /** @class */ (function () {
     function InstagramFeedComponent(_instagramFeed) {
         this._instagramFeed = _instagramFeed;
         this.title = 'title';
+        // tslint:disable-next-line:max-line-length
+        this.link = 'https://scontent.cdninstagram.com/vp/9c0895b9ad69153a42bd0230f29ec056/5B515265/t50.2886-16/36945138_1068663479958683_2957417478189219840_n.mp4';
     }
     InstagramFeedComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._instagramFeed.getInstagramFeed()
             .subscribe(function (instaFeed) {
             _this.instaFeed = instaFeed;
-            console.log(_this.instaFeed);
         });
     };
     InstagramFeedComponent = __decorate([
@@ -2230,7 +2231,7 @@ var InstagramFeedComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-list>\n  <mat-list-item class=\"mat-item\">\n\n          \n  <img src=\"./assets/img/ILGU.png\" class=\"mat-item-img\">\n    \n      <div class=\"mat-item-content\">\n        <div class=\"mat-item-heading\">\n          <h3>{{ quote.title }}</h3>\n        </div>\n                      \n        <div class=\"mat-item-para\">\n          {{ quote.content }}\n        </div>\n\n      </div>\n    </mat-list-item>\n  </mat-list>\n<mat-divider></mat-divider>"
+module.exports = "<mat-list>\r\n  <mat-list-item class=\"mat-item\">\r\n\r\n          \r\n  <img src=\"./assets/img/ILGU.png\" class=\"mat-item-img\">\r\n    \r\n      <div class=\"mat-item-content\">\r\n        <div class=\"mat-item-heading\">\r\n          <h3>{{ quote.title }}</h3>\r\n        </div>\r\n                      \r\n        <div class=\"mat-item-para\">\r\n          {{ quote.content }}\r\n        </div>\r\n\r\n      </div>\r\n    </mat-list-item>\r\n  </mat-list>\r\n<mat-divider></mat-divider>"
 
 /***/ }),
 
@@ -3324,7 +3325,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\BookGolf365\Desktop\part 2\Project_WAGC\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\HappyUser\Project_WAGC\src\main.ts */"./src/main.ts");
 
 
 /***/ })

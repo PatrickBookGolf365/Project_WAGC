@@ -1,44 +1,33 @@
 <div id="instagram-feed">
-  
-  <mat-card class="mat-card">
-      <img src="{{instaFeed.data[0].images.thumbnail.url}}">
-          <p class="widthoverride">
-            Carton House
-          </p>
-  </mat-card>
+  <div class="instafeed-container">
+    <!-- ng if video-->
+      <video class="transparent-instafeed" src={{link}} autoplay controls loop></video>
+    <!-- else image -->
+    <p class="para">Caption</p>
+  </div>
 
-  <mat-card class="mat-card">
-      <img src="{{instaFeed.data[1].images.thumbnail.url}}">
-        <p class="widthoverride">
-        Visit Us 🌞⛳
-        </p>
-  </mat-card>
+  <div class="instafeed-container">
+    <img class="transparent-instafeed" src="{{instaFeed.data[1].images.standard_resolution.url}}">
+    <p class="para">Caption</p>
+  </div>
 
-  <mat-card class="mat-card">
-      <img src="{{instaFeed.data[2].images.thumbnail.url}}">
-        <p>
-          O'Meara Green
-        </p>
-  </mat-card>
+  <div class="instafeed-container">
+    <img class="transparent-instafeed" src="{{instaFeed.data[2].images.standard_resolution.url}}">
+    <p class="para">Caption</p>
+  </div>
 
-  <mat-card class="mat-card">
-      <img src="{{instaFeed.data[3].images.thumbnail.url}}">
-        <p class="widthoverride">
-          #bunkers
-        </p>
-  </mat-card>
+  <div class="instafeed-container">
+    <img class="transparent-instafeed" src="{{instaFeed.data[3].images.standard_resolution.url}}">
+    <p class="para">Caption</p>
+  </div>
 
-  <mat-card class="mat-card">
-      <img src="{{instaFeed.data[4].images.thumbnail.url}}">
-        <p class="widthoverride">
-          Caddie Services
-        </p>
-  </mat-card>
+  <div class="instafeed-container">
+    <img class="transparent-instafeed" src="{{instaFeed.data[4].images.standard_resolution.url}}">
+    <p class="para">Caption</p>
+  </div>
 
-  <mat-card class="mat-card">
-      <img src="{{instaFeed.data[5].images.thumbnail.url}}">
-      <p class="widthoverride">
-          #OldHouse
-        </p>
-  </mat-card>
-</div> 
+  <div class="instafeed-container">
+    <img class="transparent-instafeed" src="{{instaFeed.data[5].images.standard_resolution.url}}">
+  </div>
+</div>
+
