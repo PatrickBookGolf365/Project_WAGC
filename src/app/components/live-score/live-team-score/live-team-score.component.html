@@ -846,9 +846,7 @@
               <ng-container *ngIf="players.totals.status == 'ok'">
                 <td></td>
                 <td>{{players.totals.position}}</td>
-                <td (click)="hidePlayer = !hidePlayer; hideScore = !hideScore; teamProfiles = [players.teamname]; playerProfilesFirst = [players.firstname]; playerProfilesLast = [players.lastname]">
-                  {{players.firstname}} {{players.lastname}}</td>
-
+                <td>{{players.firstname}} {{players.lastname}}</td>
                 <td *ngIf="players.totals.totaltopar[0] == '+'" id="parblue">{{players.totals.totaltopar}}</td>
                 <td *ngIf="players.totals.totaltopar[0] == '-'" id="parred">{{players.totals.totaltopar}}</td>
                 <!-- <td *ngFor="let loop of [0,1,2,4,5,6,7,8]">{{players.round[0].score[loop].strokes}}</td> -->
