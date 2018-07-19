@@ -3,6 +3,72 @@
 </div> -->
 <div id="homepage-body">
 
+
+<div id="content" *ngFor="let news of homeNews.update| slice:0:1; let i=index">
+    <mat-accordion class="example-headers-align">
+        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+              <mat-expansion-panel-header>
+               <mat-panel-description>
+                  {{homeNews.update[0].desc}}
+              <mat-icon id="newsSeverity{{homeNews.update[0].severity}}">{{homeNews.update[0].type}}</mat-icon>
+            </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-progress-bar class="my-color" mode="determinate" value="100"></mat-progress-bar>
+                  <ul>
+                    <li>
+                      {{homeNews.update[1].timeStamp}}: {{homeNews.update[0].content}}
+                    </li>
+                </ul>
+              <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Next</button>
+             </mat-action-row>
+          </mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion class="example-headers-align">
+<mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+    <mat-expansion-panel-header>
+  <mat-panel-description>
+    {{homeNews.update[1].desc}}
+<mat-icon id="newsSeverity{{homeNews.update[1].severity}}">{{homeNews.update[1].type}}</mat-icon>
+</mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-progress-bar class="mat-progress-green" mode="determinate" value="100"></mat-progress-bar>
+    <ul>
+      <li>
+          {{homeNews.update[1].timeStamp}}: {{homeNews.update[1].content}}
+     </li>
+    </ul>
+  <mat-action-row>
+     <button mat-button color="warn" (click)="prevStep()">Previous</button>
+     <button mat-button color="primary" (click)="nextStep()">Next</button>
+  </mat-action-row>
+</mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+        <mat-expansion-panel-header>
+      <mat-panel-description>
+        {{homeNews.update[2].desc}}
+  <mat-icon id="newsSeverity{{homeNews.update[2].severity}}">{{homeNews.update[2].type}}</mat-icon>
+    </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+        <ul>
+          <li>
+              {{homeNews.update[2].timeStamp}}: {{homeNews.update[2].content}}
+         </li>
+        </ul>
+      <mat-action-row>
+         <button mat-button color="warn" (click)="prevStep()">Previous</button>
+         <button mat-button color="primary" (click)="nextStep()">End</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>
+
+</div>
+
   
   <div>
     <ng-container *ngIf="!metric">
@@ -185,70 +251,6 @@
       </mat-accordion>
     </ng-container>
   </div>
-
-
-               
-     <div id="content" *ngFor="let news of homeNews.update| slice:0:1; let i=index">
-            <mat-accordion class="example-headers-align">
-                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
-                      <mat-expansion-panel-header>
-                       <mat-panel-description>
-                          {{homeNews.update[0].desc}}
-                      <mat-icon id="newsSeverity{{homeNews.update[0].severity}}">{{homeNews.update[0].type}}</mat-icon>
-                    </mat-panel-description>
-                    </mat-expansion-panel-header>
-                          <ul>
-                            <li>
-                              {{homeNews.update[1].timeStamp}}: {{homeNews.update[0].content}}
-                            </li>
-                        </ul>
-                      <mat-action-row>
-                        <button mat-button color="primary" (click)="nextStep()">Next</button>
-                     </mat-action-row>
-                  </mat-expansion-panel>
-        </mat-accordion>
-
-    <mat-accordion class="example-headers-align">
-        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
-            <mat-expansion-panel-header>
-          <mat-panel-description>
-            {{homeNews.update[1].desc}}
-      <mat-icon id="newsSeverity{{homeNews.update[1].severity}}">{{homeNews.update[1].type}}</mat-icon>
-        </mat-panel-description>
-          </mat-expansion-panel-header>
-            <ul>
-              <li>
-                  {{homeNews.update[1].timeStamp}}: {{homeNews.update[1].content}}
-             </li>
-            </ul>
-          <mat-action-row>
-             <button mat-button color="warn" (click)="prevStep()">Previous</button>
-             <button mat-button color="primary" (click)="nextStep()">Next</button>
-          </mat-action-row>
-        </mat-expansion-panel>
-      </mat-accordion>
-
-        <mat-accordion class="example-headers-align">
-            <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
-                <mat-expansion-panel-header>
-              <mat-panel-description>
-                {{homeNews.update[2].desc}}
-          <mat-icon id="newsSeverity{{homeNews.update[2].severity}}">{{homeNews.update[2].type}}</mat-icon>
-            </mat-panel-description>
-              </mat-expansion-panel-header>
-                <ul>
-                  <li>
-                      {{homeNews.update[2].timeStamp}}: {{homeNews.update[2].content}}
-                 </li>
-                </ul>
-              <mat-action-row>
-                 <button mat-button color="warn" (click)="prevStep()">Previous</button>
-                 <button mat-button color="primary" (click)="nextStep()">End</button>
-              </mat-action-row>
-            </mat-expansion-panel>
-        </mat-accordion>
-
-    </div>
 
 
      <app-instagram-feed></app-instagram-feed>

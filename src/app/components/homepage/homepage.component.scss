@@ -1,11 +1,8 @@
+
 #homepage-body{
     margin-bottom: 20%;
     overflow: hidden;
 }
-
-
-
-
 .box {
     display: flex;
     align-items:center;
@@ -20,19 +17,9 @@
     height: 100%;
     vertical-align: middle;
 }
-#weather-toolbar{
-    background-color: #5cd65c;
+mat-progress-bar {
+  background-color: #33ba3a;
 }
-
-.flex-container{
-  display: flex;
-  justify-content: space-around;
-  background: #76b852;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
 .compass-img{
    width: 245%;
    height: 245%;
@@ -103,7 +90,7 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
     color: red;
     padding-right: 15px;
   }
-  
+
   #newsSeverity2{
     color: orange;
     padding-right: 15px;
@@ -112,15 +99,15 @@ background: linear-gradient(to left, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Fi
     color: green;
     padding-right: 15px;
   }
-  
+
   #newsDesc{
     width: 100%;
-      overflow:hidden; 
-      white-space:nowrap; 
+      overflow:hidden;
+      white-space:nowrap;
       text-overflow: ellipsis;
-    
+
   }
-  
+
   #newsTimeStamp{
     padding-right: 15px;
   }
