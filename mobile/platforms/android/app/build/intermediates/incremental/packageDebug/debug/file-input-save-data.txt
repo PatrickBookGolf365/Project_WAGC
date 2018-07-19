@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jul 18 16:49:17 BST 2018
+#Thu Jul 19 11:03:10 BST 2018
 122.file=C\:\\Users\\HappyUser\\Project_WAGC\\mobile\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\vendor.js.map
 60.set=ANDROID_RESOURCE
 129.file=C\:\\Users\\HappyUser\\Project_WAGC\\mobile\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\assets\\img\\Turkey.png
