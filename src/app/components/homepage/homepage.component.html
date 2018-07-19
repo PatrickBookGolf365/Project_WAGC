@@ -3,7 +3,7 @@
 </div> -->
 <div id="homepage-body">
 
-  <button mat-button (click)="metric = !metric">{{metric ? '&deg;C' : '&deg;F'}}</button>
+  
   <div>
     <ng-container *ngIf="!metric">
       <mat-accordion>
@@ -30,6 +30,7 @@
               </div>
             </mat-panel-title>
           </mat-expansion-panel-header>
+          <button mat-button (click)="metric = !metric">{{metric ? '&deg;C' : '&deg;F'}}</button>
           <div id="">
             <!-- index 1 -->
             <ng-container *ngFor="let loop of [1,2,3,4]">
@@ -122,6 +123,7 @@
               </div>
             </mat-panel-title>
           </mat-expansion-panel-header>
+          <button mat-button (click)="metric = !metric">{{metric ? '&deg;C' : '&deg;F'}}</button>
           <div id="">
             <!-- index 1 -->
             <ng-container *ngFor="let loop of [1,2,3,4]">
