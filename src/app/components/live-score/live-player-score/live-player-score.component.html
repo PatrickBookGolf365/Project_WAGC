@@ -341,8 +341,10 @@
   </div>
 </div>
 
-
-
+<div >
+    
+    
+</div>
 <div id="live-main" *ngIf="!hideall">
   <!-- <table matSort (matSortChange)="sortData($event)">
         <tr>
@@ -363,10 +365,54 @@
     </mat-form-field>
     <span class="example-fill-remaining-space"></span>
   </mat-toolbar>
+
+  <!-- Saved Players -->
   
+  <table id="live-table">
+      <thead>
+        <tr id="live-table-header-title">
+          <th></th>
+          <th>Pos</th>
+          <th>Player</th>
+          <th>Team</th>
+          <th>R1</th>
+          <th>R2</th>
+          <th>R3</th>
+          <th>R4</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="player-tbody" *ngFor="let todo of todoService.getTodos()">
+        <ng-container *ngFor="let playerdata of playerdata.event.tournament.players.player; let i = index"  >
+          
+              <tr id="player-tr"  *ngIf="playerdata.firstname == todo.firstname && playerdata.lastname == todo.lastname">
+                <td><app-todo-item [todo]="todo"></app-todo-item></td>
+                <td>{{playerdata.totals.position}}</td>
+                <td>{{playerdata.firstname}} {{playerdata.lastname}}</td>
+                <td><img id="favteamNameImage"  src="http://watc.bookgolf365.ie/images/{{playerdata.teamname | lowercase}}.png"
+                  onError="this.src='./assets/img/team.jpg';"  alt="..." />
+                </td>
+                <td>{{playerdata.round[0].strokes}}</td>
+                <td>{{playerdata.round[1].strokes}}</td>
+                <td>{{playerdata.round[2].strokes}}</td>
+                <td>{{playerdata.round[3].strokes}}</td>
+                <td id="total">{{(playerdata.round[0].strokes * 1) + (playerdata.round[1].strokes * 1) + (playerdata.round[2].strokes * 1) + (playerdata.round[3].strokes
+                  * 1)}}</td>
+              </tr>
+              
+    
+        </ng-container> 
+      </tbody>
+      </table>
+      <!--Saved Players -->
+     <br>
+      <mat-divider></mat-divider>
+     
+      <!-- Live Scrore -->
   <table id="live-table">
     <thead>
       <tr id="live-table-header-title">
+        <th></th>
         <th>Pos</th>
         <th>Player</th>
         <th>Team</th>
@@ -377,16 +423,18 @@
         <th>Total</th>
       </tr>
     </thead>
-    <tbody id="player-tbody" *ngFor="let playerdata of playerdata.event.tournament.players.player; let i = index">
+    <ng-container *ngFor="let playerdata of playerdata.event.tournament.players.player; let i = index">
+    <tbody id="player-tbody" *ngIf="playerdata.totals.status == 'ok'" >
       <ng-container *ngIf="playerdata.firstname == playerbox.value || playerdata.lastname == playerbox.value || playerbox.value == ''">
 
-        <tr id="player-tr" *ngIf="playerdata.totals.status == 'ok'">
+        <tr id="player-tr">
 
+          <td (click)="todoFirstname = (playerdata.firstname); todoLastname = (playerdata.lastname); addTodo()"><mat-icon id="favourite">star</mat-icon></td>
           <td>{{playerdata.totals.position}}</td>
           <td (click)="hideall = !hideall; teamProfiles = (playerdata.teamname); playerProfilesFirst = [playerdata.firstname]; playerProfilesLast = [playerdata.lastname]">{{playerdata.firstname}} {{playerdata.lastname}}</td>
           <td>
 
-              <img id="teamNameImage" class="thumbnail-image" src="http://watc.bookgolf365.ie/images/{{playerdata.teamname | lowercase}}.png"
+              <img  id="teamNameImage" class="thumbnail-image" src="http://watc.bookgolf365.ie/images/{{playerdata.teamname | lowercase}}.png"
               onError="this.src='./assets/img/team.jpg';"  alt="..." />
 
           </td>
@@ -400,6 +448,8 @@
 
       </ng-container>
     </tbody>
+    </ng-container>
 
   </table>
+  <!-- Live Score -->
 </div>

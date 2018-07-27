@@ -29,6 +29,8 @@ import { HomeNewsService } from './components/homepage/services/weather.service'
 import { YelpService } from './components/event/event.service';
 import { LiveScoreService } from './components/live-score/live-score.service';
 import { OMearaService } from './components/geolocation/services/o-meara.service';
+import { TodoService} from './services/todo.service';
+import { TodoTeamService} from './services/todo-team.service';
 
 import { EventComponent } from './components/event/event.component';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
@@ -48,6 +50,10 @@ import { MaynoothInfoBottomSheetComponent } from './components/geolocation/mayno
 import { OMearaDetailComponent } from './components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component';
 // tslint:disable-next-line:max-line-length
 import { LocalInfoBottomSheetComponent } from './components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import { TodoTeamItemComponent } from './components/todo-team-item/todo-team-item.component';
+
+
 
 @NgModule({
   declarations: [
@@ -78,6 +84,8 @@ import { LocalInfoBottomSheetComponent } from './components/geolocation/maynooth
     GeolocationMaynoothDetailComponent,
     OMearaDetailComponent,
     LocalInfoBottomSheetComponent,
+    TodoItemComponent,
+    TodoTeamItemComponent,
   ],
   imports: [
     BrowserModule,
@@ -104,7 +112,9 @@ import { LocalInfoBottomSheetComponent } from './components/geolocation/maynooth
     LiveScoreService,
     MapService,
     HaversineService,
-    OMearaService
+    OMearaService,
+    TodoService,
+    TodoTeamService,
    ],
   bootstrap: [AppComponent]
 })

@@ -580,8 +580,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\HappyUser\Project_WAGC\node_modules\leaflet\dist\leaflet.css */"./node_modules/leaflet/dist/leaflet.css");
-module.exports = __webpack_require__(/*! C:\Users\HappyUser\Project_WAGC\src\styles.css */"./src/styles.css");
+__webpack_require__(/*! C:\Users\BookGolf365\Desktop\part 2\Project_WAGC\node_modules\leaflet\dist\leaflet.css */"./node_modules/leaflet/dist/leaflet.css");
+module.exports = __webpack_require__(/*! C:\Users\BookGolf365\Desktop\part 2\Project_WAGC\src\styles.css */"./src/styles.css");
 
 
 /***/ })

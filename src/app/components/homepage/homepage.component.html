@@ -3,6 +3,7 @@
 </div> -->
 <div id="homepage-body">
 
+
   <mat-toolbar>Event News</mat-toolbar>
 
 <div id="content" *ngFor="let news of homeNews.update| slice:0:1; let i=index">
@@ -69,6 +70,8 @@
 </mat-accordion>
 
 </div>
+
+
   <div>
     <ng-container *ngIf="!metric">
       <mat-accordion>

@@ -766,7 +766,6 @@
     </mat-expansion-panel>
   </div>
 </div>
-
 <div id="live-main" *ngIf="!hideScore">
   <!-- <table matSort (matSortChange)="sortData($event)">
         <tr>
@@ -792,9 +791,94 @@
     </mat-form-field>
     <span class="example-fill-remaining-space"></span>
   </mat-toolbar>
+
+
+  <!-- saved team -->
+  <table id="live-table">
+      <thead>
+        <tr id="live-table-header-title">
+          <th></th>
+          <th></th>
+          <th>Pos</th>
+          <th>Team</th>
+          <th>Par</th>
+          <th>R1</th>
+          <th>R2</th>
+          <th>R3</th>
+          <th>R4</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="player-tbody" class="tbody" *ngFor="let todoTeam of todoTeamService.getTodosTeam()">
+        <ng-container  *ngFor="let teamdata of data.event.tournament.teams.team; let i = index;">
+          <tr id="live-table-header" *ngIf="teamdata.name == todoTeam.teamName">
+            <td><app-todo-team-item [todoTeam]="todoTeam"></app-todo-team-item></td>
+            <td>
+              <button class="hide-btn" (click)="hideStuff[i] = !hideStuff[i]">
+                <mat-icon>expand_{{hideStuff[i] ? 'less' : 'more'}}</mat-icon>
+              </button>
+            </td>
+            <td>{{teamdata.totals.position}}</td>
+            <td>
+             
+                  <img (click)="hideTeam = !hideTeam;  hideScore = !hideScore; profiles = (teamdata.name) ;" id="teamNameImage" class="thumbnail-image" src="http://watc.bookgolf365.ie/images/{{teamdata.name | lowercase}}.png"
+                  onError="this.src='./assets/img/team.jpg';"  alt="..." />
+              
+             
+            </td>
+            <ng-container *ngIf="teamdata.totals.totaltopar[0] == '+'">
+              <td id="parblue">{{teamdata.totals.totaltopar}}</td>
+            </ng-container>
+            <ng-container *ngIf="teamdata.totals.totaltopar[0] == '-'">
+              <td id="parred">{{teamdata.totals.totaltopar}}</td>
+            </ng-container>
+            <ng-container *ngIf="teamdata.totals.totaltopar[0] != '-' && teamdata.totals.totaltopar[0] != '+'">
+              <td>{{teamdata.totals.totaltopar}}</td>
+            </ng-container>
+            <td>{{teamdata.round[0].strokes}}</td>
+            <td>{{teamdata.round[1].strokes}}</td>
+            <td>{{teamdata.round[2].strokes}}</td>
+            <td>{{teamdata.round[3].strokes}}</td>
+            <td>
+              <span id="total">{{(teamdata.round[0].strokes * 1) + (teamdata.round[1].strokes * 1) + (teamdata.round[2].strokes * 1) + (teamdata.round[3].strokes
+                * 1)}}</span>
+            </td>
+          </tr>
+          <ng-container *ngIf="hideStuff[i]">
+            <tr class="player" *ngFor="let players of data.event.tournament.players.player">
+              <ng-container *ngIf="teamdata.name == todoTeam.teamName">
+              <ng-container *ngIf="teamdata.name == players.teamname">
+                <ng-container *ngIf="players.totals.status == 'ok'">
+                  <td></td>
+                  <td></td>
+                  <td>{{players.totals.position}}</td>
+                  <td>{{players.firstname}} {{players.lastname}}</td>
+                  <td *ngIf="players.totals.totaltopar[0] == '+'" id="parblue">{{players.totals.totaltopar}}</td>
+                  <td *ngIf="players.totals.totaltopar[0] == '-'" id="parred">{{players.totals.totaltopar}}</td>
+                  <!-- <td *ngFor="let loop of [0,1,2,4,5,6,7,8]">{{players.round[0].score[loop].strokes}}</td> -->
+                  <td>{{players.round[0].strokes}}</td>
+                  <td>{{players.round[1].strokes}}</td>
+                  <td>{{players.round[2].strokes}}</td>
+                  <td>{{players.round[3].strokes}}</td>
+                  <td id="total">{{(players.round[0].strokes * 1) + (players.round[1].strokes * 1) + (players.round[2].strokes * 1) + (players.round[3].strokes
+                    * 1)}}</td>
+                </ng-container>
+              </ng-container>
+              </ng-container>
+            </tr>
+          </ng-container>
+        </ng-container>
+      </tbody>
+    </table>
+    <br>
+    <mat-divider></mat-divider>
+  <!-- saved team -->
+
+
   <table id="live-table">
     <thead>
       <tr id="live-table-header-title">
+        <th></th>
         <th></th>
         <th>Pos</th>
         <th>Team</th>
@@ -809,6 +893,7 @@
     <tbody id="player-tbody" *ngFor="let teamdata of data.event.tournament.teams.team; let x = index;" class="tbody ">
       <ng-container *ngIf="teamdata.name == box.value || box.value == ''">
         <tr id="live-table-header">
+          <td (click)="todoTeamText = (teamdata.name); addTodoTeam()"><mat-icon>star</mat-icon></td>
           <td>
             <button class="hide-btn" (click)="hideStuff[x] = !hideStuff[x]">
               <mat-icon>expand_{{hideStuff[x] ? 'less' : 'more'}}</mat-icon>
@@ -844,6 +929,7 @@
           <tr class="player" *ngFor="let players of data.event.tournament.players.player">
             <ng-container *ngIf="teamdata.name == players.teamname">
               <ng-container *ngIf="players.totals.status == 'ok'">
+                <td></td>
                 <td></td>
                 <td>{{players.totals.position}}</td>
                 <td>{{players.firstname}} {{players.lastname}}</td>
