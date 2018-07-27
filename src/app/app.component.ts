@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { TodoService} from './services/todo.service';
+import {TodoTeamService} from './services/todo-team.service';
+
 // import * as $ from 'jquery';
 
 @Component({
@@ -8,4 +11,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(private todoservice: TodoService, private todoTeamService: TodoTeamService){
+    
+  }
 }

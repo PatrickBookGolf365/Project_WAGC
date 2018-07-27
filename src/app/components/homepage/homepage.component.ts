@@ -21,6 +21,9 @@ declare var Instafeed;
 
 export class HomepageComponent implements OnInit {
 
+  private inputText: string;
+
+
   errorMessage: string;
   weather;
   forecastFH;
@@ -33,6 +36,7 @@ export class HomepageComponent implements OnInit {
   constructor(private _weatherService: WeatherService,
               private _homeNewsService: HomeNewsService,
               private _instagramFeed: InstagramFeedService) {
+                this.inputText = "";
 
    }
 
@@ -41,6 +45,12 @@ export class HomepageComponent implements OnInit {
     this.InjectableService();
 
   }
+
+  private addText(): void{
+    console.log("Saved Text", this.inputText);
+    this.inputText = "";
+  }
+
 
    onActivate(event) {
 

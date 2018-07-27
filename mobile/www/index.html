@@ -8,6 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  <script>
+      function onDeviceReady () {
+       alert("Calling onDeviceReady()");
+      }
+  
+      setTimeout(function () {
+              document.addEventListener('deviceready', onDeviceReady, false);
+      }, 9000);
+  </script>
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
@@ -50,15 +60,17 @@
       }
 
       body {
-
+        
         width: 100%;
         height: 100%;
 
       }
 
       #img img {
-
-        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
 
       }
 
@@ -67,6 +79,20 @@
         margin-bottom: 6%;
       }
 
+      #img2 img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      }
+      
+      #img2{
+        margin-top: 5%;
+      }
+
+      #splashText{
+        margin-top: 5%;
+      }
 
       #ILGU-logo {
         width: 19%;
@@ -104,6 +130,10 @@
           <img src="./assets/img/ILGU.png" id="ILGU-logo">
         </mat-icon>
       </span>
+    </div>
+    <div id="splashText">Powerd By</div>
+    <div id="img2">
+      <img src="assets/img/bg3656-logo-small.png">
     </div>
     <!-- <div></div>
       <div class="row"></div> -->

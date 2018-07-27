@@ -9,7 +9,12 @@ declare var $: any;
 })
 export class LiveScoreComponent implements OnInit {
 
-  constructor() { }
+  public todoText: string;
+
+
+  constructor() {
+    this.todoText = '';
+   }
 
 
   ngOnInit() {

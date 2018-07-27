@@ -7,6 +7,7 @@ import { AgmCoreModule } from '@agm/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
+
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { NavigationComponent } from './components/navigation/nav/navigation.component';
@@ -29,6 +30,10 @@ import { HomeNewsService } from './components/homepage/services/weather.service'
 import { YelpService } from './components/event/event.service';
 import { QuoteService } from './shared/quote.service';
 import { LiveScoreService } from './components/live-score/live-score.service';
+import { TodoService} from './services/todo.service';
+import { TodoTeamService} from './services/todo-team.service';
+
+
 
 import { EventComponent } from './components/event/event.component';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
@@ -49,6 +54,11 @@ import { HaversineService } from './components/geolocation/services/haversine.se
 // tslint:disable-next-line:max-line-length
 import { GeolocationMaynoothDetailComponent } from './components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component';
 import { BottomSheetOverviewComponent } from './components/geolocation/bottom-sheet/bottom-sheet-overview.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import { TodoTeamItemComponent } from './components/todo-team-item/todo-team-item.component';
+
+
+
 
 
 @NgModule({
@@ -84,6 +94,11 @@ import { BottomSheetOverviewComponent } from './components/geolocation/bottom-sh
     GeolocationDetailComponent,
     BottomSheetOverviewComponent,
     GeolocationMaynoothDetailComponent,
+    TodoItemComponent,
+    TodoTeamItemComponent,
+   
+   
+  
   ],
   imports: [
     BrowserModule,
@@ -107,7 +122,12 @@ import { BottomSheetOverviewComponent } from './components/geolocation/bottom-sh
     LiveScoreService,
     QuoteService,
     MapService,
-    HaversineService
+    HaversineService,
+    TodoService,
+    TodoTeamService,
+   
+    
+   
    ],
   bootstrap: [AppComponent]
 })

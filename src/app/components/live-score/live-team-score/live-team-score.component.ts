@@ -1,7 +1,10 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
 import { LiveScoreService } from '../live-score.service';
+import { TodoTeamService} from '../../../services/todo-team.service';
+import { TodoTeam } from '../../../classes/todo-team';
+
 import { ITeam } from './live-team-score';
-import {Sort} from '@angular/material';
+import { Sort } from '@angular/material';
 
 
 @Component({
@@ -10,6 +13,46 @@ import {Sort} from '@angular/material';
   styleUrls: ['./live-team-score.component.scss']
 })
 
+export class LiveTeamScoreComponent implements OnInit {
+
+  @Input()
+  private todoTeam: TodoTeam;
+
+  private todoTeamText: string;
+  errorMessage: string;
+  hideStuff = [];
+  data;
+
+  constructor(public _liveScoreService: LiveScoreService, private todoTeamService: TodoTeamService) {
+    this.todoTeamText = '';
+  }
+
+
+  ngOnInit() {
+    this._liveScoreService.getRealJsonData()
+      .subscribe(data => {
+        this.data = data;
+      },
+        error => this.errorMessage = <any>error);
+  }
+
+  private removeTodoTeam(): void{
+    this.todoTeamService.removeTodoTeam(this.todoTeam.id);
+  }
+
+  private addTodoTeam(): void{
+    this.todoTeamService.addTodoTeam(this.todoTeamText);
+    this.todoTeamText = '';
+  }
+
+
+
+
+}
+
+// function compare(a, b, isAsc) {
+//   return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
+// }
 // class Defualt {
 //   private profiles: string;
 // }
@@ -17,14 +60,7 @@ import {Sort} from '@angular/material';
 // get default(){
 //       return this.profiles 
 // }
-
-export class LiveTeamScoreComponent implements OnInit{
-  errorMessage: string;
-  hideStuff = []; 
-  data;
- 
- 
-  // playerdata = [
+// playerdata = [
   //   {players:{
   //     player:[
   //       {id: 1, position: 1, name: "patrick"},
@@ -38,24 +74,7 @@ export class LiveTeamScoreComponent implements OnInit{
   //     ]
   //    }}
   // ];
-  
- 
-  sortedData;
- 
-  constructor(public _liveScoreService:LiveScoreService) {
-    // this.sortedData = this.playerdata;
-   }
-
-  ngOnInit(){
-
-    this._liveScoreService.getRealJsonData()
-    .subscribe(data => {
-      this.data = data;},
-    error => this.errorMessage=<any>error);
-      }
-     
-      
-//       sortData(sort: Sort) {
+  //       sortData(sort: Sort) {
 //         const data = this.playerdata;
 //         if (!sort.active || sort.direction === '') {
 //           this.sortedData = data;
@@ -69,9 +88,4 @@ export class LiveTeamScoreComponent implements OnInit{
 //           }
 //         });
 
-// }
-}
-
-// function compare(a, b, isAsc) {
-//   return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
 // }

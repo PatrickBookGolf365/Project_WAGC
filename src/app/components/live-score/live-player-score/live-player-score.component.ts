@@ -1,5 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { LiveScoreService } from '../live-score.service';
+import { TodoService} from '../../../services/todo.service';
+import {Todo} from '../../../classes/todo';
+
+
+
+
 import {Sort} from '@angular/material';
 
 @Component({
@@ -9,48 +15,16 @@ import {Sort} from '@angular/material';
 })
 export class LivePlayerScoreComponent implements OnInit {
 
+  @Input()
+  private todo: Todo;
+
+  
+  private todoFirstname: string;
+  private todoLastname: string;
   errorMessage: string;
   playerdata ;
   data;
-  playerinfo = [
-    {
-      event: {
-        tournament: {
-          players: {
-            player: [
-              {
-                firstname: "Hannah",
-                totals: {
-                  position: "1",
-                },
-              },
-
-              {
-                firstname: "Bannana",
-                totals: {
-                  position: "8",
-                },
-              },
-
-              {
-                firstname: "Tanna",
-                totals: {
-                  position: "4",
-                },
-              },
-
-              {
-                firstname: "FriedHamma",
-                totals: {
-                  position: "7",
-                }
-              }
-            ]
-          }
-        }
-      }
-    }
-  ]
+ 
 
   ngOnInit(){
 
@@ -61,34 +35,22 @@ export class LivePlayerScoreComponent implements OnInit {
       }
   
   
-  
-//   sortedData;
 
-
-  
- 
-   constructor(public _liveScoreService:LiveScoreService) {
-    //  this.sortedData = this.playerinfo;
+   constructor(public _liveScoreService:LiveScoreService, private todoService:TodoService) {
+    this.todoFirstname = '';
+    this.todoLastname = '';
     }
+
+    private addTodo(): void{
+      this.todoService.addTodo(this.todoFirstname, this.todoLastname);
+      
+      
+    }
+
+    private removeTodo(): void {
+      this.todoService.removeTodo(this.todo.id);
+    }
+
+
  
-//       sortData(sort: Sort) {
-//         const data = this.playerinfo;
-//         if (!sort.active || sort.direction === '') {
-//           this.sortedData = data;
-//           return;
-//         }
-//         this.sortedData = data.sort((a, b) => {
-//           const isAsc = sort.direction === 'asc';
-//           switch (sort.active) {
-//             case 'position': return compare(a.players, b.players, isAsc);
-//             default: return 0;
-//           }
-//         });
-
-// }
-
-}
-
-function compare(a, b, isAsc) {
-  return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
 }
