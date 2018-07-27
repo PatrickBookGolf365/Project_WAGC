@@ -27,29 +27,27 @@ import { WeatherService, InstagramFeedService} from './components/homepage/servi
 import { NewsService} from './components/additional-info/news/news.service';
 import { HomeNewsService } from './components/homepage/services/weather.service';
 import { YelpService } from './components/event/event.service';
-import { QuoteService } from './shared/quote.service';
 import { LiveScoreService } from './components/live-score/live-score.service';
+import { OMearaService } from './components/geolocation/services/o-meara.service';
 
 import { EventComponent } from './components/event/event.component';
 import { LivePlayerScoreComponent } from './components/live-score/live-player-score/live-player-score.component';
 import { LiveTeamScoreComponent } from './components/live-score/live-team-score/live-team-score.component';
 import { SidenavComponent } from './components/geolocation/side-nav/sidenav.component';
-import { QuotesComponent } from './components/homepage/quotes/quotes.component';
-import { QuoteComponent } from './components/homepage/quote/quote.component';
-import { NewsQuoteComponent } from './components/additional-info/news/news-quote/news-quote.component';
-import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
-import { AdminQuoteComponent } from './components/admin/admin-quote/admin-quote.component';
-import { AdminComponent } from './components/admin/admin.component';
 import { GeolocationComponent } from './components/geolocation/geolocation.component';
 import { SortPipe } from './pipes/sort/sort.pipe';
 import { InstagramFeedComponent } from './components/homepage/instagram-feed/instagram-feed.component';
-import { GeolocationDetailComponent } from './components/geolocation/geolocation-detail/geolocation-detail.component';
+// tslint:disable-next-line:max-line-length
+import { GeolocationDetailComponent } from './components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component';
 import { MapService } from './components/geolocation/services/map.service';
 import { HaversineService } from './components/geolocation/services/haversine.service';
 // tslint:disable-next-line:max-line-length
 import { GeolocationMaynoothDetailComponent } from './components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component';
-import { BottomSheetOverviewComponent } from './components/geolocation/bottom-sheet/bottom-sheet-overview.component';
-
+// tslint:disable-next-line:max-line-length
+import { MaynoothInfoBottomSheetComponent } from './components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet';
+import { OMearaDetailComponent } from './components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component';
+// tslint:disable-next-line:max-line-length
+import { LocalInfoBottomSheetComponent } from './components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component';
 
 @NgModule({
   declarations: [
@@ -73,17 +71,13 @@ import { BottomSheetOverviewComponent } from './components/geolocation/bottom-sh
     LivePlayerScoreComponent,
     LiveTeamScoreComponent,
     SidenavComponent,
-    QuotesComponent,
-    QuoteComponent,
-    NewsQuoteComponent,
-    AdminCreateComponent,
-    AdminQuoteComponent,
-    AdminComponent,
     GeolocationComponent,
     InstagramFeedComponent,
     GeolocationDetailComponent,
-    BottomSheetOverviewComponent,
+    MaynoothInfoBottomSheetComponent,
     GeolocationMaynoothDetailComponent,
+    OMearaDetailComponent,
+    LocalInfoBottomSheetComponent,
   ],
   imports: [
     BrowserModule,
@@ -97,7 +91,10 @@ import { BottomSheetOverviewComponent } from './components/geolocation/bottom-sh
     }),
     routing
   ],
-  entryComponents: [ BottomSheetOverviewComponent ],
+  entryComponents: [
+    MaynoothInfoBottomSheetComponent,
+    LocalInfoBottomSheetComponent
+   ],
   providers: [
     WeatherService,
     NewsService,
@@ -105,9 +102,9 @@ import { BottomSheetOverviewComponent } from './components/geolocation/bottom-sh
     HomeNewsService,
     YelpService,
     LiveScoreService,
-    QuoteService,
     MapService,
-    HaversineService
+    HaversineService,
+    OMearaService
    ],
   bootstrap: [AppComponent]
 })

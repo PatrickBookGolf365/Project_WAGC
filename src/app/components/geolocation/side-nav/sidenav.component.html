@@ -13,7 +13,7 @@
             Montgomorie
           </mat-expansion-panel-header>
 
-      <mat-list role="list" *ngFor="let hole of hole$ | async">
+      <mat-list role="list" *ngFor="let hole of mont_hole$ | async">
         <mat-list-item role="listitem" class="mat-side-list">
             <button mat-button [routerLink]="['/geolocation', hole.id]"><span>Hole {{hole.id}}</span></button>
         </mat-list-item>
@@ -25,9 +25,9 @@
           O'Meara
         </mat-expansion-panel-header>
 
-    <mat-list role="list" *ngFor="let hole of hole$ | async">
+    <mat-list role="list" *ngFor="let hole of meara_hole$ | async">
       <mat-list-item role="listitem" class="mat-side-list">
-          <button mat-button [routerLink]="['/geolocation', hole.id]"><span>Hole {{hole.id}}</span></button>
+          <button mat-button [routerLink]="['/geolocation-meara', hole.id]"><span>Hole {{hole.id}}</span></button>
       </mat-list-item>
     </mat-list>
   </mat-expansion-panel>

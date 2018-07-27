@@ -11,7 +11,7 @@ export class InstagramFeedComponent implements OnInit {
   instaFeed;
   title = 'title';
   // tslint:disable-next-line:max-line-length
-  link = 'https://scontent.cdninstagram.com/vp/9c0895b9ad69153a42bd0230f29ec056/5B515265/t50.2886-16/36945138_1068663479958683_2957417478189219840_n.mp4';
+  link = 'https://scontent.cdninstagram.com/vp/0732e16b298f133683ce204717f0af87/5B5A8CE5/t50.2886-16/36945138_1068663479958683_2957417478189219840_n.mp4';
 
   constructor(private _instagramFeed: InstagramFeedService) { }
 

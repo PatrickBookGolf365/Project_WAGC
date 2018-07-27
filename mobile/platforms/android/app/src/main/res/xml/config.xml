@@ -7,7 +7,11 @@
     <feature name="Geolocation">
         <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
     </feature>
-    <name>LiveFeed</name>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Live Feed</name>
     <description>
         Live Feed for golf
     </description>
@@ -30,4 +34,5 @@
     <icon density="xxxhdpi" src="res/icon/android/mipmap-xxxhdpi/ic_launcher.png" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="StatusBarBackgroundColor" value="#D8D8D8" />
 </widget>

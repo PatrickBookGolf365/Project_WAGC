@@ -3,6 +3,7 @@
 </div> -->
 <div id="homepage-body">
 
+  <mat-toolbar>Event News</mat-toolbar>
 
 <div id="content" *ngFor="let news of homeNews.update| slice:0:1; let i=index">
     <mat-accordion class="example-headers-align">
@@ -13,7 +14,7 @@
               <mat-icon id="newsSeverity{{homeNews.update[0].severity}}">{{homeNews.update[0].type}}</mat-icon>
             </mat-panel-description>
             </mat-expansion-panel-header>
-            <mat-progress-bar class="my-color" mode="determinate" value="100"></mat-progress-bar>
+            <div class="green-break-line"></div>
                   <ul>
                     <li>
                       {{homeNews.update[1].timeStamp}}: {{homeNews.update[0].content}}
@@ -33,7 +34,7 @@
 <mat-icon id="newsSeverity{{homeNews.update[1].severity}}">{{homeNews.update[1].type}}</mat-icon>
 </mat-panel-description>
   </mat-expansion-panel-header>
-  <mat-progress-bar class="mat-progress-green" mode="determinate" value="100"></mat-progress-bar>
+  <div class="green-break-line"></div>
     <ul>
       <li>
           {{homeNews.update[1].timeStamp}}: {{homeNews.update[1].content}}
@@ -54,7 +55,7 @@
   <mat-icon id="newsSeverity{{homeNews.update[2].severity}}">{{homeNews.update[2].type}}</mat-icon>
     </mat-panel-description>
       </mat-expansion-panel-header>
-      <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+      <div class="green-break-line"></div>
         <ul>
           <li>
               {{homeNews.update[2].timeStamp}}: {{homeNews.update[2].content}}
@@ -68,19 +69,16 @@
 </mat-accordion>
 
 </div>
-
-  <button mat-button (click)="metric = !metric">{{metric ? '&deg;C' : '&deg;F'}}</button>
   <div>
     <ng-container *ngIf="!metric">
       <mat-accordion>
         <mat-expansion-panel>
-          <mat-expansion-panel-header>
+          <mat-expansion-panel-header class="fill-space">
             <mat-panel-title>
-
               <div class="weather_child">
                 <div class="box">
                   <span>
-                    Current:
+                    Current Weather:
                   </span>
                   <ng-container id="ImgTemp">
                     <span>
@@ -96,6 +94,7 @@
               </div>
             </mat-panel-title>
           </mat-expansion-panel-header>
+          <button mat-button (click)="metric = !metric">{{metric ? '&deg;C' : '&deg;F'}}</button>
           <div id="">
             <!-- index 1 -->
             <ng-container *ngFor="let loop of [1,2,3,4]">
@@ -174,7 +173,7 @@
               <div class="weather_child">
                 <div class="box">
                   <span>
-                    Current:
+                    Current Weather:
                   </span>
                   <span>
                     <img src="https://openweathermap.org/img/w/{{forecastFH.list[0].weather[0].icon}}.png">
@@ -188,6 +187,7 @@
               </div>
             </mat-panel-title>
           </mat-expansion-panel-header>
+          <button mat-button (click)="metric = !metric">{{metric ? '&deg;C' : '&deg;F'}}</button>
           <div id="">
             <!-- index 1 -->
             <ng-container *ngFor="let loop of [1,2,3,4]">
@@ -250,22 +250,8 @@
     </ng-container>
   </div>
 
+  <mat-toolbar>Instagram Feed @WATC2018</mat-toolbar>
 
-     <app-instagram-feed></app-instagram-feed>
-<!--
+  <app-instagram-feed></app-instagram-feed>
 
-  <div id="newsUpdate" *ngFor="let news of homeNews.update">
-    <mat-expansion-panel id="newsUpdate" *ngIf="news.homepage == 'true'">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          <div class="box">
-            <span id="newsTimeStamp">{{news.timeStamp}}</span>
-            <span><mat-icon id="newsSeverity{{news.severity}}">{{news.type}}</mat-icon></span>
-            <span id="newsDesc">{{news.desc}}</span>
-          </div>
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      {{news.content}}
-    </mat-expansion-panel>
-  </div> -->
 </div>

@@ -117,26 +117,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/homepage/services/weather.service */ "./src/app/components/homepage/services/weather.service.ts");
 /* harmony import */ var _components_additional_info_news_news_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/additional-info/news/news.service */ "./src/app/components/additional-info/news/news.service.ts");
 /* harmony import */ var _components_event_event_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/event/event.service */ "./src/app/components/event/event.service.ts");
-/* harmony import */ var _shared_quote_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./shared/quote.service */ "./src/app/shared/quote.service.ts");
-/* harmony import */ var _components_live_score_live_score_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/live-score/live-score.service */ "./src/app/components/live-score/live-score.service.ts");
+/* harmony import */ var _components_live_score_live_score_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/live-score/live-score.service */ "./src/app/components/live-score/live-score.service.ts");
+/* harmony import */ var _components_geolocation_services_o_meara_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/geolocation/services/o-meara.service */ "./src/app/components/geolocation/services/o-meara.service.ts");
 /* harmony import */ var _components_event_event_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/event/event.component */ "./src/app/components/event/event.component.ts");
 /* harmony import */ var _components_live_score_live_player_score_live_player_score_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/live-score/live-player-score/live-player-score.component */ "./src/app/components/live-score/live-player-score/live-player-score.component.ts");
 /* harmony import */ var _components_live_score_live_team_score_live_team_score_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/live-score/live-team-score/live-team-score.component */ "./src/app/components/live-score/live-team-score/live-team-score.component.ts");
 /* harmony import */ var _components_geolocation_side_nav_sidenav_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/geolocation/side-nav/sidenav.component */ "./src/app/components/geolocation/side-nav/sidenav.component.ts");
-/* harmony import */ var _components_homepage_quotes_quotes_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/homepage/quotes/quotes.component */ "./src/app/components/homepage/quotes/quotes.component.ts");
-/* harmony import */ var _components_homepage_quote_quote_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/homepage/quote/quote.component */ "./src/app/components/homepage/quote/quote.component.ts");
-/* harmony import */ var _components_additional_info_news_news_quote_news_quote_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/additional-info/news/news-quote/news-quote.component */ "./src/app/components/additional-info/news/news-quote/news-quote.component.ts");
-/* harmony import */ var _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/admin/admin-create/admin-create.component */ "./src/app/components/admin/admin-create/admin-create.component.ts");
-/* harmony import */ var _components_admin_admin_quote_admin_quote_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/admin/admin-quote/admin-quote.component */ "./src/app/components/admin/admin-quote/admin-quote.component.ts");
-/* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
-/* harmony import */ var _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/geolocation/geolocation.component */ "./src/app/components/geolocation/geolocation.component.ts");
-/* harmony import */ var _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./pipes/sort/sort.pipe */ "./src/app/pipes/sort/sort.pipe.ts");
-/* harmony import */ var _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/homepage/instagram-feed/instagram-feed.component */ "./src/app/components/homepage/instagram-feed/instagram-feed.component.ts");
-/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts");
-/* harmony import */ var _components_geolocation_services_map_service__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./components/geolocation/services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
-/* harmony import */ var _components_geolocation_services_haversine_service__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./components/geolocation/services/haversine.service */ "./src/app/components/geolocation/services/haversine.service.ts");
-/* harmony import */ var _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component */ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.ts");
-/* harmony import */ var _components_geolocation_bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./components/geolocation/bottom-sheet/bottom-sheet-overview.component */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/geolocation/geolocation.component */ "./src/app/components/geolocation/geolocation.component.ts");
+/* harmony import */ var _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./pipes/sort/sort.pipe */ "./src/app/pipes/sort/sort.pipe.ts");
+/* harmony import */ var _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/homepage/instagram-feed/instagram-feed.component */ "./src/app/components/homepage/instagram-feed/instagram-feed.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_mont_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.ts");
+/* harmony import */ var _components_geolocation_services_map_service__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/geolocation/services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
+/* harmony import */ var _components_geolocation_services_haversine_service__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/geolocation/services/haversine.service */ "./src/app/components/geolocation/services/haversine.service.ts");
+/* harmony import */ var _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component */ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.ts");
+/* harmony import */ var _components_geolocation_maynooth_info_bottom_sheet_dublin_bus_bottom_sheet_maynooth_info_bottom_sheet__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.ts");
+/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_omeara_o_meara_detail_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.ts");
+/* harmony import */ var _components_geolocation_maynooth_info_bottom_sheet_local_info_bottom_sheet_local_info_bottom_sheet_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -178,17 +174,16 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
-
-
-
-
-
+// tslint:disable-next-line:max-line-length
 
 
 
 // tslint:disable-next-line:max-line-length
 
+// tslint:disable-next-line:max-line-length
+
+
+// tslint:disable-next-line:max-line-length
 
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -196,7 +191,7 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_38__["SortPipe"],
+                _pipes_sort_sort_pipe__WEBPACK_IMPORTED_MODULE_32__["SortPipe"],
                 _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
                 _components_navigation_nav_navigation_component__WEBPACK_IMPORTED_MODULE_10__["NavigationComponent"],
                 _components_homepage_homepage_component__WEBPACK_IMPORTED_MODULE_11__["HomepageComponent"],
@@ -216,17 +211,13 @@ var AppModule = /** @class */ (function () {
                 _components_live_score_live_player_score_live_player_score_component__WEBPACK_IMPORTED_MODULE_28__["LivePlayerScoreComponent"],
                 _components_live_score_live_team_score_live_team_score_component__WEBPACK_IMPORTED_MODULE_29__["LiveTeamScoreComponent"],
                 _components_geolocation_side_nav_sidenav_component__WEBPACK_IMPORTED_MODULE_30__["SidenavComponent"],
-                _components_homepage_quotes_quotes_component__WEBPACK_IMPORTED_MODULE_31__["QuotesComponent"],
-                _components_homepage_quote_quote_component__WEBPACK_IMPORTED_MODULE_32__["QuoteComponent"],
-                _components_additional_info_news_news_quote_news_quote_component__WEBPACK_IMPORTED_MODULE_33__["NewsQuoteComponent"],
-                _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_34__["AdminCreateComponent"],
-                _components_admin_admin_quote_admin_quote_component__WEBPACK_IMPORTED_MODULE_35__["AdminQuoteComponent"],
-                _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_36__["AdminComponent"],
-                _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_37__["GeolocationComponent"],
-                _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_39__["InstagramFeedComponent"],
-                _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_40__["GeolocationDetailComponent"],
-                _components_geolocation_bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_44__["BottomSheetOverviewComponent"],
-                _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_43__["GeolocationMaynoothDetailComponent"],
+                _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_31__["GeolocationComponent"],
+                _components_homepage_instagram_feed_instagram_feed_component__WEBPACK_IMPORTED_MODULE_33__["InstagramFeedComponent"],
+                _components_geolocation_geolocation_detail_geolocation_detail_mont_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_34__["GeolocationDetailComponent"],
+                _components_geolocation_maynooth_info_bottom_sheet_dublin_bus_bottom_sheet_maynooth_info_bottom_sheet__WEBPACK_IMPORTED_MODULE_38__["MaynoothInfoBottomSheetComponent"],
+                _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_37__["GeolocationMaynoothDetailComponent"],
+                _components_geolocation_geolocation_detail_geolocation_detail_omeara_o_meara_detail_component__WEBPACK_IMPORTED_MODULE_39__["OMearaDetailComponent"],
+                _components_geolocation_maynooth_info_bottom_sheet_local_info_bottom_sheet_local_info_bottom_sheet_component__WEBPACK_IMPORTED_MODULE_40__["LocalInfoBottomSheetComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -240,17 +231,20 @@ var AppModule = /** @class */ (function () {
                 }),
                 _app_routing__WEBPACK_IMPORTED_MODULE_9__["routing"]
             ],
-            entryComponents: [_components_geolocation_bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_44__["BottomSheetOverviewComponent"]],
+            entryComponents: [
+                _components_geolocation_maynooth_info_bottom_sheet_dublin_bus_bottom_sheet_maynooth_info_bottom_sheet__WEBPACK_IMPORTED_MODULE_38__["MaynoothInfoBottomSheetComponent"],
+                _components_geolocation_maynooth_info_bottom_sheet_local_info_bottom_sheet_local_info_bottom_sheet_component__WEBPACK_IMPORTED_MODULE_40__["LocalInfoBottomSheetComponent"]
+            ],
             providers: [
                 _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_22__["WeatherService"],
                 _components_additional_info_news_news_service__WEBPACK_IMPORTED_MODULE_23__["NewsService"],
                 _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_22__["InstagramFeedService"],
                 _components_homepage_services_weather_service__WEBPACK_IMPORTED_MODULE_22__["HomeNewsService"],
                 _components_event_event_service__WEBPACK_IMPORTED_MODULE_24__["YelpService"],
-                _components_live_score_live_score_service__WEBPACK_IMPORTED_MODULE_26__["LiveScoreService"],
-                _shared_quote_service__WEBPACK_IMPORTED_MODULE_25__["QuoteService"],
-                _components_geolocation_services_map_service__WEBPACK_IMPORTED_MODULE_41__["MapService"],
-                _components_geolocation_services_haversine_service__WEBPACK_IMPORTED_MODULE_42__["HaversineService"]
+                _components_live_score_live_score_service__WEBPACK_IMPORTED_MODULE_25__["LiveScoreService"],
+                _components_geolocation_services_map_service__WEBPACK_IMPORTED_MODULE_35__["MapService"],
+                _components_geolocation_services_haversine_service__WEBPACK_IMPORTED_MODULE_36__["HaversineService"],
+                _components_geolocation_services_o_meara_service__WEBPACK_IMPORTED_MODULE_26__["OMearaService"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
         })
@@ -284,11 +278,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_additional_info_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/additional-info/schedule/schedule.component */ "./src/app/components/additional-info/schedule/schedule.component.ts");
 /* harmony import */ var _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/additional-info/contact/contact.component */ "./src/app/components/additional-info/contact/contact.component.ts");
 /* harmony import */ var _components_event_event_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/event/event.component */ "./src/app/components/event/event.component.ts");
-/* harmony import */ var _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/admin/admin-create/admin-create.component */ "./src/app/components/admin/admin-create/admin-create.component.ts");
-/* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
-/* harmony import */ var _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/geolocation/geolocation.component */ "./src/app/components/geolocation/geolocation.component.ts");
-/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts");
-/* harmony import */ var _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component */ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/geolocation/geolocation.component */ "./src/app/components/geolocation/geolocation.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_mont_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_omeara_o_meara_detail_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component */ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.ts");
 
 
 
@@ -301,9 +294,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 
-
+// tslint:disable-next-line:max-line-length
 
 
 // tslint:disable-next-line:max-line-length
@@ -314,7 +306,6 @@ var appRoutes = [
     { path: 'events', component: _components_event_event_component__WEBPACK_IMPORTED_MODULE_11__["EventComponent"] },
     { path: 'add-info', component: _components_additional_info_additional_info_component__WEBPACK_IMPORTED_MODULE_5__["AdditionalInfoComponent"] },
     { path: 'teamprofiles', component: _components_team_profiles_team_profiles_component__WEBPACK_IMPORTED_MODULE_4__["TeamProfilesComponent"] },
-    // { path: 'favteamprofiles' , component: FavTeamProfilesComponent},
     { path: 'about', component: _components_additional_info_about_about_component__WEBPACK_IMPORTED_MODULE_7__["AboutComponent"] },
     { path: 'news', component: _components_additional_info_news_news_component__WEBPACK_IMPORTED_MODULE_6__["NewsComponent"] },
     { path: 'eligibility', component: _components_additional_info_eligibitity_eligibility_component__WEBPACK_IMPORTED_MODULE_8__["EligibilityComponent"] },
@@ -323,11 +314,10 @@ var appRoutes = [
     { path: 'livescoring', component: _components_live_score_live_score_component__WEBPACK_IMPORTED_MODULE_2__["LiveScoreComponent"] },
     { path: 'transport', component: _components_transport_transport_component__WEBPACK_IMPORTED_MODULE_3__["TransportComponent"] },
     { path: 'contact', component: _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_10__["ContactComponent"] },
-    { path: 'admin', component: _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_13__["AdminComponent"] },
-    { path: 'admin-create', component: _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_12__["AdminCreateComponent"] },
-    { path: 'geolocation', component: _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_14__["GeolocationComponent"] },
-    { path: 'geolocation/:id', component: _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_15__["GeolocationDetailComponent"] },
-    { path: 'geolocation-maynooth', component: _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_16__["GeolocationMaynoothDetailComponent"] },
+    { path: 'geolocation', component: _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_12__["GeolocationComponent"] },
+    { path: 'geolocation/:id', component: _components_geolocation_geolocation_detail_geolocation_detail_mont_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_13__["GeolocationDetailComponent"] },
+    { path: 'geolocation-meara/:id', component: _components_geolocation_geolocation_detail_geolocation_detail_omeara_o_meara_detail_component__WEBPACK_IMPORTED_MODULE_14__["OMearaDetailComponent"] },
+    { path: 'geolocation-maynooth', component: _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_15__["GeolocationMaynoothDetailComponent"] },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(appRoutes);
@@ -587,73 +577,6 @@ var EligibilityComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/additional-info/news/news-quote/news-quote.component.html":
-/*!**************************************************************************************!*\
-  !*** ./src/app/components/additional-info/news/news-quote/news-quote.component.html ***!
-  \**************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"news-card-severity-{{quote.severity}}\">\r\n  <mat-list>\r\n    <mat-list-item>\r\n  \r\n    <div class=\"image-card-severity-{{quote.severity}}\">\r\n      <img src=\"assets/img/{{quote.severity}}.svg\">\r\n    </div>\r\n    \r\n    <div>\r\n      <p>{{ quote.content }}</p>\r\n    </div>\r\n\r\n\r\n    </mat-list-item>  \r\n  </mat-list>\r\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/components/additional-info/news/news-quote/news-quote.component.scss":
-/*!**************************************************************************************!*\
-  !*** ./src/app/components/additional-info/news/news-quote/news-quote.component.scss ***!
-  \**************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".news-card-severity-1 {\n  color: white;\n  font-size: 1.2em;\n  background: #27ae60;\n  padding: 3%;\n  margin-bottom: 5%; }\n\n.image-card-severity-1 {\n  margin-right: 5%; }\n\n.news-card-severity-2 {\n  color: white;\n  font-size: 1.2em;\n  background: #3498db;\n  padding: 3%;\n  margin-bottom: 5%; }\n\n.image-card-severity-2 {\n  margin-right: 5%; }\n\n.image-card-severity-3 {\n  margin-right: 5%; }\n\n.news-card-severity-3 {\n  color: white;\n  font-size: 1.2em;\n  background: #f39c12;\n  padding: 3%;\n  margin-bottom: 5%; }\n\n.image-card-severity-4 {\n  margin-right: 5%; }\n\n.news-card-severity-4 {\n  color: white;\n  font-size: 1.2em;\n  background: #e74c3c;\n  padding: 3%;\n  margin-bottom: 5%; }\n"
-
-/***/ }),
-
-/***/ "./src/app/components/additional-info/news/news-quote/news-quote.component.ts":
-/*!************************************************************************************!*\
-  !*** ./src/app/components/additional-info/news/news-quote/news-quote.component.ts ***!
-  \************************************************************************************/
-/*! exports provided: NewsQuoteComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewsQuoteComponent", function() { return NewsQuoteComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var NewsQuoteComponent = /** @class */ (function () {
-    function NewsQuoteComponent() {
-    }
-    NewsQuoteComponent.prototype.ngOnInit = function () {
-    };
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-        __metadata("design:type", Object)
-    ], NewsQuoteComponent.prototype, "quote", void 0);
-    NewsQuoteComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-news-quote',
-            template: __webpack_require__(/*! ./news-quote.component.html */ "./src/app/components/additional-info/news/news-quote/news-quote.component.html"),
-            styles: [__webpack_require__(/*! ./news-quote.component.scss */ "./src/app/components/additional-info/news/news-quote/news-quote.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], NewsQuoteComponent);
-    return NewsQuoteComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/components/additional-info/news/news.component.html":
 /*!*********************************************************************!*\
   !*** ./src/app/components/additional-info/news/news.component.html ***!
@@ -688,7 +611,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewsComponent", function() { return NewsComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _news_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./news.service */ "./src/app/components/additional-info/news/news.service.ts");
-/* harmony import */ var _shared_quote_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../shared/quote.service */ "./src/app/shared/quote.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -700,11 +622,9 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-
 var NewsComponent = /** @class */ (function () {
-    function NewsComponent(_newsService, quoteService) {
+    function NewsComponent(_newsService) {
         this._newsService = _newsService;
-        this.quoteService = quoteService;
     }
     NewsComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -712,11 +632,6 @@ var NewsComponent = /** @class */ (function () {
             .subscribe(function (news) {
             _this.news = news;
         }, function (error) { return _this.errorMessage = error; });
-        // this.quoteService.getQuotes()
-        //   .subscribe(
-        //     (quotes: Quote[]) => this.quotes = quotes,
-        //     (error: Response) => console.log(error)
-        //    );
     };
     NewsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -724,7 +639,7 @@ var NewsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./news.component.html */ "./src/app/components/additional-info/news/news.component.html"),
             styles: [__webpack_require__(/*! ./news.component.scss */ "./src/app/components/additional-info/news/news.component.scss")]
         }),
-        __metadata("design:paramtypes", [_news_service__WEBPACK_IMPORTED_MODULE_1__["NewsService"], _shared_quote_service__WEBPACK_IMPORTED_MODULE_2__["QuoteService"]])
+        __metadata("design:paramtypes", [_news_service__WEBPACK_IMPORTED_MODULE_1__["NewsService"]])
     ], NewsComponent);
     return NewsComponent;
 }());
@@ -767,11 +682,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var NewsService = /** @class */ (function () {
     function NewsService(_http) {
         this._http = _http;
-        this._newsUrl = "http://watc.bookgolf365.ie/news.json";
+        this._newsUrl = 'http://watc.bookgolf365.ie/news.json';
     }
     NewsService.prototype.getNews = function () {
         return this._http.get(this._newsUrl)
-            .do(function (data) { return console.log("All: " + JSON.stringify(data)); })
+            .do(function (data) { return console.log('All: ' + JSON.stringify(data)); })
             .catch(this.handleError);
     };
     NewsService.prototype.handleError = function (err) {
@@ -857,258 +772,6 @@ var ScheduleComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ScheduleComponent);
     return ScheduleComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/admin/admin-create/admin-create.component.html":
-/*!***************************************************************************!*\
-  !*** ./src/app/components/admin/admin-create/admin-create.component.html ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"example-container\">\r\n  <form #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\r\n    <mat-form-field>\r\n      <input matInput id=\"title\" name=\"title\" ngModel placeholder=\"Title\">\r\n    </mat-form-field>\r\n  \r\n    <mat-form-field>\r\n      <textarea matInput id=\"content\" name=\"content\" ngModel placeholder=\"Content\"></textarea>\r\n    </mat-form-field>\r\n  \r\n    <mat-form-field>\r\n        <input matInput id=\"severity\" name=\"severity\" ngModel placeholder=\"Severity\">\r\n    </mat-form-field>\r\n    <button mat-button type=\"submit\" class=\"button\">Submit</button>\r\n</form> \r\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/components/admin/admin-create/admin-create.component.scss":
-/*!***************************************************************************!*\
-  !*** ./src/app/components/admin/admin-create/admin-create.component.scss ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".example-container {\n  display: flex;\n  flex-direction: column; }\n\n.example-container > * {\n  width: 100%; }\n\nmat-form-field {\n  width: 100%; }\n\n.button {\n  color: white;\n  background-color: #0066ff; }\n"
-
-/***/ }),
-
-/***/ "./src/app/components/admin/admin-create/admin-create.component.ts":
-/*!*************************************************************************!*\
-  !*** ./src/app/components/admin/admin-create/admin-create.component.ts ***!
-  \*************************************************************************/
-/*! exports provided: AdminCreateComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminCreateComponent", function() { return AdminCreateComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_quote_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../shared/quote.service */ "./src/app/shared/quote.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AdminCreateComponent = /** @class */ (function () {
-    function AdminCreateComponent(quoteService) {
-        this.quoteService = quoteService;
-    }
-    AdminCreateComponent.prototype.ngOnInit = function () {
-    };
-    AdminCreateComponent.prototype.onSubmit = function (form) {
-        this.quoteService.addQuote(form.value.title, form.value.content, form.value.severity)
-            .subscribe(function () { return alert('Quote created!'); });
-        form.reset();
-    };
-    AdminCreateComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-admin-create',
-            template: __webpack_require__(/*! ./admin-create.component.html */ "./src/app/components/admin/admin-create/admin-create.component.html"),
-            styles: [__webpack_require__(/*! ./admin-create.component.scss */ "./src/app/components/admin/admin-create/admin-create.component.scss")]
-        }),
-        __metadata("design:paramtypes", [_shared_quote_service__WEBPACK_IMPORTED_MODULE_1__["QuoteService"]])
-    ], AdminCreateComponent);
-    return AdminCreateComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/admin/admin-quote/admin-quote.component.html":
-/*!*************************************************************************!*\
-  !*** ./src/app/components/admin/admin-quote/admin-quote.component.html ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"news-card-severity-{{quote.severity}}\">\r\n  <mat-list>\r\n    <mat-list-item>\r\n      \r\n      <div class=\"image-card-severity-{{quote.severity}}\">\r\n        <img src=\"assets/img/{{quote.severity}}.svg\">\r\n      </div>\r\n        \r\n      <div>\r\n        <p>{{ quote.content }}</p>\r\n      </div>\r\n\r\n  </mat-list-item> \r\n</mat-list>\r\n<div *ngIf=\"editing\">\r\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueTitle\">\r\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueContent\">\r\n    <input type=\"text\" class=\"input\" [(ngModel)]=\"editValueSeverity\">\r\n    <button mat-button (click)=\"onUpdate()\">Update</button>\r\n    <button mat-button (click)=\"onCancel()\">Cancel</button>\r\n  </div>\r\n  <div *ngIf=\"!editing\">\r\n    <button mat-button (click)=\"onEdit()\">Edit</button>\r\n    <button mat-button (click)=\"onDelete()\">Delete</button>\r\n</div>\r\n</div>\r\n"
-
-/***/ }),
-
-/***/ "./src/app/components/admin/admin-quote/admin-quote.component.scss":
-/*!*************************************************************************!*\
-  !*** ./src/app/components/admin/admin-quote/admin-quote.component.scss ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".news-card-severity-1 {\n  color: white;\n  font-size: 1.2em;\n  background: #27ae60;\n  padding: 3%;\n  margin-bottom: 5%; }\n\n.image-card-severity-1 {\n  margin-right: 5%; }\n\n.news-card-severity-2 {\n  color: white;\n  font-size: 1.2em;\n  background: #3498db;\n  padding: 3%;\n  margin-bottom: 5%; }\n\n.image-card-severity-2 {\n  margin-right: 5%; }\n\n.image-card-severity-3 {\n  margin-right: 5%; }\n\n.news-card-severity-3 {\n  color: white;\n  font-size: 1.2em;\n  background: #f39c12;\n  padding: 3%;\n  margin-bottom: 5%; }\n\n.image-card-severity-4 {\n  margin-right: 5%; }\n\n.news-card-severity-4 {\n  color: white;\n  font-size: 1.2em;\n  background: #e74c3c;\n  padding: 3%;\n  margin-bottom: 5%; }\n\n.input {\n  height: 25px;\n  width: 80%;\n  margin: 3%;\n  margin-right: 10%; }\n"
-
-/***/ }),
-
-/***/ "./src/app/components/admin/admin-quote/admin-quote.component.ts":
-/*!***********************************************************************!*\
-  !*** ./src/app/components/admin/admin-quote/admin-quote.component.ts ***!
-  \***********************************************************************/
-/*! exports provided: AdminQuoteComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminQuoteComponent", function() { return AdminQuoteComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_quote_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../shared/quote.service */ "./src/app/shared/quote.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AdminQuoteComponent = /** @class */ (function () {
-    function AdminQuoteComponent(quoteService) {
-        this.quoteService = quoteService;
-        this.quoteDeleted = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        this.editing = false;
-        this.editValueTitle = '';
-        this.editValueContent = '';
-        this.editValueSeverity = '';
-    }
-    AdminQuoteComponent.prototype.ngOnInit = function () {
-    };
-    AdminQuoteComponent.prototype.onEdit = function () {
-        this.editing = true;
-        this.editValueTitle = this.quote.title;
-        this.editValueContent = this.quote.content;
-        this.editValueSeverity = this.quote.severity;
-    };
-    AdminQuoteComponent.prototype.onUpdate = function () {
-        var _this = this;
-        this.quoteService.updateQuote(this.quote.id, this.editValueTitle, this.editValueContent, this.editValueSeverity)
-            .subscribe(function (quote) {
-            _this.quote.title = _this.editValueTitle;
-            _this.quote.content = _this.editValueContent;
-            _this.quote.severity = _this.editValueSeverity;
-            _this.editValueTitle = '';
-            _this.editValueContent = '';
-            _this.editValueSeverity = '';
-        });
-        this.editing = false;
-    };
-    AdminQuoteComponent.prototype.onDelete = function () {
-        var _this = this;
-        this.quoteService.deleteQuote(this.quote.id)
-            .subscribe(function () {
-            _this.quoteDeleted.emit(_this.quote);
-            console.log('Quote deleted');
-        });
-    };
-    AdminQuoteComponent.prototype.onCancel = function () {
-        this.editValueTitle = '';
-        this.editValueContent = '';
-        this.editValueSeverity = '';
-        this.editing = false;
-    };
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-        __metadata("design:type", Object)
-    ], AdminQuoteComponent.prototype, "quote", void 0);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
-        __metadata("design:type", Object)
-    ], AdminQuoteComponent.prototype, "quoteDeleted", void 0);
-    AdminQuoteComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-admin-quote',
-            template: __webpack_require__(/*! ./admin-quote.component.html */ "./src/app/components/admin/admin-quote/admin-quote.component.html"),
-            styles: [__webpack_require__(/*! ./admin-quote.component.scss */ "./src/app/components/admin/admin-quote/admin-quote.component.scss")]
-        }),
-        __metadata("design:paramtypes", [_shared_quote_service__WEBPACK_IMPORTED_MODULE_1__["QuoteService"]])
-    ], AdminQuoteComponent);
-    return AdminQuoteComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/admin/admin.component.html":
-/*!*******************************************************!*\
-  !*** ./src/app/components/admin/admin.component.html ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<button mat-button class=\"button\"  [routerLink]=\"['/admin-create']\" >Create</button>\r\n\r\n<app-admin-quote *ngFor=\"let quote of quotes\" [quote]=\"quote\" (quoteDeleted)=\"onDeleted($event)\"></app-admin-quote>\r\n"
-
-/***/ }),
-
-/***/ "./src/app/components/admin/admin.component.scss":
-/*!*******************************************************!*\
-  !*** ./src/app/components/admin/admin.component.scss ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "body {\n  height: 100%; }\n\n.button {\n  color: white;\n  background-color: purple;\n  margin-bottom: 20px; }\n"
-
-/***/ }),
-
-/***/ "./src/app/components/admin/admin.component.ts":
-/*!*****************************************************!*\
-  !*** ./src/app/components/admin/admin.component.ts ***!
-  \*****************************************************/
-/*! exports provided: AdminComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminComponent", function() { return AdminComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_quote_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../shared/quote.service */ "./src/app/shared/quote.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AdminComponent = /** @class */ (function () {
-    function AdminComponent(quoteService) {
-        this.quoteService = quoteService;
-    }
-    AdminComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.quoteService.getQuotes()
-            .subscribe(function (quotes) { return _this.quotes = quotes; }, function (error) { return console.log(error); });
-    };
-    AdminComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-admin',
-            template: __webpack_require__(/*! ./admin.component.html */ "./src/app/components/admin/admin.component.html"),
-            styles: [__webpack_require__(/*! ./admin.component.scss */ "./src/app/components/admin/admin.component.scss")]
-        }),
-        __metadata("design:paramtypes", [_shared_quote_service__WEBPACK_IMPORTED_MODULE_1__["QuoteService"]])
-    ], AdminComponent);
-    return AdminComponent;
 }());
 
 
@@ -1254,91 +917,21 @@ var YelpService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.html":
-/*!******************************************************************************************!*\
-  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.html ***!
-  \******************************************************************************************/
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.html":
+/*!*********************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.html ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-nav-list >\r\n  <p>Info Coming Soon!</p>\r\n</mat-nav-list>\r\n"
+module.exports = "<div id=\"map\"></div>\r\n\r\n<div *ngIf=\"mont_hole$ | async as hole\">\r\n    <div class=\"contain\">\r\n        <mat-card class=\"mat-elevation-z10\">\r\n          <div class=\"flex-item1\">\r\n              <p>Metres: {{metres}}</p>\r\n\r\n              <p>Yards: {{yards}}</p>\r\n\r\n              <p>Kilometres: {{kilometres}}</p>\r\n\r\n              <p>Miles: {{miles}}</p>\r\n          </div>\r\n\r\n          <div class=\"flex-item2\">\r\n              <p>{{ hole.name }}</p>\r\n\r\n              <p>par {{ hole.par }}</p>\r\n\r\n              <p>Description {{hole.description}}</p>\r\n              <a href=\"https://vimeo.com/269921381\">Flyover</a>\r\n              <!-- <p> Flyover {{hole.flyover }}</p> -->\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n<div>\r\n\r\n<button class=\"mat-button\" mat-button (click)=\"Back()\">Back</button>\r\n"
 
 /***/ }),
 
-/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.scss":
-/*!******************************************************************************************!*\
-  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.scss ***!
-  \******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts":
-/*!****************************************************************************************!*\
-  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts ***!
-  \****************************************************************************************/
-/*! exports provided: BottomSheetOverviewComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BottomSheetOverviewComponent", function() { return BottomSheetOverviewComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var BottomSheetOverviewComponent = /** @class */ (function () {
-    function BottomSheetOverviewComponent(bottomSheetRef) {
-        this.bottomSheetRef = bottomSheetRef;
-    }
-    BottomSheetOverviewComponent.prototype.ngOnInit = function () {
-    };
-    BottomSheetOverviewComponent.prototype.openLink = function (event) {
-        this.bottomSheetRef.dismiss();
-        event.preventDefault();
-    };
-    BottomSheetOverviewComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-bottom-sheet-overview',
-            template: __webpack_require__(/*! ./bottom-sheet-overview.component.html */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.html"),
-            styles: [__webpack_require__(/*! ./bottom-sheet-overview.component.scss */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.scss")]
-        }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"]])
-    ], BottomSheetOverviewComponent);
-    return BottomSheetOverviewComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html":
-/*!*********************************************************************************************!*\
-  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html ***!
-  \*********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div id=\"map\"></div>\r\n\r\n<div *ngIf=\"hole$ | async as hole\">\r\n    <div class=\"contain\">\r\n        <mat-card class=\"mat-elevation-z10\">\r\n          <div class=\"flex-item1\">\r\n              <p>Metres: {{metres}}</p>\r\n\r\n              <p>Yards: {{yards}}</p>\r\n\r\n              <p>Kilometres: {{kilometres}}</p>\r\n\r\n              <p>Miles: {{miles}}</p>\r\n          </div>\r\n\r\n          <div class=\"flex-item2\">\r\n              <p>{{ hole.name }}</p>\r\n\r\n              <p>par {{ hole.par }}</p>\r\n\r\n              <p>Description {{hole.description}}</p>\r\n              <a href=\"https://vimeo.com/269921381\">Flyover</a>\r\n              <!-- <p> Flyover {{hole.flyover }}</p> -->\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n<div>\r\n\r\n<button class=\"mat-button\" mat-button (click)=\"Back()\">Back</button>\r\n"
-
-/***/ }),
-
-/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss":
-/*!*********************************************************************************************!*\
-  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss ***!
-  \*********************************************************************************************/
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.scss":
+/*!*********************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.scss ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1346,10 +939,10 @@ module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height:
 
 /***/ }),
 
-/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts":
-/*!*******************************************************************************************!*\
-  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts ***!
-  \*******************************************************************************************/
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.ts":
+/*!*******************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.ts ***!
+  \*******************************************************************************************************************/
 /*! exports provided: GeolocationDetailComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1357,11 +950,11 @@ module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height:
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeolocationDetailComponent", function() { return GeolocationDetailComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_montgomorie_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/montgomorie.service */ "./src/app/components/geolocation/services/montgomorie.service.ts");
+/* harmony import */ var _services_montgomorie_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/montgomorie.service */ "./src/app/components/geolocation/services/montgomorie.service.ts");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
-/* harmony import */ var _services_haversine_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/haversine.service */ "./src/app/components/geolocation/services/haversine.service.ts");
+/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
+/* harmony import */ var _services_haversine_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/haversine.service */ "./src/app/components/geolocation/services/haversine.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1387,7 +980,7 @@ var GeolocationDetailComponent = /** @class */ (function () {
     }
     GeolocationDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])(function (params) {
+        this.mont_hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])(function (params) {
             return _this._mont.getHole(params.get('id'));
         }));
         this._route.paramMap.
@@ -1432,8 +1025,8 @@ var GeolocationDetailComponent = /** @class */ (function () {
     GeolocationDetailComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-geolocation-detail',
-            template: __webpack_require__(/*! ./geolocation-detail.component.html */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html"),
-            styles: [__webpack_require__(/*! ./geolocation-detail.component.scss */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss")]
+            template: __webpack_require__(/*! ./geolocation-detail.component.html */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.html"),
+            styles: [__webpack_require__(/*! ./geolocation-detail.component.scss */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.scss")]
         }),
         __metadata("design:paramtypes", [_services_montgomorie_service__WEBPACK_IMPORTED_MODULE_1__["MontgomorieService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
@@ -1448,6 +1041,130 @@ var GeolocationDetailComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.html":
+/*!*******************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.html ***!
+  \*******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"map\"></div>\n\n<div *ngIf=\"meara_hole$ | async as hole\">\n    <div class=\"contain\">\n        <mat-card class=\"mat-elevation-z10\">\n          <div class=\"flex-item1\">\n              <p>Metres: {{metres}}</p>\n\n              <p>Yards: {{yards}}</p>\n\n              <p>Kilometres: {{kilometres}}</p>\n\n              <p>Miles: {{miles}}</p>\n          </div>\n\n          <div class=\"flex-item2\">\n              <p>{{ hole.name }}</p>\n\n              <p>par {{ hole.par }}</p>\n\n              <p>Description {{hole.description}}</p>\n              <a href=\"https://vimeo.com/269921381\">Flyover</a>\n              <!-- <p> Flyover {{hole.flyover }}</p> -->\n          </div>\n        </mat-card>\n      </div>\n<div>\n\n<button class=\"mat-button\" mat-button (click)=\"Back()\">Back</button>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.scss":
+/*!*******************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.scss ***!
+  \*******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 50%;\n  width: 100%;\n  z-index: -1; }\n\n.mat-button {\n  position: absolute;\n  bottom: 10%;\n  right: 5px;\n  margin: 3%;\n  background-color: #D8D8D8; }\n\n.contain {\n  position: fixed;\n  top: 50%;\n  width: 100%;\n  display: flex;\n  flex-direction: column; }\n\n.flex-item1 {\n  justify-content: space-between;\n  text-align: center;\n  width: 50%;\n  float: left; }\n\n.flex-item2 {\n  margin-left: 50%;\n  justify-content: space-between;\n  text-align: center; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.ts":
+/*!*****************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.ts ***!
+  \*****************************************************************************************************************/
+/*! exports provided: OMearaDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OMearaDetailComponent", function() { return OMearaDetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_o_meara_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/o-meara.service */ "./src/app/components/geolocation/services/o-meara.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
+/* harmony import */ var _services_haversine_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/haversine.service */ "./src/app/components/geolocation/services/haversine.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var OMearaDetailComponent = /** @class */ (function () {
+    function OMearaDetailComponent(_meara, _route, _haversine, router, _map) {
+        this._meara = _meara;
+        this._route = _route;
+        this._haversine = _haversine;
+        this.router = router;
+        this._map = _map;
+    }
+    OMearaDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.meara_hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])(function (params) {
+            return _this._meara.getHole(params.get('id'));
+        }));
+        this._route.paramMap.
+            subscribe(function (params) {
+            return _this._meara.showMap(+params.get('id'));
+        });
+        this.Haversine();
+    };
+    OMearaDetailComponent.prototype.Back = function () {
+        this.router.navigate(['../geolocation']);
+    };
+    OMearaDetailComponent.prototype.Haversine = function () {
+        var _this = this;
+        var id = +this._route.snapshot.paramMap.get('id');
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (x) {
+                _this.myLat = x.coords.latitude;
+                _this.myLng = x.coords.longitude;
+                _this._meara.getHoleLat(id).subscribe(function (hole) { return _this.courseLat = hole; });
+                _this._meara.getHoleLng(id).subscribe(function (hole) { return _this.courseLng = hole; });
+                console.log("longitude: " + _this.courseLat + " | latitude: " + _this.courseLng);
+                console.log("longitude: " + _this.myLat + " | latitude: " + _this.myLng);
+                var myCoords = {
+                    latitude: _this.myLat,
+                    longitude: _this.myLng
+                };
+                var courseCoords = {
+                    latitude: _this.courseLat,
+                    longitude: _this.courseLng
+                };
+                _this.metres = _this._haversine.getDistanceInMeters(myCoords, courseCoords);
+                _this.yards = _this._haversine.getDistanceInYards(myCoords, courseCoords);
+                _this.kilometres = _this._haversine.getDistanceInKilometers(myCoords, courseCoords);
+                _this.miles = _this._haversine.getDistanceInMiles(myCoords, courseCoords);
+                _this.metres = _this.metres.toFixed(2);
+                _this.yards = _this.yards.toFixed(2);
+                _this.kilometres = _this.kilometres.toFixed(2);
+                _this.miles = _this.miles.toFixed(2);
+            });
+        }
+    };
+    OMearaDetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-o-meara-detail',
+            template: __webpack_require__(/*! ./o-meara-detail.component.html */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.html"),
+            styles: [__webpack_require__(/*! ./o-meara-detail.component.scss */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_services_o_meara_service__WEBPACK_IMPORTED_MODULE_1__["OMearaService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            _services_haversine_service__WEBPACK_IMPORTED_MODULE_5__["HaversineService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            _services_map_service__WEBPACK_IMPORTED_MODULE_4__["MapService"]])
+    ], OMearaDetailComponent);
+    return OMearaDetailComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.html":
 /*!***************************************************************************************************************!*\
   !*** ./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.html ***!
@@ -1455,7 +1172,7 @@ var GeolocationDetailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-sidenav></app-sidenav>\r\n\r\n    <p>\r\n      <button mat-icon-button [matMenuTriggerFor]=\"menu\" class=\"mat-ham-button\">\r\n          <i class=\"material-icons\">bookmarks</i>\r\n      </button>\r\n    </p>\r\n\r\n    <mat-menu #menu=\"matMenu\">\r\n        <button mat-menu-item (click)=\"openBottomSheet()\">Dublin Bus Stops</button>\r\n        <button mat-menu-item>Carton House Info</button>\r\n    </mat-menu>\r\n\r\n<div id=\"map\"></div>\r\n"
+module.exports = "<app-sidenav></app-sidenav>\r\n\r\n    <p>\r\n      <button mat-icon-button [matMenuTriggerFor]=\"menu\" class=\"mat-ham-button\">\r\n        <i class=\"material-icons\">\r\n          drag_indicator\r\n        </i>\r\n      </button>\r\n    </p>\r\n\r\n    <mat-menu #menu=\"matMenu\">\r\n        <button mat-menu-item (click)=\"localBottomSheet()\">Local Bus Information</button>\r\n        <button mat-menu-item (click)=\"busBottomSheet()\">Dublin Bus Information</button>\r\n    </mat-menu>\r\n\r\n<div id=\"map\"></div>\r\n"
 
 /***/ }),
 
@@ -1466,7 +1183,7 @@ module.exports = "<app-sidenav></app-sidenav>\r\n\r\n    <p>\r\n      <button ma
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 90%;\n  width: 100%;\n  z-index: -1; }\n\n.mat-ham-button {\n  background-color: white;\n  position: fixed;\n  right: 12px;\n  top: 12%; }\n"
+module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 90%;\n  width: 100%;\n  z-index: -1; }\n\n.mat-ham-button {\n  background-color: white;\n  position: fixed;\n  right: 20px;\n  top: 17%; }\n"
 
 /***/ }),
 
@@ -1484,7 +1201,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _services_maynooth_map_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/maynooth-map.service */ "./src/app/components/geolocation/services/maynooth-map.service.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../bottom-sheet/bottom-sheet-overview.component */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts");
+/* harmony import */ var _maynooth_info_bottom_sheet_dublin_bus_bottom_sheet_maynooth_info_bottom_sheet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.ts");
+/* harmony import */ var _maynooth_info_bottom_sheet_local_info_bottom_sheet_local_info_bottom_sheet_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1499,21 +1217,25 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var GeolocationMaynoothDetailComponent = /** @class */ (function () {
     function GeolocationMaynoothDetailComponent(_route, _maynooth, bottomSheet) {
         this._route = _route;
         this._maynooth = _maynooth;
         this.bottomSheet = bottomSheet;
     }
-    GeolocationMaynoothDetailComponent.prototype.openBottomSheet = function () {
-        this.bottomSheet.open(_bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_4__["BottomSheetOverviewComponent"]);
-    };
     GeolocationMaynoothDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._route.paramMap.
             subscribe(function (params) {
             return _this._maynooth.showMap(+params.get('id'));
         });
+    };
+    GeolocationMaynoothDetailComponent.prototype.busBottomSheet = function () {
+        this.bottomSheet.open(_maynooth_info_bottom_sheet_dublin_bus_bottom_sheet_maynooth_info_bottom_sheet__WEBPACK_IMPORTED_MODULE_4__["MaynoothInfoBottomSheetComponent"]);
+    };
+    GeolocationMaynoothDetailComponent.prototype.localBottomSheet = function () {
+        this.bottomSheet.open(_maynooth_info_bottom_sheet_local_info_bottom_sheet_local_info_bottom_sheet_component__WEBPACK_IMPORTED_MODULE_5__["LocalInfoBottomSheetComponent"]);
     };
     GeolocationMaynoothDetailComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1601,6 +1323,146 @@ var GeolocationComponent = /** @class */ (function () {
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
     ], GeolocationComponent);
     return GeolocationComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.html":
+/*!***************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.html ***!
+  \***************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-nav-list>\r\n  <h2>Dublin Bus Information</h2>\r\n\r\n  <p>66 Bus route operates from Maynooth to Merrion Square in Dublin's city centre.</p>\r\n\r\n  <p>67 Bus route also operates from Maynooth to Merrion Square in Dublin's city centre.</p>\r\n\r\n  <p>The bus stop is located directly across from the Glenroyal Hotel and roughly a five minute walk from Maynooth's main street.</p>\r\n\r\n</mat-nav-list>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.scss":
+/*!***************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.scss ***!
+  \***************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".mat-ham-button {\n  background-color: white;\n  position: fixed;\n  right: 20px;\n  top: 17%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.ts":
+/*!*************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.ts ***!
+  \*************************************************************************************************************************/
+/*! exports provided: MaynoothInfoBottomSheetComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaynoothInfoBottomSheetComponent", function() { return MaynoothInfoBottomSheetComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MaynoothInfoBottomSheetComponent = /** @class */ (function () {
+    function MaynoothInfoBottomSheetComponent(bottomSheetRef) {
+        this.bottomSheetRef = bottomSheetRef;
+    }
+    MaynoothInfoBottomSheetComponent.prototype.ngOnInit = function () {
+    };
+    MaynoothInfoBottomSheetComponent.prototype.openLink = function (event) {
+        this.bottomSheetRef.dismiss();
+        event.preventDefault();
+    };
+    MaynoothInfoBottomSheetComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-bottom-sheet-overview',
+            template: __webpack_require__(/*! ./maynooth-info-bottom-sheet.html */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.html"),
+            styles: [__webpack_require__(/*! ./maynooth-info-bottom-sheet.scss */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"]])
+    ], MaynoothInfoBottomSheetComponent);
+    return MaynoothInfoBottomSheetComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.html":
+/*!**********************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.html ***!
+  \**********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  local-info-bottom-sheet works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.scss":
+/*!**********************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.scss ***!
+  \**********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.ts":
+/*!********************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.ts ***!
+  \********************************************************************************************************************************/
+/*! exports provided: LocalInfoBottomSheetComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocalInfoBottomSheetComponent", function() { return LocalInfoBottomSheetComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LocalInfoBottomSheetComponent = /** @class */ (function () {
+    function LocalInfoBottomSheetComponent(bottomSheetRef) {
+        this.bottomSheetRef = bottomSheetRef;
+    }
+    LocalInfoBottomSheetComponent.prototype.ngOnInit = function () {
+    };
+    LocalInfoBottomSheetComponent.prototype.openLink = function (event) {
+        this.bottomSheetRef.dismiss();
+        event.preventDefault();
+    };
+    LocalInfoBottomSheetComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-local-info-bottom-sheet',
+            template: __webpack_require__(/*! ./local-info-bottom-sheet.component.html */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.html"),
+            styles: [__webpack_require__(/*! ./local-info-bottom-sheet.component.scss */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"]])
+    ], LocalInfoBottomSheetComponent);
+    return LocalInfoBottomSheetComponent;
 }());
 
 
@@ -1794,17 +1656,46 @@ var MaynoothMapService = /** @class */ (function () {
     function MaynoothMapService() {
     }
     MaynoothMapService.prototype.showMap = function (id) {
-        // tslint:disable-next-line:no-shadowed-variable
         var map;
-        // ../assets/img/map.svg
-        var myIcon = L.divIcon('my-div-icon');
-        map = L.map('map').setView([53.381635, -6.590960], 14.6);
-        // tslint:disable-next-line:max-line-length
-        L.tileLayer('https://api.mapbox.com/styles/v1/cavinn/cjjjwiuit35ru2smgwllle9um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
-            attribution: '',
-            maxZoom: 18,
-        }).addTo(map);
-        L.marker([53.381635, -6.590960], myIcon).addTo(map);
+        var iconUrl;
+        var town;
+        var dublinBusStop;
+        var maynoothApartmentComplex;
+        var maynoothPhoenixRestaurant;
+        var maynoothPedestrianCrossing;
+        var myLat;
+        var myLng;
+        var currentLocation;
+        iconUrl = L.icon({
+            iconUrl: './assets/img/blue-map.png',
+            iconSize: [30, 50],
+        });
+        navigator.geolocation.getCurrentPosition(function (x) {
+            myLat = x.coords.latitude;
+            myLng = x.coords.longitude;
+            console.log(myLat, myLng);
+            map = L.map('map').setView([53.381065, -6.593579], 15);
+            // tslint:disable-next-line:max-line-length
+            L.tileLayer('https://api.mapbox.com/styles/v1/cavinn/cjjjwiuit35ru2smgwllle9um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
+                attribution: '',
+                maxZoom: 18,
+            }).addTo(map);
+            town = L.marker([53.381635, -6.590960], { icon: iconUrl }).addTo(map);
+            //  // Dublin Bus
+            dublinBusStop = L.marker([53.379608, -6.588764], { icon: iconUrl }).addTo(map);
+            //  // Maynooth Stops
+            maynoothApartmentComplex = L.marker([53.385671, -6.596865], { icon: iconUrl }).addTo(map);
+            maynoothPhoenixRestaurant = L.marker([53.384121, -6.603546], { icon: iconUrl }).addTo(map);
+            maynoothPedestrianCrossing = L.marker([53.381920, -6.601228], { icon: iconUrl }).addTo(map);
+            // Current Location
+            currentLocation = L.marker([myLat, myLng], { icon: iconUrl }).addTo(map);
+            town.bindPopup('<b>Hello!</b><br>This is maynooths main street.').openPopup();
+            dublinBusStop.bindPopup('<b>66 & 67 bus stop!</b><br>Located across from the glenroyal hotel.');
+            maynoothApartmentComplex.bindPopup('<b>Maynooth Apartment Complex</b><br>First stop for the travelling to Carton House.');
+            maynoothPhoenixRestaurant.bindPopup('<b>Maynooth Pheonix Restaurant</b><br>Second bus stop for travelling to Carton House.');
+            maynoothPedestrianCrossing.bindPopup('<b>Maynooth Pedestrian Crossing</b><br>Last bus stop for travelling to Carton House.');
+            currentLocation.bindPopup('<b>Current Location</b>');
+        });
     };
     MaynoothMapService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1823,13 +1714,13 @@ var MaynoothMapService = /** @class */ (function () {
 /*!************************************************************************!*\
   !*** ./src/app/components/geolocation/services/montgomorie.service.ts ***!
   \************************************************************************/
-/*! exports provided: MontgomorieService, Hole */
+/*! exports provided: MontgomorieService, MontHole */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MontgomorieService", function() { return MontgomorieService; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Hole", function() { return Hole; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MontHole", function() { return MontHole; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
@@ -1880,35 +1771,134 @@ var MontgomorieService = /** @class */ (function () {
     return MontgomorieService;
 }());
 
-var Hole = /** @class */ (function () {
-    function Hole(id, name, lat, lng) {
+var MontHole = /** @class */ (function () {
+    function MontHole(id, name, lat, lng) {
         this.id = id;
         this.name = name;
         this.lat = lat;
         this.lng = lng;
     }
-    return Hole;
+    return MontHole;
 }());
 
 var HOLES = [
-    new Hole(1, 'Hole 1', 53.387792, -6.569634),
-    new Hole(2, 'Hole 2', 53.386737, -6.574668),
-    new Hole(3, 'Hole 3', 53.385048, -6.572094),
-    new Hole(4, 'Hole 4', 53.382720, -6.565754),
-    new Hole(5, 'Hole 5', 53.386264, -6.568703),
-    new Hole(6, 'Hole 6', 53.383838, -6.563968),
-    new Hole(7, 'Hole 7', 53.383164, -6.561684),
-    new Hole(8, 'Hole 8', 53.381575, -6.568951),
-    new Hole(9, 'Hole 9', 53.381030, -6.563088),
-    new Hole(10, 'Hole 10', 53.379296, -6.556906),
-    new Hole(11, 'Hole 11', 53.378104, -6.548422),
-    new Hole(12, 'Hole 12', 53.379468, -6.548469),
-    new Hole(13, 'Hole 13', 53.378950, -6.543071),
-    new Hole(14, 'Hole 14', 53.380214, -6.547637),
-    new Hole(15, 'Hole 15', 53.380593, -6.555184),
-    new Hole(16, 'Hole 16', 53.382494, -6.560319),
-    new Hole(17, 'Hole 17', 53.384131, -6.559146),
-    new Hole(18, 'Hole 18', 53.386657, -6.565981),
+    new MontHole(1, 'Hole 1', 53.387792, -6.569634),
+    new MontHole(2, 'Hole 2', 53.386737, -6.574668),
+    new MontHole(3, 'Hole 3', 53.385048, -6.572094),
+    new MontHole(4, 'Hole 4', 53.382720, -6.565754),
+    new MontHole(5, 'Hole 5', 53.386264, -6.568703),
+    new MontHole(6, 'Hole 6', 53.383838, -6.563968),
+    new MontHole(7, 'Hole 7', 53.383164, -6.561684),
+    new MontHole(8, 'Hole 8', 53.381575, -6.568951),
+    new MontHole(9, 'Hole 9', 53.381030, -6.563088),
+    new MontHole(10, 'Hole 10', 53.379296, -6.556906),
+    new MontHole(11, 'Hole 11', 53.378104, -6.548422),
+    new MontHole(12, 'Hole 12', 53.379468, -6.548469),
+    new MontHole(13, 'Hole 13', 53.378950, -6.543071),
+    new MontHole(14, 'Hole 14', 53.380214, -6.547637),
+    new MontHole(15, 'Hole 15', 53.380593, -6.555184),
+    new MontHole(16, 'Hole 16', 53.382494, -6.560319),
+    new MontHole(17, 'Hole 17', 53.384131, -6.559146),
+    new MontHole(18, 'Hole 18', 53.386657, -6.565981),
+];
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/services/o-meara.service.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/components/geolocation/services/o-meara.service.ts ***!
+  \********************************************************************/
+/*! exports provided: OMearaService, OMearaHole */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OMearaService", function() { return OMearaService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OMearaHole", function() { return OMearaHole; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var OMearaService = /** @class */ (function () {
+    function OMearaService() {
+    }
+    OMearaService.prototype.getHoles = function () { return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(HOLES); };
+    OMearaService.prototype.getHole = function (id) {
+        return this.getHoles().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === +id; }); }));
+    };
+    OMearaService.prototype.getHoleLat = function (id) {
+        return this.getHoles().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === +id; }).lat; }));
+    };
+    OMearaService.prototype.getHoleLng = function (id) {
+        return this.getHoles().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === +id; }).lng; }));
+    };
+    OMearaService.prototype.showMap = function (id) {
+        // tslint:disable-next-line:no-shadowed-variable
+        var map;
+        var coordsLng;
+        var coordsLat;
+        map = L.map('map').setView([53.384767, -6.564879], 14);
+        // tslint:disable-next-line:max-line-length
+        L.tileLayer('https://api.mapbox.com/styles/v1/cavinn/cjgqloyl000082roe1rz35om8/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
+            attribution: '',
+            maxZoom: 16,
+        }).addTo(map);
+        coordsLng = HOLES.find(function (hole) { return hole.id === id; }).lng;
+        coordsLat = HOLES.find(function (hole) { return hole.id === id; }).lat;
+        map.fitBounds([
+            [coordsLat, coordsLng]
+        ]);
+    };
+    OMearaService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [])
+    ], OMearaService);
+    return OMearaService;
+}());
+
+var OMearaHole = /** @class */ (function () {
+    function OMearaHole(id, name, lat, lng) {
+        this.id = id;
+        this.name = name;
+        this.lat = lat;
+        this.lng = lng;
+    }
+    return OMearaHole;
+}());
+
+var HOLES = [
+    new OMearaHole(1, 'Hole 1', 53.390819, -6.563249),
+    new OMearaHole(2, 'Hole 2', 53.390556, -6.554545),
+    new OMearaHole(3, 'Hole 3', 53.391743, -6.551030),
+    new OMearaHole(4, 'Hole 4', 53.382720, -6.565754),
+    new OMearaHole(5, 'Hole 5', 53.386264, -6.568703),
+    new OMearaHole(6, 'Hole 6', 53.383838, -6.563968),
+    new OMearaHole(7, 'Hole 7', 53.383164, -6.561684),
+    new OMearaHole(8, 'Hole 8', 53.381575, -6.568951),
+    new OMearaHole(9, 'Hole 9', 53.381030, -6.563088),
+    new OMearaHole(10, 'Hole 10', 53.379296, -6.556906),
+    new OMearaHole(11, 'Hole 11', 53.378104, -6.548422),
+    new OMearaHole(12, 'Hole 12', 53.379468, -6.548469),
+    new OMearaHole(13, 'Hole 13', 53.378950, -6.543071),
+    new OMearaHole(14, 'Hole 14', 53.380214, -6.547637),
+    new OMearaHole(15, 'Hole 15', 53.380593, -6.555184),
+    new OMearaHole(16, 'Hole 16', 53.382494, -6.560319),
+    new OMearaHole(17, 'Hole 17', 53.384131, -6.559146),
+    new OMearaHole(18, 'Hole 18', 53.386657, -6.565981),
 ];
 
 
@@ -1921,7 +1911,7 @@ var HOLES = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"showIndicator\">Loading...</div>\r\n\r\n <mat-sidenav-container class=\"example-container\" (backdropClick)=\"close('backdrop')\">\r\n    <mat-sidenav #sidenav (keydown.escape)=\"close('escape')\" disableClose>\r\n      <mat-toolbar class=\"geo-heading\">\r\n            <h3>Geolocation</h3>\r\n      </mat-toolbar>\r\n\r\n      <div class=\"banner\"></div>\r\n\r\n      <mat-expansion-panel>\r\n          <mat-expansion-panel-header>\r\n            Montgomorie\r\n          </mat-expansion-panel-header>\r\n\r\n      <mat-list role=\"list\" *ngFor=\"let hole of hole$ | async\">\r\n        <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n            <button mat-button [routerLink]=\"['/geolocation', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n        </mat-list-item>\r\n      </mat-list>\r\n    </mat-expansion-panel>\r\n\r\n    <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          O'Meara\r\n        </mat-expansion-panel-header>\r\n\r\n    <mat-list role=\"list\" *ngFor=\"let hole of hole$ | async\">\r\n      <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n          <button mat-button [routerLink]=\"['/geolocation', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n      </mat-list-item>\r\n    </mat-list>\r\n  </mat-expansion-panel>\r\n\r\n  <!-- geolocation-maynooth -->\r\n  <button class=\"mat-raised-button\" mat-raised-button [routerLink]=\"['/geolocation-maynooth']\"><span>Maynooth</span></button><br>\r\n\r\n  </mat-sidenav>\r\n</mat-sidenav-container>\r\n\r\n  <p>\r\n    <button mat-icon-button class=\"mat-ham-button\" (click)=\"sidenav.open()\">\r\n      <i class=\"material-icons\">menu</i>\r\n    </button>\r\n  </p>\r\n<!-- asdada -->\r\n"
+module.exports = "<div *ngIf=\"showIndicator\">Loading...</div>\r\n\r\n <mat-sidenav-container class=\"example-container\" (backdropClick)=\"close('backdrop')\">\r\n    <mat-sidenav #sidenav (keydown.escape)=\"close('escape')\" disableClose>\r\n      <mat-toolbar class=\"geo-heading\">\r\n            <h3>Geolocation</h3>\r\n      </mat-toolbar>\r\n\r\n      <div class=\"banner\"></div>\r\n\r\n      <mat-expansion-panel>\r\n          <mat-expansion-panel-header>\r\n            Montgomorie\r\n          </mat-expansion-panel-header>\r\n\r\n      <mat-list role=\"list\" *ngFor=\"let hole of mont_hole$ | async\">\r\n        <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n            <button mat-button [routerLink]=\"['/geolocation', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n        </mat-list-item>\r\n      </mat-list>\r\n    </mat-expansion-panel>\r\n\r\n    <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          O'Meara\r\n        </mat-expansion-panel-header>\r\n\r\n    <mat-list role=\"list\" *ngFor=\"let hole of meara_hole$ | async\">\r\n      <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n          <button mat-button [routerLink]=\"['/geolocation-meara', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n      </mat-list-item>\r\n    </mat-list>\r\n  </mat-expansion-panel>\r\n\r\n  <!-- geolocation-maynooth -->\r\n  <button class=\"mat-raised-button\" mat-raised-button [routerLink]=\"['/geolocation-maynooth']\"><span>Maynooth</span></button><br>\r\n\r\n  </mat-sidenav>\r\n</mat-sidenav-container>\r\n\r\n  <p>\r\n    <button mat-icon-button class=\"mat-ham-button\" (click)=\"sidenav.open()\">\r\n      <i class=\"material-icons\">menu</i>\r\n    </button>\r\n  </p>\r\n<!-- asdada -->\r\n"
 
 /***/ }),
 
@@ -1932,7 +1922,7 @@ module.exports = "<div *ngIf=\"showIndicator\">Loading...</div>\r\n\r\n <mat-sid
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-container {\n  position: static;\n  width: 100%;\n  min-width: 100%;\n  height: 100%;\n  min-height: 100%; }\n\n.mat-side-list {\n  margin: 0; }\n\n.mat-ham-button {\n  background-color: #d3d3d3;\n  margin-right: 20px;\n  float: right; }\n\n.mat-raised-button {\n  width: 200px;\n  height: 6%; }\n\n.banner {\n  height: 50px;\n  background-color: #5cd65c; }\n\n.geo-heading {\n  background-color: #5cd65c;\n  position: fixed;\n  top: 0; }\n\n.right-bottom {\n  position: absolute;\n  left: 0;\n  bottom: 60px; }\n"
+module.exports = ".example-container {\n  position: static;\n  width: 100%;\n  min-width: 100%;\n  height: 100%;\n  min-height: 100%; }\n\n.mat-side-list {\n  margin: 0; }\n\n.mat-ham-button {\n  background-color: white;\n  margin-right: 20px;\n  float: right; }\n\n.mat-raised-button {\n  width: 200px;\n  height: 6%; }\n\n.banner {\n  height: 50px;\n  background-color: #5cd65c; }\n\n.geo-heading {\n  background-color: #5cd65c;\n  position: fixed;\n  top: 0; }\n\n.right-bottom {\n  position: absolute;\n  left: 0;\n  bottom: 60px; }\n"
 
 /***/ }),
 
@@ -1949,10 +1939,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _services_montgomorie_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/montgomorie.service */ "./src/app/components/geolocation/services/montgomorie.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
+/* harmony import */ var _services_o_meara_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/o-meara.service */ "./src/app/components/geolocation/services/o-meara.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1969,19 +1960,21 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var SidenavComponent = /** @class */ (function () {
-    function SidenavComponent(_mont, _map, _route, route) {
+    function SidenavComponent(_mont, _meara, _map, _route, route) {
         var _this = this;
         this._mont = _mont;
+        this._meara = _meara;
         this._map = _map;
         this._route = _route;
         this.route = route;
         this.showIndicator = true;
         this.route.events.subscribe(function (routerEvent) {
-            if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationStart"]) {
+            if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_4__["NavigationStart"]) {
                 _this.showIndicator = true;
             }
-            if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationEnd"]) {
+            if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_4__["NavigationEnd"]) {
                 _this.showIndicator = false;
             }
         });
@@ -1993,9 +1986,13 @@ var SidenavComponent = /** @class */ (function () {
     };
     SidenavComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])(function (params) {
+        this.mont_hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["switchMap"])(function (params) {
             _this.selectedId = +params.get('id');
             return _this._mont.getHoles();
+        }));
+        this.meara_hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["switchMap"])(function (params) {
+            _this.selectedId = +params.get('id');
+            return _this._meara.getHoles();
         }));
         // this._route.paramMap.
         // subscribe((params: ParamMap) =>
@@ -2011,17 +2008,17 @@ var SidenavComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./sidenav.component.html */ "./src/app/components/geolocation/side-nav/sidenav.component.html"),
             styles: [__webpack_require__(/*! ./sidenav.component.scss */ "./src/app/components/geolocation/side-nav/sidenav.component.scss")],
             animations: [
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["trigger"])('listAnimation', [
-                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])('* => *', [
-                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["query"])(':leave', [
-                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["stagger"])(100, [
-                                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('0.5s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({ opacity: 0 }))
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["trigger"])('listAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])('* => *', [
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["query"])(':leave', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["stagger"])(100, [
+                                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])('0.5s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({ opacity: 0 }))
                             ])
                         ]),
-                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["query"])(':enter', [
-                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({ opacity: 0 }),
-                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["stagger"])(100, [
-                                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('0.5s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({ opacity: 1 }))
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["query"])(':enter', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({ opacity: 0 }),
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["stagger"])(100, [
+                                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])('0.5s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({ opacity: 1 }))
                             ])
                         ])
                     ])
@@ -2029,9 +2026,10 @@ var SidenavComponent = /** @class */ (function () {
             ]
         }),
         __metadata("design:paramtypes", [_services_montgomorie_service__WEBPACK_IMPORTED_MODULE_2__["MontgomorieService"],
-            _services_map_service__WEBPACK_IMPORTED_MODULE_6__["MapService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+            _services_o_meara_service__WEBPACK_IMPORTED_MODULE_3__["OMearaService"],
+            _services_map_service__WEBPACK_IMPORTED_MODULE_7__["MapService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], SidenavComponent);
     return SidenavComponent;
 }());
@@ -2047,7 +2045,7 @@ var SidenavComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\">\r\n</div> -->\r\n<div id=\"homepage-body\">\r\n\r\n\r\n<div id=\"content\" *ngFor=\"let news of homeNews.update| slice:0:1; let i=index\">\r\n    <mat-accordion class=\"example-headers-align\">\r\n        <mat-expansion-panel [expanded]=\"step === 0\" (opened)=\"setStep(0)\" hideToggle>\r\n              <mat-expansion-panel-header>\r\n               <mat-panel-description>\r\n                  {{homeNews.update[0].desc}}\r\n              <mat-icon id=\"newsSeverity{{homeNews.update[0].severity}}\">{{homeNews.update[0].type}}</mat-icon>\r\n            </mat-panel-description>\r\n            </mat-expansion-panel-header>\r\n                  <ul>\r\n                    <li>\r\n                      {{homeNews.update[1].timeStamp}}: {{homeNews.update[0].content}}\r\n                    </li>\r\n                </ul>\r\n              <mat-action-row>\r\n                <button mat-button color=\"primary\" (click)=\"nextStep()\">Next</button>\r\n             </mat-action-row>\r\n          </mat-expansion-panel>\r\n</mat-accordion>\r\n\r\n<mat-accordion class=\"example-headers-align\">\r\n<mat-expansion-panel [expanded]=\"step === 1\" (opened)=\"setStep(1)\" hideToggle>\r\n    <mat-expansion-panel-header>\r\n  <mat-panel-description>\r\n    {{homeNews.update[1].desc}}\r\n<mat-icon id=\"newsSeverity{{homeNews.update[1].severity}}\">{{homeNews.update[1].type}}</mat-icon>\r\n</mat-panel-description>\r\n  </mat-expansion-panel-header>\r\n    <ul>\r\n      <li>\r\n          {{homeNews.update[1].timeStamp}}: {{homeNews.update[1].content}}\r\n     </li>\r\n    </ul>\r\n  <mat-action-row>\r\n     <button mat-button color=\"warn\" (click)=\"prevStep()\">Previous</button>\r\n     <button mat-button color=\"primary\" (click)=\"nextStep()\">Next</button>\r\n  </mat-action-row>\r\n</mat-expansion-panel>\r\n</mat-accordion>\r\n\r\n<mat-accordion class=\"example-headers-align\">\r\n    <mat-expansion-panel [expanded]=\"step === 2\" (opened)=\"setStep(2)\" hideToggle>\r\n        <mat-expansion-panel-header>\r\n      <mat-panel-description>\r\n        {{homeNews.update[2].desc}}\r\n  <mat-icon id=\"newsSeverity{{homeNews.update[2].severity}}\">{{homeNews.update[2].type}}</mat-icon>\r\n    </mat-panel-description>\r\n      </mat-expansion-panel-header>\r\n        <ul>\r\n          <li>\r\n              {{homeNews.update[2].timeStamp}}: {{homeNews.update[2].content}}\r\n         </li>\r\n        </ul>\r\n      <mat-action-row>\r\n         <button mat-button color=\"warn\" (click)=\"prevStep()\">Previous</button>\r\n         <button mat-button color=\"primary\" (click)=\"nextStep()\">End</button>\r\n      </mat-action-row>\r\n    </mat-expansion-panel>\r\n</mat-accordion>\r\n\r\n</div>\r\n\r\n  <button mat-button (click)=\"metric = !metric\">{{metric ? '&deg;C' : '&deg;F'}}</button>\r\n  <div>\r\n    <ng-container *ngIf=\"!metric\">\r\n      <mat-accordion>\r\n        <mat-expansion-panel>\r\n          <mat-expansion-panel-header>\r\n            <mat-panel-title>\r\n\r\n              <div class=\"weather_child\">\r\n                <div class=\"box\">\r\n                  <span>\r\n                    Current:\r\n                  </span>\r\n                  <ng-container id=\"ImgTemp\">\r\n                    <span>\r\n                      <img src=\"https://openweathermap.org/img/w/{{forecast.list[0].weather[0].icon}}.png\">\r\n                    </span>\r\n                    <span>\r\n                      {{forecast.list[0].main.temp | number:'1.0-0'}}&deg;C\r\n                    </span>\r\n                  </ng-container>\r\n                  <span>\r\n                  </span>\r\n                </div>\r\n              </div>\r\n            </mat-panel-title>\r\n          </mat-expansion-panel-header>\r\n          <div id=\"\">\r\n            <!-- index 1 -->\r\n            <ng-container *ngFor=\"let loop of [1,2,3,4]\">\r\n              <div class=\"weather_child\">\r\n                <div class=\"box\">\r\n                  <span>\r\n                    {{(forecast.list[loop].dt_txt[11]) + (forecast.list[loop].dt_txt[12]) + (forecast.list[loop].dt_txt[13]) + (forecast.list[loop].dt_txt[14])\r\n                    + (forecast.list[loop].dt_txt[15])}} - {{(forecast.list[loop+1].dt_txt[11]) + (forecast.list[loop+1].dt_txt[12])\r\n                    + (forecast.list[loop+1].dt_txt[13]) + (forecast.list[loop+1].dt_txt[14]) + (forecast.list[loop+1].dt_txt[15])}}\r\n                  </span>\r\n                  <span class=\"example-fill-remaining-space\"></span>\r\n                  <span>\r\n                    <img src=\"https://openweathermap.org/img/w/{{forecast.list[loop].weather[0].icon}}.png\">\r\n                  </span>\r\n                  <span>\r\n                    {{forecast.list[loop].main.temp | number:'1.0-0'}}&deg;C\r\n                  </span>\r\n\r\n                  <!-- <ng-container id=\"compass\">\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/east.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/south.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/west.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                        </mat-icon>\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg == null\">\r\n                        Calm\r\n                      </span>\r\n                      </ng-container> -->\r\n                </div>\r\n              </div>\r\n              <mat-divider></mat-divider>\r\n            </ng-container>\r\n          </div>\r\n        </mat-expansion-panel>\r\n      </mat-accordion>\r\n    </ng-container>\r\n  </div>\r\n\r\n\r\n  <div>\r\n    <ng-container *ngIf=\"metric\">\r\n      <mat-accordion>\r\n        <mat-expansion-panel>\r\n          <mat-expansion-panel-header>\r\n            <mat-panel-title>\r\n\r\n              <div class=\"weather_child\">\r\n                <div class=\"box\">\r\n                  <span>\r\n                    Current:\r\n                  </span>\r\n                  <span>\r\n                    <img src=\"https://openweathermap.org/img/w/{{forecastFH.list[0].weather[0].icon}}.png\">\r\n                  </span>\r\n                  <span>\r\n                    {{forecastFH.list[0].main.temp | number:'1.0-0'}}&deg;F\r\n                  </span>\r\n                  <span>\r\n                  </span>\r\n                </div>\r\n              </div>\r\n            </mat-panel-title>\r\n          </mat-expansion-panel-header>\r\n          <div id=\"\">\r\n            <!-- index 1 -->\r\n            <ng-container *ngFor=\"let loop of [1,2,3,4]\">\r\n              <div class=\"weather_child\">\r\n                <div class=\"box\">\r\n                  <span>\r\n                    {{(forecastFH.list[loop].dt_txt[11]) + (forecastFH.list[loop].dt_txt[12]) + (forecastFH.list[loop].dt_txt[13]) + (forecastFH.list[loop].dt_txt[14])\r\n                    + (forecastFH.list[loop].dt_txt[15])}} - {{(forecastFH.list[loop+1].dt_txt[11]) + (forecastFH.list[loop+1].dt_txt[12])\r\n                    + (forecastFH.list[loop+1].dt_txt[13]) + (forecastFH.list[loop+1].dt_txt[14]) + (forecastFH.list[loop+1].dt_txt[15])}}\r\n                  </span>\r\n                  <span class=\"example-fill-remaining-space\"></span>\r\n                  <span>\r\n                    <img src=\"https://openweathermap.org/img/w/{{forecastFH.list[loop].weather[0].icon}}.png\">\r\n                  </span>\r\n                  <span>\r\n                    {{forecastFH.list[loop].main.temp | number:'1.0-0'}}&deg;F\r\n                  </span>\r\n\r\n                  <!-- <ng-container id=\"compass\">\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/east.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/south.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315\">\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/west.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg == null\">\r\n                    Calm\r\n                  </span>\r\n                  </ng-container> -->\r\n                </div>\r\n              </div>\r\n              <mat-divider></mat-divider>\r\n            </ng-container>\r\n          </div>\r\n        </mat-expansion-panel>\r\n      </mat-accordion>\r\n    </ng-container>\r\n  </div>\r\n\r\n\r\n     <app-instagram-feed></app-instagram-feed>\r\n<!--\r\n\r\n  <div id=\"newsUpdate\" *ngFor=\"let news of homeNews.update\">\r\n    <mat-expansion-panel id=\"newsUpdate\" *ngIf=\"news.homepage == 'true'\">\r\n      <mat-expansion-panel-header>\r\n        <mat-panel-title>\r\n          <div class=\"box\">\r\n            <span id=\"newsTimeStamp\">{{news.timeStamp}}</span>\r\n            <span><mat-icon id=\"newsSeverity{{news.severity}}\">{{news.type}}</mat-icon></span>\r\n            <span id=\"newsDesc\">{{news.desc}}</span>\r\n          </div>\r\n        </mat-panel-title>\r\n      </mat-expansion-panel-header>\r\n      {{news.content}}\r\n    </mat-expansion-panel>\r\n  </div> -->\r\n</div>\r\n"
+module.exports = "<!-- <div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.jpg\">\r\n</div> -->\r\n<div id=\"homepage-body\">\r\n\r\n  <mat-toolbar>Event News</mat-toolbar>\r\n\r\n<div id=\"content\" *ngFor=\"let news of homeNews.update| slice:0:1; let i=index\">\r\n    <mat-accordion class=\"example-headers-align\">\r\n        <mat-expansion-panel [expanded]=\"step === 0\" (opened)=\"setStep(0)\" hideToggle>\r\n              <mat-expansion-panel-header>\r\n               <mat-panel-description>\r\n                  {{homeNews.update[0].desc}}\r\n              <mat-icon id=\"newsSeverity{{homeNews.update[0].severity}}\">{{homeNews.update[0].type}}</mat-icon>\r\n            </mat-panel-description>\r\n            </mat-expansion-panel-header>\r\n            <div class=\"green-break-line\"></div>\r\n                  <ul>\r\n                    <li>\r\n                      {{homeNews.update[1].timeStamp}}: {{homeNews.update[0].content}}\r\n                    </li>\r\n                </ul>\r\n              <mat-action-row>\r\n                <button mat-button color=\"primary\" (click)=\"nextStep()\">Next</button>\r\n             </mat-action-row>\r\n          </mat-expansion-panel>\r\n</mat-accordion>\r\n\r\n<mat-accordion class=\"example-headers-align\">\r\n<mat-expansion-panel [expanded]=\"step === 1\" (opened)=\"setStep(1)\" hideToggle>\r\n    <mat-expansion-panel-header>\r\n  <mat-panel-description>\r\n    {{homeNews.update[1].desc}}\r\n<mat-icon id=\"newsSeverity{{homeNews.update[1].severity}}\">{{homeNews.update[1].type}}</mat-icon>\r\n</mat-panel-description>\r\n  </mat-expansion-panel-header>\r\n  <div class=\"green-break-line\"></div>\r\n    <ul>\r\n      <li>\r\n          {{homeNews.update[1].timeStamp}}: {{homeNews.update[1].content}}\r\n     </li>\r\n    </ul>\r\n  <mat-action-row>\r\n     <button mat-button color=\"warn\" (click)=\"prevStep()\">Previous</button>\r\n     <button mat-button color=\"primary\" (click)=\"nextStep()\">Next</button>\r\n  </mat-action-row>\r\n</mat-expansion-panel>\r\n</mat-accordion>\r\n\r\n<mat-accordion class=\"example-headers-align\">\r\n    <mat-expansion-panel [expanded]=\"step === 2\" (opened)=\"setStep(2)\" hideToggle>\r\n        <mat-expansion-panel-header>\r\n      <mat-panel-description>\r\n        {{homeNews.update[2].desc}}\r\n  <mat-icon id=\"newsSeverity{{homeNews.update[2].severity}}\">{{homeNews.update[2].type}}</mat-icon>\r\n    </mat-panel-description>\r\n      </mat-expansion-panel-header>\r\n      <div class=\"green-break-line\"></div>\r\n        <ul>\r\n          <li>\r\n              {{homeNews.update[2].timeStamp}}: {{homeNews.update[2].content}}\r\n         </li>\r\n        </ul>\r\n      <mat-action-row>\r\n         <button mat-button color=\"warn\" (click)=\"prevStep()\">Previous</button>\r\n         <button mat-button color=\"primary\" (click)=\"nextStep()\">End</button>\r\n      </mat-action-row>\r\n    </mat-expansion-panel>\r\n</mat-accordion>\r\n\r\n</div>\r\n  <div>\r\n    <ng-container *ngIf=\"!metric\">\r\n      <mat-accordion>\r\n        <mat-expansion-panel>\r\n          <mat-expansion-panel-header class=\"fill-space\">\r\n            <mat-panel-title>\r\n              <div class=\"weather_child\">\r\n                <div class=\"box\">\r\n                  <span>\r\n                    Current Weather:\r\n                  </span>\r\n                  <ng-container id=\"ImgTemp\">\r\n                    <span>\r\n                      <img src=\"https://openweathermap.org/img/w/{{forecast.list[0].weather[0].icon}}.png\">\r\n                    </span>\r\n                    <span>\r\n                      {{forecast.list[0].main.temp | number:'1.0-0'}}&deg;C\r\n                    </span>\r\n                  </ng-container>\r\n                  <span>\r\n                  </span>\r\n                </div>\r\n              </div>\r\n            </mat-panel-title>\r\n          </mat-expansion-panel-header>\r\n          <button mat-button (click)=\"metric = !metric\">{{metric ? '&deg;C' : '&deg;F'}}</button>\r\n          <div id=\"\">\r\n            <!-- index 1 -->\r\n            <ng-container *ngFor=\"let loop of [1,2,3,4]\">\r\n              <div class=\"weather_child\">\r\n                <div class=\"box\">\r\n                  <span>\r\n                    {{(forecast.list[loop].dt_txt[11]) + (forecast.list[loop].dt_txt[12]) + (forecast.list[loop].dt_txt[13]) + (forecast.list[loop].dt_txt[14])\r\n                    + (forecast.list[loop].dt_txt[15])}} - {{(forecast.list[loop+1].dt_txt[11]) + (forecast.list[loop+1].dt_txt[12])\r\n                    + (forecast.list[loop+1].dt_txt[13]) + (forecast.list[loop+1].dt_txt[14]) + (forecast.list[loop+1].dt_txt[15])}}\r\n                  </span>\r\n                  <span class=\"example-fill-remaining-space\"></span>\r\n                  <span>\r\n                    <img src=\"https://openweathermap.org/img/w/{{forecast.list[loop].weather[0].icon}}.png\">\r\n                  </span>\r\n                  <span>\r\n                    {{forecast.list[loop].main.temp | number:'1.0-0'}}&deg;C\r\n                  </span>\r\n\r\n                  <!-- <ng-container id=\"compass\">\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/east.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/south.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/west.png\">\r\n                        </mat-icon>\r\n\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360\">\r\n\r\n                        <mat-icon>\r\n                          <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                        </mat-icon>\r\n                      </span>\r\n                      <span *ngIf=\"forecast.list[loop].wind.deg == null\">\r\n                        Calm\r\n                      </span>\r\n                      </ng-container> -->\r\n                </div>\r\n              </div>\r\n              <mat-divider></mat-divider>\r\n            </ng-container>\r\n          </div>\r\n        </mat-expansion-panel>\r\n      </mat-accordion>\r\n    </ng-container>\r\n  </div>\r\n\r\n\r\n  <div>\r\n    <ng-container *ngIf=\"metric\">\r\n      <mat-accordion>\r\n        <mat-expansion-panel>\r\n          <mat-expansion-panel-header>\r\n            <mat-panel-title>\r\n\r\n              <div class=\"weather_child\">\r\n                <div class=\"box\">\r\n                  <span>\r\n                    Current Weather:\r\n                  </span>\r\n                  <span>\r\n                    <img src=\"https://openweathermap.org/img/w/{{forecastFH.list[0].weather[0].icon}}.png\">\r\n                  </span>\r\n                  <span>\r\n                    {{forecastFH.list[0].main.temp | number:'1.0-0'}}&deg;F\r\n                  </span>\r\n                  <span>\r\n                  </span>\r\n                </div>\r\n              </div>\r\n            </mat-panel-title>\r\n          </mat-expansion-panel-header>\r\n          <button mat-button (click)=\"metric = !metric\">{{metric ? '&deg;C' : '&deg;F'}}</button>\r\n          <div id=\"\">\r\n            <!-- index 1 -->\r\n            <ng-container *ngFor=\"let loop of [1,2,3,4]\">\r\n              <div class=\"weather_child\">\r\n                <div class=\"box\">\r\n                  <span>\r\n                    {{(forecastFH.list[loop].dt_txt[11]) + (forecastFH.list[loop].dt_txt[12]) + (forecastFH.list[loop].dt_txt[13]) + (forecastFH.list[loop].dt_txt[14])\r\n                    + (forecastFH.list[loop].dt_txt[15])}} - {{(forecastFH.list[loop+1].dt_txt[11]) + (forecastFH.list[loop+1].dt_txt[12])\r\n                    + (forecastFH.list[loop+1].dt_txt[13]) + (forecastFH.list[loop+1].dt_txt[14]) + (forecastFH.list[loop+1].dt_txt[15])}}\r\n                  </span>\r\n                  <span class=\"example-fill-remaining-space\"></span>\r\n                  <span>\r\n                    <img src=\"https://openweathermap.org/img/w/{{forecastFH.list[loop].weather[0].icon}}.png\">\r\n                  </span>\r\n                  <span>\r\n                    {{forecastFH.list[loop].main.temp | number:'1.0-0'}}&deg;F\r\n                  </span>\r\n\r\n                  <!-- <ng-container id=\"compass\">\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg >= 0 && forecast.list[loop].wind.deg <= 45\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 45 && forecast.list[loop].wind.deg <= 135\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/east.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 135 && forecast.list[loop].wind.deg <= 225\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/south.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 225 && forecast.list[loop].wind.deg <= 315\">\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/west.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg > 315 && forecast.list[loop].wind.deg <= 360\">\r\n\r\n                    <mat-icon>\r\n                      <img class=\"compass-img\" src=\"./assets/img/north.png\">\r\n                    </mat-icon>\r\n                  </span>\r\n                  <span *ngIf=\"forecast.list[loop].wind.deg == null\">\r\n                    Calm\r\n                  </span>\r\n                  </ng-container> -->\r\n                </div>\r\n              </div>\r\n              <mat-divider></mat-divider>\r\n            </ng-container>\r\n          </div>\r\n        </mat-expansion-panel>\r\n      </mat-accordion>\r\n    </ng-container>\r\n  </div>\r\n\r\n  <mat-toolbar>Instagram Feed @WATC2018</mat-toolbar>\r\n\r\n  <app-instagram-feed></app-instagram-feed>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2058,7 +2056,7 @@ module.exports = "<!-- <div id=\"headerImg\">\r\n  <img src=\"./assets/img/WATC.
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#homepage-body {\n  margin-bottom: 20%;\n  overflow: hidden; }\n\n.box {\n  display: flex;\n  align-items: center; }\n\n.box span {\n  font-size: 100%; }\n\n#headerImg img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n#weather-toolbar {\n  background-color: #5cd65c; }\n\n.flex-container {\n  display: flex;\n  justify-content: space-around;\n  background: #76b852;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to left, #8DC26F, #76b852);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n.compass-img {\n  width: 245%;\n  height: 245%; }\n\n.wind-small {\n  font-size: 70%; }\n\n.up {\n  color: blue; }\n\n.down {\n  color: red; }\n\n.flex-item {\n  width: 100%;\n  text-align: center;\n  font-size: 150%;\n  margin-top: 2%; }\n\n.flex-temp .small {\n  font-size: 70%; }\n\n#wind {\n  font-size: 80%;\n  width: 70%;\n  text-align: center; }\n\n#direction {\n  float: right; }\n\n#forecast {\n  vertical-align: middle;\n  font-size: 50%; }\n\n#compass {\n  float: right; }\n\n.weather_child {\n  font-size: 110%; }\n\n.news-image-right {\n  position: fixed;\n  margin: 3%;\n  overflow: hidden; }\n\n.news-content-aside {\n  position: relative;\n  left: 50px;\n  margin: 5px; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox.\r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.weather_card {\n  margin-bottom: 3%; }\n\n#newsSeverity1 {\n  color: red;\n  padding-right: 15px; }\n\n#newsSeverity2 {\n  color: orange;\n  padding-right: 15px; }\n\n#newsSeverity3 {\n  color: green;\n  padding-right: 15px; }\n\n#newsDesc {\n  width: 100%;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis; }\n\n#newsTimeStamp {\n  padding-right: 15px; }\n\n#newsUpdate {\n  margin: 1%;\n  margin-top: 2%; }\n\n.mat-accordion {\n  height: 10%; }\n\n.example-headers-align .mat-expansion-panel-header-title,\n.example-headers-align .mat-expansion-panel-header-description {\n  flex-basis: 0; }\n\n.example-headers-align .mat-expansion-panel-header-description {\n  justify-content: space-between;\n  align-items: center; }\n"
+module.exports = "#homepage-body {\n  margin-bottom: 10%;\n  overflow: hidden; }\n\n.box {\n  display: flex;\n  align-items: center; }\n\n.box span {\n  font-size: 100%; }\n\n#headerImg img {\n  width: 100%;\n  height: 100%;\n  vertical-align: middle; }\n\n.green-break-line {\n  background-color: #33ba3a;\n  width: 100%;\n  height: 2px; }\n\n.compass-img {\n  width: 245%;\n  height: 245%; }\n\n.wind-small {\n  font-size: 70%; }\n\n.up {\n  color: blue; }\n\n.down {\n  color: red; }\n\n.flex-item {\n  width: 100%;\n  text-align: center;\n  font-size: 150%;\n  margin-top: 2%; }\n\n.flex-temp .small {\n  font-size: 70%; }\n\n#wind {\n  font-size: 80%;\n  width: 70%;\n  text-align: center; }\n\n#direction {\n  float: right; }\n\n#forecast {\n  vertical-align: middle;\n  font-size: 50%; }\n\n#compass {\n  float: right; }\n\n.weather_child {\n  font-size: 110%; }\n\n.news-image-right {\n  position: fixed;\n  margin: 3%;\n  overflow: hidden; }\n\n.news-content-aside {\n  position: relative;\n  left: 50px;\n  margin: 5px; }\n\n.example-fill-remaining-space {\n  /* This fills the remaining space, by using flexbox.\r\n       Every toolbar row uses a flexbox row layout. */\n  flex: 1 1 auto; }\n\n.weather_card {\n  margin-bottom: 3%; }\n\n#newsSeverity1 {\n  color: red;\n  padding-right: 15px; }\n\n#newsSeverity2 {\n  color: orange;\n  padding-right: 15px; }\n\n#newsSeverity3 {\n  color: green;\n  padding-right: 15px; }\n\n#newsDesc {\n  width: 100%;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis; }\n\n#newsTimeStamp {\n  padding-right: 15px; }\n\n#newsUpdate {\n  margin: 1%;\n  margin-top: 2%; }\n\n.mat-accordion {\n  height: 10%; }\n\n.example-headers-align .mat-expansion-panel-header-title,\n.example-headers-align .mat-expansion-panel-header-description {\n  flex-basis: 0; }\n\n.example-headers-align .mat-expansion-panel-header-description {\n  justify-content: space-between;\n  align-items: center; }\n"
 
 /***/ }),
 
@@ -2097,9 +2095,6 @@ var HomepageComponent = /** @class */ (function () {
     }
     HomepageComponent.prototype.ngOnInit = function () {
         this.InjectableService();
-    };
-    HomepageComponent.prototype.onActivate = function (event) {
-        // preventDefault();
     };
     HomepageComponent.prototype.InjectableService = function () {
         var _this = this;
@@ -2157,7 +2152,7 @@ var HomepageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"instagram-feed\">\r\n  <div class=\"instafeed-container\">\r\n    <!-- ng if video-->\r\n      <video class=\"transparent-instafeed\" src={{link}} autoplay controls loop></video>\r\n    <!-- else image -->\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[1].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[2].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[3].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[4].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[5].images.standard_resolution.url}}\">\r\n  </div>\r\n</div>\r\n\r\n"
+module.exports = "<div id=\"instagram-feed\">\r\n  <div class=\"instafeed-container\">\r\n    <!-- ng if video-->\r\n      <video class=\"transparent-instafeed\" src={{link}} autoplay loop></video>\r\n    <!-- else image -->\r\n    <p class=\"para\">Austrailia ahead in team standings</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[1].images.standard_resolution.url}}\">\r\n    <p class=\"para\"><span>Austrailia ahead in team standings | 2</span></p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[2].images.standard_resolution.url}}\">\r\n    <p class=\"para\"><span>Caption | 3</span></p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[3].images.standard_resolution.url}}\">\r\n    <p class=\"para\"><span>Caption | 4</span></p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[4].images.standard_resolution.url}}\">\r\n    <p class=\"para\"><span>Caption | 5</span></p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[5].images.standard_resolution.url}}\">\r\n    <p class=\"para\"><span>Caption | 6</span></p>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2168,7 +2163,7 @@ module.exports = "<div id=\"instagram-feed\">\r\n  <div class=\"instafeed-contai
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#instagram-feed {\n  display: flex;\n  flex-direction: row;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.instafeed-container {\n  width: 100%; }\n\n.transparent-instafeed {\n  height: 40vh;\n  width: 90vw; }\n\n.para {\n  color: white;\n  position: relative;\n  top: -17%;\n  left: -90%; }\n\nimg {\n  width: 90%; }\n"
+module.exports = "#instagram-feed {\n  display: flex;\n  flex-direction: row;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.instafeed-container {\n  width: 100%; }\n\n.transparent-instafeed {\n  height: 40vh;\n  width: 90vw; }\n\n.para {\n  color: white;\n  background: black;\n  /* fallback color */\n  background: rgba(0, 0, 0, 0.5);\n  padding: 2%;\n  margin-top: -10%;\n  position: relative; }\n\nimg {\n  width: 90%; }\n\nvideo {\n  -o-object-fit: fill;\n     object-fit: fill;\n  position: relative;\n  z-index: 0; }\n\n.margin-bottom {\n  margin-bottom: 42px; }\n"
 
 /***/ }),
 
@@ -2200,7 +2195,7 @@ var InstagramFeedComponent = /** @class */ (function () {
         this._instagramFeed = _instagramFeed;
         this.title = 'title';
         // tslint:disable-next-line:max-line-length
-        this.link = 'https://scontent.cdninstagram.com/vp/9c0895b9ad69153a42bd0230f29ec056/5B515265/t50.2886-16/36945138_1068663479958683_2957417478189219840_n.mp4';
+        this.link = 'https://scontent.cdninstagram.com/vp/0732e16b298f133683ce204717f0af87/5B5A8CE5/t50.2886-16/36945138_1068663479958683_2957417478189219840_n.mp4';
     }
     InstagramFeedComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -2218,142 +2213,6 @@ var InstagramFeedComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_services_weather_service__WEBPACK_IMPORTED_MODULE_1__["InstagramFeedService"]])
     ], InstagramFeedComponent);
     return InstagramFeedComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/homepage/quote/quote.component.html":
-/*!****************************************************************!*\
-  !*** ./src/app/components/homepage/quote/quote.component.html ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<mat-list>\r\n  <mat-list-item class=\"mat-item\">\r\n\r\n          \r\n  <img src=\"./assets/img/ILGU.png\" class=\"mat-item-img\">\r\n    \r\n      <div class=\"mat-item-content\">\r\n        <div class=\"mat-item-heading\">\r\n          <h3>{{ quote.title }}</h3>\r\n        </div>\r\n                      \r\n        <div class=\"mat-item-para\">\r\n          {{ quote.content }}\r\n        </div>\r\n\r\n      </div>\r\n    </mat-list-item>\r\n  </mat-list>\r\n<mat-divider></mat-divider>"
-
-/***/ }),
-
-/***/ "./src/app/components/homepage/quote/quote.component.scss":
-/*!****************************************************************!*\
-  !*** ./src/app/components/homepage/quote/quote.component.scss ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".news-content-wrapper {\n  height: 400px;\n  width: 100%;\n  overflow-y: hidden; }\n\n.mat-item {\n  height: 200px;\n  padding: 5%; }\n\n.mat-item-img {\n  height: 200%;\n  width: 33%;\n  margin-left: -50px; }\n\n.mat-item-content {\n  margin-left: 30px; }\n\n.mat-item-para {\n  height: 30%; }\n"
-
-/***/ }),
-
-/***/ "./src/app/components/homepage/quote/quote.component.ts":
-/*!**************************************************************!*\
-  !*** ./src/app/components/homepage/quote/quote.component.ts ***!
-  \**************************************************************/
-/*! exports provided: QuoteComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuoteComponent", function() { return QuoteComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var QuoteComponent = /** @class */ (function () {
-    function QuoteComponent() {
-    }
-    QuoteComponent.prototype.ngOnInit = function () {
-    };
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-        __metadata("design:type", Object)
-    ], QuoteComponent.prototype, "quote", void 0);
-    QuoteComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-quote',
-            template: __webpack_require__(/*! ./quote.component.html */ "./src/app/components/homepage/quote/quote.component.html"),
-            styles: [__webpack_require__(/*! ./quote.component.scss */ "./src/app/components/homepage/quote/quote.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], QuoteComponent);
-    return QuoteComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/homepage/quotes/quotes.component.html":
-/*!******************************************************************!*\
-  !*** ./src/app/components/homepage/quotes/quotes.component.html ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<app-quote *ngFor=\"let quote of quotes | slice:0:2; let i=index\" [quote]=\"quote\"></app-quote>"
-
-/***/ }),
-
-/***/ "./src/app/components/homepage/quotes/quotes.component.scss":
-/*!******************************************************************!*\
-  !*** ./src/app/components/homepage/quotes/quotes.component.scss ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/components/homepage/quotes/quotes.component.ts":
-/*!****************************************************************!*\
-  !*** ./src/app/components/homepage/quotes/quotes.component.ts ***!
-  \****************************************************************/
-/*! exports provided: QuotesComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuotesComponent", function() { return QuotesComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _shared_quote_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../shared/quote.service */ "./src/app/shared/quote.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var QuotesComponent = /** @class */ (function () {
-    function QuotesComponent(quoteService) {
-        this.quoteService = quoteService;
-    }
-    QuotesComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.quoteService.getQuotes()
-            .subscribe(function (quotes) { return _this.quotes = quotes; }, function (error) { return console.log(error); });
-    };
-    QuotesComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-quotes',
-            template: __webpack_require__(/*! ./quotes.component.html */ "./src/app/components/homepage/quotes/quotes.component.html"),
-            styles: [__webpack_require__(/*! ./quotes.component.scss */ "./src/app/components/homepage/quotes/quotes.component.scss")]
-        }),
-        __metadata("design:paramtypes", [_shared_quote_service__WEBPACK_IMPORTED_MODULE_1__["QuoteService"]])
-    ], QuotesComponent);
-    return QuotesComponent;
 }());
 
 
@@ -3155,6 +3014,10 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+// tslint:disable-next-line:max-line-length
+// import {MaynoothInfoBottomSheetComponent} from '../components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet';
+// tslint:disable-next-line:max-line-length
+// import { LocalInfoBottomSheetComponent } from './components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component';
 var MaterialModule = /** @class */ (function () {
     function MaterialModule() {
     }
@@ -3201,66 +3064,6 @@ var MaterialModule = /** @class */ (function () {
         })
     ], MaterialModule);
     return MaterialModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/shared/quote.service.ts":
-/*!*****************************************!*\
-  !*** ./src/app/shared/quote.service.ts ***!
-  \*****************************************/
-/*! exports provided: QuoteService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuoteService", function() { return QuoteService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var QuoteService = /** @class */ (function () {
-    function QuoteService(http) {
-        this.http = http;
-    }
-    QuoteService.prototype.addQuote = function (title, content, severity) {
-        var body = JSON.stringify({ content: content, title: title, severity: severity });
-        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]({ 'Content-Type': 'application/json' });
-        return this.http.post('http://localhost:8000/api/quote/', body, { headers: headers });
-    };
-    QuoteService.prototype.getQuotes = function () {
-        return this.http.get('http://localhost:8000/api/quotes')
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (response) {
-            return response.json().quotes;
-        }));
-    };
-    QuoteService.prototype.updateQuote = function (id, newTitle, newContent, newSeverity) {
-        var body = JSON.stringify({ title: newTitle, content: newContent, severity: newSeverity });
-        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]({ 'Content-Type': 'application/json' });
-        return this.http.put('http://localhost:8000/api/quote/' + id, body, { headers: headers })
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (response) { return response.json(); }));
-    };
-    QuoteService.prototype.deleteQuote = function (id) {
-        return this.http.delete('http://localhost:8000/api/quote/' + id);
-    };
-    QuoteService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_1__["Http"]])
-    ], QuoteService);
-    return QuoteService;
 }());
 
 

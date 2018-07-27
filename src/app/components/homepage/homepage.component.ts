@@ -37,16 +37,8 @@ export class HomepageComponent implements OnInit {
    }
 
   ngOnInit() {
-
     this.InjectableService();
-
   }
-
-   onActivate(event) {
-
-   // preventDefault();
-
-   }
 
 
    InjectableService() {
@@ -65,7 +57,7 @@ export class HomepageComponent implements OnInit {
         this.homeNews = homeNews;
         });
 
-        
+
       },
       error => this.errorMessage = <any>error);
    }
