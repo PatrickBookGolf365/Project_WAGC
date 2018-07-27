@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { MaynoothMapService } from '../services/maynooth-map.service';
 import { MatBottomSheet, MatBottomSheetRef } from '@angular/material';
-import { BottomSheetOverviewComponent } from '../bottom-sheet/bottom-sheet-overview.component';
+import { MaynoothInfoBottomSheetComponent } from '../maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet';
+import { LocalInfoBottomSheetComponent } from '../maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component';
 
 @Component({
   selector: 'app-geolocation-maynooth-detail',
@@ -16,10 +17,6 @@ export class GeolocationMaynoothDetailComponent implements OnInit {
               private _maynooth: MaynoothMapService,
               private bottomSheet: MatBottomSheet) { }
 
-  openBottomSheet(): void {
-    this.bottomSheet.open(BottomSheetOverviewComponent);
-    }
-
   ngOnInit() {
     this._route.paramMap.
          subscribe((params: ParamMap) =>
@@ -27,5 +24,12 @@ export class GeolocationMaynoothDetailComponent implements OnInit {
         );
   }
 
+  busBottomSheet(): void {
+    this.bottomSheet.open(MaynoothInfoBottomSheetComponent);
+  }
+
+  localBottomSheet(): void {
+    this.bottomSheet.open(LocalInfoBottomSheetComponent);
+  }
 }
 

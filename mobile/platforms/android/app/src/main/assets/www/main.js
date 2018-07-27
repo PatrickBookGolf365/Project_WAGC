@@ -191,13 +191,13 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+// tslint:disable-next-line:max-line-length
 
 
 
+// tslint:disable-next-line:max-line-length
 
-
-
-
+// tslint:disable-next-line:max-line-length
 
 
 
@@ -303,11 +303,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_additional_info_schedule_schedule_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/additional-info/schedule/schedule.component */ "./src/app/components/additional-info/schedule/schedule.component.ts");
 /* harmony import */ var _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/additional-info/contact/contact.component */ "./src/app/components/additional-info/contact/contact.component.ts");
 /* harmony import */ var _components_event_event_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/event/event.component */ "./src/app/components/event/event.component.ts");
-/* harmony import */ var _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/admin/admin-create/admin-create.component */ "./src/app/components/admin/admin-create/admin-create.component.ts");
-/* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
-/* harmony import */ var _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/geolocation/geolocation.component */ "./src/app/components/geolocation/geolocation.component.ts");
-/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts");
-/* harmony import */ var _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component */ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/geolocation/geolocation.component */ "./src/app/components/geolocation/geolocation.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_mont_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_detail_geolocation_detail_omeara_o_meara_detail_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.ts");
+/* harmony import */ var _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component */ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.ts");
 
 
 
@@ -320,9 +319,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
 
-
+// tslint:disable-next-line:max-line-length
 
 
 // tslint:disable-next-line:max-line-length
@@ -333,7 +331,6 @@ var appRoutes = [
     { path: 'events', component: _components_event_event_component__WEBPACK_IMPORTED_MODULE_11__["EventComponent"] },
     { path: 'add-info', component: _components_additional_info_additional_info_component__WEBPACK_IMPORTED_MODULE_5__["AdditionalInfoComponent"] },
     { path: 'teamprofiles', component: _components_team_profiles_team_profiles_component__WEBPACK_IMPORTED_MODULE_4__["TeamProfilesComponent"] },
-    // { path: 'favteamprofiles' , component: FavTeamProfilesComponent},
     { path: 'about', component: _components_additional_info_about_about_component__WEBPACK_IMPORTED_MODULE_7__["AboutComponent"] },
     { path: 'news', component: _components_additional_info_news_news_component__WEBPACK_IMPORTED_MODULE_6__["NewsComponent"] },
     { path: 'eligibility', component: _components_additional_info_eligibitity_eligibility_component__WEBPACK_IMPORTED_MODULE_8__["EligibilityComponent"] },
@@ -342,11 +339,10 @@ var appRoutes = [
     { path: 'livescoring', component: _components_live_score_live_score_component__WEBPACK_IMPORTED_MODULE_2__["LiveScoreComponent"] },
     { path: 'transport', component: _components_transport_transport_component__WEBPACK_IMPORTED_MODULE_3__["TransportComponent"] },
     { path: 'contact', component: _components_additional_info_contact_contact_component__WEBPACK_IMPORTED_MODULE_10__["ContactComponent"] },
-    { path: 'admin', component: _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_13__["AdminComponent"] },
-    { path: 'admin-create', component: _components_admin_admin_create_admin_create_component__WEBPACK_IMPORTED_MODULE_12__["AdminCreateComponent"] },
-    { path: 'geolocation', component: _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_14__["GeolocationComponent"] },
-    { path: 'geolocation/:id', component: _components_geolocation_geolocation_detail_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_15__["GeolocationDetailComponent"] },
-    { path: 'geolocation-maynooth', component: _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_16__["GeolocationMaynoothDetailComponent"] },
+    { path: 'geolocation', component: _components_geolocation_geolocation_component__WEBPACK_IMPORTED_MODULE_12__["GeolocationComponent"] },
+    { path: 'geolocation/:id', component: _components_geolocation_geolocation_detail_geolocation_detail_mont_geolocation_detail_component__WEBPACK_IMPORTED_MODULE_13__["GeolocationDetailComponent"] },
+    { path: 'geolocation-meara/:id', component: _components_geolocation_geolocation_detail_geolocation_detail_omeara_o_meara_detail_component__WEBPACK_IMPORTED_MODULE_14__["OMearaDetailComponent"] },
+    { path: 'geolocation-maynooth', component: _components_geolocation_geolocation_maynooth_detail_geolocation_maynooth_detail_component__WEBPACK_IMPORTED_MODULE_15__["GeolocationMaynoothDetailComponent"] },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 var routing = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(appRoutes);
@@ -752,7 +748,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewsComponent", function() { return NewsComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _news_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./news.service */ "./src/app/components/additional-info/news/news.service.ts");
-/* harmony import */ var _shared_quote_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../shared/quote.service */ "./src/app/shared/quote.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -764,11 +759,9 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-
 var NewsComponent = /** @class */ (function () {
-    function NewsComponent(_newsService, quoteService) {
+    function NewsComponent(_newsService) {
         this._newsService = _newsService;
-        this.quoteService = quoteService;
     }
     NewsComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -776,11 +769,6 @@ var NewsComponent = /** @class */ (function () {
             .subscribe(function (news) {
             _this.news = news;
         }, function (error) { return _this.errorMessage = error; });
-        // this.quoteService.getQuotes()
-        //   .subscribe(
-        //     (quotes: Quote[]) => this.quotes = quotes,
-        //     (error: Response) => console.log(error)
-        //    );
     };
     NewsComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -788,7 +776,7 @@ var NewsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./news.component.html */ "./src/app/components/additional-info/news/news.component.html"),
             styles: [__webpack_require__(/*! ./news.component.scss */ "./src/app/components/additional-info/news/news.component.scss")]
         }),
-        __metadata("design:paramtypes", [_news_service__WEBPACK_IMPORTED_MODULE_1__["NewsService"], _shared_quote_service__WEBPACK_IMPORTED_MODULE_2__["QuoteService"]])
+        __metadata("design:paramtypes", [_news_service__WEBPACK_IMPORTED_MODULE_1__["NewsService"]])
     ], NewsComponent);
     return NewsComponent;
 }());
@@ -831,11 +819,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var NewsService = /** @class */ (function () {
     function NewsService(_http) {
         this._http = _http;
-        this._newsUrl = "http://watc.bookgolf365.ie/news.json";
+        this._newsUrl = 'http://watc.bookgolf365.ie/news.json';
     }
     NewsService.prototype.getNews = function () {
         return this._http.get(this._newsUrl)
-            .do(function (data) { return console.log("All: " + JSON.stringify(data)); })
+            .do(function (data) { return console.log('All: ' + JSON.stringify(data)); })
             .catch(this.handleError);
     };
     NewsService.prototype.handleError = function (err) {
@@ -1318,91 +1306,21 @@ var YelpService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.html":
-/*!******************************************************************************************!*\
-  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.html ***!
-  \******************************************************************************************/
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.html":
+/*!*********************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.html ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-nav-list >\r\n  <p>Info Coming Soon!</p>\r\n</mat-nav-list>\r\n"
+module.exports = "<div id=\"map\"></div>\r\n\r\n<div *ngIf=\"mont_hole$ | async as hole\">\r\n    <div class=\"contain\">\r\n        <mat-card class=\"mat-elevation-z10\">\r\n          <div class=\"flex-item1\">\r\n              <p>Metres: {{metres}}</p>\r\n\r\n              <p>Yards: {{yards}}</p>\r\n\r\n              <p>Kilometres: {{kilometres}}</p>\r\n\r\n              <p>Miles: {{miles}}</p>\r\n          </div>\r\n\r\n          <div class=\"flex-item2\">\r\n              <p>{{ hole.name }}</p>\r\n\r\n              <p>par {{ hole.par }}</p>\r\n\r\n              <p>Description {{hole.description}}</p>\r\n              <a href=\"https://vimeo.com/269921381\">Flyover</a>\r\n              <!-- <p> Flyover {{hole.flyover }}</p> -->\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n<div>\r\n\r\n<button class=\"mat-button\" mat-button (click)=\"Back()\">Back</button>\r\n"
 
 /***/ }),
 
-/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.scss":
-/*!******************************************************************************************!*\
-  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.scss ***!
-  \******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts":
-/*!****************************************************************************************!*\
-  !*** ./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts ***!
-  \****************************************************************************************/
-/*! exports provided: BottomSheetOverviewComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BottomSheetOverviewComponent", function() { return BottomSheetOverviewComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var BottomSheetOverviewComponent = /** @class */ (function () {
-    function BottomSheetOverviewComponent(bottomSheetRef) {
-        this.bottomSheetRef = bottomSheetRef;
-    }
-    BottomSheetOverviewComponent.prototype.ngOnInit = function () {
-    };
-    BottomSheetOverviewComponent.prototype.openLink = function (event) {
-        this.bottomSheetRef.dismiss();
-        event.preventDefault();
-    };
-    BottomSheetOverviewComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-bottom-sheet-overview',
-            template: __webpack_require__(/*! ./bottom-sheet-overview.component.html */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.html"),
-            styles: [__webpack_require__(/*! ./bottom-sheet-overview.component.scss */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.scss")]
-        }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"]])
-    ], BottomSheetOverviewComponent);
-    return BottomSheetOverviewComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html":
-/*!*********************************************************************************************!*\
-  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html ***!
-  \*********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div id=\"map\"></div>\r\n\r\n<div *ngIf=\"hole$ | async as hole\">\r\n    <div class=\"contain\">\r\n        <mat-card class=\"mat-elevation-z10\">\r\n          <div class=\"flex-item1\">\r\n              <p>Metres: {{metres}}</p>\r\n\r\n              <p>Yards: {{yards}}</p>\r\n\r\n              <p>Kilometres: {{kilometres}}</p>\r\n\r\n              <p>Miles: {{miles}}</p>\r\n          </div>\r\n\r\n          <div class=\"flex-item2\">\r\n              <p>{{ hole.name }}</p>\r\n\r\n              <p>par {{ hole.par }}</p>\r\n\r\n              <p>Description {{hole.description}}</p>\r\n              <a href=\"https://vimeo.com/269921381\">Flyover</a>\r\n              <!-- <p> Flyover {{hole.flyover }}</p> -->\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n<div>\r\n\r\n<button class=\"mat-button\" mat-button (click)=\"Back()\">Back</button>\r\n"
-
-/***/ }),
-
-/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss":
-/*!*********************************************************************************************!*\
-  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss ***!
-  \*********************************************************************************************/
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.scss":
+/*!*********************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.scss ***!
+  \*********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1410,10 +1328,10 @@ module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height:
 
 /***/ }),
 
-/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts":
-/*!*******************************************************************************************!*\
-  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.ts ***!
-  \*******************************************************************************************/
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.ts":
+/*!*******************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.ts ***!
+  \*******************************************************************************************************************/
 /*! exports provided: GeolocationDetailComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1421,11 +1339,11 @@ module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height:
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeolocationDetailComponent", function() { return GeolocationDetailComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_montgomorie_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/montgomorie.service */ "./src/app/components/geolocation/services/montgomorie.service.ts");
+/* harmony import */ var _services_montgomorie_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/montgomorie.service */ "./src/app/components/geolocation/services/montgomorie.service.ts");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
-/* harmony import */ var _services_haversine_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/haversine.service */ "./src/app/components/geolocation/services/haversine.service.ts");
+/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
+/* harmony import */ var _services_haversine_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/haversine.service */ "./src/app/components/geolocation/services/haversine.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1451,7 +1369,7 @@ var GeolocationDetailComponent = /** @class */ (function () {
     }
     GeolocationDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])(function (params) {
+        this.mont_hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])(function (params) {
             return _this._mont.getHole(params.get('id'));
         }));
         this._route.paramMap.
@@ -1496,8 +1414,8 @@ var GeolocationDetailComponent = /** @class */ (function () {
     GeolocationDetailComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-geolocation-detail',
-            template: __webpack_require__(/*! ./geolocation-detail.component.html */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.html"),
-            styles: [__webpack_require__(/*! ./geolocation-detail.component.scss */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail.component.scss")]
+            template: __webpack_require__(/*! ./geolocation-detail.component.html */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.html"),
+            styles: [__webpack_require__(/*! ./geolocation-detail.component.scss */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component.scss")]
         }),
         __metadata("design:paramtypes", [_services_montgomorie_service__WEBPACK_IMPORTED_MODULE_1__["MontgomorieService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
@@ -1512,6 +1430,130 @@ var GeolocationDetailComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.html":
+/*!*******************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.html ***!
+  \*******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"map\"></div>\n\n<div *ngIf=\"meara_hole$ | async as hole\">\n    <div class=\"contain\">\n        <mat-card class=\"mat-elevation-z10\">\n          <div class=\"flex-item1\">\n              <p>Metres: {{metres}}</p>\n\n              <p>Yards: {{yards}}</p>\n\n              <p>Kilometres: {{kilometres}}</p>\n\n              <p>Miles: {{miles}}</p>\n          </div>\n\n          <div class=\"flex-item2\">\n              <p>{{ hole.name }}</p>\n\n              <p>par {{ hole.par }}</p>\n\n              <p>Description {{hole.description}}</p>\n              <a href=\"https://vimeo.com/269921381\">Flyover</a>\n              <!-- <p> Flyover {{hole.flyover }}</p> -->\n          </div>\n        </mat-card>\n      </div>\n<div>\n\n<button class=\"mat-button\" mat-button (click)=\"Back()\">Back</button>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.scss":
+/*!*******************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.scss ***!
+  \*******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 50%;\n  width: 100%;\n  z-index: -1; }\n\n.mat-button {\n  position: absolute;\n  bottom: 10%;\n  right: 5px;\n  margin: 3%;\n  background-color: #D8D8D8; }\n\n.contain {\n  position: fixed;\n  top: 50%;\n  width: 100%;\n  display: flex;\n  flex-direction: column; }\n\n.flex-item1 {\n  justify-content: space-between;\n  text-align: center;\n  width: 50%;\n  float: left; }\n\n.flex-item2 {\n  margin-left: 50%;\n  justify-content: space-between;\n  text-align: center; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.ts":
+/*!*****************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.ts ***!
+  \*****************************************************************************************************************/
+/*! exports provided: OMearaDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OMearaDetailComponent", function() { return OMearaDetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_o_meara_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/o-meara.service */ "./src/app/components/geolocation/services/o-meara.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
+/* harmony import */ var _services_haversine_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/haversine.service */ "./src/app/components/geolocation/services/haversine.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var OMearaDetailComponent = /** @class */ (function () {
+    function OMearaDetailComponent(_meara, _route, _haversine, router, _map) {
+        this._meara = _meara;
+        this._route = _route;
+        this._haversine = _haversine;
+        this.router = router;
+        this._map = _map;
+    }
+    OMearaDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.meara_hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["switchMap"])(function (params) {
+            return _this._meara.getHole(params.get('id'));
+        }));
+        this._route.paramMap.
+            subscribe(function (params) {
+            return _this._meara.showMap(+params.get('id'));
+        });
+        this.Haversine();
+    };
+    OMearaDetailComponent.prototype.Back = function () {
+        this.router.navigate(['../geolocation']);
+    };
+    OMearaDetailComponent.prototype.Haversine = function () {
+        var _this = this;
+        var id = +this._route.snapshot.paramMap.get('id');
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (x) {
+                _this.myLat = x.coords.latitude;
+                _this.myLng = x.coords.longitude;
+                _this._meara.getHoleLat(id).subscribe(function (hole) { return _this.courseLat = hole; });
+                _this._meara.getHoleLng(id).subscribe(function (hole) { return _this.courseLng = hole; });
+                console.log("longitude: " + _this.courseLat + " | latitude: " + _this.courseLng);
+                console.log("longitude: " + _this.myLat + " | latitude: " + _this.myLng);
+                var myCoords = {
+                    latitude: _this.myLat,
+                    longitude: _this.myLng
+                };
+                var courseCoords = {
+                    latitude: _this.courseLat,
+                    longitude: _this.courseLng
+                };
+                _this.metres = _this._haversine.getDistanceInMeters(myCoords, courseCoords);
+                _this.yards = _this._haversine.getDistanceInYards(myCoords, courseCoords);
+                _this.kilometres = _this._haversine.getDistanceInKilometers(myCoords, courseCoords);
+                _this.miles = _this._haversine.getDistanceInMiles(myCoords, courseCoords);
+                _this.metres = _this.metres.toFixed(2);
+                _this.yards = _this.yards.toFixed(2);
+                _this.kilometres = _this.kilometres.toFixed(2);
+                _this.miles = _this.miles.toFixed(2);
+            });
+        }
+    };
+    OMearaDetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-o-meara-detail',
+            template: __webpack_require__(/*! ./o-meara-detail.component.html */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.html"),
+            styles: [__webpack_require__(/*! ./o-meara-detail.component.scss */ "./src/app/components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_services_o_meara_service__WEBPACK_IMPORTED_MODULE_1__["OMearaService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
+            _services_haversine_service__WEBPACK_IMPORTED_MODULE_5__["HaversineService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+            _services_map_service__WEBPACK_IMPORTED_MODULE_4__["MapService"]])
+    ], OMearaDetailComponent);
+    return OMearaDetailComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.html":
 /*!***************************************************************************************************************!*\
   !*** ./src/app/components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component.html ***!
@@ -1519,7 +1561,7 @@ var GeolocationDetailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-sidenav></app-sidenav>\r\n\r\n    <p>\r\n      <button mat-icon-button [matMenuTriggerFor]=\"menu\" class=\"mat-ham-button\">\r\n          <i class=\"material-icons\">bookmarks</i>\r\n      </button>\r\n    </p>\r\n\r\n    <mat-menu #menu=\"matMenu\">\r\n        <button mat-menu-item (click)=\"openBottomSheet()\">Dublin Bus Stops</button>\r\n        <button mat-menu-item>Carton House Info</button>\r\n    </mat-menu>\r\n\r\n<div id=\"map\"></div>\r\n"
+module.exports = "<app-sidenav></app-sidenav>\r\n\r\n    <p>\r\n      <button mat-icon-button [matMenuTriggerFor]=\"menu\" class=\"mat-ham-button\">\r\n        <i class=\"material-icons\">\r\n          drag_indicator\r\n        </i>\r\n      </button>\r\n    </p>\r\n\r\n    <mat-menu #menu=\"matMenu\">\r\n        <button mat-menu-item (click)=\"localBottomSheet()\">Local Bus Information</button>\r\n        <button mat-menu-item (click)=\"busBottomSheet()\">Dublin Bus Information</button>\r\n    </mat-menu>\r\n\r\n<div id=\"map\"></div>\r\n"
 
 /***/ }),
 
@@ -1530,7 +1572,7 @@ module.exports = "<app-sidenav></app-sidenav>\r\n\r\n    <p>\r\n      <button ma
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 90%;\n  width: 100%;\n  z-index: -1; }\n\n.mat-ham-button {\n  background-color: white;\n  position: fixed;\n  right: 12px;\n  top: 12%; }\n"
+module.exports = "#map {\n  margin-top: -15px;\n  position: absolute;\n  height: 90%;\n  width: 100%;\n  z-index: -1; }\n\n.mat-ham-button {\n  background-color: white;\n  position: fixed;\n  right: 20px;\n  top: 17%; }\n"
 
 /***/ }),
 
@@ -1548,7 +1590,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _services_maynooth_map_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/maynooth-map.service */ "./src/app/components/geolocation/services/maynooth-map.service.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../bottom-sheet/bottom-sheet-overview.component */ "./src/app/components/geolocation/bottom-sheet/bottom-sheet-overview.component.ts");
+/* harmony import */ var _maynooth_info_bottom_sheet_dublin_bus_bottom_sheet_maynooth_info_bottom_sheet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.ts");
+/* harmony import */ var _maynooth_info_bottom_sheet_local_info_bottom_sheet_local_info_bottom_sheet_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1563,21 +1606,25 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var GeolocationMaynoothDetailComponent = /** @class */ (function () {
     function GeolocationMaynoothDetailComponent(_route, _maynooth, bottomSheet) {
         this._route = _route;
         this._maynooth = _maynooth;
         this.bottomSheet = bottomSheet;
     }
-    GeolocationMaynoothDetailComponent.prototype.openBottomSheet = function () {
-        this.bottomSheet.open(_bottom_sheet_bottom_sheet_overview_component__WEBPACK_IMPORTED_MODULE_4__["BottomSheetOverviewComponent"]);
-    };
     GeolocationMaynoothDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._route.paramMap.
             subscribe(function (params) {
             return _this._maynooth.showMap(+params.get('id'));
         });
+    };
+    GeolocationMaynoothDetailComponent.prototype.busBottomSheet = function () {
+        this.bottomSheet.open(_maynooth_info_bottom_sheet_dublin_bus_bottom_sheet_maynooth_info_bottom_sheet__WEBPACK_IMPORTED_MODULE_4__["MaynoothInfoBottomSheetComponent"]);
+    };
+    GeolocationMaynoothDetailComponent.prototype.localBottomSheet = function () {
+        this.bottomSheet.open(_maynooth_info_bottom_sheet_local_info_bottom_sheet_local_info_bottom_sheet_component__WEBPACK_IMPORTED_MODULE_5__["LocalInfoBottomSheetComponent"]);
     };
     GeolocationMaynoothDetailComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1665,6 +1712,146 @@ var GeolocationComponent = /** @class */ (function () {
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
     ], GeolocationComponent);
     return GeolocationComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.html":
+/*!***************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.html ***!
+  \***************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<mat-nav-list>\r\n  <h2>Dublin Bus Information</h2>\r\n\r\n  <p>66 Bus route operates from Maynooth to Merrion Square in Dublin's city centre.</p>\r\n\r\n  <p>67 Bus route also operates from Maynooth to Merrion Square in Dublin's city centre.</p>\r\n\r\n  <p>The bus stop is located directly across from the Glenroyal Hotel and roughly a five minute walk from Maynooth's main street.</p>\r\n\r\n</mat-nav-list>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.scss":
+/*!***************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.scss ***!
+  \***************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".mat-ham-button {\n  background-color: white;\n  position: fixed;\n  right: 20px;\n  top: 17%; }\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.ts":
+/*!*************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.ts ***!
+  \*************************************************************************************************************************/
+/*! exports provided: MaynoothInfoBottomSheetComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaynoothInfoBottomSheetComponent", function() { return MaynoothInfoBottomSheetComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MaynoothInfoBottomSheetComponent = /** @class */ (function () {
+    function MaynoothInfoBottomSheetComponent(bottomSheetRef) {
+        this.bottomSheetRef = bottomSheetRef;
+    }
+    MaynoothInfoBottomSheetComponent.prototype.ngOnInit = function () {
+    };
+    MaynoothInfoBottomSheetComponent.prototype.openLink = function (event) {
+        this.bottomSheetRef.dismiss();
+        event.preventDefault();
+    };
+    MaynoothInfoBottomSheetComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-bottom-sheet-overview',
+            template: __webpack_require__(/*! ./maynooth-info-bottom-sheet.html */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.html"),
+            styles: [__webpack_require__(/*! ./maynooth-info-bottom-sheet.scss */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"]])
+    ], MaynoothInfoBottomSheetComponent);
+    return MaynoothInfoBottomSheetComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.html":
+/*!**********************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.html ***!
+  \**********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  local-info-bottom-sheet works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.scss":
+/*!**********************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.scss ***!
+  \**********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.ts":
+/*!********************************************************************************************************************************!*\
+  !*** ./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.ts ***!
+  \********************************************************************************************************************************/
+/*! exports provided: LocalInfoBottomSheetComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocalInfoBottomSheetComponent", function() { return LocalInfoBottomSheetComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LocalInfoBottomSheetComponent = /** @class */ (function () {
+    function LocalInfoBottomSheetComponent(bottomSheetRef) {
+        this.bottomSheetRef = bottomSheetRef;
+    }
+    LocalInfoBottomSheetComponent.prototype.ngOnInit = function () {
+    };
+    LocalInfoBottomSheetComponent.prototype.openLink = function (event) {
+        this.bottomSheetRef.dismiss();
+        event.preventDefault();
+    };
+    LocalInfoBottomSheetComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-local-info-bottom-sheet',
+            template: __webpack_require__(/*! ./local-info-bottom-sheet.component.html */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.html"),
+            styles: [__webpack_require__(/*! ./local-info-bottom-sheet.component.scss */ "./src/app/components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component.scss")]
+        }),
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatBottomSheetRef"]])
+    ], LocalInfoBottomSheetComponent);
+    return LocalInfoBottomSheetComponent;
 }());
 
 
@@ -1858,17 +2045,46 @@ var MaynoothMapService = /** @class */ (function () {
     function MaynoothMapService() {
     }
     MaynoothMapService.prototype.showMap = function (id) {
-        // tslint:disable-next-line:no-shadowed-variable
         var map;
-        // ../assets/img/map.svg
-        var myIcon = L.divIcon('my-div-icon');
-        map = L.map('map').setView([53.381635, -6.590960], 14.6);
-        // tslint:disable-next-line:max-line-length
-        L.tileLayer('https://api.mapbox.com/styles/v1/cavinn/cjjjwiuit35ru2smgwllle9um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
-            attribution: '',
-            maxZoom: 18,
-        }).addTo(map);
-        L.marker([53.381635, -6.590960], myIcon).addTo(map);
+        var iconUrl;
+        var town;
+        var dublinBusStop;
+        var maynoothApartmentComplex;
+        var maynoothPhoenixRestaurant;
+        var maynoothPedestrianCrossing;
+        var myLat;
+        var myLng;
+        var currentLocation;
+        iconUrl = L.icon({
+            iconUrl: './assets/img/blue-map.png',
+            iconSize: [30, 50],
+        });
+        navigator.geolocation.getCurrentPosition(function (x) {
+            myLat = x.coords.latitude;
+            myLng = x.coords.longitude;
+            console.log(myLat, myLng);
+            map = L.map('map').setView([53.381065, -6.593579], 15);
+            // tslint:disable-next-line:max-line-length
+            L.tileLayer('https://api.mapbox.com/styles/v1/cavinn/cjjjwiuit35ru2smgwllle9um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
+                attribution: '',
+                maxZoom: 18,
+            }).addTo(map);
+            town = L.marker([53.381635, -6.590960], { icon: iconUrl }).addTo(map);
+            //  // Dublin Bus
+            dublinBusStop = L.marker([53.379608, -6.588764], { icon: iconUrl }).addTo(map);
+            //  // Maynooth Stops
+            maynoothApartmentComplex = L.marker([53.385671, -6.596865], { icon: iconUrl }).addTo(map);
+            maynoothPhoenixRestaurant = L.marker([53.384121, -6.603546], { icon: iconUrl }).addTo(map);
+            maynoothPedestrianCrossing = L.marker([53.381920, -6.601228], { icon: iconUrl }).addTo(map);
+            // Current Location
+            currentLocation = L.marker([myLat, myLng], { icon: iconUrl }).addTo(map);
+            town.bindPopup('<b>Hello!</b><br>This is maynooths main street.').openPopup();
+            dublinBusStop.bindPopup('<b>66 & 67 bus stop!</b><br>Located across from the glenroyal hotel.');
+            maynoothApartmentComplex.bindPopup('<b>Maynooth Apartment Complex</b><br>First stop for the travelling to Carton House.');
+            maynoothPhoenixRestaurant.bindPopup('<b>Maynooth Pheonix Restaurant</b><br>Second bus stop for travelling to Carton House.');
+            maynoothPedestrianCrossing.bindPopup('<b>Maynooth Pedestrian Crossing</b><br>Last bus stop for travelling to Carton House.');
+            currentLocation.bindPopup('<b>Current Location</b>');
+        });
     };
     MaynoothMapService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1887,13 +2103,13 @@ var MaynoothMapService = /** @class */ (function () {
 /*!************************************************************************!*\
   !*** ./src/app/components/geolocation/services/montgomorie.service.ts ***!
   \************************************************************************/
-/*! exports provided: MontgomorieService, Hole */
+/*! exports provided: MontgomorieService, MontHole */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MontgomorieService", function() { return MontgomorieService; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Hole", function() { return Hole; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MontHole", function() { return MontHole; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
@@ -1944,35 +2160,134 @@ var MontgomorieService = /** @class */ (function () {
     return MontgomorieService;
 }());
 
-var Hole = /** @class */ (function () {
-    function Hole(id, name, lat, lng) {
+var MontHole = /** @class */ (function () {
+    function MontHole(id, name, lat, lng) {
         this.id = id;
         this.name = name;
         this.lat = lat;
         this.lng = lng;
     }
-    return Hole;
+    return MontHole;
 }());
 
 var HOLES = [
-    new Hole(1, 'Hole 1', 53.387792, -6.569634),
-    new Hole(2, 'Hole 2', 53.386737, -6.574668),
-    new Hole(3, 'Hole 3', 53.385048, -6.572094),
-    new Hole(4, 'Hole 4', 53.382720, -6.565754),
-    new Hole(5, 'Hole 5', 53.386264, -6.568703),
-    new Hole(6, 'Hole 6', 53.383838, -6.563968),
-    new Hole(7, 'Hole 7', 53.383164, -6.561684),
-    new Hole(8, 'Hole 8', 53.381575, -6.568951),
-    new Hole(9, 'Hole 9', 53.381030, -6.563088),
-    new Hole(10, 'Hole 10', 53.379296, -6.556906),
-    new Hole(11, 'Hole 11', 53.378104, -6.548422),
-    new Hole(12, 'Hole 12', 53.379468, -6.548469),
-    new Hole(13, 'Hole 13', 53.378950, -6.543071),
-    new Hole(14, 'Hole 14', 53.380214, -6.547637),
-    new Hole(15, 'Hole 15', 53.380593, -6.555184),
-    new Hole(16, 'Hole 16', 53.382494, -6.560319),
-    new Hole(17, 'Hole 17', 53.384131, -6.559146),
-    new Hole(18, 'Hole 18', 53.386657, -6.565981),
+    new MontHole(1, 'Hole 1', 53.387792, -6.569634),
+    new MontHole(2, 'Hole 2', 53.386737, -6.574668),
+    new MontHole(3, 'Hole 3', 53.385048, -6.572094),
+    new MontHole(4, 'Hole 4', 53.382720, -6.565754),
+    new MontHole(5, 'Hole 5', 53.386264, -6.568703),
+    new MontHole(6, 'Hole 6', 53.383838, -6.563968),
+    new MontHole(7, 'Hole 7', 53.383164, -6.561684),
+    new MontHole(8, 'Hole 8', 53.381575, -6.568951),
+    new MontHole(9, 'Hole 9', 53.381030, -6.563088),
+    new MontHole(10, 'Hole 10', 53.379296, -6.556906),
+    new MontHole(11, 'Hole 11', 53.378104, -6.548422),
+    new MontHole(12, 'Hole 12', 53.379468, -6.548469),
+    new MontHole(13, 'Hole 13', 53.378950, -6.543071),
+    new MontHole(14, 'Hole 14', 53.380214, -6.547637),
+    new MontHole(15, 'Hole 15', 53.380593, -6.555184),
+    new MontHole(16, 'Hole 16', 53.382494, -6.560319),
+    new MontHole(17, 'Hole 17', 53.384131, -6.559146),
+    new MontHole(18, 'Hole 18', 53.386657, -6.565981),
+];
+
+
+/***/ }),
+
+/***/ "./src/app/components/geolocation/services/o-meara.service.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/components/geolocation/services/o-meara.service.ts ***!
+  \********************************************************************/
+/*! exports provided: OMearaService, OMearaHole */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OMearaService", function() { return OMearaService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OMearaHole", function() { return OMearaHole; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var OMearaService = /** @class */ (function () {
+    function OMearaService() {
+    }
+    OMearaService.prototype.getHoles = function () { return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(HOLES); };
+    OMearaService.prototype.getHole = function (id) {
+        return this.getHoles().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === +id; }); }));
+    };
+    OMearaService.prototype.getHoleLat = function (id) {
+        return this.getHoles().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === +id; }).lat; }));
+    };
+    OMearaService.prototype.getHoleLng = function (id) {
+        return this.getHoles().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (holes) { return holes.find(function (hole) { return hole.id === +id; }).lng; }));
+    };
+    OMearaService.prototype.showMap = function (id) {
+        // tslint:disable-next-line:no-shadowed-variable
+        var map;
+        var coordsLng;
+        var coordsLat;
+        map = L.map('map').setView([53.384767, -6.564879], 14);
+        // tslint:disable-next-line:max-line-length
+        L.tileLayer('https://api.mapbox.com/styles/v1/cavinn/cjgqloyl000082roe1rz35om8/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2F2aW5uIiwiYSI6ImNqZW9nNjduejVrcTIyd21xMGhsYnB0bGwifQ.d1szzRngrK0u-qP_aiD64A', {
+            attribution: '',
+            maxZoom: 16,
+        }).addTo(map);
+        coordsLng = HOLES.find(function (hole) { return hole.id === id; }).lng;
+        coordsLat = HOLES.find(function (hole) { return hole.id === id; }).lat;
+        map.fitBounds([
+            [coordsLat, coordsLng]
+        ]);
+    };
+    OMearaService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [])
+    ], OMearaService);
+    return OMearaService;
+}());
+
+var OMearaHole = /** @class */ (function () {
+    function OMearaHole(id, name, lat, lng) {
+        this.id = id;
+        this.name = name;
+        this.lat = lat;
+        this.lng = lng;
+    }
+    return OMearaHole;
+}());
+
+var HOLES = [
+    new OMearaHole(1, 'Hole 1', 53.390819, -6.563249),
+    new OMearaHole(2, 'Hole 2', 53.390556, -6.554545),
+    new OMearaHole(3, 'Hole 3', 53.391743, -6.551030),
+    new OMearaHole(4, 'Hole 4', 53.382720, -6.565754),
+    new OMearaHole(5, 'Hole 5', 53.386264, -6.568703),
+    new OMearaHole(6, 'Hole 6', 53.383838, -6.563968),
+    new OMearaHole(7, 'Hole 7', 53.383164, -6.561684),
+    new OMearaHole(8, 'Hole 8', 53.381575, -6.568951),
+    new OMearaHole(9, 'Hole 9', 53.381030, -6.563088),
+    new OMearaHole(10, 'Hole 10', 53.379296, -6.556906),
+    new OMearaHole(11, 'Hole 11', 53.378104, -6.548422),
+    new OMearaHole(12, 'Hole 12', 53.379468, -6.548469),
+    new OMearaHole(13, 'Hole 13', 53.378950, -6.543071),
+    new OMearaHole(14, 'Hole 14', 53.380214, -6.547637),
+    new OMearaHole(15, 'Hole 15', 53.380593, -6.555184),
+    new OMearaHole(16, 'Hole 16', 53.382494, -6.560319),
+    new OMearaHole(17, 'Hole 17', 53.384131, -6.559146),
+    new OMearaHole(18, 'Hole 18', 53.386657, -6.565981),
 ];
 
 
@@ -1985,7 +2300,7 @@ var HOLES = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"showIndicator\">Loading...</div>\r\n\r\n <mat-sidenav-container class=\"example-container\" (backdropClick)=\"close('backdrop')\">\r\n    <mat-sidenav #sidenav (keydown.escape)=\"close('escape')\" disableClose>\r\n      <mat-toolbar class=\"geo-heading\">\r\n            <h3>Geolocation</h3>\r\n      </mat-toolbar>\r\n\r\n      <div class=\"banner\"></div>\r\n\r\n      <mat-expansion-panel>\r\n          <mat-expansion-panel-header>\r\n            Montgomorie\r\n          </mat-expansion-panel-header>\r\n\r\n      <mat-list role=\"list\" *ngFor=\"let hole of hole$ | async\">\r\n        <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n            <button mat-button [routerLink]=\"['/geolocation', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n        </mat-list-item>\r\n      </mat-list>\r\n    </mat-expansion-panel>\r\n\r\n    <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          O'Meara\r\n        </mat-expansion-panel-header>\r\n\r\n    <mat-list role=\"list\" *ngFor=\"let hole of hole$ | async\">\r\n      <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n          <button mat-button [routerLink]=\"['/geolocation', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n      </mat-list-item>\r\n    </mat-list>\r\n  </mat-expansion-panel>\r\n\r\n  <!-- geolocation-maynooth -->\r\n  <button class=\"mat-raised-button\" mat-raised-button [routerLink]=\"['/geolocation-maynooth']\"><span>Maynooth</span></button><br>\r\n\r\n  </mat-sidenav>\r\n</mat-sidenav-container>\r\n\r\n  <p>\r\n    <button mat-icon-button class=\"mat-ham-button\" (click)=\"sidenav.open()\">\r\n      <i class=\"material-icons\">menu</i>\r\n    </button>\r\n  </p>\r\n<!-- asdada -->\r\n"
+module.exports = "<div *ngIf=\"showIndicator\">Loading...</div>\r\n\r\n <mat-sidenav-container class=\"example-container\" (backdropClick)=\"close('backdrop')\">\r\n    <mat-sidenav #sidenav (keydown.escape)=\"close('escape')\" disableClose>\r\n      <mat-toolbar class=\"geo-heading\">\r\n            <h3>Geolocation</h3>\r\n      </mat-toolbar>\r\n\r\n      <div class=\"banner\"></div>\r\n\r\n      <mat-expansion-panel>\r\n          <mat-expansion-panel-header>\r\n            Montgomorie\r\n          </mat-expansion-panel-header>\r\n\r\n      <mat-list role=\"list\" *ngFor=\"let hole of mont_hole$ | async\">\r\n        <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n            <button mat-button [routerLink]=\"['/geolocation', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n        </mat-list-item>\r\n      </mat-list>\r\n    </mat-expansion-panel>\r\n\r\n    <mat-expansion-panel>\r\n        <mat-expansion-panel-header>\r\n          O'Meara\r\n        </mat-expansion-panel-header>\r\n\r\n    <mat-list role=\"list\" *ngFor=\"let hole of meara_hole$ | async\">\r\n      <mat-list-item role=\"listitem\" class=\"mat-side-list\">\r\n          <button mat-button [routerLink]=\"['/geolocation-meara', hole.id]\"><span>Hole {{hole.id}}</span></button>\r\n      </mat-list-item>\r\n    </mat-list>\r\n  </mat-expansion-panel>\r\n\r\n  <!-- geolocation-maynooth -->\r\n  <button class=\"mat-raised-button\" mat-raised-button [routerLink]=\"['/geolocation-maynooth']\"><span>Maynooth</span></button><br>\r\n\r\n  </mat-sidenav>\r\n</mat-sidenav-container>\r\n\r\n  <p>\r\n    <button mat-icon-button class=\"mat-ham-button\" (click)=\"sidenav.open()\">\r\n      <i class=\"material-icons\">menu</i>\r\n    </button>\r\n  </p>\r\n<!-- asdada -->\r\n"
 
 /***/ }),
 
@@ -1996,7 +2311,7 @@ module.exports = "<div *ngIf=\"showIndicator\">Loading...</div>\r\n\r\n <mat-sid
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".example-container {\n  position: static;\n  width: 100%;\n  min-width: 100%;\n  height: 100%;\n  min-height: 100%; }\n\n.mat-side-list {\n  margin: 0; }\n\n.mat-ham-button {\n  background-color: #d3d3d3;\n  margin-right: 20px;\n  float: right; }\n\n.mat-raised-button {\n  width: 200px;\n  height: 6%; }\n\n.banner {\n  height: 50px;\n  background-color: #5cd65c; }\n\n.geo-heading {\n  background-color: #5cd65c;\n  position: fixed;\n  top: 0; }\n\n.right-bottom {\n  position: absolute;\n  left: 0;\n  bottom: 60px; }\n"
+module.exports = ".example-container {\n  position: static;\n  width: 100%;\n  min-width: 100%;\n  height: 100%;\n  min-height: 100%; }\n\n.mat-side-list {\n  margin: 0; }\n\n.mat-ham-button {\n  background-color: white;\n  margin-right: 20px;\n  float: right; }\n\n.mat-raised-button {\n  width: 200px;\n  height: 6%; }\n\n.banner {\n  height: 50px;\n  background-color: #5cd65c; }\n\n.geo-heading {\n  background-color: #5cd65c;\n  position: fixed;\n  top: 0; }\n\n.right-bottom {\n  position: absolute;\n  left: 0;\n  bottom: 60px; }\n"
 
 /***/ }),
 
@@ -2013,10 +2328,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _services_montgomorie_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/montgomorie.service */ "./src/app/components/geolocation/services/montgomorie.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
+/* harmony import */ var _services_o_meara_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/o-meara.service */ "./src/app/components/geolocation/services/o-meara.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _services_map_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../services/map.service */ "./src/app/components/geolocation/services/map.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2033,19 +2349,21 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var SidenavComponent = /** @class */ (function () {
-    function SidenavComponent(_mont, _map, _route, route) {
+    function SidenavComponent(_mont, _meara, _map, _route, route) {
         var _this = this;
         this._mont = _mont;
+        this._meara = _meara;
         this._map = _map;
         this._route = _route;
         this.route = route;
         this.showIndicator = true;
         this.route.events.subscribe(function (routerEvent) {
-            if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationStart"]) {
+            if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_4__["NavigationStart"]) {
                 _this.showIndicator = true;
             }
-            if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationEnd"]) {
+            if (routerEvent instanceof _angular_router__WEBPACK_IMPORTED_MODULE_4__["NavigationEnd"]) {
                 _this.showIndicator = false;
             }
         });
@@ -2057,9 +2375,13 @@ var SidenavComponent = /** @class */ (function () {
     };
     SidenavComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])(function (params) {
+        this.mont_hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["switchMap"])(function (params) {
             _this.selectedId = +params.get('id');
             return _this._mont.getHoles();
+        }));
+        this.meara_hole$ = this._route.paramMap.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["switchMap"])(function (params) {
+            _this.selectedId = +params.get('id');
+            return _this._meara.getHoles();
         }));
         // this._route.paramMap.
         // subscribe((params: ParamMap) =>
@@ -2075,17 +2397,17 @@ var SidenavComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./sidenav.component.html */ "./src/app/components/geolocation/side-nav/sidenav.component.html"),
             styles: [__webpack_require__(/*! ./sidenav.component.scss */ "./src/app/components/geolocation/side-nav/sidenav.component.scss")],
             animations: [
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["trigger"])('listAnimation', [
-                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["transition"])('* => *', [
-                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["query"])(':leave', [
-                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["stagger"])(100, [
-                                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('0.5s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({ opacity: 0 }))
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["trigger"])('listAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])('* => *', [
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["query"])(':leave', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["stagger"])(100, [
+                                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])('0.5s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({ opacity: 0 }))
                             ])
                         ]),
-                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["query"])(':enter', [
-                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({ opacity: 0 }),
-                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["stagger"])(100, [
-                                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["animate"])('0.5s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_4__["style"])({ opacity: 1 }))
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["query"])(':enter', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({ opacity: 0 }),
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["stagger"])(100, [
+                                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])('0.5s', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({ opacity: 1 }))
                             ])
                         ])
                     ])
@@ -2093,9 +2415,10 @@ var SidenavComponent = /** @class */ (function () {
             ]
         }),
         __metadata("design:paramtypes", [_services_montgomorie_service__WEBPACK_IMPORTED_MODULE_2__["MontgomorieService"],
-            _services_map_service__WEBPACK_IMPORTED_MODULE_6__["MapService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+            _services_o_meara_service__WEBPACK_IMPORTED_MODULE_3__["OMearaService"],
+            _services_map_service__WEBPACK_IMPORTED_MODULE_7__["MapService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])
     ], SidenavComponent);
     return SidenavComponent;
 }());
@@ -2226,7 +2549,7 @@ var HomepageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"instagram-feed\">\r\n  <div class=\"instafeed-container\">\r\n    <!-- ng if video-->\r\n      <video class=\"transparent-instafeed\" src={{link}} autoplay controls loop></video>\r\n    <!-- else image -->\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[1].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[2].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[3].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[4].images.standard_resolution.url}}\">\r\n    <p class=\"para\">Caption</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[5].images.standard_resolution.url}}\">\r\n  </div>\r\n</div>\r\n\r\n"
+module.exports = "<div id=\"instagram-feed\">\r\n  <div class=\"instafeed-container\">\r\n    <!-- ng if video-->\r\n      <video class=\"transparent-instafeed\" src={{link}} autoplay loop></video>\r\n    <!-- else image -->\r\n    <p class=\"para\">Austrailia ahead in team standings</p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[1].images.standard_resolution.url}}\">\r\n    <p class=\"para\"><span>Austrailia ahead in team standings | 2</span></p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[2].images.standard_resolution.url}}\">\r\n    <p class=\"para\"><span>Caption | 3</span></p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[3].images.standard_resolution.url}}\">\r\n    <p class=\"para\"><span>Caption | 4</span></p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[4].images.standard_resolution.url}}\">\r\n    <p class=\"para\"><span>Caption | 5</span></p>\r\n  </div>\r\n\r\n  <div class=\"instafeed-container\">\r\n    <img class=\"transparent-instafeed\" src=\"{{instaFeed.data[5].images.standard_resolution.url}}\">\r\n    <p class=\"para\"><span>Caption | 6</span></p>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2237,7 +2560,7 @@ module.exports = "<div id=\"instagram-feed\">\r\n  <div class=\"instafeed-contai
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#instagram-feed {\n  display: flex;\n  flex-direction: row;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.instafeed-container {\n  width: 100%; }\n\n.transparent-instafeed {\n  height: 40vh;\n  width: 90vw; }\n\n.para {\n  color: white;\n  position: relative;\n  top: -17%;\n  left: -90%; }\n\nimg {\n  width: 90%; }\n"
+module.exports = "#instagram-feed {\n  display: flex;\n  flex-direction: row;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  white-space: nowrap; }\n\n.instafeed-container {\n  width: 100%; }\n\n.transparent-instafeed {\n  height: 40vh;\n  width: 90vw; }\n\n.para {\n  color: white;\n  background: black;\n  /* fallback color */\n  background: rgba(0, 0, 0, 0.5);\n  padding: 2%;\n  margin-top: -10%;\n  position: relative; }\n\nimg {\n  width: 90%; }\n\nvideo {\n  -o-object-fit: fill;\n     object-fit: fill;\n  position: relative;\n  z-index: 0; }\n\n.margin-bottom {\n  margin-bottom: 42px; }\n"
 
 /***/ }),
 
@@ -2269,7 +2592,7 @@ var InstagramFeedComponent = /** @class */ (function () {
         this._instagramFeed = _instagramFeed;
         this.title = 'title';
         // tslint:disable-next-line:max-line-length
-        this.link = 'https://scontent.cdninstagram.com/vp/9c0895b9ad69153a42bd0230f29ec056/5B515265/t50.2886-16/36945138_1068663479958683_2957417478189219840_n.mp4';
+        this.link = 'https://scontent.cdninstagram.com/vp/0732e16b298f133683ce204717f0af87/5B5A8CE5/t50.2886-16/36945138_1068663479958683_2957417478189219840_n.mp4';
     }
     InstagramFeedComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -2841,7 +3164,7 @@ var LiveTeamScoreComponent = /** @class */ (function () {
 //   private profiles: string;
 // }
 // get default(){
-//       return this.profiles 
+//       return this.profiles
 // }
 // playerdata = [
 //   {players:{
@@ -3434,6 +3757,10 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+// tslint:disable-next-line:max-line-length
+// import {MaynoothInfoBottomSheetComponent} from '../components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet';
+// tslint:disable-next-line:max-line-length
+// import { LocalInfoBottomSheetComponent } from './components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component';
 var MaterialModule = /** @class */ (function () {
     function MaterialModule() {
     }
@@ -3480,66 +3807,6 @@ var MaterialModule = /** @class */ (function () {
         })
     ], MaterialModule);
     return MaterialModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/shared/quote.service.ts":
-/*!*****************************************!*\
-  !*** ./src/app/shared/quote.service.ts ***!
-  \*****************************************/
-/*! exports provided: QuoteService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuoteService", function() { return QuoteService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var QuoteService = /** @class */ (function () {
-    function QuoteService(http) {
-        this.http = http;
-    }
-    QuoteService.prototype.addQuote = function (title, content, severity) {
-        var body = JSON.stringify({ content: content, title: title, severity: severity });
-        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]({ 'Content-Type': 'application/json' });
-        return this.http.post('http://localhost:8000/api/quote/', body, { headers: headers });
-    };
-    QuoteService.prototype.getQuotes = function () {
-        return this.http.get('http://localhost:8000/api/quotes')
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (response) {
-            return response.json().quotes;
-        }));
-    };
-    QuoteService.prototype.updateQuote = function (id, newTitle, newContent, newSeverity) {
-        var body = JSON.stringify({ title: newTitle, content: newContent, severity: newSeverity });
-        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]({ 'Content-Type': 'application/json' });
-        return this.http.put('http://localhost:8000/api/quote/' + id, body, { headers: headers })
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (response) { return response.json(); }));
-    };
-    QuoteService.prototype.deleteQuote = function (id) {
-        return this.http.delete('http://localhost:8000/api/quote/' + id);
-    };
-    QuoteService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_1__["Http"]])
-    ], QuoteService);
-    return QuoteService;
 }());
 
 

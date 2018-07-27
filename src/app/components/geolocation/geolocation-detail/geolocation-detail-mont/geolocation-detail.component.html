@@ -1,0 +1,29 @@
+<div id="map"></div>
+
+<div *ngIf="mont_hole$ | async as hole">
+    <div class="contain">
+        <mat-card class="mat-elevation-z10">
+          <div class="flex-item1">
+              <p>Metres: {{metres}}</p>
+
+              <p>Yards: {{yards}}</p>
+
+              <p>Kilometres: {{kilometres}}</p>
+
+              <p>Miles: {{miles}}</p>
+          </div>
+
+          <div class="flex-item2">
+              <p>{{ hole.name }}</p>
+
+              <p>par {{ hole.par }}</p>
+
+              <p>Description {{hole.description}}</p>
+              <a href="https://vimeo.com/269921381">Flyover</a>
+              <!-- <p> Flyover {{hole.flyover }}</p> -->
+          </div>
+        </mat-card>
+      </div>
+<div>
+
+<button class="mat-button" mat-button (click)="Back()">Back</button>

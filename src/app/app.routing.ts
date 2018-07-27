@@ -14,15 +14,11 @@ import { EligibilityComponent } from './components/additional-info/eligibitity/e
 import { ScheduleComponent } from './components/additional-info/schedule/schedule.component';
 import { ContactComponent } from './components/additional-info/contact/contact.component';
 
-
 import { EventComponent } from './components/event/event.component';
-// import { FavTeamProfilesComponent } from './components/fav-team-profiles/fav-team-profiles.component';
-
-
-import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
-import { AdminComponent } from './components/admin/admin.component';
 import { GeolocationComponent } from './components/geolocation/geolocation.component';
-import { GeolocationDetailComponent } from './components/geolocation/geolocation-detail/geolocation-detail.component';
+// tslint:disable-next-line:max-line-length
+import { GeolocationDetailComponent } from './components/geolocation/geolocation-detail/geolocation-detail-mont/geolocation-detail.component';
+import { OMearaDetailComponent } from './components/geolocation/geolocation-detail/geolocation-detail-omeara/o-meara-detail.component';
 // tslint:disable-next-line:max-line-length
 import { GeolocationMaynoothDetailComponent } from './components/geolocation/geolocation-maynooth-detail/geolocation-maynooth-detail.component';
 
@@ -33,7 +29,6 @@ const appRoutes:
     { path: 'events', component: EventComponent },
     { path: 'add-info', component: AdditionalInfoComponent },
     { path: 'teamprofiles', component: TeamProfilesComponent },
-    // { path: 'favteamprofiles' , component: FavTeamProfilesComponent},
     { path: 'about', component: AboutComponent },
     { path: 'news' , component: NewsComponent},
     { path: 'eligibility', component: EligibilityComponent },
@@ -42,10 +37,9 @@ const appRoutes:
     { path: 'livescoring', component: LiveScoreComponent },
     { path: 'transport', component: TransportComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'admin', component: AdminComponent },
-    { path: 'admin-create', component: AdminCreateComponent },
     { path: 'geolocation', component: GeolocationComponent },
     { path: 'geolocation/:id', component: GeolocationDetailComponent },
+    { path: 'geolocation-meara/:id', component: OMearaDetailComponent },
     { path: 'geolocation-maynooth', component: GeolocationMaynoothDetailComponent },
     { path: '**', redirectTo: '', pathMatch: 'full'}
   ];

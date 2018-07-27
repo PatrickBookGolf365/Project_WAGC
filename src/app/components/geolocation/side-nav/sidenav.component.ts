@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { MatSidenav, MatBottomSheet } from '@angular/material';
-import { Hole, MontgomorieService } from '../services/montgomorie.service';
+import { MontHole, MontgomorieService } from '../services/montgomorie.service';
+import { OMearaHole, OMearaService } from '../services/o-meara.service';
 import { ActivatedRoute, ParamMap, Router, Event, NavigationEnd, NavigationStart } from '@angular/router';
 import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
 import { Observable } from 'rxjs';
@@ -34,7 +35,8 @@ export class SidenavComponent implements OnInit {
 
   @ViewChild('sidenav') sidenav: MatSidenav;
 
-  hole$: Observable<Hole[]>;
+  mont_hole$: Observable<MontHole[]>;
+  meara_hole$: Observable<OMearaHole[]>;
 
   hole;
   reason;
@@ -42,6 +44,7 @@ export class SidenavComponent implements OnInit {
   showIndicator = true;
 
   constructor(private _mont: MontgomorieService,
+              private _meara: OMearaService,
               private _map: MapService,
               private _route: ActivatedRoute,
               private route: Router
@@ -64,10 +67,17 @@ export class SidenavComponent implements OnInit {
         }
 
   ngOnInit() {
-    this.hole$ = this._route.paramMap.pipe(
+    this.mont_hole$ = this._route.paramMap.pipe(
       switchMap((params: ParamMap) => {
         this.selectedId = +params.get('id');
         return this._mont.getHoles();
+      })
+    );
+
+    this.meara_hole$ = this._route.paramMap.pipe(
+      switchMap((params: ParamMap) => {
+        this.selectedId = +params.get('id');
+        return this._meara.getHoles();
       })
     );
 

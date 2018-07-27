@@ -42,7 +42,10 @@ import {
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {BottomSheetOverviewComponent} from '../components/geolocation/bottom-sheet/bottom-sheet-overview.component';
+// tslint:disable-next-line:max-line-length
+// import {MaynoothInfoBottomSheetComponent} from '../components/geolocation/maynooth-info-bottom-sheet/dublin-bus-bottom-sheet/maynooth-info-bottom-sheet';
+// tslint:disable-next-line:max-line-length
+// import { LocalInfoBottomSheetComponent } from './components/geolocation/maynooth-info-bottom-sheet/local-info-bottom-sheet/local-info-bottom-sheet.component';
 
 @NgModule({
   exports: [
