@@ -792,7 +792,7 @@
     <span class="example-fill-remaining-space"></span>
   </mat-toolbar>
 
-
+  
   <!-- saved team -->
   <table id="live-table">
       <thead>
@@ -812,7 +812,7 @@
       <tbody id="player-tbody" class="tbody" *ngFor="let todoTeam of todoTeamService.getTodosTeam()">
         <ng-container  *ngFor="let teamdata of data.event.tournament.teams.team; let i = index;">
           <tr id="live-table-header" *ngIf="teamdata.name == todoTeam.teamName">
-            <td><app-todo-team-item [todoTeam]="todoTeam"></app-todo-team-item></td>
+            <td><mat-icon id="isFavourite">star</mat-icon></td>
             <td>
               <button class="hide-btn" (click)="hideStuff[i] = !hideStuff[i]">
                 <mat-icon>expand_{{hideStuff[i] ? 'less' : 'more'}}</mat-icon>
@@ -873,7 +873,9 @@
     <br>
     <mat-divider></mat-divider>
   <!-- saved team -->
-
+   <div *ngFor="let todo of todoTeamService.getTodosTeam()">
+     <app-todo-team-item [todo]="todo"></app-todo-team-item>
+   </div>
 
   <table id="live-table">
     <thead>
